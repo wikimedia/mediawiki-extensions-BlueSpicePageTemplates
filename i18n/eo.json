@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Yekrats"
+		]
+	},
+	"bs-pagetemplates-tipdeletetemplate": "Forigi {{PLURAL:$1|ŝablonon|ŝablonojn}}",
+	"bs-pagetemplates-remove-message-failure": "La {{PLURAL:$1|jena ŝablono|jenan ŝablonon}} ne povis esti {{PLURAL:$1|forigita|forigitaj}}:$2 (Kialo: $3)"
+}

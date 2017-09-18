@@ -1,0 +1,81 @@
+{
+	"name": "BlueSpicePageTemplates",
+	"version": "2.27.1-alpha",
+	"url": "https://help.bluespice.com/index.php/PageTemplates",
+	"author": [
+		"Markus Glaser",
+		"Stephan Muggli"
+	],
+	"license-name" : "GPL-2.0+",
+	"descriptionmsg": "bs-pagetemplates-desc",
+	"type": "bluespice",
+	"bsgExtensions": {
+		"PageTemplates": {
+			"className": "PageTemplates",
+			"extPath": "/BlueSpiceExtensions/PageTemplates"
+		}
+	},
+	"APIModules": {
+		"bs-pagetemplates-store": "BSApiPageTemplatesStore",
+		"bs-pagetemplates-tasks": "BSApiPageTemplatesTasks"
+	},
+	"MessagesDirs": {
+		"PageTemplates": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"PageTemplates": "PageTemplates.class.php",
+		"BSApiPageTemplatesStore": "includes/api/BSApiPageTemplatesStore.php",
+		"BSApiPageTemplatesTasks": "includes/api/BSApiPageTemplatesTasks.php",
+		"PageTemplatesAdmin": "PageTemplatesAdmin.class.php",
+		"SpecialPageTemplatesAdmin": "includes/specials/SpecialPageTemplatesAdmin.class.php",
+		"BSPageTemplateList": "includes/BSPageTemplateList.php",
+		"BSPageTemplateListRenderer": "includes/BSPageTemplateListRenderer.php",
+		"BSPageTemplateFixtures": "tests/phpunit/utility/BSPageTemplateFixtures.php"
+	},
+	"ExtensionMessagesFiles": {
+		"PageTemplatesAdminAlias": "includes/specials/SpecialPageTemplatesAdmin.alias.php"
+	},
+	"SpecialPages": {
+		"PageTemplatesAdmin": "SpecialPageTemplatesAdmin"
+	},
+	"ResourceModules": {
+		"ext.bluespice.pageTemplates": {
+			"scripts": "bluespice.pageTemplates.js",
+			"dependencies": "ext.bluespice.extjs",
+			"messages": [
+				"bs-pagetemplates-headerlabel",
+				"bs-pagetemplates-headertargetnamespace",
+				"bs-pagetemplates-tipeditdetails",
+				"bs-pagetemplates-tipdeletetemplate",
+				"bs-pagetemplates-tipaddtemplate",
+				"bs-pagetemplates-label-tpl",
+				"bs-pagetemplates-label-desc",
+				"bs-pagetemplates-label-targetns",
+				"bs-pagetemplates-label-article",
+				"bs-pagetemplates-confirm-deletetpl",
+				"bs-pagetemplates-remove-message-unknown",
+				"bs-pagetemplates-remove-message-success",
+				"bs-pagetemplates-remove-message-failure"
+			]
+		},
+		"ext.bluespice.pageTemplates.tag": {
+			"scripts": "bluespice.pageTemplates.tag.js"
+		},
+		"ext.bluespice.pageTemplates.styles": {
+			"styles": "bluespice.pageTemplates.less"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpicePageTemplates/resources"
+	},
+	"Hooks": {
+		"LoadExtensionSchemaUpdates": "PageTemplates::getSchemaUpdates",
+		"BSUsageTrackerRegisterCollectors": "PageTemplates::onBSUsageTrackerRegisterCollectors",
+		"UnitTestsList": "PageTemplates::onUnitTestsList"
+	},
+	"load_composer_autoloader": true,
+	"manifest_version": 1
+}

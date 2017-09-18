@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fohanno"
+		]
+	},
+	"prefs-pagetemplates": "Patromoù pajenn",
+	"bs-pagetemplates-empty-page": "Pajenn c'houllo",
+	"bs-pagetemplates-empty-page-desc": "Kregiñ gant ur bajenn c'houllo.",
+	"bs-pagetemplatesadmin-label": "Patromoù pajenn",
+	"bs-pagetemplates-tpl-desc-toolong": "Re hir eo an deskrivadur. Implijit 255 arouezenn d'ar muiañ, mar plij.",
+	"bs-pagetemplates-tpl-label-toolong": "Re hir eo anv al label. Implijit 255 arouezenn d'ar muiañ, mar plij.",
+	"bs-pagetemplates-tpl-label-empty": "Merkit ul label, mar plij.",
+	"bs-pagetemplates-tpl-name-toolong": "Re hir eo anv ar patrom. Implijit 255 arouezenn d'ar muiañ, mar plij.",
+	"bs-pagetemplates-tpl-name-empty": "Merkit un anv patrom, mar plij.",
+	"bs-pagetemplates-no-id": "Ebarzhit ur bajenn da vezañ implijet da batrom, mar plij.",
+	"bs-pagetemplates-tpl-added": "Ouzhpennet eo bet ar patrom.",
+	"bs-pagetemplates-invalid_pfx": "Direizh eo ar rakger.",
+	"bs-pagetemplates-nooldtpl": "N'eus ket bet gallet kavout ar patrom kozh.",
+	"bs-pagetemplates-tpl-edited": "Enrollet eo bet ar c'hemmoù.",
+	"bs-pagetemplates-dberror": "Ur fazi zo bet gant an diaz roadennoù.",
+	"bs-pagetemplates-tpl-deleted": "Dilamet eo bet ar patrom.",
+	"bs-pagetemplates-general-section": "Hollek",
+	"bs-pagetemplates-headerlabel": "Label",
+	"bs-pagetemplates-tipeditdetails": "Aozañ ar patrom",
+	"bs-pagetemplates-tipdeletetemplate": "Dilemel {{PLURAL:$1|patrom|a batromoù}}",
+	"bs-pagetemplates-tipaddtemplate": "Ouzhpennañ ur patrom",
+	"bs-pagetemplates-label-tpl": "Anv ar patrom",
+	"bs-pagetemplates-label-desc": "Deskrivadur",
+	"bs-pagetemplates-label-article": "Patrom",
+	"bs-pagetemplates-confirm-deletetpl": "Ha sur oc'h e fell deoc'h dilemel ar patrom-mañ ?",
+	"bs-pagetemplates-remove-message-unknown": "C'hoarvezet ez eus ur fazi dic'hortoz, esaeit en-dro, mar plij."
+}

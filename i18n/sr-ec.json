@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Milicevic01"
+		]
+	},
+	"bs-pagetemplates-tpl-edited": "Измене су сачуване.",
+	"bs-pagetemplates-headertargetnamespace": "Именски простор",
+	"bs-pagetemplates-label-desc": "Опис",
+	"bs-pagetemplates-label-targetns": "Именски простор",
+	"bs-pagetemplates-label-article": "Шаблон",
+	"action-pagetemplatesadmin-viewspecialpage": "преглед посебне странице „{{int:pagetemplatesadmin}}“"
+}

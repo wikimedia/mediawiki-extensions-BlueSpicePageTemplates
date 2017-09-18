@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Felipe L. Ewald"
+		]
+	},
+	"prefs-pagetemplates": "Modelos de páginas",
+	"bs-pagetemplatesadmin-label": "Modelos de páginas",
+	"bs-pagetemplates-general-section": "Geral",
+	"bs-pagetemplates-headertargetnamespace": "Espaço nominal",
+	"bs-pagetemplates-label-tpl": "Nome da predefinição",
+	"bs-pagetemplates-label-desc": "Descrição",
+	"bs-pagetemplates-label-targetns": "Espaço nominal",
+	"bs-pagetemplates-label-article": "Predefinição"
+}

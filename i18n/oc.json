@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cedric31"
+		]
+	},
+	"prefs-pagetemplates": "Modèls de pagina",
+	"bs-pagetemplates-empty-page": "Pagina voida",
+	"bs-pagetemplates-empty-page-desc": "Començar amb una pagina voida.",
+	"bs-pagetemplatesadmin-label": "Modèls de pagina",
+	"bs-pagetemplates-general-section": "General",
+	"bs-pagetemplates-headerlabel": "Libellat",
+	"bs-pagetemplates-headertargetnamespace": "Espaci de noms",
+	"bs-pagetemplates-tipeditdetails": "Modificar lo modèl",
+	"bs-pagetemplates-tipdeletetemplate": "Suprimir {{PLURAL:$1|lo modèl|los modèls}}",
+	"bs-pagetemplates-tipaddtemplate": "Apondre un modèl",
+	"bs-pagetemplates-label-tpl": "Nom del modèl",
+	"bs-pagetemplates-label-desc": "Descripcion",
+	"bs-pagetemplates-label-targetns": "Espaci de noms",
+	"bs-pagetemplates-label-tplns": "Espaci de nom del modèl",
+	"bs-pagetemplates-label-article": "Modèl"
+}

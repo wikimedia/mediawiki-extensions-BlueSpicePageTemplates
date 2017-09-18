@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Meno25",
+			"محمد أحمد عبد الفتاح",
+			"ديفيد"
+		]
+	},
+	"bs-pagetemplates-label-desc": "الوصف",
+	"bs-pagetemplates-label-article": "قالب",
+	"apihelp-bs-pagetemplates-tasks-description": "يتيح تعديل قوالب الصفحة"
+}

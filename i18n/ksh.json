@@ -1,0 +1,39 @@
+{
+	"@metadata": {
+		"authors": [
+			"Purodha"
+		]
+	},
+	"bs-pagetemplates-desc": "Zeijsch en Leß met Schablohne, di_j_als Sigge_Schablohne makkehrt sin",
+	"prefs-pagetemplates": "Sigge_Schablohne",
+	"bs-pagetemplates-empty-page": "Läddejje Sigg",
+	"bs-pagetemplates-empty-page-desc": "Fang medd en läddejje Sigg aan",
+	"bs-pagetemplatesadmin-label": "Sigge_Schablohne",
+	"bs-pagetemplates-tpl-desc-toolong": "De beschrievong es zoh lang.\nBe esu johd un donn nit mih wi 255 Zeijsche nämme.",
+	"bs-pagetemplates-tpl-label-toolong": "Dat Ätikädd es zoh lang.\nBe esu johd un donn nit mih wi 255 Zeijsche nämme.",
+	"bs-pagetemplates-tpl-label-empty": "\nBe esu johd un donn e Ätikät ennjävve.",
+	"bs-pagetemplates-tpl-name-empty": "Bes esu johd un donn dä Nahme för en Schablohn enjävve.",
+	"bs-pagetemplates-no-id": "Bes esu johd un donn dä Nahme för en Sigg enjävve, di als en Schablohn jebruch weed.",
+	"bs-pagetemplates-tpl-added": "De Schablohn es derbei jedonn.",
+	"bs-pagetemplates-invalid_pfx": "Dä Vörsaz es nit jöltesch.",
+	"bs-pagetemplates-nooldtpl": "Di ahle Schablohn kunnt nit jefonge wähde.",
+	"bs-pagetemplates-tpl-edited": "De Änderonge sin faßjehallde",
+	"bs-pagetemplates-dberror": "Ene Dahtebangk_Fähler es opjetrodde.",
+	"bs-pagetemplates-tpl-deleted": "De Schablohn es fott jeschmeße.",
+	"bs-pagetemplates-general-section": "Alljemein",
+	"bs-pagetemplates-pref-excludens": "Donn kein Schablohne en he dä Appachtemangs aanzeije:",
+	"bs-pagetemplates-headerlabel": "Bezeishnong, Ätikätt, Singnatuur \n<!-- https://translatewiki.net/wiki/Thread:Support/About_MediaWiki:Bs-pagetemplates-headerlabel/qqq\nhttps://phabricator.wikimedia.org/T129398\n-->",
+	"bs-pagetemplates-headertargetnamespace": "Appachtemang",
+	"bs-pagetemplates-tipeditdetails": "Donn di Schablohn ändere",
+	"bs-pagetemplates-tipdeletetemplate": "Donn {{PLURAL:$1|en Schablohn|Schablohne|kein Schablohn}} fott schmiiße",
+	"bs-pagetemplates-tipaddtemplate": "Donn en Schablohn dobei",
+	"bs-pagetemplates-label-tpl": "Dä Schablohn iere Nahme",
+	"bs-pagetemplates-label-desc": "Beschriehvong",
+	"bs-pagetemplates-label-targetns": "Appachtemang",
+	"bs-pagetemplates-label-tplns": "Et Schblohne_Appachtemang",
+	"bs-pagetemplates-label-article": "Schablohn",
+	"bs-pagetemplates-confirm-deletetpl": "Wells De verhaftesch {{PLURAL:$1|heh di Schablohn|heh di Schablohne|kein Schablohne}} fott schmiiße?",
+	"bs-pagetemplates-remove-message-unknown": "Ene Fähler es opjetrodde, woh mer nit met jerääschnet han. Bes esu johd un versöhg est norr_ens.",
+	"bs-pagetemplates-remove-message-success": "{{PLURAL:$1|Heh di Schablohn|Heh di Schablohne|Kein Schablohne}} sin fott jeschmeße woode: $2",
+	"bs-pagetemplates-remove-message-failure": "{{PLURAL:$1|Heh di Schablohn|Heh di Schablohne|Kein Schablohne}} kunnte nit fott jeschmeße weede: $2, wähje: $3."
+}

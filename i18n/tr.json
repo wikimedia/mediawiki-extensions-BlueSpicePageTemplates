@@ -1,0 +1,41 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sayginer",
+			"Sadrettin"
+		]
+	},
+	"prefs-pagetemplates": "Sayfa şablonu",
+	"bs-pagetemplates-empty-page": "Boş sayfa",
+	"bs-pagetemplates-empty-page-desc": "Boş bir sayfa ile başla.",
+	"bs-pagetemplatesadmin-label": "Sayfa şablonları",
+	"bs-pagetemplates-tpl-desc-toolong": "Açıklama çok uzun. Lütfen en fazla 255 karakter kullanın.",
+	"bs-pagetemplates-tpl-label-toolong": "Etiket çok uzun. Lütfen en fazla 255 karakter kullanın.",
+	"bs-pagetemplates-tpl-label-empty": "Lütfen bir etiket girin.",
+	"bs-pagetemplates-tpl-name-toolong": "Şablon adı çok uzun. Lütfen en fazla 255 karakter kullanın.",
+	"bs-pagetemplates-tpl-name-empty": "Lütfen bir şablon adı girin.",
+	"bs-pagetemplates-no-id": "Lütfen şablon olarak kullanılacak bir sayfa girin.",
+	"bs-pagetemplates-tpl-added": "Şablon eklendi.",
+	"bs-pagetemplates-invalid_pfx": "Ön ek geçersiz.",
+	"bs-pagetemplates-nooldtpl": "Önceki şablon bulunamadı.",
+	"bs-pagetemplates-tpl-edited": "Değişiklikler kaydedildi.",
+	"bs-pagetemplates-dberror": "Veritabanı hatası oluştu.",
+	"bs-pagetemplates-tpl-deleted": "Şablon silindi.",
+	"bs-pagetemplates-general-section": "Genel",
+	"bs-pagetemplates-choose-template": "Bu sayfa henüz mevcut değil. Yeni bir sayfa oluşturabilirsiniz. Eğer bunu yapmak istemiyorsanız, son ziyaret edilen sayfaya dönmek için tarayıcınızın geri tuşuna tıklayın.\n\nBunlardan {{ÇOĞUL:$1||birini}} seçerek {{ÇOĞUL:$1|şablonu|şablonları}} takip edebilirsin:",
+	"bs-pagetemplates-pref-excludens": "Bu isim alanındaki şablonları gösterme:",
+	"bs-pagetemplates-headerlabel": "Etiket",
+	"bs-pagetemplates-headertargetnamespace": "İsim alanı",
+	"bs-pagetemplates-tipeditdetails": "Şablonu düzenle",
+	"bs-pagetemplates-tipdeletetemplate": "{{PLURAL:$1|Şablonu|Şablonları}} sil",
+	"bs-pagetemplates-tipaddtemplate": "Şablon ekle",
+	"bs-pagetemplates-label-tpl": "Şablon adı:",
+	"bs-pagetemplates-label-desc": "Açıklama",
+	"bs-pagetemplates-label-targetns": "İsim alanı",
+	"bs-pagetemplates-label-tplns": "Şablon isim alanı",
+	"bs-pagetemplates-label-article": "Şablon",
+	"bs-pagetemplates-confirm-deletetpl": "{{PLURAL:$1|Bu şablonu|Bu şablonları}} silmek istediğinize emin misiniz?",
+	"bs-pagetemplates-remove-message-unknown": "Beklenmeyen bir hata oluştu, lütfen tekrar deneyin.",
+	"bs-pagetemplates-remove-message-success": "Şu {{PLURAL:$1|şablon|şablonlar}} silindi: $2",
+	"bs-pagetemplates-remove-message-failure": "Takip edilen {{PLURAL:$1|şablon|şablonlar}} silinemedi: $2 (Gerekçe: $3)"
+}

@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Stephan Muggli <muggli@hallowelt.biz>",
+			"Kghbln",
+			"Osnard"
+		]
+	},
+	"bs-pagetemplates-empty-page-desc": "Beginnen Sie mit einer leeren Seite.",
+	"bs-pagetemplates-tpl-desc-toolong": "Die Beschreibung ist zu lang. Geben Sie maximal 255 Zeichen an!",
+	"bs-pagetemplates-tpl-label-toolong": "Der Titel ist zu lang. Geben Sie maximal 255 Zeichen an!",
+	"bs-pagetemplates-tpl-label-empty": "Bitte geben Sie einen Titel ein.",
+	"bs-pagetemplates-tpl-name-toolong": "Der Name der Vorlage ist zu lang. Geben Sie maximal 255 Zeichen ein.",
+	"bs-pagetemplates-tpl-name-empty": "Bitte geben Sie eine Vorlage an.",
+	"bs-pagetemplates-no-id": "Bitte geben Sie eine Seite an, die als Vorlage verwendet werden soll.",
+	"bs-pagetemplates-choose-template": "Diese Seite existiert noch nicht. Sie können hier eine neue Seite verfassen. Falls Sie nichts eingeben möchten, klicken Sie auf den Zurück-Button des Browsers, um zu der letzten Seite zurückzukehren.\n\nSie können {{PLURAL:$1|diese Vorlage|eine dieser Vorlagen}} auswählen:",
+	"bs-pagetemplates-confirm-deletetpl": "Sind Sie sicher, dass Sie diese {{PLURAL:$1|Vorlage|Vorlagen}} löschen wollen?",
+	"bs-pagetemplates-remove-message-unknown": "Ein unbekannter Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+}

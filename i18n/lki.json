@@ -1,0 +1,40 @@
+{
+	"@metadata": {
+		"authors": [
+			"Lakzon",
+			"Hosseinblue"
+		]
+	},
+	"bs-pagetemplates-desc": "یک فهرست از الگوهایی را که به عنوان الگوی صفحات نشانه‌گذاری شده‌اند نشان می‌دهد",
+	"prefs-pagetemplates": "الگوی صفحات",
+	"bs-pagetemplates-empty-page": "صفحه خالی",
+	"bs-pagetemplates-empty-page-desc": "آغاز با یک صفحه خالی.",
+	"bs-pagetemplatesadmin-label": "الگوی صفحات",
+	"bs-pagetemplates-tpl-desc-toolong": "این توضیح خیلی طولانی است. لطفاً از حداکثر طول ۲۵۵ نویسه استفاده کنید.",
+	"bs-pagetemplates-tpl-label-toolong": "این پیشوند خیلی طولانی است. لطفاً از حداکثر طول ۲۵۵ نویسه استفاده کنید.",
+	"bs-pagetemplates-tpl-label-empty": "لطفاً یک پیشوند وارد کنید.",
+	"bs-pagetemplates-tpl-name-toolong": "نام الگو خیلی طولانی است. لطفاً از حداکثر طول ۲۵۵ نویسه استفاده کنید.",
+	"bs-pagetemplates-tpl-name-empty": "لطفاً یک نام برای الگو وارد کنید.",
+	"bs-pagetemplates-no-id": "لطفاً یک صفحه وارد کنید که به عنوان الگو مورد استفاده قرار گیرد.",
+	"bs-pagetemplates-tpl-added": "این الگو اضافه شد.",
+	"bs-pagetemplates-invalid_pfx": "پیشوند نامعتبر است.",
+	"bs-pagetemplates-nooldtpl": "الگوی قدیمی نمی‌تواند یافت شود.",
+	"bs-pagetemplates-tpl-edited": "این تغییرات ذخیره شدند.",
+	"bs-pagetemplates-dberror": "یک خطای پایگاه‌داده‌ای رخ داد.",
+	"bs-pagetemplates-tpl-deleted": "این الگو حذف شد.",
+	"bs-pagetemplates-general-section": "عمومی",
+	"bs-pagetemplates-pref-excludens": "نشان ندادن الگوها در این فضاهای نام:",
+	"bs-pagetemplates-headerlabel": "برچسب",
+	"bs-pagetemplates-headertargetnamespace": "فضای نام",
+	"bs-pagetemplates-tipeditdetails": "دەسکاری الگو",
+	"bs-pagetemplates-tipdeletetemplate": "حذف {{PLURAL:$1|الگو|الگوها}}",
+	"bs-pagetemplates-tipaddtemplate": "افزودن الگو",
+	"bs-pagetemplates-label-tpl": "نام الگو",
+	"bs-pagetemplates-label-desc": "توضیحةل",
+	"bs-pagetemplates-label-targetns": "فضای نام",
+	"bs-pagetemplates-label-tplns": "فضای نام الگو",
+	"bs-pagetemplates-label-article": "الگو",
+	"bs-pagetemplates-remove-message-unknown": "یک خطای غیر منتظره رخ داد، لطفاً دوباره تلاش کنید.",
+	"bs-pagetemplates-remove-message-success": "{{PLURAL:$1|الگوی|الگوهای}} روبرو {{PLURAL:$1|حذف شد|حذف شدند}}: $2",
+	"bs-pagetemplates-remove-message-failure": "{{PLURAL:$1|الگوی|الگوهای}} روبرو {{PLURAL:$1|نمی‌تواند حذف شود|نمی‌توانند حذف شوند}}: $2 (دلیل: $3)"
+}

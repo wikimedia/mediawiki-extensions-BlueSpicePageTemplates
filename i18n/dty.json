@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nirajan pant"
+		]
+	},
+	"action-pagetemplatesadmin-viewspecialpage": "खास पान्नो \"{{int:pagetemplatesadmin}}\" हेर:",
+	"pagetemplatesadmin": "पन्ना टेमप्लेट व्यवस्थापन"
+}

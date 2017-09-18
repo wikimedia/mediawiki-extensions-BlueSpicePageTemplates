@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Liuxinyu970226",
+			"LNDDYL",
+			"Cwlin0416",
+			"和平奮鬥救地球"
+		]
+	},
+	"prefs-pagetemplates": "頁面模板",
+	"bs-pagetemplates-empty-page": "空白頁面",
+	"bs-pagetemplatesadmin-label": "頁面模板",
+	"bs-pagetemplates-tpl-label-empty": "請輸入標籤。",
+	"bs-pagetemplates-tpl-name-empty": "請輸入模板名稱。",
+	"bs-pagetemplates-general-section": "一般",
+	"bs-pagetemplates-pref-hidedefaults": "隱藏默認模板",
+	"bs-pagetemplates-headerlabel": "標籤",
+	"bs-pagetemplates-headertargetnamespace": "命名空間",
+	"bs-pagetemplates-tipeditdetails": "編輯模板",
+	"bs-pagetemplates-tipaddtemplate": "增加模板",
+	"bs-pagetemplates-label-tpl": "模板名稱",
+	"bs-pagetemplates-label-desc": "描述",
+	"bs-pagetemplates-label-targetns": "命名空間",
+	"bs-pagetemplates-label-tplns": "模板命名空間",
+	"bs-pagetemplates-label-article": "模板"
+}

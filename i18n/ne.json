@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"बिप्लब आनन्द"
+		]
+	},
+	"prefs-pagetemplates": "पृष्ठ ढाँचाहरू",
+	"bs-pagetemplates-empty-page": "खालि पृष्ठ",
+	"bs-pagetemplates-empty-page-desc": "खालि पृष्ठ देखि सुरू गर्ने।",
+	"bs-pagetemplatesadmin-label": "पृष्ठ ढाँचाहरू",
+	"bs-pagetemplates-tpl-desc-toolong": "दिइएको विवरण धेरै लामो छ। कृपया बढीमा २५५ क्यारेक्टरको प्रयोग गर्नुहोला।",
+	"bs-pagetemplates-tpl-label-toolong": "यो नामपत्र धेरै लामो भयो। कृपया बढीमा २५५ क्यारेक्टरको प्रयोग गर्नुहोस।",
+	"bs-pagetemplates-tpl-label-empty": "कृपया नामपत्र हाल्नुहोस।",
+	"bs-pagetemplates-tpl-name-toolong": "यो ढाँचा धेरै लामो भयो। कृपया बढीमा २५५ क्यारेक्टरको प्रयोग गर्नुहोस।",
+	"bs-pagetemplates-tpl-name-empty": "कृपया ढाँचा नाम राख्नुहोस।",
+	"bs-pagetemplates-no-id": "कृपया कुनै पृष्ठ राख्नुहोस जुन ढाँचाको रूपमा प्रयोग हुनेछ।",
+	"bs-pagetemplates-tpl-added": "यो ढाँचा जोडिएको छ।",
+	"bs-pagetemplates-invalid_pfx": "यो उपसर्ग अमान्य छ।",
+	"bs-pagetemplates-nooldtpl": "पुरानो ढाँचा खोज्न सकिएन।",
+	"bs-pagetemplates-tpl-edited": "परिवर्तन सङ्ग्रह गरिएको छ।",
+	"bs-pagetemplates-dberror": "डेटावेसमा त्रुटि उत्पन्न भयो।",
+	"bs-pagetemplates-tpl-deleted": "यो ढाँचा मेटिएको छ।",
+	"bs-pagetemplates-general-section": "सामान्य",
+	"bs-pagetemplates-pref-excludens": "यो नामस्थानहरूमा ढाँचाहरू नदेखाउने:",
+	"bs-pagetemplates-pref-forcenamespace": "लक्षित नामस्थानलाई दवाब दिने",
+	"bs-pagetemplates-headerlabel": "नामपत्र",
+	"bs-pagetemplates-headertargetnamespace": "नामस्थान",
+	"bs-pagetemplates-tipeditdetails": "ढाँचा सम्पादन गर्ने",
+	"bs-pagetemplates-tipdeletetemplate": "{{PLURAL:$1|ढाँचा|ढाँचाहरू}} मेट्ने",
+	"bs-pagetemplates-tipaddtemplate": "ढाँचा जोड्ने",
+	"bs-pagetemplates-label-tpl": "ढाँचा नाम",
+	"bs-pagetemplates-label-desc": "विवरण",
+	"bs-pagetemplates-label-targetns": "नामस्थान",
+	"bs-pagetemplates-label-tplns": "ढाँचा नामस्थान",
+	"bs-pagetemplates-label-article": "ढाँचा",
+	"bs-pagetemplates-confirm-deletetpl": "के तपाईं यस {{PLURAL:$1|यो ढाँचा|यी ढाँचाहरू}}लाई मेट्न चाहनुहुन्छ ?",
+	"bs-pagetemplates-remove-message-unknown": "अमान्य त्रुटि उत्पन्न भयो, कृपया पुन प्रयास गर्नुहोला।"
+}

@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"Shirayuki"
+		]
+	},
+	"bs-pagetemplates-desc": "ページ テンプレートの印が付けられたテンプレートの一覧を表示する",
+	"prefs-pagetemplates": "ページ テンプレート",
+	"bs-pagetemplates-empty-page": "空のページ",
+	"bs-pagetemplatesadmin-label": "ページ テンプレート",
+	"bs-pagetemplates-tpl-label-empty": "ラベルを入力してください。",
+	"bs-pagetemplates-tpl-name-empty": "テンプレート名を入力してください。",
+	"bs-pagetemplates-no-id": "テンプレートとして使用するページを入力してください。",
+	"bs-pagetemplates-tpl-added": "テンプレートを追加しました。",
+	"bs-pagetemplates-invalid_pfx": "接頭辞が無効です。",
+	"bs-pagetemplates-tpl-edited": "変更内容を保存しました。",
+	"bs-pagetemplates-dberror": "データベース エラーが発生しました。",
+	"bs-pagetemplates-tpl-deleted": "テンプレートを削除しました。",
+	"bs-pagetemplates-headerlabel": "ラベル",
+	"bs-pagetemplates-headertargetnamespace": "名前空間",
+	"bs-pagetemplates-tipeditdetails": "テンプレートの編集",
+	"bs-pagetemplates-tipdeletetemplate": "{{PLURAL:$1|テンプレート}}を削除",
+	"bs-pagetemplates-tipaddtemplate": "テンプレートの追加",
+	"bs-pagetemplates-label-tpl": "テンプレート名",
+	"bs-pagetemplates-label-desc": "説明",
+	"bs-pagetemplates-label-targetns": "名前空間",
+	"bs-pagetemplates-label-tplns": "テンプレート名前空間",
+	"bs-pagetemplates-label-article": "テンプレート",
+	"bs-pagetemplates-confirm-deletetpl": "{{PLURAL:$1|このテンプレート|これらのテンプレート}}を本当に削除しますか?",
+	"bs-pagetemplates-remove-message-success": "以下の{{PLURAL:$1|テンプレート}}を削除しました: $2",
+	"bs-pagetemplates-remove-message-failure": "以下の{{PLURAL:$1|テンプレート}}を削除できませんでした: $2 (理由: $3)"
+}

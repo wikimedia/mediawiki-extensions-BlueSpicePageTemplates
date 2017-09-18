@@ -1,0 +1,37 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chrumps"
+		]
+	},
+	"prefs-pagetemplates": "Szablony strony",
+	"bs-pagetemplates-empty-page": "Pusta strona",
+	"bs-pagetemplates-empty-page-desc": "Zacznij od pustej strony.",
+	"bs-pagetemplatesadmin-label": "Szablony strony",
+	"bs-pagetemplates-tpl-desc-toolong": "Opis jest zbyt długi. Użyj maksymalnie 255 znaków.",
+	"bs-pagetemplates-tpl-label-toolong": "Etykieta jest zbyt długa. Użyj maksymalnie 255 znaków.",
+	"bs-pagetemplates-tpl-label-empty": "Wprowadź etykietę",
+	"bs-pagetemplates-tpl-name-toolong": "Nazwa szablonu jest zbyt długa. Użyj maksymalnie 255 znaków.",
+	"bs-pagetemplates-tpl-name-empty": "Wpisz nazwę szablonu.",
+	"bs-pagetemplates-tpl-added": "Szablon został dodany.",
+	"bs-pagetemplates-invalid_pfx": "Prefiks jest nieprawidłowy.",
+	"bs-pagetemplates-tpl-edited": "Zmiany zostały zapisane.",
+	"bs-pagetemplates-dberror": "Wystąpił błąd bazy danych.",
+	"bs-pagetemplates-tpl-deleted": "Szablon został usunięty.",
+	"bs-pagetemplates-pref-excludens": "Nie pokazuj szablonów w tych przestrzeniach nazw:",
+	"bs-pagetemplates-pref-hidedefaults": "Ukryj domyślne szablony",
+	"bs-pagetemplates-headerlabel": "Etykieta",
+	"bs-pagetemplates-headertargetnamespace": "Przestrzeń nazw",
+	"bs-pagetemplates-tipeditdetails": "Edytuj szablon",
+	"bs-pagetemplates-tipdeletetemplate": "Usuń {{PLURAL:$1|szablon|szablony}}",
+	"bs-pagetemplates-tipaddtemplate": "Dodaj szablon",
+	"bs-pagetemplates-label-tpl": "Nazwa szablonu",
+	"bs-pagetemplates-label-desc": "Opis",
+	"bs-pagetemplates-label-targetns": "Przestrzeń nazw",
+	"bs-pagetemplates-label-tplns": "Przestrzeń nazw szablonów",
+	"bs-pagetemplates-label-article": "Szablon",
+	"bs-pagetemplates-confirm-deletetpl": "Czy na pewno chcesz usunąć {{PLURAL:$1|ten szablon|te szablony}}?",
+	"bs-pagetemplates-remove-message-success": "Usunięto {{PLURAL:$1|następny szablon|następujące szablony}}: $2",
+	"bs-pagetemplates-remove-message-failure": "{{PLURAL:$1|Następujący szablon nie mógł zostać usunięty|Następujące szablony nie mogły zostać usunięte}}: $2 (Powód: $3)",
+	"bs-usagetracker-pagetemplates": "szablony strony"
+}

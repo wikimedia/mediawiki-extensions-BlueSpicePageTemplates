@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Subi"
+		]
+	},
+	"bs-pagetemplates-tpl-name-toolong": "Txantiloiaren izena luzeegia da. Mesedez, erabil itzazu 255 karaktere gehienez.",
+	"bs-pagetemplates-tpl-name-empty": "Mesedez, sar ezazu txantiloiaren izena.",
+	"bs-pagetemplates-tipdeletetemplate": "Ezabatu {{PLURAL:$1|txantiloia|txantiloiak}}",
+	"bs-pagetemplates-label-desc": "Deskribapena",
+	"bs-pagetemplates-label-article": "Txantiloia",
+	"bs-pagetemplates-confirm-deletetpl": "Ziur zaude {{PLURAL:$1|txantiloi hau ezabatu nahi duzula|txantiloi hauek ezabatu nahi dituzula}}?",
+	"bs-pagetemplates-remove-message-unknown": "Ustekabeko errorea gertatu da, mesedez, saiatu berriro.",
+	"bs-pagetemplates-remove-message-success": "Ondorengo {{PLURAL:$1|txantiloia ezabatu da|txantiloiak ezabatu dira}}: $2",
+	"bs-pagetemplates-remove-message-failure": "Ondorengo {{PLURAL:$1|txantiloia ezin izan da ezabatu|txantiloiak ezin izan dira ezabatu}}: $2 (Arrazoia: $3)"
+}

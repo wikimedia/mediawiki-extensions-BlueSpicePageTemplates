@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eladk",
+			"Guycn2",
+			"המקיסט"
+		]
+	},
+	"bs-pagetemplates-tipdeletetemplate": "נמחקו {{PLURAL:$1|תבנית|תבניות}}",
+	"bs-pagetemplates-remove-message-unknown": "איראה שגיאה בלתי צפויה, אנא נסה שוב.",
+	"bs-pagetemplates-remove-message-success": "ה{{PLURAL:$1|תבנית הייתה|תבניות היו}} הבאות נמחקו:$2",
+	"bs-pagetemplates-remove-message-failure": "ה{{PLURAL:$1|תבנית|תבניות}} הבאות לא יכלו להימחק:$2(סיבה: $3)",
+	"apihelp-bs-pagetemplates-tasks-description": "לאפשר תפעול של תבניות בדפים",
+	"apihelp-bs-pagetemplates-tasks-summary": "מאפשר שינוי של תבניות דף",
+	"action-pagetemplatesadmin-viewspecialpage": "לצפות בדף המיוחד \"{{int:pagetemplatesadmin}}\"",
+	"pagetemplatesadmin": "ניהול תבניות של דפים"
+}

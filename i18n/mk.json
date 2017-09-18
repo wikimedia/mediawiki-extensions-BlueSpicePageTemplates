@@ -1,0 +1,43 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"bs-pagetemplates-desc": "Прикажуа список на шаблони означени како шаблони за страници",
+	"prefs-pagetemplates": "Шаблони за страници",
+	"bs-pagetemplates-empty-page": "Празна страница",
+	"bs-pagetemplates-empty-page-desc": "Започни со празна страница.",
+	"bs-pagetemplatesadmin-label": "Шаблони за страници",
+	"bs-pagetemplates-tpl-desc-toolong": "Описот е предолг. Треба да има највеќе 255 знаци.",
+	"bs-pagetemplates-tpl-label-toolong": "Натписот е предолг. Треба да има највеќе 255 знаци.",
+	"bs-pagetemplates-tpl-label-empty": "Внесете натпис.",
+	"bs-pagetemplates-tpl-name-toolong": "Називот на шаблонот е предолг. Треба да има највеќе 255 знаци.",
+	"bs-pagetemplates-tpl-name-empty": "Внесете назив на шаблонот.",
+	"bs-pagetemplates-no-id": "Внесете ја страницата што ќе се користи како шаблон.",
+	"bs-pagetemplates-tpl-added": "Шаблонот е додаден.",
+	"bs-pagetemplates-invalid_pfx": "Претставката е неважечка.",
+	"bs-pagetemplates-nooldtpl": "Не можев да го најдам стариот шаблон.",
+	"bs-pagetemplates-tpl-edited": "Промените се зачувани.",
+	"bs-pagetemplates-dberror": "Се јави грешка во базата.",
+	"bs-pagetemplates-tpl-deleted": "Шаблонот е избришан.",
+	"bs-pagetemplates-general-section": "Општо",
+	"bs-pagetemplates-choose-template": "Оваа страница засега не постои. Можете да создадете било која нова страница. Ако не сакате да го сторите тоа, стиснете на копчето за назад во прелистувачот за да се вратите на претходната страница. \n\nМожете да {{PLURAL:$1|го одберете|одберете еден од}} {{PLURAL:$1|следниов шаблон|следниве шаблони}}:",
+	"bs-pagetemplates-pref-excludens": "Не прикажува шаблони во следниве именски простори:",
+	"bs-pagetemplates-pref-forcenamespace": "Наметни целен именски простор",
+	"bs-pagetemplates-pref-hideifnotintargetns": "Скривај го шаблонот ако страницата не се создава во целниот именски простор",
+	"bs-pagetemplates-headerlabel": "Натпис",
+	"bs-pagetemplates-headertargetnamespace": "Именски простор",
+	"bs-pagetemplates-tipeditdetails": "Уреди го шаблонот",
+	"bs-pagetemplates-tipdeletetemplate": "Избриши {{PLURAL:$1|го шаблонот|ги шаблоните}}",
+	"bs-pagetemplates-tipaddtemplate": "Додај шаблон",
+	"bs-pagetemplates-label-tpl": "Назив на шаблонот",
+	"bs-pagetemplates-label-desc": "Опис",
+	"bs-pagetemplates-label-targetns": "Именски простор",
+	"bs-pagetemplates-label-tplns": "Именски простор на шаблонот",
+	"bs-pagetemplates-label-article": "Шаблон",
+	"bs-pagetemplates-confirm-deletetpl": "Дали сте сигурни дека сакате да {{PLURAL:$1|го избришете шаблонов|ги избришете шаблониве}}?",
+	"bs-pagetemplates-remove-message-unknown": "Се јави неочекувана грешка. Обидете се повторно.",
+	"bs-pagetemplates-remove-message-success": "{{PLURAL:$1|Избришан е следниов шаблон|Избришани се следниве шаблони}}: $2",
+	"bs-pagetemplates-remove-message-failure": "Не можев да {{PLURAL:$1|го избришам следниов шаблон|ги избришам следниве шаблони}}: $2 (Причина: $3)"
+}
