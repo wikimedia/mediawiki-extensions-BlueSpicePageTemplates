@@ -11,6 +11,10 @@
  */
 
 Ext.onReady( function(){
+	Ext.Loader.setPath(
+		'BS.PageTemplates',
+		bs.em.paths.get( 'BlueSpicePageTemplates' ) + '/resources/BS.PageTemplates'
+	);
 	Ext.create( 'BS.PageTemplates.Panel', {
 		renderTo: 'bs-pagetemplates-grid'
 	} );

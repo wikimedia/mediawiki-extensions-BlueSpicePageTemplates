@@ -10,9 +10,9 @@
 	"descriptionmsg": "bs-pagetemplates-desc",
 	"type": "bluespice",
 	"bsgExtensions": {
-		"PageTemplates": {
+		"BlueSpicePageTemplates": {
 			"className": "PageTemplates",
-			"extPath": "/BlueSpiceExtensions/PageTemplates"
+			"extPath": "/BlueSpicePageTemplates"
 		}
 	},
 	"APIModules": {
