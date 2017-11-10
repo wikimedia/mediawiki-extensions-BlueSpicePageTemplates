@@ -4,11 +4,15 @@
  * @group medium
  * @group API
  * @group BlueSpice
- * @group BlueSpiceExtensions
  * @group BlueSpicePageTemplates
  */
 class BSApiPageTemplatesStoreTest extends BSApiExtJSStoreTestBase {
 	protected $iFixtureTotal = 8;
+	protected $tablesUsed = [ 'bs_pagetemplate' ];
+
+	protected function skipAssertTotal() {
+		return true;
+	}
 
 	protected function getStoreSchema () {
 		return [
@@ -37,7 +41,14 @@ class BSApiPageTemplatesStoreTest extends BSApiExtJSStoreTestBase {
 	}
 
 	protected function createStoreFixtureData() {
-		new BSPageTemplateFixtures();
+		return;
+	}
+
+	public function addDBData() {
+		$oPageTemplateFixtures = new BSPageTemplateFixtures();
+		foreach( $oPageTemplateFixtures->makeDataSets() as $dataSet ) {
+			$this->db->insert( 'bs_pagetemplate', $dataSet );
+		}
 		return;
 	}
 

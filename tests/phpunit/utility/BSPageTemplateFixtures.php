@@ -3,15 +3,9 @@
 class BSPageTemplateFixtures {
 
 	public function __construct() {
-		$dbw = wfGetDB( DB_MASTER );
-		$dbw->delete( 'bs_pagetemplate', '*' );
-
-		foreach( $this->makeDataSets() as $dataSet ) {
-			$dbw->insert( 'bs_pagetemplate', $dataSet );
-		}
 	}
 
-	protected function makeDataSets() {
+	public function makeDataSets() {
 		return [
 			[
 				'pt_template_title' => 'Test_01',
