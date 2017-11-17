@@ -2,8 +2,8 @@
 
 /**
  * @group medium
+ * @group Database
  * @group BlueSpice
- * @group BlueSpiceExtensions
  * @group BlueSpicePageTemplates
  *
  * @covers BSPageTemplateList
@@ -12,8 +12,16 @@ class BSPageTemplatesListTest extends MediaWikiTestCase {
 
 	protected $tablesUsed = [ 'bs_pagetemplate' ];
 
+	protected function skipAssertTotal() {
+		return true;
+	}
+
 	public function addDBData() { //addDBDataOnce fails with usage of @dataProvider...
-		new BSPageTemplateFixtures();
+		$oPageTemplateFixtures = new BSPageTemplateFixtures();
+		foreach( $oPageTemplateFixtures->makeDataSets() as $dataSet ) {
+			$this->db->insert( 'bs_pagetemplate', $dataSet );
+		}
+		return;
 	}
 
 	/**

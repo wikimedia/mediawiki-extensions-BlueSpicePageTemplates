@@ -2,12 +2,26 @@
 
 /**
  * @group medium
+ * @group Database
  * @group API
  * @group BlueSpice
- * @group BlueSpiceExtensions
  * @group BlueSpicePageTemplates
  */
 class BSApiPageTemplatesTasksTest extends BSApiTasksTestBase {
+
+	protected $tablesUsed = [ 'bs_pagetemplate' ];
+
+	protected function skipAssertTotal() {
+		return true;
+	}
+
+	public function addDBData() { //addDBDataOnce fails with usage of @dataProvider...
+		$oPageTemplateFixtures = new BSPageTemplateFixtures();
+		foreach( $oPageTemplateFixtures->makeDataSets() as $dataSet ) {
+			$this->db->insert( 'bs_pagetemplate', $dataSet );
+		}
+		return;
+	}
 
 	protected function getModuleName( ) {
 		return 'bs-pagetemplates-tasks';
@@ -66,7 +80,7 @@ class BSApiPageTemplatesTasksTest extends BSApiTasksTestBase {
 
 		$aIDsToDelete = array(
 			1 => 'Test_01',
-			9 => 'Faux 1 title'
+			8 => 'Test_08'
 		);
 
 		foreach( $aIDsToDelete as $iID => $sTitle ) {
@@ -88,7 +102,7 @@ class BSApiPageTemplatesTasksTest extends BSApiTasksTestBase {
 	}
 
 	protected function isDeleted( $iID ) {
-		$db = wfGetDB( DB_REPLICA );
+		$db = $this->db;
 		$res = $db->select( 'bs_pagetemplate', array( 'pt_id' ), array( 'pt_id = ' . $iID ), wfGetCaller() );
 		if( $res->numRows() === 0 ) {
 			return true;
