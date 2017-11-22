@@ -1,12 +1,12 @@
 {
 	"name": "BlueSpicePageTemplates",
-	"version": "2.27.1-alpha",
+	"license-name" : "GPL-3.0",
+	"version": "3.0.0-alpha",
 	"url": "https://help.bluespice.com/index.php/PageTemplates",
 	"author": [
 		"Markus Glaser",
 		"Stephan Muggli"
 	],
-	"license-name" : "GPL-2.0+",
 	"descriptionmsg": "bs-pagetemplates-desc",
 	"type": "bluespice",
 	"bsgExtensions": {
