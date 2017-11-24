@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joetaras"
+		]
+	},
+	"bs-pagetemplates-headerlabel": "Etichette",
+	"bs-pagetemplates-headertargetnamespace": "Namespace",
+	"bs-pagetemplates-tipeditdetails": "Cange 'u template",
+	"bs-pagetemplates-tipdeletetemplate": "Scangìlle {{PLURAL:$1|template}}",
+	"bs-pagetemplates-tipaddtemplate": "Aggiunge 'u template",
+	"bs-pagetemplates-label-tpl": "Nome d'u template",
+	"bs-pagetemplates-label-desc": "Descrizione",
+	"bs-pagetemplates-label-targetns": "Namespace",
+	"bs-pagetemplates-label-tplns": "Namespace d'u template",
+	"bs-pagetemplates-label-article": "Template"
+}
