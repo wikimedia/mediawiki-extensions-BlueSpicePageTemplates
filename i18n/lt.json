@@ -6,8 +6,6 @@
 	},
 	"bs-pagetemplates-desc": "Rodo šablonų, kurie yra pažymėti kaip puslapio šablonai, sąrašą",
 	"prefs-pagetemplates": "Puslapio šablonai",
-	"apihelp-bs-pagetemplates-store": "Pateikia prieinamų šablonų sąrašą.",
-	"apihelp-bs-pagetemplates-tasks": "Pateikia sukūrimo, atnaujinimo ir ištrynimo užduotis šablonams.",
 	"bs-pagetemplates-empty-page": "Tuščias puslapis",
 	"bs-pagetemplates-empty-page-desc": "Pradėti su tuščiu puslapiu.",
 	"bs-pagetemplatesadmin-label": "Puslapio šablonai",

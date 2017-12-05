@@ -5,8 +5,6 @@
 			"Nicole Scalinci"
 		]
 	},
-	"apihelp-bs-pagetemplates-store": "Fornisce un elenco dei template disponibili.",
-	"apihelp-bs-pagetemplates-tasks": "Fornisce attività di creazione, aggiornamento e cancellazione per template.",
 	"bs-pagetemplates-empty-page": "Pagina vuota",
 	"bs-pagetemplates-empty-page-desc": "Inizia con una pagina vuota.",
 	"bs-pagetemplates-tpl-desc-toolong": "La descrizione è troppo lunga. Utilizza una lunghezza massima di 255 caratteri.",

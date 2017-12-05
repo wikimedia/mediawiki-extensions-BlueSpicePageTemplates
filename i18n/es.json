@@ -9,7 +9,6 @@
 	},
 	"bs-pagetemplates-desc": "Muestra una lista de plantillas marcadas como plantillas de página",
 	"prefs-pagetemplates": "Plantillas de página",
-	"apihelp-bs-pagetemplates-store": "Proporciona una lista de plantillas disponibles.",
 	"bs-pagetemplates-empty-page": "Página vacía",
 	"bs-pagetemplates-empty-page-desc": "Comenzar con una página vacía.",
 	"bs-pagetemplatesadmin-label": "Plantillas de página",
