@@ -58,14 +58,6 @@ class PageTemplates extends BsExtensionMW {
 		$this->setHook( 'MessagesPreLoad' );
 		$this->setHook( 'ParserFirstCallInit' );
 
-		// Do not use page template mechanism for these pages
-		BsConfig::registerVar( 'MW::PageTemplates::ExcludeNs', array( -2,-1,6,7,8,9,10,11,14,15 ), BsConfig::LEVEL_PUBLIC|BsConfig::TYPE_ARRAY_INT|BsConfig::USE_PLUGIN_FOR_PREFS, 'bs-pagetemplates-pref-excludens', 'multiselectex' );
-		// Force page to be created in target namespace
-		BsConfig::registerVar( 'MW::PageTemplates::ForceNamespace', false, BsConfig::LEVEL_PUBLIC|BsConfig::TYPE_BOOL, 'bs-pagetemplates-pref-forcenamespace', 'toggle' );
-		// Hide template if page is not in target namespace
-		BsConfig::registerVar( 'MW::PageTemplates::HideIfNotInTargetNs', true, BsConfig::LEVEL_PUBLIC|BsConfig::TYPE_BOOL, 'bs-pagetemplates-pref-hideifnotintargetns', 'toggle' );
-		BsConfig::registerVar( 'MW::PageTemplates::HideDefaults', false, BsConfig::LEVEL_PUBLIC|BsConfig::TYPE_BOOL, 'bs-pagetemplates-pref-hidedefaults', 'toggle' );
-
 		$this->mCore->registerPermission( 'pagetemplatesadmin-viewspecialpage', array( 'sysop' ), array( 'type' => 'global' ) );
 
 		wfProfileOut( 'BS::'.__METHOD__ );
@@ -82,22 +74,6 @@ class PageTemplates extends BsExtensionMW {
 			__DIR__.'/'.'db'.'/'.'PageTemplates.sql'
 		);
 		return true;
-	}
-
-	public function runPreferencePlugin( $sAdapterName, $oVariable ) {
-		$aNamespaces = array();
-		global $wgContLang;
-
-		foreach ( $wgContLang->getNamespaces() as $ns ) {
-			$nsIndex = $wgContLang->getNsIndex( $ns );
-			$aNamespaces[$nsIndex] = BsNamespaceHelper::getNamespaceName( $nsIndex );
-		}
-
-		$aPrefs = array(
-			'type' => 'multiselectex',
-			'options' => $aNamespaces,
-		);
-		return $aPrefs;
 	}
 
 	/**
@@ -172,10 +148,12 @@ class PageTemplates extends BsExtensionMW {
 		// if we are not on a wiki page, return. This is important when calling import scripts that try to create nonexistent pages, e.g. importImages
 		if ( !is_object( $oTitle ) ) return true;
 
+		$config = \MediaWiki\MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
+
 		$oPageTemplateList = new BSPageTemplateList( $oTitle, array(
-			BSPageTemplateList::HIDE_IF_NOT_IN_TARGET_NS => BsConfig::get( 'MW::PageTemplates::HideIfNotInTargetNs' ),
-			BSPageTemplateList::FORCE_NAMESPACE => BsConfig::get( 'MW::PageTemplates::ForceNamespace' ),
-			BSPageTemplateList::HIDE_DEFAULTS => BsConfig::get( 'MW::PageTemplates::HideDefaults' )
+			BSPageTemplateList::HIDE_IF_NOT_IN_TARGET_NS => $config->get( 'PageTemplatesHideIfNotInTargetNs' ),
+			BSPageTemplateList::FORCE_NAMESPACE => $config->get( 'PageTemplatesForceNamespace' ),
+			BSPageTemplateList::HIDE_DEFAULTS => $config->get( 'PageTemplatesHideDefaults' )
 		) );
 
 		$oPageTemplateListRenderer = new BSPageTemplateListRenderer();
@@ -200,7 +178,8 @@ class PageTemplates extends BsExtensionMW {
 			if ( $oTarget->isKnown() ) return true;
 		}
 
-		$aExNs = BsConfig::get( 'MW::PageTemplates::ExcludeNs' );
+		$config = \MediaWiki\MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
+		$aExNs = $config->get( 'PageTemplatesExcludeNs' );
 		if ( in_array( $oTarget->getNamespace(), $aExNs ) ) {
 			return true;
 		}

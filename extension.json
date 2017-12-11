@@ -9,10 +9,20 @@
 	],
 	"descriptionmsg": "bs-pagetemplates-desc",
 	"type": "bluespice",
-	"bsgExtensions": {
-		"BlueSpicePageTemplates": {
-			"className": "PageTemplates",
-			"extPath": "/BlueSpicePageTemplates"
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpicePageTemplates": {
+					"className": "PageTemplates",
+					"extPath": "/BlueSpicePageTemplates",
+					"configDefinition": {
+						"PageTemplateExcludeNs": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesExcludeNs::getInstance",
+						"PageTemplateForceNamespace": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesForceNamespace::getInstance",
+						"PageTemplateHideDefaults": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesHideDefaults::getInstance",
+						"PageTemplateHideIfNotInTargetNs": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesHideIfNotInTargetNS::getInstance"
+					}
+				}
+			}
 		}
 	},
 	"APIModules": {
@@ -36,6 +46,31 @@
 	},
 	"ExtensionMessagesFiles": {
 		"PageTemplatesAdminAlias": "includes/specials/SpecialPageTemplatesAdmin.alias.php"
+	},
+	"config-prefix": "bsg",
+	"config": {
+		"PageTemplatesExcludesNs": {
+			"value": [
+				-2, -1, 6, 7, 8, 9,10,11,14,15
+			],
+			"msgdescription": "bs-pagetemplates-pref-excludens",
+			"public": true
+		},
+		"PageTemplatesForceNamespace": {
+			"value": false,
+			"msgdescription": "bs-pagetemplates-pref-forcenamespace",
+			"public": true
+		},
+		"PageTemplatesHideIfNotInTargetNs": {
+			"value": true,
+			"msgdescription": "bs-pagetemplates-pref-hideifnotintargetns",
+			"public": true
+		},
+		"PageTemplatesHideDefaults": {
+			"value": false,
+			"msgdescription": "bs-pagetemplates-pref-hidedefaults",
+			"public": true
+		}
 	},
 	"SpecialPages": {
 		"PageTemplatesAdmin": "SpecialPageTemplatesAdmin"
@@ -77,5 +112,5 @@
 		"UnitTestsList": "PageTemplates::onUnitTestsList"
 	},
 	"load_composer_autoloader": true,
-	"manifest_version": 1
+	"manifest_version": 2
 }
