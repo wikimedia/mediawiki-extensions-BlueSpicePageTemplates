@@ -1,13 +1,21 @@
 {
 	"@metadata": {
 		"authors": [
-			"Subi"
+			"Subi",
+			"Mikel Ibaiba"
 		]
 	},
 	"bs-pagetemplates-tpl-name-toolong": "Txantiloiaren izena luzeegia da. Mesedez, erabil itzazu 255 karaktere gehienez.",
 	"bs-pagetemplates-tpl-name-empty": "Mesedez, sar ezazu txantiloiaren izena.",
+	"bs-pagetemplates-general-section": "Orokorra",
+	"bs-pagetemplates-headerlabel": "Etiketa",
+	"bs-pagetemplates-headertargetnamespace": "Izen-tartea",
+	"bs-pagetemplates-tipeditdetails": "Txantiloia aldatu",
 	"bs-pagetemplates-tipdeletetemplate": "Ezabatu {{PLURAL:$1|txantiloia|txantiloiak}}",
+	"bs-pagetemplates-tipaddtemplate": "Txantiloia gehitu",
+	"bs-pagetemplates-label-tpl": "Txantiloiaren izena",
 	"bs-pagetemplates-label-desc": "Deskribapena",
+	"bs-pagetemplates-label-targetns": "Izen-tartea",
 	"bs-pagetemplates-label-article": "Txantiloia",
 	"bs-pagetemplates-confirm-deletetpl": "Ziur zaude {{PLURAL:$1|txantiloi hau ezabatu nahi duzula|txantiloi hauek ezabatu nahi dituzula}}?",
 	"bs-pagetemplates-remove-message-unknown": "Ustekabeko errorea gertatu da, mesedez, saiatu berriro.",
