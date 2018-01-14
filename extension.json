@@ -47,7 +47,7 @@
 	"ExtensionMessagesFiles": {
 		"PageTemplatesAdminAlias": "includes/specials/SpecialPageTemplatesAdmin.alias.php"
 	},
-	"config-prefix": "bsg",
+	"config_prefix": "bsg",
 	"config": {
 		"PageTemplatesExcludeNs": {
 			"value": [
