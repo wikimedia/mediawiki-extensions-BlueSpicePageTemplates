@@ -36,17 +36,6 @@
  */
 class PageTemplates extends BsExtensionMW {
 
-	public function __construct() {
-		wfProfileIn( 'BS::'.__METHOD__ );
-		WikiAdmin::registerModuleClass( 'PageTemplatesAdmin', array(
-			'image' => '/extensions/BlueSpiceExtensions/WikiAdmin/resources/images/bs-btn_templates_v1.png',
-			'level' => 'wikiadmin',
-			'message' => 'bs-pagetemplatesadmin-label',
-			'iconCls' => 'bs-icon-clipboard-checked',
-			'permissions' => [ 'pagetemplatesadmin-viewspecialpage' ],
-		) );
-		wfProfileOut( 'BS::'.__METHOD__ );
-	}
 	/**
 	 * Initialization of PageTemplates extension
 	 */

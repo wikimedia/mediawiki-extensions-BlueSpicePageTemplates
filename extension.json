@@ -22,6 +22,9 @@
 						"PageTemplateHideIfNotInTargetNs": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesHideIfNotInTargetNS::getInstance"
 					}
 				}
+			},
+			"AdminToolRegistry": {
+				"bs-pagetemplates": "BlueSpice\\PageTemplates\\AdminTool"
 			}
 		}
 	},
