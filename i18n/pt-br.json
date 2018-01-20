@@ -1,11 +1,23 @@
 {
 	"@metadata": {
 		"authors": [
-			"Felipe L. Ewald"
+			"Felipe L. Ewald",
+			"Eduardo Addad de Oliveira"
 		]
 	},
+	"bs-pagetemplates-desc": "Apresenta uma lista de predefinições marcadas como modelos de páginas",
 	"prefs-pagetemplates": "Modelos de páginas",
+	"bs-pagetemplates-empty-page": "Página vazia",
+	"bs-pagetemplates-empty-page-desc": "Começar com uma página vazia.",
 	"bs-pagetemplatesadmin-label": "Modelos de páginas",
+	"bs-pagetemplates-tpl-desc-toolong": "A descrição é muita longa. Por favor, use um máximo de 255 carateres.",
+	"bs-pagetemplates-tpl-label-toolong": "O rótulo é muita longo. Por favor, use um máximo de 255 caráteres.",
+	"bs-pagetemplates-tpl-label-empty": "Por favor, introduza um rótulo.",
+	"bs-pagetemplates-tpl-name-toolong": "O nome do modelo de página é muito longo. Por favor, use um máximo de 255 carateres.",
+	"bs-pagetemplates-tpl-name-empty": "Por favor, insira um nome para a predefinição de página.",
+	"bs-pagetemplates-no-id": "Introduza o nome de uma página para ser usada como predefinição, por favor.",
+	"bs-pagetemplates-tpl-added": "A predefinição de página foi adicionado.",
+	"bs-pagetemplates-invalid_pfx": "O prefixo é inválido.",
 	"bs-pagetemplates-general-section": "Geral",
 	"bs-pagetemplates-headertargetnamespace": "Espaço nominal",
 	"bs-pagetemplates-label-tpl": "Nome da predefinição",
