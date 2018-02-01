@@ -2,7 +2,7 @@
 	"name": "mediawiki/blue-spice-page-templates",
 	"type": "mediawiki-extension",
 	"description": "Displays a list of templates marked as page templates",
-	"license": "GPL-3.0",
+	"license": "GPL-3.0-only",
 	"require": {
 		"composer/installers": "~1.0"
 	},
