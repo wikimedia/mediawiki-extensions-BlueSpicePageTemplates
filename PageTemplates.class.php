@@ -40,16 +40,12 @@ class PageTemplates extends BsExtensionMW {
 	 * Initialization of PageTemplates extension
 	 */
 	protected function initExt() {
-		wfProfileIn( 'BS::'.__METHOD__ );
-
 		//Hooks
 		$this->setHook( 'LinkBegin' );
 		$this->setHook( 'MessagesPreLoad' );
 		$this->setHook( 'ParserFirstCallInit' );
 
 		$this->mCore->registerPermission( 'pagetemplatesadmin-viewspecialpage', array( 'sysop' ), array( 'type' => 'global' ) );
-
-		wfProfileOut( 'BS::'.__METHOD__ );
 	}
 
 	/**

@@ -31,9 +31,6 @@ class PageTemplatesAdmin {
 	 * Constructor of PageTemplatesAdmin class
 	 */
 	public function __construct() {
-		wfProfileIn( 'BS::'.__METHOD__ );
-
 		$this->oExtension = BsExtensionManager::getExtension( 'PageTemplates' );
-		wfProfileOut( 'BS::'.__METHOD__ );
 	}
 }
