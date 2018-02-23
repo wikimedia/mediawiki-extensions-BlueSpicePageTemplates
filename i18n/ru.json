@@ -5,7 +5,8 @@
 			"Striking Blue",
 			"Irus",
 			"Kaganer",
-			"Redredsonia"
+			"Redredsonia",
+			"Mouse21"
 		]
 	},
 	"bs-pagetemplates-desc": "Отображает список шаблонов, помеченных как шаблоны страниц",
@@ -45,5 +46,11 @@
 	"bs-pagetemplates-remove-message-unknown": "Произошла непредвиденная ошибка, попробуйте ещё ​​раз.",
 	"bs-pagetemplates-remove-message-success": "{{PLURAL:$1|Следующий шаблон был удалён|Следующие шаблоны были удалены}}: $2",
 	"bs-pagetemplates-remove-message-failure": "{{PLURAL:$1|Следующий шаблон не был удалён|Следующие шаблоны не были удалены}}: $2 (Причина: $3)",
+	"apihelp-bs-pagetemplates-store-description": "Перечисляет все шаблоны страниц. Разрешает сортировку, фильтр и разбиение на страницы. Реализовывает параметры ExtJS Store.",
+	"apihelp-bs-pagetemplates-store-summary": "Перечисляет все шаблоны страниц. Разрешает сортировку, фильтр и разбиение на страницы. Реализовывает параметры ExtJS Store.",
+	"apihelp-bs-pagetemplates-tasks-description": "Позволяет манипулировать шаблонами страниц",
+	"apihelp-bs-pagetemplates-tasks-summary": "Позволяет манипулировать шаблонами страниц",
+	"action-pagetemplatesadmin-viewspecialpage": "просмотреть специальную страницу \"{{int:pagetemplatesadmin}}\"",
+	"pagetemplatesadmin": "Управление шаблонами страниц",
 	"bs-usagetracker-pagetemplates": "шаблоны страниц"
 }
