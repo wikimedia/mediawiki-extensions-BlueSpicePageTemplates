@@ -15,11 +15,11 @@
 				"BlueSpicePageTemplates": {
 					"className": "PageTemplates",
 					"extPath": "/BlueSpicePageTemplates",
-					"configDefinition": {
-						"PageTemplateExcludeNs": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesExcludeNs::getInstance",
-						"PageTemplateForceNamespace": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesForceNamespace::getInstance",
-						"PageTemplateHideDefaults": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesHideDefaults::getInstance",
-						"PageTemplateHideIfNotInTargetNs": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesHideIfNotInTargetNS::getInstance"
+					"configDefinitions": {
+						"PageTemplatesExcludeNs": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesExcludeNs::getInstance",
+						"PageTemplatesForceNamespace": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesForceNamespace::getInstance",
+						"PageTemplatesHideDefaults": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesHideDefaults::getInstance",
+						"PageTemplatesHideIfNotInTargetNs": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesHideIfNotInTargetNS::getInstance"
 					}
 				}
 			},
