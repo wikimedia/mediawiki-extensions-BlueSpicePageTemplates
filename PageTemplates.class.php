@@ -44,8 +44,6 @@ class PageTemplates extends BsExtensionMW {
 		$this->setHook( 'LinkBegin' );
 		$this->setHook( 'MessagesPreLoad' );
 		$this->setHook( 'ParserFirstCallInit' );
-
-		$this->mCore->registerPermission( 'pagetemplatesadmin-viewspecialpage', array( 'sysop' ), array( 'type' => 'global' ) );
 	}
 
 	/**

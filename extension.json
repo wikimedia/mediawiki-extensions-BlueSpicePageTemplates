@@ -25,9 +25,32 @@
 			},
 			"AdminToolRegistry": {
 				"bs-pagetemplates": "BlueSpice\\PageTemplates\\AdminTool"
+			},
+			"PermissionRegistry": {
+				"pagetemplatesadmin-viewspecialpage": {
+					"type": "global",
+					"roles": [
+						"admin",
+						"demo"
+					]
+				}
 			}
 		}
 	},
+	"GroupPermissions": {
+		"*": {
+			"pagetemplatesadmin-viewspecialpage": false
+		},
+		"user": {
+			"pagetemplatesadmin-viewspecialpage": false
+		},
+		"sysop": {
+			"pagetemplatesadmin-viewspecialpage": true
+		}
+	},
+	"AvailableRights": [
+		"pagetemplatesadmin-viewspecialpage"
+	],
 	"APIModules": {
 		"bs-pagetemplates-store": "BSApiPageTemplatesStore",
 		"bs-pagetemplates-tasks": "BSApiPageTemplatesTasks"
