@@ -17,4 +17,17 @@ class PageTemplatesExcludeNs extends ArraySetting {
 	public function getLabelMessageKey() {
 		return 'bs-pagetemplates-pref-excludens';
 	}
+
+	public function getOptions() {
+		$language = \RequestContext::getMain()->getLanguage();
+		$exclude = array( NS_MEDIAWIKI, NS_SPECIAL, NS_MEDIA );
+		foreach ( $language->getNamespaces() as $namespace ) {
+			$nsIndx = $language->getNsIndex( $namespace );
+			if( !\MWNamespace::isTalk( $nsIndx ) ) {
+				continue;
+			}
+			$exclude[] = $nsIndx;
+		}
+		return \BsNamespaceHelper::getNamespacesForSelectOptions( $exclude );
+	}
 }
