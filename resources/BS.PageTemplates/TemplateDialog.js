@@ -13,10 +13,10 @@
  */
 
 Ext.define( 'BS.PageTemplates.TemplateDialog', {
-	extend: 'BS.Window',
+	extend: 'MWExt.Dialog',
 	currentData: {},
 	selectedData: {},
-	afterInitComponent: function() {
+	makeItems: function() {
 		this.tfLabel = Ext.create( 'Ext.form.TextField', {
 			fieldLabel: mw.message( 'bs-pagetemplates-label-tpl' ).plain(),
 			labelWidth: 135,
@@ -38,19 +38,18 @@ Ext.define( 'BS.PageTemplates.TemplateDialog', {
 			includeAll: true
 		} );
 
-		this.cbTemplate = Ext.create( 'BS.form.field.TitleCombo', {
+		this.cbTemplate = Ext.create( 'Ext.form.TextField', {
 			fieldLabel: mw.message( 'bs-pagetemplates-label-article' ).plain(),
+			labelWidth: 135,
 			labelAlign: 'right'
 		});
 
-		this.items = [
+		return [
 			this.tfLabel,
 			this.taDesc,
 			this.cbTragetNamespace,
 			this.cbTemplate
 		];
-
-		this.callParent(arguments);
 	},
 	storePagesReload: function( combo, records, eOpts ) {
 		this.strPages.load( { params: { ns: records[0].get( 'id' ) } } );
@@ -79,7 +78,7 @@ Ext.define( 'BS.PageTemplates.TemplateDialog', {
 		this.selectedData.label = this.tfLabel.getValue();
 		this.selectedData.desc = this.taDesc.getValue();
 		this.selectedData.targetns = this.cbTragetNamespace.getValue();
-		this.selectedData.template = this.cbTemplate.getValue().getPrefixedText();
+		this.selectedData.template = this.cbTemplate.getValue();
 
 		return this.selectedData;
 	}
