@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nikosgranturismogt"
+		]
+	},
+	"prefs-pagetemplates": "Πρότυπα σελίδων",
+	"bs-pagetemplates-empty-page": "Άδεια σελίδα",
+	"bs-pagetemplates-empty-page-desc": "Ξεκινήστε με μια άδεια σελίδα.",
+	"bs-pagetemplatesadmin-label": "Πρότυπα σελίδων",
+	"bs-pagetemplates-tpl-desc-toolong": "Η περιγραφή είναι πολύ μεγάλη. Παρακαλώ χρησιμοποιήστε ένα μέγιστο μέγεθος 255 χαρακτήρων.",
+	"bs-pagetemplates-general-section": "Γενικά",
+	"bs-pagetemplates-headerlabel": "Ετικέτα",
+	"bs-pagetemplates-headertargetnamespace": "Ονοματοχώρος",
+	"bs-pagetemplates-tipeditdetails": "Επεξεργασία προτύπου",
+	"bs-pagetemplates-tipaddtemplate": "Προσθήκη προτύπου",
+	"bs-pagetemplates-label-tpl": "Όνομα προτύπου",
+	"bs-pagetemplates-label-desc": "Περιγραφή",
+	"bs-pagetemplates-label-targetns": "Ονοματοχώρος",
+	"bs-pagetemplates-label-tplns": "Ονοματοχώρος προτύπων",
+	"bs-pagetemplates-label-article": "Πρότυπο",
+	"pagetemplatesadmin": "Διαχείριση προτύπων σελίδας",
+	"bs-usagetracker-pagetemplates": "Πρότυπα σελίδας"
+}

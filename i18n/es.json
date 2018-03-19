@@ -29,6 +29,7 @@
 	"bs-pagetemplates-pref-excludens": "No muestre las plantillas en estos espacios de nombres:",
 	"bs-pagetemplates-pref-forcenamespace": "Forzar espacio de nombres de destino",
 	"bs-pagetemplates-pref-hideifnotintargetns": "Ocultar plantilla si la página no se va a crear en el espacio de nombres de destino",
+	"bs-pagetemplates-pref-hidedefaults": "Ocultar las plantillas predeterminadas",
 	"bs-pagetemplates-headerlabel": "Etiqueta",
 	"bs-pagetemplates-headertargetnamespace": "Espacio de nombres",
 	"bs-pagetemplates-tipeditdetails": "Editar la plantilla",
@@ -43,6 +44,8 @@
 	"bs-pagetemplates-remove-message-unknown": "Se produjo un error inesperado. Inténtalo nuevamente.",
 	"bs-pagetemplates-remove-message-success": "{{PLURAL:$1|La siguiente plantilla fue borrada|Las siguientes plantillas fueron borradas}}:$2",
 	"bs-pagetemplates-remove-message-failure": "{{PLURAL:$1|La siguiente plantilla no se pudo|Las siguientes plantillas no se pudieron}} borrar:$2(Motivo: $3)",
+	"apihelp-bs-pagetemplates-tasks-description": "Permite la manipulación de plantillas de páginas",
+	"apihelp-bs-pagetemplates-tasks-summary": "Permite la manipulación de plantillas de páginas",
 	"action-pagetemplatesadmin-viewspecialpage": "ver la página especial \"{{int:pagetemplatesadmin}}\"",
 	"pagetemplatesadmin": "Administración de plantillas de páginas",
 	"bs-usagetracker-pagetemplates": "plantillas de página"
