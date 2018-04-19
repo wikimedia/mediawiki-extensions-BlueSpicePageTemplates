@@ -134,8 +134,7 @@
 	},
 	"Hooks": {
 		"LoadExtensionSchemaUpdates": "PageTemplates::getSchemaUpdates",
-		"BSUsageTrackerRegisterCollectors": "PageTemplates::onBSUsageTrackerRegisterCollectors",
-		"UnitTestsList": "PageTemplates::onUnitTestsList"
+		"BSUsageTrackerRegisterCollectors": "PageTemplates::onBSUsageTrackerRegisterCollectors"
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2

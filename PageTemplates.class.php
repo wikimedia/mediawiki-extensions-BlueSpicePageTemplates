@@ -192,13 +192,4 @@ class PageTemplates extends BsExtensionMW {
 		return true;
 	}
 
-	/**
-	 * Register PHP Unit Tests with MediaWiki framework
-	 * @param array $paths
-	 * @return boolean
-	 */
-	public static function onUnitTestsList( &$paths ) {
-		$paths[] =  __DIR__ . '/tests/phpunit/';
-		return true;
-	}
 }
