@@ -5,5 +5,6 @@
 		]
 	},
 	"bs-pagetemplates-headertargetnamespace": "Именно пространство",
+	"bs-pagetemplates-label-desc": "Описание",
 	"bs-pagetemplates-label-targetns": "Именно пространство"
 }
