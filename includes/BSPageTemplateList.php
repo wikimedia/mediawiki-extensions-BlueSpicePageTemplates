@@ -92,9 +92,10 @@ class BSPageTemplateList {
 			);
 
 			$oTargetTitle = $this->oTitle;
-			if( $this->aConfig[self::FORCE_NAMESPACE] ) {
+			if( $this->aConfig[self::FORCE_NAMESPACE]
+				&& (int)$aDataSet['pt_target_namespace'] !== static::ALL_NAMESPACES_PSEUDO_ID ) {
 				$oTargetTitle = Title::makeTitle(
-					$aDataSet['pt_template_namespace'],
+					$aDataSet['pt_target_namespace'],
 					$this->oTitle->getText()
 				);
 			}
