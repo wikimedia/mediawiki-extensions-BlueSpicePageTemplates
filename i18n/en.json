@@ -47,5 +47,6 @@
 	"apihelp-bs-pagetemplates-tasks-summary": "Allows manipulation of page templates",
 	"action-pagetemplatesadmin-viewspecialpage": "view specialpage \"{{int:pagetemplatesadmin}}\"",
 	"pagetemplatesadmin": "Page templates administration",
-	"bs-usagetracker-pagetemplates": "page templates"
+	"bs-usagetracker-pagetemplates": "page templates",
+	"bs-pagetemplates-nsm-label": "PageTemplates"
 }

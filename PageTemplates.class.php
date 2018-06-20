@@ -29,6 +29,9 @@
  * @filesource
  */
 
+use MediaWiki\Linker\LinkRenderer;
+use MediaWiki\Linker\LinkTarget;
+
 /**
  * Base class for PageTemplates extension
  * @package BlueSpice_Extensions
@@ -41,7 +44,6 @@ class PageTemplates extends BsExtensionMW {
 	 */
 	protected function initExt() {
 		//Hooks
-		$this->setHook( 'LinkBegin' );
 		$this->setHook( 'MessagesPreLoad' );
 		$this->setHook( 'ParserFirstCallInit' );
 	}
@@ -144,31 +146,20 @@ class PageTemplates extends BsExtensionMW {
 		return $oPageTemplateListRenderer->render( $oPageTemplateList );
 	}
 
-	/**
-	 * Hook handler for LinkBegin
-	 * @param Linker $oLinker
-	 * @param Title $oTarget
-	 * @param string $sHtml
-	 * @param array $aCustomAttribs
-	 * @param array $aQuery
-	 * @param array $aOptions
-	 * @param string $sRet
-	 * @return boolean Always true to keep hook running
-	 */
-	public function onLinkBegin( $oLinker, $oTarget, &$sHtml, &$aCustomAttribs, &$aQuery, &$aOptions, &$sRet ) {
-		if ( in_array( 'known', $aOptions, true ) ) return true;
-		if ( !in_array( 'broken', $aOptions, true ) ){ //It's not marked as "known" and not as "broken" so we have to check
-			if ( $oTarget->isKnown() ) return true;
+	public static function onHtmlPageLinkRendererBegin( LinkRenderer $linkRenderer, LinkTarget $target, &$text, &$extraAttribs, &$query, &$ret ) {
+		if ( in_array( 'known', $extraAttribs, true ) ) return true;
+		if ( !in_array( 'broken', $extraAttribs, true ) ){ //It's not marked as "known" and not as "broken" so we have to check
+			if ( $target->isKnown() ) return true;
 		}
 
 		$config = \MediaWiki\MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
 		$aExNs = $config->get( 'PageTemplatesExcludeNs' );
-		if ( in_array( $oTarget->getNamespace(), $aExNs ) ) {
+		if ( in_array( $target->getNamespace(), $aExNs ) ) {
 			return true;
 		}
 
-		if ( !isset( $aQuery['preload'] ) ) {
-			$aQuery['action'] = 'view';
+		if ( !isset( $query['preload'] ) ) {
+			$query['action'] = 'view';
 		}
 
 		return true;

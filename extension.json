@@ -16,7 +16,6 @@
 					"className": "PageTemplates",
 					"extPath": "/BlueSpicePageTemplates",
 					"configDefinitions": {
-						"PageTemplatesExcludeNs": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesExcludeNs::getInstance",
 						"PageTemplatesForceNamespace": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesForceNamespace::getInstance",
 						"PageTemplatesHideDefaults": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesHideDefaults::getInstance",
 						"PageTemplatesHideIfNotInTargetNs": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesHideIfNotInTargetNS::getInstance"
@@ -78,9 +77,7 @@
 		"PageTemplatesExcludeNs": {
 			"value": [
 				-2, -1, 6, 7, 8, 9,10,11,14,15
-			],
-			"msgdescription": "bs-pagetemplates-pref-excludens",
-			"public": true
+			]
 		},
 		"PageTemplatesForceNamespace": {
 			"value": false,
@@ -134,7 +131,14 @@
 	},
 	"Hooks": {
 		"LoadExtensionSchemaUpdates": "PageTemplates::getSchemaUpdates",
-		"BSUsageTrackerRegisterCollectors": "PageTemplates::onBSUsageTrackerRegisterCollectors"
+		"BSUsageTrackerRegisterCollectors": "PageTemplates::onBSUsageTrackerRegisterCollectors",
+		"NamespaceManager::getMetaFields": "BlueSpice\\PageTemplates\\Hook\\NamespaceManagerGetMetaFields\\RegisterMetaField::callback",
+		"BSApiNamespaceStoreMakeData": "BlueSpice\\PageTemplates\\Hook\\BSApiNamespaceStoreMakeData\\AddData::callback",
+		"NamespaceManager::editNamespace": "BlueSpice\\PageTemplates\\Hook\\NamespaceManagerEditNamespace\\SetPageTemplateValues::callback",
+		"NamespaceManager::writeNamespaceConfiguration": [
+			"BlueSpice\\PageTemplates\\Hook\\NamespaceManagerWriteNamespaceConfiguration\\WriteToConfiguration::callback"
+		],
+		"HtmlPageLinkRendererBegin": "PageTemplates::onHtmlPageLinkRendererBegin"
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2
