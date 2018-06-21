@@ -48,5 +48,6 @@
 	"apihelp-bs-pagetemplates-tasks-summary": "Erlaubt die Veränderung von Seitenvorlagen",
 	"action-pagetemplatesadmin-viewspecialpage": "die Spezialseite „{{int:pagetemplatesadmin}}“ anzusehen",
 	"pagetemplatesadmin": "Seitenvorlagenverwaltung",
-	"bs-usagetracker-pagetemplates": "Seitenvorlagen"
+	"bs-usagetracker-pagetemplates": "Seitenvorlagen",
+	"bs-pagetemplates-nsm-label": "PageTemplates"
 }

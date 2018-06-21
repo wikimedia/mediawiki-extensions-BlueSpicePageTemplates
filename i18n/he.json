@@ -47,5 +47,6 @@
 	"apihelp-bs-pagetemplates-tasks-summary": "לאפשר תפעול של תבניות בדפים",
 	"action-pagetemplatesadmin-viewspecialpage": "לצפות בדף המיוחד \"{{int:pagetemplatesadmin}}\"",
 	"pagetemplatesadmin": "ניהול תבניות של דפים",
-	"bs-usagetracker-pagetemplates": "תבניות דפים"
+	"bs-usagetracker-pagetemplates": "תבניות דפים",
+	"bs-pagetemplates-nsm-label": "תבניות דפים"
 }

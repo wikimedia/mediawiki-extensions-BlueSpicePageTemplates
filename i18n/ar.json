@@ -49,5 +49,6 @@
 	"apihelp-bs-pagetemplates-tasks-summary": "يسمح بمعالجة قوالب الصفحة",
 	"action-pagetemplatesadmin-viewspecialpage": "عرض الصفحة الخاصة \"{{int:pagetemplatesadmin}}\"",
 	"pagetemplatesadmin": "إدارة قوالب الصفحة",
-	"bs-usagetracker-pagetemplates": "قوالب الصفحة"
+	"bs-usagetracker-pagetemplates": "قوالب الصفحة",
+	"bs-pagetemplates-nsm-label": "قوالب الصفحة"
 }

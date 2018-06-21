@@ -48,5 +48,6 @@
 	"apihelp-bs-pagetemplates-tasks-summary": "Autorise la manipulation des modèles de page",
 	"action-pagetemplatesadmin-viewspecialpage": "voir la page spéciale \"{{int:pagetemplatesadmin}}\"",
 	"pagetemplatesadmin": "Gestion des modèles de page",
-	"bs-usagetracker-pagetemplates": "modèles de page"
+	"bs-usagetracker-pagetemplates": "modèles de page",
+	"bs-pagetemplates-nsm-label": "Modèles de page"
 }
