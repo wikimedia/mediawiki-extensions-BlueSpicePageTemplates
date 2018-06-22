@@ -59,6 +59,9 @@
 			"i18n"
 		]
 	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\PageTemplates\\": "src/"
+	},
 	"AutoloadClasses": {
 		"PageTemplates": "PageTemplates.class.php",
 		"BSApiPageTemplatesStore": "includes/api/BSApiPageTemplatesStore.php",

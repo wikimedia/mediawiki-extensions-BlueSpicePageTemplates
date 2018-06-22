@@ -73,15 +73,19 @@ class BSPageTemplateList {
 			return;
 		}
 
+		$targetUrl = $this->oTitle->getLinkURL( [ 'action' => 'edit' ] );
+		Hooks::run( 'BSPageTemplatesModifyTargetUrl', array( $this->oTitle, null, &$targetUrl ) );
+
 		$this->aDataSets[-1] = [
 			'pt_template_title' => null,
 			'pt_template_namespace' => null,
 			'pt_label' => wfMessage( 'bs-pagetemplates-empty-page' )->plain(),
 			'pt_desc' => wfMessage( 'bs-pagetemplates-empty-page-desc' )->plain(),
 			'pt_target_namespace' => -98, //Needs to be something non-existent, but I did not want to use well known pseudo namespace ids
-			'target_url' => $this->oTitle->getLinkURL( [ 'action' => 'edit' ] ),
+			'target_url' => $targetUrl,
 			'type' => 'empty'
 		];
+
 	}
 
 	protected function filterByPermissionAndAddTargetUrls() {
@@ -106,10 +110,12 @@ class BSPageTemplateList {
 				continue;
 			}
 
-			$aDataSet['target_url'] = $oTargetTitle->getLinkURL( [
+			$targetUrl = $oTargetTitle->getLinkURL( [
 				'action' => 'edit',
 				'preload' => $oPreloadTitle->getPrefixedDBkey()
 			] );
+			Hooks::run( 'BSPageTemplatesModifyTargetUrl', array( $oTargetTitle, $oPreloadTitle, &$targetUrl ) );
+			$aDataSet['target_url'] = $targetUrl;
 		}
 	}
 
