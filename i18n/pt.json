@@ -7,10 +7,10 @@
 		]
 	},
 	"bs-pagetemplates-desc": "Apresenta uma lista de predefinições marcadas como modelos de páginas",
-	"prefs-pagetemplates": "Modelos de páginas",
+	"prefs-pagetemplates": "Modelos de página",
 	"bs-pagetemplates-empty-page": "Página vazia",
 	"bs-pagetemplates-empty-page-desc": "Começar com uma página vazia.",
-	"bs-pagetemplatesadmin-label": "Modelos de páginas",
+	"bs-pagetemplatesadmin-label": "Modelos de página",
 	"bs-pagetemplates-tpl-desc-toolong": "A descrição é demasiado longa. Por favor, use um máximo de 255 carateres.",
 	"bs-pagetemplates-tpl-label-toolong": "O rótulo é demasiado longo. Por favor, use um máximo de 255 carateres.",
 	"bs-pagetemplates-tpl-label-empty": "Por favor, introduza um rótulo.",
@@ -43,11 +43,12 @@
 	"bs-pagetemplates-remove-message-unknown": "Ocorreu um erro inesperado, por favor tente novamente.",
 	"bs-pagetemplates-remove-message-success": "{{PLURAL:$1|O seguinte modelo foi eliminado|Os seguintes modelos foram eliminados}}: $2",
 	"bs-pagetemplates-remove-message-failure": "{{PLURAL:$1|O seguinte modelo não pode ser eliminado|Os seguintes modelos não podem ser eliminados}}: $2 (Motivo: $3)",
-	"apihelp-bs-pagetemplates-store-description": "Lista todos os modelos de páginas. Permite ordenar, filtrar e paginar. Implementa os parâmetros ExtJS Store.",
+	"apihelp-bs-pagetemplates-store-description": "Lista todos os modelos de página. Permite ordenar, filtrar e paginar. Implementa os parâmetros ExtJS Store.",
 	"apihelp-bs-pagetemplates-store-summary": "Lista todos os modelos de página. Permite ordenar, filtrar e paginar. Implementa os parâmetros ExtJS Store.",
-	"apihelp-bs-pagetemplates-tasks-description": "Permite a manipulação de modelos de páginas",
+	"apihelp-bs-pagetemplates-tasks-description": "Permite a manipulação de modelos de página",
 	"apihelp-bs-pagetemplates-tasks-summary": "Permite a manipulação dos modelos de página",
 	"action-pagetemplatesadmin-viewspecialpage": "ver página especial \"{{int:pagetemplatesadmin}}\"",
-	"pagetemplatesadmin": "Administração de modelos de páginas",
-	"bs-usagetracker-pagetemplates": "modelos de página"
+	"pagetemplatesadmin": "Administração de modelos de página",
+	"bs-usagetracker-pagetemplates": "modelos de página",
+	"bs-pagetemplates-nsm-label": "ModelosDePágina"
 }

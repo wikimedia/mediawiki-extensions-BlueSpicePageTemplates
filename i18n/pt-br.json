@@ -48,5 +48,6 @@
 	"apihelp-bs-pagetemplates-tasks-summary": "Permite a manipulação das predefinições de página",
 	"action-pagetemplatesadmin-viewspecialpage": "ver página especial \"{{int:pagetemplatesadmin}}\"",
 	"pagetemplatesadmin": "Administração de predefinições de páginas",
-	"bs-usagetracker-pagetemplates": "predefinições de página"
+	"bs-usagetracker-pagetemplates": "predefinições de página",
+	"bs-pagetemplates-nsm-label": "ModelosDePágina"
 }
