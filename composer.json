@@ -1,5 +1,5 @@
 {
-	"name": "mediawiki/blue-spice-page-templates",
+	"name": "bluespice/pagetemplates",
 	"type": "mediawiki-extension",
 	"description": "Displays a list of templates marked as page templates",
 	"license": "GPL-3.0-only",
@@ -24,5 +24,8 @@
 		"fix": [
 			"minus-x fix ."
 		]
+	},
+	"extra": {
+		"installer-name": "BlueSpicePageTemplates"
 	}
 }
