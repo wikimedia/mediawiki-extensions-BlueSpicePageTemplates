@@ -14,34 +14,36 @@
 
 Ext.define( 'BS.PageTemplates.TemplateDialog', {
 	extend: 'MWExt.Dialog',
+
 	currentData: {},
 	selectedData: {},
+
+	initComponent: function() {
+		this.callParent( arguments );
+		this.btnOK.disable();
+	},
+
 	makeItems: function() {
 		this.tfLabel = Ext.create( 'Ext.form.TextField', {
 			fieldLabel: mw.message( 'bs-pagetemplates-label-tpl' ).plain(),
-			labelWidth: 135,
-			labelAlign: 'right',
 			name: 'namespacename',
 			allowBlank: false
 		});
 		this.taDesc = Ext.create( 'Ext.form.field.TextArea', {
 			fieldLabel: mw.message( 'bs-pagetemplates-label-desc' ).plain(),
-			labelWidth: 135,
-			labelAlign: 'right',
 			name: 'ta-desc',
 			checked: true,
 			allowBlank: false
 		});
 		this.cbTragetNamespace = Ext.create( 'BS.form.NamespaceCombo', {
-			labelWidth: 135,
 			fieldLabel: mw.message( 'bs-pagetemplates-label-targetns' ).plain(),
-			includeAll: true
+			includeAll: true,
+			allowBlank: false
 		} );
 
-		this.cbTemplate = Ext.create( 'Ext.form.TextField', {
+		this.cbTemplate = Ext.create( 'BS.form.field.TitleCombo', {
 			fieldLabel: mw.message( 'bs-pagetemplates-label-article' ).plain(),
-			labelWidth: 135,
-			labelAlign: 'right'
+			allowBlank: false
 		});
 
 		return [
@@ -74,11 +76,13 @@ Ext.define( 'BS.PageTemplates.TemplateDialog', {
 		this.cbTemplate.setValue( this.currentData.templatename );
 	},
 	getData: function() {
+		var selectedTemplate = this.cbTemplate.getValue();
+
 		this.selectedData.id = this.currentData.id;
 		this.selectedData.label = this.tfLabel.getValue();
 		this.selectedData.desc = this.taDesc.getValue();
 		this.selectedData.targetns = this.cbTragetNamespace.getValue();
-		this.selectedData.template = this.cbTemplate.getValue();
+		this.selectedData.template = selectedTemplate.getPrefixedText();
 
 		return this.selectedData;
 	}
