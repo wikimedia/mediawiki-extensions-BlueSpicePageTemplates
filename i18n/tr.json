@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Sayginer",
-			"Sadrettin"
+			"Sadrettin",
+			"Hedda"
 		]
 	},
 	"prefs-pagetemplates": "Sayfa şablonu",
@@ -24,6 +25,7 @@
 	"bs-pagetemplates-general-section": "Genel",
 	"bs-pagetemplates-choose-template": "Bu sayfa henüz mevcut değil. Yeni bir sayfa oluşturabilirsiniz. Eğer bunu yapmak istemiyorsanız, son ziyaret edilen sayfaya dönmek için tarayıcınızın geri tuşuna tıklayın.\n\nBunlardan {{ÇOĞUL:$1||birini}} seçerek {{ÇOĞUL:$1|şablonu|şablonları}} takip edebilirsin:",
 	"bs-pagetemplates-pref-excludens": "Bu isim alanındaki şablonları gösterme:",
+	"bs-pagetemplates-pref-hideifnotintargetns": "Sayfa hedef ad alanında oluşturulmayacaksa şablonu gizle",
 	"bs-pagetemplates-headerlabel": "Etiket",
 	"bs-pagetemplates-headertargetnamespace": "İsim alanı",
 	"bs-pagetemplates-tipeditdetails": "Şablonu düzenle",
