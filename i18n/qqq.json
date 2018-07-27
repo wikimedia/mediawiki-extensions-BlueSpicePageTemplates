@@ -57,5 +57,6 @@
 	"action-pagetemplatesadmin-viewspecialpage": "Label for denied special page, includes pagename\n{{doc-action|pagetemplatesadmin-viewspecialpage}}",
 	"pagetemplatesadmin": "Page title for page template admin special page",
 	"bs-usagetracker-pagetemplates": "Name of the descriptor used in [[Special:UsageTracker|Special:UsageTracker]] output",
-	"bs-pagetemplates-nsm-label": "Label for field in BlueSpiceNamespaceManager used to select namespaces in which PageTemplates will be shown(enabled)"
+	"bs-pagetemplates-nsm-label": "Label for field in BlueSpiceNamespaceManager used to select namespaces in which PageTemplates will be shown(enabled)",
+	"pagetemplatesadmin-viewspecialpage": "Grants access to the [[Special:PageTemplatesAdmin]] special page, where page templates can be managed.\n{{doc-right|pagetemplatesadmin-viewspecialpage}}"
 }
