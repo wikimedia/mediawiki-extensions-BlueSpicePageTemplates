@@ -147,9 +147,17 @@ class PageTemplates extends BsExtensionMW {
 	}
 
 	public static function onHtmlPageLinkRendererBegin( LinkRenderer $linkRenderer, LinkTarget $target, &$text, &$extraAttribs, &$query, &$ret ) {
-		if ( in_array( 'known', $extraAttribs, true ) ) return true;
+		if ( in_array( 'known', $extraAttribs, true ) ) {
+			return true;
+		}
 		if ( !in_array( 'broken', $extraAttribs, true ) ){ //It's not marked as "known" and not as "broken" so we have to check
-			if ( $target->isKnown() ) return true;
+			$title = \Title::newFromText(
+				$target->getNamespace(),
+				$target->getText()
+			);
+			if ( !$title || $title->isKnown() ) {
+				return true;
+			}
 		}
 
 		$config = \MediaWiki\MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
