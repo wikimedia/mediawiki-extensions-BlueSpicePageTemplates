@@ -49,5 +49,6 @@
 	"action-pagetemplatesadmin-viewspecialpage": "voir la page spéciale \"{{int:pagetemplatesadmin}}\"",
 	"pagetemplatesadmin": "Gestion des modèles de page",
 	"bs-usagetracker-pagetemplates": "modèles de page",
-	"bs-pagetemplates-nsm-label": "Modèles de page"
+	"bs-pagetemplates-nsm-label": "Modèles de page",
+	"pagetemplatesadmin-viewspecialpage": "Attribue les droits d'accès à la page spéciale [[Special:PageTemplatesAdmin]] , pour la gestion des modèles de page."
 }
