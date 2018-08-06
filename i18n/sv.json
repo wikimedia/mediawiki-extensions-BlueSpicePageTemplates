@@ -46,5 +46,6 @@
 	"bs-pagetemplates-remove-message-failure": "Följande {{PLURAL:$1|mall|mallar}} kunde inte raderas: $2 (Orsak: $3)",
 	"apihelp-bs-pagetemplates-store-description": "Listar alla sidmallar. Tillåter sortering, filtrering och sidnumrering. Implementerar ExtJS Store-parametrar.",
 	"action-pagetemplatesadmin-viewspecialpage": "visa specialsidan \"{{int:pagetemplatesadmin}}\"",
-	"bs-usagetracker-pagetemplates": "sidmallar"
+	"bs-usagetracker-pagetemplates": "sidmallar",
+	"right-pagetemplatesadmin-viewspecialpage": "Ger åtkomst till specialsidan [[Special:PageTemplatesAdmin]], där sidmallar kan hanteras."
 }

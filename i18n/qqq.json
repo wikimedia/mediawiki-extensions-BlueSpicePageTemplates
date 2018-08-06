@@ -10,7 +10,8 @@
 			"Purodha",
 			"Umherirrender",
 			"Osnard",
-			"Mglaser"
+			"Mglaser",
+			"Raymond"
 		]
 	},
 	"bs-pagetemplates-desc": "Used in [{{canonicalurl:Special:WikiAdmin|mode=ExtensionInfo}} Special:WikiAdmin?mode=ExtensionInfo], description of page templates extension",
