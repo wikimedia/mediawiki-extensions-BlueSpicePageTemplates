@@ -50,5 +50,6 @@
 	"action-pagetemplatesadmin-viewspecialpage": "عرض الصفحة الخاصة \"{{int:pagetemplatesadmin}}\"",
 	"pagetemplatesadmin": "إدارة قوالب الصفحة",
 	"bs-usagetracker-pagetemplates": "قوالب الصفحة",
-	"bs-pagetemplates-nsm-label": "قوالب الصفحة"
+	"bs-pagetemplates-nsm-label": "قوالب الصفحة",
+	"right-pagetemplatesadmin-viewspecialpage": "يمنح الوصول إلى الصفحة الخاصة [[Special:PageTemplatesAdmin]]، حيث يمكن إدارة قوالب الصفحات."
 }
