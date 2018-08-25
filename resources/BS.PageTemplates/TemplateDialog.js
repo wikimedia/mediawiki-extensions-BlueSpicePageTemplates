@@ -35,7 +35,7 @@ Ext.define( 'BS.PageTemplates.TemplateDialog', {
 			checked: true,
 			allowBlank: false
 		});
-		this.cbTragetNamespace = Ext.create( 'BS.form.NamespaceCombo', {
+		this.cbTargetNamespace = Ext.create( 'BS.form.NamespaceCombo', {
 			fieldLabel: mw.message( 'bs-pagetemplates-label-targetns' ).plain(),
 			includeAll: true,
 			allowBlank: false
@@ -49,7 +49,7 @@ Ext.define( 'BS.PageTemplates.TemplateDialog', {
 		return [
 			this.tfLabel,
 			this.taDesc,
-			this.cbTragetNamespace,
+			this.cbTargetNamespace,
 			this.cbTemplate
 		];
 	},
@@ -62,7 +62,7 @@ Ext.define( 'BS.PageTemplates.TemplateDialog', {
 	resetData: function() {
 		this.tfLabel.reset();
 		this.taDesc.reset();
-		this.cbTragetNamespace.reset();
+		this.cbTargetNamespace.reset();
 		this.cbTemplate.reset();
 
 		this.callParent();
@@ -72,7 +72,7 @@ Ext.define( 'BS.PageTemplates.TemplateDialog', {
 
 		this.tfLabel.setValue( this.currentData.label );
 		this.taDesc.setValue( this.currentData.desc );
-		this.cbTragetNamespace.setValue( this.currentData.targetns );
+		this.cbTargetNamespace.setValue( this.currentData.targetns );
 		this.cbTemplate.setValue( this.currentData.templatename );
 	},
 	getData: function() {
@@ -81,7 +81,7 @@ Ext.define( 'BS.PageTemplates.TemplateDialog', {
 		this.selectedData.id = this.currentData.id;
 		this.selectedData.label = this.tfLabel.getValue();
 		this.selectedData.desc = this.taDesc.getValue();
-		this.selectedData.targetns = this.cbTragetNamespace.getValue();
+		this.selectedData.targetns = this.cbTargetNamespace.getValue();
 		this.selectedData.template = selectedTemplate.getPrefixedText();
 
 		return this.selectedData;
