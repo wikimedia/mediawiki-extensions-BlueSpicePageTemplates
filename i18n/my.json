@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ninjastrikers"
+			"Ninjastrikers",
+			"Dr Lotus Black"
 		]
 	},
+	"bs-pagetemplates-headertargetnamespace": "အမည်ညွှန်း",
+	"bs-pagetemplates-label-targetns": "အမည်ညွှန်း",
 	"bs-pagetemplates-label-article": "တမ်းပလိတ်"
 }
