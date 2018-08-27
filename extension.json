@@ -128,7 +128,8 @@
 			"scripts": "bluespice.pageTemplates.tag.js"
 		},
 		"ext.bluespice.pageTemplates.styles": {
-			"styles": "bluespice.pageTemplates.less"
+			"styles": "bluespice.pageTemplates.less",
+			"class": "\\BlueSpice\\ResourceModule\\LessVars"
 		}
 	},
 	"ResourceFileModulePaths": {
