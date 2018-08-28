@@ -3,7 +3,8 @@
 		"authors": [
 			"Stephan Muggli <muggli@hallowelt.biz>",
 			"Metalhead64",
-			"Kghbln"
+			"Kghbln",
+			"Hwboehm"
 		]
 	},
 	"bs-pagetemplates-desc": "Es können vorgefertigte Seitenvorlagen angelegt werden",
@@ -44,6 +45,7 @@
 	"bs-pagetemplates-remove-message-success": "Folgende {{PLURAL:$1|Vorlage wurde|Vorlagen wurden}} gelöscht:$2",
 	"bs-pagetemplates-remove-message-failure": "Folgende {{PLURAL:$1|Vorlage konnte|Vorlagen konnten}} nicht gelöscht werden:$2(Grund: $3)",
 	"apihelp-bs-pagetemplates-store-description": "Listet alle Seitenvorlagen auf. Erlaubt die Sortierung, Filterung und Nummerierung. Implementiert die „ExtJS Store“-Parameter.",
+	"apihelp-bs-pagetemplates-store-summary": "Listet alle Vorlagen auf. Erlaubt die Sortierung, Filterung und Seitennummerierung. Implementiert die Parameter „ExtJS Store“.",
 	"apihelp-bs-pagetemplates-tasks-description": "Erlaubt die Veränderung von Seitenvorlagen",
 	"apihelp-bs-pagetemplates-tasks-summary": "Erlaubt die Veränderung von Seitenvorlagen",
 	"action-pagetemplatesadmin-viewspecialpage": "die Spezialseite „{{int:pagetemplatesadmin}}“ anzusehen",
