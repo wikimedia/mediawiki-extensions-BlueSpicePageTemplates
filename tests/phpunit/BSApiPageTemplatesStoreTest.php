@@ -4,6 +4,7 @@ use BlueSpice\Tests\BSApiExtJSStoreTestBase;
 
 /**
  * @group medium
+ * @group Database
  * @group API
  * @group BlueSpice
  * @group BlueSpicePageTemplates
