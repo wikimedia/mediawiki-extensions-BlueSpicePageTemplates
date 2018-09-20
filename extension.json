@@ -33,7 +33,8 @@
 					"type": "global",
 					"roles": [
 						"admin",
-						"demo"
+						"maintenanceadmin",
+						"structuremanager"
 					]
 				}
 			}
