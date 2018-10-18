@@ -1,6 +1,6 @@
 <?php
 
-class SpecialPageTemplatesAdmin extends BsSpecialPage {
+class SpecialPageTemplatesAdmin extends \BlueSpice\SpecialPage {
 
 	public function __construct() {
 		parent::__construct( 'PageTemplatesAdmin', 'pagetemplatesadmin-viewspecialpage' );
