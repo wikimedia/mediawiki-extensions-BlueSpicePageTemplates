@@ -138,7 +138,9 @@
 		"remoteExtPath": "BlueSpicePageTemplates/resources"
 	},
 	"Hooks": {
-		"LoadExtensionSchemaUpdates": "PageTemplates::getSchemaUpdates",
+		"LoadExtensionSchemaUpdates": [
+			"\\BlueSpice\\PageTemplates\\Hook\\LoadExtensionSchemaUpdates\\AddPageTemplateTable::callback"
+		],
 		"BSUsageTrackerRegisterCollectors": "PageTemplates::onBSUsageTrackerRegisterCollectors",
 		"NamespaceManager::getMetaFields": "BlueSpice\\PageTemplates\\Hook\\NamespaceManagerGetMetaFields\\RegisterMetaField::callback",
 		"BSApiNamespaceStoreMakeData": "BlueSpice\\PageTemplates\\Hook\\BSApiNamespaceStoreMakeData\\AddData::callback",

@@ -49,19 +49,6 @@ class PageTemplates extends BsExtensionMW {
 	}
 
 	/**
-	 * Hook-Handler for Hook 'LoadExtensionSchemaUpdates'
-	 * @param object §updater Updater
-	 * @return boolean Always true
-	 */
-	public static function getSchemaUpdates( $updater ) {
-		$updater->addExtensionTable(
-			'bs_pagetemplate',
-			__DIR__.'/'.'db'.'/'.'PageTemplates.sql'
-		);
-		return true;
-	}
-
-	/**
 	 * Automatically modifies "noarticletext" message. Otherwise, you would
 	 * have to modify MediaWiki:noarticletext in the wiki, wich causes
 	 * installation overhead.
