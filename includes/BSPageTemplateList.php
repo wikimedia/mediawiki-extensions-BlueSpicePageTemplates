@@ -39,16 +39,11 @@ class BSPageTemplateList {
 	protected $aDataSets = [];
 
 	protected function fetchDB() {
-		global $wgDBtype;
 		$dbr = wfGetDB( DB_REPLICA );
 
 		$aConds = [];
 		if ( $this->aConfig[self::HIDE_IF_NOT_IN_TARGET_NS] ) {
-			if ( $wgDBtype == 'postgres' ) {
-				$aConds[] = "pt_target_namespace IN ('" . $this->oTitle->getNamespace() . "', '-99')";
-			} else {
-				$aConds[] = 'pt_target_namespace IN (' . $this->oTitle->getNamespace() . ', -99)';
-			}
+			$aConds[] = 'pt_target_namespace IN (' . $this->oTitle->getNamespace() . ', -99)';
 		}
 
 		$res = $dbr->select(
