@@ -70,7 +70,6 @@
 		"PageTemplates": "PageTemplates.class.php",
 		"BSApiPageTemplatesStore": "includes/api/BSApiPageTemplatesStore.php",
 		"BSApiPageTemplatesTasks": "includes/api/BSApiPageTemplatesTasks.php",
-		"PageTemplatesAdmin": "PageTemplatesAdmin.class.php",
 		"SpecialPageTemplatesAdmin": "includes/specials/SpecialPageTemplatesAdmin.class.php",
 		"BSPageTemplateList": "includes/BSPageTemplateList.php",
 		"BSPageTemplateListRenderer": "includes/BSPageTemplateListRenderer.php",
