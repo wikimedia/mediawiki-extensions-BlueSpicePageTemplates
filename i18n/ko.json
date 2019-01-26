@@ -13,6 +13,7 @@
 	"bs-pagetemplates-label-tpl": "틀 이름",
 	"bs-pagetemplates-label-desc": "설명",
 	"bs-pagetemplates-label-targetns": "이름공간",
+	"bs-pagetemplates-label-tplns": "틀 이름공간",
 	"bs-pagetemplates-label-article": "틀",
 	"action-pagetemplatesadmin-viewspecialpage": "특수문서 \"{{int:pagetemplatesadmin}}\" 보기",
 	"pagetemplatesadmin": "문서 틀 관리"
