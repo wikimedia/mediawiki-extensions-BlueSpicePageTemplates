@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Purodha"
+			"Purodha",
+			"Hwboehm"
 		]
 	},
 	"bs-pagetemplates-desc": "Zeijsch en Leß met Schablohne, di_j_als Sigge_Schablohne makkehrt sin",
@@ -22,7 +23,7 @@
 	"bs-pagetemplates-tpl-deleted": "De Schablohn es fott jeschmeße.",
 	"bs-pagetemplates-general-section": "Alljemein",
 	"bs-pagetemplates-pref-excludens": "Donn kein Schablohne en he dä Appachtemangs aanzeije:",
-	"bs-pagetemplates-headerlabel": "Bezeishnong, Ätikätt, Singnatuur \n<!-- https://translatewiki.net/wiki/Thread:Support/About_MediaWiki:Bs-pagetemplates-headerlabel/qqq\nhttps://phabricator.wikimedia.org/T129398\n-->",
+	"bs-pagetemplates-headerlabel": "Bezeishnong",
 	"bs-pagetemplates-headertargetnamespace": "Appachtemang",
 	"bs-pagetemplates-tipeditdetails": "Donn di Schablohn ändere",
 	"bs-pagetemplates-tipdeletetemplate": "Donn {{PLURAL:$1|en Schablohn|Schablohne|kein Schablohn}} fott schmiiße",
