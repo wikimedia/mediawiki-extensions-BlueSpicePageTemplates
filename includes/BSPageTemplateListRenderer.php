@@ -2,135 +2,170 @@
 
 class BSPageTemplateListRenderer {
 
-	protected $sBuffer = '';
+	protected $buffer = '';
 
 	/**
 	 *
-	 * @param BSPageTemplateList $oList
+	 * @param BSPageTemplateList $list
 	 * @return string
 	 */
-	public function render( $oList ) {
-		$this->renderHead( $oList->getCount() );
+	public function render( $list ) {
+		$this->renderHead( $list->getCount() );
 
-		$aGroupedLists = $oList->getAllGrouped();
+		$aGroupedLists = $list->getAllGrouped();
 		$this->renderDefaultSection( $aGroupedLists['default'] );
 		$this->renderNamespaceSpecificSection( $aGroupedLists['target'], 'target' );
 		$this->renderNamespaceSpecificSection( $aGroupedLists['other'], 'other' );
 		$this->renderGeneralSection( $aGroupedLists['general'] );
 
-		return $this->sBuffer;
+		return $this->buffer;
 	}
 
-	protected $aOrdering = [];
+	protected $ordering = [];
 	protected function initNamespaceSorting() {
-		$oSortingTitle = Title::makeTitle( NS_MEDIAWIKI, 'PageTemplatesSorting' );
-		$sContent = BsPageContentProvider::getInstance()->getContentFromTitle( $oSortingTitle );
-		$this->aOrdering = array_map( 'trim', explode( '*',  $sContent ) );
+		$sortingTitle = Title::makeTitle( NS_MEDIAWIKI, 'PageTemplatesSorting' );
+		$content = BsPageContentProvider::getInstance()->getContentFromTitle( $sortingTitle );
+		$this->ordering = array_map( 'trim', explode( '*',  $content ) );
 	}
 
-	protected function renderHead( $iCount ) {
-		$this->sBuffer .= Html::rawElement(
+	/**
+	 *
+	 * @param int $count
+	 */
+	protected function renderHead( $count ) {
+		$this->buffer .= Html::rawElement(
 			'div',
 			[ 'id' => 'bs-pt-head' ],
-			wfMessage( 'bs-pagetemplates-choose-template', $iCount )->parse()
+			wfMessage( 'bs-pagetemplates-choose-template', $count )->parse()
 		);
 	}
 
-	protected function renderGeneralSection( $aDataSets ) {
-		$sSectionContent = $this->makeSection(
+	/**
+	 *
+	 * @param array $dataSets
+	 */
+	protected function renderGeneralSection( $dataSets ) {
+		$sectionContent = $this->makeSection(
 			wfMessage( 'bs-pagetemplates-general-section' )->plain(),
-			$aDataSets[BSPageTemplateList::ALL_NAMESPACES_PSEUDO_ID],
+			$dataSets[BSPageTemplateList::ALL_NAMESPACES_PSEUDO_ID],
 			'general'
 		);
 
-		$this->appendContainer( $sSectionContent, 'general' );
+		$this->appendContainer( $sectionContent, 'general' );
 	}
 
-	protected function renderDefaultSection( $aTemplates ) {
-		$sSectionContent = $this->makeSection(
+	/**
+	 *
+	 * @param array $templates
+	 */
+	protected function renderDefaultSection( $templates ) {
+		$sectionContent = $this->makeSection(
 			'',
-			$aTemplates[BSPageTemplateList::ALL_NAMESPACES_PSEUDO_ID],
+			$templates[BSPageTemplateList::ALL_NAMESPACES_PSEUDO_ID],
 			'default'
 		);
 
-		$this->appendContainer( $sSectionContent, 'default' );
+		$this->appendContainer( $sectionContent, 'default' );
 	}
 
-	protected function makeTemplateItem( $aDataSet, $sAddtionalClass = '' ) {
-		$sLink = Html::element(
+	/**
+	 *
+	 * @param array $dataSet
+	 * @param string $additionalClass
+	 * @return string Raw HTML
+	 */
+	protected function makeTemplateItem( $dataSet, $additionalClass = '' ) {
+		$link = Html::element(
 			'a',
 			[
 				'class' => 'new bs-pt-link',
-				'title' => $aDataSet['pt_template_title'],
-				'href' => $aDataSet['target_url']
+				'title' => $dataSet['pt_template_title'],
+				'href' => $dataSet['target_url']
 			],
-			$aDataSet['pt_label']
+			$dataSet['pt_label']
 		);
-		$sDescription = Html::element(
+		$description = Html::element(
 			'div',
 			[ 'class' => 'pt-desc' ],
-			$aDataSet['pt_desc']
+			$dataSet['pt_desc']
 		);
 
 		return Html::rawElement(
 			'div',
 			[ 'class' => implode(
 					' ',
-					[ 'bs-pt-item', $aDataSet['type'], $sAddtionalClass ]
+					[ 'bs-pt-item', $dataSet['type'], $additionalClass ]
 				)
 			],
-			$sLink . $sDescription
+			$link . $description
 		);
 	}
 
-	protected function renderNamespaceSpecificSection( $aTemplates, $sKey ) {
-		$sSectionContent = '';
-		foreach( $aTemplates as $iNamespaceId => $aDataSets ) {
-			$sSectionContent .= $this->makeSection(
-				BsNamespaceHelper::getNamespaceName( $iNamespaceId ),
-				$aDataSets,
-				$sKey
+	/**
+	 *
+	 * @param array $templates
+	 * @param string $key
+	 */
+	protected function renderNamespaceSpecificSection( $templates, $key ) {
+		$sectionContent = '';
+		foreach ( $templates as $namespaceId => $dataSets ) {
+			$sectionContent .= $this->makeSection(
+				BsNamespaceHelper::getNamespaceName( $namespaceId ),
+				$dataSets,
+				$key
 			);
 		}
 
-		$this->appendContainer( $sSectionContent, $sKey );
+		$this->appendContainer( $sectionContent, $key );
 	}
 
-	protected function appendContainer( $sSectionContent, $sKey ) {
-		if( !empty( $sSectionContent ) ) {
-			$this->sBuffer .= Html::rawElement(
+	/**
+	 *
+	 * @param array $sectionContent
+	 * @param string $key
+	 */
+	protected function appendContainer( $sectionContent, $key ) {
+		if ( !empty( $sectionContent ) ) {
+			$this->buffer .= Html::rawElement(
 				'div',
-				[ 'id' => 'bs-pt-'.$sKey, 'class' => 'bs-pt-sect' ],
-				$sSectionContent
+				[ 'id' => 'bs-pt-'.$key, 'class' => 'bs-pt-sect' ],
+				$sectionContent
 			);
 		}
 	}
 
-	protected function makeSection( $sHeading, $aDataSets, $sKey ) {
-		if( empty( $aDataSets ) ) {
+	/**
+	 *
+	 * @param string $heading
+	 * @param array $dataSets
+	 * @param string $key
+	 * @return string
+	 */
+	protected function makeSection( $heading, $dataSets, $key ) {
+		if ( empty( $dataSets ) ) {
 			return '';
 		}
 
-		$sHeadingElement = '';
-		if( !empty( $sHeading ) ) {
-			$sHeadingElement = Html::element( 'h3', [], $sHeading );
+		$headingElement = '';
+		if ( !empty( $heading ) ) {
+			$headingElement = Html::element( 'h3', [], $heading );
 		}
 
-		$sList = '';
-		foreach( $aDataSets as $aDataSet ) {
-			$sList .= $this->makeTemplateItem( $aDataSet, $sKey );
+		$listRaw = '';
+		foreach ( $dataSets as $aDataSet ) {
+			$listRaw .= $this->makeTemplateItem( $aDataSet, $key );
 		}
 
-		$sList = Html::rawElement(
+		$list = Html::rawElement(
 			'div',
 			[ 'class' => 'bs-pt-items' ],
-			$sList
+			$listRaw
 		);
 
 		return Html::rawElement(
 			'div',
-			[ 'id' => 'bs-pt-subsect-'.$sKey, 'class' => 'bs-pt-subsect' ],
-			$sHeadingElement . $sList
+			[ 'id' => 'bs-pt-subsect-'.$key, 'class' => 'bs-pt-subsect' ],
+			$headingElement . $list
 		);
 	}
 

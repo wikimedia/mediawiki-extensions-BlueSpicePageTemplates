@@ -8,7 +8,7 @@
  *
  * @covers BSPageTemplateList
  */
-class BSPageTemplatesListTest extends MediaWikiTestCase {
+class BSPageTemplateListTest extends MediaWikiTestCase {
 
 	protected $tablesUsed = [ 'bs_pagetemplate' ];
 
@@ -16,9 +16,10 @@ class BSPageTemplatesListTest extends MediaWikiTestCase {
 		return true;
 	}
 
-	public function addDBData() { //addDBDataOnce fails with usage of @dataProvider...
+	public function addDBData() {
+ // addDBDataOnce fails with usage of @dataProvider...
 		$oPageTemplateFixtures = new BSPageTemplateFixtures();
-		foreach( $oPageTemplateFixtures->makeDataSets() as $dataSet ) {
+		foreach ( $oPageTemplateFixtures->makeDataSets() as $dataSet ) {
 			$this->db->insert( 'bs_pagetemplate', $dataSet );
 		}
 		return;
@@ -35,14 +36,18 @@ class BSPageTemplatesListTest extends MediaWikiTestCase {
 	public function testGrouping( $targetTitle, $expectedTargetCount, $expectedOtherCount ) {
 		$list = new BSPageTemplateList( $targetTitle, [
 			BSPageTemplateList::HIDE_IF_NOT_IN_TARGET_NS => false
-		]);
+		] );
 
 		$groupedResult = $list->getAllGrouped();
 
-		$this->assertEquals( $expectedTargetCount, $this->getWholeCount( $groupedResult['target'] ) );
-		$this->assertEquals( $expectedOtherCount, $this->getWholeCount( $groupedResult['other'] ) );
-		$this->assertEquals( 1, count( $groupedResult['default'][BSPageTemplateList::ALL_NAMESPACES_PSEUDO_ID] ) );
-		$this->assertEquals( 2, count( $groupedResult['general'][BSPageTemplateList::ALL_NAMESPACES_PSEUDO_ID] ) );
+		$this->assertEquals( $expectedTargetCount,
+			$this->getWholeCount( $groupedResult['target'] ) );
+		$this->assertEquals( $expectedOtherCount,
+			$this->getWholeCount( $groupedResult['other'] ) );
+		$this->assertEquals( 1,
+			count( $groupedResult['default'][BSPageTemplateList::ALL_NAMESPACES_PSEUDO_ID] ) );
+		$this->assertEquals( 2,
+			count( $groupedResult['general'][BSPageTemplateList::ALL_NAMESPACES_PSEUDO_ID] ) );
 	}
 
 	public function provideGroupingData() {
@@ -56,7 +61,7 @@ class BSPageTemplatesListTest extends MediaWikiTestCase {
 	protected function getWholeCount( $groupedResult ) {
 		$count = 0;
 
-		foreach( $groupedResult as $nsId => $pageTemplates ) {
+		foreach ( $groupedResult as $nsId => $pageTemplates ) {
 			$count += count( $pageTemplates );
 		}
 
@@ -67,11 +72,11 @@ class BSPageTemplatesListTest extends MediaWikiTestCase {
 		$list = new BSPageTemplateList( Title::makeTitle( NS_MAIN, 'Dummy' ), [
 			BSPageTemplateList::FORCE_NAMESPACE => true,
 			BSPageTemplateList::HIDE_IF_NOT_IN_TARGET_NS => false
-		]);
+		] );
 
 		$groupedResult = $list->getAllGrouped();
-		foreach( $groupedResult['other'] as $nsId => $pageTemplates ) {
-			foreach( $pageTemplates as $pageTemplate ) {
+		foreach ( $groupedResult['other'] as $nsId => $pageTemplates ) {
+			foreach ( $pageTemplates as $pageTemplate ) {
 				$url = wfParseUrl( wfExpandUrl( $pageTemplate['target_url'] ) );
 				$query = wfCgiToArray( $url['query'] );
 				$this->assertEquals( $nsId, Title::newFromText( $query['title'] )->getNamespace() );
@@ -82,7 +87,7 @@ class BSPageTemplatesListTest extends MediaWikiTestCase {
 	public function testHideIfNotInTargetNamespace() {
 		$list = new BSPageTemplateList( Title::makeTitle( NS_MAIN, 'Dummy' ), [
 			BSPageTemplateList::HIDE_IF_NOT_IN_TARGET_NS => false
-		]);
+		] );
 		$groupedResult = $list->getAllGrouped();
 
 		$this->assertEquals( 9, $list->getCount() );
@@ -90,7 +95,7 @@ class BSPageTemplatesListTest extends MediaWikiTestCase {
 
 		$list2 = new BSPageTemplateList( Title::makeTitle( NS_MAIN, 'Dummy' ), [
 			BSPageTemplateList::HIDE_IF_NOT_IN_TARGET_NS => true
-		]);
+		] );
 		$groupedResult2 = $list2->getAllGrouped();
 
 		$this->assertEquals( 5, $list2->getCount() );
@@ -100,7 +105,7 @@ class BSPageTemplatesListTest extends MediaWikiTestCase {
 	public function testHideDefaults() {
 		$list = new BSPageTemplateList( Title::makeTitle( NS_MAIN, 'Dummy' ), [
 			BSPageTemplateList::HIDE_DEFAULTS => false
-		]);
+		] );
 		$groupedResult = $list->getAllGrouped();
 
 		$this->assertEquals( 5, $list->getCount() );
@@ -108,7 +113,7 @@ class BSPageTemplatesListTest extends MediaWikiTestCase {
 
 		$list2 = new BSPageTemplateList( Title::makeTitle( NS_MAIN, 'Dummy' ), [
 			BSPageTemplateList::HIDE_DEFAULTS => true
-		]);
+		] );
 		$groupedResult2 = $list2->getAllGrouped();
 
 		$this->assertEquals( 4, $list2->getCount() );

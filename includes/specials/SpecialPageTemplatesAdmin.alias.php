@@ -1,12 +1,19 @@
 <?php
-$specialPageAliases = array();
+
+$specialPageAliases = [];
 
 /** English */
-$specialPageAliases['en'] = array(
-	'PageTemplatesAdmin' => array( 'PageTemplatesAdmin', 'Pagetemplates Admin' ),
-);
+$specialPageAliases['en'] = [
+	'PageTemplatesAdmin' => [
+		'PageTemplatesAdmin',
+		'Pagetemplates Admin'
+	]
+];
 
 /** German (Deutsch) */
-$specialPageAliases['de'] = array(
-	'PageTemplatesAdmin' => array( 'Seitenvorlagenverwaltung', 'Seitenvorlagen Verwaltung' ),
-);
+$specialPageAliases['de'] = [
+	'PageTemplatesAdmin' => [
+		'Seitenvorlagenverwaltung',
+		'Seitenvorlagen Verwaltung'
+	]
+];

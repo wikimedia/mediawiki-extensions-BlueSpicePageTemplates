@@ -21,52 +21,77 @@
  * @author     Markus Glaser <glaser@hallowelt.com>
  * @package    Bluespice_Extensions
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v3
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  *
  * Example request parameters of an ExtJS store
  */
 class BSApiPageTemplatesStore extends BSApiExtJSStoreBase {
 
-	public function makeData( $sQuery = '' ) {
+	/**
+	 *
+	 * @param string $query
+	 * @return array
+	 */
+	public function makeData( $query = '' ) {
 		$dbr = wfGetDB( DB_REPLICA );
 		$res = $dbr->select(
-			array( 'bs_pagetemplate' ),
-			array( 'pt_id', 'pt_label', 'pt_desc', 'pt_target_namespace', 'pt_template_title', 'pt_template_namespace' ),
-			array(),
-			__METHOD__
+			[ 'bs_pagetemplate' ],
+			[
+			'pt_id',
+			'pt_label',
+			'pt_desc',
+			'pt_target_namespace',
+			'pt_template_title',
+			'pt_template_namespace'
+			], [], __METHOD__
 		);
 
-		$aData = array();
+		$data = [];
 
-		while( $row = $res->fetchObject() ) {
+		foreach ( $res as $row ) {
 			$tmp = new stdClass();
-			$tmp->id       = $row->pt_id;
-			$tmp->label    = $row->pt_label;
-			$tmp->desc    = $row->pt_desc;
-			$tmp->targetns = BsNamespaceHelper::getNamespaceName( $row->pt_target_namespace, true );
+			$tmp->id = $row->pt_id;
+			$tmp->label = $row->pt_label;
+			$tmp->desc = $row->pt_desc;
+			$tmp->targetns = BsNamespaceHelper::getNamespaceName(
+					$row->pt_target_namespace, true );
 			$tmp->targetnsid = $row->pt_target_namespace;
-			$oTitle = Title::newFromText( $row->pt_template_title, $row->pt_template_namespace );
-			$tmp->template  = '<a href="'.$oTitle->getFullURL().'" target="_blank" '.($oTitle->exists()?'':'class="new"').'>'.$oTitle->getFullText().'</a>';
-			$tmp->templatename = $oTitle->getFullText();
-			$aData[] = (object)$tmp;
+			$title = Title::newFromText( $row->pt_template_title,
+					$row->pt_template_namespace );
+			$tmp->template = '<a href="' . $title->getFullURL() .
+				'" target="_blank" ' .
+				( $title->exists() ? '' : 'class="new"' ) .
+				'>' . $title->getFullText() . '</a>';
+			$tmp->templatename = $title->getFullText();
+			$data[] = (object)$tmp;
 		}
 
-		return $aData;
+		return $data;
 	}
 
-	public function filterString( $oFilter, $aDataSet ) {
-		if( $oFilter->field !== 'template' ) {
-			return parent::filterString( $oFilter, $aDataSet );
+	/**
+	 *
+	 * @param object $filter
+	 * @param type $dataSet
+	 * @return bool
+	 */
+	public function filterString( $filter, $dataSet ) {
+		if ( $filter->field !== 'template' ) {
+			return parent::filterString( $filter, $dataSet );
 		}
 
 		/**
 		 * 'template' contains the actual link and filters won't apply correctly
 		 * 'templatename' is better filterable
 		 */
-		return BsStringHelper::filter( $oFilter->comparison, $aDataSet->templatename, $oFilter->value );
+		return BsStringHelper::filter( $filter->comparison, $dataSet->templatename, $filter->value );
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	protected function getRequiredPermissions() {
-		return array( 'wikiadmin' );
+		return [ 'wikiadmin' ];
 	}
 }

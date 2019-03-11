@@ -1,5 +1,6 @@
 <?php
 namespace BlueSpice\PageTemplates\Hook;
+
 use BlueSpice\Hook;
 
 abstract class BSPageTemplatesModifyTargetUrl extends Hook {
@@ -25,8 +26,10 @@ abstract class BSPageTemplatesModifyTargetUrl extends Hook {
 	/**
 	 * Located in BsConfig::get. Enables modification of the value of the
 	 * BSConfig variable specified by path.
-	 * @param string $targetUrl
-	 * @return boolean
+	 * @param string $targetTitle
+	 * @param string $preloadTitle
+	 * @param string &$targetUrl
+	 * @return bool
 	 */
 	public static function callback( $targetTitle, $preloadTitle, &$targetUrl ) {
 		$className = static::class;
@@ -43,8 +46,9 @@ abstract class BSPageTemplatesModifyTargetUrl extends Hook {
 	/**
 	 * @param \IContextSource $context
 	 * @param \Config $config
-	 * @param string $path
-	 * @param mixed $return
+	 * @param string $targetTitle
+	 * @param string $preloadTitle
+	 * @param string &$targetUrl
 	 */
 	public function __construct( $context, $config, $targetTitle, $preloadTitle, &$targetUrl ) {
 		parent::__construct( $context, $config );

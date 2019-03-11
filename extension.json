@@ -16,7 +16,7 @@
 		"BlueSpiceFoundation": {
 			"Extensions": {
 				"BlueSpicePageTemplates": {
-					"className": "PageTemplates",
+					"className": "\\BlueSpice\\PageTemplates\\Extension",
 					"extPath": "/BlueSpicePageTemplates",
 					"configDefinitions": {
 						"PageTemplatesForceNamespace": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesForceNamespace::getInstance",
@@ -24,6 +24,9 @@
 						"PageTemplatesHideIfNotInTargetNs": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesHideIfNotInTargetNS::getInstance"
 					}
 				}
+			},
+			"TagRegistry": {
+				"pagetemplates": "\\BlueSpice\\PageTemplates\\Tag\\PageTemplates"
 			},
 			"AdminToolRegistry": {
 				"bs-pagetemplates": "BlueSpice\\PageTemplates\\AdminTool"
@@ -67,10 +70,9 @@
 		"BlueSpice\\PageTemplates\\": "src/"
 	},
 	"AutoloadClasses": {
-		"PageTemplates": "PageTemplates.class.php",
 		"BSApiPageTemplatesStore": "includes/api/BSApiPageTemplatesStore.php",
 		"BSApiPageTemplatesTasks": "includes/api/BSApiPageTemplatesTasks.php",
-		"SpecialPageTemplatesAdmin": "includes/specials/SpecialPageTemplatesAdmin.class.php",
+		"SpecialPageTemplatesAdmin": "includes/specials/SpecialPageTemplatesAdmin.php",
 		"BSPageTemplateList": "includes/BSPageTemplateList.php",
 		"BSPageTemplateListRenderer": "includes/BSPageTemplateListRenderer.php",
 		"BSPageTemplateFixtures": "tests/phpunit/utility/BSPageTemplateFixtures.php"
@@ -140,14 +142,15 @@
 		"LoadExtensionSchemaUpdates": [
 			"\\BlueSpice\\PageTemplates\\Hook\\LoadExtensionSchemaUpdates\\AddPageTemplateTable::callback"
 		],
-		"BSUsageTrackerRegisterCollectors": "PageTemplates::onBSUsageTrackerRegisterCollectors",
+		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\PageTemplates\\Extension::onBSUsageTrackerRegisterCollectors",
 		"NamespaceManager::getMetaFields": "BlueSpice\\PageTemplates\\Hook\\NamespaceManagerGetMetaFields\\RegisterMetaField::callback",
 		"BSApiNamespaceStoreMakeData": "BlueSpice\\PageTemplates\\Hook\\BSApiNamespaceStoreMakeData\\AddData::callback",
 		"NamespaceManager::editNamespace": "BlueSpice\\PageTemplates\\Hook\\NamespaceManagerEditNamespace\\SetPageTemplateValues::callback",
 		"NamespaceManager::writeNamespaceConfiguration": [
 			"BlueSpice\\PageTemplates\\Hook\\NamespaceManagerWriteNamespaceConfiguration\\WriteToConfiguration::callback"
 		],
-		"HtmlPageLinkRendererBegin": "PageTemplates::onHtmlPageLinkRendererBegin"
+		"HtmlPageLinkRendererBegin": "\\BlueSpice\\PageTemplates\\Extension::onHtmlPageLinkRendererBegin",
+		"MessagesPreLoad":"\\BlueSpice\\PageTemplates\\Extension::onMessagesPreLoad"
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2
