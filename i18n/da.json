@@ -10,6 +10,7 @@
 	"bs-pagetemplates-tpl-edited": "Ændringerne blev gemt.",
 	"bs-pagetemplates-dberror": "Der opstod en databasefejl.",
 	"bs-pagetemplates-tpl-deleted": "Skabelonen blev slettet.",
+	"bs-pagetemplates-general-section": "Generelt",
 	"bs-pagetemplates-headerlabel": "Etiket",
 	"bs-pagetemplates-headertargetnamespace": "Navnerum",
 	"bs-pagetemplates-tipeditdetails": "Rediger skabelon",
