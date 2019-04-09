@@ -35,7 +35,7 @@ Ext.define( 'BS.PageTemplates.TemplateDialog', {
 			checked: true,
 			allowBlank: false
 		});
-		this.cbTargetNamespace = Ext.create( 'BS.form.NamespaceCombo', {
+		this.cbTargetNamespace = Ext.create( 'BS.form.field.NamespaceTag', {
 			fieldLabel: mw.message( 'bs-pagetemplates-label-targetns' ).plain(),
 			includeAll: true,
 			allowBlank: false
@@ -72,7 +72,7 @@ Ext.define( 'BS.PageTemplates.TemplateDialog', {
 
 		this.tfLabel.setValue( this.currentData.label );
 		this.taDesc.setValue( this.currentData.desc );
-		this.cbTargetNamespace.setValue( this.currentData.targetns );
+		this.cbTargetNamespace.setValue( this.currentData.targetnsid );
 		this.cbTemplate.setValue( this.currentData.templatename );
 	},
 	getData: function() {

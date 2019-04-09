@@ -39,12 +39,14 @@ class BSApiPageTemplatesStore extends BSApiExtJSStoreBase {
 		$aData = array();
 
 		while( $row = $res->fetchObject() ) {
+			$targetNamespacesIds = FormatJson::decode( $row->pt_target_namespace, true );
+
 			$tmp = new stdClass();
 			$tmp->id       = $row->pt_id;
 			$tmp->label    = $row->pt_label;
 			$tmp->desc    = $row->pt_desc;
-			$tmp->targetns = BsNamespaceHelper::getNamespaceName( $row->pt_target_namespace, true );
-			$tmp->targetnsid = $row->pt_target_namespace;
+			$tmp->targetns = implode( ', ', $this->getNamespacesByIds( $targetNamespacesIds ) );
+			$tmp->targetnsid = $targetNamespacesIds;
 			$oTitle = Title::newFromText( $row->pt_template_title, $row->pt_template_namespace );
 			$tmp->template  = '<a href="'.$oTitle->getFullURL().'" target="_blank" '.($oTitle->exists()?'':'class="new"').'>'.$oTitle->getFullText().'</a>';
 			$tmp->templatename = $oTitle->getFullText();
@@ -68,5 +70,23 @@ class BSApiPageTemplatesStore extends BSApiExtJSStoreBase {
 
 	protected function getRequiredPermissions() {
 		return array( 'wikiadmin' );
+	}
+
+	/**
+	 * @param $targetNamespacesIds
+	 * @return array
+	 */
+	private function getNamespacesByIds( $targetNamespacesIds ) {
+		$namespaces = [];
+
+		if ( count($targetNamespacesIds) > 0 ) {
+			foreach( $targetNamespacesIds as $nsId ) {
+				if($nsName = BsNamespaceHelper::getNamespaceName( $nsId, true )) {
+					$namespaces[] = $nsName;
+				}
+			}
+		}
+
+		return $namespaces;
 	}
 }

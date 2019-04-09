@@ -41,20 +41,25 @@ class BSPageTemplateList {
 	protected function fetchDB() {
 		$dbr = wfGetDB( DB_REPLICA );
 
-		$aConds = [];
-		if ( $this->aConfig[self::HIDE_IF_NOT_IN_TARGET_NS] ) {
-			$aConds[] = 'pt_target_namespace IN (' . $this->oTitle->getNamespace() . ', -99)';
-		}
-
 		$res = $dbr->select(
 			'bs_pagetemplate',
 			'*',
-			$aConds,
+			[],
 			__METHOD__,
 			array( 'ORDER BY' => 'pt_label' )
 		);
 
 		foreach( $res as $row ) {
+
+			if ( $this->aConfig[self::HIDE_IF_NOT_IN_TARGET_NS] ) {
+
+				$targetNamespaceIds = FormatJson::decode( $row->pt_target_namespace, true );
+
+				if ( !$this->matchNamespaces($targetNamespaceIds) ) {
+					continue;
+				}
+			}
+
 			$aDataSet = (array)$row;
 			$aDataSet['type'] = strtolower(
 				MWNamespace::getCanonicalName( $row->pt_template_namespace )
@@ -231,4 +236,20 @@ class BSPageTemplateList {
 	public function set( $iId, $aData ) {
 		$this->aDataSets[$iId] = $aData;
 	}
+
+    /**
+     * @param $targetNamespaceIds
+     * @return bool
+     */
+	private function matchNamespaces( $targetNamespaceIds ) {
+        if ( in_array( $this->oTitle->getNamespace(), $targetNamespaceIds ) ) {
+            return true;
+        }
+
+        if ( in_array( -99, $targetNamespaceIds ) ) {
+            return true;
+        }
+
+        return false;
+    }
 }

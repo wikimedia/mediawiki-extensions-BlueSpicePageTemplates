@@ -105,12 +105,11 @@ class BSApiPageTemplatesTasks extends BSApiTasksBase {
 	 */
 	protected function task_doEditTemplate( $oTaskData, $aParams ) {
 		$oReturn = $this->makeStandardReturn();
-
 		$sDesc = isset( $oTaskData->desc ) ? $oTaskData->desc : '';
 		$sLabel = isset( $oTaskData->label ) ? $oTaskData->label : '';
 		$sTemplateName = isset( $oTaskData->template ) ? $oTaskData->template : '';
-		$iTargetNs = isset( $oTaskData->targetns ) ? $oTaskData->targetns : 0;
 		$iOldId = isset( $oTaskData->id ) ? $oTaskData->id : null;
+		$targetNamespaces = isset( $oTaskData->targetns ) ? $oTaskData->targetns : [];
 
 		if ( empty( $sDesc ) ) $sDesc = ' ';
 
@@ -156,7 +155,7 @@ class BSApiPageTemplatesTasks extends BSApiTasksBase {
 					'pt_desc' => $sDesc,
 					'pt_template_title' => $oTitle->getText(),
 					'pt_template_namespace' => $oTitle->getNamespace(),
-					'pt_target_namespace' => $iTargetNs,
+					'pt_target_namespace' => FormatJson::encode($targetNamespaces),
 					'pt_sid' => 0,
 				)
 			);
@@ -180,7 +179,7 @@ class BSApiPageTemplatesTasks extends BSApiTasksBase {
 					'pt_desc' => $sDesc,
 					'pt_template_title' => $oTitle->getText(),
 					'pt_template_namespace' => $oTitle->getNamespace(),
-					'pt_target_namespace' => $iTargetNs
+					'pt_target_namespace' => FormatJson::encode($targetNamespaces)
 				),
 				array( 'pt_id' => $iOldId )
 			);
