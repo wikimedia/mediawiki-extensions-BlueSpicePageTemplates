@@ -39,19 +39,19 @@ class BSTransformNSData extends LoggedUpdateMaintenance {
 		$this->readData();
 		$this->output( count($this->data). " pagetemplates\n" );
 		foreach( $this->data as $pageId => $pageTemplate ) {
-            if ( is_numeric( $pageTemplate->pt_target_namespace ) ) {
+			if ( is_numeric( $pageTemplate->pt_target_namespace ) ) {
 
-                $targetNs = FormatJson::encode( [ (int)$pageTemplate->pt_target_namespace ] );
+				$targetNs = FormatJson::encode( [ (int)$pageTemplate->pt_target_namespace ] );
 
-                $this->output( ", " );
+				$this->output( ", " );
 
-                $this->getDB( DB_MASTER )->update(
-                    'bs_pagetemplate',
-                    [ 'pt_target_namespace' => $targetNs ],
-                    [ 'pt_id' => $pageId ],
-                    __METHOD__
-                );
-            }
+				$this->getDB( DB_MASTER )->update(
+					'bs_pagetemplate',
+					[ 'pt_target_namespace' => $targetNs ],
+					[ 'pt_id' => $pageId ],
+					__METHOD__
+				);
+			}
 		}
 
 		return true;
