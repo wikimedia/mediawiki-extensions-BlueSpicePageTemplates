@@ -38,8 +38,8 @@ class WriteToConfiguration extends NamespaceManagerWriteNamespaceConfiguration {
 
 		if ( ( $currentlyExcluded && !$explicitlyActivated ) ||
 			$explicitlyDeactivated ) {
-			$this->saveContent .= "\$GLOBALS['bsgPageTemplatesExcludeNs'][] = ".
-				$this->constName.";\n";
+			$this->saveContent .= "\$GLOBALS['bsgPageTemplatesExcludeNs'][] = " .
+				$this->constName . ";\n";
 		}
 
 		return true;
