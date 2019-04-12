@@ -18,12 +18,11 @@ class BSApiPageTemplatesTasksTest extends BSApiTasksTestBase {
 	}
 
 	public function addDBData() {
-		 // addDBDataOnce fails with usage of @dataProvider...
+		// addDBDataOnce fails with usage of @dataProvider...
 		$oPageTemplateFixtures = new BSPageTemplateFixtures();
 		foreach ( $oPageTemplateFixtures->makeDataSets() as $dataSet ) {
 			$this->db->insert( 'bs_pagetemplate', $dataSet );
 		}
-		return;
 	}
 
 	protected function getModuleName() {

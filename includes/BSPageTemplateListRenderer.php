@@ -128,7 +128,7 @@ class BSPageTemplateListRenderer {
 		if ( !empty( $sectionContent ) ) {
 			$this->buffer .= Html::rawElement(
 				'div',
-				[ 'id' => 'bs-pt-'.$key, 'class' => 'bs-pt-sect' ],
+				[ 'id' => 'bs-pt-' . $key, 'class' => 'bs-pt-sect' ],
 				$sectionContent
 			);
 		}
@@ -164,7 +164,7 @@ class BSPageTemplateListRenderer {
 
 		return Html::rawElement(
 			'div',
-			[ 'id' => 'bs-pt-subsect-'.$key, 'class' => 'bs-pt-subsect' ],
+			[ 'id' => 'bs-pt-subsect-' . $key, 'class' => 'bs-pt-subsect' ],
 			$headingElement . $list
 		);
 	}
