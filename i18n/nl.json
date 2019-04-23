@@ -44,5 +44,6 @@
 	"bs-pagetemplates-confirm-deletetpl": "Weet u zeker dat u wilt verwijderen {{PLURAL:$1|dit sjabloon|sjablonen}}?",
 	"bs-pagetemplates-remove-message-unknown": "Er is een onverwachte fout opgetreden, probeer het a.u.b. opnieuw.",
 	"bs-pagetemplates-remove-message-success": "De volgende {{PLURAL:$1|sjabloon|sjablonen werden}} verwijderd: $2",
-	"bs-pagetemplates-remove-message-failure": "De volgende {{PLURAL:$1|sjabloon|sjablonen}} kan niet worden verwijderd: $2 (Reden: $3)"
+	"bs-pagetemplates-remove-message-failure": "De volgende {{PLURAL:$1|sjabloon|sjablonen}} kan niet worden verwijderd: $2 (Reden: $3)",
+	"bs-usagetracker-pagetemplates": "paginasjablonen"
 }
