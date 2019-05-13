@@ -49,5 +49,5 @@
 	"pagetemplatesadmin": "Page templates administration",
 	"bs-usagetracker-pagetemplates": "page templates",
 	"bs-pagetemplates-nsm-label": "PageTemplates",
-	"right-pagetemplatesadmin-viewspecialpage": "Grants access to the [[Special:PageTemplatesAdmin]] special page, where page templates can be managed."
+	"right-pagetemplatesadmin-viewspecialpage": "Access to the [[Special:PageTemplatesAdmin]] special page, where page templates can be managed"
 }
