@@ -75,7 +75,8 @@
 		"SpecialPageTemplatesAdmin": "includes/specials/SpecialPageTemplatesAdmin.php",
 		"BSPageTemplateList": "includes/BSPageTemplateList.php",
 		"BSPageTemplateListRenderer": "includes/BSPageTemplateListRenderer.php",
-		"BSPageTemplateFixtures": "tests/phpunit/utility/BSPageTemplateFixtures.php"
+		"BSPageTemplateFixtures": "tests/phpunit/utility/BSPageTemplateFixtures.php",
+		"BSTransformNSData": "maintenance/BSTransformNSData.php"
 	},
 	"ExtensionMessagesFiles": {
 		"PageTemplatesAdminAlias": "includes/specials/SpecialPageTemplatesAdmin.alias.php"

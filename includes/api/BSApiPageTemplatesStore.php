@@ -49,13 +49,14 @@ class BSApiPageTemplatesStore extends BSApiExtJSStoreBase {
 		$data = [];
 
 		foreach ( $res as $row ) {
+			$targetNamespacesIds = FormatJson::decode( $row->pt_target_namespace, true );
+
 			$tmp = new stdClass();
 			$tmp->id = $row->pt_id;
 			$tmp->label = $row->pt_label;
 			$tmp->desc = $row->pt_desc;
-			$tmp->targetns = BsNamespaceHelper::getNamespaceName(
-					$row->pt_target_namespace, true );
-			$tmp->targetnsid = $row->pt_target_namespace;
+			$tmp->targetns = implode( ', ', $this->getNamespacesByIds( $targetNamespacesIds ) );
+			$tmp->targetnsid = $targetNamespacesIds;
 			$title = Title::newFromText( $row->pt_template_title,
 					$row->pt_template_namespace );
 			$tmp->template = '<a href="' . $title->getFullURL() .
@@ -93,5 +94,24 @@ class BSApiPageTemplatesStore extends BSApiExtJSStoreBase {
 	 */
 	protected function getRequiredPermissions() {
 		return [ 'wikiadmin' ];
+	}
+
+	/**
+	 * @param array $targetNamespacesIds
+	 * @return array
+	 */
+	protected function getNamespacesByIds( $targetNamespacesIds ) {
+		$namespaces = [];
+
+		if ( count( $targetNamespacesIds ) > 0 ) {
+			foreach ( $targetNamespacesIds as $nsId ) {
+				$nsName = BsNamespaceHelper::getNamespaceName( $nsId, true );
+				if ( $nsName ) {
+					$namespaces[] = $nsName;
+				}
+			}
+		}
+
+		return $namespaces;
 	}
 }

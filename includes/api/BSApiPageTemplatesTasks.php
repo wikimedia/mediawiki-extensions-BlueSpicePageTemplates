@@ -111,8 +111,8 @@ class BSApiPageTemplatesTasks extends BSApiTasksBase {
 		$sDesc = isset( $taskData->desc ) ? $taskData->desc : '';
 		$sLabel = isset( $taskData->label ) ? $taskData->label : '';
 		$sTemplateName = isset( $taskData->template ) ? $taskData->template : '';
-		$iTargetNs = isset( $taskData->targetns ) ? $taskData->targetns : 0;
 		$iOldId = isset( $taskData->id ) ? $taskData->id : null;
+		$targetNamespaces = isset( $taskData->targetns ) ? $taskData->targetns : [];
 
 		if ( empty( $sDesc ) ) {
 			$sDesc = ' ';
@@ -160,7 +160,7 @@ class BSApiPageTemplatesTasks extends BSApiTasksBase {
 					'pt_desc' => $sDesc,
 					'pt_template_title' => $oTitle->getText(),
 					'pt_template_namespace' => $oTitle->getNamespace(),
-					'pt_target_namespace' => $iTargetNs,
+					'pt_target_namespace' => FormatJson::encode( $targetNamespaces ),
 					'pt_sid' => 0,
 				]
 			);
@@ -184,7 +184,7 @@ class BSApiPageTemplatesTasks extends BSApiTasksBase {
 					'pt_desc' => $sDesc,
 					'pt_template_title' => $oTitle->getText(),
 					'pt_template_namespace' => $oTitle->getNamespace(),
-					'pt_target_namespace' => $iTargetNs
+					'pt_target_namespace' => FormatJson::encode( $targetNamespaces )
 				],
 				[ 'pt_id' => $iOldId ]
 			);

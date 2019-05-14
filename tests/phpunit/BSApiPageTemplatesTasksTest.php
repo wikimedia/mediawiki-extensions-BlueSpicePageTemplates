@@ -41,17 +41,16 @@ class BSApiPageTemplatesTasksTest extends BSApiTasksTestBase {
 				'desc' => 'Dummy template',
 				'label' => 'Dummy 1',
 				'template' => 'Dummy 1 title',
-				'targetns' => NS_FILE
+				'targetns' => [ NS_FILE ]
 			]
 		);
 
 		$this->assertTrue( $oData->success );
-
 		$this->assertSelect(
 			'bs_pagetemplate',
 			[ 'pt_id', 'pt_template_title', 'pt_target_namespace' ],
 			[ "pt_label = 'Dummy 1'" ],
-			[ [ 9, 'Dummy 1 title', 6 ] ]
+			[ [ 9, 'Dummy 1 title', FormatJson::encode( [ NS_FILE ] ) ] ]
 		);
 
 		$iIDAdded = 9;
@@ -64,7 +63,7 @@ class BSApiPageTemplatesTasksTest extends BSApiTasksTestBase {
 				'desc' => 'Faux template',
 				'label' => 'Faux 1',
 				'template' => 'Faux 1 title',
-				'targetns' => NS_MAIN
+				'targetns' => [ NS_MAIN ]
 			]
 		);
 
@@ -74,7 +73,7 @@ class BSApiPageTemplatesTasksTest extends BSApiTasksTestBase {
 			'bs_pagetemplate',
 			[ 'pt_template_title', 'pt_target_namespace' ],
 			[ 'pt_id = 9' ],
-			[ [ 'Faux 1 title', 0 ] ]
+			[ [ 'Faux 1 title', FormatJson::encode( [ NS_MAIN ] ) ] ]
 		);
 	}
 

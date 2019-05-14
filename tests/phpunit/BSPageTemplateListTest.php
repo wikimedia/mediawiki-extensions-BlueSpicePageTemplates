@@ -93,7 +93,8 @@ class BSPageTemplateListTest extends MediaWikiTestCase {
 		$this->assertNotEquals( 0, $this->getWholeCount( $groupedResult['other'] ) );
 
 		$list2 = new BSPageTemplateList( Title::makeTitle( NS_MAIN, 'Dummy' ), [
-			BSPageTemplateList::HIDE_IF_NOT_IN_TARGET_NS => true
+			BSPageTemplateList::HIDE_IF_NOT_IN_TARGET_NS => true,
+			BSPageTemplateList::UNSET_TARGET_NAMESPACES => false
 		] );
 		$groupedResult2 = $list2->getAllGrouped();
 
