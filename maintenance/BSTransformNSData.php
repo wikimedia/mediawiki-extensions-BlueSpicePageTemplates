@@ -1,4 +1,5 @@
 <?php
+
 $extDir = dirname( dirname( __DIR__ ) );
 
 require_once "$extDir/BlueSpiceFoundation/maintenance/BSMaintenance.php";
@@ -19,7 +20,6 @@ class BSTransformNSData extends LoggedUpdateMaintenance {
 			return true;
 		} else {
 			$this->output( $this->updatelogFailedMessage() . "\n" );
-
 			return false;
 		}
 	}
@@ -29,8 +29,7 @@ class BSTransformNSData extends LoggedUpdateMaintenance {
 			'bs_pagetemplate',
 			'*'
 		);
-
-		if ( count( $res ) < 1 ) {
+		if ( $res->result->num_rows < 1 ) {
 			return true;
 		}
 
@@ -50,11 +49,7 @@ class BSTransformNSData extends LoggedUpdateMaintenance {
 		$this->output( count( $this->data ) . " pagetemplates\n" );
 		foreach ( $this->data as $pageId => $pageTemplate ) {
 
-			$this->output( "." );
-			$targetNs = FormatJson::encode( [
-				'id' => $pageTemplate['pt_target_namespace'],
-				'namespace' => BsNamespaceHelper::getNamespaceName( $pageTemplate['pt_target_namespace'], true )
-			] );
+			$targetNs = FormatJson::encode( [ (int)$pageTemplate->pt_target_namespace ] );
 
 			$this->output( "\n" );
 
