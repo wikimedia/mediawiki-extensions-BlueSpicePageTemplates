@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Chrumps"
+			"Chrumps",
+			"Railfail536"
 		]
 	},
 	"prefs-pagetemplates": "Szablony strony",
@@ -33,5 +34,7 @@
 	"bs-pagetemplates-confirm-deletetpl": "Czy na pewno chcesz usunąć {{PLURAL:$1|ten szablon|te szablony}}?",
 	"bs-pagetemplates-remove-message-success": "Usunięto {{PLURAL:$1|następny szablon|następujące szablony}}: $2",
 	"bs-pagetemplates-remove-message-failure": "{{PLURAL:$1|Następujący szablon nie mógł zostać usunięty|Następujące szablony nie mogły zostać usunięte}}: $2 (Powód: $3)",
-	"bs-usagetracker-pagetemplates": "szablony strony"
+	"action-pagetemplatesadmin-viewspecialpage": "wyświetlania strony specjalnej „{{int:pagetemplatesadmin}}”",
+	"bs-usagetracker-pagetemplates": "szablony strony",
+	"right-pagetemplatesadmin-viewspecialpage": "Dostęp do strony specjalnej [[Special:PageTemplatesAdmin]], na której można zarządzać szablonami stron"
 }
