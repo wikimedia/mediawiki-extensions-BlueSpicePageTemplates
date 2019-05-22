@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Renessaince"
+			"Renessaince",
+			"Red Winged Duck"
 		]
 	},
 	"bs-pagetemplates-pref-excludens": "Не пакаваць шаблёны ў гэтых прасторах назваў:",
-	"right-pagetemplatesadmin-viewspecialpage": "Дае доступ да спэцыяльнай старонкі [[Special:PageTemplatesAdmin]], адкуль можна кіраваць шаблёнамі старонкі."
+	"right-pagetemplatesadmin-viewspecialpage": "Доступ да спэцыяльнай старонкі [[Special:PageTemplatesAdmin]], адкуль можна кіраваць шаблёнамі старонкі."
 }
