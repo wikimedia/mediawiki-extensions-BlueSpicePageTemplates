@@ -1,24 +1,24 @@
 <?php
 
-class SpecialPageTemplatesAdmin extends \BlueSpice\SpecialPage {
+use BlueSpice\Special\ManagerBase;
 
-	/**
-	 *
-	 */
+class SpecialPageTemplatesAdmin extends ManagerBase {
+
 	public function __construct() {
 		parent::__construct( 'PageTemplatesAdmin', 'pagetemplatesadmin-viewspecialpage' );
 	}
 
 	/**
-	 *
-	 * @global OutputPage $this->getOutput()
-	 * @param string | false $parameter
+	 * @return string ID of the HTML element being added
 	 */
-	public function execute( $parameter ) {
-		parent::execute( $parameter );
-		$this->getOutput()->addModules( 'ext.bluespice.pageTemplates' );
-		$this->getOutput()->addHTML(
-			'<div id="bs-pagetemplates-grid" class="bs-manager-container"></div>' );
+	protected function getId() {
+		return 'bs-pagetemplates-grid';
 	}
 
+	/**
+	 * @return array
+	 */
+	protected function getModules() {
+		return [ 'ext.bluespice.pageTemplates' ];
+	}
 }
