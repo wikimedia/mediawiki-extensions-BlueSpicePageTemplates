@@ -40,5 +40,8 @@
 	"bs-pagetemplates-confirm-deletetpl": "Дали сте сигурни дека сакате да {{PLURAL:$1|го избришете овој шаблон|ги избришете овие шаблони}}?",
 	"bs-pagetemplates-remove-message-unknown": "Се јави неочекувана грешка. Обидете се повторно.",
 	"bs-pagetemplates-remove-message-success": "{{PLURAL:$1|Избришан е следниов шаблон|Избришани се следниве шаблони}}: $2",
-	"bs-pagetemplates-remove-message-failure": "Не можев да {{PLURAL:$1|го избришам следниов шаблон|ги избришам следниве шаблони}}: $2 (Причина: $3)"
+	"bs-pagetemplates-remove-message-failure": "Не можев да {{PLURAL:$1|го избришам следниов шаблон|ги избришам следниве шаблони}}: $2 (Причина: $3)",
+	"apihelp-bs-pagetemplates-store-description": "Ги наведува сите шаблони на страницата. Овозможува подредување, филтрирање и страничење. Применува параметри за ExtJS Store.",
+	"apihelp-bs-pagetemplates-store-summary": "Ги наведува сите шаблони на страницата. Овозможува подредување, филтрирање и страничење. Применува параметри за ExtJS Store.",
+	"bs-usagetracker-pagetemplates": "шаблони на страницата"
 }
