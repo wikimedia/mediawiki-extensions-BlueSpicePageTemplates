@@ -29,7 +29,7 @@ class BSTransformNSData extends LoggedUpdateMaintenance {
 			'bs_pagetemplate',
 			'*'
 		);
-		if ( $res->result->num_rows < 1 ) {
+		if ( $res->numRows() < 1 ) {
 			return true;
 		}
 
