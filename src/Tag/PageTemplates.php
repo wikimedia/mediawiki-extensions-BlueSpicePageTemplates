@@ -21,6 +21,7 @@ class PageTemplates extends Tag {
 		) {
 		return new PageTemplatesHandler( $processedInput, $processedArgs, $parser, $frame );
 	}
+
 	/**
 	 *
 	 * @return \ParamDefinition[]
@@ -28,12 +29,14 @@ class PageTemplates extends Tag {
 	public function getArgsDefinitions() {
 		return [];
 	}
+
 	/**
 	 * @return string[]
 	 */
 	public function getTagNames() {
 		return [ 'bs:pagetemplates', 'pagetemplates' ];
 	}
+
 	/**
 	 * @return bool
 	 */
