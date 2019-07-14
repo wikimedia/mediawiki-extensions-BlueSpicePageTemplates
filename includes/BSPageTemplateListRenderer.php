@@ -22,6 +22,7 @@ class BSPageTemplateListRenderer {
 	}
 
 	protected $ordering = [];
+
 	protected function initNamespaceSorting() {
 		$sortingTitle = Title::makeTitle( NS_MEDIAWIKI, 'PageTemplatesSorting' );
 		$content = BsPageContentProvider::getInstance()->getContentFromTitle( $sortingTitle );
