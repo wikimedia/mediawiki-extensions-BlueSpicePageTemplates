@@ -4,6 +4,11 @@
 			"Joetaras"
 		]
 	},
+	"prefs-pagetemplates": "Template d'a pàgene",
+	"bs-pagetemplates-empty-page": "Pagèna vacande",
+	"bs-pagetemplates-empty-page-desc": "Accuminze cu 'na pàgena vacande.",
+	"bs-pagetemplatesadmin-label": "Template d'a pàgene",
+	"bs-pagetemplates-general-section": "Generale",
 	"bs-pagetemplates-headerlabel": "Etichette",
 	"bs-pagetemplates-headertargetnamespace": "Namespace",
 	"bs-pagetemplates-tipeditdetails": "Cange 'u template",
@@ -13,5 +18,8 @@
 	"bs-pagetemplates-label-desc": "Descrizione",
 	"bs-pagetemplates-label-targetns": "Namespace",
 	"bs-pagetemplates-label-tplns": "Namespace d'u template",
-	"bs-pagetemplates-label-article": "Template"
+	"bs-pagetemplates-label-article": "Template",
+	"apihelp-bs-pagetemplates-tasks-description": "Permette 'a manipolazione de le template de pàgene",
+	"apihelp-bs-pagetemplates-tasks-summary": "Permette 'a manipolazione de le template de pàgene",
+	"action-pagetemplatesadmin-viewspecialpage": "'ndruche a pàgena speciale \"{{int:pagetemplatesadmin}}\""
 }
