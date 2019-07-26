@@ -53,5 +53,5 @@
 	"pagetemplatesadmin": "頁面模板管理",
 	"bs-usagetracker-pagetemplates": "頁面模板",
 	"bs-pagetemplates-nsm-label": "頁面模板",
-	"right-pagetemplatesadmin-viewspecialpage": "授予存取用來管理頁面模板的 [[Special:PageTemplatesAdmin]] 特殊頁面。"
+	"right-pagetemplatesadmin-viewspecialpage": "存取用來管理頁面模板的 [[Special:PageTemplatesAdmin]] 特殊頁面。"
 }
