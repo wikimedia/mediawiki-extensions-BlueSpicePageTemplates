@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Joetaras"
+			"Joetaras",
+			"Ruthven"
 		]
 	},
 	"bs-pagetemplates-desc": "Face 'ndrucà 'n'elenghe de template signate cumme template de pàgene",
@@ -11,7 +12,7 @@
 	"bs-pagetemplatesadmin-label": "Template d'a pàgene",
 	"bs-pagetemplates-tpl-desc-toolong": "'A descrizione jè troppe longhe. Pe piacere ause 'na lunghezze massime de 255 carattere.",
 	"bs-pagetemplates-tpl-label-toolong": "L'etichette jè troppe longhe. Ause 'na lunghezze massime de 255 carattere.",
-	"bs-pagetemplates-tpl-label-empty": "Pe piacere mitte 'n'etichette.",
+	"bs-pagetemplates-tpl-label-empty": "Pe piacere miette n'etichetta.",
 	"bs-pagetemplates-tpl-name-toolong": "'U nome d'u template jè troppe luènghe. Ause 'na lunghezze massime de 255 carattere.",
 	"bs-pagetemplates-tpl-name-empty": "Pe piacere mitte 'u nome d'u template.",
 	"bs-pagetemplates-no-id": "Pe piacere mitte 'nu pàgene da auà cumme template.",
