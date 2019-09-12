@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Ата",
-			"Piramidion"
+			"Piramidion",
+			"Vlad5250"
 		]
 	},
 	"bs-pagetemplates-desc": "Відображає список шаблонів, позначених як шаблони сторінок",
@@ -50,5 +51,5 @@
 	"pagetemplatesadmin": "Адміністрування шаблонів сторінок",
 	"bs-usagetracker-pagetemplates": "шаблони сторінок",
 	"bs-pagetemplates-nsm-label": "PageTemplates",
-	"right-pagetemplatesadmin-viewspecialpage": "Надає доступ до спеціальної сторінки [[Special:PageTemplatesAdmin]], де можна керувати шаблонами сторінок."
+	"right-pagetemplatesadmin-viewspecialpage": "Надає доступ до спеціальної сторінки [[Special:PageTemplatesAdmin]], де можна керувати шаблонами сторінок"
 }

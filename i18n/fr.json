@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Gomoko",
-			"Wladek92"
+			"Wladek92",
+			"Urhixidur"
 		]
 	},
 	"bs-pagetemplates-desc": "Affiche une liste de modèles marqué comme modèles de page",
@@ -29,14 +30,14 @@
 	"bs-pagetemplates-pref-hideifnotintargetns": "Masquer le modèle si la page n’est pas créée dans l’espace de nom cible",
 	"bs-pagetemplates-pref-hidedefaults": "Masquer les modèles par défaut",
 	"bs-pagetemplates-headerlabel": "Libellé",
-	"bs-pagetemplates-headertargetnamespace": "Espace de nom",
+	"bs-pagetemplates-headertargetnamespace": "Espace de noms",
 	"bs-pagetemplates-tipeditdetails": "Modifier le modèle",
 	"bs-pagetemplates-tipdeletetemplate": "Supprimer {{PLURAL:$1|le modèle|les modèles}}",
 	"bs-pagetemplates-tipaddtemplate": "Ajouter un modèle",
 	"bs-pagetemplates-label-tpl": "Nom du modèle",
 	"bs-pagetemplates-label-desc": "Description",
-	"bs-pagetemplates-label-targetns": "Espace de nom",
-	"bs-pagetemplates-label-tplns": "Espace de nom du modèle",
+	"bs-pagetemplates-label-targetns": "Espace de noms",
+	"bs-pagetemplates-label-tplns": "Espace de noms du modèle",
 	"bs-pagetemplates-label-article": "Modèle",
 	"bs-pagetemplates-confirm-deletetpl": "Êtes-vous sûr de vouloir supprimer {{PLURAL:$1|ce modèle|ces modèles}} ?",
 	"bs-pagetemplates-remove-message-unknown": "Une erreur inattendue s’est produite, veuillez réessayer.",
@@ -50,5 +51,5 @@
 	"pagetemplatesadmin": "Gestion des modèles de page",
 	"bs-usagetracker-pagetemplates": "modèles de page",
 	"bs-pagetemplates-nsm-label": "Modèles de page",
-	"right-pagetemplatesadmin-viewspecialpage": "Attribue les droits d'accès à la page spéciale [[Special:PageTemplatesAdmin]] , pour la gestion des modèles de page."
+	"right-pagetemplatesadmin-viewspecialpage": "Accéder à la page spéciale [[Special:PageTemplatesAdmin]], où les modèles de page peuvent être gérés"
 }
