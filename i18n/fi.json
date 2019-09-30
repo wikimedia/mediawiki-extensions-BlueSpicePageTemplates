@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Silvonen"
+		]
+	},
+	"bs-pagetemplates-empty-page": "Tyhjä sivu",
+	"bs-pagetemplates-label-desc": "Kuvaus"
+}
