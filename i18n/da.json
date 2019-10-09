@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saederup92"
+		]
+	},
+	"bs-pagetemplates-empty-page": "Tom side",
+	"bs-pagetemplates-empty-page-desc": "Start med en tom side.",
+	"bs-pagetemplates-tpl-added": "Skabelonen blev tilføjet.",
+	"bs-pagetemplates-tpl-edited": "Ændringerne blev gemt.",
+	"bs-pagetemplates-dberror": "Der opstod en databasefejl.",
+	"bs-pagetemplates-tpl-deleted": "Skabelonen blev slettet.",
+	"bs-pagetemplates-general-section": "Generelt",
+	"bs-pagetemplates-headerlabel": "Etiket",
+	"bs-pagetemplates-headertargetnamespace": "Navnerum",
+	"bs-pagetemplates-tipeditdetails": "Rediger skabelon",
+	"bs-pagetemplates-tipaddtemplate": "Tilføj skabelon",
+	"bs-pagetemplates-label-tpl": "Skabelonnavn",
+	"bs-pagetemplates-label-desc": "Beskrivelse",
+	"bs-pagetemplates-label-targetns": "Navnerum",
+	"bs-pagetemplates-label-tplns": "Skabelon navnerum",
+	"bs-pagetemplates-label-article": "Skabelon"
+}

@@ -5,112 +5,156 @@ class BSPageTemplateList {
 	const FORCE_NAMESPACE = 1;
 	const HIDE_DEFAULTS = 2;
 	const ALL_NAMESPACES_PSEUDO_ID = -99;
+	const UNSET_TARGET_NAMESPACES = 101;
 
 	/**
 	 *
 	 * @var Title
 	 */
-	protected $oTitle = null;
+	protected $title = null;
 
 	/**
 	 *
 	 * @var array
 	 */
-	protected $aConfig = [];
+	protected $config = [];
 
-
-	public function __construct( $oTitle, $aConfig = [] ) {
-		$this->oTitle = $oTitle;
-		$this->aConfig = $aConfig + [
+	/**
+	 *
+	 * @param Title $title
+	 * @param array $config
+	 */
+	public function __construct( $title, $config = [] ) {
+		$this->title = $title;
+		$this->config = $config + [
 			self::FORCE_NAMESPACE => false,
 			self::HIDE_IF_NOT_IN_TARGET_NS => true,
-			self::HIDE_DEFAULTS => false
+			self::HIDE_DEFAULTS => false,
+			self::UNSET_TARGET_NAMESPACES => false
 		];
 
 		$this->init();
 	}
 
+	/**
+	 *
+	 */
 	protected function init() {
 		$this->fetchDB();
 		$this->filterByPermissionAndAddTargetUrls();
 		$this->addDefaultPageTemplate();
 	}
 
-	protected $aDataSets = [];
+	protected $dataSets = [];
 
+	/**
+	 *
+	 */
 	protected function fetchDB() {
 		$dbr = wfGetDB( DB_REPLICA );
-
-		$aConds = [];
-		if ( $this->aConfig[self::HIDE_IF_NOT_IN_TARGET_NS] ) {
-			$aConds[] = 'pt_target_namespace IN (' . $this->oTitle->getNamespace() . ', -99)';
-		}
 
 		$res = $dbr->select(
 			'bs_pagetemplate',
 			'*',
-			$aConds,
+			[],
 			__METHOD__,
-			array( 'ORDER BY' => 'pt_label' )
+			[ 'ORDER BY' => 'pt_label' ]
 		);
 
-		foreach( $res as $row ) {
-			$aDataSet = (array)$row;
-			$aDataSet['type'] = strtolower(
+		foreach ( $res as $row ) {
+			if ( $this->config[self::HIDE_IF_NOT_IN_TARGET_NS] ) {
+
+				$targetNamespaceIds = FormatJson::decode( $row->pt_target_namespace, true );
+
+				if ( $this->skipDataSet( $this->title->getNamespace(), $targetNamespaceIds ) ) {
+					continue;
+				}
+			}
+
+			$dataSet = (array)$row;
+			$dataSet['type'] = strtolower(
 				MWNamespace::getCanonicalName( $row->pt_template_namespace )
 			);
-			$this->aDataSets[$row->pt_id] = $aDataSet;
+			$this->dataSets[$row->pt_id] = $dataSet;
 		}
 	}
 
+	/**
+	 * @param int $ns
+	 * @param array $row
+	 * @return bool
+	 */
+	private function skipDataSet( $nsId, $row ) {
+		if ( !in_array( self::ALL_NAMESPACES_PSEUDO_ID, $row ) && !in_array( $nsId, $row ) ) {
+			return true;
+		}
+
+		return false;
+	}
+
+	/**
+	 *
+	 * @return type
+	 */
 	protected function addDefaultPageTemplate() {
-		if( $this->aConfig[self::HIDE_DEFAULTS] ) {
+		if ( $this->config[self::HIDE_DEFAULTS] ) {
 			return;
 		}
 
-		$targetUrl = $this->oTitle->getLinkURL( [ 'action' => 'edit' ] );
-		Hooks::run( 'BSPageTemplatesModifyTargetUrl', array( $this->oTitle, null, &$targetUrl ) );
+		$targetUrl = $this->title->getLinkURL( [ 'action' => 'edit' ] );
+		Hooks::run( 'BSPageTemplatesModifyTargetUrl', [ $this->title, null, &$targetUrl ] );
 
-		$this->aDataSets[-1] = [
+		$this->dataSets[-1] = [
 			'pt_template_title' => null,
 			'pt_template_namespace' => null,
 			'pt_label' => wfMessage( 'bs-pagetemplates-empty-page' )->plain(),
 			'pt_desc' => wfMessage( 'bs-pagetemplates-empty-page-desc' )->plain(),
-			'pt_target_namespace' => -98, //Needs to be something non-existent, but I did not want to use well known pseudo namespace ids
+			// NS needs to be something non-existent,
+			// but I did not want to use well known pseudo namespace ids
+			'pt_target_namespace' => FormatJson::encode( [ -98 ] ),
 			'target_url' => $targetUrl,
 			'type' => 'empty'
 		];
-
 	}
 
+	/**
+	 *
+	 */
 	protected function filterByPermissionAndAddTargetUrls() {
-		foreach( $this->aDataSets as $iId => &$aDataSet ) {
-			$oPreloadTitle = Title::makeTitle(
-				$aDataSet['pt_template_namespace'],
-				$aDataSet['pt_template_title']
+		foreach ( $this->dataSets as $id => &$dataSet ) {
+			$preloadTitle = Title::makeTitle(
+				$dataSet['pt_template_namespace'],
+				$dataSet['pt_template_title']
 			);
 
-			$oTargetTitle = $this->oTitle;
-			if( $this->aConfig[self::FORCE_NAMESPACE]
-				&& (int)$aDataSet['pt_target_namespace'] !== static::ALL_NAMESPACES_PSEUDO_ID ) {
-				$oTargetTitle = Title::makeTitle(
-					$aDataSet['pt_target_namespace'],
-					$this->oTitle->getText()
-				);
+			$targetTitle = $this->title;
+			$targetNamespaceIds = FormatJson::decode( $dataSet['pt_target_namespace'], true );
+
+			foreach ( $targetNamespaceIds as $nsId ) {
+				if ( $this->config[self::FORCE_NAMESPACE]
+					&& (int)$nsId !== static::ALL_NAMESPACES_PSEUDO_ID ) {
+					$targetTitle = Title::makeTitle(
+						$nsId,
+						$this->title->getText()
+					);
+				}
+
+				// If a user can not create or edit a page in the target namespace, we hide the template
+				if (
+					$this->config[self::UNSET_TARGET_NAMESPACES] &&
+					( !$targetTitle->userCan( 'create' ) || !$targetTitle->userCan( 'edit' ) )
+				) {
+					unset( $this->dataSets[$id] );
+					continue;
+				}
 			}
 
-			//If a user can not create or edit a page in the target namespace, we hide the template
-			if( !$oTargetTitle->userCan( 'create' ) || !$oTargetTitle->userCan( 'edit' ) ) {
-				unset( $this->aDataSets[$iId] );
-				continue;
-			}
-
-			$targetUrl = $oTargetTitle->getLinkURL( [
+			$targetUrl = $targetTitle->getLinkURL( [
 				'action' => 'edit',
-				'preload' => $oPreloadTitle->getPrefixedDBkey()
+				'preload' => $preloadTitle->getPrefixedDBkey()
 			] );
-			Hooks::run( 'BSPageTemplatesModifyTargetUrl', array( $oTargetTitle, $oPreloadTitle, &$targetUrl ) );
-			$aDataSet['target_url'] = $targetUrl;
+			Hooks::run( 'BSPageTemplatesModifyTargetUrl', [ $targetTitle, $preloadTitle, &$targetUrl ] );
+			$dataSet['target_url'] = $targetUrl;
 		}
 	}
 
@@ -119,7 +163,7 @@ class BSPageTemplateList {
 	 * @return array
 	 */
 	public function getAll() {
-		return $this->aDataSets;
+		return $this->dataSets;
 	}
 
 	/**
@@ -140,15 +184,15 @@ class BSPageTemplateList {
 	 * @return array
 	 */
 	protected function getAllForDefault() {
-		$aFilteredDataSets = [];
-		foreach( $this->aDataSets as $iId => $aDataSet ) {
-			if( $iId < 0 ) {
-				$aFilteredDataSets[$iId] = $aDataSet;
+		$filteredDataSets = [];
+		foreach ( $this->dataSets as $id => $dataSet ) {
+			if ( $id < 0 ) {
+				$filteredDataSets[$id] = $dataSet;
 			}
 		}
 
 		return [
-			self::ALL_NAMESPACES_PSEUDO_ID => $aFilteredDataSets
+			self::ALL_NAMESPACES_PSEUDO_ID => $filteredDataSets
 		];
 	}
 
@@ -157,15 +201,19 @@ class BSPageTemplateList {
 	 * @return array
 	 */
 	protected function getAllForAllNamespaces() {
-		$aFilteredDataSets = [];
-		foreach( $this->aDataSets as $iId => $aDataSet ) {
-			if( (int)$aDataSet['pt_target_namespace'] === self::ALL_NAMESPACES_PSEUDO_ID ) {
-				$aFilteredDataSets[$iId] = $aDataSet;
+		$filteredDataSets = [];
+		foreach ( $this->dataSets as $id => $dataSet ) {
+			$targetNamespaceIds = FormatJson::decode( $dataSet['pt_target_namespace'], true );
+
+			foreach ( $targetNamespaceIds as $nsId ) {
+				if ( (int)$nsId === self::ALL_NAMESPACES_PSEUDO_ID ) {
+					$filteredDataSets[$id] = $dataSet;
+				}
 			}
 		}
 
 		return [
-			self::ALL_NAMESPACES_PSEUDO_ID => $aFilteredDataSets
+			self::ALL_NAMESPACES_PSEUDO_ID => $filteredDataSets
 		];
 	}
 
@@ -174,15 +222,16 @@ class BSPageTemplateList {
 	 * @return array
 	 */
 	protected function getAllForTargetNamespace() {
-		$aFilteredDataSets = [];
-		foreach( $this->aDataSets as $iId => $aDataSet ) {
-			if( (int)$aDataSet['pt_target_namespace'] === $this->oTitle->getNamespace() ) {
-				$aFilteredDataSets[$iId] = $aDataSet;
+		$filteredDataSets = [];
+		foreach ( $this->dataSets as $id => $dataSet ) {
+			$targetNamespaceIds = FormatJson::decode( $dataSet['pt_target_namespace'], true );
+			if ( in_array( $this->title->getNamespace(), $targetNamespaceIds ) ) {
+				$filteredDataSets[$id] = $dataSet;
 			}
 		}
 
 		return [
-			$this->oTitle->getNamespace() => $aFilteredDataSets
+			$this->title->getNamespace() => $filteredDataSets
 		];
 	}
 
@@ -191,28 +240,34 @@ class BSPageTemplateList {
 	 * @return array
 	 */
 	protected function getAllForOtherNamespaces() {
-		$aFilteredDataSets = [];
-		foreach( $this->aDataSets as $iId => $aDataSet ) {
-			if( $iId === -1 ) { //"Empty page" template
+		$filteredDataSets = [];
+		foreach ( $this->dataSets as $id => $dataSet ) {
+			// "Empty page" template
+			if ( $id === -1 ) {
 				continue;
 			}
 
-			if( (int)$aDataSet['pt_target_namespace'] === self::ALL_NAMESPACES_PSEUDO_ID ) {
-				continue;
-			}
+			$targetNamespaceIds = FormatJson::decode( $dataSet['pt_target_namespace'], true );
 
-			if( (int)$aDataSet['pt_target_namespace'] === $this->oTitle->getNamespace() ) {
-				continue;
-			}
+			foreach ( $targetNamespaceIds as $nsId ) {
 
-			if( !isset( $aFilteredDataSets[$aDataSet['pt_target_namespace']] ) ) {
-				$aFilteredDataSets[$aDataSet['pt_target_namespace']] = [];
-			}
+				if ( (int)$nsId === self::ALL_NAMESPACES_PSEUDO_ID ) {
+					continue;
+				}
 
-			$aFilteredDataSets[$aDataSet['pt_target_namespace']][$iId] = $aDataSet;
+				if ( (int)$nsId === $this->title->getNamespace() ) {
+					continue;
+				}
+
+				if ( !isset( $filteredDataSets[$nsId] ) ) {
+					$filteredDataSets[$nsId] = [];
+				}
+
+				$filteredDataSets[$nsId][$id] = $dataSet;
+			}
 		}
 
-		return $aFilteredDataSets;
+		return $filteredDataSets;
 	}
 
 	/**
@@ -220,15 +275,15 @@ class BSPageTemplateList {
 	 * @return int
 	 */
 	public function getCount() {
-		return count( $this->aDataSets );
+		return count( $this->dataSets );
 	}
 
 	/**
 	 *
-	 * @param int $iId
-	 * @param array $aData
+	 * @param int $id
+	 * @param array $data
 	 */
-	public function set( $iId, $aData ) {
-		$this->aDataSets[$iId] = $aData;
+	public function set( $id, $data ) {
+		$this->dataSets[$id] = $data;
 	}
 }

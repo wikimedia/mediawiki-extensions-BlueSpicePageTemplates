@@ -1,6 +1,6 @@
 <?php
 /**
- * Provides the group manager tasks api for BlueSpice.
+ * Provides the page templates tasks api for BlueSpice.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,7 +21,7 @@
  * @author     Patric Wirth <wirth@hallowelt.com>
  * @package    Bluespice_Extensions
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v3
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  */
 
 /**
@@ -34,7 +34,7 @@ class BSApiPageTemplatesTasks extends BSApiTasksBase {
 	 * Methods that can be called by task param
 	 * @var array
 	 */
-	protected $aTasks = array(
+	protected $aTasks = [
 		'doEditTemplate' => [
 			'examples' => [
 				[
@@ -97,22 +97,26 @@ class BSApiPageTemplatesTasks extends BSApiTasksBase {
 				]
 			]
 		]
-	);
+	];
 
 	/**
 	 * Creates or changes a template
-	 *
+	 * @param stdClass $taskData
+	 * @param array $params
+	 * @return BSStandardAPIResponse
 	 */
-	protected function task_doEditTemplate( $oTaskData, $aParams ) {
+	protected function task_doEditTemplate( $taskData, $params ) {
 		$oReturn = $this->makeStandardReturn();
 
-		$sDesc = isset( $oTaskData->desc ) ? $oTaskData->desc : '';
-		$sLabel = isset( $oTaskData->label ) ? $oTaskData->label : '';
-		$sTemplateName = isset( $oTaskData->template ) ? $oTaskData->template : '';
-		$iTargetNs = isset( $oTaskData->targetns ) ? $oTaskData->targetns : 0;
-		$iOldId = isset( $oTaskData->id ) ? $oTaskData->id : null;
+		$sDesc = isset( $taskData->desc ) ? $taskData->desc : '';
+		$sLabel = isset( $taskData->label ) ? $taskData->label : '';
+		$sTemplateName = isset( $taskData->template ) ? $taskData->template : '';
+		$iOldId = isset( $taskData->id ) ? $taskData->id : null;
+		$targetNamespaces = isset( $taskData->targetns ) ? $taskData->targetns : [];
 
-		if ( empty( $sDesc ) ) $sDesc = ' ';
+		if ( empty( $sDesc ) ) {
+			$sDesc = ' ';
+		}
 
 		// TODO RBV (18.05.11 09:19): Use validators
 		if ( strlen( $sDesc ) >= 255 ) {
@@ -151,38 +155,38 @@ class BSApiPageTemplatesTasks extends BSApiTasksBase {
 		if ( empty( $iOldId ) ) {
 			$oDbw->insert(
 				'bs_pagetemplate',
-				array(
+				[
 					'pt_label' => $sLabel,
 					'pt_desc' => $sDesc,
 					'pt_template_title' => $oTitle->getText(),
 					'pt_template_namespace' => $oTitle->getNamespace(),
-					'pt_target_namespace' => $iTargetNs,
+					'pt_target_namespace' => FormatJson::encode( $targetNamespaces ),
 					'pt_sid' => 0,
-				)
+				]
 			);
 			$oReturn->success = true;
 			$oReturn->message = wfMessage( 'bs-pagetemplates-tpl-added' )->plain();
 		// and here we have edit template
 		} else {
-			$rRes = $oDbw->select( 'bs_pagetemplate', 'pt_id', array( 'pt_id' => $iOldId ) );
+			$rRes = $oDbw->select( 'bs_pagetemplate', 'pt_id', [ 'pt_id' => $iOldId ] );
 			$iNumRow = $oDbw->numRows( $rRes );
 			if ( !$iNumRow ) {
 				$oReturn->message = wfMessage( 'bs-pagetemplates-nooldtpl' )->plain();
 				return $oReturn;
 			}
 
-			//$oDbw = wfGetDB( DB_MASTER );
+			// $oDbw = wfGetDB( DB_MASTER );
 			$rRes = $oDbw->update(
 				'bs_pagetemplate',
-				array(
+				[
 					'pt_id' => $iOldId,
 					'pt_label' => $sLabel,
 					'pt_desc' => $sDesc,
 					'pt_template_title' => $oTitle->getText(),
 					'pt_template_namespace' => $oTitle->getNamespace(),
-					'pt_target_namespace' => $iTargetNs
-				),
-				array( 'pt_id' => $iOldId )
+					'pt_target_namespace' => FormatJson::encode( $targetNamespaces )
+				],
+				[ 'pt_id' => $iOldId ]
 			);
 
 			if ( $rRes === false ) {
@@ -199,36 +203,38 @@ class BSApiPageTemplatesTasks extends BSApiTasksBase {
 
 	/**
 	 * Deletes one or several templates
-	 *
+	 * @param stdClass $taskData
+	 * @param array $params
+	 * @return BSStandardAPIResponse
 	 */
-	protected function task_doDeleteTemplates( $oTaskData, $aParams ) {
-		$oReturn = $this->makeStandardReturn();
+	protected function task_doDeleteTemplates( $taskData, $params ) {
+		$return = $this->makeStandardReturn();
 
-		$aId = isset( $oTaskData->ids )? (array)$oTaskData->ids : array();
+		$ids = isset( $taskData->ids ) ? (array)$taskData->ids : [];
 
-		if ( !is_array( $aId ) || count( $aId ) == 0 ) {
-			$oReturn->message = wfMessage( 'bs-pagetemplates-no-id' )->plain();
-			return $oReturn;
+		if ( !is_array( $ids ) || count( $ids ) == 0 ) {
+			$return->message = wfMessage( 'bs-pagetemplates-no-id' )->plain();
+			return $return;
 		}
 
-		$output = array();
+		$output = [];
 
-		foreach( $aId as $iId => $sName ) {
+		foreach ( $ids as $id => $name ) {
 
 			$dbw = wfGetDB( DB_MASTER );
-			$res = $dbw->delete( 'bs_pagetemplate', array( 'pt_id' => $iId ) );
+			$res = $dbw->delete( 'bs_pagetemplate', [ 'pt_id' => $id ] );
 
 			if ( $res === false ) {
-				$oReturn->message = wfMessage( 'bs-pagetemplates-dberror' )->plain();
-				return $oReturn;
+				$return->message = wfMessage( 'bs-pagetemplates-dberror' )->plain();
+				return $return;
 			}
 
 		}
 
-		$oReturn->success = true;
-		$oReturn->message = wfMessage( 'bs-pagetemplates-tpl-deleted' )->plain();
+		$return->success = true;
+		$return->message = wfMessage( 'bs-pagetemplates-tpl-deleted' )->plain();
 
-		return $oReturn;
+		return $return;
 	}
 
 	/**
@@ -237,9 +243,9 @@ class BSApiPageTemplatesTasks extends BSApiTasksBase {
 	 * @return array
 	 */
 	protected function getRequiredTaskPermissions() {
-		return array(
-			'doEditTemplate' => array( 'wikiadmin' ),
-			'doDeleteTemplates' => array( 'wikiadmin' ),
-		);
+		return [
+			'doEditTemplate' => [ 'wikiadmin' ],
+			'doDeleteTemplates' => [ 'wikiadmin' ],
+		];
 	}
 }

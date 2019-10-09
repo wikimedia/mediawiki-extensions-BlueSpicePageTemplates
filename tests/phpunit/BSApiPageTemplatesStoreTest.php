@@ -17,7 +17,7 @@ class BSApiPageTemplatesStoreTest extends BSApiExtJSStoreTestBase {
 		return true;
 	}
 
-	protected function getStoreSchema () {
+	protected function getStoreSchema() {
 		return [
 			'id' => [
 				'type' => 'integer'
@@ -44,24 +44,22 @@ class BSApiPageTemplatesStoreTest extends BSApiExtJSStoreTestBase {
 	}
 
 	protected function createStoreFixtureData() {
-		return;
 	}
 
 	public function addDBData() {
 		$oPageTemplateFixtures = new BSPageTemplateFixtures();
-		foreach( $oPageTemplateFixtures->makeDataSets() as $dataSet ) {
+		foreach ( $oPageTemplateFixtures->makeDataSets() as $dataSet ) {
 			$this->db->insert( 'bs_pagetemplate', $dataSet );
 		}
-		return;
 	}
 
-	protected function getModuleName () {
+	protected function getModuleName() {
 		return 'bs-pagetemplates-store';
 	}
 
-	public function provideSingleFilterData () {
+	public function provideSingleFilterData() {
 		return [
-			'Filter by label' => [ 'string', 'eq', 'label', 'Test 01', 1]
+			'Filter by label' => [ 'string', 'eq', 'label', 'Test 01', 1 ]
 		];
 	}
 
@@ -87,4 +85,3 @@ class BSApiPageTemplatesStoreTest extends BSApiExtJSStoreTestBase {
 		];
 	}
 }
-

@@ -1,9 +1,20 @@
 {
 	"@metadata": {
 		"authors": [
-			"Yekrats"
+			"Yekrats",
+			"Mirin"
 		]
 	},
 	"bs-pagetemplates-tipdeletetemplate": "Forigi {{PLURAL:$1|ŝablonon|ŝablonojn}}",
-	"bs-pagetemplates-remove-message-failure": "La {{PLURAL:$1|jena ŝablono|jenan ŝablonon}} ne povis esti {{PLURAL:$1|forigita|forigitaj}}:$2 (Kialo: $3)"
+	"bs-pagetemplates-remove-message-failure": "La {{PLURAL:$1|jena ŝablono|jenan ŝablonon}} ne povis esti {{PLURAL:$1|forigita|forigitaj}}:$2 (Kialo: $3)",
+	"bs-pagetemplates-general-section": "Ĝenerala",
+	"bs-pagetemplates-headerlabel": "Etikedo",
+	"bs-pagetemplates-headertargetnamespace": "Nomspaco",
+	"bs-pagetemplates-tipeditdetails": "Redakti ŝablonon",
+	"bs-pagetemplates-tipaddtemplate": "Aldoni ŝablonon",
+	"bs-pagetemplates-label-tpl": "Nomo de ŝablono",
+	"bs-pagetemplates-label-desc": "Priskribo",
+	"bs-pagetemplates-label-targetns": "Nomspaco",
+	"bs-pagetemplates-label-tplns": "Ŝablona nomspaco",
+	"bs-pagetemplates-label-article": "Ŝablono"
 }

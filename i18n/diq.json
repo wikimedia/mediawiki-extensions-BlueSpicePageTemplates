@@ -1,17 +1,18 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kumkumuk"
+			"Kumkumuk",
+			"Mirzali"
 		]
 	},
 	"bs-pagetemplates-general-section": "Bıngeh",
 	"bs-pagetemplates-headerlabel": "Etiket",
-	"bs-pagetemplates-headertargetnamespace": "Heruna nami",
+	"bs-pagetemplates-headertargetnamespace": "Heruna nameyan",
 	"bs-pagetemplates-tipeditdetails": "Şablon bıvurnê",
-	"bs-pagetemplates-tipaddtemplate": "Şablon dek",
+	"bs-pagetemplates-tipaddtemplate": "Şablon cı ke",
 	"bs-pagetemplates-label-tpl": "Namey Şabloni",
 	"bs-pagetemplates-label-desc": "Şınasnayış",
-	"bs-pagetemplates-label-targetns": "Heruna nami",
+	"bs-pagetemplates-label-targetns": "Heruna nameyan",
 	"bs-pagetemplates-label-tplns": "Heruna namiya şabloni",
 	"bs-pagetemplates-label-article": "Şablon"
 }

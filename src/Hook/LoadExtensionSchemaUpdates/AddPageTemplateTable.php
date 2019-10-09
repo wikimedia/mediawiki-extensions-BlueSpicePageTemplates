@@ -13,8 +13,22 @@ class AddPageTemplateTable extends LoadExtensionSchemaUpdates {
 			'bs_pagetemplate',
 			"$dir/maintenance/db/bs_pagetemplate.sql"
 		);
+
+		$this->updater->modifyExtensionField(
+			'bs_pagetemplate',
+			'pt_target_namespace',
+			"$dir/maintenance/db/bs_ns_to_json.patch.pt_target_namespace.sql"
+		);
+
+		$this->updater->addPostDatabaseUpdateMaintenance(
+			'BSTransformNSData'
+		);
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	protected function getExtensionPath() {
 		return dirname( dirname( dirname( __DIR__ ) ) );
 	}
