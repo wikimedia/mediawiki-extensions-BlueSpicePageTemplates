@@ -21,7 +21,7 @@ namespace BlueSpice\PageTemplates;
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
  *
  * This file is part of BlueSpice MediaWiki
- * For further information visit http://www.bluespice.com
+ * For further information visit https://bluespice.com
  *
  * @author     Markus Glaser <glaser@hallowelt.com>
  * @author     Stephan Muggli <muggli@hallowelt.com>
