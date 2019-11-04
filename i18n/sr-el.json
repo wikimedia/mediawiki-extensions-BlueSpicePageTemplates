@@ -8,5 +8,6 @@
 	"bs-pagetemplates-headertargetnamespace": "Imenski prostor",
 	"bs-pagetemplates-label-desc": "Opis",
 	"bs-pagetemplates-label-targetns": "Imenski prostor",
-	"bs-pagetemplates-label-article": "Šablon"
+	"bs-pagetemplates-label-article": "Šablon",
+	"action-pagetemplatesadmin-viewspecialpage": "pregled posebne stranice „{{int:pagetemplatesadmin}}“"
 }
