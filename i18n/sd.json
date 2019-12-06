@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Indus Asia"
+			"Indus Asia",
+			"Mehtab ahmed"
 		]
 	},
-	"bs-pagetemplates-pref-hidedefaults": "ڊيفالٽ ٽيمپليٽ لڪايو"
+	"bs-pagetemplates-pref-hidedefaults": "ڊيفالٽ ٽيمپليٽ لڪايو",
+	"bs-pagetemplates-headertargetnamespace": "نانءُپولار",
+	"bs-pagetemplates-label-targetns": "نانءُپولار"
 }
