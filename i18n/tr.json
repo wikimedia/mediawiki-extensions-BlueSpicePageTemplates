@@ -3,9 +3,11 @@
 		"authors": [
 			"Sayginer",
 			"Sadrettin",
-			"Hedda"
+			"Hedda",
+			"BaRaN6161 TURK"
 		]
 	},
+	"bs-pagetemplates-desc": "Sayfa şablonu olarak işaretlenmiş şablonların listesini görüntüler.",
 	"prefs-pagetemplates": "Sayfa şablonu",
 	"bs-pagetemplates-empty-page": "Boş sayfa",
 	"bs-pagetemplates-empty-page-desc": "Boş bir sayfa ile başla.",
@@ -25,7 +27,9 @@
 	"bs-pagetemplates-general-section": "Genel",
 	"bs-pagetemplates-choose-template": "Bu sayfa henüz mevcut değil. Yeni bir sayfa oluşturabilirsiniz. Eğer bunu yapmak istemiyorsanız, son ziyaret edilen sayfaya dönmek için tarayıcınızın geri tuşuna tıklayın.\n\nBunlardan {{ÇOĞUL:$1||birini}} seçerek {{ÇOĞUL:$1|şablonu|şablonları}} takip edebilirsin:",
 	"bs-pagetemplates-pref-excludens": "Bu isim alanındaki şablonları gösterme:",
+	"bs-pagetemplates-pref-forcenamespace": "Hedef ad alanını zorla",
 	"bs-pagetemplates-pref-hideifnotintargetns": "Sayfa hedef ad alanında oluşturulmayacaksa şablonu gizle",
+	"bs-pagetemplates-pref-hidedefaults": "Varsayılan şablonları gizle",
 	"bs-pagetemplates-headerlabel": "Etiket",
 	"bs-pagetemplates-headertargetnamespace": "İsim alanı",
 	"bs-pagetemplates-tipeditdetails": "Şablonu düzenle",
@@ -39,5 +43,14 @@
 	"bs-pagetemplates-confirm-deletetpl": "{{PLURAL:$1|Bu şablonu|Bu şablonları}} silmek istediğinize emin misiniz?",
 	"bs-pagetemplates-remove-message-unknown": "Beklenmeyen bir hata oluştu, lütfen tekrar deneyin.",
 	"bs-pagetemplates-remove-message-success": "Şu {{PLURAL:$1|şablon|şablonlar}} silindi: $2",
-	"bs-pagetemplates-remove-message-failure": "Takip edilen {{PLURAL:$1|şablon|şablonlar}} silinemedi: $2 (Gerekçe: $3)"
+	"bs-pagetemplates-remove-message-failure": "Takip edilen {{PLURAL:$1|şablon|şablonlar}} silinemedi: $2 (Gerekçe: $3)",
+	"apihelp-bs-pagetemplates-store-description": "Tüm sayfa şablonlarını listeler. Sıralama, filtreleme ve sayfalamaya izin verir. ExtJS Mağazası parametrelerini uygular.",
+	"apihelp-bs-pagetemplates-store-summary": "Tüm sayfa şablonlarını listeler. Sıralama, filtreleme ve sayfalamaya izin verir. ExtJS Mağazası parametrelerini uygular.",
+	"apihelp-bs-pagetemplates-tasks-description": "Sayfa şablonlarının değiştirilmesine izin verir",
+	"apihelp-bs-pagetemplates-tasks-summary": "Sayfa şablonlarının değiştirilmesine izin verir",
+	"action-pagetemplatesadmin-viewspecialpage": "özel sayfayı görüntüle \"{{in:pagetemplatesadmin}}\"",
+	"pagetemplatesadmin": "Sayfa şablonları yönetimi",
+	"bs-usagetracker-pagetemplates": "sayfa şablonları",
+	"bs-pagetemplates-nsm-label": "PageTemplates",
+	"right-pagetemplatesadmin-viewspecialpage": "Sayfa şablonlarının yönetilebileceği [[Special:PageTemplatesAdmin]] özel sayfasına erişin"
 }
