@@ -11,8 +11,16 @@
  */
 class BSApiPageTemplatesTasksTest extends BSApiTasksTestBase {
 
+	/**
+	 *
+	 * @var string[]
+	 */
 	protected $tablesUsed = [ 'bs_pagetemplate' ];
 
+	/**
+	 *
+	 * @return bool
+	 */
 	protected function skipAssertTotal() {
 		return true;
 	}
@@ -25,14 +33,25 @@ class BSApiPageTemplatesTasksTest extends BSApiTasksTestBase {
 		}
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
 	protected function getModuleName() {
 		return 'bs-pagetemplates-tasks';
 	}
 
+	/**
+	 *
+	 * @return array
+	 */
 	public function getTokens() {
 		return $this->getTokenList( self::$users[ 'sysop' ] );
 	}
 
+	/**
+	 * @covers \BSApiPageTemplatesTasks::task_doEditTemplate
+	 */
 	public function testDoEditTemplate() {
 		// add template
 		$oData = $this->executeTask(
@@ -77,6 +96,9 @@ class BSApiPageTemplatesTasksTest extends BSApiTasksTestBase {
 		);
 	}
 
+	/**
+	 * @covers \BSApiPageTemplatesTasks::task_doDeleteTemplates
+	 */
 	public function testDoDeleteTemplates() {
 		$aIDsToDelete = [
 			1 => 'Test_01',
@@ -101,6 +123,11 @@ class BSApiPageTemplatesTasksTest extends BSApiTasksTestBase {
 		}
 	}
 
+	/**
+	 *
+	 * @param int $iID
+	 * @return bool
+	 */
 	protected function isDeleted( $iID ) {
 		$db = $this->db;
 		$res = $db->select( 'bs_pagetemplate', [ 'pt_id' ],
