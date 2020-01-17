@@ -24,6 +24,8 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  */
 
+use BlueSpice\Api\Response\Standard;
+
 /**
  * GroupManager Api class
  * @package BlueSpice_Extensions
@@ -103,7 +105,7 @@ class BSApiPageTemplatesTasks extends BSApiTasksBase {
 	 * Creates or changes a template
 	 * @param stdClass $taskData
 	 * @param array $params
-	 * @return BSStandardAPIResponse
+	 * @return Standard
 	 */
 	protected function task_doEditTemplate( $taskData, $params ) {
 		$oReturn = $this->makeStandardReturn();
@@ -205,7 +207,7 @@ class BSApiPageTemplatesTasks extends BSApiTasksBase {
 	 * Deletes one or several templates
 	 * @param stdClass $taskData
 	 * @param array $params
-	 * @return BSStandardAPIResponse
+	 * @return Standard
 	 */
 	protected function task_doDeleteTemplates( $taskData, $params ) {
 		$return = $this->makeStandardReturn();
