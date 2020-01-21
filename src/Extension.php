@@ -121,22 +121,4 @@ class Extension extends \BlueSpice\Extension {
 		return true;
 	}
 
-	/**
-	 * Register tag with UsageTracker extension
-	 * @param array &$collectorsConfig
-	 * @return bool Always true to keep hook running
-	 */
-	public static function onBSUsageTrackerRegisterCollectors( &$collectorsConfig ) {
-		$collectorsConfig['pagetemplates:templates'] = [
-			'class' => 'Database',
-			'config' => [
-				'identifier' => 'bs-usagetracker-pagetemplates',
-				'descKey' => 'bs-usagetracker-pagetemplates',
-				'table' => 'bs_pagetemplate',
-				'uniqueColumns' => [ 'pt_id' ]
-			]
-		];
-		return true;
-	}
-
 }

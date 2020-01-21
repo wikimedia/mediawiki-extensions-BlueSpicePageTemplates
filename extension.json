@@ -146,7 +146,7 @@
 		"LoadExtensionSchemaUpdates": [
 			"\\BlueSpice\\PageTemplates\\Hook\\LoadExtensionSchemaUpdates\\AddPageTemplateTable::callback"
 		],
-		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\PageTemplates\\Extension::onBSUsageTrackerRegisterCollectors",
+		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\PageTemplates\\Hook\\BSUsageTrackerRegisterCollectors\\AddPageTemplatesTag::callback",
 		"NamespaceManager::getMetaFields": "BlueSpice\\PageTemplates\\Hook\\NamespaceManagerGetMetaFields\\RegisterMetaField::callback",
 		"BSApiNamespaceStoreMakeData": "BlueSpice\\PageTemplates\\Hook\\BSApiNamespaceStoreMakeData\\AddData::callback",
 		"NamespaceManager::editNamespace": "BlueSpice\\PageTemplates\\Hook\\NamespaceManagerEditNamespace\\SetPageTemplateValues::callback",
