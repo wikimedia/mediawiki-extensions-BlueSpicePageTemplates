@@ -80,7 +80,7 @@ class BSPageTemplateList {
 	}
 
 	/**
-	 * @param int $ns
+	 * @param int $nsId
 	 * @param array $row
 	 * @return bool
 	 */

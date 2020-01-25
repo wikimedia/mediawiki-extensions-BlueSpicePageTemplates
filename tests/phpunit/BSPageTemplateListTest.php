@@ -99,7 +99,7 @@ class BSPageTemplateListTest extends MediaWikiTestCase {
 		$groupedResult2 = $list2->getAllGrouped();
 
 		$this->assertEquals( 5, $list2->getCount() );
-		$this->assertEquals( 0, $this->getWholeCount( $groupedResult2['other'] ) );
+		$this->assertSame( 0, $this->getWholeCount( $groupedResult2['other'] ) );
 	}
 
 	public function testHideDefaults() {
@@ -117,6 +117,6 @@ class BSPageTemplateListTest extends MediaWikiTestCase {
 		$groupedResult2 = $list2->getAllGrouped();
 
 		$this->assertEquals( 4, $list2->getCount() );
-		$this->assertEquals( 0, $this->getWholeCount( $groupedResult2['default'] ) );
+		$this->assertSame( 0, $this->getWholeCount( $groupedResult2['default'] ) );
 	}
 }
