@@ -3,7 +3,8 @@
 		"authors": [
 			"Gomoko",
 			"Wladek92",
-			"Urhixidur"
+			"Urhixidur",
+			"Thibaut120094"
 		]
 	},
 	"bs-pagetemplates-desc": "Affiche une liste de modèles marqué comme modèles de page",
@@ -39,7 +40,7 @@
 	"bs-pagetemplates-label-targetns": "Espace de noms",
 	"bs-pagetemplates-label-tplns": "Espace de noms du modèle",
 	"bs-pagetemplates-label-article": "Modèle",
-	"bs-pagetemplates-confirm-deletetpl": "Êtes-vous sûr de vouloir supprimer {{PLURAL:$1|ce modèle|ces modèles}} ?",
+	"bs-pagetemplates-confirm-deletetpl": "Êtes-vous sûr de vouloir supprimer {{PLURAL:$1|ce modèle|ces modèles}} ?",
 	"bs-pagetemplates-remove-message-unknown": "Une erreur inattendue s’est produite, veuillez réessayer.",
 	"bs-pagetemplates-remove-message-success": "{{PLURAL:$1|Le modèle suivant a été supprimé|Les modèles suivants ont été supprimés}} : $2",
 	"bs-pagetemplates-remove-message-failure": "{{PLURAL:$1|Le modèle suivant n’a pas pu être supprimé|Les modèles suivants n’ont pas pu être supprimés}} : $2 (Motif : $3)",
