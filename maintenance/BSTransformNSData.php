@@ -8,22 +8,6 @@ class BSTransformNSData extends LoggedUpdateMaintenance {
 
 	protected $data = [];
 
-	public function execute() {
-		$db = $this->getDB( DB_MASTER );
-		$key = $this->getUpdateKey();
-
-		if ( !$this->doDBUpdates() ) {
-			return false;
-		}
-
-		if ( $db->insert( 'updatelog', [ 'ul_key' => $key ], __METHOD__, 'IGNORE' ) ) {
-			return true;
-		} else {
-			$this->output( $this->updatelogFailedMessage() . "\n" );
-			return false;
-		}
-	}
-
 	protected function readData() {
 		$res = $this->getDB( DB_REPLICA )->select(
 			'bs_pagetemplate',
