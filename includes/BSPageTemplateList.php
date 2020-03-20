@@ -121,6 +121,9 @@ class BSPageTemplateList {
 	 *
 	 */
 	protected function filterByPermissionAndAddTargetUrls() {
+		$pm = \MediaWiki\MediaWikiServices::getInstance()->getPermissionManager();
+		// No context available
+		$user = RequestContext::getMain()->getUser();
 		foreach ( $this->dataSets as $id => &$dataSet ) {
 			$preloadTitle = Title::makeTitle(
 				$dataSet['pt_template_namespace'],
@@ -142,7 +145,10 @@ class BSPageTemplateList {
 				// If a user can not create or edit a page in the target namespace, we hide the template
 				if (
 					$this->config[self::UNSET_TARGET_NAMESPACES] &&
-					( !$targetTitle->userCan( 'create' ) || !$targetTitle->userCan( 'edit' ) )
+					(
+						!$pm->userCan( 'create', $user, $targetTitle ) ||
+						!$pm->userCan( 'edit', $user, $targetTitle )
+					)
 				) {
 					unset( $this->dataSets[$id] );
 					continue;

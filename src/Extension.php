@@ -71,9 +71,13 @@ class Extension extends \BlueSpice\Extension {
 		if ( $title->isSpecialPage() ) {
 			return true;
 		}
-		if ( !$title->userCan( 'edit' ) ) {
+
+		// No context
+		$user = \RequestContext::getMain()->getUser();
+		$pm = \MediaWiki\MediaWikiServices::getInstance()->getPermissionManager();
+		if ( !$pm->userCan( 'edit', $user, $title ) ) {
 			throw new PermissionsError( 'edit' );
-		} elseif ( !$title->userCan( 'createpage' ) ) {
+		} elseif ( !$pm->userCan( 'createpage', $user, $title ) ) {
 			throw new PermissionsError( 'createpage' );
 		} else {
 			$message = '<bs:pagetemplates />';
