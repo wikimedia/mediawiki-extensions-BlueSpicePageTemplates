@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Liuxinyu970226",
-			"佛壁灯"
+			"佛壁灯",
+			"Ps2049"
 		]
 	},
 	"bs-pagetemplates-desc": "显示标记为页面模板的模板列表",
@@ -50,5 +51,5 @@
 	"pagetemplatesadmin": "页面模板管理",
 	"bs-usagetracker-pagetemplates": "页面模板",
 	"bs-pagetemplates-nsm-label": "页面模板",
-	"right-pagetemplatesadmin-viewspecialpage": "授予访问管理页面模板的特殊页面 [[Special:PageTemplatesAdmin]] 的权限。"
+	"right-pagetemplatesadmin-viewspecialpage": "允许访问管理页面模板的特殊页面 [[Special:PageTemplatesAdmin]] 的权限"
 }
