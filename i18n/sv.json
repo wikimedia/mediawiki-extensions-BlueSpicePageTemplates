@@ -4,7 +4,8 @@
 			"Jopparn",
 			"WikiPhoenix",
 			"Lokal Profil",
-			"Warrakkk"
+			"Warrakkk",
+			"Technic2"
 		]
 	},
 	"bs-pagetemplates-desc": "Visar en lista över mallar markerade som sidmallar",
@@ -47,5 +48,5 @@
 	"apihelp-bs-pagetemplates-store-description": "Listar alla sidmallar. Tillåter sortering, filtrering och sidnumrering. Implementerar ExtJS Store-parametrar.",
 	"action-pagetemplatesadmin-viewspecialpage": "visa specialsidan \"{{int:pagetemplatesadmin}}\"",
 	"bs-usagetracker-pagetemplates": "sidmallar",
-	"right-pagetemplatesadmin-viewspecialpage": "Ger åtkomst till specialsidan [[Special:PageTemplatesAdmin]], där sidmallar kan hanteras."
+	"right-pagetemplatesadmin-viewspecialpage": "Åtkomst till specialsidan [[Special:PageTemplatesAdmin]], där sidmallar kan hanteras."
 }
