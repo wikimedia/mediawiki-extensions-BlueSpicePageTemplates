@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Liuxinyu970226",
-			"LNDDYL",
 			"Cwlin0416",
-			"和平奮鬥救地球",
-			"Kly"
+			"Kly",
+			"LNDDYL",
+			"Liuxinyu970226",
+			"和平奮鬥救地球"
 		]
 	},
 	"bs-pagetemplates-desc": "顯示標記為頁面模板的模板清單",

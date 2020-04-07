@@ -1,10 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Stephan Muggli <muggli@hallowelt.biz>",
-			"Metalhead64",
+			"Hwboehm",
 			"Kghbln",
-			"Hwboehm"
+			"Metalhead64",
+			"Stephan Muggli <muggli@hallowelt.biz>"
 		]
 	},
 	"bs-pagetemplates-desc": "Es können vorgefertigte Seitenvorlagen angelegt werden",

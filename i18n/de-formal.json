@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Stephan Muggli <muggli@hallowelt.biz>",
 			"Kghbln",
-			"Osnard"
+			"Osnard",
+			"Stephan Muggli <muggli@hallowelt.biz>"
 		]
 	},
 	"bs-pagetemplates-empty-page-desc": "Beginnen Sie mit einer leeren Seite.",
