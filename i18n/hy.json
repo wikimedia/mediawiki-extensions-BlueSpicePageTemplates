@@ -4,5 +4,12 @@
 			"Kareyac"
 		]
 	},
+	"bs-pagetemplates-general-section": "Ընդհանուր",
+	"bs-pagetemplates-tipaddtemplate": "Ավելացնել կաղապար",
+	"bs-pagetemplates-label-tpl": "Կաղապարի անուն",
+	"bs-pagetemplates-label-desc": "Նկարագրություն",
+	"bs-pagetemplates-label-targetns": "Անվանատարածք",
+	"bs-pagetemplates-label-tplns": "Կաղապարների անվանատարածք",
+	"bs-pagetemplates-label-article": "Կաղապար",
 	"bs-usagetracker-pagetemplates": "էջի կաղապարներ"
 }
