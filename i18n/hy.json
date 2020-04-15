@@ -5,6 +5,9 @@
 		]
 	},
 	"bs-pagetemplates-general-section": "Ընդհանուր",
+	"bs-pagetemplates-headerlabel": "Պիտակ",
+	"bs-pagetemplates-headertargetnamespace": "Անվանատարածք",
+	"bs-pagetemplates-tipeditdetails": "Խմբագրել կաղապար",
 	"bs-pagetemplates-tipaddtemplate": "Ավելացնել կաղապար",
 	"bs-pagetemplates-label-tpl": "Կաղապարի անուն",
 	"bs-pagetemplates-label-desc": "Նկարագրություն",
