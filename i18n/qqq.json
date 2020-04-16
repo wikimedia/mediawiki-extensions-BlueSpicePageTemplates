@@ -33,6 +33,7 @@
 	"bs-pagetemplates-tpl-deleted": "Text for the template has been deleted.",
 	"bs-pagetemplates-general-section": "Headline for general\n{{Identical|General}}",
 	"bs-pagetemplates-choose-template": "text for this page doesn't exist yet. You can create a new page. If you don't want to do that, click the back button of your browser to return to the last page visited. \n\nYou can choose {{PLURAL:$1||one of}} the following {{PLURAL:$1|template|templates}}: \n* $1 is the number of templates use it for PLURAL distinction",
+	"bs-pagetemplates-choose-template-empty": "Text for this page doesn't exist yet. You can create a new page. If you don't want to do that, click the back button of your browser to return to the last page visited.",
 	"bs-pagetemplates-pref-excludens": "Option in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], label for do not show templates in these namespaces:",
 	"bs-pagetemplates-pref-forcenamespace": "Label for checkbox in [{{canonicalurl:Special:BlueSpice_Preferences}} Special:BlueSpice_Preferences]. When set, a new page created via PageTemplates will be put in the namspace indicated in the page template's properties.",
 	"bs-pagetemplates-pref-hideifnotintargetns": "Option in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], checkbox label for hide template if the page is not to be created in the target namespace",
