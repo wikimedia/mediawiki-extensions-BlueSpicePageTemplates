@@ -23,6 +23,7 @@
 	"bs-pagetemplates-tpl-deleted": "The template has been deleted.",
 	"bs-pagetemplates-general-section": "General",
 	"bs-pagetemplates-choose-template": "This page doesn't exist yet. You can create a new page. If you don't want to do that, click the back button of your browser to return to the last page visited. \n\nYou can choose {{PLURAL:$1||one of}} the following {{PLURAL:$1|template|templates}}:",
+	"bs-pagetemplates-choose-template-empty": "This page doesn't exist yet. You can create a new page. If you don't want to do that, click the back button of your browser to return to the last page visited.",
 	"bs-pagetemplates-pref-excludens": "Do not show templates in these namespaces:",
 	"bs-pagetemplates-pref-forcenamespace": "Force target namespace",
 	"bs-pagetemplates-pref-hideifnotintargetns": "Hide template if the page is not to be created in the target namespace",

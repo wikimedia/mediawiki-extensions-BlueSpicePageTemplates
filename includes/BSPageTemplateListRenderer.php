@@ -34,11 +34,18 @@ class BSPageTemplateListRenderer {
 	 * @param int $count
 	 */
 	protected function renderHead( $count ) {
-		$this->buffer .= Html::rawElement(
-			'div',
-			[ 'id' => 'bs-pt-head' ],
-			wfMessage( 'bs-pagetemplates-choose-template', $count )->parse()
-		);
+		$this->buffer .= Html::openElement(
+				'div',
+				[ 'id' => 'bs-pt-head' ]
+			);
+
+		if ( $count > 0 ) {
+			$this->buffer .= wfMessage( 'bs-pagetemplates-choose-template', $count )->parse();
+		} else {
+			$this->buffer .= wfMessage( 'bs-pagetemplates-choose-template-empty' )->parse();
+		}
+
+		$this->buffer .= Html::closeElement( 'div' );
 	}
 
 	/**
