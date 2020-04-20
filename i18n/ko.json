@@ -21,6 +21,7 @@
 	"bs-pagetemplates-dberror": "데이터베이스 오류가 발생했습니다.",
 	"bs-pagetemplates-tpl-deleted": "틀이 삭제되었습니다.",
 	"bs-pagetemplates-general-section": "일반",
+	"bs-pagetemplates-choose-template-empty": "이 문서는 아직 존재하지 않습니다. 새 문서를 만들 수 있습니다. 그러고 싶지 않으시다면 브라우저의 뒤로 버튼을 클릭하여 마지막으로 방문한 페이지로 돌아가십시오.",
 	"bs-pagetemplates-pref-excludens": "이 이름공간에 틀을 표시하지 않습니다:",
 	"bs-pagetemplates-pref-hidedefaults": "기본 틀 숨김",
 	"bs-pagetemplates-headerlabel": "레이블",

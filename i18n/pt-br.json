@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Eduardo Addad de Oliveira",
-			"Felipe L. Ewald"
+			"Felipe L. Ewald",
+			"Leonardo9387"
 		]
 	},
 	"bs-pagetemplates-desc": "Apresenta uma lista de predefinições marcadas como modelos de páginas",
@@ -24,6 +25,7 @@
 	"bs-pagetemplates-tpl-deleted": "A predefinição de página foi eliminado.",
 	"bs-pagetemplates-general-section": "Geral",
 	"bs-pagetemplates-choose-template": "Esta página ainda não existe. Pode criar uma página nova. Se não pretende fazê-lo, clique o botão voltar do seu <i>browser</i> para regressar à última página visitada. \n\nPode escolher {{PLURAL:$1|a seguinte predefinição|uma das seguintes predefinições}}:",
+	"bs-pagetemplates-choose-template-empty": "Essa página não existe ainda. Você pode criar uma nova página. Se você não quer fazer isso, clique no botão de retorno do seu navegador para retornat para a última página visitada.",
 	"bs-pagetemplates-pref-excludens": "Não mostrar predefinições de página nestes domínios:",
 	"bs-pagetemplates-pref-forcenamespace": "Forçar o domínio de destino",
 	"bs-pagetemplates-pref-hideifnotintargetns": "Ocultar a predefinição se a página não vai ser criada no domínio de destino",

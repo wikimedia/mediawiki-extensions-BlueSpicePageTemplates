@@ -26,6 +26,7 @@
 	"bs-pagetemplates-tpl-deleted": "Le modèle a été supprimé.",
 	"bs-pagetemplates-general-section": "Général",
 	"bs-pagetemplates-choose-template": "Cette page n’existe pas encore. Vous pouvez créer une nouvelle page. Si vous ne le voulez pas, cliquez sur le bouton de retour de votre navigateur pour revenir sur la dernière page visitée. \n\nVous pouvez choisir {{PLURAL:$1|le modèle suivant|un des modèles suivants}} :",
+	"bs-pagetemplates-choose-template-empty": "Cette page n’existe pas. Vous pouvez créer une nouvelle page. Si vous ne voulez pas le faire, cliquez sur le bouton retour de votre navigateur pour revenir à la dernière page visitée.",
 	"bs-pagetemplates-pref-excludens": "Ne pas afficher les modèles dans ces espaces de nom :",
 	"bs-pagetemplates-pref-forcenamespace": "Forcer l’espace de nom cible",
 	"bs-pagetemplates-pref-hideifnotintargetns": "Masquer le modèle si la page n’est pas créée dans l’espace de nom cible",
