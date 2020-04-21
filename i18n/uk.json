@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Movses",
 			"Piramidion",
 			"Vlad5250",
 			"Ата"
@@ -25,6 +26,7 @@
 	"bs-pagetemplates-tpl-deleted": "Шаблон було видалено.",
 	"bs-pagetemplates-general-section": "Загальне",
 	"bs-pagetemplates-choose-template": "Ця сторінка ще не існує. Ви можете створити нову сторінку. Якщо Ви не хочете цього робити, натисніть кнопку «назад» Вашого браузера для повернення до останньої відвіданої сторінки. \n\nВи можете вибрати {{PLURAL:$1||один з}} {{PLURAL:$1|наступний шаблон|наступних шаблонів}}:",
+	"bs-pagetemplates-choose-template-empty": "Ця сторінка ще не існує і ви можете створити її. Якщо ви не бажаєте цього робити - натисніть кнопку \"Повернутись\" у браузері.",
 	"bs-pagetemplates-pref-excludens": "Не показувати шаблони у цих просторах назв:",
 	"bs-pagetemplates-pref-forcenamespace": "Примусити перехід  у цільовий простір назв",
 	"bs-pagetemplates-pref-hideifnotintargetns": "Приховати шаблон, якщо сторінка буде створена не в цільовому просторі назв",

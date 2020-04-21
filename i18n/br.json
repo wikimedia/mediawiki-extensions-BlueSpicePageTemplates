@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fohanno"
+			"Fohanno",
+			"Fulup"
 		]
 	},
 	"prefs-pagetemplates": "Patromoù pajenn",
@@ -21,6 +22,7 @@
 	"bs-pagetemplates-dberror": "Ur fazi zo bet gant an diaz roadennoù.",
 	"bs-pagetemplates-tpl-deleted": "Dilamet eo bet ar patrom.",
 	"bs-pagetemplates-general-section": "Hollek",
+	"bs-pagetemplates-choose-template-empty": "N'eus ket eus ar bajenn-mañ evit c'hoazh. Krouiñ ur bajenn nevez a c'hallit ober. Mar ne fell ket deoc'h en ober, klikit war bouton \"kent\" ho merdeer evit distreiñ d'ar bajenn ma oac'h a-raok.",
 	"bs-pagetemplates-headerlabel": "Label",
 	"bs-pagetemplates-tipeditdetails": "Aozañ ar patrom",
 	"bs-pagetemplates-tipdeletetemplate": "Dilemel {{PLURAL:$1|patrom|a batromoù}}",
