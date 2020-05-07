@@ -45,5 +45,6 @@
 	"apihelp-bs-pagetemplates-tasks-summary": "문서 틀의 조작을 허용합니다",
 	"bs-usagetracker-pagetemplates": "문서 틀",
 	"bs-pagetemplates-nsm-label": "PageTemplates",
-	"right-pagetemplatesadmin-viewspecialpage": "문서 틀을 관리할 수 있는 경우 [[Special:PageTemplatesAdmin]] 특수 문서로 접근"
+	"right-pagetemplatesadmin-viewspecialpage": "문서 틀을 관리할 수 있는 경우 [[Special:PageTemplatesAdmin]] 특수 문서로 접근",
+	"bs-pagetemplates-choose-template-empty": "이 문서는 아직 존재하지 않습니다. 새 문서를 만들 수 있습니다. 그러고 싶지 않으시다면 브라우저의 뒤로 버튼을 클릭하여 마지막으로 방문한 페이지로 돌아가십시오."
 }

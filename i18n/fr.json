@@ -2,9 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Gomoko",
-			"Wladek92",
+			"Thibaut120094",
 			"Urhixidur",
-			"Thibaut120094"
+			"Wladek92"
 		]
 	},
 	"bs-pagetemplates-desc": "Affiche une liste de modèles marqué comme modèles de page",
@@ -52,5 +52,6 @@
 	"pagetemplatesadmin": "Gestion des modèles de page",
 	"bs-usagetracker-pagetemplates": "modèles de page",
 	"bs-pagetemplates-nsm-label": "Modèles de page",
-	"right-pagetemplatesadmin-viewspecialpage": "Accéder à la page spéciale [[Special:PageTemplatesAdmin]], où les modèles de page peuvent être gérés"
+	"right-pagetemplatesadmin-viewspecialpage": "Accéder à la page spéciale [[Special:PageTemplatesAdmin]], où les modèles de page peuvent être gérés",
+	"bs-pagetemplates-choose-template-empty": "Cette page n’existe pas. Vous pouvez créer une nouvelle page. Si vous ne voulez pas le faire, cliquez sur le bouton retour de votre navigateur pour revenir à la dernière page visitée."
 }

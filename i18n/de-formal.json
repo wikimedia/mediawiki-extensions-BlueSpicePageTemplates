@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Stephan Muggli <muggli@hallowelt.biz>",
 			"Kghbln",
-			"Osnard"
+			"Mglaser",
+			"Osnard",
+			"Stephan Muggli <muggli@hallowelt.biz>"
 		]
 	},
 	"bs-pagetemplates-empty-page-desc": "Beginnen Sie mit einer leeren Seite.",
@@ -15,5 +16,6 @@
 	"bs-pagetemplates-no-id": "Bitte geben Sie eine Seite an, die als Vorlage verwendet werden soll.",
 	"bs-pagetemplates-choose-template": "Diese Seite existiert noch nicht. Sie können hier eine neue Seite verfassen. Falls Sie nichts eingeben möchten, klicken Sie auf den Zurück-Button des Browsers, um zu der letzten Seite zurückzukehren.\n\nSie können {{PLURAL:$1|diese Vorlage|eine dieser Vorlagen}} auswählen:",
 	"bs-pagetemplates-confirm-deletetpl": "Sind Sie sicher, dass Sie diese {{PLURAL:$1|Vorlage|Vorlagen}} löschen wollen?",
-	"bs-pagetemplates-remove-message-unknown": "Ein unbekannter Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+	"bs-pagetemplates-remove-message-unknown": "Ein unbekannter Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+	"bs-pagetemplates-choose-template-empty": "Diese Seite existiert noch nicht. Sie können eine neue Seite erstellen. Wenn Sie das nicht tun möchten, klicken Sie den Zurück-Knopf in Ihrem Browser, um zur zuletzt besuchten Seite zurückzukehren."
 }

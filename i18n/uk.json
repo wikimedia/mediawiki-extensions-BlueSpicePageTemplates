@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ата",
+			"Movses",
 			"Piramidion",
-			"Vlad5250"
+			"Vlad5250",
+			"Ата"
 		]
 	},
 	"bs-pagetemplates-desc": "Відображає список шаблонів, позначених як шаблони сторінок",
@@ -51,5 +52,6 @@
 	"pagetemplatesadmin": "Адміністрування шаблонів сторінок",
 	"bs-usagetracker-pagetemplates": "шаблони сторінок",
 	"bs-pagetemplates-nsm-label": "PageTemplates",
-	"right-pagetemplatesadmin-viewspecialpage": "Надає доступ до спеціальної сторінки [[Special:PageTemplatesAdmin]], де можна керувати шаблонами сторінок"
+	"right-pagetemplatesadmin-viewspecialpage": "Надає доступ до спеціальної сторінки [[Special:PageTemplatesAdmin]], де можна керувати шаблонами сторінок",
+	"bs-pagetemplates-choose-template-empty": "Ця сторінка ще не існує і ви можете створити її. Якщо ви не бажаєте цього робити - натисніть кнопку \"Повернутись\" у браузері."
 }

@@ -4,5 +4,15 @@
 			"Kareyac"
 		]
 	},
-	"bs-usagetracker-pagetemplates": "էջի կաղապարներ"
+	"bs-usagetracker-pagetemplates": "էջի կաղապարներ",
+	"bs-pagetemplates-general-section": "Ընդհանուր",
+	"bs-pagetemplates-headerlabel": "Պիտակ",
+	"bs-pagetemplates-headertargetnamespace": "Անվանատարածք",
+	"bs-pagetemplates-tipeditdetails": "Խմբագրել կաղապար",
+	"bs-pagetemplates-tipaddtemplate": "Ավելացնել կաղապար",
+	"bs-pagetemplates-label-tpl": "Կաղապարի անուն",
+	"bs-pagetemplates-label-desc": "Նկարագրություն",
+	"bs-pagetemplates-label-targetns": "Անվանատարածք",
+	"bs-pagetemplates-label-tplns": "Կաղապարների անվանատարածք",
+	"bs-pagetemplates-label-article": "Կաղապար"
 }

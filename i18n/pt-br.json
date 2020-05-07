@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Eduardo Addad de Oliveira",
 			"Felipe L. Ewald",
-			"Eduardo Addad de Oliveira"
+			"Leonardo9387"
 		]
 	},
 	"bs-pagetemplates-desc": "Apresenta uma lista de predefinições marcadas como modelos de páginas",
@@ -50,5 +51,6 @@
 	"pagetemplatesadmin": "Administração de predefinições de páginas",
 	"bs-usagetracker-pagetemplates": "predefinições de página",
 	"bs-pagetemplates-nsm-label": "ModelosDePágina",
-	"right-pagetemplatesadmin-viewspecialpage": "Acesso à página especial [[Special:PageTemplatesAdmin]], onde os modelos de páginas podem ser administrados"
+	"right-pagetemplatesadmin-viewspecialpage": "Acesso à página especial [[Special:PageTemplatesAdmin]], onde os modelos de páginas podem ser administrados",
+	"bs-pagetemplates-choose-template-empty": "Essa página não existe ainda. Você pode criar uma nova página. Se você não quer fazer isso, clique no botão de retorno do seu navegador para retornat para a última página visitada."
 }

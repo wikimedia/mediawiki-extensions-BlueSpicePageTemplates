@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fohanno"
+			"Fohanno",
+			"Fulup"
 		]
 	},
 	"prefs-pagetemplates": "Patromoù pajenn",
@@ -29,5 +30,6 @@
 	"bs-pagetemplates-label-desc": "Deskrivadur",
 	"bs-pagetemplates-label-article": "Patrom",
 	"bs-pagetemplates-confirm-deletetpl": "Ha sur oc'h e fell deoc'h dilemel ar patrom-mañ ?",
-	"bs-pagetemplates-remove-message-unknown": "C'hoarvezet ez eus ur fazi dic'hortoz, esaeit en-dro, mar plij."
+	"bs-pagetemplates-remove-message-unknown": "C'hoarvezet ez eus ur fazi dic'hortoz, esaeit en-dro, mar plij.",
+	"bs-pagetemplates-choose-template-empty": "N'eus ket eus ar bajenn-mañ evit c'hoazh. Krouiñ ur bajenn nevez a c'hallit ober. Mar ne fell ket deoc'h en ober, klikit war bouton \"kent\" ho merdeer evit distreiñ d'ar bajenn ma oac'h a-raok."
 }
