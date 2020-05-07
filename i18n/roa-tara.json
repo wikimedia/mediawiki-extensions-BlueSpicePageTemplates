@@ -24,6 +24,7 @@
 	"bs-pagetemplates-tpl-deleted": "'U template ha state scangellate.",
 	"bs-pagetemplates-general-section": "Generale",
 	"bs-pagetemplates-choose-template": "Sta pàgene non g'esiste angore. Puè ccrejà 'na pàgena nove. Ce non ge vuè, cazze 'u buttone pe turnà rrete d'u browser tune pe turnà a l'urtema pàgene 'ndrucate.\n\nPuè scacchià {{PLURAL:$1||une de ste}} {{PLURAL:$1|template}}:",
+	"bs-pagetemplates-choose-template-empty": "'A pàgene non g'esiste angore. Puè ccrejà 'na pàgena nove. Ce non ge vuè fà quidde, cazze 'u buttone rrete d'u browser tune pe turnà a l'urtema pàgene 'ndrucate.",
 	"bs-pagetemplates-pref-excludens": "No fà 'ndrucà le template jndr'à ste namespace:",
 	"bs-pagetemplates-pref-forcenamespace": "Forze 'u namespace de destinazione",
 	"bs-pagetemplates-pref-hideifnotintargetns": "Scunne 'u template ce 'a pàgene non g'ha state ccrejate jndr'à 'u namespace de destinazione",
