@@ -154,7 +154,8 @@
 			"BlueSpice\\PageTemplates\\Hook\\NamespaceManagerWriteNamespaceConfiguration\\WriteToConfiguration::callback"
 		],
 		"HtmlPageLinkRendererBegin": "\\BlueSpice\\PageTemplates\\Extension::onHtmlPageLinkRendererBegin",
-		"MessagesPreLoad":"\\BlueSpice\\PageTemplates\\Extension::onMessagesPreLoad"
+		"MessagesPreLoad":"\\BlueSpice\\PageTemplates\\Extension::onMessagesPreLoad",
+		"MediaWikiPerformAction": "\\BlueSpice\\PageTemplates\\Hook\\MediaWikiPerformAction\\PreventEditMode::callback"
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2
