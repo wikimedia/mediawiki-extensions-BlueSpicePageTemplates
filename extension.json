@@ -93,17 +93,17 @@
 		},
 		"PageTemplatesForceNamespace": {
 			"value": false,
-			"msgdescription": "bs-pagetemplates-pref-forcenamespace",
+			"descriptionmsg": "bs-pagetemplates-pref-forcenamespace",
 			"public": true
 		},
 		"PageTemplatesHideIfNotInTargetNs": {
 			"value": true,
-			"msgdescription": "bs-pagetemplates-pref-hideifnotintargetns",
+			"descriptionmsg": "bs-pagetemplates-pref-hideifnotintargetns",
 			"public": true
 		},
 		"PageTemplatesHideDefaults": {
 			"value": false,
-			"msgdescription": "bs-pagetemplates-pref-hidedefaults",
+			"descriptionmsg": "bs-pagetemplates-pref-hidedefaults",
 			"public": true
 		}
 	},
