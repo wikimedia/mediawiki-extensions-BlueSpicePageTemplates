@@ -16,12 +16,12 @@ class PreventEditMode {
 
 	/**
 	 * @param OutputPage $output
-		* @param Article $article
-		* @param Title $title
-		* @param User $user
-		* @param WebRequest $request
-		* @param MediaWiki $wiki
-		* @return bool
+	 * @param Article $article
+	 * @param Title $title
+	 * @param User $user
+	 * @param WebRequest $request
+	 * @param MediaWiki $wiki
+	 * @return bool
 	 */
 	public static function callback( $output, $article, $title, $user, $request, $wiki ) {
 		if ( $title->exists() ) {

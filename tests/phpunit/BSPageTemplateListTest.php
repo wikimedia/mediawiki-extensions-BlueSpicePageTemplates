@@ -43,7 +43,7 @@ class BSPageTemplateListTest extends MediaWikiTestCase {
 			$this->getWholeCount( $groupedResult['target'] ) );
 		$this->assertEquals( $expectedOtherCount,
 			$this->getWholeCount( $groupedResult['other'] ) );
-		$this->assertEquals( 1,
+		$this->assertSame( 1,
 			count( $groupedResult['default'][BSPageTemplateList::ALL_NAMESPACES_PSEUDO_ID] ) );
 		$this->assertEquals( 2,
 			count( $groupedResult['general'][BSPageTemplateList::ALL_NAMESPACES_PSEUDO_ID] ) );
