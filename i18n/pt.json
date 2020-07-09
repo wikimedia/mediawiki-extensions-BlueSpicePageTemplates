@@ -26,6 +26,7 @@
 	"bs-pagetemplates-tpl-deleted": "O modelo de página foi eliminado.",
 	"bs-pagetemplates-general-section": "Geral",
 	"bs-pagetemplates-choose-template": "Esta página ainda não existe. Pode criar uma página nova. Se não pretende fazê-lo, clique o botão voltar do seu <i>browser</i> para regressar à última página visitada. \n\nPode escolher {{PLURAL:$1|o seguinte modelo|um dos seguintes modelos}}:",
+	"bs-pagetemplates-choose-template-empty": "Esta página ainda não existe. Pode criar uma página nova. Se não o quiser fazer, clique o botão de retorno do seu navegador para voltar à última página visitada.",
 	"bs-pagetemplates-pref-excludens": "Não mostrar modelos de página nestes domínios:",
 	"bs-pagetemplates-pref-forcenamespace": "Forçar o domínio de destino",
 	"bs-pagetemplates-pref-hideifnotintargetns": "Ocultar o modelo se a página não vai ser criada no domínio de destino",
