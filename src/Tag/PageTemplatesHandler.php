@@ -5,6 +5,7 @@ namespace BlueSpice\PageTemplates\Tag;
 use BlueSpice\Tag\Handler;
 use BSPageTemplateList;
 use BSPageTemplateListRenderer;
+use MediaWiki\MediaWikiServices;
 
 class PageTemplatesHandler extends Handler {
 
@@ -31,7 +32,7 @@ class PageTemplatesHandler extends Handler {
 			return true;
 		}
 
-		$config = \BlueSpice\Services::getInstance()->getConfigFactory()
+		$config = MediaWikiServices::getInstance()->getConfigFactory()
 				->makeConfig( 'bsg' );
 
 		$pageTemplateList = new BSPageTemplateList( $title,
