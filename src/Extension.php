@@ -33,6 +33,7 @@ namespace BlueSpice\PageTemplates;
  */
 use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\Linker\LinkTarget;
+use MediaWiki\MediaWikiServices;
 use PermissionsError;
 
 /**
@@ -74,7 +75,7 @@ class Extension extends \BlueSpice\Extension {
 
 		// No context
 		$user = \RequestContext::getMain()->getUser();
-		$pm = \MediaWiki\MediaWikiServices::getInstance()->getPermissionManager();
+		$pm = MediaWikiServices::getInstance()->getPermissionManager();
 		if ( !$pm->userCan( 'edit', $user, $title ) ) {
 			throw new PermissionsError( 'edit' );
 		} elseif ( !$pm->userCan( 'createpage', $user, $title ) ) {
@@ -111,7 +112,7 @@ class Extension extends \BlueSpice\Extension {
 			}
 		}
 
-		$config = \BlueSpice\Services::getInstance()->getConfigFactory()
+		$config = MediaWikiServices::getInstance()->getConfigFactory()
 				->makeConfig( 'bsg' );
 		$excludeNs = $config->get( 'PageTemplatesExcludeNs' );
 		if ( in_array( $target->getNamespace(), $excludeNs ) ) {
