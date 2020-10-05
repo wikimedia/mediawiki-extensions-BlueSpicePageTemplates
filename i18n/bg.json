@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Kareyac",
 			"StanProg"
 		]
 	},
 	"bs-pagetemplates-headertargetnamespace": "Именно пространство",
+	"bs-pagetemplates-tipaddtemplate": "Добавяне на шаблон",
 	"bs-pagetemplates-label-desc": "Описание",
 	"bs-pagetemplates-label-targetns": "Именно пространство"
 }
