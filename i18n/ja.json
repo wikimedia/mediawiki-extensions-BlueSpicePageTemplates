@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"A2y4",
 			"Shirayuki"
 		]
 	},
@@ -16,6 +17,7 @@
 	"bs-pagetemplates-tpl-edited": "変更内容を保存しました。",
 	"bs-pagetemplates-dberror": "データベース エラーが発生しました。",
 	"bs-pagetemplates-tpl-deleted": "テンプレートを削除しました。",
+	"bs-pagetemplates-general-section": "全般",
 	"bs-pagetemplates-pref-excludens": "テンプレートを表示しない名前空間:",
 	"bs-pagetemplates-pref-hidedefaults": "既定のテンプレートを非表示にする",
 	"bs-pagetemplates-headerlabel": "ラベル",
