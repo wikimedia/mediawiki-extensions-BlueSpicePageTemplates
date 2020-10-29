@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"A2y4",
 			"Shirayuki"
 		]
 	},
@@ -31,5 +32,6 @@
 	"bs-pagetemplates-confirm-deletetpl": "{{PLURAL:$1|このテンプレート|これらのテンプレート}}を本当に削除しますか?",
 	"bs-pagetemplates-remove-message-success": "以下の{{PLURAL:$1|テンプレート}}を削除しました: $2",
 	"bs-pagetemplates-remove-message-failure": "以下の{{PLURAL:$1|テンプレート}}を削除できませんでした: $2 (理由: $3)",
-	"action-pagetemplatesadmin-viewspecialpage": "特別ページ「{{int:pagetemplatesadmin}}」の閲覧"
+	"action-pagetemplatesadmin-viewspecialpage": "特別ページ「{{int:pagetemplatesadmin}}」の閲覧",
+	"bs-pagetemplates-general-section": "全般"
 }
