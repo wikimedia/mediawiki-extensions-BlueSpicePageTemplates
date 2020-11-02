@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
+
 class BSPageTemplateList {
 	const HIDE_IF_NOT_IN_TARGET_NS = 0;
 	const FORCE_NAMESPACE = 1;
@@ -102,7 +104,14 @@ class BSPageTemplateList {
 		}
 
 		$targetUrl = $this->title->getLinkURL( [ 'action' => 'edit' ] );
-		Hooks::run( 'BSPageTemplatesModifyTargetUrl', [ $this->title, null, &$targetUrl ] );
+		MediaWikiServices::getInstance()->getHookContainer()->run(
+			'BSPageTemplatesModifyTargetUrl',
+			[
+				$this->title,
+				null,
+				&$targetUrl
+			]
+		);
 
 		$this->dataSets[-1] = [
 			'pt_template_title' => null,
@@ -159,7 +168,14 @@ class BSPageTemplateList {
 				'action' => 'edit',
 				'preload' => $preloadTitle->getPrefixedDBkey()
 			] );
-			Hooks::run( 'BSPageTemplatesModifyTargetUrl', [ $targetTitle, $preloadTitle, &$targetUrl ] );
+			MediaWikiServices::getInstance()->getHookContainer()->run(
+				'BSPageTemplatesModifyTargetUrl',
+				[
+					$targetTitle,
+					$preloadTitle,
+					&$targetUrl
+				]
+			);
 			$dataSet['target_url'] = $targetUrl;
 		}
 	}

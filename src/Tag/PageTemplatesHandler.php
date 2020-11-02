@@ -46,7 +46,7 @@ class PageTemplatesHandler extends Handler {
 			] );
 
 		$pageTemplateListRenderer = new BSPageTemplateListRenderer();
-		\Hooks::run( 'BSPageTemplatesBeforeRender',
+		MediaWikiServices::getInstance()->getHookContainer()->run( 'BSPageTemplatesBeforeRender',
 			[ $this, &$pageTemplateList, &$pageTemplateListRenderer, $title ]
 		);
 		return $pageTemplateListRenderer->render( $pageTemplateList );
