@@ -72,7 +72,7 @@ class BSApiPageTemplatesStore extends BSApiExtJSStoreBase {
 
 	/**
 	 *
-	 * @param object $filter
+	 * @param stdClass $filter
 	 * @param type $dataSet
 	 * @return bool
 	 */
