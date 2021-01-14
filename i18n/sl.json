@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Alojz.tic",
+			"Eleassar",
 			"Skalcaa"
 		]
 	},
@@ -12,7 +13,7 @@
 	"bs-pagetemplatesadmin-label": "Predloge strani",
 	"bs-pagetemplates-tpl-desc-toolong": "Opis je predolg. Prosimo, uporabite največ 255 znakov.",
 	"bs-pagetemplates-tpl-label-toolong": "Oznaka je predolga. Prosimo, uporabite največ 255 znakov.",
-	"bs-pagetemplates-tpl-label-empty": "Prosimo vnesite oznako.",
+	"bs-pagetemplates-tpl-label-empty": "Prosimo, vnesite oznako.",
 	"bs-pagetemplates-tpl-name-toolong": "Ime predloge je predolgo. Prosimo, uporabite največ 255 znakov.",
 	"bs-pagetemplates-tpl-name-empty": "Prosimo vnesite ime predloge.",
 	"bs-pagetemplates-no-id": "Prosimo, vnesite stran, ki jo želite uporabiti kot predlogo.",
