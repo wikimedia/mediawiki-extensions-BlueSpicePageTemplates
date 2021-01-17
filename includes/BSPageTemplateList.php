@@ -47,6 +47,7 @@ class BSPageTemplateList {
 		$this->addDefaultPageTemplate();
 	}
 
+	/** @var array[] */
 	protected $dataSets = [];
 
 	/**

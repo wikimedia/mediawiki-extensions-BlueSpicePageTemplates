@@ -6,6 +6,7 @@ require_once "$extDir/BlueSpiceFoundation/maintenance/BSMaintenance.php";
 
 class BSTransformNSData extends LoggedUpdateMaintenance {
 
+	/** @var stdClass[] */
 	protected $data = [];
 
 	protected function readData() {

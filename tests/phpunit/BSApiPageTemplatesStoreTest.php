@@ -10,7 +10,9 @@ use BlueSpice\Tests\BSApiExtJSStoreTestBase;
  * @group BlueSpicePageTemplates
  */
 class BSApiPageTemplatesStoreTest extends BSApiExtJSStoreTestBase {
+	/** @inheritDoc */
 	protected $iFixtureTotal = 8;
+	/** @inheritDoc */
 	protected $tablesUsed = [ 'bs_pagetemplate' ];
 
 	protected function skipAssertTotal() {
