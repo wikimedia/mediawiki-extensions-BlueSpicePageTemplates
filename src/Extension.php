@@ -91,7 +91,7 @@ class Extension extends \BlueSpice\Extension {
 	 *
 	 * @param \LinkRenderer $linkRenderer
 	 * @param \LinkTarget $target
-	 * @param null | string | \HtmlArmor &$text
+	 * @param null|string|\HtmlArmor &$text
 	 * @param array &$extraAttribs
 	 * @param string &$query
 	 * @param string &$ret

@@ -12,6 +12,7 @@ use User;
 use WebRequest;
 
 class PreventEditMode {
+	/** @var string[] */
 	protected static $editActions = [ 'edit', 'sourceedit', 'formedit' ];
 
 	/**

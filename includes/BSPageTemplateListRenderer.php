@@ -2,6 +2,7 @@
 
 class BSPageTemplateListRenderer {
 
+	/** @var string */
 	protected $buffer = '';
 
 	/**
@@ -21,6 +22,7 @@ class BSPageTemplateListRenderer {
 		return $this->buffer;
 	}
 
+	/** @var string[] */
 	protected $ordering = [];
 
 	protected function initNamespaceSorting() {

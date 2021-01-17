@@ -10,6 +10,7 @@
  */
 class BSPageTemplateListTest extends MediaWikiTestCase {
 
+	/** @inheritDoc */
 	protected $tablesUsed = [ 'bs_pagetemplate' ];
 
 	protected function skipAssertTotal() {
