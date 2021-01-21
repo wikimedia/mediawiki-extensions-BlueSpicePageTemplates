@@ -101,7 +101,7 @@ class BSPageTemplateList {
 			return;
 		}
 
-		$targetUrl = $this->title->getLinkURL( [ 'action' => 'edit' ] );
+		$targetUrl = $this->title->getLinkURL( [ 'action' => 'edit', 'preload' => '' ] );
 		Hooks::run( 'BSPageTemplatesModifyTargetUrl', [ $this->title, null, &$targetUrl ] );
 
 		$this->dataSets[-1] = [
