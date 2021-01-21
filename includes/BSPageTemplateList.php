@@ -104,7 +104,7 @@ class BSPageTemplateList {
 			return;
 		}
 
-		$targetUrl = $this->title->getLinkURL( [ 'action' => 'edit' ] );
+		$targetUrl = $this->title->getLinkURL( [ 'action' => 'edit', 'preload' => '' ] );
 		MediaWikiServices::getInstance()->getHookContainer()->run(
 			'BSPageTemplatesModifyTargetUrl',
 			[
