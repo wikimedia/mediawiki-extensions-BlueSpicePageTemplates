@@ -20,7 +20,7 @@
 	"bs-pagetemplates-tpl-added": "Predloga je bila dodana.",
 	"bs-pagetemplates-invalid_pfx": "Neveljavna predpona.",
 	"bs-pagetemplates-nooldtpl": "Stare predloge ni mogoče najti.",
-	"bs-pagetemplates-tpl-edited": "Spremembe so bile shranjene.",
+	"bs-pagetemplates-tpl-edited": "Spremembe so shranjene.",
 	"bs-pagetemplates-dberror": "Prišlo je do napake na bazi podatkov.",
 	"bs-pagetemplates-tpl-deleted": "Predloga je bila izbrisana.",
 	"bs-pagetemplates-general-section": "Splošno",
