@@ -95,10 +95,6 @@ class BSPageTemplateList {
 		return false;
 	}
 
-	/**
-	 *
-	 * @return type
-	 */
 	protected function addDefaultPageTemplate() {
 		if ( $this->config[self::HIDE_DEFAULTS] ) {
 			return;
