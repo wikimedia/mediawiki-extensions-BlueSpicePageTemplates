@@ -1,10 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sayginer",
-			"Sadrettin",
+			"BaRaN6161 TURK",
 			"Hedda",
-			"BaRaN6161 TURK"
+			"Sadrettin",
+			"Sayginer"
 		]
 	},
 	"prefs-pagetemplates": "Sayfa şablonu",
@@ -18,24 +18,24 @@
 	"bs-pagetemplates-tpl-name-empty": "Lütfen bir şablon adı girin.",
 	"bs-pagetemplates-no-id": "Lütfen şablon olarak kullanılacak bir sayfa girin.",
 	"bs-pagetemplates-tpl-added": "Şablon eklendi.",
-	"bs-pagetemplates-invalid_pfx": "Ön ek geçersiz.",
+	"bs-pagetemplates-invalid_pfx": "Önek geçersiz.",
 	"bs-pagetemplates-nooldtpl": "Önceki şablon bulunamadı.",
 	"bs-pagetemplates-tpl-edited": "Değişiklikler kaydedildi.",
 	"bs-pagetemplates-dberror": "Veritabanı hatası oluştu.",
 	"bs-pagetemplates-tpl-deleted": "Şablon silindi.",
 	"bs-pagetemplates-general-section": "Genel",
-	"bs-pagetemplates-choose-template": "Bu sayfa henüz mevcut değil. Yeni bir sayfa oluşturabilirsiniz. Eğer bunu yapmak istemiyorsanız, son ziyaret edilen sayfaya dönmek için tarayıcınızın geri tuşuna tıklayın.\n\nBunlardan {{ÇOĞUL:$1||birini}} seçerek {{ÇOĞUL:$1|şablonu|şablonları}} takip edebilirsin:",
+	"bs-pagetemplates-choose-template": "Bu sayfa henüz mevcut değil. Yeni bir sayfa oluşturabilirsiniz. Eğer bunu yapmak istemiyorsanız, son ziyaret edilen sayfaya dönmek için tarayıcınızın geri tuşuna tıklayın.\n\nBunlardan {{PLURAL:$1|birini}} seçerek {{PLURAL:$1|şablonu|şablonları}} takip edebilirsin:",
 	"bs-pagetemplates-pref-excludens": "Bu isim alanındaki şablonları gösterme:",
 	"bs-pagetemplates-pref-hideifnotintargetns": "Sayfa hedef ad alanında oluşturulmayacaksa şablonu gizle",
 	"bs-pagetemplates-headerlabel": "Etiket",
-	"bs-pagetemplates-headertargetnamespace": "İsim alanı",
+	"bs-pagetemplates-headertargetnamespace": "Ad alanı",
 	"bs-pagetemplates-tipeditdetails": "Şablonu düzenle",
 	"bs-pagetemplates-tipdeletetemplate": "{{PLURAL:$1|Şablonu|Şablonları}} sil",
 	"bs-pagetemplates-tipaddtemplate": "Şablon ekle",
-	"bs-pagetemplates-label-tpl": "Şablon adı:",
+	"bs-pagetemplates-label-tpl": "Şablon adı",
 	"bs-pagetemplates-label-desc": "Açıklama",
-	"bs-pagetemplates-label-targetns": "İsim alanı",
-	"bs-pagetemplates-label-tplns": "Şablon isim alanı",
+	"bs-pagetemplates-label-targetns": "Ad alanı",
+	"bs-pagetemplates-label-tplns": "Şablon ad alanı",
 	"bs-pagetemplates-label-article": "Şablon",
 	"bs-pagetemplates-confirm-deletetpl": "{{PLURAL:$1|Bu şablonu|Bu şablonları}} silmek istediğinize emin misiniz?",
 	"bs-pagetemplates-remove-message-unknown": "Beklenmeyen bir hata oluştu, lütfen tekrar deneyin.",
@@ -48,9 +48,10 @@
 	"apihelp-bs-pagetemplates-store-summary": "Tüm sayfa şablonlarını listeler. Sıralama, filtreleme ve sayfalamaya izin verir. ExtJS Mağazası parametrelerini uygular.",
 	"apihelp-bs-pagetemplates-tasks-description": "Sayfa şablonlarının değiştirilmesine izin verir",
 	"apihelp-bs-pagetemplates-tasks-summary": "Sayfa şablonlarının değiştirilmesine izin verir",
-	"action-pagetemplatesadmin-viewspecialpage": "özel sayfayı görüntüle \"{{in:pagetemplatesadmin}}\"",
+	"action-pagetemplatesadmin-viewspecialpage": "\"{{int:pagetemplatesadmin}}\" özel sayfayı görüntüle",
 	"pagetemplatesadmin": "Sayfa şablonları yönetimi",
 	"bs-usagetracker-pagetemplates": "sayfa şablonları",
-	"bs-pagetemplates-nsm-label": "PageTemplates",
-	"right-pagetemplatesadmin-viewspecialpage": "Sayfa şablonlarının yönetilebileceği [[Special:PageTemplatesAdmin]] özel sayfasına erişin"
+	"bs-pagetemplates-nsm-label": "SayfaŞablonları",
+	"right-pagetemplatesadmin-viewspecialpage": "Sayfa şablonlarının yönetilebileceği [[Special:PageTemplatesAdmin]] özel sayfasına erişin",
+	"bs-pagetemplates-choose-template-empty": "Bu sayfa henüz mevcut değil. Yeni bir sayfa oluşturabilirsiniz. Bunu yapmak istemiyorsanız, ziyaret ettiğiniz son sayfaya dönmek için tarayıcınızın geri düğmesini tıklayın."
 }

@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Liuxinyu970226",
-			"LNDDYL",
 			"Cwlin0416",
-			"和平奮鬥救地球",
-			"Kly"
+			"Kly",
+			"LNDDYL",
+			"Liuxinyu970226",
+			"和平奮鬥救地球"
 		]
 	},
 	"bs-pagetemplates-desc": "顯示標記為頁面模板的模板清單",
@@ -53,5 +53,6 @@
 	"pagetemplatesadmin": "頁面模板管理",
 	"bs-usagetracker-pagetemplates": "頁面模板",
 	"bs-pagetemplates-nsm-label": "頁面模板",
-	"right-pagetemplatesadmin-viewspecialpage": "存取用來管理頁面模板的 [[Special:PageTemplatesAdmin]] 特殊頁面。"
+	"right-pagetemplatesadmin-viewspecialpage": "存取用來管理頁面模板的 [[Special:PageTemplatesAdmin]] 特殊頁面。",
+	"bs-pagetemplates-choose-template-empty": "此頁面尚不存在。您可以建立一個新頁面。若您不想這麼做的話，可以點擊您瀏覽器的返回按鈕，或是回到前一個訪問的頁面。"
 }

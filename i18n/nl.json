@@ -1,12 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Esketti",
+			"Mainframe98",
 			"SPQRobin",
 			"Siebrand",
-			"Esketti",
 			"Sjoerddebruin",
-			"TrisbaasBaan",
-			"Mainframe98"
+			"TrisbaasBaan"
 		]
 	},
 	"bs-pagetemplates-desc": "Hiermee geeft u een lijst van sjablonen die gemarkeerd zijn als pagina-sjablonen",

@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"पर्वत सुबेदी",
 			"बिप्लब आनन्द"
 		]
 	},
@@ -22,16 +23,16 @@
 	"bs-pagetemplates-tpl-deleted": "यो ढाँचा मेटिएको छ।",
 	"bs-pagetemplates-general-section": "सामान्य",
 	"bs-pagetemplates-pref-excludens": "यो नामस्थानहरूमा ढाँचाहरू नदेखाउने:",
-	"bs-pagetemplates-pref-forcenamespace": "लक्षित नामस्थानलाई दवाब दिने",
+	"bs-pagetemplates-pref-forcenamespace": "लक्षित नामपदलाई दवाब दिने",
 	"bs-pagetemplates-headerlabel": "नामपत्र",
-	"bs-pagetemplates-headertargetnamespace": "नामस्थान",
+	"bs-pagetemplates-headertargetnamespace": "नामपद",
 	"bs-pagetemplates-tipeditdetails": "ढाँचा सम्पादन गर्ने",
 	"bs-pagetemplates-tipdeletetemplate": "{{PLURAL:$1|ढाँचा|ढाँचाहरू}} मेट्ने",
 	"bs-pagetemplates-tipaddtemplate": "ढाँचा जोड्ने",
 	"bs-pagetemplates-label-tpl": "ढाँचा नाम",
 	"bs-pagetemplates-label-desc": "विवरण",
-	"bs-pagetemplates-label-targetns": "नामस्थान",
-	"bs-pagetemplates-label-tplns": "ढाँचा नामस्थान",
+	"bs-pagetemplates-label-targetns": "नामपद",
+	"bs-pagetemplates-label-tplns": "ढाँचा नामपद",
 	"bs-pagetemplates-label-article": "ढाँचा",
 	"bs-pagetemplates-confirm-deletetpl": "के तपाईं यस {{PLURAL:$1|यो ढाँचा|यी ढाँचाहरू}}लाई मेट्न चाहनुहुन्छ ?",
 	"bs-pagetemplates-remove-message-unknown": "अमान्य त्रुटि उत्पन्न भयो, कृपया पुन प्रयास गर्नुहोला।"

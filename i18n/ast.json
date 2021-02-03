@@ -48,5 +48,7 @@
 	"apihelp-bs-pagetemplates-tasks-summary": "Permite remanar les plantíes de la páxina",
 	"action-pagetemplatesadmin-viewspecialpage": "ver páxina especial \"{{int:pagetemplatesadmin}}\"",
 	"pagetemplatesadmin": "Alministración de plantíes pa páxines",
-	"bs-usagetracker-pagetemplates": "plantíes de páxina"
+	"bs-usagetracker-pagetemplates": "plantíes de páxina",
+	"bs-pagetemplates-nsm-label": "PageTemplates",
+	"right-pagetemplatesadmin-viewspecialpage": "Accesu a la páxina especial [[Special:PageTemplatesAdmin]], onde puen alministrase les plantíes de páxines"
 }

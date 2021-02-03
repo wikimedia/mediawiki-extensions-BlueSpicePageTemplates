@@ -1,17 +1,17 @@
 {
 	"@metadata": {
 		"authors": [
-			"Stephan Muggli <muggli@hallowelt.biz>",
 			"Liuxinyu970226",
+			"Mglaser",
+			"Osnard",
+			"Purodha",
+			"Raymond",
 			"Robby",
 			"Shirayuki",
-			"Ата",
 			"Smuggli",
-			"Purodha",
+			"Stephan Muggli <muggli@hallowelt.biz>",
 			"Umherirrender",
-			"Osnard",
-			"Mglaser",
-			"Raymond"
+			"Ата"
 		]
 	},
 	"bs-pagetemplates-desc": "Used in [{{canonicalurl:Special:WikiAdmin|mode=ExtensionInfo}} Special:WikiAdmin?mode=ExtensionInfo], description of page templates extension",

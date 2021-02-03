@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Reza1615",
 			"Alirezaaa",
-			"Huji"
+			"FarsiNevis",
+			"Huji",
+			"Reza1615"
 		]
 	},
 	"bs-pagetemplates-desc": "یک فهرست از الگوهایی را که به عنوان الگوی صفحات نشانه‌گذاری شده‌اند نشان می‌دهد",
@@ -38,5 +39,6 @@
 	"bs-pagetemplates-confirm-deletetpl": "آیا مطمئنید می‌خواهید این {{PLURAL:$1|الگو|الگوها}} را حذف کنید؟",
 	"bs-pagetemplates-remove-message-unknown": "یک خطای غیر منتظره رخ داد، لطفاً دوباره تلاش کنید.",
 	"bs-pagetemplates-remove-message-success": "{{PLURAL:$1|الگوی|الگوهای}} روبرو {{PLURAL:$1|حذف شد|حذف شدند}}: $2",
-	"bs-pagetemplates-remove-message-failure": "{{PLURAL:$1|الگوی|الگوهای}} روبرو {{PLURAL:$1|نمی‌تواند حذف شود|نمی‌توانند حذف شوند}}: $2 (دلیل: $3)"
+	"bs-pagetemplates-remove-message-failure": "{{PLURAL:$1|الگوی|الگوهای}} روبرو {{PLURAL:$1|نمی‌تواند حذف شود|نمی‌توانند حذف شوند}}: $2 (دلیل: $3)",
+	"bs-usagetracker-pagetemplates": "الگوهای صفحه"
 }
