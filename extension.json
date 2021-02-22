@@ -1,6 +1,6 @@
 {
 	"name": "BlueSpicePageTemplates",
-	"license-name" : "GPL-3.0-only",
+	"license-name": "GPL-3.0-only",
 	"version": "4.1.0-alpha",
 	"url": "https://en.wiki.bluespice.com/wiki/Reference:PageTemplates",
 	"author": [
@@ -90,7 +90,7 @@
 	"config": {
 		"PageTemplatesExcludeNs": {
 			"value": [
-				-2, -1, 6, 7, 8, 9,10,11,14,15
+				-2, -1, 6, 7, 8, 9, 10, 11, 14, 15
 			]
 		},
 		"PageTemplatesForceNamespace": {
@@ -156,7 +156,7 @@
 			"BlueSpice\\PageTemplates\\Hook\\NamespaceManagerWriteNamespaceConfiguration\\WriteToConfiguration::callback"
 		],
 		"HtmlPageLinkRendererBegin": "\\BlueSpice\\PageTemplates\\Extension::onHtmlPageLinkRendererBegin",
-		"MessagesPreLoad":"\\BlueSpice\\PageTemplates\\Extension::onMessagesPreLoad",
+		"MessagesPreLoad": "\\BlueSpice\\PageTemplates\\Extension::onMessagesPreLoad",
 		"MediaWikiPerformAction": "\\BlueSpice\\PageTemplates\\Hook\\MediaWikiPerformAction\\PreventEditMode::callback"
 	},
 	"load_composer_autoloader": true,
