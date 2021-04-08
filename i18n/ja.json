@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"A2y4",
+			"LaMagiaaa",
 			"Shirayuki"
 		]
 	},
@@ -33,5 +34,6 @@
 	"bs-pagetemplates-remove-message-success": "以下の{{PLURAL:$1|テンプレート}}を削除しました: $2",
 	"bs-pagetemplates-remove-message-failure": "以下の{{PLURAL:$1|テンプレート}}を削除できませんでした: $2 (理由: $3)",
 	"action-pagetemplatesadmin-viewspecialpage": "特別ページ「{{int:pagetemplatesadmin}}」の閲覧",
-	"bs-pagetemplates-general-section": "全般"
+	"bs-pagetemplates-general-section": "全般",
+	"bs-pagetemplates-remove-message-unknown": "予期せぬエラーが発生しました。もう一度お試しください。"
 }

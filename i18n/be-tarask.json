@@ -2,9 +2,20 @@
 	"@metadata": {
 		"authors": [
 			"Red Winged Duck",
-			"Renessaince"
+			"Renessaince",
+			"W"
 		]
 	},
 	"bs-pagetemplates-pref-excludens": "Не пакаваць шаблёны ў гэтых прасторах назваў:",
-	"right-pagetemplatesadmin-viewspecialpage": "Доступ да спэцыяльнай старонкі [[Special:PageTemplatesAdmin]], адкуль можна кіраваць шаблёнамі старонкі."
+	"right-pagetemplatesadmin-viewspecialpage": "Доступ да спэцыяльнай старонкі [[Special:PageTemplatesAdmin]], адкуль можна кіраваць шаблёнамі старонкі.",
+	"prefs-pagetemplates": "Шаблёны старонкі",
+	"bs-pagetemplates-empty-page": "Пустая старонка",
+	"bs-pagetemplates-empty-page-desc": "Пачаць з пустой старонкі",
+	"bs-pagetemplatesadmin-label": "Шаблёны старонкі",
+	"bs-pagetemplates-tipeditdetails": "Правіць шаблён",
+	"bs-pagetemplates-tipaddtemplate": "Дадаць шаблён",
+	"bs-pagetemplates-label-tpl": "Назва шаблёну",
+	"bs-pagetemplates-label-desc": "Апісаньне",
+	"bs-pagetemplates-label-article": "Шаблён",
+	"bs-usagetracker-pagetemplates": "шаблёны старонкі"
 }
