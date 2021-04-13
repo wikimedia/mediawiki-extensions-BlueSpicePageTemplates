@@ -4,10 +4,11 @@
 			"Gomoko",
 			"Thibaut120094",
 			"Urhixidur",
+			"Verdy p",
 			"Wladek92"
 		]
 	},
-	"bs-pagetemplates-desc": "Affiche une liste de modèles marqué comme modèles de page",
+	"bs-pagetemplates-desc": "Affiche une liste de modèles marqués comme modèles de page",
 	"prefs-pagetemplates": "Modèles de page",
 	"bs-pagetemplates-empty-page": "Page vide",
 	"bs-pagetemplates-empty-page-desc": "Commencer avec une page vide.",
@@ -16,8 +17,8 @@
 	"bs-pagetemplates-tpl-label-toolong": "Le libellé est trop long. Veuillez utiliser une longueur maximale de 255 caractères.",
 	"bs-pagetemplates-tpl-label-empty": "Veuillez saisir un libellé.",
 	"bs-pagetemplates-tpl-name-toolong": "Le nom du modèle est trop long. Veuillez utiliser une longueur maximale de 255 caractères.",
-	"bs-pagetemplates-tpl-name-empty": "Veuillez entrer un nom de modèle.",
-	"bs-pagetemplates-no-id": "Veuillez entrer une page à utiliser comme modèle.",
+	"bs-pagetemplates-tpl-name-empty": "Veuillez saisir un nom de modèle.",
+	"bs-pagetemplates-no-id": "Veuillez saisir une page à utiliser comme modèle.",
 	"bs-pagetemplates-tpl-added": "Le modèle a été ajouté.",
 	"bs-pagetemplates-invalid_pfx": "Le préfixe n’est pas valide.",
 	"bs-pagetemplates-nooldtpl": "L’ancien modèle est introuvable.",
