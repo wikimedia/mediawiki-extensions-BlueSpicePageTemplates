@@ -20,13 +20,13 @@
 			"Extensions": {
 				"BlueSpicePageTemplates": {
 					"className": "\\BlueSpice\\PageTemplates\\Extension",
-					"extPath": "/BlueSpicePageTemplates",
-					"configDefinitions": {
-						"PageTemplatesForceNamespace": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesForceNamespace::getInstance",
-						"PageTemplatesHideDefaults": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesHideDefaults::getInstance",
-						"PageTemplatesHideIfNotInTargetNs": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesHideIfNotInTargetNS::getInstance"
-					}
+					"extPath": "/BlueSpicePageTemplates"
 				}
+			},
+			"ConfigDefinitionRegistry": {
+				"PageTemplatesForceNamespace": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesForceNamespace::getInstance",
+				"PageTemplatesHideDefaults": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesHideDefaults::getInstance",
+				"PageTemplatesHideIfNotInTargetNs": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesHideIfNotInTargetNS::getInstance"
 			},
 			"TagRegistry": {
 				"pagetemplates": "\\BlueSpice\\PageTemplates\\Tag\\PageTemplates"
