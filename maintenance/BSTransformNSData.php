@@ -38,7 +38,7 @@ class BSTransformNSData extends LoggedUpdateMaintenance {
 
 			$this->output( "\n" );
 
-			$this->getDB( DB_MASTER )->update(
+			$this->getDB( DB_PRIMARY )->update(
 				'bs_pagetemplate',
 				[ 'pt_target_namespace' => $targetNs ],
 				[ 'pt_id' => $pageId ],

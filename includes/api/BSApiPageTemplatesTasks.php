@@ -146,7 +146,7 @@ class BSApiPageTemplatesTasks extends BSApiTasksBase {
 			return $oReturn;
 		}
 
-		$oDbw = wfGetDB( DB_MASTER );
+		$oDbw = wfGetDB( DB_PRIMARY );
 
 		$oTitle = Title::newFromText( $sTemplateName );
 		if ( !$oTitle ) {
@@ -223,7 +223,7 @@ class BSApiPageTemplatesTasks extends BSApiTasksBase {
 
 		foreach ( $ids as $id => $name ) {
 
-			$dbw = wfGetDB( DB_MASTER );
+			$dbw = wfGetDB( DB_PRIMARY );
 			$res = $dbw->delete( 'bs_pagetemplate', [ 'pt_id' => $id ] );
 
 			if ( $res === false ) {
