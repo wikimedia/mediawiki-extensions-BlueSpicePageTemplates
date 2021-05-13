@@ -177,7 +177,7 @@ class BSApiPageTemplatesTasks extends BSApiTasksBase {
 				return $oReturn;
 			}
 
-			// $oDbw = wfGetDB( DB_MASTER );
+			// $oDbw = wfGetDB( DB_PRIMARY );
 			$rRes = $oDbw->update(
 				'bs_pagetemplate',
 				[
