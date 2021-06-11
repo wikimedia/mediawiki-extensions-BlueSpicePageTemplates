@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"ToniSant"
+		]
+	},
+	"bs-pagetemplates-tpl-name-toolong": "Dan l-isem ta' mudell twil wisq. It-tul massimu m'għandux jaqbeż 255 karattru.",
+	"bs-pagetemplates-tpl-name-empty": "Daħħal isem għall-mudell.",
+	"bs-pagetemplates-no-id": "Daħħal paġna biex tintuża bħala mudell.",
+	"bs-pagetemplates-nooldtpl": "Il-mudell il-qadim ma nstabx.",
+	"bs-pagetemplates-tpl-deleted": "Il-mudell ġie mneħħi.",
+	"bs-pagetemplates-pref-excludens": "Turix mudelli f'dawn l-ispazji tal-isem:",
+	"bs-pagetemplates-pref-hideifnotintargetns": "Aħbi l-mudell jekk il-paġna m'għandix tinħoloq fl-ispazju tal-isem intenzjonat",
+	"bs-pagetemplates-tipeditdetails": "Immodifika l-mudell",
+	"bs-pagetemplates-tipdeletetemplate": "Neħħi {{PLURAL:$1|mudell|mudelli}}",
+	"bs-pagetemplates-label-tpl": "Isem tal-mudell",
+	"bs-pagetemplates-label-tplns": "Spazju tal-isem għal mudell",
+	"bs-pagetemplates-confirm-deletetpl": "Inti żgur li trid tneħħi {{PLURAL:$1|dan il-mudell|dawn il-mudelli}}?",
+	"bs-pagetemplates-remove-message-success": "{{PLURAL:$1|Dan il-mudell tħassar|Dawn il-mudelli tħassru}}: $2",
+	"bs-pagetemplates-remove-message-failure": "{{PLURAL:$1|Dan il-mudell ma jistax jitħassar|Dawn il-mudelli ma jistgħux jitħassru}}: $2 (Raġuni: $3)"
+}
