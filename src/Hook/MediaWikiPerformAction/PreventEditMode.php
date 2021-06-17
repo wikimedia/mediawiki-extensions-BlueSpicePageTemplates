@@ -12,7 +12,17 @@ use User;
 use WebRequest;
 
 class PreventEditMode {
+	/**
+	 *
+	 * @var string[]
+	 */
 	protected static $editActions = [ 'edit', 'sourceedit', 'formedit' ];
+
+	/**
+	 *
+	 * @var string[]
+	 */
+	protected static $contentModels = [ 'wikipage' ];
 
 	/**
 	 * @param OutputPage $output
@@ -34,6 +44,10 @@ class PreventEditMode {
 
 		$action = $request->getVal( 'action', $request->getVal( 'veaction', null ) );
 		if ( !$action || !in_array( $action, static::$editActions ) ) {
+			return true;
+		}
+
+		if ( !in_array( $title->getContentModel(), static::$contentModels ) ) {
 			return true;
 		}
 
@@ -71,4 +85,5 @@ class PreventEditMode {
 
 		return $target;
 	}
+
 }
