@@ -28,7 +28,7 @@ class AdminTool implements IAdminTool {
 	 * @return \Message
 	 */
 	public function getName() {
-		return wfMessage( 'bs-pagetemplatesadmin-label' );
+		return wfMessage( 'pagetemplatesadmin' );
 	}
 
 	/**
