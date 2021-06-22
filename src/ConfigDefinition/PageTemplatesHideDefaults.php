@@ -31,4 +31,12 @@ class PageTemplatesHideDefaults extends BooleanSetting {
 	public function getLabelMessageKey() {
 		return 'bs-pagetemplates-pref-hidedefaults';
 	}
+
+	/**
+	 *
+	 * @return string
+	 */
+	public function getHelpMessageKey() {
+		return 'bs-pagetemplates-pref-hidedefaults-help';
+	}
 }
