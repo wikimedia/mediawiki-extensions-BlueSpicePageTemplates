@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Les Meloures",
 			"Robby",
 			"Soued031"
 		]
@@ -28,7 +29,7 @@
 	"bs-pagetemplates-headertargetnamespace": "Nummraum",
 	"bs-pagetemplates-tipeditdetails": "Schabloun änneren",
 	"bs-pagetemplates-tipdeletetemplate": "{{PLURAL:$1|Schabloun|Schabloune}} läschen",
-	"bs-pagetemplates-tipaddtemplate": "Schabloun dobäisetzen",
+	"bs-pagetemplates-tipaddtemplate": "Schabloun derbäisetzen",
 	"bs-pagetemplates-label-tpl": "Numm vun der Schabloun",
 	"bs-pagetemplates-label-desc": "Beschreiwung",
 	"bs-pagetemplates-label-targetns": "Nummraum",
