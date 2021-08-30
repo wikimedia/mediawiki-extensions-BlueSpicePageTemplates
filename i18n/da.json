@@ -8,6 +8,8 @@
 	"bs-pagetemplates-empty-page": "Tom side",
 	"bs-pagetemplates-empty-page-desc": "Start med en tom side.",
 	"bs-pagetemplatesadmin-label": "Sideskabeloner",
+	"bs-pagetemplates-tpl-label-empty": "Indtast venligst en etiket.",
+	"bs-pagetemplates-tpl-name-empty": "Indtast venligst et skabelonnavn.",
 	"bs-pagetemplates-tpl-added": "Skabelonen blev tilføjet.",
 	"bs-pagetemplates-tpl-edited": "Ændringerne blev gemt.",
 	"bs-pagetemplates-dberror": "Der opstod en databasefejl.",
