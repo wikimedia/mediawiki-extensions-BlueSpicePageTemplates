@@ -21,5 +21,7 @@
 	"bs-pagetemplates-label-tplns": "Skabelon navnerum",
 	"bs-pagetemplates-label-article": "Skabelon",
 	"prefs-pagetemplates": "Sideskabeloner",
-	"bs-pagetemplatesadmin-label": "Sideskabeloner"
+	"bs-pagetemplatesadmin-label": "Sideskabeloner",
+	"bs-pagetemplates-tpl-label-empty": "Indtast venligst en etiket.",
+	"bs-pagetemplates-tpl-name-empty": "Indtast venligst et skabelonnavn."
 }

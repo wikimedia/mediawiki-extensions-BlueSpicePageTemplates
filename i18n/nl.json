@@ -47,5 +47,14 @@
 	"bs-pagetemplates-remove-message-success": "{{PLURAL:$1|Het volgende sjabloon is|De volgende sjablonen zijn}} verwijderd: $2",
 	"bs-pagetemplates-remove-message-failure": "{{PLURAL:$1|Het volgende sjabloon kon|De volgende sjablonen konden}} niet worden verwijderd: $2 (reden: $3)",
 	"bs-usagetracker-pagetemplates": "paginasjablonen",
-	"action-pagetemplatesadmin-viewspecialpage": "de speciale pagina \"{{int:pagetemplatesadmin}}\" te bekijken"
+	"action-pagetemplatesadmin-viewspecialpage": "de speciale pagina \"{{int:pagetemplatesadmin}}\" te bekijken",
+	"bs-pagetemplates-choose-template-empty": "Deze pagina bestaat nog niet. U kunt een nieuwe pagina aanmaken. Als u dat niet wilt, klikt u op de terugknop van uw browser om terug te keren naar de laatst bezochte pagina.",
+	"bs-pagetemplates-pref-hidedefaults": "Standaardsjablonen verbergen",
+	"apihelp-bs-pagetemplates-store-description": "Geeft een overzicht van alle paginasjablonen. Maakt sorteren, filteren en pagineren mogelijk. Implementeert ExtJS Store-parameters.",
+	"apihelp-bs-pagetemplates-store-summary": "Geeft een overzicht van alle paginasjablonen. Maakt sorteren, filteren en pagineren mogelijk. Implementeert ExtJS Store-parameters.",
+	"apihelp-bs-pagetemplates-tasks-description": "Maakt manipulatie van paginasjablonen mogelijk",
+	"apihelp-bs-pagetemplates-tasks-summary": "Maakt manipulatie van paginasjablonen mogelijk",
+	"pagetemplatesadmin": "Paginasjablonenbeheer",
+	"bs-pagetemplates-nsm-label": "Paginasjablonen",
+	"right-pagetemplatesadmin-viewspecialpage": "Toegang tot de speciale pagina [[Special:PageTemplatesAdmin]] waarin paginasjablonen kunnen worden beheerd"
 }
