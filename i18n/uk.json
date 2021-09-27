@@ -54,5 +54,6 @@
 	"pagetemplatesadmin": "Адміністрування шаблонів сторінок",
 	"bs-usagetracker-pagetemplates": "шаблони сторінок",
 	"bs-pagetemplates-nsm-label": "PageTemplates",
-	"right-pagetemplatesadmin-viewspecialpage": "Надає доступ до спеціальної сторінки [[Special:PageTemplatesAdmin]], де можна керувати шаблонами сторінок"
+	"right-pagetemplatesadmin-viewspecialpage": "Надає доступ до спеціальної сторінки [[Special:PageTemplatesAdmin]], де можна керувати шаблонами сторінок",
+	"bs-pagetemplates-pref-hidedefaults-help": "Вилучає стандартний шаблон «Порожня сторінка» з вибору шаблонів сторінок під час створення сторінки."
 }

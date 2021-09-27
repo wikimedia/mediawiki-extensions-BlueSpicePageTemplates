@@ -50,5 +50,6 @@
 	"pagetemplatesadmin": "Administration de patronos de pagina",
 	"bs-usagetracker-pagetemplates": "patronos de pagina",
 	"bs-pagetemplates-nsm-label": "Patronos de pagina",
-	"right-pagetemplatesadmin-viewspecialpage": "Accesso al pagina special [[Special:PageTemplatesAdmin]] ubi se gere le patronos de pagina"
+	"right-pagetemplatesadmin-viewspecialpage": "Accesso al pagina special [[Special:PageTemplatesAdmin]] ubi se gere le patronos de pagina",
+	"bs-pagetemplates-pref-hidedefaults-help": "Remove le patrono \"pagina vacue\" standard del selection de patronos de pagina durante le creation de paginas."
 }
