@@ -24,7 +24,7 @@
 	"bs-pagetemplates-tpl-deleted": "D'Schabloun gouf geläscht.",
 	"bs-pagetemplates-general-section": "Allgemeng",
 	"bs-pagetemplates-choose-template": "Dës Säit gëtt et nach net. Dir kënnt eng nei säit uleeën. Wann Dir dat maache wëllt, klickt op de Knäppchen zréck vun Ärem Browser fir op déi lescht Säit zréckzegoen op där Dir waart.\n\nDir kënnt {{PLURAL:$1|dës Schabloun|eng vun dëse Schablounen}} eraussichen.",
-	"bs-pagetemplates-pref-excludens": "Schablounen an dësen Nummräim net weisen:",
+	"bs-pagetemplates-pref-excludens": "Schablounen an dësen Nummraim net weisen:",
 	"bs-pagetemplates-headerlabel": "Etikett",
 	"bs-pagetemplates-headertargetnamespace": "Nummraum",
 	"bs-pagetemplates-tipeditdetails": "Schabloun änneren",

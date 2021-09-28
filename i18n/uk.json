@@ -54,5 +54,6 @@
 	"bs-usagetracker-pagetemplates": "шаблони сторінок",
 	"bs-pagetemplates-nsm-label": "PageTemplates",
 	"right-pagetemplatesadmin-viewspecialpage": "Надає доступ до спеціальної сторінки [[Special:PageTemplatesAdmin]], де можна керувати шаблонами сторінок",
-	"bs-pagetemplates-choose-template-empty": "Ця сторінка ще не існує і ви можете створити її. Якщо ви не бажаєте цього робити - натисніть кнопку \"Повернутись\" у браузері."
+	"bs-pagetemplates-choose-template-empty": "Ця сторінка ще не існує і ви можете створити її. Якщо ви не бажаєте цього робити - натисніть кнопку \"Повернутись\" у браузері.",
+	"bs-pagetemplates-pref-hidedefaults-help": "Вилучає стандартний шаблон «Порожня сторінка» з вибору шаблонів сторінок під час створення сторінки."
 }
