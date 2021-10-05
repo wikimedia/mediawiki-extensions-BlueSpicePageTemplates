@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"DDPAT",
 			"Irus",
 			"Kaganer",
 			"Mouse21",
@@ -52,5 +53,6 @@
 	"apihelp-bs-pagetemplates-tasks-summary": "Позволяет манипулировать шаблонами страниц",
 	"action-pagetemplatesadmin-viewspecialpage": "просмотреть специальную страницу \"{{int:pagetemplatesadmin}}\"",
 	"pagetemplatesadmin": "Управление шаблонами страниц",
-	"bs-usagetracker-pagetemplates": "шаблоны страниц"
+	"bs-usagetracker-pagetemplates": "шаблоны страниц",
+	"bs-pagetemplates-nsm-label": "Шаблоны страницы"
 }
