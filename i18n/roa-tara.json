@@ -51,5 +51,6 @@
 	"bs-usagetracker-pagetemplates": "template d'a pàgene",
 	"bs-pagetemplates-nsm-label": "Template d'a pàgene",
 	"right-pagetemplatesadmin-viewspecialpage": "Tràse jndr'à pàgena speciale [[Special:PageTemplatesAdmin]], addò le template d'a pàgene ponne essere gestite",
-	"bs-pagetemplates-choose-template-empty": "'A pàgene non g'esiste angore. Puè ccrejà 'na pàgena nove. Ce non ge vuè fà quidde, cazze 'u buttone rrete d'u browser tune pe turnà a l'urtema pàgene 'ndrucate."
+	"bs-pagetemplates-choose-template-empty": "'A pàgene non g'esiste angore. Puè ccrejà 'na pàgena nove. Ce non ge vuè fà quidde, cazze 'u buttone rrete d'u browser tune pe turnà a l'urtema pàgene 'ndrucate.",
+	"bs-pagetemplates-pref-hidedefaults-help": "Live 'u template standàrd \"Pàgena vacande\" da 'u scacchiamende de le pàggene de template durande 'a ccrejazione d'a pàgene."
 }
