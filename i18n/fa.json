@@ -4,6 +4,7 @@
 			"Alirezaaa",
 			"FarsiNevis",
 			"Huji",
+			"Jeeputer",
 			"Reza1615"
 		]
 	},
@@ -26,6 +27,7 @@
 	"bs-pagetemplates-tpl-deleted": "این الگو حذف شد.",
 	"bs-pagetemplates-general-section": "عمومی",
 	"bs-pagetemplates-pref-excludens": "نشان ندادن الگوها در این فضاهای نام:",
+	"bs-pagetemplates-pref-hidedefaults": "نهفتن الگوهای پیش‌فرض",
 	"bs-pagetemplates-headerlabel": "برچسب",
 	"bs-pagetemplates-headertargetnamespace": "فضای نام",
 	"bs-pagetemplates-tipeditdetails": "ویرایش الگو",
