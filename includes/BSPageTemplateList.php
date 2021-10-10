@@ -64,6 +64,7 @@ class BSPageTemplateList {
 			[ 'ORDER BY' => 'pt_label' ]
 		);
 
+		$namespaceInfo = MediaWikiServices::getInstance()->getNamespaceInfo();
 		foreach ( $res as $row ) {
 			if ( $this->config[self::HIDE_IF_NOT_IN_TARGET_NS] ) {
 
@@ -76,7 +77,7 @@ class BSPageTemplateList {
 
 			$dataSet = (array)$row;
 			$dataSet['type'] = strtolower(
-				MWNamespace::getCanonicalName( $row->pt_template_namespace )
+				$namespaceInfo->getCanonicalName( $row->pt_template_namespace )
 			);
 			$this->dataSets[$row->pt_id] = $dataSet;
 		}
