@@ -8,7 +8,7 @@
  *
  * @covers BSPageTemplateList
  */
-class BSPageTemplateListTest extends MediaWikiTestCase {
+class BSPageTemplateListTest extends MediaWikiIntegrationTestCase {
 
 	/** @inheritDoc */
 	protected $tablesUsed = [ 'bs_pagetemplate' ];
