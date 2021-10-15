@@ -3,11 +3,11 @@
 use MediaWiki\MediaWikiServices;
 
 class BSPageTemplateList {
-	const HIDE_IF_NOT_IN_TARGET_NS = 0;
-	const FORCE_NAMESPACE = 1;
-	const HIDE_DEFAULTS = 2;
-	const ALL_NAMESPACES_PSEUDO_ID = -99;
-	const UNSET_TARGET_NAMESPACES = 101;
+	public const HIDE_IF_NOT_IN_TARGET_NS = 0;
+	public const FORCE_NAMESPACE = 1;
+	public const HIDE_DEFAULTS = 2;
+	public const ALL_NAMESPACES_PSEUDO_ID = -99;
+	public const UNSET_TARGET_NAMESPACES = 101;
 
 	/**
 	 *
