@@ -145,8 +145,8 @@
 		"remoteExtPath": "BlueSpicePageTemplates/resources"
 	},
 	"HookHandlers": {
-		"main": {
-			"class": "\\BlueSpice\\PageTemplates\\HookHandler\\Main"
+		"common-user-interface": {
+			"class": "\\BlueSpice\\PageTemplates\\HookHandler\\CommonUserInterface"
 		}
 	},
 	"Hooks": {
@@ -163,7 +163,7 @@
 		"HtmlPageLinkRendererBegin": "\\BlueSpice\\PageTemplates\\Extension::onHtmlPageLinkRendererBegin",
 		"MessagesPreLoad": "\\BlueSpice\\PageTemplates\\Extension::onMessagesPreLoad",
 		"MediaWikiPerformAction": "\\BlueSpice\\PageTemplates\\Hook\\MediaWikiPerformAction\\PreventEditMode::callback",
-		"MWStakeCommonUIRegisterSkinSlotComponents": "main"
+		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface"
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2
