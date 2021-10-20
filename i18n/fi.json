@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Silvonen"
+			"Silvonen",
+			"Yupik"
 		]
 	},
 	"bs-pagetemplates-empty-page": "Tyhjä sivu",
-	"bs-pagetemplates-label-desc": "Kuvaus"
+	"bs-pagetemplates-label-desc": "Kuvaus",
+	"bs-pagetemplates-label-tpl": "Mallineen nimi",
+	"bs-pagetemplates-label-article": "Malline"
 }

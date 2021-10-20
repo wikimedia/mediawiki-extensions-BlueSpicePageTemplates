@@ -4,5 +4,8 @@
 			"Ajeje Brazorf"
 		]
 	},
-	"bs-pagetemplates-label-article": "Template"
+	"bs-pagetemplates-label-article": "Template",
+	"bs-pagetemplates-headertargetnamespace": "Namespace",
+	"bs-pagetemplates-label-desc": "Discrizzioni",
+	"bs-pagetemplates-label-targetns": "Namespace"
 }
