@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"JSantos",
 			"Joao Xavier"
 		]
 	},
 	"bs-pagetemplates-headertargetnamespace": "'Namespace'",
-	"bs-pagetemplates-label-targetns": "'Namespace'"
+	"bs-pagetemplates-label-targetns": "'Namespace'",
+	"bs-pagetemplates-label-article": "Shablono"
 }
