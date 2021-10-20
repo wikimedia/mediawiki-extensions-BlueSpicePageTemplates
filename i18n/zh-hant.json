@@ -54,5 +54,6 @@
 	"bs-usagetracker-pagetemplates": "頁面模板",
 	"bs-pagetemplates-nsm-label": "頁面模板",
 	"right-pagetemplatesadmin-viewspecialpage": "存取用來管理頁面模板的 [[Special:PageTemplatesAdmin]] 特殊頁面。",
-	"bs-pagetemplates-choose-template-empty": "此頁面尚不存在。您可以建立一個新頁面。若您不想這麼做的話，可以點擊您瀏覽器的返回按鈕，或是回到前一個訪問的頁面。"
+	"bs-pagetemplates-choose-template-empty": "此頁面尚不存在。您可以建立一個新頁面。若您不想這麼做的話，可以點擊您瀏覽器的返回按鈕，或是回到前一個訪問的頁面。",
+	"bs-pagetemplates-pref-hidedefaults-help": "在頁面建立期間，從所選的頁面模板移除標準模板「Empty Page」。"
 }
