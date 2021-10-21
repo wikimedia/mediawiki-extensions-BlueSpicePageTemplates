@@ -6,6 +6,7 @@
 		]
 	},
 	"bs-pagetemplates-headertargetnamespace": "'Namespace'",
+	"bs-pagetemplates-label-desc": "Deskriptado",
 	"bs-pagetemplates-label-targetns": "'Namespace'",
 	"bs-pagetemplates-label-article": "Shablono"
 }
