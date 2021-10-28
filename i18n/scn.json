@@ -7,5 +7,7 @@
 	"bs-pagetemplates-label-article": "Template",
 	"bs-pagetemplates-headertargetnamespace": "Namespace",
 	"bs-pagetemplates-label-desc": "Discrizzioni",
-	"bs-pagetemplates-label-targetns": "Namespace"
+	"bs-pagetemplates-label-targetns": "Namespace",
+	"bs-pagetemplates-empty-page": "Pàggina vacanti",
+	"bs-pagetemplates-general-section": "Ginirali"
 }
