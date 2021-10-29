@@ -22,7 +22,7 @@ class PreventEditMode {
 	 *
 	 * @var string[]
 	 */
-	protected static $contentModels = [ 'wikipage' ];
+	protected static $contentModels = [ 'wikitext' ];
 
 	/**
 	 * @param OutputPage $output
@@ -46,7 +46,6 @@ class PreventEditMode {
 		if ( !$action || !in_array( $action, static::$editActions ) ) {
 			return true;
 		}
-
 		if ( !in_array( $title->getContentModel(), static::$contentModels ) ) {
 			return true;
 		}
