@@ -4,10 +4,21 @@
 			"Ajeje Brazorf"
 		]
 	},
+	"prefs-pagetemplates": "Template dâ pàggina",
 	"bs-pagetemplates-empty-page": "Pàggina vacanti",
+	"bs-pagetemplatesadmin-label": "Template dâ pàggina",
+	"bs-pagetemplates-invalid_pfx": "Lu prifissu nun è vàliddu",
 	"bs-pagetemplates-general-section": "Ginirali",
 	"bs-pagetemplates-headertargetnamespace": "Namespace",
+	"bs-pagetemplates-tipeditdetails": "Cancia template",
+	"bs-pagetemplates-tipdeletetemplate": "Cancella {{PLURAL:$1|template}}",
+	"bs-pagetemplates-tipaddtemplate": "Agghiunci template",
+	"bs-pagetemplates-label-tpl": "Nomu dû template",
 	"bs-pagetemplates-label-desc": "Discrizzioni",
 	"bs-pagetemplates-label-targetns": "Namespace",
-	"bs-pagetemplates-label-article": "Template"
+	"bs-pagetemplates-label-tplns": "Namespace dî template",
+	"bs-pagetemplates-label-article": "Template",
+	"bs-pagetemplates-confirm-deletetpl": "Sî sicuru di vuliri cancillari {{PLURAL:$1|stu|sti}} template",
+	"bs-usagetracker-pagetemplates": "template dâ pàggina",
+	"bs-pagetemplates-nsm-label": "TemplateDâPàggina"
 }
