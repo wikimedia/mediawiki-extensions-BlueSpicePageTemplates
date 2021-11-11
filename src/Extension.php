@@ -35,6 +35,7 @@ use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\Linker\LinkTarget;
 use MediaWiki\MediaWikiServices;
 use PermissionsError;
+use Title;
 
 /**
  * Base class for PageTemplates extension
@@ -99,6 +100,10 @@ class Extension extends \BlueSpice\Extension {
 	 */
 	public static function onHtmlPageLinkRendererBegin( LinkRenderer $linkRenderer,
 		LinkTarget $target, &$text, &$extraAttribs, &$query, &$ret ) {
+		// PageTemplates can not be enabled for Talk pages at all
+		if ( $target instanceof Title && $target->isTalkPage() ) {
+			return true;
+		}
 		if ( in_array( 'known', $extraAttribs, true ) ) {
 			return true;
 		}
