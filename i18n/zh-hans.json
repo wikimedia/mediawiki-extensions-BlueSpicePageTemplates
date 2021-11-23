@@ -4,7 +4,8 @@
 			"Liuxinyu970226",
 			"Ps2049",
 			"Xiplus",
-			"佛壁灯"
+			"佛壁灯",
+			"落花有意12138"
 		]
 	},
 	"bs-pagetemplates-desc": "显示标记为页面模板的模板列表",
@@ -26,6 +27,7 @@
 	"bs-pagetemplates-tpl-deleted": "此模板已删除。",
 	"bs-pagetemplates-general-section": "常规",
 	"bs-pagetemplates-choose-template": "此页面不存在。您可创建一个新页面。如果您不希望这样做，点击浏览器的返回按钮回到您最近访问的页面。您可以选择以下{{PLURAL:$1|模板}}{{PLURAL:$1||之一}}：",
+	"bs-pagetemplates-choose-template-empty": "此页面还不存在。您可以创建新页面。如果您不想这么做，可以点击您浏览器中的返回按钮，来回到您上一个访问的页面。",
 	"bs-pagetemplates-pref-excludens": "不要显示这些命名空间的模板：",
 	"bs-pagetemplates-pref-forcenamespace": "强制目标命名空间",
 	"bs-pagetemplates-pref-hideifnotintargetns": "如果页面不是在目标命名空间创建的就隐藏模板",
