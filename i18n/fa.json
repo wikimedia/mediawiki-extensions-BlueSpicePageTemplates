@@ -4,7 +4,8 @@
 			"Alirezaaa",
 			"FarsiNevis",
 			"Huji",
-			"Reza1615"
+			"Reza1615",
+			"Jeeputer"
 		]
 	},
 	"bs-pagetemplates-desc": "یک فهرست از الگوهایی را که به عنوان الگوی صفحات نشانه‌گذاری شده‌اند نشان می‌دهد",
@@ -26,6 +27,7 @@
 	"bs-pagetemplates-tpl-deleted": "این الگو حذف شد.",
 	"bs-pagetemplates-general-section": "عمومی",
 	"bs-pagetemplates-pref-excludens": "نشان ندادن الگوها در این فضاهای نام:",
+	"bs-pagetemplates-pref-hidedefaults": "نهفتن الگوهای پیش‌فرض",
 	"bs-pagetemplates-headerlabel": "برچسب",
 	"bs-pagetemplates-headertargetnamespace": "فضای نام",
 	"bs-pagetemplates-tipeditdetails": "ویرایش الگو",

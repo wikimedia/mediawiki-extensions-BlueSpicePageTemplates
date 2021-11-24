@@ -6,7 +6,8 @@
 			"Mouse21",
 			"Okras",
 			"Redredsonia",
-			"Striking Blue"
+			"Striking Blue",
+			"DDPAT"
 		]
 	},
 	"bs-pagetemplates-desc": "Отображает список шаблонов, помеченных как шаблоны страниц",
@@ -52,5 +53,6 @@
 	"apihelp-bs-pagetemplates-tasks-summary": "Позволяет манипулировать шаблонами страниц",
 	"action-pagetemplatesadmin-viewspecialpage": "просмотреть специальную страницу \"{{int:pagetemplatesadmin}}\"",
 	"pagetemplatesadmin": "Управление шаблонами страниц",
-	"bs-usagetracker-pagetemplates": "шаблоны страниц"
+	"bs-usagetracker-pagetemplates": "шаблоны страниц",
+	"bs-pagetemplates-nsm-label": "Шаблоны страницы"
 }
