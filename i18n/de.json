@@ -10,6 +10,7 @@
 	},
 	"bs-pagetemplates-desc": "Es können vorgefertigte Seitenvorlagen angelegt werden",
 	"prefs-pagetemplates": "Seitenvorlagen",
+	"bs-pagetemplatesadmin-text": "Seitenvorlagen",
 	"bs-pagetemplates-empty-page": "Leere Seite",
 	"bs-pagetemplates-empty-page-desc": "Beginne mit einer leeren Seite.",
 	"bs-pagetemplatesadmin-label": "Seitenvorlagen",

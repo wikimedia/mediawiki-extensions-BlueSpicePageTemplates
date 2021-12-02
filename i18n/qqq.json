@@ -16,6 +16,7 @@
 	},
 	"bs-pagetemplates-desc": "Used in [{{canonicalurl:Special:WikiAdmin|mode=ExtensionInfo}} Special:WikiAdmin?mode=ExtensionInfo], description of page templates extension",
 	"prefs-pagetemplates": "Used in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], headline for avatars section in preferences.\n{{Identical|Page template}}",
+	"bs-pagetemplatesadmin-text": "Label for entry in global actions menu",
 	"bs-pagetemplates-empty-page": "Anchor text for empty page\n{{Identical|Empty page}}",
 	"bs-pagetemplates-empty-page-desc": "Text for start with an empty page.",
 	"bs-pagetemplatesadmin-label": "Anchor text in admin tab for page templates \n{{Identical|Page template}}",

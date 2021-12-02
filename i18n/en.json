@@ -6,6 +6,7 @@
 	},
 	"bs-pagetemplates-desc": "Displays a list of templates marked as page templates",
 	"prefs-pagetemplates": "Page templates",
+	"bs-pagetemplatesadmin-text": "Page templates",
 	"bs-pagetemplates-empty-page": "Empty page",
 	"bs-pagetemplates-empty-page-desc": "Start with an empty page.",
 	"bs-pagetemplatesadmin-label": "Page templates",

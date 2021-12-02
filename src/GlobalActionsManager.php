@@ -53,7 +53,7 @@ class GlobalActionsManager extends RestrictedTextLink {
 	 * @return Message
 	 */
 	public function getText(): Message {
-		return Message::newFromKey( 'pagetemplatesadmin' );
+		return Message::newFromKey( 'bs-pagetemplatesadmin-text' );
 	}
 
 	/**
@@ -61,6 +61,6 @@ class GlobalActionsManager extends RestrictedTextLink {
 	 * @return Message
 	 */
 	public function getAriaLabel(): Message {
-		return Message::newFromKey( 'pagetemplatesadmin' );
+		return Message::newFromKey( 'bs-pagetemplatesadmin-text' );
 	}
 }
