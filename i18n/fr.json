@@ -10,6 +10,7 @@
 	},
 	"bs-pagetemplates-desc": "Affiche une liste de modèles marqués comme modèles de page",
 	"prefs-pagetemplates": "Modèles de page",
+	"bs-pagetemplatesadmin-text": "Modèles de page",
 	"bs-pagetemplates-empty-page": "Page vide",
 	"bs-pagetemplates-empty-page-desc": "Commencer avec une page vide.",
 	"bs-pagetemplatesadmin-label": "Modèles de page",
