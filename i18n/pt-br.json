@@ -53,5 +53,6 @@
 	"pagetemplatesadmin": "Administração de predefinições de páginas",
 	"bs-usagetracker-pagetemplates": "predefinições de página",
 	"bs-pagetemplates-nsm-label": "ModelosDePágina",
-	"right-pagetemplatesadmin-viewspecialpage": "Acesso à página especial [[Special:PageTemplatesAdmin]], onde os modelos de páginas podem ser administrados"
+	"right-pagetemplatesadmin-viewspecialpage": "Acesso à página especial [[Special:PageTemplatesAdmin]], onde os modelos de páginas podem ser administrados",
+	"bs-pagetemplatesadmin-text": "Modelos de páginas"
 }

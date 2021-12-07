@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"MITO",
 			"Silvonen",
 			"Yupik"
 		]
@@ -8,5 +9,6 @@
 	"bs-pagetemplates-empty-page": "Tyhjä sivu",
 	"bs-pagetemplates-label-desc": "Kuvaus",
 	"bs-pagetemplates-label-tpl": "Mallineen nimi",
-	"bs-pagetemplates-label-article": "Malline"
+	"bs-pagetemplates-label-article": "Malline",
+	"bs-pagetemplatesadmin-text": "Sivun mallineet"
 }

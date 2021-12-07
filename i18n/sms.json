@@ -7,5 +7,6 @@
 	"bs-pagetemplates-label-tpl": "Maall nõmm",
 	"bs-pagetemplates-label-article": "Mall",
 	"bs-pagetemplates-tpl-deleted": "Mall lij jaukkuum.",
-	"action-pagetemplatesadmin-viewspecialpage": "ǩiččâd tuåimmseeid \"{{int:pagetemplatesadmin}}\""
+	"action-pagetemplatesadmin-viewspecialpage": "ǩiččâd tuåimmseeid \"{{int:pagetemplatesadmin}}\"",
+	"bs-pagetemplates-tipaddtemplate": "Lââʹzzet maall"
 }
