@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Cwlin0416",
+			"Ericliu1912",
 			"Kly",
 			"LNDDYL",
 			"Liuxinyu970226",
@@ -10,6 +11,7 @@
 	},
 	"bs-pagetemplates-desc": "顯示標記為頁面模板的模板清單",
 	"prefs-pagetemplates": "頁面模板",
+	"bs-pagetemplatesadmin-text": "頁面模板",
 	"bs-pagetemplates-empty-page": "空白頁面",
 	"bs-pagetemplates-empty-page-desc": "以空白頁面開始。",
 	"bs-pagetemplatesadmin-label": "頁面模板",
