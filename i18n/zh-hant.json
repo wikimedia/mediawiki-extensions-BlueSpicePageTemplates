@@ -5,11 +5,13 @@
 			"Kly",
 			"LNDDYL",
 			"Liuxinyu970226",
-			"和平奮鬥救地球"
+			"和平奮鬥救地球",
+			"Ericliu1912"
 		]
 	},
 	"bs-pagetemplates-desc": "顯示標記為頁面模板的模板清單",
 	"prefs-pagetemplates": "頁面模板",
+	"bs-pagetemplatesadmin-text": "頁面模板",
 	"bs-pagetemplates-empty-page": "空白頁面",
 	"bs-pagetemplates-empty-page-desc": "以空白頁面開始。",
 	"bs-pagetemplatesadmin-label": "頁面模板",
