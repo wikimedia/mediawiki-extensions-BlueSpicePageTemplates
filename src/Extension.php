@@ -99,6 +99,9 @@ class Extension extends \BlueSpice\Extension {
 		if ( $target instanceof Title && $target->isTalkPage() ) {
 			return true;
 		}
+		if ( $target->isExternal() ) {
+			return true;
+		}
 		if ( in_array( 'known', $extraAttribs, true ) ) {
 			return true;
 		}
