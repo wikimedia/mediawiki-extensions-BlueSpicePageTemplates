@@ -4,11 +4,13 @@
 			"BaRaN6161 TURK",
 			"Hedda",
 			"Sadrettin",
-			"Sayginer"
+			"Sayginer",
+			"Can"
 		]
 	},
 	"bs-pagetemplates-desc": "Sayfa şablonu olarak işaretlenmiş şablonların listesini görüntüler.",
 	"prefs-pagetemplates": "Sayfa şablonu",
+	"bs-pagetemplatesadmin-text": "Sayfa şablonları",
 	"bs-pagetemplates-empty-page": "Boş sayfa",
 	"bs-pagetemplates-empty-page-desc": "Boş bir sayfa ile başla.",
 	"bs-pagetemplatesadmin-label": "Sayfa şablonları",
