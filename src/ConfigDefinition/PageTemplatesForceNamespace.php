@@ -32,4 +32,12 @@ class PageTemplatesForceNamespace extends BooleanSetting {
 		return 'bs-pagetemplates-pref-forcenamespace';
 	}
 
+	/**
+	 *
+	 * @return string
+	 */
+	public function getHelpMessageKey() {
+		return 'bs-pagetemplates-pref-forcenamespace-help';
+	}
+
 }
