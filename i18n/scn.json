@@ -9,6 +9,7 @@
 	"bs-pagetemplatesadmin-label": "Template dâ pàggina",
 	"bs-pagetemplates-invalid_pfx": "Lu prifissu nun è vàliddu",
 	"bs-pagetemplates-general-section": "Ginirali",
+	"bs-pagetemplates-headerlabel": "Etichetta",
 	"bs-pagetemplates-headertargetnamespace": "Namespace",
 	"bs-pagetemplates-tipeditdetails": "Cancia template",
 	"bs-pagetemplates-tipdeletetemplate": "Cancella {{PLURAL:$1|template}}",
