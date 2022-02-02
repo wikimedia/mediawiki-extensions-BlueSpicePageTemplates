@@ -56,5 +56,6 @@
 	"bs-usagetracker-pagetemplates": "modèles de page",
 	"bs-pagetemplates-nsm-label": "Modèles de page",
 	"right-pagetemplatesadmin-viewspecialpage": "Accéder à la page spéciale [[Special:PageTemplatesAdmin]], où les modèles de page peuvent être gérés",
-	"bs-pagetemplates-pref-hidedefaults-help": "Supprime le modèle standard « Page vide » de la sélection des modèles de page lors de la création de page."
+	"bs-pagetemplates-pref-hidedefaults-help": "Supprime le modèle standard « Page vide » de la sélection des modèles de page lors de la création de page.",
+	"bs-pagetemplates-pref-forcenamespace-help": "Force l’espace de noms sélectionné via le lien de modèle lors de la création d’une nouvelle page."
 }
