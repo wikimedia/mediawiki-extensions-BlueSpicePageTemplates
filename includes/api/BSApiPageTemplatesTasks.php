@@ -171,8 +171,7 @@ class BSApiPageTemplatesTasks extends BSApiTasksBase {
 		// and here we have edit template
 		} else {
 			$rRes = $oDbw->select( 'bs_pagetemplate', 'pt_id', [ 'pt_id' => $iOldId ] );
-			$iNumRow = $oDbw->numRows( $rRes );
-			if ( !$iNumRow ) {
+			if ( !$rRes->numRows() ) {
 				$oReturn->message = wfMessage( 'bs-pagetemplates-nooldtpl' )->plain();
 				return $oReturn;
 			}
