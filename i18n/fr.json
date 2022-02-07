@@ -10,6 +10,7 @@
 	},
 	"bs-pagetemplates-desc": "Affiche une liste de modèles marqués comme modèles de page",
 	"prefs-pagetemplates": "Modèles de page",
+	"bs-pagetemplatesadmin-text": "Modèles de page",
 	"bs-pagetemplates-empty-page": "Page vide",
 	"bs-pagetemplates-empty-page-desc": "Commencer avec une page vide.",
 	"bs-pagetemplatesadmin-label": "Modèles de page",
@@ -56,5 +57,5 @@
 	"bs-pagetemplates-nsm-label": "Modèles de page",
 	"right-pagetemplatesadmin-viewspecialpage": "Accéder à la page spéciale [[Special:PageTemplatesAdmin]], où les modèles de page peuvent être gérés",
 	"bs-pagetemplates-pref-hidedefaults-help": "Supprime le modèle standard « Page vide » de la sélection des modèles de page lors de la création de page.",
-	"bs-pagetemplatesadmin-text": "Modèles de page"
+	"bs-pagetemplates-pref-forcenamespace-help": "Force l’espace de noms sélectionné via le lien de modèle lors de la création d’une nouvelle page."
 }
