@@ -1,12 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"Veeven"
+			"Veeven",
+			"Chaduvari"
 		]
 	},
+	"bs-pagetemplates-empty-page-desc": "ఖాళీ పేజీతో మొదలుపెట్టండి.",
 	"bs-pagetemplates-general-section": "సాధారణం",
 	"bs-pagetemplates-headertargetnamespace": "పేరుబరి",
+	"bs-pagetemplates-label-desc": "వివరణ",
 	"bs-pagetemplates-label-targetns": "పేరుబరి",
-	"bs-pagetemplates-label-article": "మూస",
-	"bs-pagetemplates-label-desc": "వివరణ"
+	"bs-pagetemplates-label-article": "మూస"
 }
