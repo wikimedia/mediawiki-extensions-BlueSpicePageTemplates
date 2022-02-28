@@ -163,7 +163,8 @@
 		"HtmlPageLinkRendererBegin": "\\BlueSpice\\PageTemplates\\Extension::onHtmlPageLinkRendererBegin",
 		"MessagesPreLoad": "\\BlueSpice\\PageTemplates\\Extension::onMessagesPreLoad",
 		"MediaWikiPerformAction": "\\BlueSpice\\PageTemplates\\Hook\\MediaWikiPerformAction\\PreventEditMode::callback",
-		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface"
+		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
+		"SkinTemplateNavigation::Universal": "\\BlueSpice\\PageTemplates\\Hook\\SkinTemplateNavigationUniversal\\AddPreloadForActions::callback"
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2
