@@ -9,6 +9,7 @@
 	},
 	"bs-pagetemplates-desc": "Apresenta uma lista de predefinições marcadas como modelos de páginas",
 	"prefs-pagetemplates": "Modelos de página",
+	"bs-pagetemplatesadmin-text": "Modelos de página",
 	"bs-pagetemplates-empty-page": "Página vazia",
 	"bs-pagetemplates-empty-page-desc": "Começar com uma página vazia.",
 	"bs-pagetemplatesadmin-label": "Modelos de página",
@@ -53,5 +54,7 @@
 	"pagetemplatesadmin": "Administração de modelos de página",
 	"bs-usagetracker-pagetemplates": "modelos de página",
 	"bs-pagetemplates-nsm-label": "ModelosDePágina",
-	"right-pagetemplatesadmin-viewspecialpage": "Acesso à página especial [[Special:PageTemplatesAdmin]], onde os modelos de páginas podem ser administrados."
+	"right-pagetemplatesadmin-viewspecialpage": "Acesso à página especial [[Special:PageTemplatesAdmin]], onde os modelos de páginas podem ser administrados.",
+	"bs-pagetemplates-pref-hidedefaults-help": "Remove o modelo padrão \"Página vazia\" da seleção de modelos de página durante a criação de página.",
+	"bs-pagetemplates-pref-forcenamespace-help": "Força o espaço nominal selecionado através da hiperligação do modelo ao criar uma página nova."
 }

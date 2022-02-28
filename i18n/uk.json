@@ -5,11 +5,14 @@
 			"Movses",
 			"Piramidion",
 			"Vlad5250",
-			"Ата"
+			"Ата",
+			"Ice bulldog",
+			"Samflint"
 		]
 	},
 	"bs-pagetemplates-desc": "Відображає список шаблонів, позначених як шаблони сторінок",
 	"prefs-pagetemplates": "Шаблони сторінки",
+	"bs-pagetemplatesadmin-text": "Шаблони сторінок",
 	"bs-pagetemplates-empty-page": "Порожня сторінка",
 	"bs-pagetemplates-empty-page-desc": "Почати з порожньої сторінки.",
 	"bs-pagetemplatesadmin-label": "Шаблони сторінки",
