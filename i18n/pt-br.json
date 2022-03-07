@@ -4,11 +4,13 @@
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
 			"Felipe L. Ewald",
-			"Leonardo9387"
+			"Leonardo9387",
+			"Juan90264"
 		]
 	},
 	"bs-pagetemplates-desc": "Apresenta uma lista de predefinições marcadas como modelos de páginas",
 	"prefs-pagetemplates": "Modelos de páginas",
+	"bs-pagetemplatesadmin-text": "Modelos de páginas",
 	"bs-pagetemplates-empty-page": "Página vazia",
 	"bs-pagetemplates-empty-page-desc": "Começar com uma página vazia.",
 	"bs-pagetemplatesadmin-label": "Modelos de páginas",
@@ -54,5 +56,6 @@
 	"bs-usagetracker-pagetemplates": "predefinições de página",
 	"bs-pagetemplates-nsm-label": "ModelosDePágina",
 	"right-pagetemplatesadmin-viewspecialpage": "Acesso à página especial [[Special:PageTemplatesAdmin]], onde os modelos de páginas podem ser administrados",
-	"bs-pagetemplatesadmin-text": "Modelos de páginas"
+	"bs-pagetemplates-pref-hidedefaults-help": "Remove o modelo padrão \"Página vazia\" da seleção de modelos de página durante a criação da página.",
+	"bs-pagetemplates-pref-forcenamespace-help": "Força o espaço nominal selecionado por meio da hiperligação da predefinição ao criar uma nova página."
 }
