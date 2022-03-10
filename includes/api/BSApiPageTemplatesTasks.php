@@ -167,6 +167,8 @@ class BSApiPageTemplatesTasks extends BSApiTasksBase {
 				]
 			);
 			$oReturn->success = true;
+			$oReturn->payload = new stdClass();
+			$oReturn->payload->id = $oDbw->insertId();
 			$oReturn->message = wfMessage( 'bs-pagetemplates-tpl-added' )->plain();
 		// and here we have edit template
 		} else {
