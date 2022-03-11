@@ -53,5 +53,8 @@
 	"bs-usagetracker-pagetemplates": "modelos de página",
 	"bs-pagetemplates-nsm-label": "ModelosDePágina",
 	"right-pagetemplatesadmin-viewspecialpage": "Acesso à página especial [[Special:PageTemplatesAdmin]], onde os modelos de páginas podem ser administrados.",
-	"bs-pagetemplates-choose-template-empty": "Esta página ainda não existe. Pode criar uma página nova. Se não o quiser fazer, clique o botão de retorno do seu navegador para voltar à última página visitada."
+	"bs-pagetemplates-choose-template-empty": "Esta página ainda não existe. Pode criar uma página nova. Se não o quiser fazer, clique o botão de retorno do seu navegador para voltar à última página visitada.",
+	"bs-pagetemplatesadmin-text": "Modelos de página",
+	"bs-pagetemplates-pref-hidedefaults-help": "Remove o modelo padrão \"Página vazia\" da seleção de modelos de página durante a criação de página.",
+	"bs-pagetemplates-pref-forcenamespace-help": "Força o espaço nominal selecionado através da hiperligação do modelo ao criar uma página nova."
 }

@@ -4,6 +4,7 @@
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
 			"Felipe L. Ewald",
+			"Juan90264",
 			"Leonardo9387"
 		]
 	},
@@ -53,5 +54,8 @@
 	"bs-usagetracker-pagetemplates": "predefinições de página",
 	"bs-pagetemplates-nsm-label": "ModelosDePágina",
 	"right-pagetemplatesadmin-viewspecialpage": "Acesso à página especial [[Special:PageTemplatesAdmin]], onde os modelos de páginas podem ser administrados",
-	"bs-pagetemplates-choose-template-empty": "Essa página não existe ainda. Você pode criar uma nova página. Se você não quer fazer isso, clique no botão de retorno do seu navegador para retornat para a última página visitada."
+	"bs-pagetemplates-choose-template-empty": "Essa página não existe ainda. Você pode criar uma nova página. Se você não quer fazer isso, clique no botão de retorno do seu navegador para retornat para a última página visitada.",
+	"bs-pagetemplatesadmin-text": "Modelos de páginas",
+	"bs-pagetemplates-pref-hidedefaults-help": "Remove o modelo padrão \"Página vazia\" da seleção de modelos de página durante a criação da página.",
+	"bs-pagetemplates-pref-forcenamespace-help": "Força o espaço nominal selecionado por meio da hiperligação da predefinição ao criar uma nova página."
 }

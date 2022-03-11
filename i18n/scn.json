@@ -20,5 +20,7 @@
 	"bs-pagetemplates-label-tplns": "Namespace dî template",
 	"bs-pagetemplates-confirm-deletetpl": "Sî sicuru di vuliri cancillari {{PLURAL:$1|stu|sti}} template",
 	"bs-usagetracker-pagetemplates": "template dâ pàggina",
-	"bs-pagetemplates-nsm-label": "TemplateDâPàggina"
+	"bs-pagetemplates-nsm-label": "TemplateDâPàggina",
+	"bs-pagetemplatesadmin-text": "Template di pàggina",
+	"bs-pagetemplates-headerlabel": "Etichetta"
 }

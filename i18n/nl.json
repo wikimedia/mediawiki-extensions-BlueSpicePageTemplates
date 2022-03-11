@@ -4,6 +4,7 @@
 			"Esketti",
 			"Mainframe98",
 			"McDutchie",
+			"Rots61",
 			"SPQRobin",
 			"Siebrand",
 			"Sjoerddebruin",
@@ -56,5 +57,6 @@
 	"apihelp-bs-pagetemplates-tasks-summary": "Maakt manipulatie van paginasjablonen mogelijk",
 	"pagetemplatesadmin": "Paginasjablonenbeheer",
 	"bs-pagetemplates-nsm-label": "Paginasjablonen",
-	"right-pagetemplatesadmin-viewspecialpage": "Toegang tot de speciale pagina [[Special:PageTemplatesAdmin]] waarin paginasjablonen kunnen worden beheerd"
+	"right-pagetemplatesadmin-viewspecialpage": "Toegang tot de speciale pagina [[Special:PageTemplatesAdmin]] waarin paginasjablonen kunnen worden beheerd",
+	"bs-pagetemplatesadmin-text": "Paginasjablonen"
 }

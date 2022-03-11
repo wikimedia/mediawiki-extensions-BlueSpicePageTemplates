@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
+			"Can",
 			"Hedda",
 			"Sadrettin",
 			"Sayginer"
@@ -53,5 +54,6 @@
 	"bs-usagetracker-pagetemplates": "sayfa şablonları",
 	"bs-pagetemplates-nsm-label": "SayfaŞablonları",
 	"right-pagetemplatesadmin-viewspecialpage": "Sayfa şablonlarının yönetilebileceği [[Special:PageTemplatesAdmin]] özel sayfasına erişin",
-	"bs-pagetemplates-choose-template-empty": "Bu sayfa henüz mevcut değil. Yeni bir sayfa oluşturabilirsiniz. Bunu yapmak istemiyorsanız, ziyaret ettiğiniz son sayfaya dönmek için tarayıcınızın geri düğmesini tıklayın."
+	"bs-pagetemplates-choose-template-empty": "Bu sayfa henüz mevcut değil. Yeni bir sayfa oluşturabilirsiniz. Bunu yapmak istemiyorsanız, ziyaret ettiğiniz son sayfaya dönmek için tarayıcınızın geri düğmesini tıklayın.",
+	"bs-pagetemplatesadmin-text": "Sayfa şablonları"
 }

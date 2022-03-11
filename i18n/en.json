@@ -51,5 +51,7 @@
 	"bs-usagetracker-pagetemplates": "page templates",
 	"bs-pagetemplates-nsm-label": "PageTemplates",
 	"right-pagetemplatesadmin-viewspecialpage": "Access to the [[Special:PageTemplatesAdmin]] special page, where page templates can be managed",
-	"bs-pagetemplates-pref-hidedefaults-help": "Removes the standard template \"Empty Page\" from the selection of page templates during page creation."
+	"bs-pagetemplates-pref-hidedefaults-help": "Removes the standard template \"Empty Page\" from the selection of page templates during page creation.",
+	"bs-pagetemplatesadmin-text": "Page templates",
+	"bs-pagetemplates-pref-forcenamespace-help": "Forces the namespace selected via the template link when creating a new page."
 }

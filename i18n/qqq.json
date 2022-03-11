@@ -61,5 +61,7 @@
 	"bs-usagetracker-pagetemplates": "Name of the descriptor used in [[Special:UsageTracker|Special:UsageTracker]] output",
 	"bs-pagetemplates-nsm-label": "Label for field in BlueSpiceNamespaceManager used to select namespaces in which PageTemplates will be shown(enabled)",
 	"right-pagetemplatesadmin-viewspecialpage": "Grants access to the [[Special:PageTemplatesAdmin]] special page, where page templates can be managed.\n{{doc-right|pagetemplatesadmin-viewspecialpage}}",
-	"bs-pagetemplates-pref-hidedefaults-help": "Description for config variable \"PageTemplatesHideDefaults\""
+	"bs-pagetemplates-pref-hidedefaults-help": "Description for config variable \"PageTemplatesHideDefaults\"",
+	"bs-pagetemplatesadmin-text": "Label for entry in global actions menu",
+	"bs-pagetemplates-pref-forcenamespace-help": "Description for config variable \"PageTemplatesForceNamespace\""
 }
