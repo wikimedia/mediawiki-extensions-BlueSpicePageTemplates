@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Seipinne",
 			"Yupik"
 		]
 	},
@@ -8,5 +9,7 @@
 	"bs-pagetemplates-headertargetnamespace": "Nommâkomovuotâ",
 	"bs-pagetemplates-label-tpl": "Myenster nommâ",
 	"bs-pagetemplates-label-targetns": "Nommâkomovuotâ",
-	"bs-pagetemplates-label-article": "Myenster"
+	"bs-pagetemplates-label-article": "Myenster",
+	"bs-pagetemplates-tipeditdetails": "Mute myenster",
+	"bs-pagetemplates-tipaddtemplate": "Lasseet myenster"
 }
