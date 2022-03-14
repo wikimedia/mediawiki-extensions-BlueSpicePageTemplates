@@ -6,6 +6,7 @@
 	},
 	"bs-pagetemplates-desc": "Monstra un lista de patronos marcate como patronos de pagina",
 	"prefs-pagetemplates": "Patronos de pagina",
+	"bs-pagetemplatesadmin-text": "Patronos de pagina",
 	"bs-pagetemplates-empty-page": "Pagina vacue",
 	"bs-pagetemplates-empty-page-desc": "Comenciar con un pagina vacue.",
 	"bs-pagetemplatesadmin-label": "Patronos de pagina",
