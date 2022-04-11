@@ -5,14 +5,15 @@
 			"FarsiNevis",
 			"Huji",
 			"Jeeputer",
-			"Reza1615"
+			"Reza1615",
+			"Beginneruser"
 		]
 	},
 	"bs-pagetemplates-desc": "یک فهرست از الگوهایی را که به عنوان الگوی صفحات نشانه‌گذاری شده‌اند نشان می‌دهد",
-	"prefs-pagetemplates": "الگوی صفحات",
+	"prefs-pagetemplates": "الگوهای صفحه",
 	"bs-pagetemplates-empty-page": "صفحه خالی",
 	"bs-pagetemplates-empty-page-desc": "آغاز با یک صفحه خالی.",
-	"bs-pagetemplatesadmin-label": "الگوی صفحات",
+	"bs-pagetemplatesadmin-label": "الگوهای صفحه",
 	"bs-pagetemplates-tpl-desc-toolong": "این توضیح خیلی طولانی است. لطفاً از حداکثر طول ۲۵۵ نویسه استفاده کنید.",
 	"bs-pagetemplates-tpl-label-toolong": "این پیشوند خیلی طولانی است. لطفاً از حداکثر طول ۲۵۵ نویسه استفاده کنید.",
 	"bs-pagetemplates-tpl-label-empty": "لطفاً یک پیشوند وارد کنید.",
@@ -27,6 +28,7 @@
 	"bs-pagetemplates-tpl-deleted": "این الگو حذف شد.",
 	"bs-pagetemplates-general-section": "عمومی",
 	"bs-pagetemplates-pref-excludens": "نشان ندادن الگوها در این فضاهای نام:",
+	"bs-pagetemplates-pref-hidedefaults": "نهفتن الگوهای پیش‌فرض",
 	"bs-pagetemplates-headerlabel": "برچسب",
 	"bs-pagetemplates-headertargetnamespace": "فضای نام",
 	"bs-pagetemplates-tipeditdetails": "ویرایش الگو",
@@ -41,6 +43,5 @@
 	"bs-pagetemplates-remove-message-unknown": "یک خطای غیر منتظره رخ داد، لطفاً دوباره تلاش کنید.",
 	"bs-pagetemplates-remove-message-success": "{{PLURAL:$1|الگوی|الگوهای}} روبرو {{PLURAL:$1|حذف شد|حذف شدند}}: $2",
 	"bs-pagetemplates-remove-message-failure": "{{PLURAL:$1|الگوی|الگوهای}} روبرو {{PLURAL:$1|نمی‌تواند حذف شود|نمی‌توانند حذف شوند}}: $2 (دلیل: $3)",
-	"bs-usagetracker-pagetemplates": "الگوهای صفحه",
-	"bs-pagetemplates-pref-hidedefaults": "نهفتن الگوهای پیش‌فرض"
+	"bs-usagetracker-pagetemplates": "الگوهای صفحه"
 }
