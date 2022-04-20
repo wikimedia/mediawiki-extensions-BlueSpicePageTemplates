@@ -52,5 +52,6 @@
 	"bs-pagetemplates-nsm-label": "Patronos de pagina",
 	"right-pagetemplatesadmin-viewspecialpage": "Accesso al pagina special [[Special:PageTemplatesAdmin]] ubi se gere le patronos de pagina",
 	"bs-pagetemplates-pref-hidedefaults-help": "Remove le patrono \"pagina vacue\" standard del selection de patronos de pagina durante le creation de paginas.",
-	"bs-pagetemplatesadmin-text": "Patronos de pagina"
+	"bs-pagetemplatesadmin-text": "Patronos de pagina",
+	"bs-pagetemplates-pref-forcenamespace-help": "Fortia le spatio de nomines seligite via le ligamine de patrono quando se crea un nove pagina."
 }

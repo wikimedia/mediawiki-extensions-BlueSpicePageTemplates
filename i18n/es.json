@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"AVIADOR",
+			"DiegoAmbrocio",
 			"Fitoschido",
 			"Igv",
 			"Macofe"
@@ -48,5 +49,7 @@
 	"apihelp-bs-pagetemplates-tasks-summary": "Permite la manipulación de plantillas de páginas",
 	"action-pagetemplatesadmin-viewspecialpage": "ver la página especial \"{{int:pagetemplatesadmin}}\"",
 	"pagetemplatesadmin": "Administración de plantillas de páginas",
-	"bs-usagetracker-pagetemplates": "plantillas de página"
+	"bs-usagetracker-pagetemplates": "plantillas de página",
+	"bs-pagetemplatesadmin-text": "Plantillas de página",
+	"bs-pagetemplates-choose-template-empty": "Esta página aún no existe. Puedes crear una nueva página. Si no quieres hacerlo, haz click en el botón de retroceso de tu navegador para volver a la última página visitada."
 }
