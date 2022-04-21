@@ -4,11 +4,13 @@
 			"AVIADOR",
 			"Fitoschido",
 			"Igv",
-			"Macofe"
+			"Macofe",
+			"DiegoAmbrocio"
 		]
 	},
 	"bs-pagetemplates-desc": "Muestra una lista de plantillas marcadas como plantillas de página",
 	"prefs-pagetemplates": "Plantillas de página",
+	"bs-pagetemplatesadmin-text": "Plantillas de página",
 	"bs-pagetemplates-empty-page": "Página vacía",
 	"bs-pagetemplates-empty-page-desc": "Comenzar con una página vacía.",
 	"bs-pagetemplatesadmin-label": "Plantillas de página",
@@ -26,6 +28,7 @@
 	"bs-pagetemplates-tpl-deleted": "La plantilla ha sido eliminada.",
 	"bs-pagetemplates-general-section": "General",
 	"bs-pagetemplates-choose-template": "Esta página no existe aún. Puedes crear una página nueva; si no quieres hacerlo, pulsa en el botón «Atrás» del navegador para volver a la página visitada anteriormente.\n\nPuedes elegir {{PLURAL:$1|la plantilla siguiente|una de las plantillas siguientes}}:",
+	"bs-pagetemplates-choose-template-empty": "Esta página aún no existe. Puedes crear una nueva página. Si no quieres hacerlo, haz click en el botón de retroceso de tu navegador para volver a la última página visitada.",
 	"bs-pagetemplates-pref-excludens": "No muestre las plantillas en estos espacios de nombres:",
 	"bs-pagetemplates-pref-forcenamespace": "Forzar espacio de nombres de destino",
 	"bs-pagetemplates-pref-hideifnotintargetns": "Ocultar plantilla si la página no se va a crear en el espacio de nombres de destino",

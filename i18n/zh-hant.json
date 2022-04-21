@@ -57,5 +57,6 @@
 	"bs-usagetracker-pagetemplates": "頁面模板",
 	"bs-pagetemplates-nsm-label": "頁面模板",
 	"right-pagetemplatesadmin-viewspecialpage": "存取用來管理頁面模板的 [[Special:PageTemplatesAdmin]] 特殊頁面。",
-	"bs-pagetemplates-pref-hidedefaults-help": "在頁面建立期間，從所選的頁面模板移除標準模板「Empty Page」。"
+	"bs-pagetemplates-pref-hidedefaults-help": "在頁面建立期間，從所選的頁面模板移除標準模板「Empty Page」。",
+	"bs-pagetemplates-pref-forcenamespace-help": "強制當建立新頁面時，經由模板連結選取命名空間。"
 }
