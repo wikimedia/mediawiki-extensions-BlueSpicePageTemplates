@@ -2,15 +2,18 @@
 	"@metadata": {
 		"authors": [
 			"Beta16",
-			"Nicole Scalinci"
+			"Nicole Scalinci",
+			"GpieroMW"
 		]
 	},
+	"prefs-pagetemplates": "Template di pagina",
 	"bs-pagetemplates-empty-page": "Pagina vuota",
 	"bs-pagetemplates-empty-page-desc": "Inizia con una pagina vuota.",
-	"bs-pagetemplates-tpl-desc-toolong": "La descrizione è troppo lunga. Utilizza una lunghezza massima di 255 caratteri.",
-	"bs-pagetemplates-tpl-label-toolong": "L'etichetta è troppo lunga. Utilizza una lunghezza massima di 255 caratteri.",
+	"bs-pagetemplatesadmin-label": "Template di pagina",
+	"bs-pagetemplates-tpl-desc-toolong": "La descrizione è troppo lunga. Utilizzare una lunghezza massima di 255 caratteri.",
+	"bs-pagetemplates-tpl-label-toolong": "L'etichetta è troppo lunga. Utilizzare una lunghezza massima di 255 caratteri.",
 	"bs-pagetemplates-tpl-label-empty": "Inserisci un'etichetta.",
-	"bs-pagetemplates-tpl-name-toolong": "Il nome del template è troppo lungo. Utilizza una lunghezza massima di 255 caratteri.",
+	"bs-pagetemplates-tpl-name-toolong": "Il nome del template è troppo lungo. Utilizzare una lunghezza massima di 255 caratteri.",
 	"bs-pagetemplates-tpl-name-empty": "Inserisci il nome del template.",
 	"bs-pagetemplates-no-id": "Inserisci una pagina da utilizzare come modello.",
 	"bs-pagetemplates-tpl-added": "Il template è stato aggiunto.",
@@ -20,6 +23,7 @@
 	"bs-pagetemplates-dberror": "Si è verificato un errore sul database.",
 	"bs-pagetemplates-tpl-deleted": "Il template è stato cancellato.",
 	"bs-pagetemplates-general-section": "Generale",
+	"bs-pagetemplates-pref-excludens": "Non mostrare i template in questi namespace:",
 	"bs-pagetemplates-headerlabel": "Etichetta",
 	"bs-pagetemplates-headertargetnamespace": "Namespace",
 	"bs-pagetemplates-tipeditdetails": "Modifica template",
@@ -29,5 +33,9 @@
 	"bs-pagetemplates-label-desc": "Descrizione",
 	"bs-pagetemplates-label-targetns": "Namespace",
 	"bs-pagetemplates-label-article": "Template",
+	"bs-pagetemplates-confirm-deletetpl": "Vuoi cancellare {{PLURAL:$1|questo|questi}} template?",
+	"bs-pagetemplates-remove-message-unknown": "Si è verificato un errore inatteso, per favore prova di nuovo.",
+	"bs-pagetemplates-remove-message-success": "{{PLURAL:$1|Il seguente template è stato cancellato|I seguenti template sono stati cancellati}}: $2",
+	"bs-pagetemplates-remove-message-failure": "{{PLURAL:$1|Il seguente template non può essere cancellato|I seguenti template non possono essere cancellati}}: $2 (Motivazione: $3)",
 	"bs-usagetracker-pagetemplates": "template di pagina"
 }
