@@ -6,6 +6,7 @@
 			"Nicole Scalinci"
 		]
 	},
+	"bs-pagetemplates-desc": "Visualizza un elenco di template segnati come pagine template",
 	"prefs-pagetemplates": "Template di pagina",
 	"bs-pagetemplatesadmin-text": "Template di pagina",
 	"bs-pagetemplates-empty-page": "Pagina vuota",
@@ -25,6 +26,8 @@
 	"bs-pagetemplates-tpl-deleted": "Il template è stato cancellato.",
 	"bs-pagetemplates-general-section": "Generale",
 	"bs-pagetemplates-pref-excludens": "Non mostrare i template in questi namespace:",
+	"bs-pagetemplates-pref-forcenamespace": "Forzare il namespace di destinazione",
+	"bs-pagetemplates-pref-hideifnotintargetns": "Nascondere il template se la pagina non è stata creata nel namespace di destinazione",
 	"bs-pagetemplates-headerlabel": "Etichetta",
 	"bs-pagetemplates-headertargetnamespace": "Namespace",
 	"bs-pagetemplates-tipeditdetails": "Modifica template",
@@ -33,10 +36,12 @@
 	"bs-pagetemplates-label-tpl": "Nome template",
 	"bs-pagetemplates-label-desc": "Descrizione",
 	"bs-pagetemplates-label-targetns": "Namespace",
+	"bs-pagetemplates-label-tplns": "Template namespace",
 	"bs-pagetemplates-label-article": "Template",
 	"bs-pagetemplates-confirm-deletetpl": "Vuoi cancellare {{PLURAL:$1|questo|questi}} template?",
 	"bs-pagetemplates-remove-message-unknown": "Si è verificato un errore inatteso, per favore prova di nuovo.",
 	"bs-pagetemplates-remove-message-success": "{{PLURAL:$1|Il seguente template è stato cancellato|I seguenti template sono stati cancellati}}: $2",
 	"bs-pagetemplates-remove-message-failure": "{{PLURAL:$1|Il seguente template non può essere cancellato|I seguenti template non possono essere cancellati}}: $2 (Motivazione: $3)",
-	"bs-usagetracker-pagetemplates": "template di pagina"
+	"bs-usagetracker-pagetemplates": "template di pagina",
+	"bs-pagetemplates-pref-forcenamespace-help": "Forza il namespace selezionato attraverso il link template quando si crea una nuova pagina."
 }
