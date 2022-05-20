@@ -2,12 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Eladk",
+			"Ex-Diktator",
 			"Guycn2",
 			"המקיסט"
 		]
 	},
 	"bs-pagetemplates-desc": "הצגת רשימה של תבניות שסומנו כתבניות של דפים",
 	"prefs-pagetemplates": "תבניות דפים",
+	"bs-pagetemplatesadmin-text": "תבניות דפים",
 	"bs-pagetemplates-empty-page": "דף ריק",
 	"bs-pagetemplates-empty-page-desc": "להתחיל עם דף ריק.",
 	"bs-pagetemplatesadmin-label": "תבניות דפים",
@@ -25,6 +27,7 @@
 	"bs-pagetemplates-tpl-deleted": "התבנית נמחקה.",
 	"bs-pagetemplates-general-section": "כללי",
 	"bs-pagetemplates-choose-template": "הדף עדיין אינו קיים. ניתן ליצור דף חדש. אם אין ברצונך לעשות זאת, באפשרותך ללחוץ על כפתור החזרה (Back) בדפדפן שלך, כדי לחזור לדף הקודם.\n\nבאפשרותך לבחור {{PLURAL:$1|את התבנית הבאה|אחת מן התבניות הבאות}}:",
+	"bs-pagetemplates-choose-template-empty": "הדף הזה עוד לא קיים. באפשרותך ליצור דף חדש. אם אינך רוצה לעשות את זה, נא ללחוץ על כפתור \"חזרה\" בדפדפן שלך כדי לחזור לדף האחרון שביקרת בו.",
 	"bs-pagetemplates-pref-excludens": "לא להציג תבניות במרחבי השם האלה:",
 	"bs-pagetemplates-pref-forcenamespace": "תמיד להשתמש במרחב היעד",
 	"bs-pagetemplates-pref-hideifnotintargetns": "להסתיר את התבנית אם הדף לא ייווצר במרחב היעד",
@@ -43,10 +46,15 @@
 	"bs-pagetemplates-remove-message-unknown": "איראה שגיאה בלתי־צפויה, נא לנסות שוב.",
 	"bs-pagetemplates-remove-message-success": "{{PLURAL:$1|התבנית הבאה נמחקה|התבניות הבאות נמחקו}}: $2",
 	"bs-pagetemplates-remove-message-failure": "לא ניתן היה למחוק את {{PLURAL:$1|התבנית הבאה|התבניות הבאות}}: $2 (סיבה: $3)",
+	"apihelp-bs-pagetemplates-store-description": "הצגת כל תבניות הדפים. מאפשר סידור, סינון, ועימוד. מיישם פרמטרים של חנות ExtJS.",
+	"apihelp-bs-pagetemplates-store-summary": "הצגת כל תבניות הדפים. מאפשר סידור, סינון, ועימוד. מיישם פרמטרים של חנות ExtJS.",
 	"apihelp-bs-pagetemplates-tasks-description": "לאפשר תפעול של תבניות בדפים",
 	"apihelp-bs-pagetemplates-tasks-summary": "לאפשר תפעול של תבניות בדפים",
 	"action-pagetemplatesadmin-viewspecialpage": "לצפות בדף המיוחד \"{{int:pagetemplatesadmin}}\"",
 	"pagetemplatesadmin": "ניהול תבניות של דפים",
 	"bs-usagetracker-pagetemplates": "תבניות דפים",
-	"bs-pagetemplates-nsm-label": "תבניות דפים"
+	"bs-pagetemplates-nsm-label": "תבניות דפים",
+	"right-pagetemplatesadmin-viewspecialpage": "גישה לדף המיוחד [[Special:PageTemplatesAdmin]], שאפשר לנהל בו את דפי התבנית",
+	"bs-pagetemplates-pref-hidedefaults-help": "הסרת התבנית התקנית \"Empty Page\" מהבחירה של תבניות דפים בזמן יצירת הדף.",
+	"bs-pagetemplates-pref-forcenamespace-help": "כפיית מרחב שם שנבחר דרך קישור התבנית בעת יצירת דף חדש."
 }
