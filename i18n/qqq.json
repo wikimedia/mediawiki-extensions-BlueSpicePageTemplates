@@ -11,7 +11,8 @@
 			"Smuggli",
 			"Stephan Muggli <muggli@hallowelt.biz>",
 			"Umherirrender",
-			"Ата"
+			"Ата",
+			"GpieroMW"
 		]
 	},
 	"bs-pagetemplates-desc": "Used in [{{canonicalurl:Special:WikiAdmin|mode=ExtensionInfo}} Special:WikiAdmin?mode=ExtensionInfo], description of page templates extension",
@@ -36,7 +37,7 @@
 	"bs-pagetemplates-choose-template": "text for this page doesn't exist yet. You can create a new page. If you don't want to do that, click the back button of your browser to return to the last page visited. \n\nYou can choose {{PLURAL:$1||one of}} the following {{PLURAL:$1|template|templates}}: \n* $1 is the number of templates use it for PLURAL distinction",
 	"bs-pagetemplates-choose-template-empty": "Text for this page doesn't exist yet. You can create a new page. If you don't want to do that, click the back button of your browser to return to the last page visited.",
 	"bs-pagetemplates-pref-excludens": "Option in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], label for do not show templates in these namespaces:",
-	"bs-pagetemplates-pref-forcenamespace": "Label for checkbox in [{{canonicalurl:Special:BlueSpice_Preferences}} Special:BlueSpice_Preferences]. When set, a new page created via PageTemplates will be put in the namspace indicated in the page template's properties.",
+	"bs-pagetemplates-pref-forcenamespace": "Label for checkbox in [{{canonicalurl:Special:BlueSpice_Preferences}} Special:BlueSpice_Preferences]. When set, a new page created via PageTemplates will be put in the namespace indicated in the page template's properties.",
 	"bs-pagetemplates-pref-hideifnotintargetns": "Option in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], checkbox label for hide template if the page is not to be created in the target namespace",
 	"bs-pagetemplates-pref-hidedefaults": "Option in [{{canonicalurl:Special:WikiAdmin|mode=Preferences}} Special:WikiAdmin?mode=Preferences], checkbox label for hide default templates",
 	"bs-pagetemplates-headerlabel": "This is the label for the field named \"label\". Each page template has a \"label\" and a \"description\", which are shown to the user in a list when creating a new page. The \"label\" is used as the \"heading\" in the list and generally is the \"name\" of a single page template.\n{{Identical|Label}}",
