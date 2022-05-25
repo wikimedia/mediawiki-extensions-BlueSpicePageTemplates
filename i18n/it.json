@@ -6,6 +6,7 @@
 			"GpieroMW"
 		]
 	},
+	"bs-pagetemplates-desc": "Visualizza un elenco di template segnati come pagine template",
 	"prefs-pagetemplates": "Template di pagina",
 	"bs-pagetemplates-empty-page": "Pagina vuota",
 	"bs-pagetemplates-empty-page-desc": "Inizia con una pagina vuota.",
@@ -24,6 +25,8 @@
 	"bs-pagetemplates-tpl-deleted": "Il template è stato cancellato.",
 	"bs-pagetemplates-general-section": "Generale",
 	"bs-pagetemplates-pref-excludens": "Non mostrare i template in questi namespace:",
+	"bs-pagetemplates-pref-forcenamespace": "Forza il namespace di destinazione",
+	"bs-pagetemplates-pref-hideifnotintargetns": "Nascondi il template se la pagina non è stata creata nel namespace di destinazione",
 	"bs-pagetemplates-headerlabel": "Etichetta",
 	"bs-pagetemplates-headertargetnamespace": "Namespace",
 	"bs-pagetemplates-tipeditdetails": "Modifica template",
@@ -32,6 +35,7 @@
 	"bs-pagetemplates-label-tpl": "Nome template",
 	"bs-pagetemplates-label-desc": "Descrizione",
 	"bs-pagetemplates-label-targetns": "Namespace",
+	"bs-pagetemplates-label-tplns": "Template namespace",
 	"bs-pagetemplates-label-article": "Template",
 	"bs-pagetemplates-confirm-deletetpl": "Vuoi cancellare {{PLURAL:$1|questo|questi}} template?",
 	"bs-pagetemplates-remove-message-unknown": "Si è verificato un errore inatteso, per favore prova di nuovo.",

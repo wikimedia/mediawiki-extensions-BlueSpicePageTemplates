@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Fohanno",
-			"Fulup"
+			"Fulup",
+			"Huñvreüs"
 		]
 	},
 	"prefs-pagetemplates": "Patromoù pajenn",
@@ -30,6 +31,6 @@
 	"bs-pagetemplates-label-tpl": "Anv ar patrom",
 	"bs-pagetemplates-label-desc": "Deskrivadur",
 	"bs-pagetemplates-label-article": "Patrom",
-	"bs-pagetemplates-confirm-deletetpl": "Ha sur oc'h e fell deoc'h dilemel ar patrom-mañ ?",
+	"bs-pagetemplates-confirm-deletetpl": "Ha sur oc'h e fell deoc'h dilemel ar {{PLURAL:$1|patrom|patromoù}}-mañ?",
 	"bs-pagetemplates-remove-message-unknown": "C'hoarvezet ez eus ur fazi dic'hortoz, esaeit en-dro, mar plij."
 }
