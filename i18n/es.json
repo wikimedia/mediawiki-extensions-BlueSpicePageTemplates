@@ -4,6 +4,7 @@
 			"AVIADOR",
 			"DiegoAmbrocio",
 			"Fitoschido",
+			"Francodiaz7",
 			"Igv",
 			"Macofe"
 		]
@@ -51,5 +52,6 @@
 	"apihelp-bs-pagetemplates-tasks-summary": "Permite la manipulación de plantillas de páginas",
 	"action-pagetemplatesadmin-viewspecialpage": "ver la página especial \"{{int:pagetemplatesadmin}}\"",
 	"pagetemplatesadmin": "Administración de plantillas de páginas",
-	"bs-usagetracker-pagetemplates": "plantillas de página"
+	"bs-usagetracker-pagetemplates": "plantillas de página",
+	"bs-pagetemplates-nsm-label": "PlantillasDePagina"
 }
