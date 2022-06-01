@@ -24,6 +24,8 @@
 	"bs-pagetemplates-dberror": "Si è verificato un errore sul database.",
 	"bs-pagetemplates-tpl-deleted": "Il template è stato cancellato.",
 	"bs-pagetemplates-general-section": "Generale",
+	"bs-pagetemplates-choose-template": "Questa pagina non esiste ancora. Puoi creare una pagina nuova. Se non vuoi farlo, premi il tasto «Indietro» del browser per tornare all'ultima pagina visitata.\n\nPuoi scegliere {{PLURAL:$1|il seguente|uno dei seguenti}} template:",
+	"bs-pagetemplates-choose-template-empty": "Questa pagina non esiste ancora. È possibile creare una pagina nuova. Se non si desidera farlo, premi il tasto «Indietro» del browser per tornare all'ultima pagina visitata.",
 	"bs-pagetemplates-pref-excludens": "Non mostrare i template in questi namespace:",
 	"bs-pagetemplates-pref-forcenamespace": "Forza il namespace di destinazione",
 	"bs-pagetemplates-pref-hideifnotintargetns": "Nascondi il template se la pagina non è stata creata nel namespace di destinazione",
