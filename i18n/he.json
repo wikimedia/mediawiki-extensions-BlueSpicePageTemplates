@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Eladk",
+			"Ex-Diktator",
 			"Guycn2",
 			"המקיסט"
 		]
@@ -48,5 +49,12 @@
 	"action-pagetemplatesadmin-viewspecialpage": "לצפות בדף המיוחד \"{{int:pagetemplatesadmin}}\"",
 	"pagetemplatesadmin": "ניהול תבניות של דפים",
 	"bs-usagetracker-pagetemplates": "תבניות דפים",
-	"bs-pagetemplates-nsm-label": "תבניות דפים"
+	"bs-pagetemplates-nsm-label": "תבניות דפים",
+	"bs-pagetemplatesadmin-text": "תבניות דפים",
+	"bs-pagetemplates-choose-template-empty": "הדף הזה עוד לא קיים. באפשרותך ליצור דף חדש. אם אינך רוצה לעשות את זה, נא ללחוץ על כפתור \"חזרה\" בדפדפן שלך כדי לחזור לדף האחרון שביקרת בו.",
+	"apihelp-bs-pagetemplates-store-description": "הצגת כל תבניות הדפים. מאפשר סידור, סינון, ועימוד. מיישם פרמטרים של חנות ExtJS.",
+	"apihelp-bs-pagetemplates-store-summary": "הצגת כל תבניות הדפים. מאפשר סידור, סינון, ועימוד. מיישם פרמטרים של חנות ExtJS.",
+	"right-pagetemplatesadmin-viewspecialpage": "גישה לדף המיוחד [[Special:PageTemplatesAdmin]], שאפשר לנהל בו את דפי התבנית",
+	"bs-pagetemplates-pref-hidedefaults-help": "הסרת התבנית התקנית \"Empty Page\" מהבחירה של תבניות דפים בזמן יצירת הדף.",
+	"bs-pagetemplates-pref-forcenamespace-help": "כפיית מרחב שם שנבחר דרך קישור התבנית בעת יצירת דף חדש."
 }
