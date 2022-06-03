@@ -2,8 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Beta16",
-			"Nicole Scalinci",
-			"GpieroMW"
+			"GpieroMW",
+			"Nicole Scalinci"
 		]
 	},
 	"bs-pagetemplates-desc": "Visualizza un elenco di template segnati come pagine template",

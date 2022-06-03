@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"GpieroMW",
 			"Liuxinyu970226",
 			"Mglaser",
 			"Osnard",
@@ -11,8 +12,7 @@
 			"Smuggli",
 			"Stephan Muggli <muggli@hallowelt.biz>",
 			"Umherirrender",
-			"Ата",
-			"GpieroMW"
+			"Ата"
 		]
 	},
 	"bs-pagetemplates-desc": "Used in [{{canonicalurl:Special:WikiAdmin|mode=ExtensionInfo}} Special:WikiAdmin?mode=ExtensionInfo], description of page templates extension",
