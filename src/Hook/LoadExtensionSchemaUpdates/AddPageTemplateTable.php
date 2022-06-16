@@ -20,9 +20,7 @@ class AddPageTemplateTable extends LoadExtensionSchemaUpdates {
 			"$dir/maintenance/db/bs_ns_to_json.patch.pt_target_namespace.sql"
 		);
 
-		$this->updater->addPostDatabaseUpdateMaintenance(
-			'BSTransformNSData'
-		);
+		$this->updater->addPostDatabaseUpdateMaintenance( \BSTransformNSData::class );
 	}
 
 	/**
