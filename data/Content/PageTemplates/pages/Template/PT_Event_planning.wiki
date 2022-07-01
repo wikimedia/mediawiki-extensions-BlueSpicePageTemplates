@@ -1,0 +1,257 @@
+<div class="databox">
+<div class="tbl">
+{|
+|-
+!Date / time:
+|mm/dd/yyyy - 0:00 p.m.
+|-
+!Organizer:
+|Department, organization or company
+|-
+!Person responsible:
+|username
+|}
+</div>
+<div class="tbl">
+{| 
+|-
+!Venue:
+|location of event
+|-
+!Venue contact:
+|name of contact
+|-
+!Status:
+| class="select" |'''open''' / closed
+|}
+</div>
+</div>
+==Initial planning phase==
+{| class="wikitable sortable" style="width:100%;"
+! style="width:200px;" |Task
+!Owner
+! style="vertical-align:middle;text-align:center;width:120px;" |Deadline
+! style="vertical-align:middle;text-align:center;width:100px;" |Started
+! style="vertical-align:middle;text-align:center;width:100px;" |Finished
+!Notes
+|-
+| style="width:200px;" |Set goals, collect ideas
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |mm/dd
+| style="vertical-align:middle;text-align:center;width:100px;" | x
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+| style="width:200px;" |Approve budget
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |mm/dd
+| style="vertical-align:middle;text-align:center;" |x
+| style="vertical-align:middle;text-align:center;" |
+|
+|-
+| style="width:200px;" |Assemble guest lists
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |mm/dd
+| style="vertical-align:middle;text-align:center;width:100px;" |
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+|Assemble speakers list
+|
+| style="vertical-align:middle;text-align:center;" |mm/dd
+| style="vertical-align:middle;text-align:center;" |
+| style="vertical-align:middle;text-align:center;" |
+|
+|-
+| style="width:200px;" |Book venue
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |mm/dd
+| style="vertical-align:middle;text-align:center;width:100px;" |
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+| style="width:200px;" |Select menu
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |mm/dd
+| style="vertical-align:middle;text-align:center;width:100px;" |
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+| style="width:200px;" |Contract suppliers
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |mm/dd
+| style="vertical-align:middle;text-align:center;width:100px;" |
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|}
+
+===Notes ===
+Provide some details if necessary.
+
+==Before the event==
+{| class="wikitable sortable" style="width:100%;"
+! style="width:200px;" |Task
+!Owner
+! style="vertical-align:middle;text-align:center;width:120px;" |Deadline
+! style="vertical-align:middle;text-align:center;width:100px;" |Started
+! style="vertical-align:middle;text-align:center;width:100px;" |Finished
+!Notes
+|-
+|Set up registration
+|
+| style="vertical-align:middle;text-align:center;" |mm/dd
+| style="vertical-align:middle;text-align:center;" |x
+| style="vertical-align:middle;text-align:center;" |
+|
+|-
+| style="width:200px;" |Design and distribution of invitations
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |mm/dd
+| style="vertical-align:middle;text-align:center;width:100px;" |
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+|Communicate arrival and accommodation
+|
+| style="vertical-align:middle;text-align:center;" |mm/dd
+| style="vertical-align:middle;text-align:center;" |
+| style="vertical-align:middle;text-align:center;" |
+|
+|-
+| style="width:200px;" | Create materials (print / online)
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |mm/dd
+| style="vertical-align:middle;text-align:center;width:100px;" |
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+| style="width:200px;" |Prepare social media campaign
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |mm/dd
+| style="vertical-align:middle;text-align:center;width:100px;" |
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+|Briefing speakers
+|
+| style="vertical-align:middle;text-align:center;" |mm/dd
+| style="vertical-align:middle;text-align:center;" |
+| style="vertical-align:middle;text-align:center;" |
+|
+|-
+| style="width:200px;" | Finalize program
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |mm/dd
+| style="vertical-align:middle;text-align:center;width:100px;" |
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+| style="width:200px;" |Support participants
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |mm/dd
+| style="vertical-align:middle;text-align:center;width:100px;" |
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|}
+
+===Notes===
+Provide some details if necessary.
+
+==During the event ==
+{| class="wikitable sortable" style="width:100%;"
+! style="width:200px;" |Task
+!Owner
+! style="vertical-align:middle;text-align:center;width:120px;" |Deadline
+! style="vertical-align:middle;text-align:center;width:100px;" |Started
+! style="vertical-align:middle;text-align:center;width:100px;" |Finished
+!Notes
+|-
+| style="width:200px;" |Coordinate catering, equipment, etc.
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |mm/dd
+| style="vertical-align:middle;text-align:center;width:100px;" |x
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+| style="width:200px;" |Manage set up
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |mm/dd
+| style="vertical-align:middle;text-align:center;width:100px;" |
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+| style="width:200px;" |Setup registration desk
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |mm/dd
+| style="vertical-align:middle;text-align:center;width:100px;" |
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+| style="width:200px;" |Share wifi and password
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |mm/dd
+| style="vertical-align:middle;text-align:center;width:100px;" |
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+| style="width:200px;" |Support participants
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |mm/dd
+| style="vertical-align:middle;text-align:center;width:100px;" |
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|}
+
+===Notes===
+Provide some details if necessary.
+
+==After the event==
+{| class="wikitable sortable" style="width:100%;"
+! style="width:200px;" |Task
+! style="vertical-align:middle;text-align:center;" |Owner
+! style="vertical-align:middle;text-align:center;width:120px;" |Deadline
+! style="vertical-align:middle;text-align:center;width:100px;" |Started
+! style="vertical-align:middle;text-align:center;width:100px;" |Finished
+!Notes
+|-
+| style="width:200px;" |Clean up site
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |mm/dd
+| style="vertical-align:middle;text-align:center;width:100px;" |
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+| style="width:200px;" |Wrap up venue tasks
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |mm/dd
+| style="vertical-align:middle;text-align:center;width:100px;" |x
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+| style="width:200px;" |Follow up with participants
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |mm/dd
+| style="vertical-align:middle;text-align:center;width:100px;" |
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+|Distribute event records (videos, presentations, scripts)
+|
+| style="vertical-align:middle;text-align:center;" |mm/dd
+| style="vertical-align:middle;text-align:center;" |
+| style="vertical-align:middle;text-align:center;" |
+|
+|-
+|Post-mortem analysis
+|
+| style="vertical-align:middle;text-align:center;" |mm/dd
+| style="vertical-align:middle;text-align:center;" |
+| style="vertical-align:middle;text-align:center;" |
+|
+|}
+
+===Notes===
+Provide some details if necessary.
+
+
+[[Category:Event]]

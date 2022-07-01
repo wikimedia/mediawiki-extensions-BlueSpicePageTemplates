@@ -1,0 +1,56 @@
+{
+    "Template:PT How-to article": {
+        "lang": "en",
+        "label": "How-to article",
+        "description": "Step-by-step instructions for completing a task.",
+        "target_title": "Template:PT How-to article",
+        "content_path": "/pages/Template/PT_How-to_article.wiki",
+        "sha1": "16f51b85e2c9dc27ddead484fe7a52e79ce21825",
+        "old_sha1": []
+    },
+    "Template:SV Anleitung": {
+        "lang": "de",
+        "label": "Anleitung",
+        "description": "Schritt-f\u00fcr-Schritt Anleitung, um eine Aufgabe durchzuf\u00fchren.",
+        "target_title": "Template:SV Anleitung",
+        "content_path": "/pages/Template/SV_Anleitung.wiki",
+        "sha1": "cb26b66d6e2f392ede58463c7111dbc057816e51",
+        "old_sha1": []
+    },
+    "Template:PT Event planning": {
+        "lang": "en",
+        "label": "Event",
+        "description": "Plan an event from beginning to end.",
+        "target_title": "Template:PT Event planning",
+        "content_path": "/pages/Template/PT_Event_planning.wiki",
+        "sha1": "5a0dcce47bb5829e8b317f4f2fc39fc27821f398",
+        "old_sha1": []
+    },
+    "Template:SV Veranstaltung": {
+        "lang": "de",
+        "label": "Veranstaltung",
+        "description": "Planungshilfe f\u00fcr Veranstaltungen.",
+        "target_title": "Template:SV Veranstaltung",
+        "content_path": "/pages/Template/SV_Veranstaltung.wiki",
+        "sha1": "c5d660f82025d9a6bdcf6483005e7f1bc1717350",
+        "old_sha1": []
+    },
+    "Template:PT To-do List": {
+        "lang": "en",
+        "label": "To-do List",
+        "description": "Track and update your to-dos.",
+        "target_title": "Template:PT To-do List",
+        "content_path": "/pages/Template/PT_To-do_List.wiki",
+        "sha1": "dc8e1c9f742733b9a4ddf13734aea9b2b868f6bf",
+        "old_sha1": []
+    },
+    "Template:SV Aufgabenliste": {
+        "lang": "de",
+        "label": "Aufgabenliste",
+        "description": "Todos aufzeichnen und nachverfolgen",
+        "target_title": "Template:SV Aufgabenliste",
+        "content_path": "/pages/Template/SV_Aufgabenliste.wiki",
+        "sha1": "420857bde308fce8b875fd73fa247921aba70b55",
+        "old_sha1": []
+    }
+}

@@ -1,0 +1,82 @@
+<div class="databox">
+<div class="tbl">
+{|
+|-
+!Application:
+|name of topic
+|}
+</div>
+<div class="tbl">
+{| 
+|-
+!Status:
+| '''draft''' / approved
+|}
+</div>
+</div>
+==Goal==
+Brief overview — what is the goal of this instruction?
+
+==Prerequisites and preparations==
+What is required to complete the following steps or to achieve the goal?
+
+==Procedure 1==
+Explain the outcome of this procedure. In  the table below, list each high-level step which will be documented in detail below the table.
+{| class="wikitable" style="width:100%;"
+! style="vertical-align:middle;text-align:center;width:80px;" |Step
+!What to do
+!Notes
+|-
+| style="vertical-align:middle;text-align:center;width:80px;" |1
+|
+|
+|-
+| style="vertical-align:middle;text-align:center;width:80px;" |2
+|
+|
+|-
+| style="vertical-align:middle;text-align:center;width:80px;" |3
+|
+|
+|}
+
+=== Step-by-step instructions ===
+
+# '''Do''' step 1
+# '''Do''' step 2
+## '''Do''' substep 2.1
+# '''Do''' step 3
+
+==Procedure 2 ==
+Explain the outcome of this procedure.  In  the table below, list each high-level step which will be documented in detail below the table.
+{| class="wikitable" style="width:100%;"
+! style="vertical-align:middle;text-align:center;width:80px;" |Step
+!What to do
+!Notes
+|-
+| style="vertical-align:middle;text-align:center;width:80px;" |1
+|
+|
+|-
+| style="vertical-align:middle;text-align:center;width:80px;" |2
+|
+|
+|-
+| style="vertical-align:middle;text-align:center;width:80px;" |3
+|
+|
+|}
+
+=== Step-by-step instructions ===
+
+# '''Do''' step 1
+# '''Do''' step 2
+## '''Do''' substep 2.1
+# '''Do''' step 3
+
+==Related pages==
+
+*Link to related page 1
+*Link to related page 2
+
+[[Category:How-to]]
