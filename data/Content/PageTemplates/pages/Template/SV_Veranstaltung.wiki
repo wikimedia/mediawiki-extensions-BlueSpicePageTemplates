@@ -1,0 +1,256 @@
+<div class="databox">
+<div class="tbl">
+{|
+|-
+!Datum / Uhrzeit:
+|tt.mm.jjjj - 00:00 Uhr
+|-
+!Organisator:
+|Abteilung, Organisation oder Firma
+|-
+!Verantwortlich:
+|Benutzername
+|}
+</div>
+<div class="tbl">
+{| 
+|-
+!Veranstaltungsort:
+|Name des Ortes
+|-
+!Kontaktperson:
+|Kontaktperson am Veranstaltungsort
+|-
+!Status:
+| class="select" |'''offen''' / abgeschlossen
+|}
+</div>
+</div>
+==Konzeptionsphase==
+{| class="wikitable sortable" style="width:100%;"
+! style="width:200px;" |Aufgabe
+!Eigner
+! style="vertical-align:middle;text-align:center;width:120px;" |Fällig am
+! style="vertical-align:middle;text-align:center;width:100px;" |Begonnen
+! style="vertical-align:middle;text-align:center;width:100px;" |Beendet
+!Bemerkungen
+|-
+| style="width:200px;" |Ziele setzen, Ideen sammeln
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |tt.mm
+| style="vertical-align:middle;text-align:center;width:100px;" |x
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+| style="width:200px;" |Budget genehmigen
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |tt.mm
+| style="vertical-align:middle;text-align:center;width:100px;" |x
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+| style="width:200px;" |Gästeliste zusammenstellen
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |tt.mm
+| style="vertical-align:middle;text-align:center;width:100px;" |
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+|Sprecherliste aufbauen
+|
+| style="vertical-align:middle;text-align:center;" |tt.mm
+| style="vertical-align:middle;text-align:center;width:100px;" |
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+| style="width:200px;" |Ort buchen
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |tt.mm
+| style="vertical-align:middle;text-align:center;width:100px;" |
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+| style="width:200px;" |Menü auswählen
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |tt.mm
+| style="vertical-align:middle;text-align:center;width:100px;" |
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+| style="width:200px;" |Lieferanten kontaktieren
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |tt.mm
+| style="vertical-align:middle;text-align:center;width:100px;" |
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|}
+
+===Bemerkungen===
+Geben Sie bei Bedarf weitere Details an.
+
+==Vor der Veranstaltung==
+{| class="wikitable sortable" style="width:100%;"
+! style="width:200px;" |Aufgabe
+!Zuständig
+! style="vertical-align:middle;text-align:center;width:120px;" |Fällig am
+! style="vertical-align:middle;text-align:center;width:100px;" |Begonnen
+! style="vertical-align:middle;text-align:center;width:100px;" |Beendet
+!Bemerkungen
+|-
+|Anmeldung einrichten
+|
+| style="vertical-align:middle;text-align:center;" |tt.mm
+| style="vertical-align:middle;text-align:center;width:100px;" |x
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+| style="width:200px;" |Einladungen erstellen und verschicken
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |tt.mm
+| style="vertical-align:middle;text-align:center;width:100px;" |
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+|Ankunft und Unterkunft kommunizieren
+|
+| style="vertical-align:middle;text-align:center;" |tt.mm
+| style="vertical-align:middle;text-align:center;width:100px;" |
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+| style="width:200px;" |Materialien erstellen (Druck / Online)
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |tt.mm
+| style="vertical-align:middle;text-align:center;width:100px;" |
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+| style="width:200px;" |Social Media Kampagne vorbereiten
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |tt.mm
+| style="vertical-align:middle;text-align:center;width:100px;" |
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+|Sprecher einweisen
+|
+| style="vertical-align:middle;text-align:center;" |tt.mm
+| style="vertical-align:middle;text-align:center;width:100px;" |
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+| style="width:200px;" |Programm finalisieren
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |tt.mm
+| style="vertical-align:middle;text-align:center;width:100px;" |
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+| style="width:200px;" |Teilnehmer unterstützen
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |tt.mm
+| style="vertical-align:middle;text-align:center;width:100px;" |
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|}
+
+===Bemerkungen===
+Geben Sie bei Bedarf einige Details an.
+
+==Während der Veranstaltung==
+{| class="wikitable sortable" style="width:100%;"
+! style="width:200px;" |Aufgabe
+!Zuständig
+! style="vertical-align:middle;text-align:center;width:120px;" |Fällig
+! style="vertical-align:middle;text-align:center;width:100px;" |Begonnen
+! style="vertical-align:middle;text-align:center;width:100px;" |Beendet
+!Bemerkungen
+|-
+| style="width:200px;" |Catering, Ausstattung etc. koordinieren
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |tt.mm
+| style="vertical-align:middle;text-align:center;width:100px;" |x
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+| style="width:200px;" |Aufbau betreuen
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |tt.mm
+| style="vertical-align:middle;text-align:center;width:100px;" |
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+| style="width:200px;" |Anmeldestand aufbauen
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |tt.mm
+| style="vertical-align:middle;text-align:center;width:100px;" |
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+| style="width:200px;" |Wifi und andere Passwörter verteilen
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |tt.mm
+| style="vertical-align:middle;text-align:center;width:100px;" |
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+| style="width:200px;" |Teilnehmer unterstützen
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |tt.mm
+| style="vertical-align:middle;text-align:center;width:100px;" |
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|}
+
+===Bemerkungen===
+Geben Sie bei Bedarf  weitere  Details an.
+
+==Nach der Veranstaltung==
+{| class="wikitable sortable" style="width:100%;"
+! style="width:200px;" |Aufgabe
+! style="vertical-align:middle;text-align:left;" |Zuständig
+! style="vertical-align:middle;text-align:center;width:120px;" |Fällig
+! style="vertical-align:middle;text-align:center;width:100px;" |Begonnen
+! style="vertical-align:middle;text-align:center;width:100px;" |Beendet
+!Bemerkungen
+|-
+| style="width:200px;" |Veranstaltungsort aufräumen
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |tt.mm
+| style="vertical-align:middle;text-align:center;width:100px;" |x
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+| style="width:200px;" |Aufgaben bezüglich Veranstaltungsort abschließen
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |tt.mm
+| style="vertical-align:middle;text-align:center;width:100px;" |x
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+| style="width:200px;" |Follow-up mit den Teilnehmern
+|
+| style="vertical-align:middle;text-align:center;width:120px;" |tt.mm
+| style="vertical-align:middle;text-align:center;width:100px;" |
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+|Veranstaltungsmaterial verteilen (Videos, Präsentationen, Skripte)
+|
+| style="vertical-align:middle;text-align:center;" |tt.mm
+| style="vertical-align:middle;text-align:center;width:100px;" |
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|-
+|Abschlussanalyse
+|
+| style="vertical-align:middle;text-align:center;" |tt.mm
+| style="vertical-align:middle;text-align:center;width:100px;" |
+| style="vertical-align:middle;text-align:center;width:100px;" |
+|
+|}
+
+===Bemerkungen===
+Geben Sie bei Bedarf weitere Details an.
+
+[[Category:Veranstaltung]]

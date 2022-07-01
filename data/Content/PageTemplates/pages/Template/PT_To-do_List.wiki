@@ -1,0 +1,78 @@
+<div class="databox">
+<div class="tbl">
+{|
+|-
+!Owner:
+|username1
+|-
+!Time period / milestone:
+|what time period/project milestone is covered?
+|}
+</div>
+<div class="tbl">
+{| 
+|-
+!Team / department / project:
+|what business unit is covered?
+|-
+!Status:
+| class="select" |'''open''' / closed
+|}
+</div>
+</div>
+
+== To-do list ==
+{| class="wikitable sortable" style="width:100%;"
+!Area / topic
+!Task
+!Assigned to
+! style="vertical-align:middle;text-align:center;" |Due on
+! style="vertical-align:middle;text-align:center;" |Status
+! style="vertical-align:middle;text-align:center;" |Priority
+|-
+|(e.g., GUI)
+|Name of this task: description of this task
+|username
+| style="vertical-align:middle;text-align:center;" |mm/dd
+| style="vertical-align:middle;text-align:center;" |'''planned''' / started / finished
+| style="vertical-align:middle;text-align:center;" |1
+|-
+|
+|
+|
+| style="vertical-align:middle;text-align:center;" |
+| style="vertical-align:middle;text-align:center;" |
+| style="vertical-align:middle;text-align:center;" |2
+|-
+|
+|
+|
+| style="vertical-align:middle;text-align:center;" |
+| style="vertical-align:middle;text-align:center;" |
+| style="vertical-align:middle;text-align:center;" |1
+|-
+|
+|
+|
+| style="vertical-align:middle;text-align:center;" |
+| style="vertical-align:middle;text-align:center;" |
+| style="vertical-align:middle;text-align:center;" |3
+|}
+
+==Backlog (not scheduled)==
+List possible tasks that should be considered next, but are not considered for this time period:
+* Name of this task: description of this task
+* Name of this task: description of this task
+
+===Notes===
+Provide some details about the backlog if necessary.
+
+==Out of scope==
+List the tasks that will not be considered for this project .
+* Name of this task: description of this task
+* Name of this task: description of this task
+
+=== Notes ===
+Provide some details about the out-of-scope list if necessary.
+__NOTOC__
+[[Category:To-do list]]

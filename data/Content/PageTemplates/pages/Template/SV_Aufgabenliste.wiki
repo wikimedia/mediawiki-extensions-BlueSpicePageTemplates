@@ -1,0 +1,78 @@
+<div class="databox">
+<div class="tbl">
+{|
+|-
+!Eigner:
+|Benutzername
+|-
+!Zeitraum / Meilenstein:
+|Welcher Zeitraum / Meilenstein ist berücksichtigt?
+|}
+</div>
+<div class="tbl">
+{| 
+|-
+!Team /Abteilung / Projekt:
+|Wofür / für wen gilt diese Liste?
+|-
+!Status:
+| class="select" |'''offen''' / geschlossen
+|}
+</div>
+</div>
+
+==Aufgabenliste==
+{| class="wikitable sortable" style="width:100%;"
+!Bereich / Thema
+!Aufgabe
+!Zugewiesen an
+! style="vertical-align:middle;text-align:center;" |Fällig am
+! style="vertical-align:middle;text-align:center;" |Status
+! style="vertical-align:middle;text-align:center;" |Priorität
+|-
+|(z.B., GUI)
+|Name dieser Aufgabe:  Beschreibung dieser Aufgabe
+|Benutzername
+| style="vertical-align:middle;text-align:center;" |tt.mm
+| style="vertical-align:middle;text-align:center;" |'''geplant''' / laufend / abgeschlossen
+| style="vertical-align:middle;text-align:center;" |1
+|-
+|
+|
+|
+| style="vertical-align:middle;text-align:center;" |
+| style="vertical-align:middle;text-align:center;" |
+| style="vertical-align:middle;text-align:center;" |2
+|-
+|
+|
+|
+| style="vertical-align:middle;text-align:center;" |
+| style="vertical-align:middle;text-align:center;" |
+| style="vertical-align:middle;text-align:center;" |1
+|-
+|
+|
+|
+| style="vertical-align:middle;text-align:center;" |
+| style="vertical-align:middle;text-align:center;" |
+| style="vertical-align:middle;text-align:center;" |3
+|}
+
+==Backlog (nicht terminiert)==
+Geben Sie mögliche Aufgaben an, die als nächstes berücksichtigt werden sollten. Sie werden  für dien aktuellen Zeitraum nicht berücksichtigt:
+*Name dieser Aufgabe: Beschreibung dieser Aufgabe
+*Name dieser Aufgabe: Beschreibung dieser Aufgabe
+
+===Anmerkungen===
+Geben Sie bei Bedarf weitere Details zum Backlog an.
+
+==Außer Betracht==
+Geben Sie Aufgaben an, die für dieses Projekt nicht berücksichtigt werden:.
+*Name dieser Aufgabe: Beschreibung dieser Aufgabe
+*Name dieser Aufgabe: Beschreibung dieser Aufgabe
+
+=== Anmerkungen ===
+Geben Sie bei Bedarf weitere Details an, warum diese Aufgaben außer Betracht sind.
+__NOTOC__
+[[Category:To-do list]]
