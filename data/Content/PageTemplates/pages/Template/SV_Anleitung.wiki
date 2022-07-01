@@ -1,0 +1,85 @@
+<div class="databox">
+<div class="tbl">
+{|
+|-
+!Anwendung:
+|Themenbereich (z.B. Name der Software)
+|}
+</div>
+<div class="tbl">
+{| 
+|-
+! Status:
+|'''Entwurf'''/ freigegeben
+|}
+</div>
+</div>
+==Ziel==
+Kurze Erklärung — was ist das Ziel dieser Anleitung?
+
+==Voraussetzungen und Vorbereitung==
+Was wird benötigt, um die folgenden Schritte durchzuführen oder das Ziel zu erreichen?
+
+==Vorgang 1==
+Erläutern Sie das Ergebnis dieses Verfahrens. Führen Sie in der folgenden Tabelle jeden Hauptschritt auf, der unterhalb der Tabelle detailliert dokumentiert wird.
+{| class="wikitable" style="width:100%;"
+! style="vertical-align:middle;text-align:center;width:80px;" |Schritt
+!Was ist zu tun?
+!Bemerkungen
+|-
+| style="vertical-align:middle;text-align:center;width:80px;" |1
+|
+|
+|-
+| style="vertical-align:middle;text-align:center;width:80px;" |2
+|
+|
+|-
+| style="vertical-align:middle;text-align:center;width:80px;" |3
+|
+|
+|}
+
+===Schritt-für-Schritt Anleitung===
+(Hinweis: Um Bilder zwischen einzelnen Schritten einzubinden, halten Sie bitte beim Zeilenumbruch die Umschalt-Taste gedrückt, damit Sie innerhalb 
+#'''Führen''' Sie Schritt 1 '''durch'''
+#'''Führen''' Sie Schritt 2 '''durch'''
+##'''Führen''' Sie Schritt 2.1 '''durch'''
+#'''Führen''' Sie Schritt 1 '''durch'''
+
+==Vorgang 2==
+Erläutern Sie das Ergebnis dieses Verfahrens. Führen Sie in der folgenden Tabelle jeden High-Level-Schritt auf, der unterhalb der Tabelle detailliert dokumentiert wird.
+{| class="wikitable" style="width:100%;"
+! style="vertical-align:middle;text-align:center;width:80px;" |Schritt
+!Was ist zu tun?
+!Bemerkungen
+|-
+| style="vertical-align:middle;text-align:center;width:80px;" |1
+|
+|
+|-
+| style="vertical-align:middle;text-align:center;width:80px;" |2
+|
+|
+|-
+| style="vertical-align:middle;text-align:center;width:80px;" |3
+|
+|
+|}
+
+===Schritt-für-Schritt Anleitung===
+
+# '''Führen''' Sie Schritt 1 '''durch'''
+# '''Führen''' Sie Schritt 2 '''durch'''
+## '''Führen''' Sie Schritt 2.1 '''durch'''
+# '''Führen''' Sie Schritt 1 '''durch'''
+
+#
+
+==Verwandte Themen==
+
+*Link 1
+*Link 2
+
+
+[[Category:Anleitung]]

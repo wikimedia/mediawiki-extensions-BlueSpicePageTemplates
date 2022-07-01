@@ -44,6 +44,16 @@
 					]
 				}
 			}
+		},
+		"BlueSpiceDistributionConnector": {
+			"ContentManifests": [
+				"extensions/BlueSpicePageTemplates/data/Content/PageTemplates/manifest.json"
+			]
+		},
+		"BlueSpicePageTemplates": {
+			"DefaultPageTemplates": [
+				"extensions/BlueSpicePageTemplates/data/Content/PageTemplates/manifest.json"
+			]
 		}
 	},
 	"GroupPermissions": {
@@ -147,11 +157,15 @@
 	"HookHandlers": {
 		"common-user-interface": {
 			"class": "\\BlueSpice\\PageTemplates\\HookHandler\\CommonUserInterface"
+		},
+		"SetupDefaultTemplates": {
+			"class": "\\BlueSpice\\PageTemplates\\HookHandler\\SetupDefaultTemplates"
 		}
 	},
 	"Hooks": {
 		"LoadExtensionSchemaUpdates": [
-			"\\BlueSpice\\PageTemplates\\Hook\\LoadExtensionSchemaUpdates\\AddPageTemplateTable::callback"
+			"\\BlueSpice\\PageTemplates\\Hook\\LoadExtensionSchemaUpdates\\AddPageTemplateTable::callback",
+			"SetupDefaultTemplates"
 		],
 		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\PageTemplates\\Hook\\BSUsageTrackerRegisterCollectors\\AddPageTemplatesTag::callback",
 		"NamespaceManager::getMetaFields": "BlueSpice\\PageTemplates\\Hook\\NamespaceManagerGetMetaFields\\RegisterMetaField::callback",
