@@ -30,6 +30,13 @@ class PageTemplatesImport extends LoggedUpdateMaintenance {
 	private $importLanguageCode;
 
 	/**
+	 * Name of the attribute, where we can get paths to manifests from.
+	 *
+	 * @var string
+	 */
+	private $attributeName = 'BlueSpicePageTemplatesDefaultPageTemplates';
+
+	/**
 	 * @inheritDoc
 	 */
 	protected function doDBUpdates() {
@@ -49,8 +56,7 @@ class PageTemplatesImport extends LoggedUpdateMaintenance {
 		$importLanguage = new ImportLanguage( $languageFallback, $wikiLang->getCode() );
 		$this->importLanguageCode = $importLanguage->getImportLanguage();
 
-		$attrName = 'BlueSpicePageTemplatesDefaultPageTemplates';
-		$manifestsList = ExtensionRegistry::getInstance()->getAttribute( $attrName );
+		$manifestsList = ExtensionRegistry::getInstance()->getAttribute( $this->attributeName );
 
 		if ( $manifestsList ) {
 			$this->output( "...Import of default BlueSpice templates started...\n" );
@@ -66,6 +72,8 @@ class PageTemplatesImport extends LoggedUpdateMaintenance {
 		} else {
 			$this->output( "No manifests to import..." );
 		}
+
+		return true;
 	}
 
 	/**
@@ -118,6 +126,36 @@ class PageTemplatesImport extends LoggedUpdateMaintenance {
 	 * @inheritDoc
 	 */
 	protected function getUpdateKey() {
-		return 'PageTemplatesImport';
+		return 'PageTemplatesImport_' . $this->calculateManifestsHash();
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	protected function updateSkippedMessage() {
+		return 'PageTemplatesImport: No changes in manifests. Skipping...';
+	}
+
+	/**
+	 * Concatenates content of all registered manifests and calculates its MD5 hash.
+	 * It is used to create dynamic "update key".
+	 * So update key will stay the same (so this script will be skipped) until some manifest will change.
+	 *
+	 * @return string MD5 hash
+	 */
+	private function calculateManifestsHash(): string {
+		// phpcs:ignore MediaWiki.NamingConventions.ValidGlobalName.allowedPrefix
+		global $IP;
+
+		$manifestsContent = '';
+
+		$manifestsList = ExtensionRegistry::getInstance()->getAttribute( $this->attributeName );
+		foreach ( $manifestsList as $manifestPath ) {
+			$absoluteManifestPath = $IP . '/' . $manifestPath;
+
+			$manifestsContent .= file_get_contents( $absoluteManifestPath );
+		}
+
+		return md5( $manifestsContent );
 	}
 }

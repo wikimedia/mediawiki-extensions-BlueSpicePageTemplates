@@ -14,5 +14,7 @@ class SetupDefaultTemplates implements LoadExtensionSchemaUpdatesHook {
 		$updater->addPostDatabaseUpdateMaintenance(
 			PageTemplatesImport::class
 		);
+
+		return true;
 	}
 }
