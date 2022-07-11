@@ -8,7 +8,8 @@
 			"Mouse21",
 			"Okras",
 			"Redredsonia",
-			"Striking Blue"
+			"Striking Blue",
+			"Pacha Tchernof"
 		]
 	},
 	"bs-pagetemplates-desc": "Отображает список шаблонов, помеченных как шаблоны страниц",
@@ -16,10 +17,10 @@
 	"bs-pagetemplates-empty-page": "Пустая страница",
 	"bs-pagetemplates-empty-page-desc": "Начать с пустой страницы.",
 	"bs-pagetemplatesadmin-label": "Страничные шаблоны",
-	"bs-pagetemplates-tpl-desc-toolong": "Слишком длинное описание. Пожалуйста, используйте максимальную длину в 255 символов.",
-	"bs-pagetemplates-tpl-label-toolong": "Слишком длинная метка. Пожалуйста, используйте максимальную длину в 255 символов.",
+	"bs-pagetemplates-tpl-desc-toolong": "Слишком длинное описание. Пожалуйста, придерживайтесь максимальной длины в 255 символов.",
+	"bs-pagetemplates-tpl-label-toolong": "Слишком длинная метка. Пожалуйста, придерживайтесь максимальной длины в 255 символов.",
 	"bs-pagetemplates-tpl-label-empty": "Пожалуйста, введите метку.",
-	"bs-pagetemplates-tpl-name-toolong": "Слишком длинное имя шаблона. Пожалуйста, используйте максимальную длину в 255 символов.",
+	"bs-pagetemplates-tpl-name-toolong": "Слишком длинное имя шаблона. Пожалуйста, придерживайтесь максимальной длины в 255 символов.",
 	"bs-pagetemplates-tpl-name-empty": "Пожалуйста, введите имя шаблона.",
 	"bs-pagetemplates-no-id": "Пожалуйста, введите имя страницы, которая будет использована в качестве шаблона.",
 	"bs-pagetemplates-tpl-added": "Шаблон был добавлен.",
