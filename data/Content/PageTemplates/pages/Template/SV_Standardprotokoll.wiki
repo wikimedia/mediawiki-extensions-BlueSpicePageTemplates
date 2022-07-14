@@ -1,0 +1,44 @@
+==Anwesenheiten==
+
+*Zeit und Ort:
+*Anwesend:
+*Abwesend:
+*Schriftführung:
+
+==Agenda==
+{| class="wikitable" style="width:100%;"
+! style="width:700px;" |Thema
+!Vorgetragen von
+! style="width:150px;" |Zugeteilte Zeit
+|-
+| style="width:700px;" |..
+| style="width:50%;" |
+| style="width:150px;" |
+|-
+| style="width:700px;" |..
+| style="width:50%;" |
+| style="width:150px;" |
+|}
+
+==Protokoll und Aufgaben==
+{| class="wikitable" style="width:100%;"
+! style="width:700px;" |Zusammenfassung und Aufgaben
+!Zugewiesene Person
+!Fällig am
+|-
+| style="width:700px;" |..
+| style="width:50%;" |
+| style="width:10%;" |
+|-
+| style="width:700px;" |..
+| style="width:50%;" |
+| style="width:10%;" |
+|}
+
+==Wichtige Entscheidungen==
+
+*Entscheidung 1
+*Entscheidung 2
+
+==Unterschriften==
+<bs:signhere />
