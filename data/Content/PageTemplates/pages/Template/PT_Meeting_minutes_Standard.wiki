@@ -1,0 +1,44 @@
+== Attendance ==
+
+* Time and location:
+* Attendees:
+* Absentees:
+* Minute-taker:
+
+== Meeting agenda ==
+{| class="wikitable" style="width:100%;"
+! style="width:700px;" |Topic
+!Presenter
+! style="width:120px;" |Time alloted
+|-
+| style="width:700px;" |..
+| style="width:50%;" |
+| style="width:120px;" |
+|-
+| style="width:700px;" |..
+| style="width:50%;" |
+| style="width:120px;" |
+|}
+
+== Summary minutes and action items ==
+{| class="wikitable" style="width:100%;"
+! style="width:700px;" |Summary minutes and action points
+!Responsible person
+!Due on
+|-
+| style="width:700px;" |..
+| style="width:50%;" |
+| style="width:10%;" |
+|-
+| style="width:700px;" |..
+| style="width:50%;" |
+| style="width:10%;" |
+|}
+
+== Important decisions ==
+
+* Decision 1
+* Decision 2
+
+== Signatures ==
+<bs:signhere />
