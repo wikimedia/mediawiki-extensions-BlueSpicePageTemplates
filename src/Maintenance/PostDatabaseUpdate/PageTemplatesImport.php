@@ -50,12 +50,6 @@ class PageTemplatesImport extends LoggedUpdateMaintenance {
 
 		$this->dao = new PageTemplateDAO( $db );
 
-		$wikiLang = $this->services->getContentLanguage();
-		$languageFallback = $this->services->getLanguageFallback();
-
-		$importLanguage = new ImportLanguage( $languageFallback, $wikiLang->getCode() );
-		$this->importLanguageCode = $importLanguage->getImportLanguage();
-
 		$manifestsList = ExtensionRegistry::getInstance()->getAttribute( $this->attributeName );
 
 		if ( $manifestsList ) {
@@ -82,6 +76,18 @@ class PageTemplatesImport extends LoggedUpdateMaintenance {
 	 */
 	private function processManifestFile( string $manifestPath ): void {
 		$pagesList = json_decode( file_get_contents( $manifestPath ), true );
+		$availableLanguages = [];
+		foreach ( $pagesList as $pageTitle => $pageData ) {
+			$availableLanguages[$pageData['lang']] = true;
+		}
+		$wikiLang = $this->services->getContentLanguage();
+		$languageFallback = $this->services->getLanguageFallback();
+
+		$importLanguage = new ImportLanguage( $languageFallback, $wikiLang->getCode() );
+		$this->importLanguageCode = $importLanguage->getImportLanguage(
+			array_keys( $availableLanguages )
+		);
+
 		foreach ( $pagesList as $pageTitle => $pageData ) {
 			$this->output( "... Processing page: $pageTitle\n" );
 
@@ -98,7 +104,6 @@ class PageTemplatesImport extends LoggedUpdateMaintenance {
 			// Check "bs_pagetemplate" table and insert/update information about corresponding template
 			$templateTitle = $title->getDBkey();
 			$templateNamespace = $title->getNamespace();
-
 			$templateExists = $this->dao->templateExists( $templateTitle, $templateNamespace );
 			if ( !$templateExists ) {
 				$this->dao->insertTemplate(
