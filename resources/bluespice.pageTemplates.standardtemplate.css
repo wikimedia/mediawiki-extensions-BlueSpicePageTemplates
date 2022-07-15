@@ -1,0 +1,97 @@
+/*
+These stylings are specifically made for standard page templates provided in
+`data/Content/PageTemplates/`. They should stay skin agnostic as much as
+possible
+*/
+.databox, .ve-ce-branchNode.databox {
+	display: flex;
+	justify-content: space-between;
+	border: 1px solid #dbdbdb;
+	flex-wrap: wrap;
+	margin: 0 0 28px 0;
+	padding-bottom: 6px;
+}
+
+.databox div.tbl, .databox.ve-ce-branchNode div.tbl {
+	flex-basis: 50%;
+	margin: 0;
+}
+
+.databox div.tbl.single {
+	flex-basis: 100%;
+}
+
+.databox table, .databox.ve-ce-branchNode table {
+	margin: 10px 10px 0 10px;
+	width: 95%;
+	background: white;
+	text-align: left;
+	font-size: 13px;
+}
+
+.databox table tr > th, #content .databox.ve-ce-branchNode table tr > th p {
+	text-align: left;
+	border-style: hidden;
+	white-space: nowrap;
+	vertical-align: middle;
+	width: 14em;
+	font-weight: bold;
+}
+
+.databox table tr > td, .databox.ve-ce-branchNode table tr > td p {
+	border-style: hidden;
+	vertical-align: middle;
+}
+
+.databox table tr > th, .databox table tr > td, .databox.ve-ce-branchNode table tr > th, .databox.ve-ce-branchNode table tr > td {
+	border: 0;
+	border-bottom: 1px solid #dbdbdb;
+	padding: 6px 4px;
+}
+
+.databox table tr:last-child > th, .databox table tr:last-child > td, .databox.ve-ce-branchNode table tr:last-child > th, .databox.ve-ce-branchNode table tr:last-child > td {
+	border-bottom: 0;
+}
+
+/*avoid box alignment issues in ve-mode */
+div.databox .ve-ce-branchNode-slug {
+	display: none;
+}
+
+/*avoid editing issues because of previous declaration when editing cells in ve-mode */
+.databox div table .ve-ce-branchNode-slug {
+	display: block;
+}
+
+/*better alignment of drop-downs for checklists in ve-mode */
+.databox tr > td.select .ve-ce-branchNode-inlineSlug {
+	display: none;
+}
+
+table.pagetemplate th .bi::before {
+	vertical-align: -0.125em
+}
+
+.databox select {
+	padding: 3px;
+}
+
+/*mobile view*/
+@media only screen and (max-width: 1000px) {
+	.databox {
+		flex-wrap: wrap;
+		margin: 0 5px 28px 3px;
+	}
+
+	.databox div.tbl {
+		flex-basis: 100%;
+	}
+
+	.databox div:nth-child(1) table, .databox.ve-ce-branchNode div:nth-child(1) table {
+		margin-bottom: 0;
+	}
+
+	.databox div:nth-child(2) table, .databox.ve-ce-branchNode div:nth-child(2) table {
+		margin-top: 0;
+	}
+}

@@ -148,6 +148,9 @@
 		"ext.bluespice.pageTemplates.styles": {
 			"styles": "bluespice.pageTemplates.less",
 			"class": "\\BlueSpice\\ResourceModule\\LessVars"
+		},
+		"ext.bluespice.pageTemplates.standardtemplate.styles": {
+			"styles": "bluespice.pageTemplates.standardtemplate.css"
 		}
 	},
 	"ResourceFileModulePaths": {
@@ -163,6 +166,10 @@
 		}
 	},
 	"Hooks": {
+		"BeforePageDisplay": [
+			"common-user-interface"
+		],
+		"BSUEModulePDFBeforeAddingStyleBlocks": "\\BlueSpice\\PageTemplates\\Hook\\BSUEModulePDFBeforeAddingStyleBlocks\\AddStandardTemplatesStyles::callback",
 		"LoadExtensionSchemaUpdates": [
 			"\\BlueSpice\\PageTemplates\\Hook\\LoadExtensionSchemaUpdates\\AddPageTemplateTable::callback",
 			"SetupDefaultTemplates"
