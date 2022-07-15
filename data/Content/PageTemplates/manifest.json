@@ -1,7 +1,7 @@
 {
 	"Template:PT_How-to_article": {
 		"lang": "en",
-		"label": "How-to article",
+		"label": "How-to Article",
 		"description": "Step-by-step instructions for completing a task",
 		"target_title": "Template:PT_How-to_article",
 		"content_path": "/pages/Template/PT_How-to_article.wiki",
@@ -19,7 +19,7 @@
 	},
 	"Template:PT_Meeting_minutes_Standard": {
 		"lang": "en",
-		"label": "Meeting agenda",
+		"label": "Meeting Agenda",
 		"description": "Create a generic meeting agenda with minutes",
 		"target_title": "Template:PT_Meeting_minutes_Standard",
 		"content_path": "/pages/Template/PT_Meeting_minutes_Standard.wiki",
