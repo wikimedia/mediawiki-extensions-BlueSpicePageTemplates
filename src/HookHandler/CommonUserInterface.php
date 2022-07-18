@@ -3,9 +3,10 @@
 namespace BlueSpice\PageTemplates\HookHandler;
 
 use BlueSpice\PageTemplates\GlobalActionsManager;
+use MediaWiki\Hook\BeforePageDisplayHook;
 use MWStake\MediaWiki\Component\CommonUserInterface\Hook\MWStakeCommonUIRegisterSkinSlotComponents;
 
-class CommonUserInterface implements MWStakeCommonUIRegisterSkinSlotComponents {
+class CommonUserInterface implements MWStakeCommonUIRegisterSkinSlotComponents, BeforePageDisplayHook {
 
 	/**
 	 * @inheritDoc
@@ -21,5 +22,13 @@ class CommonUserInterface implements MWStakeCommonUIRegisterSkinSlotComponents {
 				]
 			]
 		);
+	}
+
+	/**
+	 * Add static styles for standard page template content
+	 * @inheritDoc
+	 */
+	public function onBeforePageDisplay( $out, $skin ): void {
+		$out->addModuleStyles( [ 'ext.bluespice.pageTemplates.standardtemplate.styles' ] );
 	}
 }
