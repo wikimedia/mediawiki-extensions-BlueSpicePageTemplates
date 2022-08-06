@@ -160,21 +160,21 @@ class BSPageTemplateList {
 					unset( $this->dataSets[$id] );
 					continue;
 				}
-			}
 
-			$targetUrl = $targetTitle->getLinkURL( [
-				'action' => 'edit',
-				'preload' => $preloadTitle->getPrefixedDBkey()
-			] );
-			MediaWikiServices::getInstance()->getHookContainer()->run(
-				'BSPageTemplatesModifyTargetUrl',
-				[
-					$targetTitle,
-					$preloadTitle,
-					&$targetUrl
-				]
-			);
-			$dataSet['target_url'] = $targetUrl;
+				$targetUrl = $targetTitle->getLinkURL( [
+					'action' => 'edit',
+					'preload' => $preloadTitle->getPrefixedDBkey()
+				] );
+				MediaWikiServices::getInstance()->getHookContainer()->run(
+					'BSPageTemplatesModifyTargetUrl',
+					[
+						$targetTitle,
+						$preloadTitle,
+						&$targetUrl
+					]
+				);
+				$dataSet['target_url'][$nsId] = $targetUrl;
+			}
 		}
 	}
 
@@ -228,6 +228,8 @@ class BSPageTemplateList {
 			foreach ( $targetNamespaceIds as $nsId ) {
 				if ( (int)$nsId === self::ALL_NAMESPACES_PSEUDO_ID ) {
 					$filteredDataSets[$id] = $dataSet;
+
+					$filteredDataSets[$id]['target_url'] = $dataSet['target_url'][$nsId];
 				}
 			}
 		}
@@ -242,16 +244,20 @@ class BSPageTemplateList {
 	 * @return array
 	 */
 	protected function getAllForTargetNamespace() {
+		$nsId = $this->title->getNamespace();
+
 		$filteredDataSets = [];
 		foreach ( $this->dataSets as $id => $dataSet ) {
 			$targetNamespaceIds = FormatJson::decode( $dataSet['pt_target_namespace'], true );
 			if ( in_array( $this->title->getNamespace(), $targetNamespaceIds ) ) {
 				$filteredDataSets[$id] = $dataSet;
+
+				$filteredDataSets[$id]['target_url'] = $dataSet['target_url'][$nsId];
 			}
 		}
 
 		return [
-			$this->title->getNamespace() => $filteredDataSets
+			$nsId => $filteredDataSets
 		];
 	}
 
@@ -284,6 +290,8 @@ class BSPageTemplateList {
 				}
 
 				$filteredDataSets[$nsId][$id] = $dataSet;
+
+				$filteredDataSets[$nsId][$id]['target_url'] = $dataSet['target_url'][$nsId];
 			}
 		}
 
