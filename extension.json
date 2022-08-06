@@ -26,7 +26,7 @@
 			"ConfigDefinitionRegistry": {
 				"PageTemplatesForceNamespace": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesForceNamespace::getInstance",
 				"PageTemplatesHideDefaults": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesHideDefaults::getInstance",
-				"PageTemplatesHideIfNotInTargetNs": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesHideIfNotInTargetNS::getInstance"
+				"PageTemplatesHideIfNotInTargetNs": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesHideIfNotInTargetNs::getInstance"
 			},
 			"TagRegistry": {
 				"pagetemplates": "\\BlueSpice\\PageTemplates\\Tag\\PageTemplates"
