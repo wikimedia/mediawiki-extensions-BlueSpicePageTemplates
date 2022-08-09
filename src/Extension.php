@@ -74,9 +74,18 @@ class Extension extends \BlueSpice\Extension {
 			return true;
 		}
 
+		$services = MediaWikiServices::getInstance();
+
+		$config = $services->getConfigFactory()->makeConfig( 'bsg' );
+
+		$excludeNs = $config->get( 'PageTemplatesExcludeNs' );
+		if ( in_array( $title->getNamespace(), $excludeNs ) ) {
+			return true;
+		}
+
 		// No context
 		$user = \RequestContext::getMain()->getUser();
-		$pm = MediaWikiServices::getInstance()->getPermissionManager();
+		$pm = $services->getPermissionManager();
 		if ( !$pm->userCan( 'edit', $user, $title ) ) {
 			throw new PermissionsError( 'edit' );
 		} elseif ( !$pm->userCan( 'createpage', $user, $title ) ) {
