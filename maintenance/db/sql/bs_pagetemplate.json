@@ -1,0 +1,78 @@
+[
+	{
+		"name": "bs_pagetemplate",
+		"columns": [
+			{
+				"name": "pt_id",
+				"type": "integer",
+				"options": {
+					"length": 10,
+					"unsigned": true,
+					"notnull": true,
+					"autoincrement": true
+				}
+			},
+			{
+				"name": "pt_label",
+				"type": "string",
+				"options": {
+					"length": 255,
+					"notnull": true,
+					"default": ""
+				}
+			},
+			{
+				"name": "pt_desc",
+				"type": "string",
+				"options": {
+					"length": 255,
+					"notnull": true,
+					"default": ""
+				}
+			},
+			{
+				"name": "pt_target_namespace",
+				"type": "integer",
+				"options": {
+					"length": 11,
+					"notnull": true,
+					"default": -99
+				}
+			},
+			{
+				"name": "pt_template_title",
+				"comment": "foreign key to page_title",
+				"type": "binary",
+				"options": {
+					"length": 255,
+					"notnull": true,
+					"default": ""
+				}
+			},
+			{
+				"name": "pt_template_namespace",
+				"comment": "foreign key to page_namespace",
+				"type": "integer",
+				"options": {
+					"length": 11,
+					"notnull": true,
+					"default": 0
+				}
+			},
+			{
+				"name": "pt_sid",
+				"type": "integer",
+				"options": {
+					"length": 10,
+					"unsigned": true,
+					"notnull": true,
+					"default": 0
+				}
+			}
+		],
+		"indexes": [],
+		"pk": [
+			"pt_id"
+		]
+	}
+]

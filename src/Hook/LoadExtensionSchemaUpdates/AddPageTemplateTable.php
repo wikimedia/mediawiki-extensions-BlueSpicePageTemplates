@@ -7,19 +7,20 @@ use BlueSpice\Hook\LoadExtensionSchemaUpdates;
 class AddPageTemplateTable extends LoadExtensionSchemaUpdates {
 
 	protected function doProcess() {
+		$dbType = $this->updater->getDB()->getType();
 		$dir = $this->getExtensionPath();
 
 		$this->updater->addExtensionTable(
 			'bs_pagetemplate',
-			"$dir/maintenance/db/bs_pagetemplate.sql"
+			"$dir/maintenance/db/sql/$dbType/bs_pagetemplate-generated.sql"
 		);
-
-		$this->updater->modifyExtensionField(
-			'bs_pagetemplate',
-			'pt_target_namespace',
-			"$dir/maintenance/db/bs_ns_to_json.patch.pt_target_namespace.sql"
-		);
-
+		if ( $dbType == 'mysql' ) {
+			$this->updater->modifyExtensionField(
+				'bs_pagetemplate',
+				'pt_target_namespace',
+				"$dir/maintenance/db/bs_ns_to_json.patch.pt_target_namespace.sql"
+			);
+		}
 		$this->updater->addPostDatabaseUpdateMaintenance( \BSTransformNSData::class );
 	}
 
