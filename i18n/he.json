@@ -4,7 +4,8 @@
 			"Eladk",
 			"Guycn2",
 			"המקיסט",
-			"Ex-Diktator"
+			"Ex-Diktator",
+			"Amire80"
 		]
 	},
 	"bs-pagetemplates-desc": "הצגת רשימה של תבניות שסומנו כתבניות של דפים",
@@ -46,7 +47,7 @@
 	"bs-pagetemplates-remove-message-unknown": "איראה שגיאה בלתי־צפויה, נא לנסות שוב.",
 	"bs-pagetemplates-remove-message-success": "{{PLURAL:$1|התבנית הבאה נמחקה|התבניות הבאות נמחקו}}: $2",
 	"bs-pagetemplates-remove-message-failure": "לא ניתן היה למחוק את {{PLURAL:$1|התבנית הבאה|התבניות הבאות}}: $2 (סיבה: $3)",
-	"apihelp-bs-pagetemplates-store-description": "הצגת כל תבניות הדפים. מאפשר סידור, סינון, ועימוד. מיישם פרמטרים של חנות ExtJS.",
+	"apihelp-bs-pagetemplates-store-description": "מציגה את כל תבניות הדפים. מאפשרת מיון, סינון, וחלוקה לדפים. מיישמת פרמטרים של שרת ExtJS.",
 	"apihelp-bs-pagetemplates-store-summary": "הצגת כל תבניות הדפים. מאפשר סידור, סינון, ועימוד. מיישם פרמטרים של חנות ExtJS.",
 	"apihelp-bs-pagetemplates-tasks-description": "לאפשר תפעול של תבניות בדפים",
 	"apihelp-bs-pagetemplates-tasks-summary": "לאפשר תפעול של תבניות בדפים",
