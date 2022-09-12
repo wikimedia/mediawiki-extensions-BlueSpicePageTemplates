@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"EdoAug",
 			"Jon Harald Søby"
 		]
 	},
@@ -50,5 +51,6 @@
 	"pagetemplatesadmin": "Sidemaladministrasjon",
 	"bs-usagetracker-pagetemplates": "sidemaler",
 	"bs-pagetemplates-nsm-label": "Sidemaler",
-	"right-pagetemplatesadmin-viewspecialpage": "Tilgang til spesialsiden [[Special:PageTemplatesAdmin]], der sidemaler kan behandles"
+	"right-pagetemplatesadmin-viewspecialpage": "Tilgang til spesialsiden [[Special:PageTemplatesAdmin]], der sidemaler kan behandles",
+	"bs-pagetemplatesadmin-text": "Sidemaler"
 }
