@@ -45,5 +45,9 @@
 	"bs-pagetemplates-remove-message-success": "{{PLURAL:$1|Il seguente template è stato cancellato|I seguenti template sono stati cancellati}}: $2",
 	"bs-pagetemplates-remove-message-failure": "{{PLURAL:$1|Il seguente template non può essere cancellato|I seguenti template non possono essere cancellati}}: $2 (Motivazione: $3)",
 	"bs-usagetracker-pagetemplates": "template di pagina",
-	"bs-pagetemplates-pref-forcenamespace-help": "Forza il namespace selezionato attraverso il link template quando si crea una nuova pagina."
+	"bs-pagetemplates-pref-forcenamespace-help": "Forza il namespace selezionato attraverso il link template quando si crea una nuova pagina.",
+	"bs-pagetemplates-pref-hidedefaults": "Nascondi i modelli predefiniti",
+	"apihelp-bs-pagetemplates-store-description": "Elenca tutte le pagine template. Consente ordinamento, filtraggio e impaginazione. Implementa parametri ExtJS Store.",
+	"apihelp-bs-pagetemplates-store-summary": "Elenca tutte le pagine template. Consente ordinamento, filtraggio e impaginazione. Implementa parametri ExtJS Store.",
+	"pagetemplatesadmin": "Amministrazione delle pagine template"
 }
