@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jon Harald Søby"
+			"Jon Harald Søby",
+			"EdoAug"
 		]
 	},
 	"bs-pagetemplates-desc": "Viser en liste over maler merket som sidemaler",
 	"prefs-pagetemplates": "Sidemaler",
+	"bs-pagetemplatesadmin-text": "Sidemaler",
 	"bs-pagetemplates-empty-page": "Tom side",
 	"bs-pagetemplates-empty-page-desc": "Start med en tom side.",
 	"bs-pagetemplatesadmin-label": "Sidemaler",
