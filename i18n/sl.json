@@ -40,6 +40,6 @@
 	"bs-pagetemplates-label-article": "Predloga",
 	"bs-pagetemplates-confirm-deletetpl": "Ali {{PLURAL:$1|to predlogo|te predloge}} res želite izbrisati?",
 	"bs-pagetemplates-remove-message-unknown": "Prišlo je do nepričakovane napake. Prosimo, poskusite ponovno.",
-	"bs-pagetemplates-remove-message-success": "Sledeč{{PLURAL:$1|1=a predloga je bila izbrisana|2=i predlogi sta bili izbrisani|e predloge so bile izbrisane}}: $2",
-	"bs-pagetemplates-remove-message-failure": "Sledeč{{PLURAL:$1|1=a predloga ne more biti izbrisana|2=i predlogi ne moreta biti izbrisani|e predloge ne morejo biti izbrisane}}: $2 (razlog: $3)"
+	"bs-pagetemplates-remove-message-success": "Naslednj{{PLURAL:$1|1=a predloga je bila izbrisana|2=i predlogi sta bili izbrisani|e predloge so bile izbrisane}}: $2",
+	"bs-pagetemplates-remove-message-failure": "Naslednj{{PLURAL:$1|1=a predloga ne more biti izbrisana|2=i predlogi ne moreta biti izbrisani|e predloge ne morejo biti izbrisane}}: $2 (razlog: $3)"
 }
