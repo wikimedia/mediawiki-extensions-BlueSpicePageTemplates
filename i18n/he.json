@@ -43,7 +43,7 @@
 	"bs-pagetemplates-label-targetns": "מרחב שם",
 	"bs-pagetemplates-label-tplns": "מרחב השם של התבנית",
 	"bs-pagetemplates-label-article": "תבנית",
-	"bs-pagetemplates-confirm-deletetpl": "האם ברצונך למחוק את {{PLURAL:$1|התבנית הזו|התבניות האלה}}?",
+	"bs-pagetemplates-confirm-deletetpl": "האם ברצונך למחוק את {{PLURAL:$1|התבנית הזאת|התבניות האלו}}?",
 	"bs-pagetemplates-remove-message-unknown": "איראה שגיאה בלתי־צפויה, נא לנסות שוב.",
 	"bs-pagetemplates-remove-message-success": "{{PLURAL:$1|התבנית הבאה נמחקה|התבניות הבאות נמחקו}}: $2",
 	"bs-pagetemplates-remove-message-failure": "לא ניתן היה למחוק את {{PLURAL:$1|התבנית הבאה|התבניות הבאות}}: $2 (סיבה: $3)",
