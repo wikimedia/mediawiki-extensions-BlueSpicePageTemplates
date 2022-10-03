@@ -58,5 +58,7 @@
 	"pagetemplatesadmin": "Paginasjablonenbeheer",
 	"bs-usagetracker-pagetemplates": "paginasjablonen",
 	"bs-pagetemplates-nsm-label": "Paginasjablonen",
-	"right-pagetemplatesadmin-viewspecialpage": "Toegang tot de speciale pagina [[Special:PageTemplatesAdmin]] waarin paginasjablonen kunnen worden beheerd"
+	"right-pagetemplatesadmin-viewspecialpage": "Toegang tot de speciale pagina [[Special:PageTemplatesAdmin]] waarin paginasjablonen kunnen worden beheerd",
+	"bs-pagetemplates-pref-hidedefaults-help": "Verwijdert het standaardsjabloon \"Lege pagina\" uit de selectie van paginasjablonen bij het aanmaken van pagina's.",
+	"bs-pagetemplates-pref-forcenamespace-help": "Forceert de naamruimte die is geselecteerd via de sjabloonkoppeling bij het aanmaken van een nieuwe pagina."
 }
