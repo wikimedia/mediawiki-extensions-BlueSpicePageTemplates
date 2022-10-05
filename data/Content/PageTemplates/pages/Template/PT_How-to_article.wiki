@@ -78,5 +78,3 @@ Explain the outcome of this procedure.  In  the table below, list each high-leve
 
 *Link to related page 1
 *Link to related page 2
-
-[[Category:How-to]]
