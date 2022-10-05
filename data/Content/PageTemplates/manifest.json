@@ -5,8 +5,10 @@
 		"description": "Step-by-step instructions for completing a task",
 		"target_title": "Template:PT_How-to_article",
 		"content_path": "/pages/Template/PT_How-to_article.wiki",
-		"sha1": "16f51b85e2c9dc27ddead484fe7a52e79ce21825",
-		"old_sha1": []
+		"sha1": "dabe1c3a970576c84d26a0038b44c558335b6b99",
+		"old_sha1": [
+			"16f51b85e2c9dc27ddead484fe7a52e79ce21825"
+		]
 	},
 	"Template:SV_Anleitung": {
 		"lang": "de",
@@ -14,8 +16,10 @@
 		"description": "Schritt-f\u00fcr-Schritt Anleitung erstellen",
 		"target_title": "Template:SV_Anleitung",
 		"content_path": "/pages/Template/SV_Anleitung.wiki",
-		"sha1": "cb26b66d6e2f392ede58463c7111dbc057816e51",
-		"old_sha1": []
+		"sha1": "c51ce33af7d24d379cc260b19b9d32166be572c5",
+		"old_sha1": [
+			"cb26b66d6e2f392ede58463c7111dbc057816e51"
+		]
 	},
 	"Template:PT_Meeting_minutes_Standard": {
 		"lang": "en",
@@ -41,8 +45,10 @@
 		"description": "Track and update your to-dos",
 		"target_title": "Template:PT_To-do_List",
 		"content_path": "/pages/Template/PT_To-do_List.wiki",
-		"sha1": "dc8e1c9f742733b9a4ddf13734aea9b2b868f6bf",
-		"old_sha1": []
+		"sha1": "b897445a51fc4fc7bb236fe03cda19a74d12cc56",
+		"old_sha1": [
+			"dc8e1c9f742733b9a4ddf13734aea9b2b868f6bf"
+		]
 	},
 	"Template:SV_Aufgabenliste": {
 		"lang": "de",
@@ -50,8 +56,9 @@
 		"description": "Aufgaben verteilen und nachverfolgen",
 		"target_title": "Template:SV_Aufgabenliste",
 		"content_path": "/pages/Template/SV_Aufgabenliste.wiki",
-		"sha1": "420857bde308fce8b875fd73fa247921aba70b55",
-		"old_sha1": []
+		"sha1": "c0c13505f2d6f48eb47a34f26e4189c8139fdc4a",
+		"old_sha1": [
+			"420857bde308fce8b875fd73fa247921aba70b55"
+		]
 	}
 }
-
