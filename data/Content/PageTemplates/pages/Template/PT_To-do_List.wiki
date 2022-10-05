@@ -75,4 +75,3 @@ List the tasks that will not be considered for this project .
 === Notes ===
 Provide some details about the out-of-scope list if necessary.
 __NOTOC__
-[[Category:To-do list]]
