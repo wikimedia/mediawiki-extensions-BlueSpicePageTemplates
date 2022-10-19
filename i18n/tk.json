@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"TayfunEt."
+		]
+	},
+	"bs-pagetemplates-desc": "Sahypa şablonlary hökmünde bellenen şablonlaryň sanawyny görkezýär",
+	"bs-pagetemplates-empty-page": "Boş sahypa",
+	"bs-pagetemplates-empty-page-desc": "Boş sahypa bilen başlaň.",
+	"bs-pagetemplates-tpl-label-empty": "Bellik ýazmagyňyzy haýyş edýäris.",
+	"bs-pagetemplates-tpl-name-toolong": "Şablonyň ady gaty uzyn. Iň köp uzynlygy 255 simwoldan peýdalanyň.",
+	"bs-pagetemplates-tpl-name-empty": "Şablon adyny giriziň.",
+	"bs-pagetemplates-no-id": "Şablon hökmünde ulanmak üçin sahypa girmegiňizi haýyş edýäris.",
+	"bs-pagetemplates-tpl-added": "Şablon goşuldy.",
+	"bs-pagetemplates-invalid_pfx": "Prefiks nädogry.",
+	"bs-pagetemplates-nooldtpl": "Köne şablon tapylmady.",
+	"bs-pagetemplates-tpl-edited": "Üýtgeşmeler saklandy.",
+	"bs-pagetemplates-dberror": "Maglumat bazasynda ýalňyşlyk ýüze çykdy.",
+	"bs-pagetemplates-tpl-deleted": "Şablon öçürildi.",
+	"bs-pagetemplates-headertargetnamespace": "At giňişligi",
+	"bs-pagetemplates-tipaddtemplate": "Şablon goş",
+	"bs-pagetemplates-label-tpl": "Şablonyň ady",
+	"bs-pagetemplates-label-desc": "Düşündiriş",
+	"bs-pagetemplates-label-targetns": "At giňişligi",
+	"bs-pagetemplates-label-tplns": "Şablon at giňişligi",
+	"bs-pagetemplates-label-article": "Şablon"
+}
