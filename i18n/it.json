@@ -49,5 +49,8 @@
 	"bs-pagetemplates-pref-hidedefaults": "Nascondi i modelli predefiniti",
 	"apihelp-bs-pagetemplates-store-description": "Elenca tutte le pagine template. Consente ordinamento, filtraggio e impaginazione. Implementa parametri ExtJS Store.",
 	"apihelp-bs-pagetemplates-store-summary": "Elenca tutte le pagine template. Consente ordinamento, filtraggio e impaginazione. Implementa parametri ExtJS Store.",
-	"pagetemplatesadmin": "Amministrazione delle pagine template"
+	"pagetemplatesadmin": "Amministrazione delle pagine template",
+	"apihelp-bs-pagetemplates-tasks-description": "Consente la manipolazione dei template di pagina",
+	"apihelp-bs-pagetemplates-tasks-summary": "Consente la manipolazione dei template di pagina",
+	"action-pagetemplatesadmin-viewspecialpage": "visualizza la pagina speciale \"{{int:pagetemplatesadmin}}\""
 }
