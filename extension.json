@@ -45,15 +45,29 @@
 				}
 			}
 		},
-		"BlueSpiceDistributionConnector": {
-			"ContentManifests": [
-				"extensions/BlueSpicePageTemplates/data/Content/PageTemplates/manifest.json"
-			]
-		},
-		"BlueSpicePageTemplates": {
-			"DefaultPageTemplates": [
-				"extensions/BlueSpicePageTemplates/data/Content/PageTemplates/manifest.json"
-			]
+		"MWStakeContentProvisioner": {
+			"ContentManifests": {
+				"DefaultContentProvisioner": [
+					"extensions/BlueSpicePageTemplates/data/Content/PageTemplates/manifest.json"
+				],
+				"DefaultPageTemplates": [
+					"extensions/BlueSpicePageTemplates/data/Content/PageTemplates/manifest.json"
+				]
+			},
+			"ContentProvisioners": {
+				"DefaultPageTemplates": {
+					"class": "\\BlueSpice\\PageTemplates\\ContentProvisioner\\PageTemplatesProvisioner",
+					"args": [
+						"DefaultPageTemplates"
+					],
+					"services": [
+						"ContentLanguage",
+						"LanguageFallback",
+						"TitleFactory",
+						"DBLoadBalancer"
+					]
+				}
+			}
 		}
 	},
 	"GroupPermissions": {
@@ -160,9 +174,6 @@
 	"HookHandlers": {
 		"common-user-interface": {
 			"class": "\\BlueSpice\\PageTemplates\\HookHandler\\CommonUserInterface"
-		},
-		"SetupDefaultTemplates": {
-			"class": "\\BlueSpice\\PageTemplates\\HookHandler\\SetupDefaultTemplates"
 		}
 	},
 	"Hooks": {
@@ -171,8 +182,7 @@
 		],
 		"BSUEModulePDFBeforeAddingStyleBlocks": "\\BlueSpice\\PageTemplates\\Hook\\BSUEModulePDFBeforeAddingStyleBlocks\\AddStandardTemplatesStyles::callback",
 		"LoadExtensionSchemaUpdates": [
-			"\\BlueSpice\\PageTemplates\\Hook\\LoadExtensionSchemaUpdates\\AddPageTemplateTable::callback",
-			"SetupDefaultTemplates"
+			"\\BlueSpice\\PageTemplates\\Hook\\LoadExtensionSchemaUpdates\\AddPageTemplateTable::callback"
 		],
 		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\PageTemplates\\Hook\\BSUsageTrackerRegisterCollectors\\AddPageTemplatesTag::callback",
 		"NamespaceManager::getMetaFields": "BlueSpice\\PageTemplates\\Hook\\NamespaceManagerGetMetaFields\\RegisterMetaField::callback",
