@@ -52,5 +52,8 @@
 	"pagetemplatesadmin": "إدارة قوالب الصفحة",
 	"bs-usagetracker-pagetemplates": "قوالب الصفحة",
 	"bs-pagetemplates-nsm-label": "قوالب الصفحة",
-	"right-pagetemplatesadmin-viewspecialpage": "الوصول إلى الصفحة الخاصة [[Special:PageTemplatesAdmin]]، حيث يمكن إدارة قوالب الصفحات."
+	"right-pagetemplatesadmin-viewspecialpage": "الوصول إلى الصفحة الخاصة [[Special:PageTemplatesAdmin]]، حيث يمكن إدارة قوالب الصفحات.",
+	"bs-pagetemplates-choose-template-empty": "هذه الصفحة غير موجودة بعد. يمكنك إنشاء صفحة جديدة. إذا كنت لا ترغب في القيام بذلك ، فانقر فوق زر الرجوع في متصفحك للعودة إلى آخر صفحة تمت زيارتها.",
+	"bs-pagetemplates-pref-hidedefaults-help": "يزيل النموذج القياسي \"الصفحة الفارغة\" من اختيار قوالب الصفحة أثناء إنشاء الصفحة.",
+	"bs-pagetemplates-pref-forcenamespace-help": "يفرض مساحة الاسم المحددة عبر رابط القالب عند إنشاء صفحة جديدة."
 }
