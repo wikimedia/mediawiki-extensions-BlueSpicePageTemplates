@@ -25,6 +25,7 @@
 	"bs-pagetemplates-tpl-deleted": "لقد تم حذف القالب.",
 	"bs-pagetemplates-general-section": "عام",
 	"bs-pagetemplates-choose-template": "هذه الصفحة غير موجودة بعد، يمكنك إنشاء صفحة جديدة، إذا لم تكن ترغب في القيام بذلك، فانقر فوق زر العودة في متصفحك للعودة إلى الصفحة الأخيرة التي قمت بزيارتها.\n\nيمكنك اختيار {{PLURAL:$1||أحد}} {{PLURAL:$1|القوالب}} التالية:",
+	"bs-pagetemplates-choose-template-empty": "هذه الصفحة غير موجودة بعد. يمكنك إنشاء صفحة جديدة. إذا كنت لا ترغب في القيام بذلك ، فانقر فوق زر الرجوع في متصفحك للعودة إلى آخر صفحة تمت زيارتها.",
 	"bs-pagetemplates-pref-excludens": "لا تظهر القوالب في النطاقات التالية:",
 	"bs-pagetemplates-pref-forcenamespace": "فرض النطاق الهدف",
 	"bs-pagetemplates-pref-hideifnotintargetns": "إخفاء القالب إذا لم يتم إنشاء الصفحة في النطاق الهدف",
