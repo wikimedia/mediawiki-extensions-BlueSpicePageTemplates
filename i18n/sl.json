@@ -24,7 +24,7 @@
 	"bs-pagetemplates-dberror": "Prišlo je do napake na bazi podatkov.",
 	"bs-pagetemplates-tpl-deleted": "Predloga je bila izbrisana.",
 	"bs-pagetemplates-general-section": "Splošno",
-	"bs-pagetemplates-choose-template": "Ta stran še ne obstaja. Ustvarite lahko novo stran. Če tega ne želite storiti, kliknite gumb \"nazaj\" v brskalniku, da se povrnete na prejšno stran.\n\nIzbirate lahko med {{PLURAL:$1|1=to predlogo|2=tema predlogama|temi predlogami}}:",
+	"bs-pagetemplates-choose-template": "Ta stran še ne obstaja. Ustvarite lahko novo stran. Če tega ne želite storiti, kliknite v brskalniku gumb »nazaj«, da se vrnete na prejšno stran.\n\nIzbirate lahko med {{PLURAL:$1||eno od}} {{PLURAL:$1|1=naslednje predloge|2=naslednjih predlog}}:",
 	"bs-pagetemplates-pref-excludens": "Ne prikaži predlog v naslednjih imenskih prostorih:",
 	"bs-pagetemplates-pref-forcenamespace": "Vsili ciljni imenski prostor",
 	"bs-pagetemplates-pref-hideifnotintargetns": "Skrij predlogo, če se stran ne ustvarja v ciljnem imenskem prostoru",
