@@ -6,7 +6,8 @@
 			"Kly",
 			"LNDDYL",
 			"Liuxinyu970226",
-			"和平奮鬥救地球"
+			"和平奮鬥救地球",
+			"捍粵者"
 		]
 	},
 	"bs-pagetemplates-desc": "顯示標記為頁面模板的模板清單",
@@ -26,7 +27,7 @@
 	"bs-pagetemplates-nooldtpl": "找不到舊模板。",
 	"bs-pagetemplates-tpl-edited": "已儲存變更。",
 	"bs-pagetemplates-dberror": "資料庫發生錯誤。",
-	"bs-pagetemplates-tpl-deleted": "模板已被刪除。",
+	"bs-pagetemplates-tpl-deleted": "模板已刪除",
 	"bs-pagetemplates-general-section": "一般",
 	"bs-pagetemplates-choose-template": "此頁面尚未存在，您可以創建一個新的頁面。若您不想這樣做，請點擊您瀏覽器裡的上一頁按鈕，來返回到您最後幾次訪問的頁面。\n\n您可以選擇以下{{PLURAL:$1|模板|模板}}{{PLURAL:$1||之一}}：",
 	"bs-pagetemplates-choose-template-empty": "此頁面尚不存在。您可以建立一個新頁面。若您不想這麼做的話，可以點擊您瀏覽器的返回按鈕，或是回到前一個訪問的頁面。",
