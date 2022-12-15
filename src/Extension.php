@@ -86,10 +86,12 @@ class Extension extends \BlueSpice\Extension {
 		// No context
 		$user = \RequestContext::getMain()->getUser();
 		$pm = $services->getPermissionManager();
-		if ( !$pm->userCan( 'edit', $user, $title ) ) {
-			throw new PermissionsError( 'edit' );
-		} elseif ( !$pm->userCan( 'createpage', $user, $title ) ) {
-			throw new PermissionsError( 'createpage' );
+		$editPermissionErrors = $pm->getPermissionErrors( 'edit', $user, $title );
+		$createPermissionErrors = $pm->getPermissionErrors( 'createpage', $user, $title );
+		if ( !empty( $editPermissionErrors ) ) {
+			throw new PermissionsError( 'edit', $editPermissionErrors );
+		} elseif ( !empty( $createPermissionErrors ) ) {
+			throw new PermissionsError( 'createpage', $createPermissionErrors );
 		} else {
 			$message = '<bs:pagetemplates />';
 		}
