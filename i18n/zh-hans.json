@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"LittlePaw365",
 			"Liuxinyu970226",
 			"Ps2049",
 			"Xiplus",
@@ -54,5 +55,6 @@
 	"bs-usagetracker-pagetemplates": "页面模板",
 	"bs-pagetemplates-nsm-label": "页面模板",
 	"right-pagetemplatesadmin-viewspecialpage": "允许访问管理页面模板的特殊页面 [[Special:PageTemplatesAdmin]] 的权限",
-	"bs-pagetemplates-choose-template-empty": "此页面还不存在。您可以创建新页面。如果您不想这么做，可以点击您浏览器中的返回按钮，来回到您上一个访问的页面。"
+	"bs-pagetemplates-choose-template-empty": "此页面还不存在。您可以创建新页面。如果您不想这么做，可以点击您浏览器中的返回按钮，来回到您上一个访问的页面。",
+	"bs-pagetemplatesadmin-text": "页面模板"
 }
