@@ -5,11 +5,13 @@
 			"Ps2049",
 			"Xiplus",
 			"佛壁灯",
-			"落花有意12138"
+			"落花有意12138",
+			"LittlePaw365"
 		]
 	},
 	"bs-pagetemplates-desc": "显示标记为页面模板的模板列表",
 	"prefs-pagetemplates": "页面模板",
+	"bs-pagetemplatesadmin-text": "页面模板",
 	"bs-pagetemplates-empty-page": "空页",
 	"bs-pagetemplates-empty-page-desc": "从空页开始。",
 	"bs-pagetemplatesadmin-label": "页面模板",
