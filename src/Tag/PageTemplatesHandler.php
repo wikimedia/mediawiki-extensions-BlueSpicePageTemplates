@@ -14,8 +14,8 @@ class PageTemplatesHandler extends Handler {
 	 * @return string
 	 */
 	public function handle() {
-		$this->parser->getOutput()->addModules( 'ext.bluespice.pageTemplates.tag' );
-		$this->parser->getOutput()->addModuleStyles( 'ext.bluespice.pageTemplates.styles' );
+		$this->parser->getOutput()->addModules( [ 'ext.bluespice.pageTemplates.tag' ] );
+		$this->parser->getOutput()->addModuleStyles( [ 'ext.bluespice.pageTemplates.styles' ] );
 
 		return $this->renderPageTemplates();
 	}
