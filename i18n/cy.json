@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Afalau"
+		]
+	},
+	"bs-pagetemplates-tipaddtemplate": "Ychwanegu nodyn",
+	"bs-pagetemplates-label-tpl": "Enw'r nodyn",
+	"bs-pagetemplates-label-desc": "Disgrifiad",
+	"bs-pagetemplates-label-targetns": "Parth",
+	"bs-pagetemplates-label-tplns": "Parth y nodyn",
+	"bs-pagetemplates-label-article": "Nodyn",
+	"bs-pagetemplates-confirm-deletetpl": "Ydych chi wir eisiau dileu{{PLURAL:$1|'r nodyn hwn| y nodiadau hyn}}?"
+}
