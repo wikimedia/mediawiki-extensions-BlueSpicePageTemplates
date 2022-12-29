@@ -11,5 +11,6 @@
 	"bs-pagetemplates-tipaddtemplate": "Lasseet myenster",
 	"bs-pagetemplates-label-tpl": "Myenster nommâ",
 	"bs-pagetemplates-label-targetns": "Nommâkomovuotâ",
-	"bs-pagetemplates-label-article": "Myenster"
+	"bs-pagetemplates-label-article": "Myenster",
+	"bs-pagetemplates-label-desc": "Kuvvim"
 }
