@@ -8,6 +8,7 @@
 	},
 	"bs-pagetemplates-desc": "Prikaže seznam predlog, označenih kot predloge strani",
 	"prefs-pagetemplates": "Predloge strani",
+	"bs-pagetemplatesadmin-text": "Predloge strani",
 	"bs-pagetemplates-empty-page": "Prazna stran",
 	"bs-pagetemplates-empty-page-desc": "Začnite s prazno stran.",
 	"bs-pagetemplatesadmin-label": "Predloge strani",
