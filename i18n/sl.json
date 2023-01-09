@@ -42,5 +42,18 @@
 	"bs-pagetemplates-remove-message-unknown": "Prišlo je do nepričakovane napake. Prosimo, poskusite znova.",
 	"bs-pagetemplates-remove-message-success": "Naslednj{{PLURAL:$1|1=a predloga je bila izbrisana|2=i predlogi sta bili izbrisani|e predloge so bile izbrisane}}: $2",
 	"bs-pagetemplates-remove-message-failure": "Naslednj{{PLURAL:$1|1=a predloga ne more biti izbrisana|2=i predlogi ne moreta biti izbrisani|e predloge ne morejo biti izbrisane}}: $2 (razlog: $3)",
-	"bs-pagetemplatesadmin-text": "Predloge strani"
+	"bs-pagetemplatesadmin-text": "Predloge strani",
+	"bs-pagetemplates-choose-template-empty": "Ta stran še ne obstaj. Ustvarite lahko novo stran. Če ne želite storiti tega, kliknite gumb brskalnika za vrnitev, da se vrnete na zadnjo obiskano stran.",
+	"bs-pagetemplates-pref-hidedefaults": "Skrij privzete predloge",
+	"apihelp-bs-pagetemplates-store-description": "Navede vse predloge strani. Omogoča razvrščanje, filtriranje in paginacijo. Uvede parametre ExtJS Store.",
+	"apihelp-bs-pagetemplates-store-summary": "Navede vse predloge strani. Omogoča razvrščanje, filtriranje in paginacijo. Uvede parametre ExtJS Store.",
+	"apihelp-bs-pagetemplates-tasks-description": "Omogoča spreminjanje predlog strani",
+	"apihelp-bs-pagetemplates-tasks-summary": "Omogoča spreminjanje predlog strani",
+	"action-pagetemplatesadmin-viewspecialpage": "ogled posebne strani »{{int:pagetemplatesadmin}}«",
+	"pagetemplatesadmin": "Administracija predlog strani",
+	"bs-usagetracker-pagetemplates": "predloge strani",
+	"bs-pagetemplates-nsm-label": "Predloge strani",
+	"right-pagetemplatesadmin-viewspecialpage": "Dostop do posebne strani [[Special:PageTemplatesAdmin]], na kateri lahko upravljate predloge strani",
+	"bs-pagetemplates-pref-hidedefaults-help": "Iz izbire predlog strani pri ustvarjanju strani odstrani standardno predlogo »Prazna stran«.",
+	"bs-pagetemplates-pref-forcenamespace-help": "Pri ustvarjanju strani vsili imenski prostor, izbran prek povezave predloge."
 }
