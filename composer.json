@@ -32,5 +32,10 @@
 	},
 	"extra": {
 		"installer-name": "BlueSpicePageTemplates"
+	},
+	"config": {
+		"allow-plugins": {
+			"composer/installers": true
+		}
 	}
 }
