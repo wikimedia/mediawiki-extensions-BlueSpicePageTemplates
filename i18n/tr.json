@@ -4,6 +4,7 @@
 			"BaRaN6161 TURK",
 			"Can",
 			"Hedda",
+			"Rapsar",
 			"Sadrettin",
 			"Sayginer"
 		]
@@ -35,7 +36,7 @@
 	"bs-pagetemplates-pref-hidedefaults": "Varsayılan şablonları gizle",
 	"bs-pagetemplates-headerlabel": "Etiket",
 	"bs-pagetemplates-headertargetnamespace": "Ad alanı",
-	"bs-pagetemplates-tipeditdetails": "Şablonu düzenle",
+	"bs-pagetemplates-tipeditdetails": "Şablonu değiştir",
 	"bs-pagetemplates-tipdeletetemplate": "{{PLURAL:$1|Şablonu|Şablonları}} sil",
 	"bs-pagetemplates-tipaddtemplate": "Şablon ekle",
 	"bs-pagetemplates-label-tpl": "Şablon adı",
