@@ -17,5 +17,6 @@
 	"bs-pagetemplates-label-tplns": "Spazju tal-isem għal mudell",
 	"bs-pagetemplates-confirm-deletetpl": "Inti żgur li trid tneħħi {{PLURAL:$1|dan il-mudell|dawn il-mudelli}}?",
 	"bs-pagetemplates-remove-message-success": "{{PLURAL:$1|Dan il-mudell tħassar|Dawn il-mudelli tħassru}}: $2",
-	"bs-pagetemplates-remove-message-failure": "{{PLURAL:$1|Dan il-mudell ma jistax jitħassar|Dawn il-mudelli ma jistgħux jitħassru}}: $2 (Raġuni: $3)"
+	"bs-pagetemplates-remove-message-failure": "{{PLURAL:$1|Dan il-mudell ma jistax jitħassar|Dawn il-mudelli ma jistgħux jitħassru}}: $2 (Raġuni: $3)",
+	"bs-pagetemplates-general-section": "Ġenerali"
 }
