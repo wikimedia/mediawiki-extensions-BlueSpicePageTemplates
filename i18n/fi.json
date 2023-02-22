@@ -10,5 +10,6 @@
 	"bs-pagetemplates-empty-page": "Tyhjä sivu",
 	"bs-pagetemplates-label-tpl": "Mallineen nimi",
 	"bs-pagetemplates-label-desc": "Kuvaus",
+	"bs-pagetemplates-label-targetns": "Nimiavaruus",
 	"bs-pagetemplates-label-article": "Malline"
 }
