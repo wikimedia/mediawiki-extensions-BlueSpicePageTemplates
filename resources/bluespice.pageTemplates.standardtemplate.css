@@ -58,6 +58,10 @@ div.databox .ve-ce-branchNode-slug {
 	display: none;
 }
 
+div.portal-row .ve-ce-branchNode-slug {
+	display: none;
+}
+
 /*avoid editing issues because of previous declaration when editing cells in ve-mode */
 .databox div table .ve-ce-branchNode-slug {
 	display: block;
