@@ -103,7 +103,7 @@ class BSApiPageTemplatesStore extends BSApiExtJSStoreBase {
 	protected function getNamespacesByIds( $targetNamespacesIds ) {
 		$namespaces = [];
 
-		if ( count( $targetNamespacesIds ) > 0 ) {
+		if ( is_array( $targetNamespacesIds ) && count( $targetNamespacesIds ) > 0 ) {
 			foreach ( $targetNamespacesIds as $nsId ) {
 				$nsName = BsNamespaceHelper::getNamespaceName( $nsId, true );
 				if ( $nsName ) {
