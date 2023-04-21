@@ -39,5 +39,13 @@
 	"apihelp-bs-pagetemplates-tasks-description": "Leidžia manipuliuoti puslapio šablonais",
 	"action-pagetemplatesadmin-viewspecialpage": "žiūrėti specialųpuslapį „{{int:pagetemplatesadmin}}“",
 	"pagetemplatesadmin": "Puslapio šablonų administravimas",
-	"bs-usagetracker-pagetemplates": "puslapio šablonai"
+	"bs-usagetracker-pagetemplates": "puslapio šablonai",
+	"bs-pagetemplatesadmin-text": "Puslapio šablonai",
+	"bs-pagetemplates-choose-template-empty": "Šis puslapis dar neegzistuoja. Galite sukurti naują puslapį. Jei nenorite to daryti, spustelėkite naršyklės mygtuką atgal, kad grįžtumėte į paskutinį aplankytą puslapį.",
+	"bs-pagetemplates-pref-excludens": "Nerodyti šablonų šiose vardų srityse:",
+	"bs-pagetemplates-pref-hidedefaults": "Slėpti numatytuosius šablonus",
+	"bs-pagetemplates-headertargetnamespace": "Vardų sritis",
+	"bs-pagetemplates-label-targetns": "Vardų sritis",
+	"bs-pagetemplates-label-tplns": "Šablono vardų sritis",
+	"apihelp-bs-pagetemplates-tasks-summary": "Leidžia manipuliuoti puslapio šablonais"
 }
