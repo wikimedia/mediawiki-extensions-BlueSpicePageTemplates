@@ -52,5 +52,6 @@
 	"bs-usagetracker-pagetemplates": "sidemaler",
 	"bs-pagetemplates-nsm-label": "Sidemaler",
 	"right-pagetemplatesadmin-viewspecialpage": "Tilgang til spesialsiden [[Special:PageTemplatesAdmin]], der sidemaler kan behandles",
-	"bs-pagetemplatesadmin-text": "Sidemaler"
+	"bs-pagetemplatesadmin-text": "Sidemaler",
+	"bs-pagetemplates-pref-hidedefaults-help": "Fjerner standardmalen «Tom side» fra utvalget over sidemaler når man oppretter en side."
 }
