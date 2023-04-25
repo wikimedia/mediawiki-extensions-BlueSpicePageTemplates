@@ -1,11 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Eitvys200"
+			"Eitvys200",
+			"Nokeoo"
 		]
 	},
 	"bs-pagetemplates-desc": "Rodo šablonų, kurie yra pažymėti kaip puslapio šablonai, sąrašą",
 	"prefs-pagetemplates": "Puslapio šablonai",
+	"bs-pagetemplatesadmin-text": "Puslapio šablonai",
 	"bs-pagetemplates-empty-page": "Tuščias puslapis",
 	"bs-pagetemplates-empty-page-desc": "Pradėti su tuščiu puslapiu.",
 	"bs-pagetemplatesadmin-label": "Puslapio šablonai",
@@ -23,12 +25,18 @@
 	"bs-pagetemplates-tpl-deleted": "Šablonas buvo ištrintas.",
 	"bs-pagetemplates-general-section": "Bendras",
 	"bs-pagetemplates-choose-template": "Šis puslapis dar neegzistuoja. Galite sukurti naują puslapį. Jei nenorite to daryti, paspauskite grįžimo atgal mygtuką savo naršyklėje, kad grįžtumėte į paskutinį lankytą puslapį.\n\nGalite pasirinkti {{PLURAL:$1|šabloną|vieną iš šablonų}}:",
+	"bs-pagetemplates-choose-template-empty": "Šis puslapis dar neegzistuoja. Galite sukurti naują puslapį. Jei nenorite to daryti, spustelėkite naršyklės mygtuką atgal, kad grįžtumėte į paskutinį aplankytą puslapį.",
+	"bs-pagetemplates-pref-excludens": "Nerodyti šablonų šiose vardų srityse:",
+	"bs-pagetemplates-pref-hidedefaults": "Slėpti numatytuosius šablonus",
 	"bs-pagetemplates-headerlabel": "Etiketė",
+	"bs-pagetemplates-headertargetnamespace": "Vardų sritis",
 	"bs-pagetemplates-tipeditdetails": "Redaguoti šabloną",
 	"bs-pagetemplates-tipdeletetemplate": "Trinti {{PLURAL:$1|šabloną|šablonus}}",
 	"bs-pagetemplates-tipaddtemplate": "Pridėti šabloną",
 	"bs-pagetemplates-label-tpl": "Šablono pavadinimas",
 	"bs-pagetemplates-label-desc": "Aprašymas",
+	"bs-pagetemplates-label-targetns": "Vardų sritis",
+	"bs-pagetemplates-label-tplns": "Šablono vardų sritis",
 	"bs-pagetemplates-label-article": "Šablonas",
 	"bs-pagetemplates-confirm-deletetpl": "Ar tikrai norite ištrinti {{PLURAL:$1|šį šabloną|šiuos šablonus}}?",
 	"bs-pagetemplates-remove-message-unknown": "Įvyko netikėta klaida, prašome bandyti dar kartą.",
@@ -36,6 +44,7 @@
 	"bs-pagetemplates-remove-message-failure": "{{PLURAL:$1|Šis šablonas negali būti ištrintas|Šie šablonai negali būti ištrinti}}: $2 (Priežastis: $3)",
 	"apihelp-bs-pagetemplates-store-description": "Nurodo visus puslapių šablonus. Leidžia rūšiuoti, filtruoti ir numeruoti. Įterpia ExtJS Store parametrus.",
 	"apihelp-bs-pagetemplates-tasks-description": "Leidžia manipuliuoti puslapio šablonais",
+	"apihelp-bs-pagetemplates-tasks-summary": "Leidžia manipuliuoti puslapio šablonais",
 	"action-pagetemplatesadmin-viewspecialpage": "žiūrėti specialųpuslapį „{{int:pagetemplatesadmin}}“",
 	"pagetemplatesadmin": "Puslapio šablonų administravimas",
 	"bs-usagetracker-pagetemplates": "puslapio šablonai"
