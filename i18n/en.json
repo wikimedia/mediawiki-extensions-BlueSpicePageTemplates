@@ -36,6 +36,7 @@
 	"bs-pagetemplates-tipaddtemplate": "Add template",
 	"bs-pagetemplates-label-tpl": "Template name",
 	"bs-pagetemplates-label-desc": "Description",
+	"bs-pagetemplates-label-tags": "Tags",
 	"bs-pagetemplates-label-targetns": "Namespace",
 	"bs-pagetemplates-label-tplns": "Template namespace",
 	"bs-pagetemplates-label-article": "Template",
@@ -47,11 +48,18 @@
 	"apihelp-bs-pagetemplates-store-summary": "Lists all page templates. Allows sorting, filtering and pagination. Implements ExtJS Store parameters.",
 	"apihelp-bs-pagetemplates-tasks-description": "Allows manipulation of page templates",
 	"apihelp-bs-pagetemplates-tasks-summary": "Allows manipulation of page templates",
+	"apihelp-bs-pagetemplate-tags-store-description": "Lists all page templates tags. Allows sorting, filtering and pagination. Implements ExtJS Store parameters.",
+	"apihelp-bs-pagetemplate-tags-store-summary": "Lists all page templates tags. Allows sorting, filtering and pagination. Implements ExtJS Store parameters.",
 	"action-pagetemplatesadmin-viewspecialpage": "view special page \"{{int:pagetemplatesadmin}}\"",
 	"pagetemplatesadmin": "Page templates administration",
 	"bs-usagetracker-pagetemplates": "page templates",
 	"bs-pagetemplates-nsm-label": "PageTemplates",
 	"right-pagetemplatesadmin-viewspecialpage": "Access to the [[Special:PageTemplatesAdmin]] special page, where page templates can be managed",
 	"bs-pagetemplates-pref-hidedefaults-help": "Removes the standard template \"Empty Page\" from the selection of page templates during page creation.",
-	"bs-pagetemplates-pref-forcenamespace-help": "Forces the namespace selected via the template link when creating a new page."
+	"bs-pagetemplates-pref-forcenamespace-help": "Forces the namespace selected via the template link when creating a new page.",
+	"bs-pagetemplates-no-matching-results-label": "No template found",
+	"bs-pagetemplates-search-template-placeholder": "Find page template",
+	"bs-pagetemplates-headertags": "Tags",
+	"bs-pagetemplates-tag-untagged": "Untagged",
+	"bs-pagetemplates-ns-undefined": "Undefined namespace"
 }

@@ -19,7 +19,7 @@ Ext.define( 'BS.PageTemplates.Panel', {
 			apiAction: 'bs-pagetemplates-store',
 			autoLoad: true,
 			remoteSort: true,
-			fields: [ 'id', 'label', 'desc', 'targetns', 'targetnsid', 'template', 'templatename' ],
+			fields: [ 'id', 'label', 'desc', 'targetns', 'targetnsid', 'template', 'templatename', 'tags' ],
 			sortInfo: {
 				field: 'id',
 				direction: 'ASC'
@@ -66,12 +66,23 @@ Ext.define( 'BS.PageTemplates.Panel', {
 			},
 			dataIndex: 'template'
 		} );
+		this.colTemplateTags = Ext.create( 'Ext.grid.column.Column', {
+			id: 'pg-template-tags',
+			header: mw.message('bs-pagetemplates-headertags').plain(),
+			xtype: 'templatecolumn',
+			sortable: true,
+			filter: {
+				type: 'list'
+			},
+			dataIndex: 'tags'
+		} );
 
 		this.colMainConf.columns = [
 			this.colLabel,
 			this.colDesc,
 			this.colTargetns,
-			this.colTemplate
+			this.colTemplate,
+			this.colTemplateTags
 		];
 		this.callParent( arguments );
 	},

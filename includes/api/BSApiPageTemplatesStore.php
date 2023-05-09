@@ -42,7 +42,8 @@ class BSApiPageTemplatesStore extends BSApiExtJSStoreBase {
 			'pt_desc',
 			'pt_target_namespace',
 			'pt_template_title',
-			'pt_template_namespace'
+			'pt_template_namespace',
+			'pt_tags',
 			], [], __METHOD__
 		);
 
@@ -50,6 +51,10 @@ class BSApiPageTemplatesStore extends BSApiExtJSStoreBase {
 
 		foreach ( $res as $row ) {
 			$targetNamespacesIds = FormatJson::decode( $row->pt_target_namespace, true );
+			$targetTags = FormatJson::decode( $row->pt_tags, true );
+			if ( !is_array( $targetTags ) ) {
+				$targetTags = [];
+			}
 
 			$tmp = new stdClass();
 			$tmp->id = $row->pt_id;
@@ -64,6 +69,7 @@ class BSApiPageTemplatesStore extends BSApiExtJSStoreBase {
 				( $title->exists() ? '' : 'class="new"' ) .
 				'>' . $title->getFullText() . '</a>';
 			$tmp->templatename = $title->getFullText();
+			$tmp->tags = implode( ', ', $targetTags );
 			$data[] = (object)$tmp;
 		}
 
