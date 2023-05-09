@@ -6,6 +6,7 @@ use BlueSpice\Tag\Handler;
 use BSPageTemplateList;
 use BSPageTemplateListRenderer;
 use MediaWiki\MediaWikiServices;
+use RequestContext;
 
 class PageTemplatesHandler extends Handler {
 
@@ -16,7 +17,7 @@ class PageTemplatesHandler extends Handler {
 	public function handle() {
 		$this->parser->getOutput()->addModules( [ 'ext.bluespice.pageTemplates.tag' ] );
 		$this->parser->getOutput()->addModuleStyles( [ 'ext.bluespice.pageTemplates.styles' ] );
-
+		RequestContext::getMain()->getOutput()->enableOOUI();
 		return $this->renderPageTemplates();
 	}
 

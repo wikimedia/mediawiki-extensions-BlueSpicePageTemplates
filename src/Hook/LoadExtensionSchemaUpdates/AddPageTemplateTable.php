@@ -23,6 +23,12 @@ class AddPageTemplateTable extends LoadExtensionSchemaUpdates {
 		$this->updater->addPostDatabaseUpdateMaintenance(
 			'BSTransformNSData'
 		);
+
+		$this->updater->addExtensionField(
+			'bs_pagetemplate',
+			'pt_tags',
+			"$dir/maintenance/db/bs_pagetemplate.patch.add_tags_col.sql"
+		);
 	}
 
 	/**
