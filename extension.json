@@ -86,7 +86,8 @@
 	],
 	"APIModules": {
 		"bs-pagetemplates-store": "BSApiPageTemplatesStore",
-		"bs-pagetemplates-tasks": "BSApiPageTemplatesTasks"
+		"bs-pagetemplates-tasks": "BSApiPageTemplatesTasks",
+		"bs-pagetemplate-tags-store": "BSApiPageTemplateTagsStore"
 	},
 	"MessagesDirs": {
 		"PageTemplates": [
@@ -99,6 +100,7 @@
 	"AutoloadClasses": {
 		"BSApiPageTemplatesStore": "includes/api/BSApiPageTemplatesStore.php",
 		"BSApiPageTemplatesTasks": "includes/api/BSApiPageTemplatesTasks.php",
+		"BSApiPageTemplateTagsStore": "includes/api/BSApiPageTemplateTagsStore.php",
 		"SpecialPageTemplatesAdmin": "includes/specials/SpecialPageTemplatesAdmin.php",
 		"BSPageTemplateList": "includes/BSPageTemplateList.php",
 		"BSPageTemplateListRenderer": "includes/BSPageTemplateListRenderer.php",
@@ -143,11 +145,13 @@
 			"messages": [
 				"bs-pagetemplates-headerlabel",
 				"bs-pagetemplates-headertargetnamespace",
+				"bs-pagetemplates-headertags",
 				"bs-pagetemplates-tipeditdetails",
 				"bs-pagetemplates-tipdeletetemplate",
 				"bs-pagetemplates-tipaddtemplate",
 				"bs-pagetemplates-label-tpl",
 				"bs-pagetemplates-label-desc",
+				"bs-pagetemplates-label-tags",
 				"bs-pagetemplates-label-targetns",
 				"bs-pagetemplates-label-article",
 				"bs-pagetemplates-confirm-deletetpl",
@@ -157,7 +161,18 @@
 			]
 		},
 		"ext.bluespice.pageTemplates.tag": {
-			"scripts": "bluespice.pageTemplates.tag.js"
+			"scripts": [
+				"bluespice.pageTemplates.tag.js",
+				"BS.PageTemplates/TemplateSearch.js"
+			],
+			"dependencies": [
+				"ext.bluespice",
+				"ext.oOJSPlus.widgets"
+			],
+			"messages": [
+				"bs-pagetemplates-no-matching-results-label",
+				"bs-pagetemplates-search-template-placeholder"
+			]
 		},
 		"ext.bluespice.pageTemplates.styles": {
 			"styles": "bluespice.pageTemplates.less",
