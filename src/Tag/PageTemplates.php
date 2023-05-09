@@ -2,6 +2,7 @@
 
 namespace BlueSpice\PageTemplates\Tag;
 
+use BlueSpice\Tag\MarkerType\NoWiki;
 use BlueSpice\Tag\Tag;
 
 class PageTemplates extends Tag {
@@ -42,5 +43,12 @@ class PageTemplates extends Tag {
 	 */
 	public function needsDisabledParserCache() {
 		return true;
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	public function getMarkerType() {
+		return new NoWiki();
 	}
 }
