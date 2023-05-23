@@ -177,6 +177,9 @@
 		},
 		"addPreloadForActions": {
 			"class": "\\BlueSpice\\PageTemplates\\HookHandler\\AddPreloadForActions"
+		},
+		"writeNamespaceConfiguration": {
+			"class": "\\BlueSpice\\PageTemplates\\Hook\\WriteNamespaceConfiguration"
 		}
 	},
 	"Hooks": {
@@ -191,9 +194,7 @@
 		"NamespaceManager::getMetaFields": "BlueSpice\\PageTemplates\\Hook\\NamespaceManagerGetMetaFields\\RegisterMetaField::callback",
 		"BSApiNamespaceStoreMakeData": "BlueSpice\\PageTemplates\\Hook\\BSApiNamespaceStoreMakeData\\AddData::callback",
 		"NamespaceManager::editNamespace": "BlueSpice\\PageTemplates\\Hook\\NamespaceManagerEditNamespace\\SetPageTemplateValues::callback",
-		"NamespaceManager::writeNamespaceConfiguration": [
-			"BlueSpice\\PageTemplates\\Hook\\NamespaceManagerWriteNamespaceConfiguration\\WriteToConfiguration::callback"
-		],
+		"NamespaceManagerBeforePersistSettings": "writeNamespaceConfiguration",
 		"HtmlPageLinkRendererBegin": "\\BlueSpice\\PageTemplates\\Extension::onHtmlPageLinkRendererBegin",
 		"MessagesPreLoad": "\\BlueSpice\\PageTemplates\\Extension::onMessagesPreLoad",
 		"MediaWikiPerformAction": "\\BlueSpice\\PageTemplates\\Hook\\MediaWikiPerformAction\\PreventEditMode::callback",
