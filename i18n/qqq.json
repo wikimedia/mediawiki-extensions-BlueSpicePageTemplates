@@ -64,5 +64,13 @@
 	"bs-pagetemplates-nsm-label": "Label for field in BlueSpiceNamespaceManager used to select namespaces in which PageTemplates will be shown(enabled)",
 	"right-pagetemplatesadmin-viewspecialpage": "Grants access to the [[Special:PageTemplatesAdmin]] special page, where page templates can be managed.\n{{doc-right|pagetemplatesadmin-viewspecialpage}}",
 	"bs-pagetemplates-pref-hidedefaults-help": "Description for config variable \"PageTemplatesHideDefaults\"",
-	"bs-pagetemplates-pref-forcenamespace-help": "Description for config variable \"PageTemplatesForceNamespace\""
+	"bs-pagetemplates-pref-forcenamespace-help": "Description for config variable \"PageTemplatesForceNamespace\"",
+	"bs-pagetemplates-label-tags": "Label for a tag input field.",
+	"apihelp-bs-pagetemplate-tags-store-description": "Describes the API endpoint that lists page templates tags\n{{doc-apihelp-description|bs-pagetemplate-tags-store}}",
+	"apihelp-bs-pagetemplate-tags-store-summary": "Describes the API endpoint that lists page templates tags\n{{doc-apihelp-summary|bs-pagetemplate-tags-store}}",
+	"bs-pagetemplates-no-matching-results-label": "Label displayed when no matching tags or templates are found in the search field",
+	"bs-pagetemplates-search-template-placeholder": "Placeholder text displayed in the search template input field",
+	"bs-pagetemplates-headertags": "Label for tags\n{{Identical|Tags}}",
+	"bs-pagetemplates-tag-untagged": "Label for container with page templates for untagged templates",
+	"bs-pagetemplates-ns-undefined": "Label for container with page templates for undefined namespaces"
 }

@@ -53,5 +53,13 @@
 	"bs-pagetemplates-nsm-label": "PageTemplates",
 	"right-pagetemplatesadmin-viewspecialpage": "Access to the [[Special:PageTemplatesAdmin]] special page, where page templates can be managed",
 	"bs-pagetemplates-pref-hidedefaults-help": "Removes the standard template \"Empty Page\" from the selection of page templates during page creation.",
-	"bs-pagetemplates-pref-forcenamespace-help": "Forces the namespace selected via the template link when creating a new page."
+	"bs-pagetemplates-pref-forcenamespace-help": "Forces the namespace selected via the template link when creating a new page.",
+	"bs-pagetemplates-label-tags": "Tags",
+	"apihelp-bs-pagetemplate-tags-store-description": "Lists all page templates tags. Allows sorting, filtering and pagination. Implements ExtJS Store parameters.",
+	"apihelp-bs-pagetemplate-tags-store-summary": "Lists all page templates tags. Allows sorting, filtering and pagination. Implements ExtJS Store parameters.",
+	"bs-pagetemplates-no-matching-results-label": "No template found",
+	"bs-pagetemplates-search-template-placeholder": "Find page template",
+	"bs-pagetemplates-headertags": "Tags",
+	"bs-pagetemplates-tag-untagged": "Untagged",
+	"bs-pagetemplates-ns-undefined": "Undefined namespace"
 }
