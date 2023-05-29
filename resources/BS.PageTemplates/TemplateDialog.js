@@ -35,6 +35,24 @@ Ext.define( 'BS.PageTemplates.TemplateDialog', {
 			checked: true,
 			allowBlank: false
 		});
+		this.cbTemplateTags = new Ext.form.field.Tag({
+			fieldLabel: mw.message( 'bs-pagetemplates-label-tags' ).plain(),
+			createNewOnEnter: true,
+			forceSelection: false,
+			labelAlign: 'right',
+			multiSelect: true,
+			queryMode: 'remote',
+			collapseOnSelect: true,
+			autoSelect: true,
+			typeAhead: false,
+			store: new BS.store.BSApi({
+				apiAction: 'bs-pagetemplate-tags-store',
+				fields: [ 'text' ]
+			}),
+			valueField: "text",
+			allowBlank: false
+		});
+
 		this.cbTargetNamespace = Ext.create( 'BS.form.field.NamespaceTag', {
 			fieldLabel: mw.message( 'bs-pagetemplates-label-targetns' ).plain(),
 			includeAll: true,
@@ -49,6 +67,7 @@ Ext.define( 'BS.PageTemplates.TemplateDialog', {
 		return [
 			this.tfLabel,
 			this.taDesc,
+			this.cbTemplateTags,
 			this.cbTargetNamespace,
 			this.cbTemplate
 		];
@@ -62,6 +81,7 @@ Ext.define( 'BS.PageTemplates.TemplateDialog', {
 	resetData: function() {
 		this.tfLabel.reset();
 		this.taDesc.reset();
+		this.cbTemplateTags.reset();
 		this.cbTargetNamespace.reset();
 		this.cbTemplate.reset();
 
@@ -72,6 +92,7 @@ Ext.define( 'BS.PageTemplates.TemplateDialog', {
 
 		this.tfLabel.setValue( this.currentData.label );
 		this.taDesc.setValue( this.currentData.desc );
+		this.cbTemplateTags.setValue( this.currentData.tags );
 		this.cbTargetNamespace.setValue( this.currentData.targetnsid );
 		this.cbTemplate.setValue( this.currentData.templatename );
 	},
@@ -81,6 +102,7 @@ Ext.define( 'BS.PageTemplates.TemplateDialog', {
 		this.selectedData.id = this.currentData.id;
 		this.selectedData.label = this.tfLabel.getValue();
 		this.selectedData.desc = this.taDesc.getValue();
+		this.selectedData.tags = this.cbTemplateTags.getValue().map(tag => tag.trim());
 		this.selectedData.targetns = this.cbTargetNamespace.getValue();
 		this.selectedData.template = selectedTemplate.getPrefixedText();
 

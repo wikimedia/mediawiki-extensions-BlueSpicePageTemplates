@@ -1,0 +1,15 @@
+<div class="col bs-pt-item">
+	<div id="{{id}}" class="card h-100">
+		<div class="card-body">
+			<h6 class="card-title">{{{link}}}</h6>
+			<p class="card-text">{{desc}}</p>
+		</div>
+		{{#has-badges}}
+		<div class="card-footer">
+			<div class="float-right">
+				{{#badges}}<span class="badge rounded-pill bg-secondary">{{.}}</span>{{/badges}}
+			</div>
+		</div>
+		{{/has-badges}}
+	</div>
+</div>

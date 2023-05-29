@@ -173,7 +173,7 @@ class BSPageTemplateList {
 						&$targetUrl
 					]
 				);
-				$dataSet['target_url'][$nsId] = $targetUrl;
+				$dataSet['target_url'] = $targetUrl;
 			}
 		}
 	}
@@ -192,11 +192,82 @@ class BSPageTemplateList {
 	 */
 	public function getAllGrouped() {
 		return [
+			'tags' => $this->getTagSortedTemplates(),
+			'namespaces' => $this->getNamespaceTemplates(),
 			'default' => $this->getAllForDefault(),
-			'target' => $this->getAllForTargetNamespace(),
-			'other' => $this->getAllForOtherNamespaces(),
-			'general' => $this->getAllForAllNamespaces()
 		];
+	}
+
+	/**
+	 *
+	 * @return array
+	 */
+	private function getNamespaceTemplates() {
+		$filteredDataSets = [];
+		foreach ( $this->dataSets as $id => $dataSet ) {
+			// skip default templates
+			if ( $id === -1 ) {
+				continue;
+			}
+			$targetNamespaceIds = FormatJson::decode( $dataSet['pt_target_namespace'], true );
+			foreach ( $targetNamespaceIds as $nsId ) {
+				$filteredDataSets[$nsId][] = $dataSet;
+			}
+		}
+
+		return $filteredDataSets;
+	}
+
+	/**
+	 *
+	 * @return array
+	 */
+	private function getTagSortedTemplates() {
+		$filteredDataSets = [];
+		$dbr = wfGetDB( DB_REPLICA );
+		$res = $dbr->select(
+			[ 'bs_pagetemplate' ],
+			[ 'pt_tags' ],
+			[],
+			__METHOD__
+		);
+
+		$resultData = [];
+		foreach ( $res as $row ) {
+			if ( !$row ) {
+				continue;
+			}
+			$tagsArray = json_decode( $row->pt_tags, true );
+			if ( is_array( $tagsArray ) ) {
+				$resultData = array_merge( $resultData, $tagsArray );
+			}
+		}
+
+		$resultData = array_unique( $resultData );
+		foreach ( $this->dataSets as $id => $dataSet ) {
+			foreach ( $resultData as $tag ) {
+				if ( strpos( $dataSet['pt_tags'], $tag ) !== false ) {
+					$filteredDataSets[$tag][] = $dataSet;
+				}
+			}
+		}
+
+		// get untagged templates
+		foreach ( $this->dataSets as $id => $dataSet ) {
+			if ( $dataSet['pt_tags'] == 0 && $id !== -1 ) {
+				$filteredDataSets['untagged'][] = $dataSet;
+			}
+		}
+
+		foreach ( $filteredDataSets  as $id => $dataSet ) {
+			// tags without templates would be hidden
+			if ( count( $dataSet ) === 0 ) {
+				unset( $filteredDataSets[$id] );
+				continue;
+			}
+		}
+
+		return $filteredDataSets;
 	}
 
 	/**
@@ -214,88 +285,6 @@ class BSPageTemplateList {
 		return [
 			self::ALL_NAMESPACES_PSEUDO_ID => $filteredDataSets
 		];
-	}
-
-	/**
-	 *
-	 * @return array
-	 */
-	protected function getAllForAllNamespaces() {
-		$filteredDataSets = [];
-		foreach ( $this->dataSets as $id => $dataSet ) {
-			$targetNamespaceIds = FormatJson::decode( $dataSet['pt_target_namespace'], true );
-
-			foreach ( $targetNamespaceIds as $nsId ) {
-				if ( (int)$nsId === self::ALL_NAMESPACES_PSEUDO_ID ) {
-					$filteredDataSets[$id] = $dataSet;
-
-					$filteredDataSets[$id]['target_url'] = $dataSet['target_url'][$nsId];
-				}
-			}
-		}
-
-		return [
-			self::ALL_NAMESPACES_PSEUDO_ID => $filteredDataSets
-		];
-	}
-
-	/**
-	 *
-	 * @return array
-	 */
-	protected function getAllForTargetNamespace() {
-		$nsId = $this->title->getNamespace();
-
-		$filteredDataSets = [];
-		foreach ( $this->dataSets as $id => $dataSet ) {
-			$targetNamespaceIds = FormatJson::decode( $dataSet['pt_target_namespace'], true );
-			if ( in_array( $this->title->getNamespace(), $targetNamespaceIds ) ) {
-				$filteredDataSets[$id] = $dataSet;
-
-				$filteredDataSets[$id]['target_url'] = $dataSet['target_url'][$nsId];
-			}
-		}
-
-		return [
-			$nsId => $filteredDataSets
-		];
-	}
-
-	/**
-	 *
-	 * @return array
-	 */
-	protected function getAllForOtherNamespaces() {
-		$filteredDataSets = [];
-		foreach ( $this->dataSets as $id => $dataSet ) {
-			// "Empty page" template
-			if ( $id === -1 ) {
-				continue;
-			}
-
-			$targetNamespaceIds = FormatJson::decode( $dataSet['pt_target_namespace'], true );
-
-			foreach ( $targetNamespaceIds as $nsId ) {
-
-				if ( (int)$nsId === self::ALL_NAMESPACES_PSEUDO_ID ) {
-					continue;
-				}
-
-				if ( (int)$nsId === $this->title->getNamespace() ) {
-					continue;
-				}
-
-				if ( !isset( $filteredDataSets[$nsId] ) ) {
-					$filteredDataSets[$nsId] = [];
-				}
-
-				$filteredDataSets[$nsId][$id] = $dataSet;
-
-				$filteredDataSets[$nsId][$id]['target_url'] = $dataSet['target_url'][$nsId];
-			}
-		}
-
-		return $filteredDataSets;
 	}
 
 	/**

@@ -20,6 +20,13 @@ class AddPageTemplateTable extends LoadExtensionSchemaUpdates {
 				'pt_target_namespace',
 				"$dir/maintenance/db/bs_ns_to_json.patch.pt_target_namespace.sql"
 			);
+
+			// BS 4.3.0: add tag field
+			$this->updater->addExtensionField(
+				'bs_pagetemplate',
+				'pt_tags',
+				"$dir/maintenance/db/bs_pagetemplate.patch.add_tags_col.sql"
+			);
 		}
 		$this->updater->addPostDatabaseUpdateMaintenance( \BSTransformNSData::class );
 	}

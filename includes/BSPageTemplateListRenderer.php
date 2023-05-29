@@ -1,9 +1,21 @@
 <?php
 
+use OOUI\ButtonGroupWidget;
+use OOUI\SearchInputWidget;
+
 class BSPageTemplateListRenderer {
 
 	/** @var string */
 	protected $buffer = '';
+
+	/**
+	 * @var TemplateParser
+	 */
+	private $templateParser = null;
+
+	public function __construct() {
+		$this->templateParser = new TemplateParser( dirname( __DIR__ ) . '/resources/templates' );
+	}
 
 	/**
 	 *
@@ -11,13 +23,12 @@ class BSPageTemplateListRenderer {
 	 * @return string
 	 */
 	public function render( $list ) {
-		$this->renderHead( $list->getCount() );
-
 		$aGroupedLists = $list->getAllGrouped();
+		$this->buffer .= wfMessage( 'bs-pagetemplates-choose-template-empty' )->parse();
 		$this->renderDefaultSection( $aGroupedLists['default'] );
-		$this->renderNamespaceSpecificSection( $aGroupedLists['target'], 'target' );
-		$this->renderNamespaceSpecificSection( $aGroupedLists['other'], 'other' );
-		$this->renderGeneralSection( $aGroupedLists['general'] );
+		$this->renderHead( $list->getCount() );
+		$this->renderTagSpecificSection( $aGroupedLists['tags'] );
+		$this->renderNamespaceSection( $aGroupedLists['namespaces'] );
 
 		return $this->buffer;
 	}
@@ -28,7 +39,7 @@ class BSPageTemplateListRenderer {
 	protected function initNamespaceSorting() {
 		$sortingTitle = Title::makeTitle( NS_MEDIAWIKI, 'PageTemplatesSorting' );
 		$content = BsPageContentProvider::getInstance()->getContentFromTitle( $sortingTitle );
-		$this->ordering = array_map( 'trim', explode( '*',  $content ) );
+		$this->ordering = array_map( 'trim', explode( '*', $content ) );
 	}
 
 	/**
@@ -41,27 +52,37 @@ class BSPageTemplateListRenderer {
 				[ 'id' => 'bs-pt-head' ]
 			);
 
-		if ( $count > 0 ) {
-			$this->buffer .= wfMessage( 'bs-pagetemplates-choose-template', $count )->parse();
-		} else {
-			$this->buffer .= wfMessage( 'bs-pagetemplates-choose-template-empty' )->parse();
-		}
-
+		$textInput =
+		'<div class="bs-template-search">' .
+			new SearchInputWidget( [
+				'id' => 'bs-template-search-input',
+				'infusable' => true,
+				'classes' => [ 'template-search-field' ],
+				'placeholder' => wfMessage( 'bs-pagetemplates-search-template-placeholder' )->plain(),
+			] ) .
+			new ButtonGroupWidget( [
+				'id' => 'bs-template-search-namespace-tag-buttongroup',
+				'classes' => [ 'template-namespace-tag-picker' ],
+				'infusable' => true,
+				'items' => [
+					new OOUI\ButtonWidget( [
+						'data' => 'visual',
+						'active' => true,
+						'infusable' => true,
+						'label' => "Tags",
+						'id' => 'bs-template-search-tag-button'
+					] ),
+					new OOUI\ButtonWidget( [
+						'data' => 'visual',
+						'label' => "Namespaces",
+						'infusable' => true,
+						'id' => 'bs-template-search-ns-button'
+					] )
+				]
+			] ) .
+			'</div>';
+		$this->buffer .= $textInput;
 		$this->buffer .= Html::closeElement( 'div' );
-	}
-
-	/**
-	 *
-	 * @param array $dataSets
-	 */
-	protected function renderGeneralSection( $dataSets ) {
-		$sectionContent = $this->makeSection(
-			wfMessage( 'bs-pagetemplates-general-section' )->plain(),
-			$dataSets[BSPageTemplateList::ALL_NAMESPACES_PSEUDO_ID],
-			'general'
-		);
-
-		$this->appendContainer( $sectionContent, 'general' );
 	}
 
 	/**
@@ -72,19 +93,60 @@ class BSPageTemplateListRenderer {
 		$sectionContent = $this->makeSection(
 			'',
 			$templates[BSPageTemplateList::ALL_NAMESPACES_PSEUDO_ID],
-			'default'
+			'default',
+			''
 		);
-
 		$this->appendContainer( $sectionContent, 'default' );
+	}
+
+	/**
+	 *
+	 * @param array $datasets
+	 */
+	protected function renderNamespaceSection( $datasets ) {
+		$namespaceSectionContent = '';
+		foreach ( $datasets as $namespaceId => $templates ) {
+			$sectionContent = '';
+
+			$nsName = BsNamespaceHelper::getNamespaceName( $namespaceId, true );
+			if ( !$nsName ) {
+				$nsName = Message::newFromKey( 'bs-pagetemplates-ns-undefined' )->plain();
+			}
+
+			$messageKey = "bs-pagetemplates-namespace-$namespaceId";
+			$message = Message::newFromKey( $messageKey );
+			$label = $nsName;
+			if ( $message->exists() ) {
+				$label = $message->text();
+			}
+
+			$sectionContent .= $this->makeSection(
+				$label,
+				$templates,
+				'namespace-template',
+				'tag'
+			);
+
+			$namespaceSectionContent .= Html::rawElement(
+				'div',
+				[
+					'id' => Sanitizer::escapeIdForAttribute( 'bs-ns-subsect-' . $nsName ),
+					'class' => 'bs-ns-subsect row'
+				],
+				$sectionContent
+			);
+		}
+		$this->appendContainer( $namespaceSectionContent, 'ns', 'display: none;' );
 	}
 
 	/**
 	 *
 	 * @param array $dataSet
 	 * @param string $additionalClass
+	 * @param string $key
 	 * @return string Raw HTML
 	 */
-	protected function makeTemplateItem( $dataSet, $additionalClass = '' ) {
+	protected function makeTemplateItem( $dataSet, $additionalClass = '', $key = '' ) {
 		$link = Html::element(
 			'a',
 			[
@@ -94,51 +156,86 @@ class BSPageTemplateListRenderer {
 			],
 			$dataSet['pt_label']
 		);
-		$description = Html::element(
-			'div',
-			[ 'class' => 'pt-desc' ],
-			$dataSet['pt_desc']
-		);
 
-		return Html::rawElement(
-			'div',
-			[ 'class' => implode(
-					' ',
-					[ 'bs-pt-item', $dataSet['type'], $additionalClass ]
-				)
-			],
-			$link . $description
-		);
+		$badges = [];
+		if ( $key === 'tag' ) {
+			$badges = json_decode( $dataSet['pt_tags'], true );
+		} elseif ( $key === 'ns' ) {
+			$badges = json_decode( $dataSet['pt_target_namespace'], true );
+		}
+
+		if ( !$badges ) {
+			$badges = [];
+		}
+
+		$badges = array_values( $badges );
+		$badges = array_map( static function ( $badge ) {
+			$nsName = BsNamespaceHelper::getNamespaceName( $badge, true );
+			if ( !$nsName ) {
+				return $badge;
+			}
+			return $nsName;
+		}, $badges );
+
+		return $this->templateParser->processTemplate( 'tile', [
+			'id' => Sanitizer::escapeIdForAttribute( 'bs-pt-item-' . $dataSet['pt_label'] ),
+			'link' => $link,
+			'desc' => $dataSet['pt_desc'],
+			'badges' => $badges,
+			'has-badges' => count( $badges ) > 0,
+		] );
 	}
 
 	/**
 	 *
 	 * @param array $templates
-	 * @param string $key
 	 */
-	protected function renderNamespaceSpecificSection( $templates, $key ) {
-		$sectionContent = '';
-		foreach ( $templates as $namespaceId => $dataSets ) {
+	protected function renderTagSpecificSection( $templates ) {
+		$tagSectionContent = '';
+		foreach ( $templates as $tagsId => $templates ) {
+			$sectionContent = '';
+
+			$messageKey = "bs-pagetemplates-tag-$tagsId";
+			$message = Message::newFromKey( $messageKey );
+			$label = $tagsId;
+
+			if ( $message->exists() ) {
+				$label = $message->escaped();
+			}
+
+			if ( $tagsId === 'untagged' ) {
+				$label = "<em>$label</em>";
+			}
 			$sectionContent .= $this->makeSection(
-				BsNamespaceHelper::getNamespaceName( $namespaceId ),
-				$dataSets,
-				$key
+				$label,
+				$templates,
+				'tag-templates',
+				'ns'
+			);
+
+			$tagSectionContent .= Html::rawElement(
+				'div',
+				[
+					'id' => Sanitizer::escapeIdForAttribute( 'bs-tags-subsect-' . $tagsId ),
+					'class' => 'bs-tag-subsect row'
+				],
+				$sectionContent
 			);
 		}
-
-		$this->appendContainer( $sectionContent, $key );
+		$this->appendContainer( $tagSectionContent, 'tag' );
 	}
 
 	/**
 	 *
 	 * @param array $sectionContent
 	 * @param string $key
+	 * @param string $additionalStyles
 	 */
-	protected function appendContainer( $sectionContent, $key ) {
+	protected function appendContainer( $sectionContent, $key, $additionalStyles = '' ) {
 		if ( !empty( $sectionContent ) ) {
 			$this->buffer .= Html::rawElement(
 				'div',
-				[ 'id' => 'bs-pt-' . $key, 'class' => 'bs-pt-sect' ],
+				[ 'id' => 'bs-' . $key . '-container', 'class' => 'bs-pt-sect', 'style' => $additionalStyles ],
 				$sectionContent
 			);
 		}
@@ -148,35 +245,35 @@ class BSPageTemplateListRenderer {
 	 *
 	 * @param string $heading
 	 * @param array $dataSets
+	 * @param string $additionalClasses
 	 * @param string $key
 	 * @return string
 	 */
-	protected function makeSection( $heading, $dataSets, $key ) {
+	protected function makeSection( $heading, $dataSets, $additionalClasses, $key ) {
 		if ( empty( $dataSets ) ) {
 			return '';
 		}
 
 		$headingElement = '';
 		if ( !empty( $heading ) ) {
-			$headingElement = Html::element( 'h3', [], $heading );
+			$headingElement = Html::rawElement( 'h3', [], $heading );
 		}
 
 		$listRaw = '';
 		foreach ( $dataSets as $aDataSet ) {
-			$listRaw .= $this->makeTemplateItem( $aDataSet, $key );
+			$listRaw .= $this->makeTemplateItem( $aDataSet, $additionalClasses, $key );
 		}
 
 		$list = Html::rawElement(
 			'div',
-			[ 'class' => 'bs-pt-items' ],
+			[ 'class' => 'row row-cols-3 g-4' ],
 			$listRaw
 		);
 
-		return Html::rawElement(
-			'div',
-			[ 'id' => 'bs-pt-subsect-' . $key, 'class' => 'bs-pt-subsect' ],
-			$headingElement . $list
-		);
+		if ( !$heading ) {
+			$heading = $key;
+		}
+		return $headingElement . $list;
 	}
 
 }
