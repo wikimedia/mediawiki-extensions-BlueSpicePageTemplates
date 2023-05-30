@@ -44,8 +44,7 @@
 				};
 			} else if ( $currentContainer.hasClass( 'bs-pt-item' ) ) {
 				// enables also filtering by description
-				var elementText = $currentContainer.find( '.card-title' ).text().toLowerCase() +
-					$currentContainer.find( '.card-text' ).text().toLowerCase();
+				var elementText = $currentContainer.text().toLowerCase();
 
 				var show = elementText.includes( inputValue );
 				if ( lastContainer ) {
