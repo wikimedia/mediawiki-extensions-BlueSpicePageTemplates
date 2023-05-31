@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Abcdefg",
 			"Hwboehm",
 			"Kghbln",
 			"Metalhead64",
@@ -57,5 +58,6 @@
 	"bs-pagetemplates-nsm-label": "PageTemplates",
 	"right-pagetemplatesadmin-viewspecialpage": "Zugriff auf die Spezialseite [[Special:PageTemplatesAdmin]], auf der Seitenvorlagen verwaltet werden können.",
 	"bs-pagetemplates-pref-hidedefaults-help": "Entfernt die Standardvorlage \"Leere Seite\" von der Auswahl der Seitenvorlagen beim Erstellen einer neuen Seite.",
-	"bs-pagetemplates-pref-forcenamespace-help": "Erzwingt den über den Template-Link ausgewählten Namensraum beim Erstellen einer neuen Seite."
+	"bs-pagetemplates-pref-forcenamespace-help": "Erzwingt den über den Template-Link ausgewählten Namensraum beim Erstellen einer neuen Seite.",
+	"bs-pagetemplates-no-matching-results-label": "Keine Vorlagen gefunden."
 }
