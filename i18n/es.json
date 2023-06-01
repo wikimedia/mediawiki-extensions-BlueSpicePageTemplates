@@ -41,6 +41,7 @@
 	"bs-pagetemplates-tipaddtemplate": "Añadir una plantilla",
 	"bs-pagetemplates-label-tpl": "Nombre de la plantilla",
 	"bs-pagetemplates-label-desc": "Descripción",
+	"bs-pagetemplates-label-tags": "Etiquetas",
 	"bs-pagetemplates-label-targetns": "Espacio de nombres",
 	"bs-pagetemplates-label-tplns": "Espacio de nombres de plantilla",
 	"bs-pagetemplates-label-article": "Plantilla",
@@ -50,8 +51,14 @@
 	"bs-pagetemplates-remove-message-failure": "{{PLURAL:$1|La siguiente plantilla no se pudo|Las siguientes plantillas no se pudieron}} borrar:$2(Motivo: $3)",
 	"apihelp-bs-pagetemplates-tasks-description": "Permite la manipulación de plantillas de páginas",
 	"apihelp-bs-pagetemplates-tasks-summary": "Permite la manipulación de plantillas de páginas",
+	"apihelp-bs-pagetemplate-tags-store-description": "Enumera todas las etiquetas de plantillas de página. Permite ordenarlas, filtrarlas y paginarlas. Implementa los parámetros Store de ExtJS.",
+	"apihelp-bs-pagetemplate-tags-store-summary": "Enumera todas las etiquetas de plantillas de página. Permite ordenarlas, filtrarlas y paginarlas. Implementa los parámetros de ExtJS Store.",
 	"action-pagetemplatesadmin-viewspecialpage": "ver la página especial \"{{int:pagetemplatesadmin}}\"",
 	"pagetemplatesadmin": "Administración de plantillas de páginas",
 	"bs-usagetracker-pagetemplates": "plantillas de página",
-	"bs-pagetemplates-nsm-label": "PlantillasDePagina"
+	"bs-pagetemplates-nsm-label": "PlantillasDePagina",
+	"bs-pagetemplates-no-matching-results-label": "No se encontró ninguna plantilla",
+	"bs-pagetemplates-headertags": "Etiquetas",
+	"bs-pagetemplates-tag-untagged": "No etiquetadas",
+	"bs-pagetemplates-ns-undefined": "Espacio de nombres no definido"
 }
