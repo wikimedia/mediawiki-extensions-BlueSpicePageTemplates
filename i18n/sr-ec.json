@@ -9,5 +9,7 @@
 	"bs-pagetemplates-label-desc": "Опис",
 	"bs-pagetemplates-label-targetns": "Именски простор",
 	"bs-pagetemplates-label-article": "Шаблон",
-	"action-pagetemplatesadmin-viewspecialpage": "преглед посебне странице „{{int:pagetemplatesadmin}}“"
+	"action-pagetemplatesadmin-viewspecialpage": "преглед посебне странице „{{int:pagetemplatesadmin}}“",
+	"bs-pagetemplates-no-matching-results-label": "Шаблон није пронађен",
+	"bs-pagetemplates-headertags": "Ознаке"
 }
