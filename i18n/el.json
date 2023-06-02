@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Dogogos123",
 			"NikosLikomitros",
 			"Nikosgranturismogt"
 		]
@@ -21,5 +22,11 @@
 	"bs-pagetemplates-label-tplns": "Ονοματοχώρος προτύπων",
 	"bs-pagetemplates-label-article": "Πρότυπο",
 	"pagetemplatesadmin": "Διαχείριση προτύπων σελίδας",
-	"bs-usagetracker-pagetemplates": "Πρότυπα σελίδας"
+	"bs-usagetracker-pagetemplates": "Πρότυπα σελίδας",
+	"bs-pagetemplates-label-tags": "Ετικέτες",
+	"bs-pagetemplates-no-matching-results-label": "Δεν βρέθηκαν πρότυπα.",
+	"bs-pagetemplates-search-template-placeholder": "Εύρεση προτύπου σελίδας",
+	"bs-pagetemplates-headertags": "Ετικέτες",
+	"bs-pagetemplates-tag-untagged": "Χωρίς ετικέτα",
+	"bs-pagetemplates-ns-undefined": "Απροσδιόριστος χώρος ονομάτων"
 }
