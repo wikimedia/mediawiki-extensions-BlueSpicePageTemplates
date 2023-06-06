@@ -38,6 +38,7 @@
 	"bs-pagetemplates-tipaddtemplate": "Dodaj predlogo",
 	"bs-pagetemplates-label-tpl": "Ime predloge",
 	"bs-pagetemplates-label-desc": "Opis",
+	"bs-pagetemplates-label-tags": "Oznake",
 	"bs-pagetemplates-label-targetns": "Imenski prostor",
 	"bs-pagetemplates-label-tplns": "Predloga imenskega prostora",
 	"bs-pagetemplates-label-article": "Predloga",
@@ -49,11 +50,18 @@
 	"apihelp-bs-pagetemplates-store-summary": "Navede vse predloge strani. Omogoča razvrščanje, filtriranje in paginacijo. Uvede parametre ExtJS Store.",
 	"apihelp-bs-pagetemplates-tasks-description": "Omogoča spreminjanje predlog strani",
 	"apihelp-bs-pagetemplates-tasks-summary": "Omogoča spreminjanje predlog strani",
+	"apihelp-bs-pagetemplate-tags-store-description": "Navede vse oznake predlog. Omogoča razvrščanje, filtriranje in paginacijo. Uvede parametre ExtJS Store.",
+	"apihelp-bs-pagetemplate-tags-store-summary": "Navede vse oynake predlog. Omogoča razvrščanje, filtriranje in paginacijo. Uvede parametre ExtJS Store.",
 	"action-pagetemplatesadmin-viewspecialpage": "ogled posebne strani »{{int:pagetemplatesadmin}}«",
 	"pagetemplatesadmin": "Administracija predlog strani",
 	"bs-usagetracker-pagetemplates": "predloge strani",
 	"bs-pagetemplates-nsm-label": "Predloge strani",
 	"right-pagetemplatesadmin-viewspecialpage": "Dostop do posebne strani [[Special:PageTemplatesAdmin]], na kateri lahko upravljate predloge strani",
 	"bs-pagetemplates-pref-hidedefaults-help": "Iz izbire predlog strani pri ustvarjanju strani odstrani standardno predlogo »Prazna stran«.",
-	"bs-pagetemplates-pref-forcenamespace-help": "Pri ustvarjanju strani vsili imenski prostor, izbran prek povezave predloge."
+	"bs-pagetemplates-pref-forcenamespace-help": "Pri ustvarjanju strani vsili imenski prostor, izbran prek povezave predloge.",
+	"bs-pagetemplates-no-matching-results-label": "Ni najdenih predlog",
+	"bs-pagetemplates-search-template-placeholder": "Poišči predlogo strani",
+	"bs-pagetemplates-headertags": "Oznake",
+	"bs-pagetemplates-tag-untagged": "Neoznačeno",
+	"bs-pagetemplates-ns-undefined": "Neopredeljen imenski prostor"
 }
