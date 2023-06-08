@@ -57,5 +57,13 @@
 	"bs-pagetemplates-nsm-label": "תבניות דפים",
 	"right-pagetemplatesadmin-viewspecialpage": "גישה לדף המיוחד [[Special:PageTemplatesAdmin]], שאפשר לנהל בו את דפי התבנית",
 	"bs-pagetemplates-pref-hidedefaults-help": "הסרת התבנית התקנית \"Empty Page\" מהבחירה של תבניות דפים בזמן יצירת הדף.",
-	"bs-pagetemplates-pref-forcenamespace-help": "כפיית מרחב שם שנבחר דרך קישור התבנית בעת יצירת דף חדש."
+	"bs-pagetemplates-pref-forcenamespace-help": "כפיית מרחב שם שנבחר דרך קישור התבנית בעת יצירת דף חדש.",
+	"bs-pagetemplates-label-tags": "תגים",
+	"apihelp-bs-pagetemplate-tags-store-description": "הצגת כל תגי תבניות הדפים. מאפשר סידור, סינון, ועימוד. מיישם פרמטרים של חנות ExtJS.",
+	"apihelp-bs-pagetemplate-tags-store-summary": "הצגת כל תגי תבניות הדפים. מאפשר סידור, סינון, ועימוד. מיישם פרמטרים של חנות ExtJS.",
+	"bs-pagetemplates-no-matching-results-label": "לא נמצאה תבנית",
+	"bs-pagetemplates-search-template-placeholder": "מציאת תבנית דף",
+	"bs-pagetemplates-headertags": "תגים",
+	"bs-pagetemplates-tag-untagged": "לא מתויגות",
+	"bs-pagetemplates-ns-undefined": "מרחב שם לא מוגדר"
 }
