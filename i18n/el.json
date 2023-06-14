@@ -3,7 +3,8 @@
 		"authors": [
 			"Dogogos123",
 			"NikosLikomitros",
-			"Nikosgranturismogt"
+			"Nikosgranturismogt",
+			"Norhorn"
 		]
 	},
 	"prefs-pagetemplates": "Πρότυπα σελίδων",
@@ -24,7 +25,7 @@
 	"bs-pagetemplates-label-article": "Πρότυπο",
 	"pagetemplatesadmin": "Διαχείριση προτύπων σελίδας",
 	"bs-usagetracker-pagetemplates": "Πρότυπα σελίδας",
-	"bs-pagetemplates-no-matching-results-label": "Δεν βρέθηκαν πρότυπα.",
+	"bs-pagetemplates-no-matching-results-label": "Δε βρέθηκαν πρότυπα.",
 	"bs-pagetemplates-search-template-placeholder": "Εύρεση προτύπου σελίδας",
 	"bs-pagetemplates-headertags": "Ετικέτες",
 	"bs-pagetemplates-tag-untagged": "Χωρίς ετικέτα",
