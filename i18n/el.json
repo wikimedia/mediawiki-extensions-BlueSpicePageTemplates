@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Dogogos123",
+			"Eleni.Christopoulou",
 			"NikosLikomitros",
 			"Nikosgranturismogt",
 			"Norhorn"
@@ -29,5 +30,7 @@
 	"bs-pagetemplates-search-template-placeholder": "Εύρεση προτύπου σελίδας",
 	"bs-pagetemplates-headertags": "Ετικέτες",
 	"bs-pagetemplates-tag-untagged": "Χωρίς ετικέτα",
-	"bs-pagetemplates-ns-undefined": "Απροσδιόριστος χώρος ονομάτων"
+	"bs-pagetemplates-ns-undefined": "Απροσδιόριστος χώρος ονομάτων",
+	"apihelp-bs-pagetemplate-tags-store-description": "Εμφανίζει όλες τις ετικέτες προτύπων σελίδας. Επιτρέπει ταξινόμηση, φιλτράρισμα και σελιδοποίηση. Υλοποιεί παραμέτρους ExtJS Store.",
+	"apihelp-bs-pagetemplate-tags-store-summary": "Εμφανίζει όλες τις ετικέτες προτύπων σελίδας. Επιτρέπει ταξινόμηση, φιλτράρισμα και σελιδοποίηση. Υλοποιεί παραμέτρους ExtJS Store."
 }

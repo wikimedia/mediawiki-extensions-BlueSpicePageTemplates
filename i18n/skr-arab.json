@@ -5,5 +5,7 @@
 		]
 	},
 	"bs-pagetemplates-label-tags": "ٹیگ",
-	"bs-pagetemplates-headertags": "ٹیگ"
+	"bs-pagetemplates-headertags": "ٹیگ",
+	"bs-pagetemplates-no-matching-results-label": "کوئی سان٘چہ کائنی لبھا",
+	"bs-pagetemplates-search-template-placeholder": "ورقہ سانچہ لبھو"
 }
