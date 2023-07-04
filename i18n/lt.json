@@ -42,8 +42,6 @@
 	"bs-pagetemplates-remove-message-unknown": "Įvyko netikėta klaida, prašome bandyti dar kartą.",
 	"bs-pagetemplates-remove-message-success": "{{PLURAL:$1|Šis šablonas buvo ištrintas|Šie šablonai buvo ištrinti}}: $2",
 	"bs-pagetemplates-remove-message-failure": "{{PLURAL:$1|Šis šablonas negali būti ištrintas|Šie šablonai negali būti ištrinti}}: $2 (Priežastis: $3)",
-	"apihelp-bs-pagetemplates-store-description": "Nurodo visus puslapių šablonus. Leidžia rūšiuoti, filtruoti ir numeruoti. Įterpia ExtJS Store parametrus.",
-	"apihelp-bs-pagetemplates-tasks-description": "Leidžia manipuliuoti puslapio šablonais",
 	"apihelp-bs-pagetemplates-tasks-summary": "Leidžia manipuliuoti puslapio šablonais",
 	"action-pagetemplatesadmin-viewspecialpage": "žiūrėti specialųpuslapį „{{int:pagetemplatesadmin}}“",
 	"pagetemplatesadmin": "Puslapio šablonų administravimas",

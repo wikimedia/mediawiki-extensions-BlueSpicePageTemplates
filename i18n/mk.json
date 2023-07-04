@@ -41,7 +41,6 @@
 	"bs-pagetemplates-remove-message-unknown": "Се јави неочекувана грешка. Обидете се повторно.",
 	"bs-pagetemplates-remove-message-success": "{{PLURAL:$1|Избришана е следнава предлошка|Избришани се следниве предлошки}}: $2",
 	"bs-pagetemplates-remove-message-failure": "Не можев да {{PLURAL:$1|ја избришам следнава предлошка|ги избришам следниве предлошки}}: $2 (Причина: $3)",
-	"apihelp-bs-pagetemplates-store-description": "Ги наведува сите предлошки на страницата. Овозможува подредување, филтрирање и страничење. Применува параметри за ExtJS Store.",
 	"apihelp-bs-pagetemplates-store-summary": "Ги наведува сите предлошки на страницата. Овозможува подредување, филтрирање и страничење. Применува параметри за ExtJS Store.",
 	"bs-usagetracker-pagetemplates": "предлошки на страницата"
 }
