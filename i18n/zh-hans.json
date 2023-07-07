@@ -4,6 +4,7 @@
 			"LittlePaw365",
 			"Liuxinyu970226",
 			"Ps2049",
+			"U.T.",
 			"Xiplus",
 			"佛壁灯",
 			"落花有意12138"
@@ -41,6 +42,7 @@
 	"bs-pagetemplates-tipaddtemplate": "加入模板",
 	"bs-pagetemplates-label-tpl": "模板名称",
 	"bs-pagetemplates-label-desc": "描述",
+	"bs-pagetemplates-label-tags": "标签",
 	"bs-pagetemplates-label-targetns": "命名空间",
 	"bs-pagetemplates-label-tplns": "模板命名空间",
 	"bs-pagetemplates-label-article": "模板",
@@ -54,5 +56,6 @@
 	"pagetemplatesadmin": "页面模板管理",
 	"bs-usagetracker-pagetemplates": "页面模板",
 	"bs-pagetemplates-nsm-label": "页面模板",
-	"right-pagetemplatesadmin-viewspecialpage": "允许访问管理页面模板的特殊页面 [[Special:PageTemplatesAdmin]] 的权限"
+	"right-pagetemplatesadmin-viewspecialpage": "允许访问管理页面模板的特殊页面 [[Special:PageTemplatesAdmin]] 的权限",
+	"bs-pagetemplates-headertags": "标签"
 }
