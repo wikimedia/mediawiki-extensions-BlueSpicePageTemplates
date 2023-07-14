@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Usandaru555",
-			"Codynguyen1116"
+			"Piano1forte2"
 		]
 	},
-	"apihelp-bs-pagetemplates-store": "Provide a list of available templates."
+	"apihelp-bs-pagetemplates-store": "Provide a list of available templates.",
+	"action-pagetemplatesadmin-viewspecialpage": "view special page '{{int:pagetemplatesadmin}}'",
+	"bs-pagetemplates-pref-hidedefaults-help": "Removes the standard template 'Empty Page' from the selection of page templates during page creation."
 }
