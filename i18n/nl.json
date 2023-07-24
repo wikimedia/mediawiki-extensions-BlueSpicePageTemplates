@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Esketti",
+			"HanV",
 			"Mainframe98",
 			"McDutchie",
 			"Rots61",
@@ -43,6 +44,7 @@
 	"bs-pagetemplates-tipaddtemplate": "Sjabloon toevoegen",
 	"bs-pagetemplates-label-tpl": "Sjabloonnaam",
 	"bs-pagetemplates-label-desc": "Beschrijving",
+	"bs-pagetemplates-label-tags": "Tags",
 	"bs-pagetemplates-label-targetns": "Naamruimte",
 	"bs-pagetemplates-label-tplns": "Sjabloonnaamruimte",
 	"bs-pagetemplates-label-article": "Sjabloon",
@@ -52,11 +54,17 @@
 	"bs-pagetemplates-remove-message-failure": "{{PLURAL:$1|Het volgende sjabloon kon|De volgende sjablonen konden}} niet worden verwijderd: $2 (reden: $3)",
 	"apihelp-bs-pagetemplates-store-summary": "Geeft een overzicht van alle paginasjablonen. Maakt sorteren, filteren en pagineren mogelijk. Implementeert ExtJS Store-parameters.",
 	"apihelp-bs-pagetemplates-tasks-summary": "Maakt manipulatie van paginasjablonen mogelijk",
+	"apihelp-bs-pagetemplate-tags-store-summary": "Geeft een overzicht van alle labels van paginasjablonen. Maakt sorteren, filteren en pagineren mogelijk. Implementeert ExtJS Store-parameters.",
 	"action-pagetemplatesadmin-viewspecialpage": "de speciale pagina \"{{int:pagetemplatesadmin}}\" te bekijken",
 	"pagetemplatesadmin": "Paginasjablonenbeheer",
 	"bs-usagetracker-pagetemplates": "paginasjablonen",
 	"bs-pagetemplates-nsm-label": "Paginasjablonen",
 	"right-pagetemplatesadmin-viewspecialpage": "Toegang tot de speciale pagina [[Special:PageTemplatesAdmin]] waarin paginasjablonen kunnen worden beheerd",
 	"bs-pagetemplates-pref-hidedefaults-help": "Verwijdert het standaardsjabloon \"Lege pagina\" uit de selectie van paginasjablonen bij het aanmaken van pagina's.",
-	"bs-pagetemplates-pref-forcenamespace-help": "Forceert de naamruimte die is geselecteerd via de sjabloonkoppeling bij het aanmaken van een nieuwe pagina."
+	"bs-pagetemplates-pref-forcenamespace-help": "Forceert de naamruimte die is geselecteerd via de sjabloonkoppeling bij het aanmaken van een nieuwe pagina.",
+	"bs-pagetemplates-no-matching-results-label": "Geen sjabloon gevonden",
+	"bs-pagetemplates-search-template-placeholder": "Paginasjabloon zoeken",
+	"bs-pagetemplates-headertags": "Tags",
+	"bs-pagetemplates-tag-untagged": "Niet getagd",
+	"bs-pagetemplates-ns-undefined": "Ongedefinieerde namespace"
 }
