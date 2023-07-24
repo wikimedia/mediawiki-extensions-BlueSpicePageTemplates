@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Esketti",
+			"HanV",
 			"Mainframe98",
 			"McDutchie",
 			"Rots61",
@@ -60,5 +61,12 @@
 	"bs-pagetemplates-nsm-label": "Paginasjablonen",
 	"right-pagetemplatesadmin-viewspecialpage": "Toegang tot de speciale pagina [[Special:PageTemplatesAdmin]] waarin paginasjablonen kunnen worden beheerd",
 	"bs-pagetemplates-pref-hidedefaults-help": "Verwijdert het standaardsjabloon \"Lege pagina\" uit de selectie van paginasjablonen bij het aanmaken van pagina's.",
-	"bs-pagetemplates-pref-forcenamespace-help": "Forceert de naamruimte die is geselecteerd via de sjabloonkoppeling bij het aanmaken van een nieuwe pagina."
+	"bs-pagetemplates-pref-forcenamespace-help": "Forceert de naamruimte die is geselecteerd via de sjabloonkoppeling bij het aanmaken van een nieuwe pagina.",
+	"bs-pagetemplates-label-tags": "Tags",
+	"apihelp-bs-pagetemplate-tags-store-summary": "Geeft een overzicht van alle labels van paginasjablonen. Maakt sorteren, filteren en pagineren mogelijk. Implementeert ExtJS Store-parameters.",
+	"bs-pagetemplates-no-matching-results-label": "Geen sjabloon gevonden",
+	"bs-pagetemplates-search-template-placeholder": "Paginasjabloon zoeken",
+	"bs-pagetemplates-headertags": "Tags",
+	"bs-pagetemplates-tag-untagged": "Niet getagd",
+	"bs-pagetemplates-ns-undefined": "Ongedefinieerde namespace"
 }
