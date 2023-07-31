@@ -1,9 +1,0 @@
-{
-	"@metadata": {
-		"authors": [
-			"Piano1forte2"
-		]
-	},
-	"action-pagetemplatesadmin-viewspecialpage": "view special page '{{int:pagetemplatesadmin}}'",
-	"bs-pagetemplates-pref-hidedefaults-help": "Removes the standard template 'Empty Page' from the selection of page templates during page creation."
-}
