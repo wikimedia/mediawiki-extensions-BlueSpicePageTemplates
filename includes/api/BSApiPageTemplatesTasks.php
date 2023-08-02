@@ -151,7 +151,7 @@ class BSApiPageTemplatesTasks extends BSApiTasksBase {
 
 		$oTitle = Title::newFromText( $sTemplateName );
 		if ( !$oTitle ) {
-			$oReturn->message = wfMessage( 'compare-invalid-title' )->plain();
+			$oReturn->message = wfMessage( 'title-invalid' )->plain();
 			return $oReturn;
 		}
 		// This is the add template part
