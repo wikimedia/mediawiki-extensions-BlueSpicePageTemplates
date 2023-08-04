@@ -59,5 +59,12 @@
 	"bs-pagetemplates-nsm-label": "頁面模板",
 	"right-pagetemplatesadmin-viewspecialpage": "存取用來管理頁面模板的 [[Special:PageTemplatesAdmin]] 特殊頁面。",
 	"bs-pagetemplates-pref-hidedefaults-help": "在頁面建立期間，從所選的頁面模板移除標準模板「Empty Page」。",
-	"bs-pagetemplates-pref-forcenamespace-help": "強制當建立新頁面時，經由模板連結選取命名空間。"
+	"bs-pagetemplates-pref-forcenamespace-help": "強制當建立新頁面時，經由模板連結選取命名空間。",
+	"bs-pagetemplates-label-tags": "標籤",
+	"apihelp-bs-pagetemplate-tags-store-summary": "列出所有頁面模板。允許排序、篩選，以及分頁。執行 ExtJS 所儲存的變數。",
+	"bs-pagetemplates-no-matching-results-label": "找不到模板",
+	"bs-pagetemplates-search-template-placeholder": "查找頁面模板",
+	"bs-pagetemplates-headertags": "標籤",
+	"bs-pagetemplates-tag-untagged": "取消標記",
+	"bs-pagetemplates-ns-undefined": "未定義的命名空間"
 }
