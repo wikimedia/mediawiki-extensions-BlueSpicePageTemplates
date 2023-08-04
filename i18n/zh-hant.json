@@ -42,6 +42,7 @@
 	"bs-pagetemplates-tipaddtemplate": "增加模板",
 	"bs-pagetemplates-label-tpl": "模板名稱",
 	"bs-pagetemplates-label-desc": "描述",
+	"bs-pagetemplates-label-tags": "標籤",
 	"bs-pagetemplates-label-targetns": "命名空間",
 	"bs-pagetemplates-label-tplns": "模板命名空間",
 	"bs-pagetemplates-label-article": "模板",
@@ -51,11 +52,17 @@
 	"bs-pagetemplates-remove-message-failure": "以下{{PLURAL:$1|模板|模板}}無法刪除：$2（原因：$3）",
 	"apihelp-bs-pagetemplates-store-summary": "列出所有頁面模板。允許排序、篩選，以及分頁。執行 ExtJS 所儲存的變數。",
 	"apihelp-bs-pagetemplates-tasks-summary": "允許對頁面模板的操控",
+	"apihelp-bs-pagetemplate-tags-store-summary": "列出所有頁面模板。允許排序、篩選，以及分頁。執行 ExtJS 所儲存的變數。",
 	"action-pagetemplatesadmin-viewspecialpage": "檢視特殊頁面「{{int:pagetemplatesadmin}}」",
 	"pagetemplatesadmin": "頁面模板管理",
 	"bs-usagetracker-pagetemplates": "頁面模板",
 	"bs-pagetemplates-nsm-label": "頁面模板",
 	"right-pagetemplatesadmin-viewspecialpage": "存取用來管理頁面模板的 [[Special:PageTemplatesAdmin]] 特殊頁面。",
 	"bs-pagetemplates-pref-hidedefaults-help": "在頁面建立期間，從所選的頁面模板移除標準模板「Empty Page」。",
-	"bs-pagetemplates-pref-forcenamespace-help": "強制當建立新頁面時，經由模板連結選取命名空間。"
+	"bs-pagetemplates-pref-forcenamespace-help": "強制當建立新頁面時，經由模板連結選取命名空間。",
+	"bs-pagetemplates-no-matching-results-label": "找不到模板",
+	"bs-pagetemplates-search-template-placeholder": "查找頁面模板",
+	"bs-pagetemplates-headertags": "標籤",
+	"bs-pagetemplates-tag-untagged": "取消標記",
+	"bs-pagetemplates-ns-undefined": "未定義的命名空間"
 }
