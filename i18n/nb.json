@@ -57,5 +57,9 @@
 	"bs-pagetemplates-label-tags": "Tagger",
 	"bs-pagetemplates-headertags": "Tagger",
 	"bs-pagetemplates-tag-untagged": "Umerket",
-	"bs-pagetemplates-ns-undefined": "Udefinert navnerom"
+	"bs-pagetemplates-ns-undefined": "Udefinert navnerom",
+	"apihelp-bs-pagetemplate-tags-store-summary": "Lister opp ale sidemaltagger. Gjør det mulig å sortere, filtrere og dele inn i sider. Implementerer ExtJS Store-parametre.",
+	"bs-pagetemplates-pref-forcenamespace-help": "Tvinger navnerommet som velges via mallenka når man oppretter ei ny side.",
+	"bs-pagetemplates-no-matching-results-label": "Ingen mal funnet",
+	"bs-pagetemplates-search-template-placeholder": "Finn sidemal"
 }
