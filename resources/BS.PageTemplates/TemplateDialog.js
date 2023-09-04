@@ -35,8 +35,9 @@ Ext.define( 'BS.PageTemplates.TemplateDialog', {
 			checked: true,
 			allowBlank: false
 		});
-		this.cbTemplateTags = new Ext.form.field.Tag({
+		this.cbTemplateTags = new Ext.form.field.Tag( {
 			fieldLabel: mw.message( 'bs-pagetemplates-label-tags' ).plain(),
+			emptyText: mw.message( 'bs-pagetemplates-placeholder-tags' ).plain(),
 			createNewOnEnter: true,
 			forceSelection: false,
 			labelAlign: 'right',
@@ -45,12 +46,23 @@ Ext.define( 'BS.PageTemplates.TemplateDialog', {
 			collapseOnSelect: true,
 			autoSelect: true,
 			typeAhead: false,
-			store: new BS.store.BSApi({
+			store: new BS.store.BSApi( {
 				apiAction: 'bs-pagetemplate-tags-store',
 				fields: [ 'text' ]
-			}),
+			} ),
 			valueField: "text",
-			allowBlank: false
+			allowBlank: false,
+			createNewOnEnter: false,
+			listeners: {
+				blur: function ( field ) {
+					var inputEl = field.inputEl.dom;
+					var enteredText = inputEl.value.trim();
+					if ( enteredText !== "" ) {
+						var tag = { text: enteredText };
+						field.getStore().add( tag );
+					}
+				}
+			}
 		});
 
 		this.cbTargetNamespace = Ext.create( 'BS.form.field.NamespaceTag', {
@@ -71,6 +83,21 @@ Ext.define( 'BS.PageTemplates.TemplateDialog', {
 			this.cbTargetNamespace,
 			this.cbTemplate
 		];
+	},
+	show: function() {
+		this.callParent( arguments );
+		var tagsLabel = Ext.get( 'tagfield-1033-placeholderLabel' );
+		if ( tagsLabel ) {
+			tagsLabel.addCls( 'x-form-text-default' );
+		}
+		var tagsDropdownArrow = document.getElementById('tagfield-1033-trigger-picker');
+		if ( tagsDropdownArrow ) {
+			tagsDropdownArrow.style.display = 'none';
+		}
+		var namespaceLabel = Ext.get( 'ext-comp-1034-placeholderLabel' );
+		if ( namespaceLabel ) {
+			namespaceLabel.addCls( 'x-form-text-default' );
+		}
 	},
 	storePagesReload: function( combo, records, eOpts ) {
 		this.strPages.load( { params: { ns: records[0].get( 'id' ) } } );

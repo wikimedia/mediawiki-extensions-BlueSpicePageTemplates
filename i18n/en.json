@@ -37,6 +37,7 @@
 	"bs-pagetemplates-label-tpl": "Template name",
 	"bs-pagetemplates-label-desc": "Description",
 	"bs-pagetemplates-label-tags": "Tags",
+	"bs-pagetemplates-placeholder-tags": "Add tag",
 	"bs-pagetemplates-label-targetns": "Namespace",
 	"bs-pagetemplates-label-tplns": "Template namespace",
 	"bs-pagetemplates-label-article": "Template",
