@@ -152,6 +152,7 @@
 				"bs-pagetemplates-label-tpl",
 				"bs-pagetemplates-label-desc",
 				"bs-pagetemplates-label-tags",
+				"bs-pagetemplates-placeholder-tags",
 				"bs-pagetemplates-label-targetns",
 				"bs-pagetemplates-label-article",
 				"bs-pagetemplates-confirm-deletetpl",
