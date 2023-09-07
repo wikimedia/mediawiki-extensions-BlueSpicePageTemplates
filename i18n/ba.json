@@ -31,7 +31,7 @@
 	"bs-pagetemplates-headerlabel": "Билдәләү",
 	"bs-pagetemplates-headertargetnamespace": "Исемдәр тупланмаһы",
 	"bs-pagetemplates-tipeditdetails": "Ҡалыптарҙы мөхәррирләргә",
-	"bs-pagetemplates-tipdeletetemplate": "{{PLURAL:$1}} ҡалыбын юйырға",
+	"bs-pagetemplates-tipdeletetemplate": "{{PLURAL:$1|Ҡалыпты|ҡалыптарҙы}} юйырға",
 	"bs-pagetemplates-tipaddtemplate": "Ҡалып өҫтәргә",
 	"bs-pagetemplates-label-tpl": "Ҡалып исеме",
 	"bs-pagetemplates-label-desc": "Һүрәтләү",
