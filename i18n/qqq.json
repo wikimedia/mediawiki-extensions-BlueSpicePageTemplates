@@ -72,5 +72,6 @@
 	"bs-pagetemplates-search-template-placeholder": "Placeholder text displayed in the search template input field",
 	"bs-pagetemplates-headertags": "Label for tags\n{{Identical|Tags}}",
 	"bs-pagetemplates-tag-untagged": "Label for container with page templates for untagged templates",
-	"bs-pagetemplates-ns-undefined": "Label for container with page templates for undefined namespaces"
+	"bs-pagetemplates-ns-undefined": "Label for container with page templates for undefined namespaces",
+	"bs-pagetemplates-placeholder-tags": "Placeholder text in the tag input field"
 }
