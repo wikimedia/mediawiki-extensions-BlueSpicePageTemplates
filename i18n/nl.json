@@ -68,5 +68,6 @@
 	"bs-pagetemplates-search-template-placeholder": "Paginasjabloon zoeken",
 	"bs-pagetemplates-headertags": "Tags",
 	"bs-pagetemplates-tag-untagged": "Niet getagd",
-	"bs-pagetemplates-ns-undefined": "Ongedefinieerde namespace"
+	"bs-pagetemplates-ns-undefined": "Ongedefinieerde namespace",
+	"bs-pagetemplates-placeholder-tags": "Label toevoegen"
 }

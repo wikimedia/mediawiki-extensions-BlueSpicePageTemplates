@@ -63,5 +63,6 @@
 	"bs-pagetemplates-search-template-placeholder": "Poišči predlogo strani",
 	"bs-pagetemplates-headertags": "Oznake",
 	"bs-pagetemplates-tag-untagged": "Neoznačeno",
-	"bs-pagetemplates-ns-undefined": "Neopredeljen imenski prostor"
+	"bs-pagetemplates-ns-undefined": "Neopredeljen imenski prostor",
+	"bs-pagetemplates-placeholder-tags": "Dodaj oznako"
 }

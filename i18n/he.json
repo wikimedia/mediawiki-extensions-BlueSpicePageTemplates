@@ -65,5 +65,6 @@
 	"bs-pagetemplates-search-template-placeholder": "מציאת תבנית דף",
 	"bs-pagetemplates-headertags": "תגים",
 	"bs-pagetemplates-tag-untagged": "לא מתויגות",
-	"bs-pagetemplates-ns-undefined": "מרחב שם לא מוגדר"
+	"bs-pagetemplates-ns-undefined": "מרחב שם לא מוגדר",
+	"bs-pagetemplates-placeholder-tags": "להוסיף תג"
 }
