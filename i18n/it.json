@@ -38,6 +38,7 @@
 	"bs-pagetemplates-tipaddtemplate": "Aggiungi template",
 	"bs-pagetemplates-label-tpl": "Nome template",
 	"bs-pagetemplates-label-desc": "Descrizione",
+	"bs-pagetemplates-placeholder-tags": "Aggiungi etichetta",
 	"bs-pagetemplates-label-targetns": "Namespace",
 	"bs-pagetemplates-label-tplns": "Template namespace",
 	"bs-pagetemplates-label-article": "Template",

@@ -39,6 +39,7 @@
 	"bs-pagetemplates-label-tpl": "Ime predloge",
 	"bs-pagetemplates-label-desc": "Opis",
 	"bs-pagetemplates-label-tags": "Oznake",
+	"bs-pagetemplates-placeholder-tags": "Dodaj oznako",
 	"bs-pagetemplates-label-targetns": "Imenski prostor",
 	"bs-pagetemplates-label-tplns": "Predloga imenskega prostora",
 	"bs-pagetemplates-label-article": "Predloga",
