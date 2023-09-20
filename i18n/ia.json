@@ -61,5 +61,6 @@
 	"bs-pagetemplates-search-template-placeholder": "Cercar patrono de pagina",
 	"bs-pagetemplates-headertags": "Etiquettas",
 	"bs-pagetemplates-tag-untagged": "Sin etiquetta",
-	"bs-pagetemplates-ns-undefined": "Spatio de nomines non definite"
+	"bs-pagetemplates-ns-undefined": "Spatio de nomines non definite",
+	"bs-pagetemplates-placeholder-tags": "Adder etiquetta"
 }
