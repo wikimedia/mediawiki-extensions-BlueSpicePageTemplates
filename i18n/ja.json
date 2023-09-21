@@ -38,5 +38,6 @@
 	"bs-pagetemplates-general-section": "全般",
 	"bs-pagetemplates-remove-message-unknown": "予期せぬエラーが発生しました。もう一度お試しください。",
 	"bs-pagetemplates-label-tags": "タグ",
-	"bs-pagetemplates-headertags": "タグ"
+	"bs-pagetemplates-headertags": "タグ",
+	"bs-pagetemplates-placeholder-tags": "タグを追加"
 }
