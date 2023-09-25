@@ -65,5 +65,6 @@
 	"bs-pagetemplates-search-template-placeholder": "Trouver le modèle de page",
 	"bs-pagetemplates-headertags": "Balises",
 	"bs-pagetemplates-tag-untagged": "Sans balise",
-	"bs-pagetemplates-ns-undefined": "Espace de noms non défini"
+	"bs-pagetemplates-ns-undefined": "Espace de noms non défini",
+	"bs-pagetemplates-placeholder-tags": "Ajouter la balise"
 }
