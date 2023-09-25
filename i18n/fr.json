@@ -41,6 +41,7 @@
 	"bs-pagetemplates-label-tpl": "Nom du modèle",
 	"bs-pagetemplates-label-desc": "Description",
 	"bs-pagetemplates-label-tags": "Balises",
+	"bs-pagetemplates-placeholder-tags": "Ajouter la balise",
 	"bs-pagetemplates-label-targetns": "Espace de noms",
 	"bs-pagetemplates-label-tplns": "Espace de noms des modèles",
 	"bs-pagetemplates-label-article": "Modèle",
