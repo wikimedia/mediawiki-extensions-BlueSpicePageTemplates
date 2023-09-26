@@ -30,6 +30,7 @@
 	"bs-pagetemplates-label-tpl": "テンプレート名",
 	"bs-pagetemplates-label-desc": "説明",
 	"bs-pagetemplates-label-tags": "タグ",
+	"bs-pagetemplates-placeholder-tags": "タグを追加",
 	"bs-pagetemplates-label-targetns": "名前空間",
 	"bs-pagetemplates-label-tplns": "テンプレート名前空間",
 	"bs-pagetemplates-label-article": "テンプレート",

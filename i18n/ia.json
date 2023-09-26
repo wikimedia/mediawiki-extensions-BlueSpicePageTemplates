@@ -37,6 +37,7 @@
 	"bs-pagetemplates-label-tpl": "Nomine del patrono",
 	"bs-pagetemplates-label-desc": "Description",
 	"bs-pagetemplates-label-tags": "Etiquettas",
+	"bs-pagetemplates-placeholder-tags": "Adder etiquetta",
 	"bs-pagetemplates-label-targetns": "Spatio de nomines",
 	"bs-pagetemplates-label-tplns": "Spatio de nomines de patrono",
 	"bs-pagetemplates-label-article": "Patrono",

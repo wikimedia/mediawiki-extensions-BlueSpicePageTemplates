@@ -45,6 +45,7 @@
 	"bs-pagetemplates-label-tpl": "Sjabloonnaam",
 	"bs-pagetemplates-label-desc": "Beschrijving",
 	"bs-pagetemplates-label-tags": "Tags",
+	"bs-pagetemplates-placeholder-tags": "Label toevoegen",
 	"bs-pagetemplates-label-targetns": "Naamruimte",
 	"bs-pagetemplates-label-tplns": "Sjabloonnaamruimte",
 	"bs-pagetemplates-label-article": "Sjabloon",
