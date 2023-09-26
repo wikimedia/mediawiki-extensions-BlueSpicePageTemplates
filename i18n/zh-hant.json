@@ -6,6 +6,7 @@
 			"Kly",
 			"LNDDYL",
 			"Liuxinyu970226",
+			"Winston Sung",
 			"和平奮鬥救地球",
 			"捍粵者"
 		]
@@ -66,5 +67,6 @@
 	"bs-pagetemplates-search-template-placeholder": "查找頁面模板",
 	"bs-pagetemplates-headertags": "標籤",
 	"bs-pagetemplates-tag-untagged": "取消標記",
-	"bs-pagetemplates-ns-undefined": "未定義的命名空間"
+	"bs-pagetemplates-ns-undefined": "未定義的命名空間",
+	"bs-pagetemplates-placeholder-tags": "新增標籤"
 }
