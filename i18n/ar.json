@@ -40,6 +40,7 @@
 	"bs-pagetemplates-label-tpl": "اسم القالب",
 	"bs-pagetemplates-label-desc": "الوصف",
 	"bs-pagetemplates-label-tags": "العلامات",
+	"bs-pagetemplates-placeholder-tags": "أضف وسمًا",
 	"bs-pagetemplates-label-targetns": "النطاق",
 	"bs-pagetemplates-label-tplns": "نطاق القالب",
 	"bs-pagetemplates-label-article": "قالب",
