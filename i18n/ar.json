@@ -64,5 +64,6 @@
 	"bs-pagetemplates-search-template-placeholder": "اعثر على قالب الصفحة",
 	"bs-pagetemplates-headertags": "العلامات",
 	"bs-pagetemplates-tag-untagged": "بدون علامات",
-	"bs-pagetemplates-ns-undefined": "مساحة اسم غير محددة"
+	"bs-pagetemplates-ns-undefined": "مساحة اسم غير محددة",
+	"bs-pagetemplates-placeholder-tags": "أضف وسمًا"
 }
