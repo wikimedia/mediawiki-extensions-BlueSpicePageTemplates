@@ -7,7 +7,8 @@
 			"LNDDYL",
 			"Liuxinyu970226",
 			"和平奮鬥救地球",
-			"捍粵者"
+			"捍粵者",
+			"Winston Sung"
 		]
 	},
 	"bs-pagetemplates-desc": "顯示標記為頁面模板的模板清單",
@@ -43,6 +44,7 @@
 	"bs-pagetemplates-label-tpl": "模板名稱",
 	"bs-pagetemplates-label-desc": "描述",
 	"bs-pagetemplates-label-tags": "標籤",
+	"bs-pagetemplates-placeholder-tags": "新增標籤",
 	"bs-pagetemplates-label-targetns": "命名空間",
 	"bs-pagetemplates-label-tplns": "模板命名空間",
 	"bs-pagetemplates-label-article": "模板",
