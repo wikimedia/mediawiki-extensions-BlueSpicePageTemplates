@@ -7,7 +7,8 @@
 			"佛壁灯",
 			"落花有意12138",
 			"LittlePaw365",
-			"U.T."
+			"U.T.",
+			"Xyb"
 		]
 	},
 	"bs-pagetemplates-desc": "显示标记为页面模板的模板列表",
@@ -43,6 +44,7 @@
 	"bs-pagetemplates-label-tpl": "模板名称",
 	"bs-pagetemplates-label-desc": "描述",
 	"bs-pagetemplates-label-tags": "标签",
+	"bs-pagetemplates-placeholder-tags": "添加标签",
 	"bs-pagetemplates-label-targetns": "命名空间",
 	"bs-pagetemplates-label-tplns": "模板命名空间",
 	"bs-pagetemplates-label-article": "模板",
@@ -59,5 +61,8 @@
 	"bs-usagetracker-pagetemplates": "页面模板",
 	"bs-pagetemplates-nsm-label": "页面模板",
 	"right-pagetemplatesadmin-viewspecialpage": "允许访问管理页面模板的特殊页面 [[Special:PageTemplatesAdmin]] 的权限",
-	"bs-pagetemplates-headertags": "标签"
+	"bs-pagetemplates-no-matching-results-label": "没有找到模板",
+	"bs-pagetemplates-search-template-placeholder": "查找页面模板",
+	"bs-pagetemplates-headertags": "标签",
+	"bs-pagetemplates-ns-undefined": "未定义的命名空间"
 }
