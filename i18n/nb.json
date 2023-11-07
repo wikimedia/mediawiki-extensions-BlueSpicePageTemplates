@@ -61,5 +61,6 @@
 	"apihelp-bs-pagetemplate-tags-store-summary": "Lister opp ale sidemaltagger. Gjør det mulig å sortere, filtrere og dele inn i sider. Implementerer ExtJS Store-parametre.",
 	"bs-pagetemplates-pref-forcenamespace-help": "Tvinger navnerommet som velges via mallenka når man oppretter ei ny side.",
 	"bs-pagetemplates-no-matching-results-label": "Ingen mal funnet",
-	"bs-pagetemplates-search-template-placeholder": "Finn sidemal"
+	"bs-pagetemplates-search-template-placeholder": "Finn sidemal",
+	"bs-pagetemplates-placeholder-tags": "Legg til tagg"
 }
