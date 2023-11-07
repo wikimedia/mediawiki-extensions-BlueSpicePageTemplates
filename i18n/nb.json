@@ -38,6 +38,7 @@
 	"bs-pagetemplates-label-tpl": "Malnavn",
 	"bs-pagetemplates-label-desc": "Beskrivelse",
 	"bs-pagetemplates-label-tags": "Tagger",
+	"bs-pagetemplates-placeholder-tags": "Legg til tagg",
 	"bs-pagetemplates-label-targetns": "Navnerom",
 	"bs-pagetemplates-label-tplns": "Malnavnerom",
 	"bs-pagetemplates-label-article": "Mal",
