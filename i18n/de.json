@@ -6,6 +6,7 @@
 			"Kghbln",
 			"Metalhead64",
 			"Mglaser",
+			"SehrGuterCode",
 			"Stephan Muggli <muggli@hallowelt.biz>"
 		]
 	},
@@ -61,5 +62,9 @@
 	"bs-pagetemplates-pref-forcenamespace-help": "Erzwingt den über den Template-Link ausgewählten Namensraum beim Erstellen einer neuen Seite.",
 	"bs-pagetemplates-no-matching-results-label": "Keine Vorlagen gefunden.",
 	"bs-pagetemplates-search-template-placeholder": "Finde eine Seitenvorlage",
-	"bs-pagetemplates-ns-undefined": "Undefinierter Namensraum"
+	"bs-pagetemplates-ns-undefined": "Undefinierter Namensraum",
+	"bs-pagetemplates-label-tags": "Tags",
+	"bs-pagetemplates-placeholder-tags": "Tag hinzufügen",
+	"bs-pagetemplates-headertags": "Tags",
+	"bs-pagetemplates-tag-untagged": "Ohne Tag"
 }
