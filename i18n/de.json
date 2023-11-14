@@ -6,7 +6,8 @@
 			"Metalhead64",
 			"Mglaser",
 			"Stephan Muggli <muggli@hallowelt.biz>",
-			"Abcdefg"
+			"Abcdefg",
+			"SehrGuterCode"
 		]
 	},
 	"bs-pagetemplates-desc": "Es können vorgefertigte Seitenvorlagen angelegt werden",
@@ -41,6 +42,8 @@
 	"bs-pagetemplates-tipaddtemplate": "Vorlage hinzufügen",
 	"bs-pagetemplates-label-tpl": "Name",
 	"bs-pagetemplates-label-desc": "Beschreibung",
+	"bs-pagetemplates-label-tags": "Tags",
+	"bs-pagetemplates-placeholder-tags": "Tag hinzufügen",
 	"bs-pagetemplates-label-targetns": "Namensraum",
 	"bs-pagetemplates-label-tplns": "Vorlagen Namensraum",
 	"bs-pagetemplates-label-article": "Vorlage",
@@ -61,5 +64,7 @@
 	"bs-pagetemplates-pref-forcenamespace-help": "Erzwingt den über den Template-Link ausgewählten Namensraum beim Erstellen einer neuen Seite.",
 	"bs-pagetemplates-no-matching-results-label": "Keine Vorlagen gefunden.",
 	"bs-pagetemplates-search-template-placeholder": "Finde eine Seitenvorlage",
+	"bs-pagetemplates-headertags": "Tags",
+	"bs-pagetemplates-tag-untagged": "Ohne Tag",
 	"bs-pagetemplates-ns-undefined": "Undefinierter Namensraum"
 }
