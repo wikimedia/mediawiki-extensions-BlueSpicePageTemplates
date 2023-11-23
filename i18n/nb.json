@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jon Harald Søby",
-			"EdoAug"
+			"EdoAug",
+			"Jon Harald Søby"
 		]
 	},
 	"bs-pagetemplates-desc": "Viser en liste over maler merket som sidemaler",
@@ -61,5 +61,6 @@
 	"bs-pagetemplates-search-template-placeholder": "Finn sidemal",
 	"bs-pagetemplates-headertags": "Tagger",
 	"bs-pagetemplates-tag-untagged": "Umerket",
-	"bs-pagetemplates-ns-undefined": "Udefinert navnerom"
+	"bs-pagetemplates-ns-undefined": "Udefinert navnerom",
+	"bs-pagetemplates-placeholder-tags": "Legg til tagg"
 }
