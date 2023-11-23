@@ -2,14 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Esketti",
+			"HanV",
 			"Mainframe98",
 			"McDutchie",
 			"Rots61",
 			"SPQRobin",
 			"Siebrand",
 			"Sjoerddebruin",
-			"TrisbaasBaan",
-			"HanV"
+			"TrisbaasBaan"
 		]
 	},
 	"bs-pagetemplates-desc": "Toont een lijst met sjablonen die zijn gemarkeerd als paginasjablonen",

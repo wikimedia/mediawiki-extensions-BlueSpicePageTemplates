@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Milicevic01",
-			"Kizule"
+			"Kizule",
+			"Milicevic01"
 		]
 	},
 	"prefs-pagetemplates": "Шаблони странице",
@@ -13,7 +13,7 @@
 	"bs-pagetemplates-tpl-desc-toolong": "Опис је предугачак. Највише 255 карактера.",
 	"bs-pagetemplates-tpl-label-toolong": "Назив је предугачака. Највише 255 карактера.",
 	"bs-pagetemplates-tpl-label-empty": "Унесите назив.",
-	"bs-pagetemplates-tpl-name-toolong": "Име шаблона је предугачко. Користите максималну дужину од 255 карактера.",
+	"bs-pagetemplates-tpl-name-toolong": "Име шаблона је предугачко. Највише 255 карактера.",
 	"bs-pagetemplates-tpl-name-empty": "Унесите име шаблона.",
 	"bs-pagetemplates-no-id": "Унесите страницу коју ћете користити као шаблон.",
 	"bs-pagetemplates-tpl-added": "Шаблон је додат.",
