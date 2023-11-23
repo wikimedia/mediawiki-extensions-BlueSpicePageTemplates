@@ -52,5 +52,6 @@
 	"action-pagetemplatesadmin-viewspecialpage": "visualizzare la pagina speciale \"{{int:pagetemplatesadmin}}\"",
 	"pagetemplatesadmin": "Amministrazione delle pagine template",
 	"bs-usagetracker-pagetemplates": "template di pagina",
-	"bs-pagetemplates-pref-forcenamespace-help": "Forza il namespace selezionato attraverso il link template quando si crea una nuova pagina."
+	"bs-pagetemplates-pref-forcenamespace-help": "Forza il namespace selezionato attraverso il link template quando si crea una nuova pagina.",
+	"bs-pagetemplates-placeholder-tags": "Aggiungi etichetta"
 }

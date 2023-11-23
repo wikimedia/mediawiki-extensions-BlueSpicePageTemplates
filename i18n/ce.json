@@ -9,5 +9,17 @@
 	"bs-pagetemplates-headertargetnamespace": "ЦӀерийн меттиг",
 	"bs-pagetemplates-label-targetns": "ЦӀерийн меттиг",
 	"bs-pagetemplates-label-tplns": "Кепан цӀерийн меттиг",
-	"bs-pagetemplates-label-article": "Кеп"
+	"bs-pagetemplates-label-article": "Кеп",
+	"prefs-pagetemplates": "АгӀонийн кепаш",
+	"bs-pagetemplatesadmin-text": "АгӀонийн кепаш",
+	"bs-pagetemplates-empty-page": "Йаьсса агӀо",
+	"bs-pagetemplates-tipeditdetails": "Тайе кеп",
+	"bs-pagetemplates-tipdeletetemplate": "ДӀайаккха {{PLURAL:$1||кеп}}",
+	"bs-pagetemplates-tipaddtemplate": "ТӀетоха кеп",
+	"bs-pagetemplates-label-tpl": "Кепан цӀе",
+	"bs-pagetemplates-label-desc": "Цуьнах лаьцна",
+	"bs-pagetemplates-label-tags": "Тегаш",
+	"bs-usagetracker-pagetemplates": "агӀонийн кепаш",
+	"bs-pagetemplates-nsm-label": "АгӀонан кепаш",
+	"bs-pagetemplates-headertags": "Тегаш"
 }

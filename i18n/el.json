@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Dogogos123",
+			"Eleni.Christopoulou",
 			"NikosLikomitros",
-			"Nikosgranturismogt"
+			"Nikosgranturismogt",
+			"Norhorn"
 		]
 	},
 	"prefs-pagetemplates": "Πρότυπα σελίδων",
@@ -21,5 +24,12 @@
 	"bs-pagetemplates-label-tplns": "Ονοματοχώρος προτύπων",
 	"bs-pagetemplates-label-article": "Πρότυπο",
 	"pagetemplatesadmin": "Διαχείριση προτύπων σελίδας",
-	"bs-usagetracker-pagetemplates": "Πρότυπα σελίδας"
+	"bs-usagetracker-pagetemplates": "Πρότυπα σελίδας",
+	"bs-pagetemplates-label-tags": "Ετικέτες",
+	"apihelp-bs-pagetemplate-tags-store-summary": "Εμφανίζει όλες τις ετικέτες προτύπων σελίδας. Επιτρέπει ταξινόμηση, φιλτράρισμα και σελιδοποίηση. Υλοποιεί παραμέτρους ExtJS Store.",
+	"bs-pagetemplates-no-matching-results-label": "Δε βρέθηκαν πρότυπα.",
+	"bs-pagetemplates-search-template-placeholder": "Εύρεση προτύπου σελίδας",
+	"bs-pagetemplates-headertags": "Ετικέτες",
+	"bs-pagetemplates-tag-untagged": "Χωρίς ετικέτα",
+	"bs-pagetemplates-ns-undefined": "Απροσδιόριστος χώρος ονομάτων"
 }

@@ -5,6 +5,7 @@
 			"Ice bulldog",
 			"Irus",
 			"Kaganer",
+			"Kareyac",
 			"Mouse21",
 			"Okras",
 			"Pacha Tchernof",
@@ -56,5 +57,6 @@
 	"action-pagetemplatesadmin-viewspecialpage": "просмотреть специальную страницу \"{{int:pagetemplatesadmin}}\"",
 	"pagetemplatesadmin": "Управление шаблонами страниц",
 	"bs-usagetracker-pagetemplates": "шаблоны страниц",
-	"bs-pagetemplates-nsm-label": "Шаблоны страницы"
+	"bs-pagetemplates-nsm-label": "Шаблоны страницы",
+	"bs-pagetemplates-label-tags": "Теги"
 }

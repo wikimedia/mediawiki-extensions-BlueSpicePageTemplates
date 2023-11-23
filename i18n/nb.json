@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jon Harald Søby",
-			"EdoAug"
+			"EdoAug",
+			"Jon Harald Søby"
 		]
 	},
 	"bs-pagetemplates-desc": "Viser en liste over maler merket som sidemaler",
@@ -53,5 +53,14 @@
 	"bs-usagetracker-pagetemplates": "sidemaler",
 	"bs-pagetemplates-nsm-label": "Sidemaler",
 	"right-pagetemplatesadmin-viewspecialpage": "Tilgang til spesialsiden [[Special:PageTemplatesAdmin]], der sidemaler kan behandles",
-	"bs-pagetemplates-pref-hidedefaults-help": "Fjerner standardmalen «Tom side» fra utvalget over sidemaler når man oppretter en side."
+	"bs-pagetemplates-pref-hidedefaults-help": "Fjerner standardmalen «Tom side» fra utvalget over sidemaler når man oppretter en side.",
+	"bs-pagetemplates-label-tags": "Tagger",
+	"bs-pagetemplates-placeholder-tags": "Legg til tagg",
+	"apihelp-bs-pagetemplate-tags-store-summary": "Lister opp ale sidemaltagger. Gjør det mulig å sortere, filtrere og dele inn i sider. Implementerer ExtJS Store-parametre.",
+	"bs-pagetemplates-pref-forcenamespace-help": "Tvinger navnerommet som velges via mallenka når man oppretter ei ny side.",
+	"bs-pagetemplates-no-matching-results-label": "Ingen mal funnet",
+	"bs-pagetemplates-search-template-placeholder": "Finn sidemal",
+	"bs-pagetemplates-headertags": "Tagger",
+	"bs-pagetemplates-tag-untagged": "Umerket",
+	"bs-pagetemplates-ns-undefined": "Udefinert navnerom"
 }

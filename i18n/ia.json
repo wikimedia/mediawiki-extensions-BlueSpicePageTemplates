@@ -53,5 +53,13 @@
 	"bs-pagetemplates-nsm-label": "Patronos de pagina",
 	"right-pagetemplatesadmin-viewspecialpage": "Accesso al pagina special [[Special:PageTemplatesAdmin]] ubi se gere le patronos de pagina",
 	"bs-pagetemplates-pref-hidedefaults-help": "Remove le patrono \"pagina vacue\" standard del selection de patronos de pagina durante le creation de paginas.",
-	"bs-pagetemplates-pref-forcenamespace-help": "Fortia le spatio de nomines seligite via le ligamine de patrono quando se crea un nove pagina."
+	"bs-pagetemplates-pref-forcenamespace-help": "Fortia le spatio de nomines seligite via le ligamine de patrono quando se crea un nove pagina.",
+	"bs-pagetemplates-label-tags": "Etiquettas",
+	"bs-pagetemplates-placeholder-tags": "Adder etiquetta",
+	"apihelp-bs-pagetemplate-tags-store-summary": "Lista tote le etiquettas de patronos de pagina. Permitte ordinar, filtrar e paginar. Implementa parametros ExtJS Store.",
+	"bs-pagetemplates-no-matching-results-label": "Nulle patrono trovate",
+	"bs-pagetemplates-search-template-placeholder": "Cercar patrono de pagina",
+	"bs-pagetemplates-headertags": "Etiquettas",
+	"bs-pagetemplates-tag-untagged": "Sin etiquetta",
+	"bs-pagetemplates-ns-undefined": "Spatio de nomines non definite"
 }

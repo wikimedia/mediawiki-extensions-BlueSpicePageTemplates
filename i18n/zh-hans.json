@@ -1,12 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
+			"LittlePaw365",
 			"Liuxinyu970226",
 			"Ps2049",
+			"U.T.",
 			"Xiplus",
+			"Xyb",
 			"佛壁灯",
-			"落花有意12138",
-			"LittlePaw365"
+			"落花有意12138"
 		]
 	},
 	"bs-pagetemplates-desc": "显示标记为页面模板的模板列表",
@@ -56,5 +58,11 @@
 	"pagetemplatesadmin": "页面模板管理",
 	"bs-usagetracker-pagetemplates": "页面模板",
 	"bs-pagetemplates-nsm-label": "页面模板",
-	"right-pagetemplatesadmin-viewspecialpage": "允许访问管理页面模板的特殊页面 [[Special:PageTemplatesAdmin]] 的权限"
+	"right-pagetemplatesadmin-viewspecialpage": "允许访问管理页面模板的特殊页面 [[Special:PageTemplatesAdmin]] 的权限",
+	"bs-pagetemplates-label-tags": "标签",
+	"bs-pagetemplates-placeholder-tags": "添加标签",
+	"bs-pagetemplates-no-matching-results-label": "没有找到模板",
+	"bs-pagetemplates-search-template-placeholder": "查找页面模板",
+	"bs-pagetemplates-headertags": "标签",
+	"bs-pagetemplates-ns-undefined": "未定义的命名空间"
 }

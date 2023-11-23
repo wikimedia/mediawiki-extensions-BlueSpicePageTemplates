@@ -53,5 +53,11 @@
 	"action-pagetemplatesadmin-viewspecialpage": "ver la página especial \"{{int:pagetemplatesadmin}}\"",
 	"pagetemplatesadmin": "Administración de plantillas de páginas",
 	"bs-usagetracker-pagetemplates": "plantillas de página",
-	"bs-pagetemplates-nsm-label": "PlantillasDePagina"
+	"bs-pagetemplates-nsm-label": "PlantillasDePagina",
+	"bs-pagetemplates-label-tags": "Etiquetas",
+	"apihelp-bs-pagetemplate-tags-store-summary": "Enumera todas las etiquetas de plantillas de página. Permite ordenarlas, filtrarlas y paginarlas. Implementa los parámetros de ExtJS Store.",
+	"bs-pagetemplates-no-matching-results-label": "No se encontró ninguna plantilla",
+	"bs-pagetemplates-headertags": "Etiquetas",
+	"bs-pagetemplates-tag-untagged": "No etiquetadas",
+	"bs-pagetemplates-ns-undefined": "Espacio de nombres no definido"
 }

@@ -3,6 +3,7 @@
 		"authors": [
 			"A2y4",
 			"LaMagiaaa",
+			"MathXplore",
 			"Shirayuki"
 		]
 	},
@@ -35,5 +36,8 @@
 	"bs-pagetemplates-remove-message-unknown": "予期せぬエラーが発生しました。もう一度お試しください。",
 	"bs-pagetemplates-remove-message-success": "以下の{{PLURAL:$1|テンプレート}}を削除しました: $2",
 	"bs-pagetemplates-remove-message-failure": "以下の{{PLURAL:$1|テンプレート}}を削除できませんでした: $2 (理由: $3)",
-	"action-pagetemplatesadmin-viewspecialpage": "特別ページ「{{int:pagetemplatesadmin}}」の閲覧"
+	"action-pagetemplatesadmin-viewspecialpage": "特別ページ「{{int:pagetemplatesadmin}}」の閲覧",
+	"bs-pagetemplates-label-tags": "タグ",
+	"bs-pagetemplates-placeholder-tags": "タグを追加",
+	"bs-pagetemplates-headertags": "タグ"
 }
