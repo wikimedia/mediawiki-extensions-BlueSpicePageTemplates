@@ -5,12 +5,14 @@ namespace BlueSpice\PageTemplates\ContentProvisioner;
 use BlueSpice\PageTemplates\ContentImport\PageTemplateDAO;
 use Language;
 use MediaWiki\Languages\LanguageFallback;
+use MWStake\MediaWiki\Component\ContentProvisioner\EntityKey;
 use MWStake\MediaWiki\Component\ContentProvisioner\IContentProvisioner;
 use MWStake\MediaWiki\Component\ContentProvisioner\IManifestListProvider;
 use MWStake\MediaWiki\Component\ContentProvisioner\ImportLanguage;
 use MWStake\MediaWiki\Component\ContentProvisioner\Output\NullOutput;
 use MWStake\MediaWiki\Component\ContentProvisioner\OutputAwareInterface;
 use MWStake\MediaWiki\Component\ContentProvisioner\OutputInterface;
+use MWStake\MediaWiki\Component\ContentProvisioner\UpdateLogStorageTrait;
 use Psr\Log\LoggerAwareInterface;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
@@ -23,6 +25,7 @@ class PageTemplatesProvisioner implements
 	OutputAwareInterface,
 	IContentProvisioner
 {
+	use UpdateLogStorageTrait;
 
 	/**
 	 * Logger object
@@ -202,6 +205,14 @@ class PageTemplatesProvisioner implements
 			$templateNamespace = $title->getNamespace();
 			$templateExists = $this->dao->templateExists( $templateTitle, $templateNamespace );
 			if ( !$templateExists ) {
+				// This template was already imported, but does not exist now.
+				// It should have been removed by user, so no need to import it again
+				$entityKey = new EntityKey( 'PageTemplatesProvisioner', $title->getPrefixedDBkey() );
+				if ( $this->entityWasSynced( $entityKey ) ) {
+					$this->output->write( "Template was synced, but at some point removed by user. Skipping...\n" );
+					continue;
+				}
+
 				$this->dao->insertTemplate(
 					$pageData['label'],
 					$pageData['description'],
@@ -209,7 +220,9 @@ class PageTemplatesProvisioner implements
 					$templateNamespace
 				);
 
-				$this->output->write( "... Database entry in 'bs_pagetemplate' table was created\n" );
+				$this->output->write( "Database entry in 'bs_pagetemplate' table was created\n" );
+				// Add sync record in database
+				$this->upsertEntitySyncRecord( $entityKey );
 			} else {
 				$this->dao->updateTemplate(
 					$pageData['label'],
@@ -218,7 +231,11 @@ class PageTemplatesProvisioner implements
 					$templateNamespace
 				);
 
-				$this->output->write( "... Database entry in 'bs_pagetemplate' table was updated\n" );
+				$this->output->write( "Database entry in 'bs_pagetemplate' table was updated\n" );
+
+				$entityKey = new EntityKey( 'PageTemplatesProvisioner', $title->getPrefixedDBkey() );
+				// Update sync record in database
+				$this->upsertEntitySyncRecord( $entityKey );
 			}
 		}
 	}
