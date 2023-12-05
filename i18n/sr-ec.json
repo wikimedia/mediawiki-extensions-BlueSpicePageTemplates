@@ -41,7 +41,7 @@
 	"bs-pagetemplates-confirm-deletetpl": "Да ли сте сигурни да желите да {{PLURAL:$1|обришете овај шаблон|обришете ове шаблоне}}?",
 	"bs-pagetemplates-remove-message-unknown": "Дошло је до неочекиване грешке, покушајте поново.",
 	"bs-pagetemplates-remove-message-success": "{{PLURAL:$1|Наведен шаблон је обрисан|Наведени шаблони су обрисани}}: $2",
-	"bs-pagetemplates-remove-message-failure": "{{PLURAL:$1|Наведен шаблон није могао бити обрисан|Наведени шаблони нису могли бити обрисани}}: $2 (Разлог: 3)",
+	"bs-pagetemplates-remove-message-failure": "{{PLURAL:$1|Наведен шаблон није могао бити обрисан|Наведени шаблони нису могли бити обрисани}}: $2 (Разлог: $3)",
 	"bs-pagetemplates-no-matching-results-label": "Шаблон није пронађен",
 	"bs-pagetemplates-headertags": "Ознаке"
 }
