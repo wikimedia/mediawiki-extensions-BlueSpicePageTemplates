@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Elisardojm"
+			"Elisardojm",
+			"O Breixo"
 		]
 	},
 	"bs-pagetemplates-desc": "Amosa unha lista de modelos marcados como modelos de páxina",
 	"prefs-pagetemplates": "Modelos de páxina",
-	"bs-pagetemplates-empty-page": "Página baleira",
+	"bs-pagetemplates-empty-page": "Páxina baleira",
 	"bs-pagetemplates-empty-page-desc": "Comezar cunha páxina baleira.",
 	"bs-pagetemplatesadmin-label": "Modelos de páxina",
 	"bs-pagetemplates-tpl-desc-toolong": "A descrición é demasiado longa. Utilice 255 caracteres como máximo.",
