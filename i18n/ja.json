@@ -4,11 +4,13 @@
 			"A2y4",
 			"LaMagiaaa",
 			"MathXplore",
-			"Shirayuki"
+			"Shirayuki",
+			"もなー(偽物)"
 		]
 	},
 	"bs-pagetemplates-desc": "ページ テンプレートの印が付けられたテンプレートの一覧を表示する",
 	"prefs-pagetemplates": "ページ テンプレート",
+	"bs-pagetemplatesadmin-text": "ページ テンプレート",
 	"bs-pagetemplates-empty-page": "空のページ",
 	"bs-pagetemplatesadmin-label": "ページ テンプレート",
 	"bs-pagetemplates-tpl-label-empty": "ラベルを入力してください。",
@@ -39,5 +41,7 @@
 	"bs-pagetemplates-remove-message-success": "以下の{{PLURAL:$1|テンプレート}}を削除しました: $2",
 	"bs-pagetemplates-remove-message-failure": "以下の{{PLURAL:$1|テンプレート}}を削除できませんでした: $2 (理由: $3)",
 	"action-pagetemplatesadmin-viewspecialpage": "特別ページ「{{int:pagetemplatesadmin}}」の閲覧",
+	"bs-pagetemplates-no-matching-results-label": "テンプレートが見つかりませんでした",
+	"bs-pagetemplates-search-template-placeholder": "ページテンプレートを検索",
 	"bs-pagetemplates-headertags": "タグ"
 }
