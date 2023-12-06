@@ -4,7 +4,8 @@
 			"A2y4",
 			"LaMagiaaa",
 			"MathXplore",
-			"Shirayuki"
+			"Shirayuki",
+			"もなー(偽物)"
 		]
 	},
 	"bs-pagetemplates-desc": "ページ テンプレートの印が付けられたテンプレートの一覧を表示する",
@@ -39,5 +40,8 @@
 	"bs-pagetemplates-remove-message-unknown": "予期せぬエラーが発生しました。もう一度お試しください。",
 	"bs-pagetemplates-label-tags": "タグ",
 	"bs-pagetemplates-headertags": "タグ",
-	"bs-pagetemplates-placeholder-tags": "タグを追加"
+	"bs-pagetemplates-placeholder-tags": "タグを追加",
+	"bs-pagetemplatesadmin-text": "ページ テンプレート",
+	"bs-pagetemplates-no-matching-results-label": "テンプレートが見つかりませんでした",
+	"bs-pagetemplates-search-template-placeholder": "ページテンプレートを検索"
 }
