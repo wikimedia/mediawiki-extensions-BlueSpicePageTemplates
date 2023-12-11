@@ -43,5 +43,8 @@
 	"bs-pagetemplates-placeholder-tags": "タグを追加",
 	"bs-pagetemplatesadmin-text": "ページ テンプレート",
 	"bs-pagetemplates-no-matching-results-label": "テンプレートが見つかりませんでした",
-	"bs-pagetemplates-search-template-placeholder": "ページテンプレートを検索"
+	"bs-pagetemplates-search-template-placeholder": "ページテンプレートを検索",
+	"bs-pagetemplates-nooldtpl": "古いテンプレートが見つかりませんでした。",
+	"bs-pagetemplates-choose-template-empty": "このページは存在しません。あなたは新しいページを作成できます。または、ブラウザの「戻る」ボタンをクリックして、前のページに戻ってください。",
+	"bs-pagetemplates-pref-forcenamespace": "ターゲット名前空間を強制する"
 }
