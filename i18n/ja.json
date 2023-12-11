@@ -4,11 +4,13 @@
 			"A2y4",
 			"LaMagiaaa",
 			"MathXplore",
-			"Shirayuki"
+			"Shirayuki",
+			"もなー(偽物)"
 		]
 	},
 	"bs-pagetemplates-desc": "ページ テンプレートの印が付けられたテンプレートの一覧を表示する",
 	"prefs-pagetemplates": "ページ テンプレート",
+	"bs-pagetemplatesadmin-text": "ページ テンプレート",
 	"bs-pagetemplates-empty-page": "空のページ",
 	"bs-pagetemplatesadmin-label": "ページ テンプレート",
 	"bs-pagetemplates-tpl-label-empty": "ラベルを入力してください。",
@@ -19,6 +21,7 @@
 	"bs-pagetemplates-tpl-edited": "変更内容を保存しました。",
 	"bs-pagetemplates-dberror": "データベース エラーが発生しました。",
 	"bs-pagetemplates-tpl-deleted": "テンプレートを削除しました。",
+	"bs-pagetemplates-general-section": "全般",
 	"bs-pagetemplates-pref-excludens": "テンプレートを表示しない名前空間:",
 	"bs-pagetemplates-pref-hidedefaults": "既定のテンプレートを非表示にする",
 	"bs-pagetemplates-headerlabel": "ラベル",
@@ -32,12 +35,13 @@
 	"bs-pagetemplates-label-tplns": "テンプレート名前空間",
 	"bs-pagetemplates-label-article": "テンプレート",
 	"bs-pagetemplates-confirm-deletetpl": "{{PLURAL:$1|このテンプレート|これらのテンプレート}}を本当に削除しますか?",
+	"bs-pagetemplates-remove-message-unknown": "予期せぬエラーが発生しました。もう一度お試しください。",
 	"bs-pagetemplates-remove-message-success": "以下の{{PLURAL:$1|テンプレート}}を削除しました: $2",
 	"bs-pagetemplates-remove-message-failure": "以下の{{PLURAL:$1|テンプレート}}を削除できませんでした: $2 (理由: $3)",
 	"action-pagetemplatesadmin-viewspecialpage": "特別ページ「{{int:pagetemplatesadmin}}」の閲覧",
-	"bs-pagetemplates-general-section": "全般",
-	"bs-pagetemplates-remove-message-unknown": "予期せぬエラーが発生しました。もう一度お試しください。",
 	"bs-pagetemplates-label-tags": "タグ",
+	"bs-pagetemplates-no-matching-results-label": "テンプレートが見つかりませんでした",
+	"bs-pagetemplates-search-template-placeholder": "ページテンプレートを検索",
 	"bs-pagetemplates-headertags": "タグ",
 	"bs-pagetemplates-placeholder-tags": "タグを追加"
 }
