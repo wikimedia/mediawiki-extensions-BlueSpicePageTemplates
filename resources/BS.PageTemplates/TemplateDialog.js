@@ -37,7 +37,7 @@ Ext.define( 'BS.PageTemplates.TemplateDialog', {
 		});
 		this.cbTemplateTags = new Ext.form.field.Tag( {
 			fieldLabel: mw.message( 'bs-pagetemplates-label-tags' ).plain(),
-			emptyText: mw.message( 'bs-pagetemplates-placeholder-tags' ).plain(),
+			emptyText: mw.message( 'bs-pagetemplates-placeholder-tags' ).escaped(),
 			createNewOnEnter: true,
 			forceSelection: false,
 			labelAlign: 'right',
