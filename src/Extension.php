@@ -74,6 +74,10 @@ class Extension extends \BlueSpice\Extension {
 			return true;
 		}
 
+		if ( $title->getContentModel() !== CONTENT_MODEL_WIKITEXT ) {
+			return true;
+		}
+
 		$services = MediaWikiServices::getInstance();
 
 		$config = $services->getConfigFactory()->makeConfig( 'bsg' );
