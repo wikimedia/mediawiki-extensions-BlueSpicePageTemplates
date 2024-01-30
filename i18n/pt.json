@@ -56,5 +56,13 @@
 	"bs-pagetemplates-nsm-label": "ModelosDePágina",
 	"right-pagetemplatesadmin-viewspecialpage": "Acesso à página especial [[Special:PageTemplatesAdmin]], onde os modelos de páginas podem ser administrados.",
 	"bs-pagetemplates-pref-hidedefaults-help": "Remove o modelo padrão \"Página vazia\" da seleção de modelos de página durante a criação de página.",
-	"bs-pagetemplates-pref-forcenamespace-help": "Força o espaço nominal selecionado através da hiperligação do modelo ao criar uma página nova."
+	"bs-pagetemplates-pref-forcenamespace-help": "Força o espaço nominal selecionado através da hiperligação do modelo ao criar uma página nova.",
+	"bs-pagetemplates-label-tags": "Etiquetas",
+	"bs-pagetemplates-placeholder-tags": "Adicionar etiqueta",
+	"apihelp-bs-pagetemplate-tags-store-summary": "Lista todas as etiquetas de modelos de página. Permite ordenar, filtrar e paginar. Implementa os parâmetros ExtJS Store.",
+	"bs-pagetemplates-no-matching-results-label": "Não foi encontrado nenhum modelo",
+	"bs-pagetemplates-search-template-placeholder": "Encontrar modelo de página",
+	"bs-pagetemplates-headertags": "Etiquetas",
+	"bs-pagetemplates-tag-untagged": "Sem etiqueta",
+	"bs-pagetemplates-ns-undefined": "Espaço nominal indefinido"
 }
