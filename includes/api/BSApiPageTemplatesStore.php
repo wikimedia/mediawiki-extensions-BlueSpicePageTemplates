@@ -33,7 +33,7 @@ class BSApiPageTemplatesStore extends BSApiExtJSStoreBase {
 	 * @return array
 	 */
 	public function makeData( $query = '' ) {
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
 		$res = $dbr->select(
 			[ 'bs_pagetemplate' ],
 			[
