@@ -147,7 +147,7 @@ class BSApiPageTemplatesTasks extends BSApiTasksBase {
 			return $oReturn;
 		}
 
-		$oDbw = wfGetDB( DB_PRIMARY );
+		$dbw = $this->services->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 
 		$oTitle = Title::newFromText( $sTemplateName );
 		if ( !$oTitle ) {
@@ -156,7 +156,7 @@ class BSApiPageTemplatesTasks extends BSApiTasksBase {
 		}
 		// This is the add template part
 		if ( empty( $iOldId ) ) {
-			$oDbw->insert(
+			$dbw->insert(
 				'bs_pagetemplate',
 				[
 					'pt_label' => $sLabel,
@@ -170,18 +170,17 @@ class BSApiPageTemplatesTasks extends BSApiTasksBase {
 			);
 			$oReturn->success = true;
 			$oReturn->payload = new stdClass();
-			$oReturn->payload->id = $oDbw->insertId();
+			$oReturn->payload->id = $dbw->insertId();
 			$oReturn->message = wfMessage( 'bs-pagetemplates-tpl-added' )->plain();
 		// and here we have edit template
 		} else {
-			$rRes = $oDbw->select( 'bs_pagetemplate', 'pt_id', [ 'pt_id' => $iOldId ] );
+			$rRes = $dbw->select( 'bs_pagetemplate', 'pt_id', [ 'pt_id' => $iOldId ] );
 			if ( !$rRes->numRows() ) {
 				$oReturn->message = wfMessage( 'bs-pagetemplates-nooldtpl' )->plain();
 				return $oReturn;
 			}
 
-			// $oDbw = wfGetDB( DB_PRIMARY );
-			$rRes = $oDbw->update(
+			$rRes = $dbw->update(
 				'bs_pagetemplate',
 				[
 					'pt_id' => $iOldId,
@@ -224,10 +223,8 @@ class BSApiPageTemplatesTasks extends BSApiTasksBase {
 		}
 
 		$output = [];
-
+		$dbw = $this->services->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 		foreach ( $ids as $id => $name ) {
-
-			$dbw = wfGetDB( DB_PRIMARY );
 			$res = $dbw->delete( 'bs_pagetemplate', [ 'pt_id' => $id ] );
 
 			if ( $res === false ) {
