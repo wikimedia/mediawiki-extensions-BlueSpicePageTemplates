@@ -21,6 +21,9 @@ class BSPageTemplateList {
 	 */
 	protected $config = [];
 
+	/** @var MediaWikiServices */
+	protected $services = [];
+
 	/**
 	 *
 	 * @param Title $title
@@ -34,6 +37,7 @@ class BSPageTemplateList {
 			self::HIDE_DEFAULTS => false,
 			self::UNSET_TARGET_NAMESPACES => false
 		];
+		$this->services = MediaWikiServices::getInstance();
 
 		$this->init();
 	}
@@ -54,7 +58,7 @@ class BSPageTemplateList {
 	 *
 	 */
 	protected function fetchDB() {
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
 
 		$res = $dbr->select(
 			'bs_pagetemplate',
@@ -64,7 +68,7 @@ class BSPageTemplateList {
 			[ 'ORDER BY' => 'pt_label' ]
 		);
 
-		$namespaceInfo = MediaWikiServices::getInstance()->getNamespaceInfo();
+		$namespaceInfo = $this->services->getNamespaceInfo();
 		foreach ( $res as $row ) {
 			if ( $this->config[self::HIDE_IF_NOT_IN_TARGET_NS] ) {
 
@@ -102,7 +106,7 @@ class BSPageTemplateList {
 		}
 
 		$targetUrl = $this->title->getLinkURL( [ 'action' => 'edit', 'preload' => '' ] );
-		MediaWikiServices::getInstance()->getHookContainer()->run(
+		$this->services->getHookContainer()->run(
 			'BSPageTemplatesModifyTargetUrl',
 			[
 				$this->title,
@@ -128,7 +132,7 @@ class BSPageTemplateList {
 	 *
 	 */
 	protected function filterByPermissionAndAddTargetUrls() {
-		$pm = \MediaWiki\MediaWikiServices::getInstance()->getPermissionManager();
+		$pm = $this->services->getPermissionManager();
 		// No context available
 		$user = RequestContext::getMain()->getUser();
 		foreach ( $this->dataSets as $id => &$dataSet ) {
@@ -165,7 +169,7 @@ class BSPageTemplateList {
 					'action' => 'edit',
 					'preload' => $preloadTitle->getPrefixedDBkey()
 				] );
-				MediaWikiServices::getInstance()->getHookContainer()->run(
+				$this->services->getHookContainer()->run(
 					'BSPageTemplatesModifyTargetUrl',
 					[
 						$targetTitle,
@@ -224,7 +228,7 @@ class BSPageTemplateList {
 	 */
 	private function getTagSortedTemplates() {
 		$filteredDataSets = [];
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
 		$res = $dbr->select(
 			[ 'bs_pagetemplate' ],
 			[ 'pt_tags' ],
