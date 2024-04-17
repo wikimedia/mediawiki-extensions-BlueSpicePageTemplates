@@ -42,34 +42,26 @@ Ext.define( 'BS.PageTemplates.TemplateDialog', {
 			forceSelection: false,
 			labelAlign: 'right',
 			multiSelect: true,
-			queryMode: 'remote',
+			queryMode: 'local',
 			collapseOnSelect: true,
-			autoSelect: true,
-			typeAhead: false,
+			autoSelect: false,
+			typeAhead: true,
 			store: new BS.store.BSApi( {
 				apiAction: 'bs-pagetemplate-tags-store',
 				fields: [ 'text' ]
 			} ),
 			valueField: "text",
-			allowBlank: false,
-			createNewOnEnter: false,
-			listeners: {
-				blur: function ( field ) {
-					var inputEl = field.inputEl.dom;
-					var enteredText = inputEl.value.trim();
-					if ( enteredText !== "" ) {
-						var tag = { text: enteredText };
-						field.getStore().add( tag );
-					}
-				}
-			}
+			allowBlank: true
 		});
+		this.cbTemplateTags.addCls( 'x-form-text-default' );
+		this.cbTemplateTags.getTrigger( 'picker' ).hide();
 
 		this.cbTargetNamespace = Ext.create( 'BS.form.field.NamespaceTag', {
 			fieldLabel: mw.message( 'bs-pagetemplates-label-targetns' ).plain(),
 			includeAll: true,
 			allowBlank: false
 		} );
+		this.cbTargetNamespace.addCls( 'x-form-text-default' );
 
 		this.cbTemplate = Ext.create( 'BS.form.field.TitleCombo', {
 			fieldLabel: mw.message( 'bs-pagetemplates-label-article' ).plain(),
@@ -83,21 +75,6 @@ Ext.define( 'BS.PageTemplates.TemplateDialog', {
 			this.cbTargetNamespace,
 			this.cbTemplate
 		];
-	},
-	show: function() {
-		this.callParent( arguments );
-		var tagsLabel = Ext.get( 'tagfield-1033-placeholderLabel' );
-		if ( tagsLabel ) {
-			tagsLabel.addCls( 'x-form-text-default' );
-		}
-		var tagsDropdownArrow = document.getElementById('tagfield-1033-trigger-picker');
-		if ( tagsDropdownArrow ) {
-			tagsDropdownArrow.style.display = 'none';
-		}
-		var namespaceLabel = Ext.get( 'ext-comp-1034-placeholderLabel' );
-		if ( namespaceLabel ) {
-			namespaceLabel.addCls( 'x-form-text-default' );
-		}
 	},
 	storePagesReload: function( combo, records, eOpts ) {
 		this.strPages.load( { params: { ns: records[0].get( 'id' ) } } );
