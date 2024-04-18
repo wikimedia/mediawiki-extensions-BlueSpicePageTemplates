@@ -3,7 +3,8 @@
 		"authors": [
 			"Les Meloures",
 			"Robby",
-			"Soued031"
+			"Soued031",
+			"Volvox"
 		]
 	},
 	"prefs-pagetemplates": "Säiteschablounen",
@@ -42,5 +43,6 @@
 	"apihelp-bs-pagetemplates-tasks-summary": "Erlaabt d'Manipulatioun vu Säite-Schablounen",
 	"action-pagetemplatesadmin-viewspecialpage": "d'Spezialsäit \"{{int:pagetemplatesadmin}}\" weisen",
 	"pagetemplatesadmin": "Gestioun vun Schabloune vu Säiten",
-	"bs-usagetracker-pagetemplates": "Säiteschablounen"
+	"bs-usagetracker-pagetemplates": "Säiteschablounen",
+	"bs-pagetemplates-ns-undefined": "Ondefinéierten Nummraum"
 }
