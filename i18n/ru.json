@@ -10,7 +10,8 @@
 			"Okras",
 			"Pacha Tchernof",
 			"Redredsonia",
-			"Striking Blue"
+			"Striking Blue",
+			"Yurina Tatiana"
 		]
 	},
 	"bs-pagetemplates-desc": "Отображает список шаблонов, помеченных как шаблоны страниц",
@@ -44,6 +45,7 @@
 	"bs-pagetemplates-label-tpl": "Имя шаблона",
 	"bs-pagetemplates-label-desc": "Описание",
 	"bs-pagetemplates-label-tags": "Теги",
+	"bs-pagetemplates-placeholder-tags": "Добавить тег",
 	"bs-pagetemplates-label-targetns": "Пространство имён",
 	"bs-pagetemplates-label-tplns": "Пространство имён шаблона",
 	"bs-pagetemplates-label-article": "Шаблон",
@@ -56,5 +58,6 @@
 	"action-pagetemplatesadmin-viewspecialpage": "просмотреть специальную страницу \"{{int:pagetemplatesadmin}}\"",
 	"pagetemplatesadmin": "Управление шаблонами страниц",
 	"bs-usagetracker-pagetemplates": "шаблоны страниц",
-	"bs-pagetemplates-nsm-label": "Шаблоны страницы"
+	"bs-pagetemplates-nsm-label": "Шаблоны страницы",
+	"bs-pagetemplates-headertags": "Теги"
 }
