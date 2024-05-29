@@ -246,7 +246,11 @@ class BSPageTemplateList {
 		$resultData = array_unique( $resultData );
 		foreach ( $this->dataSets as $id => $dataSet ) {
 			foreach ( $resultData as $tag ) {
-				if ( strpos( $dataSet['pt_tags'], $tag ) !== false ) {
+				$dataSetTags = json_decode( $dataSet['pt_tags'], true );
+				if ( !$dataSetTags ) {
+					continue;
+				}
+				if ( in_array( $tag, $dataSetTags ) ) {
 					$filteredDataSets[$tag][] = $dataSet;
 				}
 			}
