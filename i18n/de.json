@@ -3,6 +3,7 @@
 		"authors": [
 			"Abcdefg",
 			"Hwboehm",
+			"Justman10000",
 			"Kghbln",
 			"Metalhead64",
 			"Mglaser",
@@ -53,6 +54,7 @@
 	"bs-pagetemplates-remove-message-failure": "Folgende {{PLURAL:$1|Vorlage konnte|Vorlagen konnten}} nicht gelöscht werden:$2(Grund: $3)",
 	"apihelp-bs-pagetemplates-store-summary": "Listet alle Vorlagen auf. Erlaubt die Sortierung, Filterung und Seitennummerierung. Implementiert die Parameter „ExtJS Store“.",
 	"apihelp-bs-pagetemplates-tasks-summary": "Erlaubt die Veränderung von Seitenvorlagen",
+	"apihelp-bs-pagetemplate-tags-store-summary": "Listet alle Tags der Seitenvorlagen auf. Ermöglicht Sortierung, Filterung und Paginierung. Implementiert ExtJS Store-Parameter.",
 	"action-pagetemplatesadmin-viewspecialpage": "die Spezialseite „{{int:pagetemplatesadmin}}“ anzusehen",
 	"pagetemplatesadmin": "Seitenvorlagenverwaltung",
 	"bs-usagetracker-pagetemplates": "Seitenvorlagen",
