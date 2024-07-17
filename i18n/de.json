@@ -3,6 +3,7 @@
 		"authors": [
 			"Abcdefg",
 			"Hwboehm",
+			"Justman10000",
 			"Kghbln",
 			"Metalhead64",
 			"Mglaser",
@@ -66,5 +67,6 @@
 	"bs-pagetemplates-label-tags": "Tags",
 	"bs-pagetemplates-placeholder-tags": "Tag hinzufügen",
 	"bs-pagetemplates-headertags": "Tags",
-	"bs-pagetemplates-tag-untagged": "Ohne Tag"
+	"bs-pagetemplates-tag-untagged": "Ohne Tag",
+	"apihelp-bs-pagetemplate-tags-store-summary": "Listet alle Tags der Seitenvorlagen auf. Ermöglicht Sortierung, Filterung und Paginierung. Implementiert ExtJS Store-Parameter."
 }
