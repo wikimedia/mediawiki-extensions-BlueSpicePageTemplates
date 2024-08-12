@@ -44,7 +44,7 @@
 	"bs-pagetemplates-tipaddtemplate": "Sjabloon toevoegen",
 	"bs-pagetemplates-label-tpl": "Sjabloonnaam",
 	"bs-pagetemplates-label-desc": "Beschrijving",
-	"bs-pagetemplates-label-tags": "Tags",
+	"bs-pagetemplates-label-tags": "Labels",
 	"bs-pagetemplates-placeholder-tags": "Label toevoegen",
 	"bs-pagetemplates-label-targetns": "Naamruimte",
 	"bs-pagetemplates-label-tplns": "Sjabloonnaamruimte",
@@ -65,7 +65,7 @@
 	"bs-pagetemplates-pref-forcenamespace-help": "Forceert de naamruimte die is geselecteerd via de sjabloonkoppeling bij het aanmaken van een nieuwe pagina.",
 	"bs-pagetemplates-no-matching-results-label": "Geen sjabloon gevonden",
 	"bs-pagetemplates-search-template-placeholder": "Paginasjabloon zoeken",
-	"bs-pagetemplates-headertags": "Tags",
+	"bs-pagetemplates-headertags": "Labels",
 	"bs-pagetemplates-tag-untagged": "Niet getagd",
 	"bs-pagetemplates-ns-undefined": "Ongedefinieerde namespace"
 }
