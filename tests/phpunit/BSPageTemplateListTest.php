@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
+
 /**
  * @group medium
  * @group Database
@@ -74,10 +76,11 @@ class BSPageTemplateListTest extends MediaWikiIntegrationTestCase {
 			BSPageTemplateList::HIDE_IF_NOT_IN_TARGET_NS => false
 		] );
 
+		$urlUtils = MediaWikiServices::getInstance()->getUrlUtils();
 		$groupedResult = $list->getAllGrouped();
 		foreach ( $groupedResult['other'] as $nsId => $pageTemplates ) {
 			foreach ( $pageTemplates as $pageTemplate ) {
-				$url = wfParseUrl( wfExpandUrl( $pageTemplate['target_url'] ) );
+				$url = $urlUtils->parse( $urlUtils->expand( $pageTemplate['target_url'] ) );
 				$query = wfCgiToArray( $url['query'] );
 				$this->assertEquals( $nsId, Title::newFromText( $query['title'] )->getNamespace() );
 			}
