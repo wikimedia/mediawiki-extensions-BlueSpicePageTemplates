@@ -9,9 +9,7 @@ use SpecialPage;
 class GlobalActionsEditing extends RestrictedTextLink {
 
 	public function __construct() {
-		parent::__construct( [
-			'role' => 'menuitem'
-		] );
+		parent::__construct( [] );
 	}
 
 	/**
