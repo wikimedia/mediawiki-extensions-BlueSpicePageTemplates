@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Cookai1205",
 			"Cwlin0416",
 			"Ericliu1912",
 			"Kly",
@@ -39,7 +40,7 @@
 	"bs-pagetemplates-headerlabel": "標籤",
 	"bs-pagetemplates-headertargetnamespace": "命名空間",
 	"bs-pagetemplates-tipeditdetails": "編輯模板",
-	"bs-pagetemplates-tipdeletetemplate": "刪除{{PLURAL:$1|模板|模板}}",
+	"bs-pagetemplates-tipdeletetemplate": "刪除{{PLURAL:$1|模板}}",
 	"bs-pagetemplates-tipaddtemplate": "增加模板",
 	"bs-pagetemplates-label-tpl": "模板名稱",
 	"bs-pagetemplates-label-desc": "描述",

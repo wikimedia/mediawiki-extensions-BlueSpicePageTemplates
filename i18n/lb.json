@@ -45,5 +45,7 @@
 	"action-pagetemplatesadmin-viewspecialpage": "d'Spezialsäit \"{{int:pagetemplatesadmin}}\" weisen",
 	"pagetemplatesadmin": "Gestioun vun Schabloune vu Säiten",
 	"bs-usagetracker-pagetemplates": "Säiteschablounen",
-	"bs-pagetemplates-ns-undefined": "Ondefinéierten Nummraum"
+	"bs-pagetemplates-ns-undefined": "Ondefinéierten Nummraum",
+	"bs-pagetemplatesadmin-text": "Säiteschablounen",
+	"bs-pagetemplates-no-matching-results-label": "Keng Schabloun fonnt"
 }
