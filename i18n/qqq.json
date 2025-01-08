@@ -51,7 +51,6 @@
 	"bs-pagetemplates-label-tags": "Label for a tag input field.",
 	"bs-pagetemplates-placeholder-tags": "Placeholder text in the tag input field",
 	"bs-pagetemplates-label-targetns": "Label for namespace\n{{Identical|Namespace}}",
-	"bs-pagetemplates-label-tplns": "Label for template namespace",
 	"bs-pagetemplates-label-article": "Label for template\n{{Identical|Template}}",
 	"bs-pagetemplates-confirm-deletetpl": "Used as text of the confirmation window. Parameters:\n* $1 - the number of templates which will be deleted - use for PLURAL distinction\nSee also:\n* {{msg-mw|Bs-pagetemplates-tipdeletetemplate}}",
 	"bs-pagetemplates-remove-message-unknown": "An unexpected error occurred while trying to delete a template.",

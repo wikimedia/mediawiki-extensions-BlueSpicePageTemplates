@@ -39,7 +39,6 @@
 	"bs-pagetemplates-label-tags": "Tags",
 	"bs-pagetemplates-placeholder-tags": "Add tag",
 	"bs-pagetemplates-label-targetns": "Namespace",
-	"bs-pagetemplates-label-tplns": "Template namespace",
 	"bs-pagetemplates-label-article": "Template",
 	"bs-pagetemplates-confirm-deletetpl": "Are you sure you want to delete {{PLURAL:$1|this template|these templates}}?",
 	"bs-pagetemplates-remove-message-unknown": "An unexpected error occurred, please try again.",
