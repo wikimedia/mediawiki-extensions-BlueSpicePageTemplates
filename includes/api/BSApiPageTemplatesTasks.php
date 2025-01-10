@@ -222,9 +222,8 @@ class BSApiPageTemplatesTasks extends BSApiTasksBase {
 			return $return;
 		}
 
-		$output = [];
 		$dbw = $this->services->getDBLoadBalancer()->getConnection( DB_PRIMARY );
-		foreach ( $ids as $id => $name ) {
+		foreach ( $ids as $id ) {
 			$res = $dbw->delete( 'bs_pagetemplate', [ 'pt_id' => $id ] );
 
 			if ( $res === false ) {
