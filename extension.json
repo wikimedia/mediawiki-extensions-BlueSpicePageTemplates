@@ -101,7 +101,6 @@
 		"BSApiPageTemplatesStore": "includes/api/BSApiPageTemplatesStore.php",
 		"BSApiPageTemplatesTasks": "includes/api/BSApiPageTemplatesTasks.php",
 		"BSApiPageTemplateTagsStore": "includes/api/BSApiPageTemplateTagsStore.php",
-		"SpecialPageTemplatesAdmin": "includes/specials/SpecialPageTemplatesAdmin.php",
 		"BSPageTemplateList": "includes/BSPageTemplateList.php",
 		"BSPageTemplateListRenderer": "includes/BSPageTemplateListRenderer.php",
 		"BSTransformNSData": "maintenance/BSTransformNSData.php"
@@ -136,12 +135,26 @@
 		}
 	},
 	"SpecialPages": {
-		"PageTemplatesAdmin": "SpecialPageTemplatesAdmin"
+		"PageTemplatesAdmin": {
+			"class": "BlueSpice\\PageTemplates\\Special\\PageTemplatesAdministration"
+		}
 	},
 	"ResourceModules": {
 		"ext.bluespice.pageTemplates": {
-			"scripts": "bluespice.pageTemplates.js",
-			"dependencies": "ext.bluespice.extjs",
+			"scripts": [
+				"ui/dialog/EditTemplate.js",
+				"ui/dialog/DeleteTemplate.js",
+				"ui/Panel.js",
+				"bluespice.pageTemplates.js"
+			],
+			"dependencies": [
+				"ext.oOJSPlus.managerPanel",
+				"ext.bluespice",
+				"oojs-ui.styles.icons-user",
+				"oojs-ui.styles.icons-moderation",
+				"oojs-ui.styles.icons-editing-core",
+				"ext.oOJSPlus.data"
+			],
 			"messages": [
 				"bs-pagetemplates-headerlabel",
 				"bs-pagetemplates-headertargetnamespace",
@@ -164,7 +177,7 @@
 		"ext.bluespice.pageTemplates.tag": {
 			"scripts": [
 				"bluespice.pageTemplates.tag.js",
-				"BS.PageTemplates/TemplateSearch.js"
+				"TemplateSearch.js"
 			],
 			"dependencies": [
 				"ext.bluespice",

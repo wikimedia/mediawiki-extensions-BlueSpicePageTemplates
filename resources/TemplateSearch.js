@@ -13,18 +13,18 @@
 	var showTagContainer = function() {
 		$nsContainer.fadeOut();
 		$tagContainer.fadeIn();
-	}
+	};
 
 	var showNsContainer = function() {
 		$tagContainer.fadeOut();
 		$nsContainer.fadeIn();
-	}
+	};
 
 	var hideTags = function( inputValue ) {
 		var tagsMatches = false;
 			filteredContainers = {};
 		var $containers = $nsContainers;
-		if ( enabledContainer == 'Tags' ) {
+		if ( enabledContainer === 'Tags' ) {
 			$containers = $tagContainers;
 		}
 
@@ -46,7 +46,7 @@
 				// enables also filtering by description
 				var elementText = $currentContainer.text().toLowerCase();
 
-				var show = elementText.includes( inputValue );
+				show = elementText.includes( inputValue );
 				if ( lastContainer ) {
 					filteredContainers[ lastContainer ].templates[ index ] = {
 						show: show,
