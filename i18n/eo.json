@@ -14,7 +14,6 @@
 	"bs-pagetemplates-label-tpl": "Nomo de ŝablono",
 	"bs-pagetemplates-label-desc": "Priskribo",
 	"bs-pagetemplates-label-targetns": "Nomspaco",
-	"bs-pagetemplates-label-tplns": "Ŝablona nomspaco",
 	"bs-pagetemplates-label-article": "Ŝablono",
 	"bs-pagetemplates-remove-message-failure": "La {{PLURAL:$1|jena ŝablono|jenan ŝablonon}} ne povis esti {{PLURAL:$1|forigita|forigitaj}}:$2 (Kialo: $3)"
 }

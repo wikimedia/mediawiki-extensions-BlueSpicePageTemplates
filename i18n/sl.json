@@ -41,7 +41,6 @@
 	"bs-pagetemplates-label-tags": "Oznake",
 	"bs-pagetemplates-placeholder-tags": "Dodaj oznako",
 	"bs-pagetemplates-label-targetns": "Imenski prostor",
-	"bs-pagetemplates-label-tplns": "Predloga imenskega prostora",
 	"bs-pagetemplates-label-article": "Predloga",
 	"bs-pagetemplates-confirm-deletetpl": "Ali {{PLURAL:$1|to predlogo|te predloge}} res želite izbrisati?",
 	"bs-pagetemplates-remove-message-unknown": "Prišlo je do nepričakovane napake. Prosimo, poskusite znova.",

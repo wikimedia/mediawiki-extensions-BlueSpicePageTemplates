@@ -35,7 +35,6 @@
 	"bs-pagetemplates-label-tags": "Ознаке",
 	"bs-pagetemplates-placeholder-tags": "Додај ознаку",
 	"bs-pagetemplates-label-targetns": "Именски простор",
-	"bs-pagetemplates-label-tplns": "Именски простор шаблона",
 	"bs-pagetemplates-label-article": "Шаблон",
 	"bs-pagetemplates-confirm-deletetpl": "Да ли сте сигурни да желите да {{PLURAL:$1|обришете овај шаблон|обришете ове шаблоне}}?",
 	"bs-pagetemplates-remove-message-unknown": "Дошло је до неочекиване грешке, покушајте поново.",

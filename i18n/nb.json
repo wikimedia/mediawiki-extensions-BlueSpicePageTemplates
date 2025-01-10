@@ -40,7 +40,6 @@
 	"bs-pagetemplates-label-tags": "Tagger",
 	"bs-pagetemplates-placeholder-tags": "Legg til tagg",
 	"bs-pagetemplates-label-targetns": "Navnerom",
-	"bs-pagetemplates-label-tplns": "Malnavnerom",
 	"bs-pagetemplates-label-article": "Mal",
 	"bs-pagetemplates-confirm-deletetpl": "Er du sikker på at du vil slette {{PLURAL:$1|denne malen|disse malene}}?",
 	"bs-pagetemplates-remove-message-unknown": "En uventet feil oppsto, prøv igjen.",

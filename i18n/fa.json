@@ -38,7 +38,6 @@
 	"bs-pagetemplates-label-tpl": "نام الگو",
 	"bs-pagetemplates-label-desc": "توضیحات",
 	"bs-pagetemplates-label-targetns": "فضای نام",
-	"bs-pagetemplates-label-tplns": "فضای نام الگو",
 	"bs-pagetemplates-label-article": "الگو",
 	"bs-pagetemplates-confirm-deletetpl": "آیا مطمئنید می‌خواهید این {{PLURAL:$1|الگو|الگوها}} را حذف کنید؟",
 	"bs-pagetemplates-remove-message-unknown": "یک خطای غیر منتظره رخ داد، لطفاً دوباره تلاش کنید.",

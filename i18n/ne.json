@@ -33,7 +33,6 @@
 	"bs-pagetemplates-label-tpl": "ढाँचा नाम",
 	"bs-pagetemplates-label-desc": "विवरण",
 	"bs-pagetemplates-label-targetns": "नामपद",
-	"bs-pagetemplates-label-tplns": "ढाँचा नामपद",
 	"bs-pagetemplates-label-article": "ढाँचा",
 	"bs-pagetemplates-confirm-deletetpl": "के तपाईं यस {{PLURAL:$1|यो ढाँचा|यी ढाँचाहरू}}लाई मेट्न चाहनुहुन्छ ?",
 	"bs-pagetemplates-remove-message-unknown": "अमान्य त्रुटि उत्पन्न भयो, कृपया पुन प्रयास गर्नुहोला।"

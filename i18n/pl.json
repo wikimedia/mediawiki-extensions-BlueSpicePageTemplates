@@ -31,7 +31,6 @@
 	"bs-pagetemplates-label-tpl": "Nazwa szablonu",
 	"bs-pagetemplates-label-desc": "Opis",
 	"bs-pagetemplates-label-targetns": "Przestrzeń nazw",
-	"bs-pagetemplates-label-tplns": "Przestrzeń nazw szablonów",
 	"bs-pagetemplates-label-article": "Szablon",
 	"bs-pagetemplates-confirm-deletetpl": "Czy na pewno chcesz usunąć {{PLURAL:$1|ten szablon|te szablony}}?",
 	"bs-pagetemplates-remove-message-success": "Usunięto {{PLURAL:$1|następny szablon|następujące szablony}}: $2",

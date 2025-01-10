@@ -43,7 +43,6 @@
 	"bs-pagetemplates-label-tags": "תגים",
 	"bs-pagetemplates-placeholder-tags": "להוסיף תג",
 	"bs-pagetemplates-label-targetns": "מרחב שם",
-	"bs-pagetemplates-label-tplns": "מרחב השם של התבנית",
 	"bs-pagetemplates-label-article": "תבנית",
 	"bs-pagetemplates-confirm-deletetpl": "האם ברצונך למחוק את {{PLURAL:$1|התבנית הזאת|התבניות האלו}}?",
 	"bs-pagetemplates-remove-message-unknown": "איראה שגיאה בלתי־צפויה, נא לנסות שוב.",

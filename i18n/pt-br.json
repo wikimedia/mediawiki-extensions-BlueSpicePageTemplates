@@ -41,7 +41,6 @@
 	"bs-pagetemplates-label-tpl": "Nome da predefinição",
 	"bs-pagetemplates-label-desc": "Descrição",
 	"bs-pagetemplates-label-targetns": "Espaço nominal",
-	"bs-pagetemplates-label-tplns": "Domínio de predefinições de página",
 	"bs-pagetemplates-label-article": "Predefinição",
 	"bs-pagetemplates-confirm-deletetpl": "Tem a certeza de que pretende eliminar {{PLURAL:$1|este predefinição|estes predefinições}}?",
 	"bs-pagetemplates-remove-message-unknown": "Ocorreu um erro inesperado, por favor tente novamente.",

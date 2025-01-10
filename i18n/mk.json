@@ -35,7 +35,6 @@
 	"bs-pagetemplates-label-tpl": "Назив на предлошката",
 	"bs-pagetemplates-label-desc": "Опис",
 	"bs-pagetemplates-label-targetns": "Именски простор",
-	"bs-pagetemplates-label-tplns": "Именски простор на предлошката",
 	"bs-pagetemplates-label-article": "Предлошка",
 	"bs-pagetemplates-confirm-deletetpl": "Дали сте сигурни дека сакате да {{PLURAL:$1|ја избришете оваа предлошка|ги избришете овие предлошки}}?",
 	"bs-pagetemplates-remove-message-unknown": "Се јави неочекувана грешка. Обидете се повторно.",

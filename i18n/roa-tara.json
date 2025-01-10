@@ -37,7 +37,6 @@
 	"bs-pagetemplates-label-tpl": "Nome d'u template",
 	"bs-pagetemplates-label-desc": "Descrizione",
 	"bs-pagetemplates-label-targetns": "Namespace",
-	"bs-pagetemplates-label-tplns": "Namespace d'u template",
 	"bs-pagetemplates-label-article": "Template",
 	"bs-pagetemplates-confirm-deletetpl": "Sì secure de vulè ccu scangille {{PLURAL:$1|stu |ste }} template?",
 	"bs-pagetemplates-remove-message-unknown": "Ha assute 'n'errore, pruève arrete.",

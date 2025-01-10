@@ -47,7 +47,6 @@
 	"bs-pagetemplates-label-tags": "Теги",
 	"bs-pagetemplates-placeholder-tags": "Добавить тег",
 	"bs-pagetemplates-label-targetns": "Пространство имён",
-	"bs-pagetemplates-label-tplns": "Пространство имён шаблона",
 	"bs-pagetemplates-label-article": "Шаблон",
 	"bs-pagetemplates-confirm-deletetpl": "Вы уверены, что хотите удалить {{PLURAL:$1|этот шаблон|эти шаблоны}}?",
 	"bs-pagetemplates-remove-message-unknown": "Произошла непредвиденная ошибка, попробуйте ещё ​​раз.",

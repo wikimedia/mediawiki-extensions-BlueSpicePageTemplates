@@ -43,7 +43,6 @@
 	"bs-pagetemplates-label-tags": "Balises",
 	"bs-pagetemplates-placeholder-tags": "Ajouter la balise",
 	"bs-pagetemplates-label-targetns": "Espace de noms",
-	"bs-pagetemplates-label-tplns": "Espace de noms des modèles",
 	"bs-pagetemplates-label-article": "Modèle",
 	"bs-pagetemplates-confirm-deletetpl": "Êtes-vous sûr{{GENDER:||e}} de vouloir supprimer {{PLURAL:$1|ce modèle|ces modèles}} ?",
 	"bs-pagetemplates-remove-message-unknown": "Une erreur inattendue s’est produite, veuillez essayer à nouveau.",

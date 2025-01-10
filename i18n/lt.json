@@ -36,7 +36,6 @@
 	"bs-pagetemplates-label-tpl": "Šablono pavadinimas",
 	"bs-pagetemplates-label-desc": "Aprašymas",
 	"bs-pagetemplates-label-targetns": "Vardų sritis",
-	"bs-pagetemplates-label-tplns": "Šablono vardų sritis",
 	"bs-pagetemplates-label-article": "Šablonas",
 	"bs-pagetemplates-confirm-deletetpl": "Ar tikrai norite ištrinti {{PLURAL:$1|šį šabloną|šiuos šablonus}}?",
 	"bs-pagetemplates-remove-message-unknown": "Įvyko netikėta klaida, prašome bandyti dar kartą.",

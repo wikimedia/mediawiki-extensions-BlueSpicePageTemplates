@@ -42,7 +42,6 @@
 	"bs-pagetemplates-label-tpl": "Şablon adı",
 	"bs-pagetemplates-label-desc": "Açıklama",
 	"bs-pagetemplates-label-targetns": "Ad alanı",
-	"bs-pagetemplates-label-tplns": "Şablon ad alanı",
 	"bs-pagetemplates-label-article": "Şablon",
 	"bs-pagetemplates-confirm-deletetpl": "{{PLURAL:$1|Bu şablonu|Bu şablonları}} silmek istediğinize emin misiniz?",
 	"bs-pagetemplates-remove-message-unknown": "Beklenmeyen bir hata oluştu, lütfen tekrar deneyin.",

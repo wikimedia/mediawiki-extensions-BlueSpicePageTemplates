@@ -39,7 +39,6 @@
 	"bs-pagetemplates-label-tpl": "Mallnamn",
 	"bs-pagetemplates-label-desc": "Beskrivning",
 	"bs-pagetemplates-label-targetns": "Namnrymd",
-	"bs-pagetemplates-label-tplns": "Mall-namnrymden",
 	"bs-pagetemplates-label-article": "Mall",
 	"bs-pagetemplates-confirm-deletetpl": "Är du säker på att du vill ta bort {{PLURAL:$1|denna mall|dessa mallar}}?",
 	"bs-pagetemplates-remove-message-unknown": "Ett oväntat fel uppstod, försök igen.",

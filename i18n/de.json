@@ -46,7 +46,6 @@
 	"bs-pagetemplates-label-tags": "Tags",
 	"bs-pagetemplates-placeholder-tags": "Tag hinzufügen",
 	"bs-pagetemplates-label-targetns": "Namensraum",
-	"bs-pagetemplates-label-tplns": "Vorlagen Namensraum",
 	"bs-pagetemplates-label-article": "Vorlage",
 	"bs-pagetemplates-confirm-deletetpl": "Bist du sicher, dass du diese {{PLURAL:$1|Vorlage|Vorlagen}} löschen willst?",
 	"bs-pagetemplates-remove-message-unknown": "Ein unbekannter Fehler ist aufgetreten. Bitte versuche es erneut.",

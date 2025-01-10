@@ -40,7 +40,6 @@
 	"bs-pagetemplates-label-desc": "Descrizione",
 	"bs-pagetemplates-placeholder-tags": "Aggiungi etichetta",
 	"bs-pagetemplates-label-targetns": "Namespace",
-	"bs-pagetemplates-label-tplns": "Template namespace",
 	"bs-pagetemplates-label-article": "Template",
 	"bs-pagetemplates-confirm-deletetpl": "Vuoi cancellare {{PLURAL:$1|questo|questi}} template?",
 	"bs-pagetemplates-remove-message-unknown": "Si è verificato un errore inatteso, per favore prova di nuovo.",

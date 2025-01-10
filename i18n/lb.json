@@ -35,7 +35,6 @@
 	"bs-pagetemplates-label-tpl": "Numm vun der Schabloun",
 	"bs-pagetemplates-label-desc": "Beschreiwung",
 	"bs-pagetemplates-label-targetns": "Nummraum",
-	"bs-pagetemplates-label-tplns": "Nummraum Schabloun",
 	"bs-pagetemplates-label-article": "Schabloun",
 	"bs-pagetemplates-confirm-deletetpl": "Sidd Dir sécher datt Dir dës {{PLURAL:$1|Schabloun|Schabloune}} läsche wëllt?",
 	"bs-pagetemplates-remove-message-unknown": "En onerwaarte Feeler ass geschitt, probéiert wgl. nach eng Kéier.",

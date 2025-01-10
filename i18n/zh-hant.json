@@ -47,7 +47,6 @@
 	"bs-pagetemplates-label-tags": "標籤",
 	"bs-pagetemplates-placeholder-tags": "新增標籤",
 	"bs-pagetemplates-label-targetns": "命名空間",
-	"bs-pagetemplates-label-tplns": "模板命名空間",
 	"bs-pagetemplates-label-article": "模板",
 	"bs-pagetemplates-confirm-deletetpl": "您確定要刪除{{PLURAL:$1|此|這些}}模板嗎？",
 	"bs-pagetemplates-remove-message-unknown": "發生預期之外的錯誤，請再試一次。",

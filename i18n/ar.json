@@ -42,7 +42,6 @@
 	"bs-pagetemplates-label-tags": "العلامات",
 	"bs-pagetemplates-placeholder-tags": "أضف وسمًا",
 	"bs-pagetemplates-label-targetns": "النطاق",
-	"bs-pagetemplates-label-tplns": "نطاق القالب",
 	"bs-pagetemplates-label-article": "قالب",
 	"bs-pagetemplates-confirm-deletetpl": "هل أنت متأكد أنك تريد حذف {{PLURAL:$1|هذا القالب|هذه القوالب}}؟",
 	"bs-pagetemplates-remove-message-unknown": "حدث خطأ غير متوقع; تُرجًى المحاولة مرة أخرى.",

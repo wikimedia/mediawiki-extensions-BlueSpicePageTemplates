@@ -47,7 +47,6 @@
 	"bs-pagetemplates-label-tags": "Labels",
 	"bs-pagetemplates-placeholder-tags": "Label toevoegen",
 	"bs-pagetemplates-label-targetns": "Naamruimte",
-	"bs-pagetemplates-label-tplns": "Sjabloonnaamruimte",
 	"bs-pagetemplates-label-article": "Sjabloon",
 	"bs-pagetemplates-confirm-deletetpl": "Weet u zeker dat u {{PLURAL:$1|dit sjabloon|deze sjablonen}} wilt verwijderen?",
 	"bs-pagetemplates-remove-message-unknown": "Er is een onverwachte fout opgetreden, probeer het a.u.b. opnieuw.",

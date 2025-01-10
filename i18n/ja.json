@@ -37,7 +37,6 @@
 	"bs-pagetemplates-label-tags": "タグ",
 	"bs-pagetemplates-placeholder-tags": "タグを追加",
 	"bs-pagetemplates-label-targetns": "名前空間",
-	"bs-pagetemplates-label-tplns": "テンプレート名前空間",
 	"bs-pagetemplates-label-article": "テンプレート",
 	"bs-pagetemplates-confirm-deletetpl": "{{PLURAL:$1|このテンプレート|これらのテンプレート}}を本当に削除しますか?",
 	"bs-pagetemplates-remove-message-unknown": "予期せぬエラーが発生しました。もう一度お試しください。",

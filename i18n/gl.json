@@ -36,7 +36,6 @@
 	"bs-pagetemplates-label-tpl": "Nome do modelo",
 	"bs-pagetemplates-label-desc": "Descrición",
 	"bs-pagetemplates-label-targetns": "Espazo de nomes",
-	"bs-pagetemplates-label-tplns": "Espazo de nomes de modelo",
 	"bs-pagetemplates-label-article": "Modelo",
 	"bs-pagetemplates-confirm-deletetpl": "Está seguro de querer eliminar {{PLURAL:$1|este modelo|estes modelos}}?",
 	"bs-pagetemplates-remove-message-unknown": "Ocorreu un erro inesperado, por favor ténteo outra vez.",

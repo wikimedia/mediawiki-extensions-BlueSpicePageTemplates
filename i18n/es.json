@@ -43,7 +43,6 @@
 	"bs-pagetemplates-label-desc": "Descripción",
 	"bs-pagetemplates-label-tags": "Etiquetas",
 	"bs-pagetemplates-label-targetns": "Espacio de nombres",
-	"bs-pagetemplates-label-tplns": "Espacio de nombres de plantilla",
 	"bs-pagetemplates-label-article": "Plantilla",
 	"bs-pagetemplates-confirm-deletetpl": "¿Estás seguro de querer eliminar {{PLURAL:$1|esta plantilla|estas plantillas}}?",
 	"bs-pagetemplates-remove-message-unknown": "Se produjo un error inesperado. Inténtalo nuevamente.",

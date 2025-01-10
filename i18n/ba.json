@@ -36,7 +36,6 @@
 	"bs-pagetemplates-label-tpl": "Ҡалып исеме",
 	"bs-pagetemplates-label-desc": "Һүрәтләү",
 	"bs-pagetemplates-label-targetns": "Исемдәр тупланмаһы",
-	"bs-pagetemplates-label-tplns": "Ҡалып тупланмаһы исеме",
 	"bs-pagetemplates-label-article": "Ҡалып",
 	"bs-pagetemplates-confirm-deletetpl": "{{PLURAL:$1|был ҡалыпты|был ҡалыптарҙы}} ысынлап та юйырға теләүегеҙгә инанаһығыҙмы?",
 	"bs-pagetemplates-remove-message-unknown": "Көтөлмәгән хата барлыҡҡа килде, ҡабат эшләп ҡарағаҙ.",

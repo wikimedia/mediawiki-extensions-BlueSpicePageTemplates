@@ -34,7 +34,6 @@
 	"bs-pagetemplates-label-tags": "Oznake",
 	"bs-pagetemplates-placeholder-tags": "Dodaj oznaku",
 	"bs-pagetemplates-label-targetns": "Imenski prostor",
-	"bs-pagetemplates-label-tplns": "Imenski prostor šablona",
 	"bs-pagetemplates-label-article": "Šablon",
 	"bs-pagetemplates-confirm-deletetpl": "Da li ste sigurni da želite da {{PLURAL:$1|obrišete ovaj šablon|obrišete ove šablone}}?",
 	"bs-pagetemplates-remove-message-unknown": "Došlo je do neočekivane greške, pokušajte ponovo.",

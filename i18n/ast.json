@@ -36,7 +36,6 @@
 	"bs-pagetemplates-label-tpl": "Nome de la plantía",
 	"bs-pagetemplates-label-desc": "Descripción",
 	"bs-pagetemplates-label-targetns": "Espaciu de nomes",
-	"bs-pagetemplates-label-tplns": "Espaciu de nomes de plantía",
 	"bs-pagetemplates-label-article": "Plantía",
 	"bs-pagetemplates-confirm-deletetpl": "¿Tas seguru de que quies desaniciar {{PLURAL:$1|esta plantía|estes plantíes}}?",
 	"bs-pagetemplates-remove-message-unknown": "Hebo un error inesperáu. Téntalo de nueves.",

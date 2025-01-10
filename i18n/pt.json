@@ -42,7 +42,6 @@
 	"bs-pagetemplates-label-tags": "Etiquetas",
 	"bs-pagetemplates-placeholder-tags": "Adicionar etiqueta",
 	"bs-pagetemplates-label-targetns": "Domínio",
-	"bs-pagetemplates-label-tplns": "Domínio de modelos de página",
 	"bs-pagetemplates-label-article": "Modelo",
 	"bs-pagetemplates-confirm-deletetpl": "Tem a certeza de que pretende eliminar {{PLURAL:$1|este modelo|estes modelos}}?",
 	"bs-pagetemplates-remove-message-unknown": "Ocorreu um erro inesperado, por favor tente novamente.",
