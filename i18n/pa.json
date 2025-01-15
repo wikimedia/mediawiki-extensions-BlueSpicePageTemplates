@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cabal"
+		]
+	},
+	"bs-pagetemplates-tipeditdetails": "ਫਰਮਾ ਸੋਧੋ",
+	"bs-pagetemplates-tipaddtemplate": "ਫਰਮਾ ਜੋੜੋ",
+	"bs-pagetemplates-label-tpl": "ਫ਼ਰਮੇ ਦਾ ਨਾਂ",
+	"bs-pagetemplates-label-article": "ਫਰਮਾ",
+	"bs-pagetemplates-remove-message-unknown": "ਇੱਕ ਅਣਜਾਣ ਗਲਤੀ ਆਈ ਹੈ, ਕਿਰਪਾ ਕਰਕੇ ਮੁੜ ਕੋਸ਼ਿਸ਼ ਕਰੋ।"
+}
