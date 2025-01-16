@@ -29,7 +29,7 @@ class PageTemplatesHideDefaults extends BooleanSetting {
 	 * @return string
 	 */
 	public function getLabelMessageKey() {
-		return 'bs-pagetemplates-pref-hidedefaults';
+		return 'bs-pagetemplates-config-hidedefaults';
 	}
 
 	/**
@@ -37,6 +37,6 @@ class PageTemplatesHideDefaults extends BooleanSetting {
 	 * @return string
 	 */
 	public function getHelpMessageKey() {
-		return 'bs-pagetemplates-pref-hidedefaults-help';
+		return 'bs-pagetemplates-config-hidedefaults-help';
 	}
 }
