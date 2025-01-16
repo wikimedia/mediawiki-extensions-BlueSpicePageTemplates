@@ -23,7 +23,7 @@ class PageTemplatesForceNamespace extends BooleanSetting {
 	 * @return string
 	 */
 	public function getLabelMessageKey() {
-		return 'bs-pagetemplates-pref-forcenamespace';
+		return 'bs-pagetemplates-config-forcenamespace';
 	}
 
 	/**
@@ -31,7 +31,7 @@ class PageTemplatesForceNamespace extends BooleanSetting {
 	 * @return string
 	 */
 	public function getHelpMessageKey() {
-		return 'bs-pagetemplates-pref-forcenamespace-help';
+		return 'bs-pagetemplates-config-forcenamespace-help';
 	}
 
 }

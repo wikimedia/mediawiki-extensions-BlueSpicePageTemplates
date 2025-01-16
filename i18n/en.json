@@ -26,9 +26,10 @@
 	"bs-pagetemplates-choose-template": "This page doesn't exist yet. You can create a new page. If you don't want to do that, click the back button of your browser to return to the last page visited. \n\nYou can choose {{PLURAL:$1||one of}} the following {{PLURAL:$1|template|templates}}:",
 	"bs-pagetemplates-choose-template-empty": "This page doesn't exist yet. You can create a new page. If you don't want to do that, click the back button of your browser to return to the last page visited.",
 	"bs-pagetemplates-pref-excludens": "Do not show templates in these namespaces:",
-	"bs-pagetemplates-pref-forcenamespace": "Force target namespace",
-	"bs-pagetemplates-pref-hideifnotintargetns": "Hide template if the page is not to be created in the target namespace",
-	"bs-pagetemplates-pref-hidedefaults": "Hide default templates",
+	"bs-pagetemplates-config-forcenamespace": "Use namespace from template link",
+	"bs-pagetemplates-config-forcenamespace-help": "Applies the namespace selected in the template link when creating a new page",
+	"bs-pagetemplates-config-hideifnotintargetns": "Hide template for not selected namespace",
+	"bs-pagetemplates-config-hidedefaults": "Hide standard templates",
 	"bs-pagetemplates-headerlabel": "Label",
 	"bs-pagetemplates-headertargetnamespace": "Namespace",
 	"bs-pagetemplates-tipeditdetails": "Edit template",
@@ -53,11 +54,11 @@
 	"bs-usagetracker-pagetemplates": "page templates",
 	"bs-pagetemplates-nsm-label": "PageTemplates",
 	"right-pagetemplatesadmin-viewspecialpage": "Access to the [[Special:PageTemplatesAdmin]] special page, where page templates can be managed",
-	"bs-pagetemplates-pref-hidedefaults-help": "Removes the standard template \"Empty Page\" from the selection of page templates during page creation.",
-	"bs-pagetemplates-pref-forcenamespace-help": "Forces the namespace selected via the template link when creating a new page.",
+	"bs-pagetemplates-config-hidedefaults-help": "Removes the standard template \"Empty Page\" from the list of available page templates during page creation",
 	"bs-pagetemplates-no-matching-results-label": "No template found",
 	"bs-pagetemplates-search-template-placeholder": "Find page template",
 	"bs-pagetemplates-headertags": "Tags",
 	"bs-pagetemplates-tag-untagged": "Untagged",
-	"bs-pagetemplates-ns-undefined": "Undefined namespace"
+	"bs-pagetemplates-ns-undefined": "Undefined namespace",
+	"bs-pagetemplates-config-hideifnotintargetns-help": "Removes a template from the list of available page templates if its target namespace does not match the namespace of the page during page creation"
 }
