@@ -127,7 +127,7 @@ class Extension extends \BlueSpice\Extension {
 		}
 		if ( !in_array( 'broken', $extraAttribs, true ) ) {
 			// It's not marked as "known" and not as "broken" so we have to check
-			$title = TitleTitle::makeTitle(
+			$title = Title::makeTitle(
 					$target->getNamespace(), $target->getText()
 			);
 			if ( !$title || $title->isKnown() ) {
