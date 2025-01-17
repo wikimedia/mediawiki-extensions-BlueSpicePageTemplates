@@ -25,6 +25,7 @@
  */
 
 use BlueSpice\Api\Response\Standard;
+use MediaWiki\Title\Title;
 
 /**
  * GroupManager Api class

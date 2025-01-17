@@ -1,5 +1,6 @@
 <?php
 
+use MediaWiki\Title\Title;
 use OOUI\ButtonGroupWidget;
 use OOUI\SearchInputWidget;
 

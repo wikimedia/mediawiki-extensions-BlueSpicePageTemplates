@@ -34,8 +34,8 @@ namespace BlueSpice\PageTemplates;
 use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\Linker\LinkTarget;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Title\Title;
 use PermissionsError;
-use Title;
 
 /**
  * Base class for PageTemplates extension
@@ -127,7 +127,7 @@ class Extension extends \BlueSpice\Extension {
 		}
 		if ( !in_array( 'broken', $extraAttribs, true ) ) {
 			// It's not marked as "known" and not as "broken" so we have to check
-			$title = \Title::makeTitle(
+			$title = TitleTitle::makeTitle(
 					$target->getNamespace(), $target->getText()
 			);
 			if ( !$title || $title->isKnown() ) {

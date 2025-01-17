@@ -1,6 +1,7 @@
 <?php
 
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Title\Title;
 
 class BSPageTemplateList {
 	public const HIDE_IF_NOT_IN_TARGET_NS = 0;

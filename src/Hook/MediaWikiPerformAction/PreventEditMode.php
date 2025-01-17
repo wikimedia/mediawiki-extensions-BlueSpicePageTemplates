@@ -6,8 +6,8 @@ use Article;
 use BSPageTemplateList;
 use MediaWiki;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Title\Title;
 use OutputPage;
-use Title;
 use User;
 use WebRequest;
 
