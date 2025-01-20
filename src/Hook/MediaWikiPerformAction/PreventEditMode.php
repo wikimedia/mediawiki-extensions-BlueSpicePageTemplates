@@ -7,8 +7,8 @@ use BSPageTemplateList;
 use MediaWiki;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
+use MediaWiki\User\User;
 use OutputPage;
-use User;
 use WebRequest;
 
 class PreventEditMode {
