@@ -6,10 +6,10 @@ use Article;
 use BSPageTemplateList;
 use MediaWiki;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Request\WebRequest;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
 use OutputPage;
-use WebRequest;
 
 class PreventEditMode {
 	/** @var string[] */
