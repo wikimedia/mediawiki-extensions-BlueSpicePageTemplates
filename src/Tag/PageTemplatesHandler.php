@@ -5,8 +5,8 @@ namespace BlueSpice\PageTemplates\Tag;
 use BlueSpice\Tag\Handler;
 use BSPageTemplateList;
 use BSPageTemplateListRenderer;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
-use RequestContext;
 
 class PageTemplatesHandler extends Handler {
 

@@ -31,6 +31,8 @@ namespace BlueSpice\PageTemplates;
  * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  * @filesource
  */
+
+use MediaWiki\Context\RequestContext;
 use MediaWiki\Linker\LinkRenderer;
 use MediaWiki\Linker\LinkTarget;
 use MediaWiki\MediaWikiServices;
@@ -60,7 +62,7 @@ class Extension extends \BlueSpice\Extension {
 			return true;
 		}
 
-		$title = \RequestContext::getMain()->getTitle();
+		$title = RequestContext::getMain()->getTitle();
 		if ( !is_object( $title ) ) {
 			return true;
 		}
@@ -88,7 +90,7 @@ class Extension extends \BlueSpice\Extension {
 		}
 
 		// No context
-		$user = \RequestContext::getMain()->getUser();
+		$user = RequestContext::getMain()->getUser();
 		$pm = $services->getPermissionManager();
 		$editPermissionErrors = $pm->getPermissionErrors( 'edit', $user, $title );
 		$createPermissionErrors = $pm->getPermissionErrors( 'createpage', $user, $title );
