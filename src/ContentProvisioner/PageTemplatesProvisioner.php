@@ -5,6 +5,7 @@ namespace BlueSpice\PageTemplates\ContentProvisioner;
 use BlueSpice\PageTemplates\ContentImport\PageTemplateDAO;
 use Language;
 use MediaWiki\Languages\LanguageFallback;
+use MediaWiki\Title\TitleFactory;
 use MWStake\MediaWiki\Component\ContentProvisioner\EntityKey;
 use MWStake\MediaWiki\Component\ContentProvisioner\IContentProvisioner;
 use MWStake\MediaWiki\Component\ContentProvisioner\IManifestListProvider;
@@ -17,7 +18,6 @@ use Psr\Log\LoggerAwareInterface;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 use Status;
-use TitleFactory;
 use Wikimedia\Rdbms\ILoadBalancer;
 
 class PageTemplatesProvisioner implements
