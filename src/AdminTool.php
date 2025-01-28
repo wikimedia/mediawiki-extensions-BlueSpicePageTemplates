@@ -4,6 +4,7 @@ namespace BlueSpice\PageTemplates;
 
 use BlueSpice\IAdminTool;
 use MediaWiki\Message\Message;
+use MediaWiki\SpecialPage\SpecialPage;
 
 class AdminTool implements IAdminTool {
 
@@ -12,7 +13,7 @@ class AdminTool implements IAdminTool {
 	 * @return string String of the URL
 	 */
 	public function getURL() {
-		$tool = \SpecialPage::getTitleFor( 'PageTemplatesAdmin' );
+		$tool = SpecialPage::getTitleFor( 'PageTemplatesAdmin' );
 		return $tool->getLocalURL();
 	}
 
