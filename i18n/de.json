@@ -8,7 +8,8 @@
 			"Metalhead64",
 			"Mglaser",
 			"SehrGuterCode",
-			"Stephan Muggli <muggli@hallowelt.biz>"
+			"Stephan Muggli <muggli@hallowelt.biz>",
+			"MLRodrigue"
 		]
 	},
 	"bs-pagetemplates-desc": "Es können vorgefertigte Seitenvorlagen angelegt werden",
@@ -58,7 +59,7 @@
 	"action-pagetemplatesadmin-viewspecialpage": "die Spezialseite „{{int:pagetemplatesadmin}}“ anzusehen",
 	"pagetemplatesadmin": "Seitenvorlagenverwaltung",
 	"bs-usagetracker-pagetemplates": "Seitenvorlagen",
-	"bs-pagetemplates-nsm-label": "PageTemplates",
+	"bs-pagetemplates-nsm-label": "Seitenvorlagen",
 	"right-pagetemplatesadmin-viewspecialpage": "Zugriff auf die Spezialseite [[Special:PageTemplatesAdmin]], auf der Seitenvorlagen verwaltet werden können.",
 	"bs-pagetemplates-pref-hidedefaults-help": "Entfernt die Standardvorlage \"Leere Seite\" von der Auswahl der Seitenvorlagen beim Erstellen einer neuen Seite.",
 	"bs-pagetemplates-pref-forcenamespace-help": "Erzwingt den über den Template-Link ausgewählten Namensraum beim Erstellen einer neuen Seite.",
