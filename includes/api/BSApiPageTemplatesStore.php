@@ -1,5 +1,6 @@
 <?php
 
+use MediaWiki\Json\FormatJson;
 use MediaWiki\Title\Title;
 
 /**

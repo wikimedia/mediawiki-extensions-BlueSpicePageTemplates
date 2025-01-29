@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\Json\FormatJson;
+
 $extDir = dirname( dirname( __DIR__ ) );
 
 require_once "$extDir/BlueSpiceFoundation/maintenance/BSMaintenance.php";

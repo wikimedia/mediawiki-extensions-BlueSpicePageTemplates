@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\Json\FormatJson;
+
 class BSApiPageTemplateTagsStore extends BSApiExtJSStoreBase {
 
 	/**
