@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\Json\FormatJson;
+
 class BSPageTemplateFixtures {
 
 	public function __construct() {

@@ -1,6 +1,7 @@
 <?php
 
  use BlueSpice\Tests\BSApiTasksTestBase;
+use MediaWiki\Json\FormatJson;
 
 /**
  * @group medium

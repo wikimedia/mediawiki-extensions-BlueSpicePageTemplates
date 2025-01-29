@@ -25,6 +25,7 @@
  */
 
 use BlueSpice\Api\Response\Standard;
+use MediaWiki\Json\FormatJson;
 use MediaWiki\Title\Title;
 
 /**
