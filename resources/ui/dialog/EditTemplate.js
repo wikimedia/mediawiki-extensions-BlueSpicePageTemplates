@@ -23,6 +23,7 @@ bs.pageTemplates.ui.dialog.EditTemplate.prototype.getSetupProcess = function() {
 					.setLabel( mw.msg( 'bs-pagetemplates-tipaddtemplate' ) )
 					.setTitle( mw.msg( 'bs-pagetemplates-tipaddtemplate' ) );
 			}
+			this.actions.setAbilities( { save: !this.isCreation } );
 		}, this
 	);
 };
@@ -65,7 +66,7 @@ bs.pageTemplates.ui.dialog.EditTemplate.prototype.initialize = function() {
 		labelField: 'text',
 		allowArbitrary: true,
 	} );
-	this.tagsInput.setValue( this.item ? this.item.tags.split( ',' ) : [] );
+	this.tagsInput.setValue( this.item && this.item.tags ? this.item.tags.split( ',' ) : [] );
 	this.tagsInput.connect( this, {
 		change: 'updateSize'
 	} );
