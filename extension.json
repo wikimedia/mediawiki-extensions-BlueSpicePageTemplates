@@ -109,7 +109,7 @@
 		"BSPageTemplateFixtures": "tests/phpunit/utility/BSPageTemplateFixtures.php"
 	},
 	"ExtensionMessagesFiles": {
-		"PageTemplatesAdminAlias": "includes/specials/SpecialPageTemplatesAdmin.alias.php"
+		"PageTemplatesAdminAlias": "SpecialPageTemplatesAdmin.alias.php"
 	},
 	"config_prefix": "bsg",
 	"config": {
