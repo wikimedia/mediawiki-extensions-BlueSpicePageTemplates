@@ -51,8 +51,11 @@ bs.pageTemplates.ui.dialog.EditTemplate.prototype.initialize = function() {
 	this.descriptionInput.connect( this, {
 		change: 'checkValidity'
 	} );
+	let namespaces = this.item.targetnsid || null;
+	if ( Array.isArray( namespaces ) && namespaces.length === 0 ) {
+		namespaces = null;
+	}
 	this.namespaceInput = new OOJSPlus.ui.widget.NamespaceMultiSelectWidget( {
-		value: this.item.targetnsid || null,
 		$overlay: this.$overlay,
 		specialOptionAll: true,
 		menu: { hideOnChoose: true },
@@ -61,6 +64,7 @@ bs.pageTemplates.ui.dialog.EditTemplate.prototype.initialize = function() {
 	this.namespaceInput.connect( this, {
 		change: 'updateSize'
 	} );
+	this.namespaceInput.setValue( namespaces );
 	this.tagsInput = new OOJSPlus.ui.widget.StoreDataTagMultiselectWidget( {
 		queryAction: 'bs-pagetemplate-tags-store',
 		labelField: 'text',
@@ -73,6 +77,7 @@ bs.pageTemplates.ui.dialog.EditTemplate.prototype.initialize = function() {
 	this.templateInput = new OOJSPlus.ui.widget.TitleInputWidget( {
 		$overlay: this.$overlay,
 		value: this.item.templatename || '',
+		contentPagesOnly: false,
 		required: true
 	} );
 	this.templateInput.connect( this, {
