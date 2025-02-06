@@ -12,7 +12,8 @@ bs.pageTemplates.ui.PageTemplatesPanel = function( cfg ) {
 		},
 		desc: {
 			type: 'text',
-			headerText: mw.message('bs-pagetemplates-label-desc').plain()
+			headerText: mw.message('bs-pagetemplates-label-desc').plain(),
+			filter: { type: 'text' },
 		},
 		targetns: {
 			type: 'text',
@@ -32,7 +33,7 @@ bs.pageTemplates.ui.PageTemplatesPanel = function( cfg ) {
 		tags: {
 			type: 'text',
 			headerText: mw.message('bs-pagetemplates-headertags').plain(),
-			filter: { type: 'number' },
+			filter: { type: 'text' },
 			sortable: true,
 			valueParser: function( value ) {
 				return new OO.ui.HtmlSnippet( value );
