@@ -68,6 +68,13 @@
 					]
 				}
 			}
+		},
+		"PDFCreator": {
+			"StylesheetsProvider": {
+				"PageTemplates": {
+					"class": "BlueSpice\\PageTemplates\\Integration\\PDFCreator\\StylesheetsProvider\\PageTemplates"
+				}
+			}
 		}
 	},
 	"GroupPermissions": {
@@ -215,7 +222,6 @@
 		"BeforePageDisplay": [
 			"common-user-interface"
 		],
-		"BSUEModulePDFBeforeAddingStyleBlocks": "\\BlueSpice\\PageTemplates\\Hook\\BSUEModulePDFBeforeAddingStyleBlocks\\AddStandardTemplatesStyles::callback",
 		"LoadExtensionSchemaUpdates": [
 			"\\BlueSpice\\PageTemplates\\Hook\\LoadExtensionSchemaUpdates\\AddPageTemplateTable::callback"
 		],
