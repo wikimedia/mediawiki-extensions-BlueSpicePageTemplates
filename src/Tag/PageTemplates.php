@@ -4,12 +4,13 @@ namespace BlueSpice\PageTemplates\Tag;
 
 use BlueSpice\Tag\MarkerType\NoWiki;
 use BlueSpice\Tag\Tag;
+use MediaWiki\Parser\Parser;
 
 class PageTemplates extends Tag {
 	/**
 	 * @param mixed $processedInput
 	 * @param array $processedArgs
-	 * @param \Parser $parser
+	 * @param Parser $parser
 	 * @param \PPFrame $frame
 	 *
 	 * @return IHandler
@@ -17,7 +18,7 @@ class PageTemplates extends Tag {
 	public function getHandler(
 		$processedInput,
 		array $processedArgs,
-		\Parser $parser,
+		Parser $parser,
 		\PPFrame $frame
 		) {
 		return new PageTemplatesHandler( $processedInput, $processedArgs, $parser, $frame );
