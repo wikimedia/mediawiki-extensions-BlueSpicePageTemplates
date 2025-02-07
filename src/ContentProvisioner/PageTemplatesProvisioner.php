@@ -3,7 +3,7 @@
 namespace BlueSpice\PageTemplates\ContentProvisioner;
 
 use BlueSpice\PageTemplates\ContentImport\PageTemplateDAO;
-use Language;
+use MediaWiki\Language\Language;
 use MediaWiki\Languages\LanguageFallback;
 use MediaWiki\Status\Status;
 use MediaWiki\Title\TitleFactory;
