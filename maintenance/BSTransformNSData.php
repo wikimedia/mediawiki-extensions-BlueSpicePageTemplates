@@ -1,6 +1,7 @@
 <?php
 
 use MediaWiki\Json\FormatJson;
+use MediaWiki\Maintenance\LoggedUpdateMaintenance;
 
 $extDir = dirname( dirname( __DIR__ ) );
 
