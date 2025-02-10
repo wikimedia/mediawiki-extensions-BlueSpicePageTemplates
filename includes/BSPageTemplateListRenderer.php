@@ -1,6 +1,7 @@
 <?php
 
 use MediaWiki\Message\Message;
+use MediaWiki\Parser\Sanitizer;
 use MediaWiki\Title\Title;
 use OOUI\ButtonGroupWidget;
 use OOUI\SearchInputWidget;
