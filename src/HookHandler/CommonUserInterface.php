@@ -3,7 +3,7 @@
 namespace BlueSpice\PageTemplates\HookHandler;
 
 use BlueSpice\PageTemplates\GlobalActionsEditing;
-use MediaWiki\Hook\BeforePageDisplayHook;
+use MediaWiki\Output\Hook\BeforePageDisplayHook;
 use MWStake\MediaWiki\Component\CommonUserInterface\Hook\MWStakeCommonUIRegisterSkinSlotComponents;
 
 class CommonUserInterface implements MWStakeCommonUIRegisterSkinSlotComponents, BeforePageDisplayHook {
