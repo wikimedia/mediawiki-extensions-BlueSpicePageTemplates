@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jrobicek"
+		]
+	},
+	"bs-pagetemplates-desc": "Zobrazí seznam šablon označených jako šablony stránek",
+	"prefs-pagetemplates": "Šablony stránek",
+	"bs-pagetemplatesadmin-text": "Šablony stránek",
+	"bs-pagetemplatesadmin-label": "Šablony stránek",
+	"bs-pagetemplates-tpl-name-toolong": "Název šablony je příliš dlouhý. Použijte maximální délku 255 znaků.",
+	"bs-pagetemplates-tpl-name-empty": "Zadejte název šablony.",
+	"bs-pagetemplates-no-id": "Zadejte prosím stránku, která má být použita jako šablona.",
+	"bs-pagetemplates-tpl-added": "Šablona byla přidána.",
+	"bs-pagetemplates-nooldtpl": "Starou šablonu nelze najít.",
+	"bs-pagetemplates-tpl-edited": "Změny byly uloženy.",
+	"bs-pagetemplates-tpl-deleted": "Šablona byla smazána.",
+	"bs-pagetemplates-pref-excludens": "Nezobrazovat šablony v těchto jmenných prostorech:",
+	"bs-pagetemplates-pref-hideifnotintargetns": "Skrýt šablonu, pokud stránka nemá být vytvořena v cílovém jmenném prostoru",
+	"bs-pagetemplates-pref-hidedefaults": "Skrýt výchozí šablony",
+	"bs-pagetemplates-tipeditdetails": "Upravit šablonu",
+	"bs-pagetemplates-tipaddtemplate": "Přidat šablonu",
+	"bs-pagetemplates-label-tpl": "Název šablony",
+	"bs-pagetemplates-label-article": "Šablona",
+	"pagetemplatesadmin": "Správa šablon stránek",
+	"bs-usagetracker-pagetemplates": "šablony stránek",
+	"bs-pagetemplates-no-matching-results-label": "Nebyla nalezena žádná šablona",
+	"bs-pagetemplates-search-template-placeholder": "Najít šablonu stránky"
+}
