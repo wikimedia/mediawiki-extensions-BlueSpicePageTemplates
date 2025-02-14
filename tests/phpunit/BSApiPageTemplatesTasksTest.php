@@ -14,12 +14,6 @@ class BSApiPageTemplatesTasksTest extends BSApiTasksTestBase {
 
 	/**
 	 *
-	 * @var string[]
-	 */
-	protected $tablesUsed = [ 'bs_pagetemplate' ];
-
-	/**
-	 *
 	 * @return bool
 	 */
 	protected function skipAssertTotal() {
