@@ -13,9 +13,6 @@ use MediaWiki\Title\Title;
  */
 class BSPageTemplateListTest extends MediaWikiIntegrationTestCase {
 
-	/** @inheritDoc */
-	protected $tablesUsed = [ 'bs_pagetemplate' ];
-
 	protected function skipAssertTotal() {
 		return true;
 	}
