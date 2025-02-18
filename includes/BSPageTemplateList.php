@@ -262,7 +262,8 @@ class BSPageTemplateList {
 
 		// get untagged templates
 		foreach ( $this->dataSets as $id => $dataSet ) {
-			if ( $dataSet['pt_tags'] == 0 && $id !== -1 ) {
+			$tags = json_decode( $dataSet['pt_tags'], true ) ?? [];
+			if ( !$tags && $id !== -1 ) {
 				$filteredDataSets['untagged'][] = $dataSet;
 			}
 		}
