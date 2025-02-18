@@ -53,6 +53,10 @@ class PreventEditMode {
 			return true;
 		}
 
+		if ( static::checkExcludeForTitle( $title->getPrefixedText() ) ) {
+			return true;
+		}
+
 		$templateList = new BSPageTemplateList( $title );
 		$availableTemplates = $templateList->getAll();
 		if ( count( $availableTemplates ) === 1 && isset( $availableTemplates[-1] ) ) {
@@ -80,6 +84,22 @@ class PreventEditMode {
 		}
 
 		return $target;
+	}
+
+	/**
+	 * @param string $titleText
+	 * @return bool
+	 */
+	private static function checkExcludeForTitle( $titleText ) {
+		$config = MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
+		$excludeRegex = $config->get( 'PageTemplatesExcludeRegex' );
+		foreach ( $excludeRegex as $exclude ) {
+			$excludePattern = '/' . $exclude . '/';
+			if ( preg_match( $excludePattern, $titleText ) ) {
+				return true;
+			}
+		}
+		return false;
 	}
 
 }
