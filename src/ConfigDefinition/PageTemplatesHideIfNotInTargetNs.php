@@ -23,6 +23,14 @@ class PageTemplatesHideIfNotInTargetNs extends BooleanSetting {
 	 * @return string
 	 */
 	public function getLabelMessageKey() {
-		return 'bs-pagetemplates-pref-hideifnotintargetns';
+		return 'bs-pagetemplates-config-hideifnotintargetns';
+	}
+
+	/**
+	 *
+	 * @return string
+	 */
+	public function getHelpMessageKey() {
+		return 'bs-pagetemplates-config-hideifnotintargetns-help';
 	}
 }
