@@ -32,9 +32,6 @@
 	"bs-pagetemplates-choose-template": "Ця сторінка ще не існує. Ви можете створити нову сторінку. Якщо Ви не хочете цього робити, натисніть кнопку «назад» Вашого браузера для повернення до останньої відвіданої сторінки. \n\nВи можете вибрати {{PLURAL:$1||один з}} {{PLURAL:$1|наступний шаблон|наступних шаблонів}}:",
 	"bs-pagetemplates-choose-template-empty": "Ця сторінка ще не існує і ви можете створити її. Якщо ви не бажаєте цього робити - натисніть кнопку \"Повернутись\" у браузері.",
 	"bs-pagetemplates-pref-excludens": "Не показувати шаблони у цих просторах назв:",
-	"bs-pagetemplates-pref-forcenamespace": "Примусити перехід  у цільовий простір назв",
-	"bs-pagetemplates-pref-hideifnotintargetns": "Приховати шаблон, якщо сторінка буде створена не в цільовому просторі назв",
-	"bs-pagetemplates-pref-hidedefaults": "Приховати стандартні шаблони",
 	"bs-pagetemplates-headerlabel": "Позначка",
 	"bs-pagetemplates-headertargetnamespace": "Простір назв",
 	"bs-pagetemplates-tipeditdetails": "Редагувати шаблон",
@@ -55,6 +52,5 @@
 	"pagetemplatesadmin": "Адміністрування шаблонів сторінок",
 	"bs-usagetracker-pagetemplates": "шаблони сторінок",
 	"bs-pagetemplates-nsm-label": "PageTemplates",
-	"right-pagetemplatesadmin-viewspecialpage": "Надає доступ до спеціальної сторінки [[Special:PageTemplatesAdmin]], де можна керувати шаблонами сторінок",
-	"bs-pagetemplates-pref-hidedefaults-help": "Вилучає стандартний шаблон «Порожня сторінка» з вибору шаблонів сторінок під час створення сторінки."
+	"right-pagetemplatesadmin-viewspecialpage": "Надає доступ до спеціальної сторінки [[Special:PageTemplatesAdmin]], де можна керувати шаблонами сторінок"
 }

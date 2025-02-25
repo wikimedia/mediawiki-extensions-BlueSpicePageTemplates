@@ -25,8 +25,6 @@
 	"bs-pagetemplates-general-section": "全般",
 	"bs-pagetemplates-choose-template-empty": "このページは存在しません。あなたは新しいページを作成できます。または、ブラウザの「戻る」ボタンをクリックして、前のページに戻ってください。",
 	"bs-pagetemplates-pref-excludens": "テンプレートを表示しない名前空間:",
-	"bs-pagetemplates-pref-forcenamespace": "ターゲット名前空間を強制する",
-	"bs-pagetemplates-pref-hidedefaults": "既定のテンプレートを非表示にする",
 	"bs-pagetemplates-headerlabel": "ラベル",
 	"bs-pagetemplates-headertargetnamespace": "名前空間",
 	"bs-pagetemplates-tipeditdetails": "テンプレートの編集",
