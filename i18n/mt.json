@@ -11,7 +11,6 @@
 	"bs-pagetemplates-tpl-deleted": "Il-mudell ġie mneħħi.",
 	"bs-pagetemplates-general-section": "Ġenerali",
 	"bs-pagetemplates-pref-excludens": "Turix mudelli f'dawn l-ispazji tal-isem:",
-	"bs-pagetemplates-pref-hideifnotintargetns": "Aħbi l-mudell jekk il-paġna m'għandix tinħoloq fl-ispazju tal-isem intenzjonat",
 	"bs-pagetemplates-tipeditdetails": "Immodifika l-mudell",
 	"bs-pagetemplates-tipdeletetemplate": "Neħħi {{PLURAL:$1|mudell|mudelli}}",
 	"bs-pagetemplates-label-tpl": "Isem tal-mudell",

@@ -27,7 +27,6 @@
 	"bs-pagetemplates-choose-template": "Šis puslapis dar neegzistuoja. Galite sukurti naują puslapį. Jei nenorite to daryti, paspauskite grįžimo atgal mygtuką savo naršyklėje, kad grįžtumėte į paskutinį lankytą puslapį.\n\nGalite pasirinkti {{PLURAL:$1|šabloną|vieną iš šablonų}}:",
 	"bs-pagetemplates-choose-template-empty": "Šis puslapis dar neegzistuoja. Galite sukurti naują puslapį. Jei nenorite to daryti, spustelėkite naršyklės mygtuką atgal, kad grįžtumėte į paskutinį aplankytą puslapį.",
 	"bs-pagetemplates-pref-excludens": "Nerodyti šablonų šiose vardų srityse:",
-	"bs-pagetemplates-pref-hidedefaults": "Slėpti numatytuosius šablonus",
 	"bs-pagetemplates-headerlabel": "Etiketė",
 	"bs-pagetemplates-headertargetnamespace": "Vardų sritis",
 	"bs-pagetemplates-tipeditdetails": "Redaguoti šabloną",

@@ -22,7 +22,6 @@
 	"bs-pagetemplates-tpl-deleted": "Szablon został usunięty.",
 	"bs-pagetemplates-choose-template-empty": "Ta strona jeszcze nie istnieje. Możesz utworzyć nową stronę. Jeśli nie chcesz tego robić, kliknij w przeglądarce przycisk Wstecz, aby powrócić do ostatnio odwiedzanej strony.",
 	"bs-pagetemplates-pref-excludens": "Nie pokazuj szablonów w tych przestrzeniach nazw:",
-	"bs-pagetemplates-pref-hidedefaults": "Ukryj domyślne szablony",
 	"bs-pagetemplates-headerlabel": "Etykieta",
 	"bs-pagetemplates-headertargetnamespace": "Przestrzeń nazw",
 	"bs-pagetemplates-tipeditdetails": "Edytuj szablon",

@@ -16,8 +16,6 @@
 	"bs-pagetemplates-tpl-edited": "Změny byly uloženy.",
 	"bs-pagetemplates-tpl-deleted": "Šablona byla smazána.",
 	"bs-pagetemplates-pref-excludens": "Nezobrazovat šablony v těchto jmenných prostorech:",
-	"bs-pagetemplates-pref-hideifnotintargetns": "Skrýt šablonu, pokud stránka nemá být vytvořena v cílovém jmenném prostoru",
-	"bs-pagetemplates-pref-hidedefaults": "Skrýt výchozí šablony",
 	"bs-pagetemplates-tipeditdetails": "Upravit šablonu",
 	"bs-pagetemplates-tipaddtemplate": "Přidat šablonu",
 	"bs-pagetemplates-label-tpl": "Název šablony",
