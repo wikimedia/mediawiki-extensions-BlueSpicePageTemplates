@@ -41,6 +41,7 @@
 	"bs-pagetemplates-config-forcenamespace": "Label for config variable \"PageTemplatesForceNamespace\" at [[Special:BlueSpiceConfigManager]]",
 	"bs-pagetemplates-config-forcenamespace-help": "Description for config variable \"PageTemplatesForceNamespace\"",
 	"bs-pagetemplates-config-hideifnotintargetns": "Label for config variable \"PageTemplatesHideIfNotInTargetNs\" at [[Special:BlueSpiceConfigManager]]",
+	"bs-pagetemplates-config-hideifnotintargetns-help": "Description for config variable \"PageTemplatesHideIfNotInTargetNs\"",
 	"bs-pagetemplates-config-hidedefaults": "Label for config variable \"PageTemplatesHideDefaults\" at [[Special:BlueSpiceConfigManager]]",
 	"bs-pagetemplates-headerlabel": "This is the label for the field named \"label\". Each page template has a \"label\" and a \"description\", which are shown to the user in a list when creating a new page. The \"label\" is used as the \"heading\" in the list and generally is the \"name\" of a single page template.\n{{Identical|Label}}",
 	"bs-pagetemplates-headertargetnamespace": "Label for namespace\n{{Identical|Namespace}}",
@@ -69,6 +70,5 @@
 	"bs-pagetemplates-search-template-placeholder": "Placeholder text displayed in the search template input field",
 	"bs-pagetemplates-headertags": "Label for tags\n{{Identical|Tags}}",
 	"bs-pagetemplates-tag-untagged": "Label for container with page templates for untagged templates",
-	"bs-pagetemplates-ns-undefined": "Label for container with page templates for undefined namespaces",
-	"bs-pagetemplates-config-hideifnotintargetns-help": "Description for config variable \"PageTemplatesHideIfNotInTargetNs\""
+	"bs-pagetemplates-ns-undefined": "Label for container with page templates for undefined namespaces"
 }
