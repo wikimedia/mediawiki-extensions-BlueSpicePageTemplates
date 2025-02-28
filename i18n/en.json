@@ -28,7 +28,8 @@
 	"bs-pagetemplates-pref-excludens": "Do not show templates in these namespaces:",
 	"bs-pagetemplates-config-forcenamespace": "Use namespace from template link",
 	"bs-pagetemplates-config-forcenamespace-help": "Applies the namespace selected in the template link when creating a new page",
-	"bs-pagetemplates-config-hideifnotintargetns": "Hide template for not selected namespace",
+	"bs-pagetemplates-config-hideifnotintargetns": "Hide template in namespaces that weren't selected",
+	"bs-pagetemplates-config-hideifnotintargetns-help": "Removes a template from the list of available page templates if its target namespace does not match the namespace of the page during page creation",
 	"bs-pagetemplates-config-hidedefaults": "Hide standard templates",
 	"bs-pagetemplates-headerlabel": "Label",
 	"bs-pagetemplates-headertargetnamespace": "Namespace",
@@ -58,6 +59,5 @@
 	"bs-pagetemplates-search-template-placeholder": "Find page template",
 	"bs-pagetemplates-headertags": "Tags",
 	"bs-pagetemplates-tag-untagged": "Untagged",
-	"bs-pagetemplates-ns-undefined": "Undefined namespace",
-	"bs-pagetemplates-config-hideifnotintargetns-help": "Removes a template from the list of available page templates if its target namespace does not match the namespace of the page during page creation"
+	"bs-pagetemplates-ns-undefined": "Undefined namespace"
 }
