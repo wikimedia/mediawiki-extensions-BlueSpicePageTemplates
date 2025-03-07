@@ -3,9 +3,9 @@
 namespace BlueSpice\PageTemplates\Special;
 
 use MediaWiki\Html\Html;
-use MediaWiki\SpecialPage\SpecialPage;
+use OOJSPlus\Special\OOJSGridSpecialPage;
 
-class PageTemplatesAdministration extends SpecialPage {
+class PageTemplatesAdministration extends OOJSGridSpecialPage {
 	/**
 	 *
 	 */
@@ -17,8 +17,7 @@ class PageTemplatesAdministration extends SpecialPage {
 	 * @param string $subPage
 	 * @return void
 	 */
-	public function execute( $subPage ) {
-		parent::execute( $subPage );
+	public function doExecute( $subPage ) {
 		$this->getOutput()->addModules( [ 'ext.bluespice.pageTemplates' ] );
 		$this->getOutput()->addHTML(
 			Html::element( 'div', [ 'id' => 'bs-pagetemplates-grid' ] )
