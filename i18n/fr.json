@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Gomoko",
+			"JLTRY",
 			"Thibaut120094",
 			"Urhixidur",
 			"Verdy p",
@@ -30,6 +31,10 @@
 	"bs-pagetemplates-choose-template": "Cette page n’existe pas encore. Vous pouvez créer une nouvelle page. Si vous ne le voulez pas, cliquez sur le bouton de retour de votre navigateur pour revenir sur la dernière page visitée. \n\nVous pouvez choisir {{PLURAL:$1|le modèle suivant|un des modèles suivants}} :",
 	"bs-pagetemplates-choose-template-empty": "Cette page n’existe pas. Vous pouvez créer une nouvelle page. Si vous ne voulez pas le faire, cliquez sur le bouton retour de votre navigateur pour revenir à la dernière page visitée.",
 	"bs-pagetemplates-pref-excludens": "Ne pas afficher les modèles dans ces espaces de nom :",
+	"bs-pagetemplates-config-forcenamespace": "Utiliser l'espace de noms à partir du lien du modèle",
+	"bs-pagetemplates-config-forcenamespace-help": "Applique l'espace de noms sélectionné dans le lien du modèle lors de la création d'une nouvelle page",
+	"bs-pagetemplates-config-hideifnotintargetns": "Masquer le modèle pour l'espace de noms non sélectionné",
+	"bs-pagetemplates-config-hidedefaults": "Masquer les modèles standards",
 	"bs-pagetemplates-headerlabel": "Libellé",
 	"bs-pagetemplates-headertargetnamespace": "Espace de noms",
 	"bs-pagetemplates-tipeditdetails": "Modifier le modèle",
@@ -53,9 +58,11 @@
 	"bs-usagetracker-pagetemplates": "modèles de page",
 	"bs-pagetemplates-nsm-label": "Modèles de page",
 	"right-pagetemplatesadmin-viewspecialpage": "Accéder à la page spéciale [[Special:PageTemplatesAdmin]], où les modèles de page peuvent être gérés",
+	"bs-pagetemplates-config-hidedefaults-help": "Supprime le modèle standard \"Page vide\" de la sélection des modèles de page lors de la création de page.",
 	"bs-pagetemplates-no-matching-results-label": "Aucun modèle trouvé",
 	"bs-pagetemplates-search-template-placeholder": "Trouver le modèle de page",
 	"bs-pagetemplates-headertags": "Balises",
 	"bs-pagetemplates-tag-untagged": "Sans balise",
-	"bs-pagetemplates-ns-undefined": "Espace de noms non défini"
+	"bs-pagetemplates-ns-undefined": "Espace de noms non défini",
+	"bs-pagetemplates-config-hideifnotintargetns-help": "Supprime un modèle de la liste des modèles de page disponibles si son espace de noms cible ne correspond pas à l'espace de noms de la page lors de la création de la page"
 }
