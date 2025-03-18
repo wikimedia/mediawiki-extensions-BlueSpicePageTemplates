@@ -176,7 +176,12 @@ class BSApiPageTemplatesTasks extends BSApiTasksBase {
 			$oReturn->message = wfMessage( 'bs-pagetemplates-tpl-added' )->plain();
 		// and here we have edit template
 		} else {
-			$rRes = $dbw->select( 'bs_pagetemplate', 'pt_id', [ 'pt_id' => $iOldId ] );
+			$rRes = $dbw->select(
+				'bs_pagetemplate',
+				'pt_id',
+				[ 'pt_id' => $iOldId ],
+				__METHOD__
+			);
 			if ( !$rRes->numRows() ) {
 				$oReturn->message = wfMessage( 'bs-pagetemplates-nooldtpl' )->plain();
 				return $oReturn;
