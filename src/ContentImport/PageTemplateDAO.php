@@ -35,7 +35,8 @@ class PageTemplateDAO {
 		$isTemplatePersisted = $this->db->selectField(
 			'bs_pagetemplate',
 			'pt_id',
-			$conds
+			$conds,
+			__METHOD__
 		);
 
 		return $isTemplatePersisted;
