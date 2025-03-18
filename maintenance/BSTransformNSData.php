@@ -15,7 +15,9 @@ class BSTransformNSData extends LoggedUpdateMaintenance {
 	protected function readData() {
 		$res = $this->getDB( DB_REPLICA )->select(
 			'bs_pagetemplate',
-			'*'
+			'*',
+			'',
+			__METHOD__
 		);
 		if ( $res->numRows() < 1 ) {
 			return true;
