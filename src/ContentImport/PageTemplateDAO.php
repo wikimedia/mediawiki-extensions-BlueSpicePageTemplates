@@ -91,7 +91,8 @@ class PageTemplateDAO {
 		$this->db->update(
 			'bs_pagetemplate',
 			$set,
-			$conds
+			$conds,
+			__METHOD__
 		);
 	}
 }
