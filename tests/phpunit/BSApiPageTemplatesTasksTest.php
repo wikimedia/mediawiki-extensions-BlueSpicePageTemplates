@@ -24,7 +24,11 @@ class BSApiPageTemplatesTasksTest extends BSApiTasksTestBase {
 		// addDBDataOnce fails with usage of @dataProvider...
 		$oPageTemplateFixtures = new BSPageTemplateFixtures();
 		foreach ( $oPageTemplateFixtures->makeDataSets() as $dataSet ) {
-			$this->db->insert( 'bs_pagetemplate', $dataSet );
+			$this->db->insert(
+				'bs_pagetemplate',
+				$dataSet,
+				__METHOD__
+			);
 		}
 	}
 

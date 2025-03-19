@@ -168,7 +168,8 @@ class BSApiPageTemplatesTasks extends BSApiTasksBase {
 					'pt_target_namespace' => FormatJson::encode( $targetNamespaces ),
 					'pt_sid' => 0,
 					'pt_tags' => FormatJson::encode( $targetTags ),
-				]
+				],
+				__METHOD__
 			);
 			$oReturn->success = true;
 			$oReturn->payload = new stdClass();
