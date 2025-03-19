@@ -21,7 +21,11 @@ class BSPageTemplateListTest extends MediaWikiIntegrationTestCase {
 		// addDBDataOnce fails with usage of @dataProvider...
 		$oPageTemplateFixtures = new BSPageTemplateFixtures();
 		foreach ( $oPageTemplateFixtures->makeDataSets() as $dataSet ) {
-			$this->getDb()->insert( 'bs_pagetemplate', $dataSet );
+			$this->getDb()->insert(
+				'bs_pagetemplate',
+				$dataSet,
+				__METHOD__
+			);
 		}
 	}
 

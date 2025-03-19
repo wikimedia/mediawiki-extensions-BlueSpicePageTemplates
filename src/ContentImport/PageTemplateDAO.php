@@ -61,7 +61,8 @@ class PageTemplateDAO {
 
 		$this->db->insert(
 			'bs_pagetemplate',
-			$set
+			$set,
+			__METHOD__
 		);
 	}
 

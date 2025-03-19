@@ -49,7 +49,11 @@ class BSApiPageTemplatesStoreTest extends BSApiExtJSStoreTestBase {
 	public function addDBData() {
 		$oPageTemplateFixtures = new BSPageTemplateFixtures();
 		foreach ( $oPageTemplateFixtures->makeDataSets() as $dataSet ) {
-			$this->db->insert( 'bs_pagetemplate', $dataSet );
+			$this->db->insert(
+				'bs_pagetemplate',
+				$dataSet,
+				__METHOD__
+			);
 		}
 	}
 
