@@ -5,7 +5,7 @@
 	"license": "GPL-3.0-only",
 	"require": {
 		"composer/installers": "~1.0|~2",
-		"mwstake/mediawiki-component-contentprovisioner": "~2"
+		"mwstake/mediawiki-component-contentprovisioner": "~3"
 	},
 	"autoload": {
 		"psr-4": {
