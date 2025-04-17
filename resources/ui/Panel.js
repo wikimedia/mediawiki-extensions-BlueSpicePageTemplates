@@ -1,41 +1,41 @@
 bs.util.registerNamespace( 'bs.pageTemplates.ui' );
 
-bs.pageTemplates.ui.PageTemplatesPanel = function( cfg ) {
+bs.pageTemplates.ui.PageTemplatesPanel = function ( cfg ) {
 	cfg = cfg || {};
 
-	let columns = {
+	const columns = {
 		label: {
 			type: 'text',
-			headerText: mw.message('bs-pagetemplates-headerlabel').plain(),
+			headerText: mw.message( 'bs-pagetemplates-headerlabel' ).plain(),
 			filter: { type: 'string' },
 			sortable: true
 		},
 		desc: {
 			type: 'text',
-			headerText: mw.message('bs-pagetemplates-label-desc').plain(),
-			filter: { type: 'text' },
+			headerText: mw.message( 'bs-pagetemplates-label-desc' ).plain(),
+			filter: { type: 'text' }
 		},
 		targetns: {
 			type: 'text',
-			headerText: mw.message('bs-pagetemplates-headertargetnamespace').plain(),
+			headerText: mw.message( 'bs-pagetemplates-headertargetnamespace' ).plain(),
 			filter: { type: 'text' },
 			sortable: true
 		},
 		template: {
 			type: 'text',
-			headerText: mw.message('bs-pagetemplates-label-article').plain(),
+			headerText: mw.message( 'bs-pagetemplates-label-article' ).plain(),
 			filter: { type: 'text' },
 			sortable: true,
-			valueParser: function( value ) {
+			valueParser: function ( value ) {
 				return new OO.ui.HtmlSnippet( value );
 			}
 		},
 		tags: {
 			type: 'text',
-			headerText: mw.message('bs-pagetemplates-headertags').plain(),
+			headerText: mw.message( 'bs-pagetemplates-headertags' ).plain(),
 			filter: { type: 'text' },
 			sortable: true,
-			valueParser: function( value ) {
+			valueParser: function ( value ) {
 				return new OO.ui.HtmlSnippet( value );
 			}
 		}
@@ -65,7 +65,7 @@ bs.pageTemplates.ui.PageTemplatesPanel = function( cfg ) {
 		action: 'bs-pagetemplates-store'
 	} );
 	this.store.connect( this, {
-		reload: function() {
+		reload: function () {
 			this.setAbilitiesOnSelection( null );
 		}
 	} );
@@ -85,13 +85,13 @@ bs.pageTemplates.ui.PageTemplatesPanel = function( cfg ) {
 				const $table = $( '<table>' );
 				let $row = $( '<tr>' );
 
-				for ( let key in columns ) {
+				for ( const key in columns ) {
 					if ( columns.hasOwnProperty( key ) ) {
-						const column = columns[key];
+						const column = columns[ key ];
 						if ( column.type === 'action' ) {
 							continue;
 						}
-						let $cell = $( '<th>' );
+						const $cell = $( '<th>' );
 						$cell.append( column.headerText );
 						$row.append( $cell );
 					}
@@ -104,16 +104,16 @@ bs.pageTemplates.ui.PageTemplatesPanel = function( cfg ) {
 					}
 					$row = $( '<tr>' );
 					const record = response[ id ];
-					for ( let key in columns ) {
+					for ( const key in columns ) {
 						if ( !columns.hasOwnProperty( key ) ) {
 							continue;
 						}
-						const column = columns[key];
+						const column = columns[ key ];
 						if ( column.type === 'action' ) {
 							continue;
 						}
-						let $cell = $( '<td>' );
-						$cell.append( record[key] );
+						const $cell = $( '<td>' );
+						$cell.append( record[ key ] );
 						$row.append( $cell );
 					}
 					$table.append( $row );
@@ -132,18 +132,18 @@ bs.pageTemplates.ui.PageTemplatesPanel = function( cfg ) {
 
 OO.inheritClass( bs.pageTemplates.ui.PageTemplatesPanel, OOJSPlus.ui.panel.ManagerGrid );
 
-bs.pageTemplates.ui.PageTemplatesPanel.prototype.getToolbarActions = function() {
-	var actions = [];
-	actions.push( this.getAddAction( { icon: 'add', flags: [ 'progressive' ],  displayBothIconAndLabel: true } ) );
+bs.pageTemplates.ui.PageTemplatesPanel.prototype.getToolbarActions = function () {
+	const actions = [];
+	actions.push( this.getAddAction( { icon: 'add', flags: [ 'progressive' ], displayBothIconAndLabel: true } ) );
 	actions.push( this.getEditAction( { displayBothIconAndLabel: true } ) );
 	actions.push( this.getDeleteAction( { displayBothIconAndLabel: true } ) );
 	return actions;
 };
 
-bs.pageTemplates.ui.PageTemplatesPanel.prototype.onAction = function( action, row ) {
-	var selected = this.grid.getSelectedRows();
+bs.pageTemplates.ui.PageTemplatesPanel.prototype.onAction = function ( action, row ) {
+	const selected = this.grid.getSelectedRows();
 	if ( action === 'edit' && ( selected.length === 1 || row ) ) {
-		this.editTemplate( row || selected[0] );
+		this.editTemplate( row || selected[ 0 ] );
 	}
 	if ( action === 'add' ) {
 		this.addTemplate();
@@ -153,7 +153,7 @@ bs.pageTemplates.ui.PageTemplatesPanel.prototype.onAction = function( action, ro
 	}
 };
 
-bs.pageTemplates.ui.PageTemplatesPanel.prototype.getInitialAbilities = function() {
+bs.pageTemplates.ui.PageTemplatesPanel.prototype.getInitialAbilities = function () {
 	return {
 		add: true,
 		edit: false,
@@ -165,7 +165,7 @@ bs.pageTemplates.ui.PageTemplatesPanel.prototype.onItemSelected = function ( ite
 	this.setAbilitiesOnSelection( selectedItems || [] );
 };
 
-bs.pageTemplates.ui.PageTemplatesPanel.prototype.setAbilitiesOnSelection = function( selectedItems ) {
+bs.pageTemplates.ui.PageTemplatesPanel.prototype.setAbilitiesOnSelection = function ( selectedItems ) {
 	selectedItems = selectedItems || [];
 	if ( selectedItems.length === 1 ) {
 		this.setAbilities( { add: true, edit: true, delete: true } );
@@ -176,40 +176,38 @@ bs.pageTemplates.ui.PageTemplatesPanel.prototype.setAbilitiesOnSelection = funct
 	}
 };
 
-bs.pageTemplates.ui.PageTemplatesPanel.prototype.addTemplate = function() {
-	var dialog = new bs.pageTemplates.ui.dialog.EditTemplate({
+bs.pageTemplates.ui.PageTemplatesPanel.prototype.addTemplate = function () {
+	const dialog = new bs.pageTemplates.ui.dialog.EditTemplate( {
 		isCreation: true
 	} );
 	this.openWindow( dialog );
 };
 
-bs.pageTemplates.ui.PageTemplatesPanel.prototype.editTemplate = function( row ) {
-	var dialog = new bs.pageTemplates.ui.dialog.EditTemplate({
+bs.pageTemplates.ui.PageTemplatesPanel.prototype.editTemplate = function ( row ) {
+	const dialog = new bs.pageTemplates.ui.dialog.EditTemplate( {
 		isCreation: false,
 		item: row
 	} );
 	this.openWindow( dialog );
 };
 
-bs.pageTemplates.ui.PageTemplatesPanel.prototype.deleteTemplate = function( rows ) {
-	var dialog = new bs.pageTemplates.ui.dialog.DeleteTemplateDialog({
-		ids: rows.map( function( row ) {
-			return row.id;
-		} )
+bs.pageTemplates.ui.PageTemplatesPanel.prototype.deleteTemplate = function ( rows ) {
+	const dialog = new bs.pageTemplates.ui.dialog.DeleteTemplateDialog( {
+		ids: rows.map( ( row ) => row.id )
 	} );
 	this.openWindow( dialog );
 };
 
-bs.pageTemplates.ui.PageTemplatesPanel.prototype.openWindow = function( dialog ) {
+bs.pageTemplates.ui.PageTemplatesPanel.prototype.openWindow = function ( dialog ) {
 	if ( !this.windowManager ) {
 		this.windowManager = new OO.ui.WindowManager();
 		$( 'body' ).append( this.windowManager.$element );
 	}
 	this.windowManager.addWindows( [ dialog ] );
-	this.windowManager.openWindow( dialog ).closed.then( function( data ) {
+	this.windowManager.openWindow( dialog ).closed.then( ( data ) => {
 		if ( data && data.reload ) {
 			this.store.reload();
 		}
 		this.windowManager.clearWindows();
-	}.bind( this ) );
+	} );
 };
