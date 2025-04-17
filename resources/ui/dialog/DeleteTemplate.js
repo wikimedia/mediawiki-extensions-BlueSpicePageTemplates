@@ -1,6 +1,6 @@
 bs.util.registerNamespace( 'bs.pageTemplates.ui.dialog' );
 
-bs.pageTemplates.ui.dialog.DeleteTemplateDialog = function( cfg ) {
+bs.pageTemplates.ui.dialog.DeleteTemplateDialog = function ( cfg ) {
 	bs.pageTemplates.ui.dialog.DeleteTemplateDialog.parent.call( this, cfg );
 	this.ids = cfg.ids;
 };
@@ -14,7 +14,7 @@ bs.pageTemplates.ui.dialog.DeleteTemplateDialog.static.actions = [
 	{ action: 'cancel', label: mw.msg( 'oojsplus-toolbar-cancel' ), flags: [ 'safe' ] }
 ];
 
-bs.pageTemplates.ui.dialog.DeleteTemplateDialog.prototype.initialize = function() {
+bs.pageTemplates.ui.dialog.DeleteTemplateDialog.prototype.initialize = function () {
 	bs.pageTemplates.ui.dialog.DeleteTemplateDialog.parent.prototype.initialize.call( this );
 	this.content = new OO.ui.PanelLayout( {
 		expanded: false,
@@ -30,9 +30,9 @@ bs.pageTemplates.ui.dialog.DeleteTemplateDialog.prototype.initialize = function(
 	this.$body.append( this.content.$element );
 };
 
-bs.pageTemplates.ui.dialog.DeleteTemplateDialog.prototype.getSetupProcess = function() {
+bs.pageTemplates.ui.dialog.DeleteTemplateDialog.prototype.getSetupProcess = function () {
 	return bs.pageTemplates.ui.dialog.DeleteTemplateDialog.parent.prototype.getSetupProcess.call( this ).next(
-		function() {
+		function () {
 			this.title
 				.setLabel( mw.message( 'bs-pagetemplates-tipdeletetemplate', this.ids.length ).parse() )
 				.setTitle( mw.message( 'bs-pagetemplates-tipdeletetemplate', this.ids.length ).parse() );
@@ -40,9 +40,9 @@ bs.pageTemplates.ui.dialog.DeleteTemplateDialog.prototype.getSetupProcess = func
 	);
 };
 
-bs.pageTemplates.ui.dialog.DeleteTemplateDialog.prototype.getActionProcess = function( action ) {
+bs.pageTemplates.ui.dialog.DeleteTemplateDialog.prototype.getActionProcess = function ( action ) {
 	return bs.pageTemplates.ui.dialog.DeleteTemplateDialog.parent.prototype.getActionProcess.call( this, action ).next(
-		function() {
+		function () {
 			if ( action === 'delete' ) {
 				const dfd = $.Deferred();
 				this.pushPending();
@@ -54,10 +54,10 @@ bs.pageTemplates.ui.dialog.DeleteTemplateDialog.prototype.getActionProcess = fun
 						ids: this.ids
 					},
 					{
-						success: function( response ) {
+						success: function () {
 							this.close( { reload: true } );
 						}.bind( this ),
-						failure: function( e ) {
+						failure: function ( e ) {
 							this.popPending();
 							dfd.reject( new OO.ui.Error( e.message ) );
 						}.bind( this )
@@ -73,9 +73,9 @@ bs.pageTemplates.ui.dialog.DeleteTemplateDialog.prototype.getActionProcess = fun
 
 bs.pageTemplates.ui.dialog.DeleteTemplateDialog.prototype.getBodyHeight = function () {
 	if ( !this.$errors.hasClass( 'oo-ui-element-hidden' ) ) {
-		return this.$element.find( '.oo-ui-processDialog-errors' )[0].scrollHeight;
+		return this.$element.find( '.oo-ui-processDialog-errors' )[ 0 ].scrollHeight;
 	}
-	return this.$body[0].scrollHeight;
+	return this.$body[ 0 ].scrollHeight;
 };
 
 bs.pageTemplates.ui.dialog.DeleteTemplateDialog.prototype.onDismissErrorButtonClick = function () {
