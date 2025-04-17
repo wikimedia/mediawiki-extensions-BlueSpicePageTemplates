@@ -109,7 +109,7 @@ class BSApiPageTemplatesTasks extends BSApiTasksBase {
 	 * @param array $params
 	 * @return Standard
 	 */
-	protected function task_doEditTemplate( $taskData, $params ) {
+	protected function task_doEditTemplate( $taskData, $params ) { // phpcs:ignore MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName, Generic.Files.LineLength.TooLong
 		$oReturn = $this->makeStandardReturn();
 
 		$sDesc = isset( $taskData->desc ) ? $taskData->desc : '';
@@ -221,7 +221,7 @@ class BSApiPageTemplatesTasks extends BSApiTasksBase {
 	 * @param array $params
 	 * @return Standard
 	 */
-	protected function task_doDeleteTemplates( $taskData, $params ) {
+	protected function task_doDeleteTemplates( $taskData, $params ) { // phpcs:ignore MediaWiki.NamingConventions.LowerCamelFunctionsName.FunctionName, Generic.Files.LineLength.TooLong
 		$return = $this->makeStandardReturn();
 
 		$ids = isset( $taskData->ids ) ? (array)$taskData->ids : [];

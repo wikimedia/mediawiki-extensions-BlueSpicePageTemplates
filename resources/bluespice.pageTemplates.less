@@ -37,10 +37,9 @@
 	}
 }
 
-
 #bs-tag-container .row,
 #bs-ns-container .row {
-	margin-top: 0
+	margin-top: 0;
 }
 
 .bs-pt-item .badge {
@@ -52,21 +51,20 @@
 
 .bs-pt-item.empty {
 	margin-left: 2rem;
-
 }
 
-.bs-pt-link:before {
+.bs-pt-link::before {
 	content: '\f016 ';
 	font-family: 'fontawesome';
 	margin-right: 0.2em;
 }
 
-.bs-pt-item.template:before {
+.bs-pt-item.template::before {
 	content: '\f0f6 ';
 }
 
 #bs-pt-head {
-	label  {
+	label {
 		margin: 0.5em;
 	}
 }
@@ -80,7 +78,8 @@
 	margin-bottom: 2.35em;
 }
 
-.template-namespace-tag-picker, .template-search-field {
+.template-namespace-tag-picker,
+.template-search-field {
 	display: inline-block;
 	/* Adjust the styles as needed for each element */
 }

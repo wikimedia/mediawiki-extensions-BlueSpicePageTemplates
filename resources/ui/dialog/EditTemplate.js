@@ -1,6 +1,6 @@
 bs.util.registerNamespace( 'bs.pageTemplates.ui.dialog' );
 
-bs.pageTemplates.ui.dialog.EditTemplate = function( cfg ) {
+bs.pageTemplates.ui.dialog.EditTemplate = function ( cfg ) {
 	bs.pageTemplates.ui.dialog.EditTemplate.parent.call( this, cfg );
 	this.isCreation = cfg.isCreation || false;
 	this.item = cfg.item || {};
@@ -15,9 +15,9 @@ bs.pageTemplates.ui.dialog.EditTemplate.static.actions = [
 	{ action: 'cancel', label: mw.msg( 'oojsplus-toolbar-cancel' ), flags: [ 'safe' ] }
 ];
 
-bs.pageTemplates.ui.dialog.EditTemplate.prototype.getSetupProcess = function() {
+bs.pageTemplates.ui.dialog.EditTemplate.prototype.getSetupProcess = function () {
 	return bs.pageTemplates.ui.dialog.EditTemplate.parent.prototype.getSetupProcess.call( this ).next(
-		function() {
+		function () {
 			if ( this.isCreation ) {
 				this.title
 					.setLabel( mw.msg( 'bs-pagetemplates-tipaddtemplate' ) )
@@ -28,7 +28,7 @@ bs.pageTemplates.ui.dialog.EditTemplate.prototype.getSetupProcess = function() {
 	);
 };
 
-bs.pageTemplates.ui.dialog.EditTemplate.prototype.initialize = function() {
+bs.pageTemplates.ui.dialog.EditTemplate.prototype.initialize = function () {
 	bs.pageTemplates.ui.dialog.EditTemplate.parent.prototype.initialize.call( this );
 
 	this.content = new OO.ui.PanelLayout( {
@@ -38,7 +38,7 @@ bs.pageTemplates.ui.dialog.EditTemplate.prototype.initialize = function() {
 
 	this.nameInput = new OO.ui.TextInputWidget( {
 		required: true,
-		value: this.item.label || '',
+		value: this.item.label || ''
 	} );
 	this.nameInput.connect( this, {
 		change: 'checkValidity'
@@ -68,7 +68,7 @@ bs.pageTemplates.ui.dialog.EditTemplate.prototype.initialize = function() {
 	this.tagsInput = new OOJSPlus.ui.widget.StoreDataTagMultiselectWidget( {
 		queryAction: 'bs-pagetemplate-tags-store',
 		labelField: 'text',
-		allowArbitrary: true,
+		allowArbitrary: true
 	} );
 	this.tagsInput.setValue( this.item && this.item.tags ? this.item.tags.split( ',' ) : [] );
 	this.tagsInput.connect( this, {
@@ -109,16 +109,16 @@ bs.pageTemplates.ui.dialog.EditTemplate.prototype.initialize = function() {
 
 	this.actions.setAbilities( { save: !this.isCreation } );
 	this.$body.append( this.content.$element );
-	setTimeout( function() {
+	setTimeout( () => {
 		this.updateSize();
-	}.bind( this ), 1 );
+	}, 1 );
 };
 
-bs.pageTemplates.ui.dialog.EditTemplate.prototype.checkValidity = async function() {
+bs.pageTemplates.ui.dialog.EditTemplate.prototype.checkValidity = async function () {
 	if ( this.validityTimeout ) {
 		clearTimeout( this.validityTimeout );
 	}
-	this.validityTimeout = setTimeout( async function() {
+	this.validityTimeout = setTimeout( async () => {
 		try {
 			await this.nameInput.getValidity();
 			await this.descriptionInput.getValidity();
@@ -127,16 +127,16 @@ bs.pageTemplates.ui.dialog.EditTemplate.prototype.checkValidity = async function
 		} catch ( e ) {
 			this.onValidityCheck( false );
 		}
-	}.bind( this ), 500 );
+	}, 500 );
 };
 
-bs.pageTemplates.ui.dialog.EditTemplate.prototype.onValidityCheck = function( valid ) {
+bs.pageTemplates.ui.dialog.EditTemplate.prototype.onValidityCheck = function ( valid ) {
 	this.actions.setAbilities( { save: valid } );
 };
 
-bs.pageTemplates.ui.dialog.EditTemplate.prototype.getActionProcess = function( action ) {
+bs.pageTemplates.ui.dialog.EditTemplate.prototype.getActionProcess = function ( action ) {
 	return bs.pageTemplates.ui.dialog.EditTemplate.parent.prototype.getActionProcess.call( this, action ).next(
-		function() {
+		function () {
 			if ( action === 'save' ) {
 				const data = {
 					id: this.item ? parseInt( this.item.id ) : null,
@@ -158,10 +158,10 @@ bs.pageTemplates.ui.dialog.EditTemplate.prototype.getActionProcess = function( a
 					'doEditTemplate',
 					data,
 					{
-						success: function( response ) {
+						success: function () {
 							this.close( { reload: true } );
 						}.bind( this ),
-						failure: function( e ) {
+						failure: function ( e ) {
 							this.popPending();
 							dfd.reject( new OO.ui.Error( e.message ) );
 						}.bind( this )
@@ -177,9 +177,9 @@ bs.pageTemplates.ui.dialog.EditTemplate.prototype.getActionProcess = function( a
 
 bs.pageTemplates.ui.dialog.EditTemplate.prototype.getBodyHeight = function () {
 	if ( !this.$errors.hasClass( 'oo-ui-element-hidden' ) ) {
-		return this.$element.find( '.oo-ui-processDialog-errors' )[0].scrollHeight;
+		return this.$element.find( '.oo-ui-processDialog-errors' )[ 0 ].scrollHeight;
 	}
-	return this.$body[0].scrollHeight;
+	return this.$body[ 0 ].scrollHeight;
 };
 
 bs.pageTemplates.ui.dialog.EditTemplate.prototype.onDismissErrorButtonClick = function () {
