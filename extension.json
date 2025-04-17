@@ -105,6 +105,9 @@
 	"AutoloadNamespaces": {
 		"BlueSpice\\PageTemplates\\": "src/"
 	},
+	"TestAutoloadNamespaces": {
+		"BlueSpice\\PageTemplates\\Tests\\": "tests/phpunit/"
+	},
 	"AutoloadClasses": {
 		"BSApiPageTemplatesStore": "includes/api/BSApiPageTemplatesStore.php",
 		"BSApiPageTemplatesTasks": "includes/api/BSApiPageTemplatesTasks.php",
