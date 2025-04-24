@@ -69,5 +69,11 @@
 	"bs-pagetemplates-search-template-placeholder": "Paginasjabloon zoeken",
 	"bs-pagetemplates-headertags": "Labels",
 	"bs-pagetemplates-tag-untagged": "Niet getagd",
-	"bs-pagetemplates-ns-undefined": "Ongedefinieerde namespace"
+	"bs-pagetemplates-ns-undefined": "Ongedefinieerde namespace",
+	"bs-pagetemplates-config-forcenamespace": "Naamruimte van sjabloonkoppeling gebruiken",
+	"bs-pagetemplates-config-forcenamespace-help": "Past de naamruimte toe die bij het aanmaken van een nieuwe pagina is geselecteerd in de sjabloonkoppeling",
+	"bs-pagetemplates-config-hideifnotintargetns": "Sjabloon verbergen voor niet-geselecteerde naamruimte",
+	"bs-pagetemplates-config-hidedefaults": "Standaardsjablonen verbergen",
+	"bs-pagetemplates-config-hidedefaults-help": "Verwijdert het standaardsjabloon “Lege pagina” uit de selectie van paginasjablonen bij het aanmaken van een pagina",
+	"bs-pagetemplates-config-hideifnotintargetns-help": "Verwijdert een sjabloon uit de lijst met beschikbare paginasjablonen als de doelnaamruimte ervan niet overeenkomt met de naamruimte van de pagina tijdens het aanmaken van de pagina"
 }

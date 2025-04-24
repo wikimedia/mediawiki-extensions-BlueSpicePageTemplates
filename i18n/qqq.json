@@ -74,5 +74,11 @@
 	"bs-pagetemplates-search-template-placeholder": "Placeholder text displayed in the search template input field",
 	"bs-pagetemplates-headertags": "Label for tags\n{{Identical|Tags}}",
 	"bs-pagetemplates-tag-untagged": "Label for container with page templates for untagged templates",
-	"bs-pagetemplates-ns-undefined": "Label for container with page templates for undefined namespaces"
+	"bs-pagetemplates-ns-undefined": "Label for container with page templates for undefined namespaces",
+	"bs-pagetemplates-config-forcenamespace": "Label for config variable \"PageTemplatesForceNamespace\" at [[Special:BlueSpiceConfigManager]]",
+	"bs-pagetemplates-config-forcenamespace-help": "Description for config variable \"PageTemplatesForceNamespace\"",
+	"bs-pagetemplates-config-hideifnotintargetns": "Label for config variable \"PageTemplatesHideIfNotInTargetNs\" at [[Special:BlueSpiceConfigManager]]",
+	"bs-pagetemplates-config-hidedefaults": "Label for config variable \"PageTemplatesHideDefaults\" at [[Special:BlueSpiceConfigManager]]",
+	"bs-pagetemplates-config-hidedefaults-help": "Description for config variable \"PageTemplatesHideDefaults\"",
+	"bs-pagetemplates-config-hideifnotintargetns-help": "Description for config variable \"PageTemplatesHideIfNotInTargetNs\""
 }

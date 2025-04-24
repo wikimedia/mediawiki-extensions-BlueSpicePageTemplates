@@ -49,5 +49,6 @@
 	"pagetemplatesadmin": "문서 틀 관리",
 	"bs-usagetracker-pagetemplates": "문서 틀",
 	"bs-pagetemplates-nsm-label": "PageTemplates",
-	"right-pagetemplatesadmin-viewspecialpage": "문서 틀을 관리할 수 있는 경우 [[Special:PageTemplatesAdmin]] 특수 문서로 접근"
+	"right-pagetemplatesadmin-viewspecialpage": "문서 틀을 관리할 수 있는 경우 [[Special:PageTemplatesAdmin]] 특수 문서로 접근",
+	"bs-pagetemplates-config-hidedefaults": "표준 틀 숨기기"
 }

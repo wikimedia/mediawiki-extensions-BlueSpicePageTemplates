@@ -47,5 +47,6 @@
 	"bs-usagetracker-pagetemplates": "Säiteschablounen",
 	"bs-pagetemplates-ns-undefined": "Ondefinéierten Nummraum",
 	"bs-pagetemplatesadmin-text": "Säiteschablounen",
-	"bs-pagetemplates-no-matching-results-label": "Keng Schabloun fonnt"
+	"bs-pagetemplates-no-matching-results-label": "Keng Schabloun fonnt",
+	"bs-pagetemplates-config-hidedefaults": "Standardschabloune verstoppen"
 }
