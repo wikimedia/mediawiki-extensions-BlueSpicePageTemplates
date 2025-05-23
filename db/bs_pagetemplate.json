@@ -14,7 +14,7 @@
 			},
 			{
 				"name": "pt_label",
-				"type": "string",
+				"type": "binary",
 				"options": {
 					"length": 255,
 					"notnull": true,
@@ -23,7 +23,7 @@
 			},
 			{
 				"name": "pt_desc",
-				"type": "string",
+				"type": "binary",
 				"options": {
 					"length": 255,
 					"notnull": true,
@@ -32,11 +32,11 @@
 			},
 			{
 				"name": "pt_target_namespace",
-				"type": "integer",
+				"type": "binary",
 				"options": {
-					"length": 11,
+					"length": 255,
 					"notnull": true,
-					"default": -99
+					"default": "[-99]"
 				}
 			},
 			{
@@ -67,6 +67,14 @@
 					"unsigned": true,
 					"notnull": true,
 					"default": 0
+				}
+			},
+			{
+				"name": "pt_tags",
+				"type": "binary",
+				"options": {
+					"length": 255,
+					"notnull": false
 				}
 			}
 		],
