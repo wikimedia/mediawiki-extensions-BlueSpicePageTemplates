@@ -2,55 +2,57 @@
 
 namespace BlueSpice\PageTemplates\Tag;
 
-use BlueSpice\Tag\Handler;
 use BSPageTemplateList;
 use BSPageTemplateListRenderer;
+use MediaWiki\Config\ConfigFactory;
 use MediaWiki\Context\RequestContext;
-use MediaWiki\MediaWikiServices;
+use MediaWiki\HookContainer\HookContainer;
+use MediaWiki\Parser\Parser;
+use MediaWiki\Parser\PPFrame;
+use MWStake\MediaWiki\Component\GenericTagHandler\ITagHandler;
 
-class PageTemplatesHandler extends Handler {
+class PageTemplatesHandler implements ITagHandler {
 
 	/**
-	 *
-	 * @return string
+	 * @param HookContainer $hookContainer
+	 * @param ConfigFactory $configFactory
 	 */
-	public function handle() {
-		$this->parser->getOutput()->addModules( [ 'ext.bluespice.pageTemplates.tag' ] );
-		$this->parser->getOutput()->addModuleStyles( [ 'ext.bluespice.pageTemplates.styles' ] );
-		RequestContext::getMain()->getOutput()->enableOOUI();
-		return $this->renderPageTemplates();
+	public function __construct(
+		private readonly HookContainer $hookContainer,
+		private readonly ConfigFactory $configFactory
+	) {
 	}
 
 	/**
-	 * Renders the pagetemplates form which is displayed when creating a new article
-	 * @return string The rendered output
+	 * @inheritDoc
 	 */
-	protected function renderPageTemplates() {
-		$title = $this->frame->getTitle();
+	public function getRenderedContent( string $input, array $params, Parser $parser, PPFrame $frame ): string {
+		$parser->getOutput()->addModuleStyles( [ 'ext.bluespice.pageTemplates.styles' ] );
+
+		RequestContext::getMain()->getOutput()->enableOOUI();
+		$title = $frame->getTitle();
 		// if we are not on a wiki page, return. This is important when calling
 		// import scripts that try to create nonexistent pages, e.g. importImages
 		if ( !is_object( $title ) ) {
 			return true;
 		}
 
-		$config = MediaWikiServices::getInstance()->getConfigFactory()
-				->makeConfig( 'bsg' );
+		$config = $this->configFactory->makeConfig( 'bsg' );
 
 		$pageTemplateList = new BSPageTemplateList( $title,
 			[
-			BSPageTemplateList::HIDE_IF_NOT_IN_TARGET_NS =>
-			$config->get( 'PageTemplatesHideIfNotInTargetNs' ),
-			BSPageTemplateList::FORCE_NAMESPACE =>
-			$config->get( 'PageTemplatesForceNamespace' ),
-			BSPageTemplateList::HIDE_DEFAULTS =>
-			$config->get( 'PageTemplatesHideDefaults' )
+				BSPageTemplateList::HIDE_IF_NOT_IN_TARGET_NS =>
+					$config->get( 'PageTemplatesHideIfNotInTargetNs' ),
+				BSPageTemplateList::FORCE_NAMESPACE =>
+					$config->get( 'PageTemplatesForceNamespace' ),
+				BSPageTemplateList::HIDE_DEFAULTS =>
+					$config->get( 'PageTemplatesHideDefaults' )
 			] );
 
 		$pageTemplateListRenderer = new BSPageTemplateListRenderer();
-		MediaWikiServices::getInstance()->getHookContainer()->run( 'BSPageTemplatesBeforeRender',
+		$this->hookContainer->run( 'BSPageTemplatesBeforeRender',
 			[ $this, &$pageTemplateList, &$pageTemplateListRenderer, $title ]
 		);
 		return $pageTemplateListRenderer->render( $pageTemplateList );
 	}
-
 }

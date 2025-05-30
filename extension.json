@@ -29,9 +29,6 @@
 				"PageTemplatesHideDefaults": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesHideDefaults::getInstance",
 				"PageTemplatesHideIfNotInTargetNs": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesHideIfNotInTargetNs::getInstance"
 			},
-			"TagRegistry": {
-				"pagetemplates": "\\BlueSpice\\PageTemplates\\Tag\\PageTemplates"
-			},
 			"AdminToolRegistry": {
 				"bs-pagetemplates": "BlueSpice\\PageTemplates\\AdminTool"
 			},
@@ -231,6 +228,9 @@
 		},
 		"runDatabaseUpdates": {
 			"class": "\\BlueSpice\\PageTemplates\\HookHandler\\RunDatabaseUpdates"
+		},
+		"registerTags": {
+			"class": "\\BlueSpice\\PageTemplates\\HookHandler\\RegisterTags"
 		}
 	},
 	"Hooks": {
@@ -245,7 +245,8 @@
 		"MessagesPreLoad": "handleShowingTemplateList",
 		"MediaWikiPerformAction": "\\BlueSpice\\PageTemplates\\Hook\\MediaWikiPerformAction\\PreventEditMode::callback",
 		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
-		"SkinTemplateNavigation::Universal": "addPreloadForActions"
+		"SkinTemplateNavigation::Universal": "addPreloadForActions",
+		"MWStakeGenericTagHandlerInitTags": "registerTags"
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2
