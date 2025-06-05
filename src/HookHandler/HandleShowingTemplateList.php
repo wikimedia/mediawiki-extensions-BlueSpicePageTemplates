@@ -6,6 +6,7 @@ use MediaWiki\Cache\Hook\MessagesPreLoadHook;
 use MediaWiki\Config\ConfigFactory;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\Linker\Hook\HtmlPageLinkRendererBeginHook;
+use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Title\Title;
 use MediaWiki\Title\TitleFactory;
 
@@ -14,10 +15,12 @@ class HandleShowingTemplateList implements MessagesPreLoadHook, HtmlPageLinkRend
 	/**
 	 * @param ConfigFactory $configFactory
 	 * @param TitleFactory $titleFactory
+	 * @param PermissionManager $permissionManager
 	 */
 	public function __construct(
 		private readonly ConfigFactory $configFactory,
-		private readonly TitleFactory $titleFactory
+		private readonly TitleFactory $titleFactory,
+		private readonly PermissionManager $permissionManager
 	) {
 	}
 
@@ -79,6 +82,13 @@ class HandleShowingTemplateList implements MessagesPreLoadHook, HtmlPageLinkRend
 
 		$excludeNs = $config->get( 'PageTemplatesExcludeNs' );
 		if ( in_array( $title->getNamespace(), $excludeNs ) ) {
+			return true;
+		}
+
+		$user = RequestContext::getMain()->getUser();
+		$editAllowedStatus = $this->permissionManager->getPermissionStatus( 'edit', $user, $title );
+		$createAllowedStatus = $this->permissionManager->getPermissionStatus( 'createpage', $user, $title );
+		if ( !$editAllowedStatus->isGood() || !$createAllowedStatus->isGood() ) {
 			return true;
 		}
 		$message = '<bs:pagetemplates />';

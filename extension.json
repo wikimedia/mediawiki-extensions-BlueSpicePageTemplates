@@ -228,7 +228,7 @@
 		},
 		"handleShowingTemplateList": {
 			"class": "\\BlueSpice\\PageTemplates\\HookHandler\\HandleShowingTemplateList",
-			"services": [ "ConfigFactory", "TitleFactory" ]
+			"services": [ "ConfigFactory", "TitleFactory", "PermissionManager" ]
 		}
 	},
 	"Hooks": {
