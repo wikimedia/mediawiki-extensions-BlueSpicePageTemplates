@@ -164,7 +164,7 @@ class BSPageTemplateListRenderer {
 
 		$badges = [];
 		if ( $key === 'tag' ) {
-			$badges = json_decode( $dataSet['pt_tags'], true );
+			$badges = json_decode( $dataSet['pt_tags'] ?? '', true );
 		} elseif ( $key === 'ns' ) {
 			$badges = json_decode( $dataSet['pt_target_namespace'], true );
 		}

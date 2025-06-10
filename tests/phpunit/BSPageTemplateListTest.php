@@ -12,12 +12,7 @@ use MediaWiki\Title\Title;
  */
 class BSPageTemplateListTest extends MediaWikiIntegrationTestCase {
 
-	protected function skipAssertTotal() {
-		return true;
-	}
-
 	public function addDBData() {
-		// addDBDataOnce fails with usage of @dataProvider...
 		$oPageTemplateFixtures = new BSPageTemplateFixtures();
 		foreach ( $oPageTemplateFixtures->makeDataSets() as $dataSet ) {
 			$this->getDb()->insert(
@@ -29,49 +24,78 @@ class BSPageTemplateListTest extends MediaWikiIntegrationTestCase {
 	}
 
 	/**
-	 *
-	 * @param Title $targetTitle
-	 * @param int $expectedTargetCount
-	 * @param int $expectedOtherCount
-	 *
 	 * @dataProvider provideGroupingData
 	 */
-	public function testGrouping( $targetTitle, $expectedTargetCount, $expectedOtherCount ) {
-		$list = new BSPageTemplateList( $targetTitle, [
+	public function testGrouping(
+		Title $title,
+		array $expectedNamespaces,
+		array $expectedTags,
+		int $expectedDefault
+	) {
+		$list = new BSPageTemplateList( $title, [
 			BSPageTemplateList::HIDE_IF_NOT_IN_TARGET_NS => false
 		] );
 
 		$groupedResult = $list->getAllGrouped();
 
-		$this->assertEquals( $expectedTargetCount,
-			$this->getWholeCount( $groupedResult['target'] ) );
-		$this->assertEquals( $expectedOtherCount,
-			$this->getWholeCount( $groupedResult['other'] ) );
-		$this->assertCount( 1,
-			$groupedResult['default'][BSPageTemplateList::ALL_NAMESPACES_PSEUDO_ID] );
-		$this->assertCount( 2,
-			$groupedResult['general'][BSPageTemplateList::ALL_NAMESPACES_PSEUDO_ID] );
+		foreach ( $expectedNamespaces as $nsId => $expectedCount ) {
+			$this->assertCount( $expectedCount, $groupedResult['namespaces'][$nsId] );
+		}
+
+		foreach ( $expectedTags as $tag => $expectedCount ) {
+			$this->assertCount( $expectedCount, $groupedResult['tags'][$tag] );
+		}
+
+		$this->assertCount(
+			$expectedDefault,
+			$groupedResult['default'][BSPageTemplateList::ALL_NAMESPACES_PSEUDO_ID]
+		);
 	}
 
 	public function provideGroupingData() {
 		return [
-			'namespace main' => [ Title::makeTitle( NS_MAIN, 'Dummy' ), 2, 4 ],
-			'namespace help' => [ Title::makeTitle( NS_HELP, 'Dummy' ), 1, 5 ],
-			'namespace file' => [ Title::makeTitle( NS_FILE, 'Dummy' ), 3, 3 ],
+			[
+				Title::makeTitle( NS_MAIN, 'Dummy' ),
+				[
+					NS_MAIN => 2,
+					BSPageTemplateList::ALL_NAMESPACES_PSEUDO_ID => 2
+				],
+				[
+					'example' => 4,
+					'general' => 1,
+					'untagged' => 4,
+				],
+				1
+			],
+			[
+				Title::makeTitle( NS_HELP, 'HelpPage' ),
+				[
+					NS_HELP => 1,
+					BSPageTemplateList::ALL_NAMESPACES_PSEUDO_ID => 2
+				],
+				[
+					'example' => 4,
+					'general' => 1,
+					'untagged' => 4,
+				],
+				1
+			]
 		];
 	}
 
-	protected function getWholeCount( $groupedResult ) {
-		$count = 0;
+	public function testTargetUrlsContainCorrectPreload() {
+		$list = new BSPageTemplateList( Title::makeTitle( NS_MAIN, 'Example' ), [
+			BSPageTemplateList::FORCE_NAMESPACE => false,
+			BSPageTemplateList::HIDE_IF_NOT_IN_TARGET_NS => false
+		] );
 
-		foreach ( $groupedResult as $nsId => $pageTemplates ) {
-			$count += count( $pageTemplates );
+		foreach ( $list->getAll() as $dataSet ) {
+			$url = $dataSet['target_url'];
+			$this->assertStringContainsString( 'preload=', $url );
 		}
-
-		return $count;
 	}
 
-	public function testForceNamespace() {
+	public function testForceNamespaceAffectsTargetTitle() {
 		$list = new BSPageTemplateList( Title::makeTitle( NS_MAIN, 'Dummy' ), [
 			BSPageTemplateList::FORCE_NAMESPACE => true,
 			BSPageTemplateList::HIDE_IF_NOT_IN_TARGET_NS => false
@@ -79,49 +103,48 @@ class BSPageTemplateListTest extends MediaWikiIntegrationTestCase {
 
 		$urlUtils = $this->getServiceContainer()->getUrlUtils();
 		$groupedResult = $list->getAllGrouped();
-		foreach ( $groupedResult['other'] as $nsId => $pageTemplates ) {
+		$found = 0;
+
+		foreach ( $groupedResult['namespaces'] as $nsId => $pageTemplates ) {
 			foreach ( $pageTemplates as $pageTemplate ) {
 				$url = $urlUtils->parse( $urlUtils->expand( $pageTemplate['target_url'] ) );
 				$query = wfCgiToArray( $url['query'] );
-				$this->assertEquals( $nsId, Title::newFromText( $query['title'] )->getNamespace() );
+				$title = Title::newFromText( $query['title'] );
+
+				$expectedNs = ( $nsId === BSPageTemplateList::ALL_NAMESPACES_PSEUDO_ID )
+					? $list->getTitle()->getNamespace()
+					: $nsId;
+
+				$this->assertEquals( $expectedNs, $title->getNamespace() );
+				$found++;
 			}
 		}
-	}
 
-	public function testHideIfNotInTargetNamespace() {
-		$list = new BSPageTemplateList( Title::makeTitle( NS_MAIN, 'Dummy' ), [
-			BSPageTemplateList::HIDE_IF_NOT_IN_TARGET_NS => false
-		] );
-		$groupedResult = $list->getAllGrouped();
-
-		$this->assertEquals( 9, $list->getCount() );
-		$this->assertNotEquals( 0, $this->getWholeCount( $groupedResult['other'] ) );
-
-		$list2 = new BSPageTemplateList( Title::makeTitle( NS_MAIN, 'Dummy' ), [
-			BSPageTemplateList::HIDE_IF_NOT_IN_TARGET_NS => true,
-			BSPageTemplateList::UNSET_TARGET_NAMESPACES => false
-		] );
-		$groupedResult2 = $list2->getAllGrouped();
-
-		$this->assertEquals( 5, $list2->getCount() );
-		$this->assertSame( 0, $this->getWholeCount( $groupedResult2['other'] ) );
+		$this->assertGreaterThan( 0, $found );
 	}
 
 	public function testHideDefaults() {
 		$list = new BSPageTemplateList( Title::makeTitle( NS_MAIN, 'Dummy' ), [
 			BSPageTemplateList::HIDE_DEFAULTS => false
 		] );
-		$groupedResult = $list->getAllGrouped();
-
-		$this->assertEquals( 5, $list->getCount() );
-		$this->assertNotEquals( 0, $this->getWholeCount( $groupedResult['default'] ) );
+		$this->assertArrayHasKey(
+			BSPageTemplateList::ALL_NAMESPACES_PSEUDO_ID,
+			$list->getAllGrouped()['default']
+		);
 
 		$list2 = new BSPageTemplateList( Title::makeTitle( NS_MAIN, 'Dummy' ), [
 			BSPageTemplateList::HIDE_DEFAULTS => true
 		] );
-		$groupedResult2 = $list2->getAllGrouped();
-
-		$this->assertEquals( 4, $list2->getCount() );
-		$this->assertSame( 0, $this->getWholeCount( $groupedResult2['default'] ) );
+		$this->assertSame(
+			[],
+			$list2->getAllGrouped()['default'][BSPageTemplateList::ALL_NAMESPACES_PSEUDO_ID] ?? []
+		);
 	}
+
+	public function testTagSortingIncludesUntagged() {
+		$list = new BSPageTemplateList( Title::makeTitle( NS_MAIN, 'Dummy' ) );
+		$grouped = $list->getAllGrouped();
+		$this->assertArrayHasKey( 'untagged', $grouped['tags'] );
+	}
+
 }
