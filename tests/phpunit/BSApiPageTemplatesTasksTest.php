@@ -9,11 +9,11 @@ use MediaWiki\Json\FormatJson;
  * @group API
  * @group BlueSpice
  * @group BlueSpicePageTemplates
+ * @covers BSApiPageTemplatesTasks
  */
 class BSApiPageTemplatesTasksTest extends BSApiTasksTestBase {
 
 	/**
-	 *
 	 * @return bool
 	 */
 	protected function skipAssertTotal() {
@@ -24,7 +24,7 @@ class BSApiPageTemplatesTasksTest extends BSApiTasksTestBase {
 		// addDBDataOnce fails with usage of @dataProvider...
 		$oPageTemplateFixtures = new BSPageTemplateFixtures();
 		foreach ( $oPageTemplateFixtures->makeDataSets() as $dataSet ) {
-			$this->db->insert(
+			$this->getDb()->insert(
 				'bs_pagetemplate',
 				$dataSet,
 				__METHOD__
@@ -33,19 +33,10 @@ class BSApiPageTemplatesTasksTest extends BSApiTasksTestBase {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getModuleName() {
 		return 'bs-pagetemplates-tasks';
-	}
-
-	/**
-	 *
-	 * @return array
-	 */
-	public function getTokens() {
-		return $this->getTokenList( self::$users[ 'sysop' ] );
 	}
 
 	/**
@@ -99,42 +90,39 @@ class BSApiPageTemplatesTasksTest extends BSApiTasksTestBase {
 	 * @covers \BSApiPageTemplatesTasks::task_doDeleteTemplates
 	 */
 	public function testDoDeleteTemplates() {
-		$aIDsToDelete = [
-			1 => 'Test_01',
-			8 => 'Test_08'
-		];
+		$idsToDelete = [ 1, 8 ];
 
-		foreach ( $aIDsToDelete as $iID => $sTitle ) {
-			$this->assertFalse( $this->isDeleted( $iID ) );
+		foreach ( $idsToDelete as $id ) {
+			$this->assertFalse( $this->isDeleted( $id ) );
 		}
 
-		$oData = $this->executeTask(
+		$data = $this->executeTask(
 			'doDeleteTemplates',
 			[
-				'ids' => $aIDsToDelete
+				'ids' => $idsToDelete
 			]
 		);
 
-		$this->assertTrue( $oData->success );
+		$this->assertTrue( $data->success );
 
-		foreach ( $aIDsToDelete as $iID => $sTitle ) {
-			$this->assertTrue( $this->isDeleted( $iID ) );
+		foreach ( $idsToDelete as $id ) {
+			$this->assertTrue( $this->isDeleted( $id ) );
 		}
 	}
 
 	/**
-	 *
-	 * @param int $iID
+	 * @param int $id
 	 * @return bool
 	 */
-	protected function isDeleted( $iID ) {
-		$db = $this->db;
-		$res = $db->select( 'bs_pagetemplate', [ 'pt_id' ],
-			[ 'pt_id = ' . $iID ], wfGetCaller() );
-		if ( $res->numRows() === 0 ) {
-			return true;
-		}
+	protected function isDeleted( $id ) {
+		$db = $this->getDb();
+		$res = $db->select(
+			'bs_pagetemplate',
+			[ 'pt_id' ],
+			[ 'pt_id' => $id ],
+			__METHOD__
+		);
 
-		return false;
+		return $res->numRows() === 0;
 	}
 }
