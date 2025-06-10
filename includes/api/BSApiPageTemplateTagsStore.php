@@ -23,7 +23,7 @@ class BSApiPageTemplateTagsStore extends BSApiExtJSStoreBase {
 			if ( !$row ) {
 				continue;
 			}
-			$tagsArray = FormatJson::decode( $row->pt_tags, true );
+			$tagsArray = FormatJson::decode( $row->pt_tags ?? '', true );
 			if ( is_array( $tagsArray ) ) {
 				$resultData = array_merge( $resultData, $tagsArray );
 			}

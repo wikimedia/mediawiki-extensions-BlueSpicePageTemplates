@@ -55,7 +55,7 @@ class BSApiPageTemplatesStore extends BSApiExtJSStoreBase {
 
 		foreach ( $res as $row ) {
 			$targetNamespacesIds = FormatJson::decode( $row->pt_target_namespace, true );
-			$targetTags = FormatJson::decode( $row->pt_tags, true );
+			$targetTags = FormatJson::decode( $row->pt_tags ?? '', true );
 			if ( !is_array( $targetTags ) ) {
 				$targetTags = [];
 			}

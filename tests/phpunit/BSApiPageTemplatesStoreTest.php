@@ -8,6 +8,7 @@ use BlueSpice\Tests\BSApiExtJSStoreTestBase;
  * @group API
  * @group BlueSpice
  * @group BlueSpicePageTemplates
+ * @covers BSApiPageTemplatesStore
  */
 class BSApiPageTemplatesStoreTest extends BSApiExtJSStoreTestBase {
 	/** @inheritDoc */
@@ -49,7 +50,7 @@ class BSApiPageTemplatesStoreTest extends BSApiExtJSStoreTestBase {
 	public function addDBData() {
 		$oPageTemplateFixtures = new BSPageTemplateFixtures();
 		foreach ( $oPageTemplateFixtures->makeDataSets() as $dataSet ) {
-			$this->db->insert(
+			$this->getDb()->insert(
 				'bs_pagetemplate',
 				$dataSet,
 				__METHOD__

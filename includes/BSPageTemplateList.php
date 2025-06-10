@@ -126,6 +126,7 @@ class BSPageTemplateList {
 			// NS needs to be something non-existent,
 			// but I did not want to use well known pseudo namespace ids
 			'pt_target_namespace' => FormatJson::encode( [ -98 ] ),
+			'pt_tags' => '',
 			'target_url' => $targetUrl,
 			'type' => 'empty'
 		];
@@ -244,7 +245,7 @@ class BSPageTemplateList {
 			if ( !$row ) {
 				continue;
 			}
-			$tagsArray = json_decode( $row->pt_tags, true );
+			$tagsArray = json_decode( $row->pt_tags ?? '', true );
 			if ( is_array( $tagsArray ) ) {
 				$resultData = array_merge( $resultData, $tagsArray );
 			}
@@ -253,7 +254,7 @@ class BSPageTemplateList {
 		$resultData = array_unique( $resultData );
 		foreach ( $this->dataSets as $id => $dataSet ) {
 			foreach ( $resultData as $tag ) {
-				$dataSetTags = json_decode( $dataSet['pt_tags'], true );
+				$dataSetTags = json_decode( $dataSet['pt_tags'] ?? '', true );
 				if ( !$dataSetTags ) {
 					continue;
 				}
@@ -265,7 +266,7 @@ class BSPageTemplateList {
 
 		// get untagged templates
 		foreach ( $this->dataSets as $id => $dataSet ) {
-			$tags = json_decode( $dataSet['pt_tags'], true ) ?? [];
+			$tags = json_decode( $dataSet['pt_tags'] ?? '', true ) ?? [];
 			if ( !$tags && $id !== -1 ) {
 				$filteredDataSets['untagged'][] = $dataSet;
 			}
@@ -314,5 +315,12 @@ class BSPageTemplateList {
 	 */
 	public function set( $id, $data ) {
 		$this->dataSets[$id] = $data;
+	}
+
+	/**
+	 * @return Title
+	 */
+	public function getTitle() {
+		return $this->title;
 	}
 }
