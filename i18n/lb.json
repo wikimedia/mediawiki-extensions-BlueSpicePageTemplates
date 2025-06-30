@@ -19,7 +19,7 @@
 	"bs-pagetemplates-tpl-name-empty": "Gitt wgl. den Numm vun der Schabloun an.",
 	"bs-pagetemplates-no-id": "Gitt wgl. eng Säit an déi als Schabloun benotzt soll ginn.",
 	"bs-pagetemplates-tpl-added": "D'Schabloun gouf dobäigesat.",
-	"bs-pagetemplates-invalid_pfx": "De Prefix ass net valabel.",
+	"bs-pagetemplates-invalid_pfx": "De Prefix ass ongülteg.",
 	"bs-pagetemplates-nooldtpl": "Déi al Schabloun gouf net fonnt.",
 	"bs-pagetemplates-tpl-edited": "D'Ännerunge gouf gespäichert.",
 	"bs-pagetemplates-dberror": "Et ass en Datebankfeeler geschitt.",
