@@ -1,6 +1,5 @@
 <?php
 
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 
 /**
@@ -78,7 +77,7 @@ class BSPageTemplateListTest extends MediaWikiIntegrationTestCase {
 			BSPageTemplateList::HIDE_IF_NOT_IN_TARGET_NS => false
 		] );
 
-		$urlUtils = MediaWikiServices::getInstance()->getUrlUtils();
+		$urlUtils = $this->getServiceContainer()->getUrlUtils();
 		$groupedResult = $list->getAllGrouped();
 		foreach ( $groupedResult['other'] as $nsId => $pageTemplates ) {
 			foreach ( $pageTemplates as $pageTemplate ) {
