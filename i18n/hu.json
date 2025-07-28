@@ -1,8 +1,31 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hanna Tardos"
+			"Hanna Tardos",
+			"Krisztina"
 		]
 	},
-	"bs-pagetemplates-placeholder-tags": "Címke hozzáadása"
+	"bs-pagetemplates-placeholder-tags": "Címke hozzáadása",
+	"prefs-pagetemplates": "Lapsablonok",
+	"bs-pagetemplatesadmin-text": "Lapsablonok",
+	"bs-pagetemplates-empty-page": "Üres lap",
+	"bs-pagetemplates-empty-page-desc": "Kezdés üres lappal.",
+	"bs-pagetemplatesadmin-label": "Lapsablonok",
+	"bs-pagetemplates-tpl-desc-toolong": "A leírás túl hosszú. Kérjük, legfeljebb 255 karakterből álljon.",
+	"bs-pagetemplates-tpl-label-toolong": "A címke túl hosszú. Kérjük, legfeljebb 255 karakterből álljon.",
+	"bs-pagetemplates-invalid_pfx": "Az előtag érvénytelen.",
+	"bs-pagetemplates-nooldtpl": "A régi sablon nem található.",
+	"bs-pagetemplates-tpl-edited": "Változtatások mentve.",
+	"bs-pagetemplates-dberror": "Adatbázis hiba történt.",
+	"bs-pagetemplates-tpl-deleted": "A sablon törölve.",
+	"bs-pagetemplates-general-section": "Általános",
+	"bs-pagetemplates-tipaddtemplate": "Sablon hozzáadása",
+	"bs-pagetemplates-label-tpl": "Sablon neve",
+	"bs-pagetemplates-label-desc": "Leírás",
+	"bs-pagetemplates-label-tags": "Címkék",
+	"bs-pagetemplates-label-targetns": "Névtér",
+	"bs-pagetemplates-label-article": "Sablon",
+	"bs-usagetracker-pagetemplates": "lapsablonok",
+	"bs-pagetemplates-nsm-label": "Lapsablonok",
+	"bs-pagetemplates-headertags": "Címkék"
 }
