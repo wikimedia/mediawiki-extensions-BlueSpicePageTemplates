@@ -6,6 +6,7 @@
 			"FarsiNevis",
 			"Huji",
 			"Jeeputer",
+			"LordProfo",
 			"Reza1615"
 		]
 	},
@@ -21,7 +22,7 @@
 	"bs-pagetemplates-tpl-name-toolong": "نام الگو خیلی طولانی است. لطفاً از حداکثر طول ۲۵۵ نویسه استفاده کنید.",
 	"bs-pagetemplates-tpl-name-empty": "لطفاً یک نام برای الگو وارد کنید.",
 	"bs-pagetemplates-no-id": "لطفاً یک صفحه وارد کنید که به عنوان الگو مورد استفاده قرار گیرد.",
-	"bs-pagetemplates-tpl-added": "این الگو اضافه شد.",
+	"bs-pagetemplates-tpl-added": "این الگو افزوده شد.",
 	"bs-pagetemplates-invalid_pfx": "پیشوند نامعتبر است.",
 	"bs-pagetemplates-nooldtpl": "الگوی قدیمی نمی‌تواند یافت شود.",
 	"bs-pagetemplates-tpl-edited": "این تغییرات ذخیره شدند.",
