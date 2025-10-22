@@ -121,8 +121,8 @@ class BSPageTemplateList {
 		$this->dataSets[-1] = [
 			'pt_template_title' => null,
 			'pt_template_namespace' => null,
-			'pt_label' => wfMessage( 'bs-pagetemplates-empty-page' )->plain(),
-			'pt_desc' => wfMessage( 'bs-pagetemplates-empty-page-desc' )->plain(),
+			'pt_label' => wfMessage( 'bs-pagetemplates-empty-page' )->text(),
+			'pt_desc' => wfMessage( 'bs-pagetemplates-empty-page-desc' )->text(),
 			// NS needs to be something non-existent,
 			// but I did not want to use well known pseudo namespace ids
 			'pt_target_namespace' => FormatJson::encode( [ -98 ] ),

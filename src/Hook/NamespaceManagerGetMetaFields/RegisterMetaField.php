@@ -10,7 +10,7 @@ class RegisterMetaField extends NamespaceManagerGetMetaFields {
 		$this->metaFields[] = [
 			'name' => 'pagetemplates',
 			'type' => 'boolean',
-			'label' => wfMessage( 'bs-pagetemplates-nsm-label' )->plain(),
+			'label' => wfMessage( 'bs-pagetemplates-nsm-label' )->text(),
 			'filter' => [
 				'type' => 'boolean'
 			]
