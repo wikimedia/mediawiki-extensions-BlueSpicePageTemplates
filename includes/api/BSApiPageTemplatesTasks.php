@@ -125,27 +125,27 @@ class BSApiPageTemplatesTasks extends BSApiTasksBase {
 
 		// TODO RBV (18.05.11 09:19): Use validators
 		if ( strlen( $sDesc ) >= 255 ) {
-			$oReturn->message = wfMessage( 'bs-pagetemplates-tpl-desc-toolong' )->plain();
+			$oReturn->message = wfMessage( 'bs-pagetemplates-tpl-desc-toolong' )->text();
 			return $oReturn;
 		}
 
 		if ( strlen( $sLabel ) >= 255 ) {
-			$oReturn->message = wfMessage( 'bs-pagetemplates-tpl-label-toolong' )->plain();
+			$oReturn->message = wfMessage( 'bs-pagetemplates-tpl-label-toolong' )->text();
 			return $oReturn;
 		}
 
 		if ( strlen( $sLabel ) == 0 ) {
-			$oReturn->message = wfMessage( 'bs-pagetemplates-tpl-label-empty' )->plain();
+			$oReturn->message = wfMessage( 'bs-pagetemplates-tpl-label-empty' )->text();
 			return $oReturn;
 		}
 
 		if ( strlen( $sTemplateName ) >= 255 ) {
-			$oReturn->message = wfMessage( 'bs-pagetemplates-tpl-name-toolong' )->plain();
+			$oReturn->message = wfMessage( 'bs-pagetemplates-tpl-name-toolong' )->text();
 			return $oReturn;
 		}
 
 		if ( strlen( $sTemplateName ) == 0 ) {
-			$oReturn->message = wfMessage( 'bs-pagetemplates-tpl-name-empty' )->plain();
+			$oReturn->message = wfMessage( 'bs-pagetemplates-tpl-name-empty' )->text();
 			return $oReturn;
 		}
 
@@ -153,7 +153,7 @@ class BSApiPageTemplatesTasks extends BSApiTasksBase {
 
 		$oTitle = Title::newFromText( $sTemplateName );
 		if ( !$oTitle ) {
-			$oReturn->message = wfMessage( 'title-invalid' )->plain();
+			$oReturn->message = wfMessage( 'title-invalid' )->text();
 			return $oReturn;
 		}
 		// This is the add template part
@@ -174,7 +174,7 @@ class BSApiPageTemplatesTasks extends BSApiTasksBase {
 			$oReturn->success = true;
 			$oReturn->payload = new stdClass();
 			$oReturn->payload->id = $dbw->insertId();
-			$oReturn->message = wfMessage( 'bs-pagetemplates-tpl-added' )->plain();
+			$oReturn->message = wfMessage( 'bs-pagetemplates-tpl-added' )->text();
 		// and here we have edit template
 		} else {
 			$rRes = $dbw->select(
@@ -184,7 +184,7 @@ class BSApiPageTemplatesTasks extends BSApiTasksBase {
 				__METHOD__
 			);
 			if ( !$rRes->numRows() ) {
-				$oReturn->message = wfMessage( 'bs-pagetemplates-nooldtpl' )->plain();
+				$oReturn->message = wfMessage( 'bs-pagetemplates-nooldtpl' )->text();
 				return $oReturn;
 			}
 
@@ -204,12 +204,12 @@ class BSApiPageTemplatesTasks extends BSApiTasksBase {
 			);
 
 			if ( $rRes === false ) {
-				$oReturn->message = wfMessage( 'bs-pagetemplates-dberror' )->plain();
+				$oReturn->message = wfMessage( 'bs-pagetemplates-dberror' )->text();
 				return $oReturn;
 			}
 
 			$oReturn->success = true;
-			$oReturn->message = wfMessage( 'bs-pagetemplates-tpl-edited' )->plain();
+			$oReturn->message = wfMessage( 'bs-pagetemplates-tpl-edited' )->text();
 		}
 
 		return $oReturn;
@@ -227,7 +227,7 @@ class BSApiPageTemplatesTasks extends BSApiTasksBase {
 		$ids = isset( $taskData->ids ) ? (array)$taskData->ids : [];
 
 		if ( !is_array( $ids ) || count( $ids ) == 0 ) {
-			$return->message = wfMessage( 'bs-pagetemplates-no-id' )->plain();
+			$return->message = wfMessage( 'bs-pagetemplates-no-id' )->text();
 			return $return;
 		}
 
@@ -240,14 +240,14 @@ class BSApiPageTemplatesTasks extends BSApiTasksBase {
 			);
 
 			if ( $res === false ) {
-				$return->message = wfMessage( 'bs-pagetemplates-dberror' )->plain();
+				$return->message = wfMessage( 'bs-pagetemplates-dberror' )->text();
 				return $return;
 			}
 
 		}
 
 		$return->success = true;
-		$return->message = wfMessage( 'bs-pagetemplates-tpl-deleted' )->plain();
+		$return->message = wfMessage( 'bs-pagetemplates-tpl-deleted' )->text();
 
 		return $return;
 	}
