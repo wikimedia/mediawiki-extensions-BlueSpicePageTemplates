@@ -29,9 +29,6 @@
 				"PageTemplatesHideDefaults": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesHideDefaults::getInstance",
 				"PageTemplatesHideIfNotInTargetNs": "\\BlueSpice\\PageTemplates\\ConfigDefinition\\PageTemplatesHideIfNotInTargetNs::getInstance"
 			},
-			"AdminToolRegistry": {
-				"bs-pagetemplates": "BlueSpice\\PageTemplates\\AdminTool"
-			},
 			"PermissionRegistry": {
 				"pagetemplatesadmin-viewspecialpage": {
 					"type": "global",
