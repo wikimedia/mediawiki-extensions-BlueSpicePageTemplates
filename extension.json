@@ -32,9 +32,6 @@
 			"TagRegistry": {
 				"pagetemplates": "\\BlueSpice\\PageTemplates\\Tag\\PageTemplates"
 			},
-			"AdminToolRegistry": {
-				"bs-pagetemplates": "BlueSpice\\PageTemplates\\AdminTool"
-			},
 			"PermissionRegistry": {
 				"pagetemplatesadmin-viewspecialpage": {
 					"type": "global",

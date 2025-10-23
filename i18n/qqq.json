@@ -58,7 +58,6 @@
 	"apihelp-bs-pagetemplates-tasks-summary": "Describes the API endpoint that allows manipulation of page templates\n{{doc-apihelp-summary|bs-pagetemplates-tasks}}",
 	"apihelp-bs-pagetemplate-tags-store-summary": "Describes the API endpoint that lists page templates tags\n{{doc-apihelp-summary|bs-pagetemplate-tags-store}}",
 	"action-pagetemplatesadmin-viewspecialpage": "Label for denied special page, includes pagename\n{{doc-action|pagetemplatesadmin-viewspecialpage}}",
-	"pagetemplatesadmin": "Page title for page template admin special page",
 	"bs-usagetracker-pagetemplates": "Name of the descriptor used in [[Special:UsageTracker|Special:UsageTracker]] output",
 	"bs-pagetemplates-nsm-label": "Label for field in BlueSpiceNamespaceManager used to select namespaces in which PageTemplates will be shown(enabled)",
 	"right-pagetemplatesadmin-viewspecialpage": "Grants access to the [[Special:PageTemplatesAdmin]] special page, where page templates can be managed.\n{{doc-right|pagetemplatesadmin-viewspecialpage}}",

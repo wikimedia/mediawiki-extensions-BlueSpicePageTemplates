@@ -50,7 +50,6 @@
 	"apihelp-bs-pagetemplates-tasks-summary": "Allows manipulation of page templates",
 	"apihelp-bs-pagetemplate-tags-store-summary": "Lists all page templates tags. Allows sorting, filtering and pagination. Implements ExtJS Store parameters.",
 	"action-pagetemplatesadmin-viewspecialpage": "view special page \"{{int:pagetemplatesadmin}}\"",
-	"pagetemplatesadmin": "Page templates administration",
 	"bs-usagetracker-pagetemplates": "page templates",
 	"bs-pagetemplates-nsm-label": "PageTemplates",
 	"right-pagetemplatesadmin-viewspecialpage": "Access to the [[Special:PageTemplatesAdmin]] special page, where page templates can be managed",
