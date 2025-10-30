@@ -6,24 +6,24 @@ bs.pageTemplates.ui.PageTemplatesPanel = function ( cfg ) {
 	const columns = {
 		label: {
 			type: 'text',
-			headerText: mw.message( 'bs-pagetemplates-headerlabel' ).plain(),
+			headerText: mw.message( 'bs-pagetemplates-headerlabel' ).text(),
 			filter: { type: 'string' },
 			sortable: true
 		},
 		desc: {
 			type: 'text',
-			headerText: mw.message( 'bs-pagetemplates-label-desc' ).plain(),
+			headerText: mw.message( 'bs-pagetemplates-label-desc' ).text(),
 			filter: { type: 'text' }
 		},
 		targetns: {
 			type: 'text',
-			headerText: mw.message( 'bs-pagetemplates-headertargetnamespace' ).plain(),
+			headerText: mw.message( 'bs-pagetemplates-headertargetnamespace' ).text(),
 			filter: { type: 'text' },
 			sortable: true
 		},
 		template: {
 			type: 'text',
-			headerText: mw.message( 'bs-pagetemplates-label-article' ).plain(),
+			headerText: mw.message( 'bs-pagetemplates-label-article' ).text(),
 			filter: { type: 'text' },
 			sortable: true,
 			valueParser: function ( value ) {
@@ -32,7 +32,7 @@ bs.pageTemplates.ui.PageTemplatesPanel = function ( cfg ) {
 		},
 		tags: {
 			type: 'text',
-			headerText: mw.message( 'bs-pagetemplates-headertags' ).plain(),
+			headerText: mw.message( 'bs-pagetemplates-headertags' ).text(),
 			filter: { type: 'text' },
 			sortable: true,
 			valueParser: function ( value ) {
