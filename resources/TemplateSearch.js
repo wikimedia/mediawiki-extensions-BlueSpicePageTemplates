@@ -93,7 +93,7 @@
 		// set notification when no template, tag or ns found
 		$pageHeader.find( 'label' ).remove();
 		if ( !tagsMatches ) {
-			$pageHeader.append( '<label>' + mw.message( 'bs-pagetemplates-no-matching-results-label' ).plain() +
+			$pageHeader.append( '<label>' + mw.message( 'bs-pagetemplates-no-matching-results-label' ).text() +
 			'</label>' );
 		}
 	};
