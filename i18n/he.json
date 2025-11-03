@@ -53,7 +53,6 @@
 	"apihelp-bs-pagetemplates-tasks-summary": "לאפשר תפעול של תבניות בדפים",
 	"apihelp-bs-pagetemplate-tags-store-summary": "הצגת כל תגי תבניות הדפים. מאפשר סידור, סינון ועימוד. מיישם פרמטרים של חנות ExtJS.",
 	"action-pagetemplatesadmin-viewspecialpage": "לצפות בדף המיוחד \"{{int:pagetemplatesadmin}}\"",
-	"pagetemplatesadmin": "ניהול תבניות דפים",
 	"bs-usagetracker-pagetemplates": "תבניות דפים",
 	"bs-pagetemplates-nsm-label": "תבניות דפים",
 	"right-pagetemplatesadmin-viewspecialpage": "גישה לדף המיוחד [[Special:PageTemplatesAdmin]], שאפשר לנהל בו את דפי התבנית",

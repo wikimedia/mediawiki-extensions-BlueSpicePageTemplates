@@ -51,7 +51,6 @@
 	"apihelp-bs-pagetemplates-tasks-summary": "Permite a manipulación dos modelos de páxina",
 	"apihelp-bs-pagetemplate-tags-store-summary": "Lista todas as etiquetas de modelos de páxinas. Permite ordenar, filtrar e paxinar. Proporciona os parámetros de ExtJS Store.",
 	"action-pagetemplatesadmin-viewspecialpage": "ver a páxina especial «{{int:pagetemplatesadmin}}»",
-	"pagetemplatesadmin": "Administración de modelos de páxina",
 	"bs-usagetracker-pagetemplates": "modelos de páxina",
 	"bs-pagetemplates-nsm-label": "Modelos de páxina",
 	"right-pagetemplatesadmin-viewspecialpage": "Acceso á páxina especial [[Special:PageTemplatesAdmin]], onde se poden xestionar os modelos de páxina",

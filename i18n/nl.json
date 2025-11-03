@@ -57,7 +57,6 @@
 	"apihelp-bs-pagetemplates-tasks-summary": "Maakt manipulatie van paginasjablonen mogelijk",
 	"apihelp-bs-pagetemplate-tags-store-summary": "Geeft een overzicht van alle labels van paginasjablonen. Maakt sorteren, filteren en pagineren mogelijk. Implementeert ExtJS Store-parameters.",
 	"action-pagetemplatesadmin-viewspecialpage": "de speciale pagina \"{{int:pagetemplatesadmin}}\" te bekijken",
-	"pagetemplatesadmin": "Paginasjablonenbeheer",
 	"bs-usagetracker-pagetemplates": "paginasjablonen",
 	"bs-pagetemplates-nsm-label": "Paginasjablonen",
 	"right-pagetemplatesadmin-viewspecialpage": "Toegang tot de speciale pagina [[Special:PageTemplatesAdmin]] waarin paginasjablonen kunnen worden beheerd",

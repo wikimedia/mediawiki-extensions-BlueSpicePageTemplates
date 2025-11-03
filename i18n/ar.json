@@ -53,7 +53,6 @@
 	"apihelp-bs-pagetemplates-tasks-summary": "يسمح بمعالجة قوالب الصفحة",
 	"apihelp-bs-pagetemplate-tags-store-summary": "يسرد جميع علامات قوالب الصفحة. يسمح بالفرز والتصفية وتقسيم الصفحات. تنفذ معلمات متجر ExtJS.",
 	"action-pagetemplatesadmin-viewspecialpage": "عرض الصفحة الخاصة \"{{int:pagetemplatesadmin}}\"",
-	"pagetemplatesadmin": "إدارة قوالب الصفحة",
 	"bs-usagetracker-pagetemplates": "قوالب الصفحة",
 	"bs-pagetemplates-nsm-label": "قوالب الصفحة",
 	"right-pagetemplatesadmin-viewspecialpage": "الوصول إلى الصفحة الخاصة [[Special:PageTemplatesAdmin]]، حيث يمكن إدارة قوالب الصفحات.",
