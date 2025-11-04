@@ -25,7 +25,6 @@
 	"bs-pagetemplates-label-tplns": "Ονοματοχώρος προτύπων",
 	"bs-pagetemplates-label-article": "Πρότυπο",
 	"apihelp-bs-pagetemplate-tags-store-summary": "Εμφανίζει όλες τις ετικέτες προτύπων σελίδας. Επιτρέπει ταξινόμηση, φιλτράρισμα και σελιδοποίηση. Υλοποιεί παραμέτρους ExtJS Store.",
-	"pagetemplatesadmin": "Διαχείριση προτύπων σελίδας",
 	"bs-usagetracker-pagetemplates": "Πρότυπα σελίδας",
 	"bs-pagetemplates-no-matching-results-label": "Δε βρέθηκαν πρότυπα.",
 	"bs-pagetemplates-search-template-placeholder": "Εύρεση προτύπου σελίδας",

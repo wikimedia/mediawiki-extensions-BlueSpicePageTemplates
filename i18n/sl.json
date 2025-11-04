@@ -48,7 +48,6 @@
 	"apihelp-bs-pagetemplates-tasks-summary": "Omogoča spreminjanje predlog strani",
 	"apihelp-bs-pagetemplate-tags-store-summary": "Navede vse oynake predlog. Omogoča razvrščanje, filtriranje in paginacijo. Uvede parametre ExtJS Store.",
 	"action-pagetemplatesadmin-viewspecialpage": "ogled posebne strani »{{int:pagetemplatesadmin}}«",
-	"pagetemplatesadmin": "Administracija predlog strani",
 	"bs-usagetracker-pagetemplates": "predloge strani",
 	"bs-pagetemplates-nsm-label": "Predloge strani",
 	"right-pagetemplatesadmin-viewspecialpage": "Dostop do posebne strani [[Special:PageTemplatesAdmin]], na kateri lahko upravljate predloge strani",

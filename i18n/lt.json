@@ -43,6 +43,5 @@
 	"bs-pagetemplates-remove-message-failure": "{{PLURAL:$1|Šis šablonas negali būti ištrintas|Šie šablonai negali būti ištrinti}}: $2 (Priežastis: $3)",
 	"apihelp-bs-pagetemplates-tasks-summary": "Leidžia manipuliuoti puslapio šablonais",
 	"action-pagetemplatesadmin-viewspecialpage": "žiūrėti specialųpuslapį „{{int:pagetemplatesadmin}}“",
-	"pagetemplatesadmin": "Puslapio šablonų administravimas",
 	"bs-usagetracker-pagetemplates": "puslapio šablonai"
 }

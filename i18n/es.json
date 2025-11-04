@@ -49,7 +49,6 @@
 	"apihelp-bs-pagetemplates-tasks-summary": "Permite la manipulación de plantillas de páginas",
 	"apihelp-bs-pagetemplate-tags-store-summary": "Enumera todas las etiquetas de plantillas de página. Permite ordenarlas, filtrarlas y paginarlas. Implementa los parámetros de ExtJS Store.",
 	"action-pagetemplatesadmin-viewspecialpage": "ver la página especial \"{{int:pagetemplatesadmin}}\"",
-	"pagetemplatesadmin": "Administración de plantillas de páginas",
 	"bs-usagetracker-pagetemplates": "plantillas de página",
 	"bs-pagetemplates-nsm-label": "PlantillasDePagina",
 	"bs-pagetemplates-no-matching-results-label": "No se encontró ninguna plantilla",

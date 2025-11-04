@@ -54,7 +54,6 @@
 	"apihelp-bs-pagetemplates-tasks-summary": "允許對頁面模板的操控",
 	"apihelp-bs-pagetemplate-tags-store-summary": "列出所有頁面模板。允許排序、篩選，以及分頁。執行 ExtJS 所儲存的變數。",
 	"action-pagetemplatesadmin-viewspecialpage": "檢視特殊頁面「{{int:pagetemplatesadmin}}」",
-	"pagetemplatesadmin": "頁面模板管理",
 	"bs-usagetracker-pagetemplates": "頁面模板",
 	"bs-pagetemplates-nsm-label": "頁面模板",
 	"right-pagetemplatesadmin-viewspecialpage": "存取用來管理頁面模板的 [[Special:PageTemplatesAdmin]] 特殊頁面。",

@@ -52,7 +52,6 @@
 	"apihelp-bs-pagetemplates-store-summary": "列举所有页面模板。允许排序、过滤和分页。执行ExtJS存储的参数。",
 	"apihelp-bs-pagetemplates-tasks-summary": "允许对页面模板的操纵",
 	"action-pagetemplatesadmin-viewspecialpage": "查看特殊页面“{{int:pagetemplatesadmin}}”",
-	"pagetemplatesadmin": "页面模板管理",
 	"bs-usagetracker-pagetemplates": "页面模板",
 	"bs-pagetemplates-nsm-label": "页面模板",
 	"right-pagetemplatesadmin-viewspecialpage": "允许访问管理页面模板的特殊页面 [[Special:PageTemplatesAdmin]] 的权限",

@@ -48,7 +48,6 @@
 	"apihelp-bs-pagetemplates-store-summary": "Tüm sayfa şablonlarını listeler. Sıralama, filtreleme ve sayfalamaya izin verir. ExtJS Mağazası parametrelerini uygular.",
 	"apihelp-bs-pagetemplates-tasks-summary": "Sayfa şablonlarının değiştirilmesine izin verir",
 	"action-pagetemplatesadmin-viewspecialpage": "\"{{int:pagetemplatesadmin}}\" özel sayfayı görüntüle",
-	"pagetemplatesadmin": "Sayfa şablonları yönetimi",
 	"bs-usagetracker-pagetemplates": "sayfa şablonları",
 	"bs-pagetemplates-nsm-label": "SayfaŞablonları",
 	"right-pagetemplatesadmin-viewspecialpage": "Sayfa şablonlarının yönetilebileceği [[Special:PageTemplatesAdmin]] özel sayfasına erişin"

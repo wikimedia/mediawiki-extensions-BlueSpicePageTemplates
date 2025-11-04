@@ -47,7 +47,6 @@
 	"apihelp-bs-pagetemplates-tasks-summary": "Tillater manipulering av sidemaler",
 	"apihelp-bs-pagetemplate-tags-store-summary": "Lister opp ale sidemaltagger. Gjør det mulig å sortere, filtrere og dele inn i sider. Implementerer ExtJS Store-parametre.",
 	"action-pagetemplatesadmin-viewspecialpage": "se spesialsiden «{{int:pagetemplatesadmin}}»",
-	"pagetemplatesadmin": "Sidemaladministrasjon",
 	"bs-usagetracker-pagetemplates": "sidemaler",
 	"bs-pagetemplates-nsm-label": "Sidemaler",
 	"right-pagetemplatesadmin-viewspecialpage": "Tilgang til spesialsiden [[Special:PageTemplatesAdmin]], der sidemaler kan behandles",

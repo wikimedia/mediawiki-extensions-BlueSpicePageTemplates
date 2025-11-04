@@ -49,7 +49,6 @@
 	"apihelp-bs-pagetemplates-store-summary": "Перелічує всі шаблони на сторінці. Дає можливість сортування, фільтрування та пагінації. Реалізовує параметри ExtJS Store.",
 	"apihelp-bs-pagetemplates-tasks-summary": "Дозволяє змінювати шаблони сторінок",
 	"action-pagetemplatesadmin-viewspecialpage": "перегляд спеціальної сторінки «{{int:pagetemplatesadmin}}»",
-	"pagetemplatesadmin": "Адміністрування шаблонів сторінок",
 	"bs-usagetracker-pagetemplates": "шаблони сторінок",
 	"bs-pagetemplates-nsm-label": "PageTemplates",
 	"right-pagetemplatesadmin-viewspecialpage": "Надає доступ до спеціальної сторінки [[Special:PageTemplatesAdmin]], де можна керувати шаблонами сторінок"

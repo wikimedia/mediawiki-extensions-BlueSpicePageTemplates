@@ -43,7 +43,6 @@
 	"apihelp-bs-pagetemplates-store-summary": "Elenghe tutte le template d'a pàgene. Face fà l'ordinamende, 'u filtre e 'a pagginazzione. 'Mblemende parametre ExtJS Store.",
 	"apihelp-bs-pagetemplates-tasks-summary": "Permette 'a manipolazione de le template de pàgene",
 	"action-pagetemplatesadmin-viewspecialpage": "'ndruche a pàgena speciale \"{{int:pagetemplatesadmin}}\"",
-	"pagetemplatesadmin": "Amministrazione de le template d'a pàgene",
 	"bs-usagetracker-pagetemplates": "template d'a pàgene",
 	"bs-pagetemplates-nsm-label": "Template d'a pàgene",
 	"right-pagetemplatesadmin-viewspecialpage": "Tràse jndr'à pàgena speciale [[Special:PageTemplatesAdmin]], addò le template d'a pàgene ponne essere gestite"

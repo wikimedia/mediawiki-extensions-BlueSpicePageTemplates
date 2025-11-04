@@ -44,7 +44,6 @@
 	"apihelp-bs-pagetemplates-store-summary": "모든 문서 틀을 나열합니다. 정렬, 필터링, 쪽 번호 매기기를 허용합니다. ExtJS Store 변수를 구현합니다.",
 	"apihelp-bs-pagetemplates-tasks-summary": "문서 틀의 조작을 허용합니다",
 	"action-pagetemplatesadmin-viewspecialpage": "특수문서 \"{{int:pagetemplatesadmin}}\" 보기",
-	"pagetemplatesadmin": "문서 틀 관리",
 	"bs-usagetracker-pagetemplates": "문서 틀",
 	"bs-pagetemplates-nsm-label": "PageTemplates",
 	"right-pagetemplatesadmin-viewspecialpage": "문서 틀을 관리할 수 있는 경우 [[Special:PageTemplatesAdmin]] 특수 문서로 접근"

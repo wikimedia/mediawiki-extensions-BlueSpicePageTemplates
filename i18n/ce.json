@@ -39,7 +39,6 @@
 	"bs-pagetemplates-remove-message-success": "{{PLURAL:$1|РогӀера кеп дӀайаьккхина|РогӀера кепаш дӀайаьхна}}: $2",
 	"bs-pagetemplates-remove-message-failure": "{{PLURAL:$1|РогӀера кеп дӀа ца йаьккхира|РогӀера кепаш дӀа ца йаьхира}}: $2 (Бахьана: $3)",
 	"action-pagetemplatesadmin-viewspecialpage": "леррина агӀоне хьажа \"{{int:pagetemplatesadmin}}\"",
-	"pagetemplatesadmin": "АгӀонан кепашна урхалла дар",
 	"bs-usagetracker-pagetemplates": "агӀонийн кепаш",
 	"bs-pagetemplates-nsm-label": "АгӀонан кепаш",
 	"bs-pagetemplates-no-matching-results-label": "Цхьа а кеп ца карийна",

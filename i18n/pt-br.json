@@ -47,7 +47,6 @@
 	"apihelp-bs-pagetemplates-store-summary": "Lista todos as predefinições de página. Permite ordenar, filtrar e paginar. Implementa os parâmetros ExtJS Store.",
 	"apihelp-bs-pagetemplates-tasks-summary": "Permite a manipulação das predefinições de página",
 	"action-pagetemplatesadmin-viewspecialpage": "ver página especial \"{{int:pagetemplatesadmin}}\"",
-	"pagetemplatesadmin": "Administração de predefinições de páginas",
 	"bs-usagetracker-pagetemplates": "predefinições de página",
 	"bs-pagetemplates-nsm-label": "ModelosDePágina",
 	"right-pagetemplatesadmin-viewspecialpage": "Acesso à página especial [[Special:PageTemplatesAdmin]], onde os modelos de páginas podem ser administrados"

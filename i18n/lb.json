@@ -44,7 +44,6 @@
 	"bs-pagetemplates-remove-message-failure": "Dës {{PLURAL:$1|Schabloun konnt|Schabloune konnten}} net geläscht ginn: $2 (Grond: $3)",
 	"apihelp-bs-pagetemplates-tasks-summary": "Erlaabt d'Manipulatioun vu Säite-Schablounen",
 	"action-pagetemplatesadmin-viewspecialpage": "d'Spezialsäit \"{{int:pagetemplatesadmin}}\" weisen",
-	"pagetemplatesadmin": "Gestioun vun Schabloune vu Säiten",
 	"bs-usagetracker-pagetemplates": "Säiteschablounen",
 	"bs-pagetemplates-no-matching-results-label": "Keng Schabloun fonnt",
 	"bs-pagetemplates-ns-undefined": "Ondefinéierten Nummraum"
