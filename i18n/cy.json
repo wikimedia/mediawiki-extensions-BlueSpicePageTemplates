@@ -5,11 +5,11 @@
 			"Ceirios"
 		]
 	},
-	"bs-pagetemplates-tipaddtemplate": "Ychwanegu nodyn",
-	"bs-pagetemplates-label-tpl": "Enw'r nodyn",
+	"bs-pagetemplates-tipaddtemplate": "Ychwanegu templed",
+	"bs-pagetemplates-label-tpl": "Enw'r templed",
 	"bs-pagetemplates-label-desc": "Disgrifiad",
 	"bs-pagetemplates-label-targetns": "Parth",
 	"bs-pagetemplates-label-tplns": "Parth y nodyn",
-	"bs-pagetemplates-label-article": "Nodyn",
-	"bs-pagetemplates-confirm-deletetpl": "Ydych chi wir eisiau dileu{{PLURAL:$1|'r nodyn hwn| y nodiadau hyn}}?"
+	"bs-pagetemplates-label-article": "Templed",
+	"bs-pagetemplates-confirm-deletetpl": "Ydych chi wir am ddileu{{PLURAL:$1|'r templed hwn| y templedi hyn}}?"
 }
