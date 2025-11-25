@@ -23,7 +23,7 @@
 	"bs-pagetemplates-dberror": "डेटावेसमा त्रुटि उत्पन्न भयो।",
 	"bs-pagetemplates-tpl-deleted": "यो ढाँचा मेटिएको छ।",
 	"bs-pagetemplates-general-section": "सामान्य",
-	"bs-pagetemplates-pref-excludens": "यो नामस्थानहरूमा ढाँचाहरू नदेखाउने:",
+	"bs-pagetemplates-pref-excludens": "यी नामपदहरूमा ढाँचाहरू नदेखाउनुहोस्:",
 	"bs-pagetemplates-headerlabel": "नामपत्र",
 	"bs-pagetemplates-headertargetnamespace": "नामपद",
 	"bs-pagetemplates-tipeditdetails": "ढाँचा सम्पादन गर्नुहोस्",
