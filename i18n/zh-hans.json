@@ -3,6 +3,7 @@
 		"authors": [
 			"LittlePaw365",
 			"Liuxinyu970226",
+			"Peterxy12",
 			"Ps2049",
 			"U.T.",
 			"Xiplus",
@@ -33,6 +34,10 @@
 	"bs-pagetemplates-choose-template": "此页面不存在。您可创建一个新页面。如果您不希望这样做，点击浏览器的返回按钮回到您最近访问的页面。您可以选择以下{{PLURAL:$1|模板}}{{PLURAL:$1||之一}}：",
 	"bs-pagetemplates-choose-template-empty": "此页面还不存在。您可以创建新页面。如果您不想这么做，可以点击您浏览器中的返回按钮，来回到您上一个访问的页面。",
 	"bs-pagetemplates-pref-excludens": "不要显示这些命名空间的模板：",
+	"bs-pagetemplates-config-forcenamespace": "使用来自模板链接的命名空间",
+	"bs-pagetemplates-config-forcenamespace-help": "当创建新页面时，应用在模板链接所选取命名空间。",
+	"bs-pagetemplates-config-hideifnotintargetns": "隐藏未选中命名空间的模板",
+	"bs-pagetemplates-config-hidedefaults": "隐藏标准模板",
 	"bs-pagetemplates-headerlabel": "标签",
 	"bs-pagetemplates-headertargetnamespace": "命名空间",
 	"bs-pagetemplates-tipeditdetails": "编辑模板",
@@ -50,12 +55,16 @@
 	"bs-pagetemplates-remove-message-failure": "以下{{PLURAL:$1|模板}}不能删除：$2（原因：$3）",
 	"apihelp-bs-pagetemplates-store-summary": "列举所有页面模板。允许排序、过滤和分页。执行ExtJS存储的参数。",
 	"apihelp-bs-pagetemplates-tasks-summary": "允许对页面模板的操纵",
+	"apihelp-bs-pagetemplate-tags-store-summary": "列举所有页面模板。允许排序、筛选及分页。执行ExtJS存储的参数。",
 	"action-pagetemplatesadmin-viewspecialpage": "查看特殊页面“{{int:pagetemplatesadmin}}”",
 	"bs-usagetracker-pagetemplates": "页面模板",
 	"bs-pagetemplates-nsm-label": "页面模板",
 	"right-pagetemplatesadmin-viewspecialpage": "允许访问管理页面模板的特殊页面 [[Special:PageTemplatesAdmin]] 的权限",
+	"bs-pagetemplates-config-hidedefaults-help": "在页面创建期间，从可用页面模板列表移除标准模板“Empty Page”。",
 	"bs-pagetemplates-no-matching-results-label": "没有找到模板",
 	"bs-pagetemplates-search-template-placeholder": "查找页面模板",
 	"bs-pagetemplates-headertags": "标签",
-	"bs-pagetemplates-ns-undefined": "未定义的命名空间"
+	"bs-pagetemplates-tag-untagged": "取消标记",
+	"bs-pagetemplates-ns-undefined": "未定义的命名空间",
+	"bs-pagetemplates-config-hideifnotintargetns-help": "如果目标命名空间与页面建立期间的页面命名空间不匹配，则从可用页面模板列表中移除该模板。"
 }
