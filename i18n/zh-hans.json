@@ -3,6 +3,7 @@
 		"authors": [
 			"LittlePaw365",
 			"Liuxinyu970226",
+			"Peterxy12",
 			"Ps2049",
 			"U.T.",
 			"Xiplus",
@@ -64,5 +65,13 @@
 	"bs-pagetemplates-no-matching-results-label": "没有找到模板",
 	"bs-pagetemplates-search-template-placeholder": "查找页面模板",
 	"bs-pagetemplates-headertags": "标签",
-	"bs-pagetemplates-ns-undefined": "未定义的命名空间"
+	"bs-pagetemplates-ns-undefined": "未定义的命名空间",
+	"bs-pagetemplates-config-forcenamespace": "使用来自模板链接的命名空间",
+	"bs-pagetemplates-config-forcenamespace-help": "当创建新页面时，应用在模板链接所选取命名空间。",
+	"bs-pagetemplates-config-hideifnotintargetns": "隐藏未选中命名空间的模板",
+	"bs-pagetemplates-config-hidedefaults": "隐藏标准模板",
+	"apihelp-bs-pagetemplate-tags-store-summary": "列举所有页面模板。允许排序、筛选及分页。执行ExtJS存储的参数。",
+	"bs-pagetemplates-config-hidedefaults-help": "在页面创建期间，从可用页面模板列表移除标准模板“Empty Page”。",
+	"bs-pagetemplates-tag-untagged": "取消标记",
+	"bs-pagetemplates-config-hideifnotintargetns-help": "如果目标命名空间与页面建立期间的页面命名空间不匹配，则从可用页面模板列表中移除该模板。"
 }
