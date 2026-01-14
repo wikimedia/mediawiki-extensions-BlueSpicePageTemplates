@@ -37,6 +37,7 @@
 	"bs-pagetemplates-config-forcenamespace": "Namensraum aus Vorlagenlink verwenden",
 	"bs-pagetemplates-config-forcenamespace-help": "Wendet den im Vorlagen-Link ausgewählten Namensraum beim Erstellen einer neuen Seite an",
 	"bs-pagetemplates-config-hideifnotintargetns": "Vorlage für nicht ausgewählten Namensraum ausblenden",
+	"bs-pagetemplates-config-hideifnotintargetns-help": "Entfernt eine Vorlage aus der Liste der verfügbaren Seitenvorlagen, wenn ihr Ziel-Namensraum bei der Seitenerstellung nicht mit dem Namensraum der Seite übereinstimmt",
 	"bs-pagetemplates-config-hidedefaults": "Standardvorlage ausblenden",
 	"bs-pagetemplates-headerlabel": "Name",
 	"bs-pagetemplates-headertargetnamespace": "Namensraum",
@@ -65,6 +66,5 @@
 	"bs-pagetemplates-search-template-placeholder": "Finde eine Seitenvorlage",
 	"bs-pagetemplates-headertags": "Tags",
 	"bs-pagetemplates-tag-untagged": "Ohne Tag",
-	"bs-pagetemplates-ns-undefined": "Undefinierter Namensraum",
-	"bs-pagetemplates-config-hideifnotintargetns-help": "Entfernt eine Vorlage aus der Liste der verfügbaren Seitenvorlagen, wenn ihr Ziel-Namensraum bei der Seitenerstellung nicht mit dem Namensraum der Seite übereinstimmt"
+	"bs-pagetemplates-ns-undefined": "Undefinierter Namensraum"
 }

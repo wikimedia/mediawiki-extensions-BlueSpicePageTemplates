@@ -37,6 +37,7 @@
 	"bs-pagetemplates-config-forcenamespace": "使用来自模板链接的命名空间",
 	"bs-pagetemplates-config-forcenamespace-help": "当创建新页面时，应用在模板链接所选取命名空间。",
 	"bs-pagetemplates-config-hideifnotintargetns": "隐藏未选中命名空间的模板",
+	"bs-pagetemplates-config-hideifnotintargetns-help": "如果目标命名空间与页面建立期间的页面命名空间不匹配，则从可用页面模板列表中移除该模板。",
 	"bs-pagetemplates-config-hidedefaults": "隐藏标准模板",
 	"bs-pagetemplates-headerlabel": "标签",
 	"bs-pagetemplates-headertargetnamespace": "命名空间",
@@ -65,6 +66,5 @@
 	"bs-pagetemplates-search-template-placeholder": "查找页面模板",
 	"bs-pagetemplates-headertags": "标签",
 	"bs-pagetemplates-tag-untagged": "取消标记",
-	"bs-pagetemplates-ns-undefined": "未定义的命名空间",
-	"bs-pagetemplates-config-hideifnotintargetns-help": "如果目标命名空间与页面建立期间的页面命名空间不匹配，则从可用页面模板列表中移除该模板。"
+	"bs-pagetemplates-ns-undefined": "未定义的命名空间"
 }

@@ -33,6 +33,7 @@
 	"bs-pagetemplates-config-forcenamespace": "להשתמש במרחב השם מקישור תבנית",
 	"bs-pagetemplates-config-forcenamespace-help": "להחיל את מרחב השם שנבחר בקישור תבנית בעת יצירת דף חדש",
 	"bs-pagetemplates-config-hideifnotintargetns": "להסתיר את התבנית במרחב השם שלא נבחר",
+	"bs-pagetemplates-config-hideifnotintargetns-help": "הסרת תבנית מרשימת תבניות הדף הזמינות אם מרחב השם של היעד שלה אינו תואם למרחב השם של הדף במהלך יצירת הדף",
 	"bs-pagetemplates-config-hidedefaults": "להסתיר תבניות תקניות",
 	"bs-pagetemplates-headerlabel": "תווית",
 	"bs-pagetemplates-headertargetnamespace": "מרחב שם",
@@ -61,6 +62,5 @@
 	"bs-pagetemplates-search-template-placeholder": "מציאת תבנית דף",
 	"bs-pagetemplates-headertags": "תגים",
 	"bs-pagetemplates-tag-untagged": "לא מתויגות",
-	"bs-pagetemplates-ns-undefined": "מרחב שם לא מוגדר",
-	"bs-pagetemplates-config-hideifnotintargetns-help": "הסרת תבנית מרשימת תבניות הדף הזמינות אם מרחב השם של היעד שלה אינו תואם למרחב השם של הדף במהלך יצירת הדף"
+	"bs-pagetemplates-ns-undefined": "מרחב שם לא מוגדר"
 }

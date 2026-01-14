@@ -30,7 +30,8 @@
 	"bs-pagetemplates-pref-excludens": "Non amosar os modelos nestes espazos de nomes:",
 	"bs-pagetemplates-config-forcenamespace": "Utilizar o espazo de nomes da ligazón do modelo",
 	"bs-pagetemplates-config-forcenamespace-help": "Aplica o espazo de nomes seleccionado na ligazón do modelo ao crear unha páxina nova",
-	"bs-pagetemplates-config-hideifnotintargetns": "Agochar o modelo para o espazo de nomes non seleccionado",
+	"bs-pagetemplates-config-hideifnotintargetns": "Agochar o modelo nos espazos de nomes que non se seleccionaron",
+	"bs-pagetemplates-config-hideifnotintargetns-help": "Elimina un modelo da lista de modelos de páxina dispoñibles se o seu espazo de nomes de destino non coincide co espazo de nomes da páxina durante a creación da páxina",
 	"bs-pagetemplates-config-hidedefaults": "Agochar os modelos estándar",
 	"bs-pagetemplates-headerlabel": "Etiqueta",
 	"bs-pagetemplates-headertargetnamespace": "Espazo de nomes",
@@ -59,6 +60,5 @@
 	"bs-pagetemplates-search-template-placeholder": "Atopar un modelo de páxina",
 	"bs-pagetemplates-headertags": "Etiquetas",
 	"bs-pagetemplates-tag-untagged": "Sen etiquetas",
-	"bs-pagetemplates-ns-undefined": "Espazo de nomes non definido",
-	"bs-pagetemplates-config-hideifnotintargetns-help": "Elimina un modelo da lista de modelos de páxina dispoñibles se o seu espazo de nomes de destino non coincide co espazo de nomes da páxina durante a creación da páxina"
+	"bs-pagetemplates-ns-undefined": "Espazo de nomes non definido"
 }

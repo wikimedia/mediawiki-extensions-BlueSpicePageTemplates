@@ -34,6 +34,7 @@
 	"bs-pagetemplates-config-forcenamespace": "Utiliser l'espace de noms à partir du lien du modèle",
 	"bs-pagetemplates-config-forcenamespace-help": "Applique l'espace de noms sélectionné dans le lien du modèle lors de la création d'une nouvelle page",
 	"bs-pagetemplates-config-hideifnotintargetns": "Masquer le modèle pour l'espace de noms non sélectionné",
+	"bs-pagetemplates-config-hideifnotintargetns-help": "Supprime un modèle de la liste des modèles de page disponibles si son espace de noms cible ne correspond pas à l'espace de noms de la page lors de la création de la page",
 	"bs-pagetemplates-config-hidedefaults": "Masquer les modèles standards",
 	"bs-pagetemplates-headerlabel": "Libellé",
 	"bs-pagetemplates-headertargetnamespace": "Espace de noms",
@@ -62,6 +63,5 @@
 	"bs-pagetemplates-search-template-placeholder": "Trouver le modèle de page",
 	"bs-pagetemplates-headertags": "Balises",
 	"bs-pagetemplates-tag-untagged": "Sans balise",
-	"bs-pagetemplates-ns-undefined": "Espace de noms non défini",
-	"bs-pagetemplates-config-hideifnotintargetns-help": "Supprime un modèle de la liste des modèles de page disponibles si son espace de noms cible ne correspond pas à l'espace de noms de la page lors de la création de la page"
+	"bs-pagetemplates-ns-undefined": "Espace de noms non défini"
 }
