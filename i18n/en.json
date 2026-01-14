@@ -65,7 +65,7 @@
 	"bs-pagetemplates-ns-undefined": "Undefined namespace",
 	"bs-pagetemplates-config-forcenamespace": "Use namespace from template link",
 	"bs-pagetemplates-config-forcenamespace-help": "Applies the namespace selected in the template link when creating a new page",
-	"bs-pagetemplates-config-hideifnotintargetns": "Hide template for not selected namespace",
+	"bs-pagetemplates-config-hideifnotintargetns": "Hide template in namespaces that weren't selected",
 	"bs-pagetemplates-config-hidedefaults": "Hide standard templates",
 	"bs-pagetemplates-config-hidedefaults-help": "Removes the standard template \"Empty Page\" from the list of available page templates during page creation",
 	"bs-pagetemplates-config-hideifnotintargetns-help": "Removes a template from the list of available page templates if its target namespace does not match the namespace of the page during page creation"
