@@ -54,7 +54,7 @@
 	"bs-pagetemplates-choose-template-empty": "Esta páxina aínda non existe. Podes crear unha nova páxina. Se non queres creala, preme no botón de volver do teu navegador para regresar á última páxina visitada.",
 	"bs-pagetemplates-config-forcenamespace": "Utilizar o espazo de nomes da ligazón do modelo",
 	"bs-pagetemplates-config-forcenamespace-help": "Aplica o espazo de nomes seleccionado na ligazón do modelo ao crear unha páxina nova",
-	"bs-pagetemplates-config-hideifnotintargetns": "Agochar o modelo para o espazo de nomes non seleccionado",
+	"bs-pagetemplates-config-hideifnotintargetns": "Agochar o modelo nos espazos de nomes que non se seleccionaron",
 	"bs-pagetemplates-config-hidedefaults": "Agochar os modelos estándar",
 	"bs-pagetemplates-label-tags": "Etiquetas",
 	"bs-pagetemplates-placeholder-tags": "Engadir unha etiqueta",
