@@ -5,6 +5,7 @@
 			"Eladk",
 			"Ex-Diktator",
 			"Guycn2",
+			"IKhitron",
 			"המקיסט"
 		]
 	},
@@ -69,7 +70,7 @@
 	"bs-pagetemplates-ns-undefined": "מרחב שם לא מוגדר",
 	"bs-pagetemplates-config-forcenamespace": "להשתמש במרחב השם מקישור תבנית",
 	"bs-pagetemplates-config-forcenamespace-help": "להחיל את מרחב השם שנבחר בקישור תבנית בעת יצירת דף חדש",
-	"bs-pagetemplates-config-hideifnotintargetns": "להסתיר את התבנית במרחב השם שלא נבחר",
+	"bs-pagetemplates-config-hideifnotintargetns": "להסתיר את התבנית במרחבי השם שלא נבחרו",
 	"bs-pagetemplates-config-hidedefaults": "להסתיר תבניות תקניות",
 	"bs-pagetemplates-config-hidedefaults-help": "הסרת התבנית התקנית \"Empty Page\" מהבחירה של תבניות דפים זמינות בזמן יצירת הדף",
 	"bs-pagetemplates-config-hideifnotintargetns-help": "הסרת תבנית מרשימת תבניות הדף הזמינות אם מרחב השם של היעד שלה אינו תואם למרחב השם של הדף במהלך יצירת הדף"
