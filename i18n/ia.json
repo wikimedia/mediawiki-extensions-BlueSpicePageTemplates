@@ -28,7 +28,7 @@
 	"bs-pagetemplates-pref-excludens": "Non monstrar patronos in iste spatios de nomines:",
 	"bs-pagetemplates-config-forcenamespace": "Usar le spatio de nomines del ligamine de patrono",
 	"bs-pagetemplates-config-forcenamespace-help": "Applica le spatio de nomines seligite in le ligamine de patrono quando se crea un nove pagina",
-	"bs-pagetemplates-config-hideifnotintargetns": "Celar le patrono pro le spatio de nomines non seligite",
+	"bs-pagetemplates-config-hideifnotintargetns": "Celar le patrono in spatios de nomines que non ha essite seligite",
 	"bs-pagetemplates-config-hideifnotintargetns-help": "Remove un patrono del lista de patronos de pagina disponibile si su spatio de nomines de destination non corresponde al spatio de nomines del pagina quando se crea un pagina",
 	"bs-pagetemplates-config-hidedefaults": "Celar le patronos standard",
 	"bs-pagetemplates-headerlabel": "Etiquetta",
