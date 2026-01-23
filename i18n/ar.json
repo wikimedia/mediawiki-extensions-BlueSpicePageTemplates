@@ -69,7 +69,7 @@
 	"bs-pagetemplates-ns-undefined": "مساحة اسم غير محددة",
 	"bs-pagetemplates-config-forcenamespace": "استخدم النطاق من رابط القالب",
 	"bs-pagetemplates-config-forcenamespace-help": "يتم تطبيق النطاق المحدد في رابط القالب عند إنشاء صفحة جديدة",
-	"bs-pagetemplates-config-hideifnotintargetns": "إخفاء القالب للمساحة الاسمية غير المحددة",
+	"bs-pagetemplates-config-hideifnotintargetns": "إخفاء القالب في مساحات الأسماء التي لم يتم تحديدها",
 	"bs-pagetemplates-config-hidedefaults": "إخفاء القوالب القياسية",
 	"bs-pagetemplates-config-hidedefaults-help": "يزيل القالب القياسي \"الصفحة الفارغة\" من قائمة قوالب الصفحات المتاحة أثناء إنشاء الصفحة",
 	"bs-pagetemplates-config-hideifnotintargetns-help": "يزيل قالبًا من قائمة قوالب الصفحات المتاحة إذا كانت مساحة اسمه المستهدفة لا تتطابق مع مساحة اسم الصفحة أثناء إنشاء الصفحة"
