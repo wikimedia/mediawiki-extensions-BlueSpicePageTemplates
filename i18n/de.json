@@ -8,6 +8,7 @@
 			"MLRodrigue",
 			"Metalhead64",
 			"Mglaser",
+			"Mschlindwein",
 			"SehrGuterCode",
 			"Stephan Muggli <muggli@hallowelt.biz>"
 		]
@@ -72,7 +73,7 @@
 	"apihelp-bs-pagetemplate-tags-store-summary": "Listet alle Tags der Seitenvorlagen auf. Ermöglicht Sortierung, Filterung und Paginierung. Implementiert ExtJS Store-Parameter.",
 	"bs-pagetemplates-config-forcenamespace": "Namensraum aus Vorlagenlink verwenden",
 	"bs-pagetemplates-config-forcenamespace-help": "Wendet den im Vorlagen-Link ausgewählten Namensraum beim Erstellen einer neuen Seite an",
-	"bs-pagetemplates-config-hideifnotintargetns": "Vorlage für nicht ausgewählten Namensraum ausblenden",
+	"bs-pagetemplates-config-hideifnotintargetns": "Vorlage in nicht ausgewählten Namensräumen ausblenden",
 	"bs-pagetemplates-config-hidedefaults": "Standardvorlage ausblenden",
 	"bs-pagetemplates-config-hidedefaults-help": "Entfernt die Standardvorlage \"Leere Seite\" aus der Liste der verfügbaren Seitenvorlagen bei der Seitenerstellung",
 	"bs-pagetemplates-config-hideifnotintargetns-help": "Entfernt eine Vorlage aus der Liste der verfügbaren Seitenvorlagen, wenn ihr Ziel-Namensraum bei der Seitenerstellung nicht mit dem Namensraum der Seite übereinstimmt"
