@@ -8,6 +8,7 @@
 			"MLRodrigue",
 			"Metalhead64",
 			"Mglaser",
+			"Mschlindwein",
 			"SehrGuterCode",
 			"Stephan Muggli <muggli@hallowelt.biz>"
 		]
@@ -36,7 +37,7 @@
 	"bs-pagetemplates-pref-excludens": "In diesen Namensräumen keine Vorlagen anzeigen:",
 	"bs-pagetemplates-config-forcenamespace": "Namensraum aus Vorlagenlink verwenden",
 	"bs-pagetemplates-config-forcenamespace-help": "Wendet den im Vorlagen-Link ausgewählten Namensraum beim Erstellen einer neuen Seite an",
-	"bs-pagetemplates-config-hideifnotintargetns": "Vorlage für nicht ausgewählten Namensraum ausblenden",
+	"bs-pagetemplates-config-hideifnotintargetns": "Vorlage in nicht ausgewählten Namensräumen ausblenden",
 	"bs-pagetemplates-config-hideifnotintargetns-help": "Entfernt eine Vorlage aus der Liste der verfügbaren Seitenvorlagen, wenn ihr Ziel-Namensraum bei der Seitenerstellung nicht mit dem Namensraum der Seite übereinstimmt",
 	"bs-pagetemplates-config-hidedefaults": "Standardvorlage ausblenden",
 	"bs-pagetemplates-headerlabel": "Name",
