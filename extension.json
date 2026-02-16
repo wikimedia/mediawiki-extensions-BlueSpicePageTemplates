@@ -228,6 +228,9 @@
 		},
 		"runDatabaseUpdates": {
 			"class": "\\BlueSpice\\PageTemplates\\HookHandler\\RunDatabaseUpdates"
+		},
+		"addNamespaceProperties": {
+			"class": "\\BlueSpice\\PageTemplates\\HookHandler\\NamespaceManagerCollectNamespaceProperties\\AddNamespaceProperties"
 		}
 	},
 	"Hooks": {
@@ -242,7 +245,8 @@
 		"MessagesPreLoad": "handleShowingTemplateList",
 		"MediaWikiPerformAction": "\\BlueSpice\\PageTemplates\\Hook\\MediaWikiPerformAction\\PreventEditMode::callback",
 		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
-		"SkinTemplateNavigation::Universal": "addPreloadForActions"
+		"SkinTemplateNavigation::Universal": "addPreloadForActions",
+		"NamespaceManagerCollectNamespaceProperties": "addNamespaceProperties"
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2
