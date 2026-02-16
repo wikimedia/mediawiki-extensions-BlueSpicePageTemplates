@@ -228,6 +228,9 @@
 		},
 		"registerTags": {
 			"class": "\\BlueSpice\\PageTemplates\\HookHandler\\RegisterTags"
+		},
+		"addNamespaceProperties": {
+			"class": "\\BlueSpice\\PageTemplates\\HookHandler\\NamespaceManagerCollectNamespaceProperties\\AddNamespaceProperties"
 		}
 	},
 	"Hooks": {
@@ -243,7 +246,8 @@
 		"MediaWikiPerformAction": "\\BlueSpice\\PageTemplates\\Hook\\MediaWikiPerformAction\\PreventEditMode::callback",
 		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
 		"SkinTemplateNavigation::Universal": "addPreloadForActions",
-		"MWStakeGenericTagHandlerInitTags": "registerTags"
+		"MWStakeGenericTagHandlerInitTags": "registerTags",
+		"NamespaceManagerCollectNamespaceProperties": "addNamespaceProperties"
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2
