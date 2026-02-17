@@ -2,10 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Asma",
+			"Hubaishan",
 			"Meno25",
 			"ديفيد",
-			"محمد أحمد عبد الفتاح",
-			"Hubaishan"
+			"محمد أحمد عبد الفتاح"
 		]
 	},
 	"bs-pagetemplates-desc": "يعرض قائمة من القوالب المعلمة كقوالب صفحات",
@@ -32,7 +32,7 @@
 	"bs-pagetemplates-pref-excludens": "لا تظهر القوالب في النطاقات التالية:",
 	"bs-pagetemplates-config-forcenamespace": "استخدم النطاق من رابط القالب",
 	"bs-pagetemplates-config-forcenamespace-help": "يتم تطبيق النطاق المحدد في رابط القالب عند إنشاء صفحة جديدة",
-	"bs-pagetemplates-config-hideifnotintargetns": "إخفاء القالب للمساحة الاسمية غير المحددة",
+	"bs-pagetemplates-config-hideifnotintargetns": "إخفاء القالب في مساحات الأسماء التي لم يتم تحديدها",
 	"bs-pagetemplates-config-hidedefaults": "إخفاء القوالب القياسية",
 	"bs-pagetemplates-headerlabel": "التسمية",
 	"bs-pagetemplates-headertargetnamespace": "النطاق",
