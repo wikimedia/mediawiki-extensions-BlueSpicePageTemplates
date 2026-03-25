@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Cookai1205",
 			"Cwlin0416",
 			"Ericliu1912",
 			"Kly",
@@ -39,7 +40,7 @@
 	"bs-pagetemplates-headerlabel": "標籤",
 	"bs-pagetemplates-headertargetnamespace": "命名空間",
 	"bs-pagetemplates-tipeditdetails": "編輯模板",
-	"bs-pagetemplates-tipdeletetemplate": "刪除{{PLURAL:$1|模板|模板}}",
+	"bs-pagetemplates-tipdeletetemplate": "刪除{{PLURAL:$1|模板}}",
 	"bs-pagetemplates-tipaddtemplate": "增加模板",
 	"bs-pagetemplates-label-tpl": "模板名稱",
 	"bs-pagetemplates-label-desc": "描述",
@@ -68,5 +69,11 @@
 	"bs-pagetemplates-headertags": "標籤",
 	"bs-pagetemplates-tag-untagged": "取消標記",
 	"bs-pagetemplates-ns-undefined": "未定義的命名空間",
-	"bs-pagetemplates-placeholder-tags": "新增標籤"
+	"bs-pagetemplates-placeholder-tags": "新增標籤",
+	"bs-pagetemplates-config-forcenamespace": "使用來自模板連結的命名空間",
+	"bs-pagetemplates-config-forcenamespace-help": "當建立新頁面時，套用在模板連結所選取命名空間。",
+	"bs-pagetemplates-config-hideifnotintargetns": "隱藏未選取命名空間的模板",
+	"bs-pagetemplates-config-hideifnotintargetns-help": "如果目標命名空間與頁面建立期間的頁面命名空間不匹配，則從可用頁面模板清單中移除該模板。",
+	"bs-pagetemplates-config-hidedefaults": "隱藏標準模板",
+	"bs-pagetemplates-config-hidedefaults-help": "在頁面建立期間，從可用頁面模板清單移除標準模板「Empty Page」。"
 }

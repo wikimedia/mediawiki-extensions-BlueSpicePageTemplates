@@ -1,9 +1,18 @@
 {
 	"@metadata": {
 		"authors": [
-			"Edustus"
+			"Edustus",
+			"Lluis Cat"
 		]
 	},
 	"bs-pagetemplates-empty-page": "Pàgina buida",
-	"bs-pagetemplates-label-desc": "Descripció"
+	"bs-pagetemplates-label-desc": "Descripció",
+	"bs-pagetemplates-tpl-added": "S'ha afegit la plantilla.",
+	"bs-pagetemplates-nooldtpl": "No s'ha pogut trobar la plantilla antiga.",
+	"bs-pagetemplates-tpl-deleted": "S'ha suprimit la plantilla.",
+	"bs-pagetemplates-tipeditdetails": "Modifica la plantilla",
+	"bs-pagetemplates-tipaddtemplate": "Afegeix una plantilla",
+	"bs-pagetemplates-label-tpl": "Nom de la plantilla",
+	"bs-pagetemplates-label-article": "Plantilla",
+	"bs-pagetemplates-confirm-deletetpl": "Segur que voleu suprimir {{PLURAL:$1|aquest fitxer|aquests fitxers}}?"
 }

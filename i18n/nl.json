@@ -62,12 +62,18 @@
 	"right-pagetemplatesadmin-viewspecialpage": "Toegang tot de speciale pagina [[Special:PageTemplatesAdmin]] waarin paginasjablonen kunnen worden beheerd",
 	"bs-pagetemplates-pref-hidedefaults-help": "Verwijdert het standaardsjabloon \"Lege pagina\" uit de selectie van paginasjablonen bij het aanmaken van pagina's.",
 	"bs-pagetemplates-pref-forcenamespace-help": "Forceert de naamruimte die is geselecteerd via de sjabloonkoppeling bij het aanmaken van een nieuwe pagina.",
-	"bs-pagetemplates-label-tags": "Tags",
+	"bs-pagetemplates-label-tags": "Labels",
 	"apihelp-bs-pagetemplate-tags-store-summary": "Geeft een overzicht van alle labels van paginasjablonen. Maakt sorteren, filteren en pagineren mogelijk. Implementeert ExtJS Store-parameters.",
 	"bs-pagetemplates-no-matching-results-label": "Geen sjabloon gevonden",
 	"bs-pagetemplates-search-template-placeholder": "Paginasjabloon zoeken",
-	"bs-pagetemplates-headertags": "Tags",
+	"bs-pagetemplates-headertags": "Labels",
 	"bs-pagetemplates-tag-untagged": "Niet getagd",
 	"bs-pagetemplates-ns-undefined": "Ongedefinieerde namespace",
-	"bs-pagetemplates-placeholder-tags": "Label toevoegen"
+	"bs-pagetemplates-placeholder-tags": "Label toevoegen",
+	"bs-pagetemplates-config-forcenamespace": "Naamruimte van sjabloonkoppeling gebruiken",
+	"bs-pagetemplates-config-forcenamespace-help": "Past de naamruimte toe die bij het aanmaken van een nieuwe pagina is geselecteerd in de sjabloonkoppeling",
+	"bs-pagetemplates-config-hideifnotintargetns": "Sjabloon verbergen in naamruimten die niet zijn geselecteerd",
+	"bs-pagetemplates-config-hideifnotintargetns-help": "Verwijdert een sjabloon uit de lijst met beschikbare paginasjablonen als de doelnaamruimte ervan niet overeenkomt met de naamruimte van de pagina tijdens het aanmaken van de pagina",
+	"bs-pagetemplates-config-hidedefaults": "Standaardsjablonen verbergen",
+	"bs-pagetemplates-config-hidedefaults-help": "Verwijdert het standaardsjabloon “Lege pagina” uit de selectie van paginasjablonen bij het aanmaken van een pagina"
 }

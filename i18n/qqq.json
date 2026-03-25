@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"GpieroMW",
 			"Liuxinyu970226",
 			"Mglaser",
@@ -52,7 +53,7 @@
 	"bs-pagetemplates-label-article": "Label for template\n{{Identical|Template}}",
 	"bs-pagetemplates-confirm-deletetpl": "Used as text of the confirmation window. Parameters:\n* $1 - the number of templates which will be deleted - use for PLURAL distinction\nSee also:\n* {{msg-mw|Bs-pagetemplates-tipdeletetemplate}}",
 	"bs-pagetemplates-remove-message-unknown": "An unexpected error occurred while trying to delete a template.",
-	"bs-pagetemplates-remove-message-success": "Success message that one or more templates were deleted. Parameters:\n* $1 - the number of deleted templates - use for PLURAL distinction\n* $2 - a comma separated list of deleted templates",
+	"bs-pagetemplates-remove-message-success": "Success message that one or more templates were deleted. Parameters:\n* $1 - the number of deleted templates - use for PLURAL distinction\n* $2 - a comma-separated list of deleted templates",
 	"bs-pagetemplates-remove-message-failure": "Error message that one or more templates could not be deleted.\n\nParameters:\n* $1 - the number of templates which could not be deleted - use for PLURAL distinction\n* $2 - a list of the templates which could not be deleted\n* $3 - a list with the reason for each template why they could not be deleted",
 	"apihelp-bs-pagetemplates-store-description": "Describes the API endpoint that lists page templates\n{{doc-apihelp-description|bs-pagetemplates-store}}",
 	"apihelp-bs-pagetemplates-store-summary": "Describes the API endpoint that lists page templates\n{{doc-apihelp-summary|bs-pagetemplates-store}}",
@@ -73,5 +74,11 @@
 	"bs-pagetemplates-headertags": "Label for tags\n{{Identical|Tags}}",
 	"bs-pagetemplates-tag-untagged": "Label for container with page templates for untagged templates",
 	"bs-pagetemplates-ns-undefined": "Label for container with page templates for undefined namespaces",
-	"bs-pagetemplates-placeholder-tags": "Placeholder text in the tag input field"
+	"bs-pagetemplates-placeholder-tags": "Placeholder text in the tag input field",
+	"bs-pagetemplates-config-forcenamespace": "Label for config variable \"PageTemplatesForceNamespace\" at [[Special:BlueSpiceConfigManager]]",
+	"bs-pagetemplates-config-forcenamespace-help": "Description for config variable \"PageTemplatesForceNamespace\"",
+	"bs-pagetemplates-config-hideifnotintargetns": "Label for config variable \"PageTemplatesHideIfNotInTargetNs\" at [[Special:BlueSpiceConfigManager]]",
+	"bs-pagetemplates-config-hideifnotintargetns-help": "Description for config variable \"PageTemplatesHideIfNotInTargetNs\"",
+	"bs-pagetemplates-config-hidedefaults": "Label for config variable \"PageTemplatesHideDefaults\" at [[Special:BlueSpiceConfigManager]]",
+	"bs-pagetemplates-config-hidedefaults-help": "Description for config variable \"PageTemplatesHideDefaults\""
 }
