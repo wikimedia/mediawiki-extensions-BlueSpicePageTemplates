@@ -4,7 +4,8 @@
 			"Hamilton Abreu",
 			"Mansil",
 			"Mansil alfalb",
-			"Vitorvicentevalente"
+			"Vitorvicentevalente",
+			"BraunOBruno"
 		]
 	},
 	"bs-pagetemplates-desc": "Apresenta uma lista de predefinições marcadas como modelos de páginas",
@@ -32,7 +33,7 @@
 	"bs-pagetemplates-headerlabel": "Rótulo",
 	"bs-pagetemplates-headertargetnamespace": "Domínio",
 	"bs-pagetemplates-tipeditdetails": "Editar modelo",
-	"bs-pagetemplates-tipdeletetemplate": "Eliminar {{PLURAL:$1|modelo|modelos}}",
+	"bs-pagetemplates-tipdeletetemplate": "Eliminar {{PLURAL:$1|predefinição|predefinições}}",
 	"bs-pagetemplates-tipaddtemplate": "Adicionar modelo",
 	"bs-pagetemplates-label-tpl": "Nome do modelo",
 	"bs-pagetemplates-label-desc": "Descrição",
@@ -43,7 +44,7 @@
 	"bs-pagetemplates-label-article": "Modelo",
 	"bs-pagetemplates-confirm-deletetpl": "Tem a certeza de que pretende eliminar {{PLURAL:$1|este modelo|estes modelos}}?",
 	"bs-pagetemplates-remove-message-unknown": "Ocorreu um erro inesperado, por favor tente novamente.",
-	"bs-pagetemplates-remove-message-success": "{{PLURAL:$1|O seguinte modelo foi eliminado|Os seguintes modelos foram eliminados}}: $2",
+	"bs-pagetemplates-remove-message-success": "{{PLURAL:$1|A seguinte predefinição foi eliminada|As seguintes predefinições foram eliminadas}}: $2",
 	"bs-pagetemplates-remove-message-failure": "{{PLURAL:$1|O seguinte modelo não pode ser eliminado|Os seguintes modelos não podem ser eliminados}}: $2 (Motivo: $3)",
 	"apihelp-bs-pagetemplates-store-summary": "Lista todos os modelos de página. Permite ordenar, filtrar e paginar. Implementa os parâmetros ExtJS Store.",
 	"apihelp-bs-pagetemplates-tasks-summary": "Permite a manipulação dos modelos de página",
