@@ -54,5 +54,6 @@
 	"bs-pagetemplates-no-matching-results-label": "No se encontró ninguna plantilla",
 	"bs-pagetemplates-headertags": "Etiquetas",
 	"bs-pagetemplates-tag-untagged": "No etiquetadas",
-	"bs-pagetemplates-ns-undefined": "Espacio de nombres no definido"
+	"bs-pagetemplates-ns-undefined": "Espacio de nombres no definido",
+	"pagetemplatesadmin": "Administración de plantillas de páginas"
 }

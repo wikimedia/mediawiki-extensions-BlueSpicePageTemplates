@@ -67,5 +67,6 @@
 	"bs-pagetemplates-config-hideifnotintargetns": "隱藏未選取命名空間的模板",
 	"bs-pagetemplates-config-hidedefaults": "隱藏標準模板",
 	"bs-pagetemplates-config-hidedefaults-help": "在頁面建立期間，從可用頁面模板清單移除標準模板「Empty Page」。",
-	"bs-pagetemplates-config-hideifnotintargetns-help": "如果目標命名空間與頁面建立期間的頁面命名空間不匹配，則從可用頁面模板清單中移除該模板。"
+	"bs-pagetemplates-config-hideifnotintargetns-help": "如果目標命名空間與頁面建立期間的頁面命名空間不匹配，則從可用頁面模板清單中移除該模板。",
+	"pagetemplatesadmin": "頁面模板管理"
 }

@@ -22,5 +22,6 @@
 	"bs-pagetemplates-label-article": "Šablona",
 	"bs-usagetracker-pagetemplates": "šablony stránek",
 	"bs-pagetemplates-no-matching-results-label": "Nebyla nalezena žádná šablona",
-	"bs-pagetemplates-search-template-placeholder": "Najít šablonu stránky"
+	"bs-pagetemplates-search-template-placeholder": "Najít šablonu stránky",
+	"pagetemplatesadmin": "Správa šablon stránek"
 }

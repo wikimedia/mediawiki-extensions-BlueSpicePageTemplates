@@ -68,5 +68,6 @@
 	"apihelp-bs-pagetemplate-tags-store-summary": "列举所有页面模板。允许排序、筛选及分页。执行ExtJS存储的参数。",
 	"bs-pagetemplates-config-hidedefaults-help": "在页面创建期间，从可用页面模板列表移除标准模板“Empty Page”。",
 	"bs-pagetemplates-tag-untagged": "取消标记",
-	"bs-pagetemplates-config-hideifnotintargetns-help": "如果目标命名空间与页面建立期间的页面命名空间不匹配，则从可用页面模板列表中移除该模板。"
+	"bs-pagetemplates-config-hideifnotintargetns-help": "如果目标命名空间与页面建立期间的页面命名空间不匹配，则从可用页面模板列表中移除该模板。",
+	"pagetemplatesadmin": "页面模板管理"
 }
