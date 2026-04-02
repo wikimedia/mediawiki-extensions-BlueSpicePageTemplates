@@ -55,5 +55,6 @@
 	"action-pagetemplatesadmin-viewspecialpage": "просмотреть специальную страницу \"{{int:pagetemplatesadmin}}\"",
 	"bs-usagetracker-pagetemplates": "шаблоны страниц",
 	"bs-pagetemplates-nsm-label": "Шаблоны страницы",
-	"bs-pagetemplates-headertags": "Теги"
+	"bs-pagetemplates-headertags": "Теги",
+	"pagetemplatesadmin": "Управление шаблонами страниц"
 }

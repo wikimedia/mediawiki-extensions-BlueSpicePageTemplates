@@ -44,5 +44,6 @@
 	"action-pagetemplatesadmin-viewspecialpage": "ver páxina especial \"{{int:pagetemplatesadmin}}\"",
 	"bs-usagetracker-pagetemplates": "plantíes de páxina",
 	"bs-pagetemplates-nsm-label": "PageTemplates",
-	"right-pagetemplatesadmin-viewspecialpage": "Accesu a la páxina especial [[Special:PageTemplatesAdmin]], onde puen alministrase les plantíes de páxines"
+	"right-pagetemplatesadmin-viewspecialpage": "Accesu a la páxina especial [[Special:PageTemplatesAdmin]], onde puen alministrase les plantíes de páxines",
+	"pagetemplatesadmin": "Alministración de plantíes pa páxines"
 }

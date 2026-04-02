@@ -59,5 +59,6 @@
 	"bs-pagetemplates-search-template-placeholder": "Find page template",
 	"bs-pagetemplates-headertags": "Tags",
 	"bs-pagetemplates-tag-untagged": "Untagged",
-	"bs-pagetemplates-ns-undefined": "Undefined namespace"
+	"bs-pagetemplates-ns-undefined": "Undefined namespace",
+	"pagetemplatesadmin": "Page templates administration"
 }

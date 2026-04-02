@@ -68,5 +68,6 @@
 	"bs-pagetemplates-config-hidedefaults": "隐藏标准模板",
 	"apihelp-bs-pagetemplate-tags-store-summary": "列举所有页面模板。允许排序、筛选及分页。执行ExtJS存储的参数。",
 	"bs-pagetemplates-config-hidedefaults-help": "在页面创建期间，从可用页面模板列表移除标准模板“Empty Page”。",
-	"bs-pagetemplates-tag-untagged": "取消标记"
+	"bs-pagetemplates-tag-untagged": "取消标记",
+	"pagetemplatesadmin": "页面模板管理"
 }

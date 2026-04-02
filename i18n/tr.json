@@ -50,5 +50,6 @@
 	"action-pagetemplatesadmin-viewspecialpage": "\"{{int:pagetemplatesadmin}}\" özel sayfayı görüntüle",
 	"bs-usagetracker-pagetemplates": "sayfa şablonları",
 	"bs-pagetemplates-nsm-label": "SayfaŞablonları",
-	"right-pagetemplatesadmin-viewspecialpage": "Sayfa şablonlarının yönetilebileceği [[Special:PageTemplatesAdmin]] özel sayfasına erişin"
+	"right-pagetemplatesadmin-viewspecialpage": "Sayfa şablonlarının yönetilebileceği [[Special:PageTemplatesAdmin]] özel sayfasına erişin",
+	"pagetemplatesadmin": "Sayfa şablonları yönetimi"
 }
