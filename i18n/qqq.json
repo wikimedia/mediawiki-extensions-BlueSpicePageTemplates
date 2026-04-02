@@ -71,5 +71,6 @@
 	"bs-pagetemplates-config-hidedefaults": "Label for config variable \"PageTemplatesHideDefaults\" at [[Special:BlueSpiceConfigManager]]",
 	"bs-pagetemplates-config-hidedefaults-help": "Description for config variable \"PageTemplatesHideDefaults\"",
 	"bs-pagetemplates-config-hideifnotintargetns": "Label for config variable \"PageTemplatesHideIfNotInTargetNs\" at [[Special:BlueSpiceConfigManager]]",
-	"bs-pagetemplates-config-hideifnotintargetns-help": "Description for config variable \"PageTemplatesHideIfNotInTargetNs\""
+	"bs-pagetemplates-config-hideifnotintargetns-help": "Description for config variable \"PageTemplatesHideIfNotInTargetNs\"",
+	"pagetemplatesadmin": "Name of the special page for page templates administration"
 }

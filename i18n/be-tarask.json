@@ -3,6 +3,7 @@
 		"authors": [
 			"Red Winged Duck",
 			"Renessaince",
+			"Ucukor",
 			"W"
 		]
 	},
@@ -17,5 +18,7 @@
 	"bs-pagetemplates-label-desc": "Апісаньне",
 	"bs-pagetemplates-label-article": "Шаблён",
 	"bs-usagetracker-pagetemplates": "шаблёны старонкі",
-	"right-pagetemplatesadmin-viewspecialpage": "Доступ да спэцыяльнай старонкі [[Special:PageTemplatesAdmin]], адкуль можна кіраваць шаблёнамі старонкі."
+	"right-pagetemplatesadmin-viewspecialpage": "Доступ да спэцыяльнай старонкі [[Special:PageTemplatesAdmin]], адкуль можна кіраваць шаблёнамі старонкі.",
+	"bs-pagetemplates-label-tags": "Тэґі",
+	"bs-pagetemplates-headertags": "Тэґі"
 }

@@ -36,7 +36,7 @@
 	"bs-pagetemplates-pref-excludens": "Toon geen sjablonen in deze naamruimten:",
 	"bs-pagetemplates-config-forcenamespace": "Naamruimte van sjabloonkoppeling gebruiken",
 	"bs-pagetemplates-config-forcenamespace-help": "Past de naamruimte toe die bij het aanmaken van een nieuwe pagina is geselecteerd in de sjabloonkoppeling",
-	"bs-pagetemplates-config-hideifnotintargetns": "Sjabloon verbergen voor niet-geselecteerde naamruimte",
+	"bs-pagetemplates-config-hideifnotintargetns": "Sjabloon verbergen in naamruimten die niet zijn geselecteerd",
 	"bs-pagetemplates-config-hidedefaults": "Standaardsjablonen verbergen",
 	"bs-pagetemplates-headerlabel": "Label",
 	"bs-pagetemplates-headertargetnamespace": "Naamruimte",
