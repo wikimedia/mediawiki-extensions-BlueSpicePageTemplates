@@ -7,6 +7,7 @@
 		]
 	},
 	"prefs-pagetemplates": "문서 틀",
+	"bs-pagetemplatesadmin-text": "문서 틀",
 	"bs-pagetemplates-empty-page": "빈 문서",
 	"bs-pagetemplates-empty-page-desc": "빈 문서로 시작합니다.",
 	"bs-pagetemplatesadmin-label": "문서 틀",
@@ -34,6 +35,7 @@
 	"bs-pagetemplates-tipaddtemplate": "틀 추가",
 	"bs-pagetemplates-label-tpl": "틀 이름",
 	"bs-pagetemplates-label-desc": "설명",
+	"bs-pagetemplates-label-tags": "태그",
 	"bs-pagetemplates-placeholder-tags": "태그 추가",
 	"bs-pagetemplates-label-targetns": "이름공간",
 	"bs-pagetemplates-label-article": "틀",
@@ -47,5 +49,8 @@
 	"pagetemplatesadmin": "문서 틀 관리",
 	"bs-usagetracker-pagetemplates": "문서 틀",
 	"bs-pagetemplates-nsm-label": "PageTemplates",
-	"right-pagetemplatesadmin-viewspecialpage": "문서 틀을 관리할 수 있는 경우 [[Special:PageTemplatesAdmin]] 특수 문서로 접근"
+	"right-pagetemplatesadmin-viewspecialpage": "문서 틀을 관리할 수 있는 경우 [[Special:PageTemplatesAdmin]] 특수 문서로 접근",
+	"bs-pagetemplates-no-matching-results-label": "틀이 없습니다",
+	"bs-pagetemplates-headertags": "태그",
+	"bs-pagetemplates-ns-undefined": "정의되지 않은 이름공간"
 }
