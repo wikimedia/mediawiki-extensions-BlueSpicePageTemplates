@@ -48,5 +48,10 @@
 	"bs-usagetracker-pagetemplates": "문서 틀",
 	"bs-pagetemplates-nsm-label": "PageTemplates",
 	"right-pagetemplatesadmin-viewspecialpage": "문서 틀을 관리할 수 있는 경우 [[Special:PageTemplatesAdmin]] 특수 문서로 접근",
-	"pagetemplatesadmin": "문서 틀 관리"
+	"pagetemplatesadmin": "문서 틀 관리",
+	"bs-pagetemplatesadmin-text": "문서 틀",
+	"bs-pagetemplates-label-tags": "태그",
+	"bs-pagetemplates-no-matching-results-label": "틀이 없습니다",
+	"bs-pagetemplates-headertags": "태그",
+	"bs-pagetemplates-ns-undefined": "정의되지 않은 이름공간"
 }
