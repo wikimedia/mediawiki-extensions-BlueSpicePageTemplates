@@ -25,7 +25,7 @@
 	"bs-pagetemplates-tpl-name-empty": "Voer een naam voor het sjabloon in.",
 	"bs-pagetemplates-no-id": "Voer een pagina in die als sjabloon moet worden gebruikt.",
 	"bs-pagetemplates-tpl-added": "Het sjabloon is toegevoegd.",
-	"bs-pagetemplates-invalid_pfx": "Het voorvoegsel is ongeldig.",
+	"bs-pagetemplates-invalid_pfx": "Het voorvoegsel is onjuist.",
 	"bs-pagetemplates-nooldtpl": "Het oude sjabloon kan niet worden gevonden.",
 	"bs-pagetemplates-tpl-edited": "Uw wijzigingen zijn opgeslagen",
 	"bs-pagetemplates-dberror": "Er is een databasefout opgetreden.",
