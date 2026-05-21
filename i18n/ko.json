@@ -53,5 +53,14 @@
 	"bs-pagetemplates-label-tags": "태그",
 	"bs-pagetemplates-no-matching-results-label": "틀이 없습니다",
 	"bs-pagetemplates-headertags": "태그",
-	"bs-pagetemplates-ns-undefined": "정의되지 않은 이름공간"
+	"bs-pagetemplates-ns-undefined": "정의되지 않은 이름공간",
+	"bs-pagetemplates-desc": "문서 틀로써 표시된 틀 목록을 표시합니다",
+	"bs-pagetemplates-config-forcenamespace": "틀 링크로부터 이름공간을 사용",
+	"bs-pagetemplates-config-forcenamespace-help": "새 문서를 만들 때 틀 링크에서 선택한 이름공간을 적용합니다.",
+	"bs-pagetemplates-config-hideifnotintargetns": "선택되지 않은 이름공간의 틀을 숨김",
+	"bs-pagetemplates-config-hideifnotintargetns-help": "문서 생성 시 대상 이름공간이 문서의 이름공간과 일치하지 않는 경우, 해당 틀을 사용 가능한 문서 틀 목록에서 제거",
+	"apihelp-bs-pagetemplate-tags-store-summary": "모든 문서 틀 태그를 나열합니다. 정렬, 필터링, 쪽 번호 매기기를 허용합니다. ExtJS Store 매개변수를 구현합니다.",
+	"bs-pagetemplates-config-hidedefaults-help": "문서 생성 시 사용 가능한 문서 틀 목록에서 표준 틀 \"Empty Page\"를 제거",
+	"bs-pagetemplates-search-template-placeholder": "문서 틀 찾기",
+	"bs-pagetemplates-tag-untagged": "태그되지 않음"
 }
