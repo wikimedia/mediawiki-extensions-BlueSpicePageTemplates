@@ -55,12 +55,11 @@ class BSApiPageTemplatesTasksTest extends BSApiTasksTestBase {
 		);
 
 		$this->assertTrue( $oData->success );
-		$this->assertSelect(
-			'bs_pagetemplate',
-			[ 'pt_id', 'pt_template_title', 'pt_target_namespace' ],
-			[ "pt_label = 'Dummy 1'" ],
-			[ [ 9, 'Dummy 1 title', FormatJson::encode( [ NS_FILE ] ) ] ]
-		);
+		$this->newSelectQueryBuilder()
+			->select( [ 'pt_id', 'pt_template_title', 'pt_target_namespace' ] )
+			->from( 'bs_pagetemplate' )
+			->where( [ 'pt_label' => 'Dummy 1' ] )
+			->assertRowValue( [ 9, 'Dummy 1 title', FormatJson::encode( [ NS_FILE ] ) ] );
 
 		$iIDAdded = 9;
 
@@ -78,12 +77,11 @@ class BSApiPageTemplatesTasksTest extends BSApiTasksTestBase {
 
 		$this->assertTrue( $oData->success );
 
-		$this->assertSelect(
-			'bs_pagetemplate',
-			[ 'pt_template_title', 'pt_target_namespace' ],
-			[ 'pt_id = 9' ],
-			[ [ 'Faux 1 title', FormatJson::encode( [ NS_MAIN ] ) ] ]
-		);
+		$this->newSelectQueryBuilder()
+			->select( [ 'pt_template_title', 'pt_target_namespace' ] )
+			->from( 'bs_pagetemplate' )
+			->where( [ 'pt_id' => 9 ] )
+			->assertRowValue( [ 'Faux 1 title', FormatJson::encode( [ NS_MAIN ] ) ] );
 	}
 
 	/**
