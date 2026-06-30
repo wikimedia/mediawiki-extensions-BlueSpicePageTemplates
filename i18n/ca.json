@@ -6,6 +6,7 @@
 		]
 	},
 	"bs-pagetemplates-empty-page": "Pàgina buida",
+	"bs-pagetemplates-tpl-name-empty": "Introdueix un nom de plantilla.",
 	"bs-pagetemplates-tpl-added": "S'ha afegit la plantilla.",
 	"bs-pagetemplates-nooldtpl": "No s'ha pogut trobar la plantilla antiga.",
 	"bs-pagetemplates-tpl-deleted": "S'ha suprimit la plantilla.",
