@@ -14,5 +14,6 @@
 	"bs-pagetemplates-label-tpl": "Nom de la plantilla",
 	"bs-pagetemplates-label-desc": "Descripció",
 	"bs-pagetemplates-label-article": "Plantilla",
-	"bs-pagetemplates-confirm-deletetpl": "Segur que voleu suprimir {{PLURAL:$1|aquest fitxer|aquests fitxers}}?"
+	"bs-pagetemplates-confirm-deletetpl": "Segur que voleu suprimir {{PLURAL:$1|aquest fitxer|aquests fitxers}}?",
+	"bs-pagetemplates-tpl-name-empty": "Introdueix un nom de plantilla."
 }
