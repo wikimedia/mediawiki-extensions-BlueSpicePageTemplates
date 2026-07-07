@@ -6,6 +6,7 @@
 		]
 	},
 	"bs-pagetemplates-empty-page": "Pàgina buida",
+	"bs-pagetemplates-tpl-name-empty": "Introdueix un nom de plantilla.",
 	"bs-pagetemplates-tpl-added": "S'ha afegit la plantilla.",
 	"bs-pagetemplates-nooldtpl": "No s'ha pogut trobar la plantilla antiga.",
 	"bs-pagetemplates-tpl-deleted": "S'ha suprimit la plantilla.",
@@ -14,6 +15,5 @@
 	"bs-pagetemplates-label-tpl": "Nom de la plantilla",
 	"bs-pagetemplates-label-desc": "Descripció",
 	"bs-pagetemplates-label-article": "Plantilla",
-	"bs-pagetemplates-confirm-deletetpl": "Segur que voleu suprimir {{PLURAL:$1|aquest fitxer|aquests fitxers}}?",
-	"bs-pagetemplates-tpl-name-empty": "Introdueix un nom de plantilla."
+	"bs-pagetemplates-confirm-deletetpl": "Segur que voleu suprimir {{PLURAL:$1|aquest fitxer|aquests fitxers}}?"
 }
