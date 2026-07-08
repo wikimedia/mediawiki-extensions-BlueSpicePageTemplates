@@ -70,6 +70,13 @@
 					"class": "BlueSpice\\PageTemplates\\Integration\\PDFCreator\\StylesheetsProvider\\PageTemplates"
 				}
 			}
+		},
+		"BlueSpiceGalaxyDistributionConnector": {
+			"NamespaceSettings": {
+				"bs-pagetemplates": {
+					"class": "BlueSpice\\PageTemplates\\Integration\\Galaxy\\NamespaceSetting"
+				}
+			}
 		}
 	},
 	"GroupPermissions": {
