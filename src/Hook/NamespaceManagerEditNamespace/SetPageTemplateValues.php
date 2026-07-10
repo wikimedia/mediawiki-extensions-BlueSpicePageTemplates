@@ -6,6 +6,9 @@ use BlueSpice\NamespaceManager\Hook\NamespaceManagerEditNamespace;
 
 class SetPageTemplateValues extends NamespaceManagerEditNamespace {
 
+	/**
+	 * @return bool
+	 */
 	protected function doProcess() {
 		if ( !$this->useInternalDefaults &&
 			isset( $this->additionalSettings['pagetemplates'] ) ) {

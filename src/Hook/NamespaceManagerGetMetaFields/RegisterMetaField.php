@@ -6,6 +6,9 @@ use BlueSpice\NamespaceManager\Hook\NamespaceManagerGetMetaFields;
 
 class RegisterMetaField extends NamespaceManagerGetMetaFields {
 
+	/**
+	 * @return bool
+	 */
 	protected function doProcess() {
 		$this->metaFields[] = [
 			'name' => 'pagetemplates',

@@ -7,7 +7,6 @@ use BlueSpice\ConfigDefinition\BooleanSetting;
 class PageTemplatesHideDefaults extends BooleanSetting {
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getPaths() {
@@ -25,7 +24,6 @@ class PageTemplatesHideDefaults extends BooleanSetting {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getLabelMessageKey() {
@@ -33,7 +31,6 @@ class PageTemplatesHideDefaults extends BooleanSetting {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getHelpMessageKey() {

@@ -13,13 +13,11 @@ class BSPageTemplateList {
 	public const UNSET_TARGET_NAMESPACES = 101;
 
 	/**
-	 *
 	 * @var Title
 	 */
 	protected $title = null;
 
 	/**
-	 *
 	 * @var array
 	 */
 	protected $config = [];
@@ -28,7 +26,6 @@ class BSPageTemplateList {
 	protected $services = [];
 
 	/**
-	 *
 	 * @param Title $title
 	 * @param array $config
 	 */
@@ -45,9 +42,6 @@ class BSPageTemplateList {
 		$this->init();
 	}
 
-	/**
-	 *
-	 */
 	protected function init() {
 		$this->fetchDB();
 		$this->filterByPermissionAndAddTargetUrls();
@@ -57,9 +51,6 @@ class BSPageTemplateList {
 	/** @var array[] */
 	protected $dataSets = [];
 
-	/**
-	 *
-	 */
 	protected function fetchDB() {
 		$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
 
@@ -132,9 +123,6 @@ class BSPageTemplateList {
 		];
 	}
 
-	/**
-	 *
-	 */
 	protected function filterByPermissionAndAddTargetUrls() {
 		$pm = $this->services->getPermissionManager();
 		// No context available
@@ -187,7 +175,6 @@ class BSPageTemplateList {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getAll() {
@@ -195,7 +182,6 @@ class BSPageTemplateList {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getAllGrouped() {
@@ -207,7 +193,6 @@ class BSPageTemplateList {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	private function getNamespaceTemplates() {
@@ -227,7 +212,6 @@ class BSPageTemplateList {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	private function getTagSortedTemplates() {
@@ -284,7 +268,6 @@ class BSPageTemplateList {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function getAllForDefault() {
@@ -301,7 +284,6 @@ class BSPageTemplateList {
 	}
 
 	/**
-	 *
 	 * @return int
 	 */
 	public function getCount() {
@@ -309,7 +291,6 @@ class BSPageTemplateList {
 	}
 
 	/**
-	 *
 	 * @param int $id
 	 * @param array $data
 	 */

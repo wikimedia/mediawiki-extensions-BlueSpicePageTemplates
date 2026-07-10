@@ -23,7 +23,6 @@ class BSPageTemplateListRenderer {
 	}
 
 	/**
-	 *
 	 * @param BSPageTemplateList $list
 	 * @return string
 	 */
@@ -48,7 +47,6 @@ class BSPageTemplateListRenderer {
 	}
 
 	/**
-	 *
 	 * @param int $count
 	 */
 	protected function renderHead( $count ) {
@@ -91,7 +89,6 @@ class BSPageTemplateListRenderer {
 	}
 
 	/**
-	 *
 	 * @param array $templates
 	 */
 	protected function renderDefaultSection( $templates ) {
@@ -105,7 +102,6 @@ class BSPageTemplateListRenderer {
 	}
 
 	/**
-	 *
 	 * @param array $datasets
 	 */
 	protected function renderNamespaceSection( $datasets ) {
@@ -145,7 +141,6 @@ class BSPageTemplateListRenderer {
 	}
 
 	/**
-	 *
 	 * @param array $dataSet
 	 * @param string $additionalClass
 	 * @param string $key
@@ -192,7 +187,6 @@ class BSPageTemplateListRenderer {
 	}
 
 	/**
-	 *
 	 * @param array $templates
 	 */
 	protected function renderTagSpecificSection( $templates ) {
@@ -231,7 +225,6 @@ class BSPageTemplateListRenderer {
 	}
 
 	/**
-	 *
 	 * @param array $sectionContent
 	 * @param string $key
 	 * @param string $additionalStyles
@@ -247,7 +240,6 @@ class BSPageTemplateListRenderer {
 	}
 
 	/**
-	 *
 	 * @param string $heading
 	 * @param array $dataSets
 	 * @param string $additionalClasses

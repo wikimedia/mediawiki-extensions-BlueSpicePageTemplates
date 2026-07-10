@@ -7,7 +7,6 @@ use BlueSpice\ConfigDefinition\BooleanSetting;
 class PageTemplatesForceNamespace extends BooleanSetting {
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getPaths() {
@@ -19,7 +18,6 @@ class PageTemplatesForceNamespace extends BooleanSetting {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getLabelMessageKey() {
@@ -27,7 +25,6 @@ class PageTemplatesForceNamespace extends BooleanSetting {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getHelpMessageKey() {

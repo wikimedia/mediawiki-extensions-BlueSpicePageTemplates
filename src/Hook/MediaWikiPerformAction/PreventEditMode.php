@@ -16,7 +16,6 @@ class PreventEditMode {
 	protected static $editActions = [ 'edit', 'sourceedit', 'formedit' ];
 
 	/**
-	 *
 	 * @var string[]
 	 */
 	protected static $contentModels = [ 'wikitext' ];
