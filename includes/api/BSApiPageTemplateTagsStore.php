@@ -5,7 +5,6 @@ use MediaWiki\Json\FormatJson;
 class BSApiPageTemplateTagsStore extends BSApiExtJSStoreBase {
 
 	/**
-	 *
 	 * @param string $query
 	 * @return array
 	 */
@@ -39,7 +38,6 @@ class BSApiPageTemplateTagsStore extends BSApiExtJSStoreBase {
 	}
 
 	/**
-	 *
 	 * @param array $resultData
 	 * @return array
 	 */

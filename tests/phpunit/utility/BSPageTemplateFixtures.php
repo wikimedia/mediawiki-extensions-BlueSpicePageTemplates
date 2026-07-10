@@ -7,6 +7,9 @@ class BSPageTemplateFixtures {
 	public function __construct() {
 	}
 
+	/**
+	 * @return array
+	 */
 	public function makeDataSets() {
 		return [
 			[
