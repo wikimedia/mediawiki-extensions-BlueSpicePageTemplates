@@ -5,6 +5,10 @@
 		"wikimedia/jquery",
 		"wikimedia/mediawiki"
 	],
+	"parserOptions": {
+		"sourceType": "commonjs",
+		"ecmaVersion": 2017
+	},
 	"globals": {
 		"bs": "readonly",
 		"mediaWiki": "readonly",
@@ -17,9 +21,7 @@
 		"max-len": "off",
 		"no-jquery/no-class-state": "off",
 		"no-jquery/no-global-selector": "off",
-		"no-prototype-builtins": "off"
-	},
-	"parserOptions": {
-		"ecmaVersion": 2017
+		"no-prototype-builtins": "off",
+		"no-jquery/no-done-fail": "warn"
 	}
 }

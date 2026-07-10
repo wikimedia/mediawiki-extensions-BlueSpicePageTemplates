@@ -147,7 +147,7 @@ bs.pageTemplates.ui.dialog.EditTemplate.prototype.getActionProcess = function ( 
 					template: this.templateInput.getValue()
 				};
 				// If -99 is set to targetns, but others are set as well, remove it
-				if ( data.targetns.length > 1 && data.targetns.indexOf( -99 ) !== -1 ) {
+				if ( data.targetns.length > 1 && data.targetns.indexOf( -99 ) !== -1 ) { // eslint-disable-line unicorn/prefer-includes
 					data.targetns.splice( data.targetns.indexOf( -99 ), 1 );
 				}
 				const dfd = $.Deferred();
