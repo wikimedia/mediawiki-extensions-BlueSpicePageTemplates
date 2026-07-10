@@ -32,7 +32,6 @@ use MediaWiki\Title\Title;
 class BSApiPageTemplatesStore extends BSApiExtJSStoreBase {
 
 	/**
-	 *
 	 * @param string $query
 	 * @return array
 	 */
@@ -81,7 +80,6 @@ class BSApiPageTemplatesStore extends BSApiExtJSStoreBase {
 	}
 
 	/**
-	 *
 	 * @param stdClass $filter
 	 * @param stdClass $dataSet
 	 * @return bool
@@ -99,7 +97,6 @@ class BSApiPageTemplatesStore extends BSApiExtJSStoreBase {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function getRequiredPermissions() {
