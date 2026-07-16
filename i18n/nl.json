@@ -67,5 +67,7 @@
 	"bs-pagetemplates-search-template-placeholder": "Paginasjabloon zoeken",
 	"bs-pagetemplates-headertags": "Labels",
 	"bs-pagetemplates-tag-untagged": "Niet getagd",
-	"bs-pagetemplates-ns-undefined": "Ongedefinieerde namespace"
+	"bs-pagetemplates-ns-undefined": "Ongedefinieerde namespace",
+	"bs-pagetemplates-ns-setting-label": "Paginasjablonen",
+	"bs-pagetemplates-ns-setting-help": "Paginasjablonen weergeven bij het maken van een pagina."
 }
