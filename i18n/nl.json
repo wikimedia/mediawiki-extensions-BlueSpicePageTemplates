@@ -68,5 +68,7 @@
 	"bs-pagetemplates-headertags": "Labels",
 	"bs-pagetemplates-tag-untagged": "Niet getagd",
 	"bs-pagetemplates-ns-undefined": "Ongedefinieerde namespace",
-	"bs-pagetemplates-config-hideifnotintargetns-help": "Verwijdert een sjabloon uit de lijst met beschikbare paginasjablonen als de doelnaamruimte ervan niet overeenkomt met de naamruimte van de pagina tijdens het aanmaken van de pagina"
+	"bs-pagetemplates-config-hideifnotintargetns-help": "Verwijdert een sjabloon uit de lijst met beschikbare paginasjablonen als de doelnaamruimte ervan niet overeenkomt met de naamruimte van de pagina tijdens het aanmaken van de pagina",
+	"bs-pagetemplates-ns-setting-label": "Paginasjablonen",
+	"bs-pagetemplates-ns-setting-help": "Paginasjablonen weergeven bij het maken van een pagina."
 }
