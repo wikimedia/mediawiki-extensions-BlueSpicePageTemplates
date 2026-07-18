@@ -62,5 +62,7 @@
 	"bs-pagetemplates-headertags": "Etiquetas",
 	"bs-pagetemplates-tag-untagged": "Sen etiquetas",
 	"bs-pagetemplates-ns-undefined": "Espazo de nomes non definido",
-	"bs-pagetemplates-config-hideifnotintargetns-help": "Elimina un modelo da lista de modelos de páxina dispoñibles se o seu espazo de nomes de destino non coincide co espazo de nomes da páxina durante a creación da páxina"
+	"bs-pagetemplates-config-hideifnotintargetns-help": "Elimina un modelo da lista de modelos de páxina dispoñibles se o seu espazo de nomes de destino non coincide co espazo de nomes da páxina durante a creación da páxina",
+	"bs-pagetemplates-ns-setting-label": "Modelos de páxina",
+	"bs-pagetemplates-ns-setting-help": "Mostrar os modelos de páxina ao crear unha páxina"
 }
