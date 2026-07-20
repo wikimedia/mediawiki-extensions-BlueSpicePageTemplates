@@ -62,5 +62,7 @@
 	"bs-pagetemplates-search-template-placeholder": "문서 틀 찾기",
 	"bs-pagetemplates-headertags": "태그",
 	"bs-pagetemplates-tag-untagged": "태그되지 않음",
-	"bs-pagetemplates-ns-undefined": "정의되지 않은 이름공간"
+	"bs-pagetemplates-ns-undefined": "정의되지 않은 이름공간",
+	"bs-pagetemplates-ns-setting-label": "문서 틀",
+	"bs-pagetemplates-ns-setting-help": "문서를 만들 때 문서 틀을 표시"
 }
