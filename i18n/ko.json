@@ -63,5 +63,7 @@
 	"apihelp-bs-pagetemplate-tags-store-summary": "모든 문서 틀 태그를 나열합니다. 정렬, 필터링, 쪽 번호 매기기를 허용합니다. ExtJS Store 매개변수를 구현합니다.",
 	"bs-pagetemplates-config-hidedefaults-help": "문서 생성 시 사용 가능한 문서 틀 목록에서 표준 틀 \"Empty Page\"를 제거",
 	"bs-pagetemplates-search-template-placeholder": "문서 틀 찾기",
-	"bs-pagetemplates-tag-untagged": "태그되지 않음"
+	"bs-pagetemplates-tag-untagged": "태그되지 않음",
+	"bs-pagetemplates-ns-setting-label": "문서 틀",
+	"bs-pagetemplates-ns-setting-help": "문서를 만들 때 문서 틀을 표시"
 }
