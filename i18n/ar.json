@@ -63,5 +63,7 @@
 	"bs-pagetemplates-search-template-placeholder": "اعثر على قالب الصفحة",
 	"bs-pagetemplates-headertags": "العلامات",
 	"bs-pagetemplates-tag-untagged": "بدون علامات",
-	"bs-pagetemplates-ns-undefined": "مساحة اسم غير محددة"
+	"bs-pagetemplates-ns-undefined": "مساحة اسم غير محددة",
+	"bs-pagetemplates-ns-setting-label": "قوالب الصفحات",
+	"bs-pagetemplates-ns-setting-help": "عرض قوالب الصفحات عند إنشاء صفحة"
 }
