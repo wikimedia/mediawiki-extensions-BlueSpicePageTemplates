@@ -6,6 +6,7 @@ use MediaWiki\Html\Html;
 use OOJSPlus\Special\OOJSGridSpecialPage;
 
 class PageTemplatesAdministration extends OOJSGridSpecialPage {
+
 	public function __construct() {
 		parent::__construct( 'PageTemplatesAdmin' );
 	}
