@@ -62,5 +62,5 @@
 	"bs-pagetemplates-tag-untagged": "Untagged",
 	"bs-pagetemplates-ns-undefined": "Undefined namespace",
 	"bs-pagetemplates-ns-setting-label": "Page templates",
-	"bs-pagetemplates-ns-setting-help": "Show page templates when creating a page"
+	"bs-pagetemplates-ns-setting-help": "Show page templates when creating pages"
 }

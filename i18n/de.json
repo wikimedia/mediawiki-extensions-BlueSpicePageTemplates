@@ -69,5 +69,7 @@
 	"bs-pagetemplates-search-template-placeholder": "Finde eine Seitenvorlage",
 	"bs-pagetemplates-headertags": "Tags",
 	"bs-pagetemplates-tag-untagged": "Ohne Tag",
-	"bs-pagetemplates-ns-undefined": "Undefinierter Namensraum"
+	"bs-pagetemplates-ns-undefined": "Undefinierter Namensraum",
+	"bs-pagetemplates-ns-setting-label": "Seitenvorlagen",
+	"bs-pagetemplates-ns-setting-help": "Zeigt Seitenvorlagen beim Erstellen von Seiten an"
 }
