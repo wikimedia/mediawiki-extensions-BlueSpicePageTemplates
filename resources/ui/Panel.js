@@ -74,6 +74,7 @@ bs.pageTemplates.ui.PageTemplatesPanel = function ( cfg ) {
 		columns: columns,
 		multiSelect: true,
 		exportable: true,
+		stateId: 'bs-pagetemplates-grid-admin',
 		provideExportData: function () {
 			const dfd = $.Deferred(),
 				store = new OOJSPlus.ui.data.store.RemoteStore( {
