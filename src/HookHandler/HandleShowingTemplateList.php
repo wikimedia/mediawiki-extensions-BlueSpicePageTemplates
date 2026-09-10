@@ -2,25 +2,27 @@
 
 namespace BlueSpice\PageTemplates\HookHandler;
 
-use MediaWiki\Cache\Hook\MessagesPreLoadHook;
+use BSPageTemplateList;
+use BSPageTemplateListRenderer;
 use MediaWiki\Config\ConfigFactory;
-use MediaWiki\Context\RequestContext;
+use MediaWiki\HookContainer\HookContainer;
+use MediaWiki\Html\Html;
 use MediaWiki\Linker\Hook\HtmlPageLinkRendererBeginHook;
-use MediaWiki\Permissions\PermissionManager;
+use MediaWiki\Page\Hook\BeforeDisplayNoArticleTextHook;
 use MediaWiki\Title\Title;
 use MediaWiki\Title\TitleFactory;
 
-class HandleShowingTemplateList implements MessagesPreLoadHook, HtmlPageLinkRendererBeginHook {
+class HandleShowingTemplateList implements BeforeDisplayNoArticleTextHook, HtmlPageLinkRendererBeginHook {
 
 	/**
 	 * @param ConfigFactory $configFactory
 	 * @param TitleFactory $titleFactory
-	 * @param PermissionManager $permissionManager
+	 * @param HookContainer $hookContainer
 	 */
 	public function __construct(
 		private readonly ConfigFactory $configFactory,
 		private readonly TitleFactory $titleFactory,
-		private readonly PermissionManager $permissionManager
+		private readonly HookContainer $hookContainer
 	) {
 	}
 
@@ -59,39 +61,63 @@ class HandleShowingTemplateList implements MessagesPreLoadHook, HtmlPageLinkRend
 	}
 
 	/**
-	 * Replace default message for non-exsting pages with list of PageTemplates, if supported
+	 * Replace the default "no article text" of non-existing pages
+	 * with a list of available page templates, if supported
+	 *
 	 * @inheritDoc
 	 */
-	public function onMessagesPreLoad( $title, &$message, $code ) {
-		if ( !str_contains( $title, 'Noarticletext' ) ) {
+	public function onBeforeDisplayNoArticleText( $article ) {
+		$context = $article->getContext();
+		$title = $article->getTitle();
+		if ( !$title || $title->isSpecialPage() ) {
 			return true;
 		}
-		$title = RequestContext::getMain()->getTitle();
-		if ( !$title ) {
-			return true;
-		}
-		if ( $title->isSpecialPage() ) {
-			return true;
-		}
-
 		if ( $title->getContentModel() !== CONTENT_MODEL_WIKITEXT ) {
+			return true;
+		}
+		if ( $article->getOldID() ) {
+			// Missing revision of an existing page, not a "create page" situation
 			return true;
 		}
 
 		$config = $this->configFactory->makeConfig( 'bsg' );
-
 		$excludeNs = $config->get( 'PageTemplatesExcludeNs' );
 		if ( in_array( $title->getNamespace(), $excludeNs ) ) {
 			return true;
 		}
 
-		$user = RequestContext::getMain()->getUser();
-		$editAllowedStatus = $this->permissionManager->getPermissionStatus( 'edit', $user, $title );
-		$createAllowedStatus = $this->permissionManager->getPermissionStatus( 'createpage', $user, $title );
-		if ( !$editAllowedStatus->isGood() || !$createAllowedStatus->isGood() ) {
+		$authority = $context->getAuthority();
+		if ( !$authority->probablyCan( 'edit', $title ) || !$authority->probablyCan( 'createpage', $title ) ) {
 			return true;
 		}
-		$message = '<bs:pagetemplates />';
-		return true;
+
+		$out = $context->getOutput();
+		$out->enableOOUI();
+		$out->addModuleStyles( [ 'ext.bluespice.pageTemplates.styles' ] );
+		$out->addModules( [ 'ext.bluespice.pageTemplates.tag' ] );
+
+		$pageTemplateList = new BSPageTemplateList( $title, [
+			BSPageTemplateList::HIDE_IF_NOT_IN_TARGET_NS =>
+				$config->get( 'PageTemplatesHideIfNotInTargetNs' ),
+			BSPageTemplateList::FORCE_NAMESPACE =>
+				$config->get( 'PageTemplatesForceNamespace' ),
+			BSPageTemplateList::HIDE_DEFAULTS =>
+				$config->get( 'PageTemplatesHideDefaults' )
+		] );
+
+		$renderer = new BSPageTemplateListRenderer();
+		$this->hookContainer->run( 'BSPageTemplatesBeforeRender',
+			[ $this, &$pageTemplateList, &$renderer, $title ]
+		);
+
+		$dir = $context->getLanguage()->getDir();
+		$out->addHTML( Html::rawElement( 'div', [
+			'class' => "noarticletext bs-pagetemplates-list mw-content-$dir",
+			'dir' => $dir,
+			'lang' => $context->getLanguage()->getHtmlCode(),
+		], $renderer->render( $pageTemplateList ) ) );
+
+		// Prevent the default "no article text" from being displayed
+		return false;
 	}
 }

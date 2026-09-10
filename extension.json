@@ -228,7 +228,7 @@
 		},
 		"handleShowingTemplateList": {
 			"class": "\\BlueSpice\\PageTemplates\\HookHandler\\HandleShowingTemplateList",
-			"services": [ "ConfigFactory", "TitleFactory", "PermissionManager" ]
+			"services": [ "ConfigFactory", "TitleFactory", "HookContainer" ]
 		},
 		"runDatabaseUpdates": {
 			"class": "\\BlueSpice\\PageTemplates\\HookHandler\\RunDatabaseUpdates"
@@ -249,7 +249,7 @@
 		"NamespaceManager::editNamespace": "BlueSpice\\PageTemplates\\Hook\\NamespaceManagerEditNamespace\\SetPageTemplateValues::callback",
 		"NamespaceManagerBeforePersistSettings": "writeNamespaceConfiguration",
 		"HtmlPageLinkRendererBegin": "handleShowingTemplateList",
-		"MessagesPreLoad": "handleShowingTemplateList",
+		"BeforeDisplayNoArticleText": "handleShowingTemplateList",
 		"MediaWikiPerformAction": "\\BlueSpice\\PageTemplates\\Hook\\MediaWikiPerformAction\\PreventEditMode::callback",
 		"MWStakeCommonUIRegisterSkinSlotComponents": "common-user-interface",
 		"SkinTemplateNavigation::Universal": "addPreloadForActions",
