@@ -2,34 +2,47 @@
 <div class="tbl">
 {|
 |-
-!Application:
-|name of topic
+!Topic / application:
+|Which product, process or system does this article describe?
+|-
+!Target group:
+|Who are these instructions written for?
 |}
 </div>
 <div class="tbl">
 {| 
 |-
 !Status:
-| '''draft''' / approved
+| class="select" |'''draft''' / in review / approved
+|-
+!Last reviewed:
+|mm/dd/yyyy
 |}
 </div>
 </div>
-==Goal==
-Brief overview — what is the goal of this instruction?
+== 🎯 Goal ==
+Describe in one or two sentences what readers are able to do after following this article.
 
-==Prerequisites and preparations==
-What is required to complete the following steps or to achieve the goal?
+''Example: After completing these steps, you can export a wiki page as a PDF file and share it with your colleagues.''
 
-==Procedure 1==
-Explain the outcome of this procedure. In  the table below, list each high-level step which will be documented in detail below the table.
+== 🧰 Prerequisites ==
+List everything that is needed before the first step: permissions, tools, access data, materials or previous knowledge.
+
+*Requirement 1 – ''e.g. edit rights in the affected namespace''
+*Requirement 2 – ''e.g. software XY as of version 2.0''
+
+{{Textbox|boxtype=note|header=Before you start|text=Note here what has to be checked, backed up or approved before the first step. Delete this box if you do not need it.|icon=yes}}
+
+== 🛠️ Procedure 1 ==
+Name the result of this procedure in one sentence. The table gives readers a quick overview, the detailed instructions follow below.
 {| class="wikitable" style="width:100%;"
 ! style="vertical-align:middle;text-align:center;width:80px;" |Step
 !What to do
 !Notes
 |-
 | style="vertical-align:middle;text-align:center;width:80px;" |1
-|
-|
+|Short summary of the step
+|Hint, link or exception
 |-
 | style="vertical-align:middle;text-align:center;width:80px;" |2
 |
@@ -42,21 +55,23 @@ Explain the outcome of this procedure. In  the table below, list each high-level
 
 === Step-by-step instructions ===
 
-# '''Do''' step 1
-# '''Do''' step 2
-## '''Do''' substep 2.1
-# '''Do''' step 3
+# '''Open''' the page or dialog where the task starts.
+# '''Select''' the required option.
+## '''Confirm''' your entry.
+# '''Save''' your changes.
 
-==Procedure 2 ==
-Explain the outcome of this procedure.  In  the table below, list each high-level step which will be documented in detail below the table.
+{{Textbox|boxtype=tip|header=Working with screenshots|text=To add an image below a step without interrupting the numbering, hold down the Shift key when you insert the line break.|icon=yes}}
+
+== 🛠️ Procedure 2 ==
+Name the result of this procedure in one sentence. Copy this section as often as you need it – or delete it if one procedure is enough.
 {| class="wikitable" style="width:100%;"
 ! style="vertical-align:middle;text-align:center;width:80px;" |Step
 !What to do
 !Notes
 |-
 | style="vertical-align:middle;text-align:center;width:80px;" |1
-|
-|
+|Short summary of the step
+|Hint, link or exception
 |-
 | style="vertical-align:middle;text-align:center;width:80px;" |2
 |
@@ -69,12 +84,28 @@ Explain the outcome of this procedure.  In  the table below, list each high-leve
 
 === Step-by-step instructions ===
 
-# '''Do''' step 1
-# '''Do''' step 2
-## '''Do''' substep 2.1
-# '''Do''' step 3
+# '''Open''' the page or dialog where the task starts.
+# '''Select''' the required option.
+## '''Confirm''' your entry.
+# '''Save''' your changes.
 
-==Related pages==
+== ⚠️ Troubleshooting ==
+Describe typical problems and how to solve them. Delete this section if it is not needed.
+{| class="wikitable" style="width:100%;"
+!Problem
+!Possible cause
+!Solution
+|-
+|Error message or unexpected behavior
+|Why does this happen?
+|What helps?
+|-
+|..
+|
+|
+|}
 
-*Link to related page 1
-*Link to related page 2
+== 🔗 Related pages ==
+
+*Page title – ''what will readers find there?''
+*Page title – ''what will readers find there?''

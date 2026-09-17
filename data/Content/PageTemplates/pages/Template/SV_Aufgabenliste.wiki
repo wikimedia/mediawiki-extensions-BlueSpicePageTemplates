@@ -6,35 +6,35 @@
 |Benutzername
 |-
 !Zeitraum / Meilenstein:
-|Welcher Zeitraum / Meilenstein ist berücksichtigt?
+|Welcher Zeitraum oder Projekt-Meilenstein ist berücksichtigt?
 |}
 </div>
 <div class="tbl">
 {| 
 |-
-!Team /Abteilung / Projekt:
-|Wofür / für wen gilt diese Liste?
+!Team / Abteilung / Projekt:
+|Für wen gilt diese Liste?
 |-
 !Status:
 | class="select" |'''offen''' / geschlossen
 |}
 </div>
 </div>
-
-==Aufgabenliste==
+== ✅ Aufgabenliste ==
+Eine Zeile pro Aufgabe: Wer erledigt was bis wann? Klicken Sie auf eine Spaltenüberschrift, um die Liste zu sortieren.
 {| class="wikitable sortable" style="width:100%;"
 !Bereich / Thema
 !Aufgabe
 !Zugewiesen an
 ! style="vertical-align:middle;text-align:center;" |Fällig am
 ! style="vertical-align:middle;text-align:center;" |Status
-! style="vertical-align:middle;text-align:center;" |Priorität
+! style="vertical-align:middle;text-align:center;width:80px;" |Priorität
 |-
-|(z.B., GUI)
-|Name dieser Aufgabe:  Beschreibung dieser Aufgabe
+|(z. B. GUI)
+|'''Name der Aufgabe:''' Was genau ist zu tun und wann gilt die Aufgabe als erledigt?
 |Benutzername
 | style="vertical-align:middle;text-align:center;" |tt.mm
-| style="vertical-align:middle;text-align:center;" |'''geplant''' / laufend / abgeschlossen
+| style="vertical-align:middle;text-align:center;" class="select" |'''geplant''' / in Bearbeitung / abgeschlossen
 | style="vertical-align:middle;text-align:center;" |1
 |-
 |
@@ -59,19 +59,23 @@
 | style="vertical-align:middle;text-align:center;" |3
 |}
 
-==Backlog (nicht terminiert)==
-Geben Sie mögliche Aufgaben an, die als nächstes berücksichtigt werden sollten. Sie werden  für dien aktuellen Zeitraum nicht berücksichtigt:
-*Name dieser Aufgabe: Beschreibung dieser Aufgabe
-*Name dieser Aufgabe: Beschreibung dieser Aufgabe
+{{Textbox|boxtype=tip|header=Liste übersichtlich halten|text=Vergeben Sie Priorität 1 für Aufgaben, die andere blockieren. Verschieben Sie Erledigtes oder nicht mehr Relevantes aus der Tabelle – ins Archiv oder in die Liste „Außer Betracht“.|icon=yes}}
 
-===Anmerkungen===
-Geben Sie bei Bedarf weitere Details zum Backlog an.
+== 🗂️ Backlog (nicht terminiert) ==
+Aufgaben, die als Nächstes sinnvoll sind, aber nicht zum aktuellen Zeitraum gehören. Haken Sie eine Aufgabe ab, sobald Sie sie in die Aufgabenliste oben übernehmen.
 
-==Außer Betracht==
-Geben Sie Aufgaben an, die für dieses Projekt nicht berücksichtigt werden:.
-*Name dieser Aufgabe: Beschreibung dieser Aufgabe
-*Name dieser Aufgabe: Beschreibung dieser Aufgabe
+*<bs:checkbox checked="false" /> '''Name der Aufgabe:''' kurze Beschreibung
+*<bs:checkbox checked="false" /> '''Name der Aufgabe:''' kurze Beschreibung
 
 === Anmerkungen ===
-Geben Sie bei Bedarf weitere Details an, warum diese Aufgaben außer Betracht sind.
+Ergänzen Sie bei Bedarf Details zum Backlog – zum Beispiel, was passieren muss, damit diese Aufgaben eingeplant werden können.
+
+== 🚫 Außer Betracht ==
+Aufgaben, die in diesem Projekt oder Zeitraum bewusst '''nicht''' bearbeitet werden. Das benennen erspart wiederkehrende Diskussionen.
+
+*'''Name der Aufgabe:''' kurze Beschreibung
+*'''Name der Aufgabe:''' kurze Beschreibung
+
+=== Anmerkungen ===
+Erläutern Sie, warum diese Aufgaben außer Betracht bleiben und wer das entschieden hat.
 __NOTOC__

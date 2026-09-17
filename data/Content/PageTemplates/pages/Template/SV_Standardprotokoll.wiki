@@ -1,44 +1,82 @@
-==Anwesenheiten==
+<div class="databox">
+<div class="tbl">
+{|
+|-
+!Datum / Uhrzeit:
+|tt.mm.jjjj, 00:00 – 00:00 Uhr
+|-
+!Ort:
+|Raum, Link zur Videokonferenz oder beides
+|-
+!Art der Besprechung:
+|z. B. Kick-off, Jour fixe, Projekt-Review
+|}
+</div>
+<div class="tbl">
+{| 
+|-
+!Leitung:
+|Benutzername
+|-
+!Schriftführung:
+|Benutzername
+|-
+!Status:
+| class="select" |'''Entwurf''' / freigegeben
+|}
+</div>
+</div>
+== 👥 Teilnehmende ==
 
-*Zeit und Ort:
-*Anwesend:
-*Abwesend:
-*Schriftführung:
+*'''Anwesend:''' Benutzername, Benutzername
+*'''Entschuldigt:''' Benutzername
+*'''Zu informieren:''' Wer erhält dieses Protokoll, ohne teilgenommen zu haben?
 
-==Agenda==
+== 📋 Agenda ==
 {| class="wikitable" style="width:100%;"
 ! style="width:700px;" |Thema
 !Vorgetragen von
 ! style="width:150px;" |Zugeteilte Zeit
 |-
-| style="width:700px;" |..
-| style="width:50%;" |
-| style="width:150px;" |
+| style="width:700px;" |Was wird besprochen – und welches Ergebnis wird erwartet?
+| style="width:50%;" |Benutzername
+| style="width:150px;" |15 Min.
 |-
 | style="width:700px;" |..
 | style="width:50%;" |
 | style="width:150px;" |
 |}
 
-==Protokoll und Aufgaben==
+== 📝 Protokoll und Aufgaben ==
 {| class="wikitable" style="width:100%;"
-! style="width:700px;" |Zusammenfassung und Aufgaben
+! style="width:700px;" |Ergebnis und nächster Schritt
 !Zugewiesene Person
 !Fällig am
+! style="vertical-align:middle;text-align:center;width:80px;" |Erledigt
+|-
+| style="width:700px;" |Ergebnis in einem Satz – danach die vereinbarte Aufgabe
+| style="width:30%;" |Benutzername
+| style="width:10%;" |tt.mm.jjjj
+| style="vertical-align:middle;text-align:center;" |<bs:checkbox checked="false" />
 |-
 | style="width:700px;" |..
-| style="width:50%;" |
+| style="width:30%;" |
 | style="width:10%;" |
-|-
-| style="width:700px;" |..
-| style="width:50%;" |
-| style="width:10%;" |
+| style="vertical-align:middle;text-align:center;" |<bs:checkbox checked="false" />
 |}
 
-==Wichtige Entscheidungen==
+== ✅ Entscheidungen ==
+Halten Sie hier nur die endgültige Formulierung fest – die Diskussion gehört in das Protokoll oben.
 
-*Entscheidung 1
+*Entscheidung 1 – ''wer hat was entschieden, gültig ab wann?''
 *Entscheidung 2
 
-==Unterschriften==
+{{Textbox|boxtype=important|header=Verbindliche Entscheidung|text=Heben Sie hier eine Entscheidung hervor, die auch Teams außerhalb dieser Besprechung betrifft. Löschen Sie die Box, wenn es nichts hervorzuheben gibt.|icon=yes}}
+
+== 📅 Nächste Besprechung ==
+
+*'''Datum / Uhrzeit:''' tt.mm.jjjj, 00:00 Uhr
+*'''Offene Themen (vertagt):''' Thema 1, Thema 2
+
+== ✍️ Unterschriften ==
 <bs:signhere />

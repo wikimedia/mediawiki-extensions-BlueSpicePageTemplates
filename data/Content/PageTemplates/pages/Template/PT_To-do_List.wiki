@@ -3,38 +3,38 @@
 {|
 |-
 !Owner:
-|username1
+|username
 |-
 !Time period / milestone:
-|what time period/project milestone is covered?
+|which time period or project milestone does this list cover?
 |}
 </div>
 <div class="tbl">
 {| 
 |-
 !Team / department / project:
-|what business unit is covered?
+|which business unit is covered?
 |-
 !Status:
 | class="select" |'''open''' / closed
 |}
 </div>
 </div>
-
-== To-do list ==
+== ✅ To-do list ==
+One row per task: who does what by when? Click a column header to sort the list.
 {| class="wikitable sortable" style="width:100%;"
 !Area / topic
 !Task
 !Assigned to
 ! style="vertical-align:middle;text-align:center;" |Due on
 ! style="vertical-align:middle;text-align:center;" |Status
-! style="vertical-align:middle;text-align:center;" |Priority
+! style="vertical-align:middle;text-align:center;width:80px;" |Priority
 |-
-|(e.g., GUI)
-|Name of this task: description of this task
+|(e.g. GUI)
+|'''Task name:''' what exactly has to be done, and when is it finished?
 |username
 | style="vertical-align:middle;text-align:center;" |mm/dd
-| style="vertical-align:middle;text-align:center;" |'''planned''' / started / finished
+| style="vertical-align:middle;text-align:center;" class="select" |'''planned''' / in progress / done
 | style="vertical-align:middle;text-align:center;" |1
 |-
 |
@@ -59,19 +59,23 @@
 | style="vertical-align:middle;text-align:center;" |3
 |}
 
-==Backlog (not scheduled)==
-List possible tasks that should be considered next, but are not considered for this time period:
-* Name of this task: description of this task
-* Name of this task: description of this task
+{{Textbox|boxtype=tip|header=Keep the list readable|text=Use priority 1 for tasks that block others, and move everything that is finished or no longer relevant out of the table – to the archive or to the out-of-scope list.|icon=yes}}
 
-===Notes===
-Provide some details about the backlog if necessary.
+== 🗂️ Backlog (not scheduled) ==
+Tasks that are worth doing next, but that are not part of the current time period. Tick a task as soon as you move it into the to-do list above.
 
-==Out of scope==
-List the tasks that will not be considered for this project .
-* Name of this task: description of this task
-* Name of this task: description of this task
+*<bs:checkbox checked="false" /> '''Task name:''' short description
+*<bs:checkbox checked="false" /> '''Task name:''' short description
 
 === Notes ===
-Provide some details about the out-of-scope list if necessary.
+Add details about the backlog if necessary – for example what has to happen before these tasks can be scheduled.
+
+== 🚫 Out of scope ==
+Tasks that will deliberately '''not''' be done in this project or time period. Naming them prevents repeated discussions.
+
+*'''Task name:''' short description
+*'''Task name:''' short description
+
+=== Notes ===
+Explain why these tasks are out of scope and who decided that.
 __NOTOC__

@@ -2,34 +2,47 @@
 <div class="tbl">
 {|
 |-
-!Anwendung:
-|Themenbereich (z.B. Name der Software)
+!Thema / Anwendung:
+|Welches Produkt, welchen Prozess oder welches System beschreibt diese Anleitung?
+|-
+!Zielgruppe:
+|Für wen ist diese Anleitung geschrieben?
 |}
 </div>
 <div class="tbl">
 {| 
 |-
-! Status:
-|'''Entwurf'''/ freigegeben
+!Status:
+| class="select" |'''Entwurf''' / in Prüfung / freigegeben
+|-
+!Zuletzt geprüft:
+|tt.mm.jjjj
 |}
 </div>
 </div>
-==Ziel==
-Kurze Erklärung — was ist das Ziel dieser Anleitung?
+== 🎯 Ziel ==
+Beschreiben Sie in ein bis zwei Sätzen, was Leserinnen und Leser nach dieser Anleitung können.
 
-==Voraussetzungen und Vorbereitung==
-Was wird benötigt, um die folgenden Schritte durchzuführen oder das Ziel zu erreichen?
+''Beispiel: Nach diesen Schritten exportieren Sie eine Wikiseite als PDF-Datei und teilen sie mit Ihren Kolleginnen und Kollegen.''
 
-==Vorgang 1==
-Erläutern Sie das Ergebnis dieses Verfahrens. Führen Sie in der folgenden Tabelle jeden Hauptschritt auf, der unterhalb der Tabelle detailliert dokumentiert wird.
+== 🧰 Voraussetzungen ==
+Führen Sie alles auf, was vor dem ersten Schritt benötigt wird: Berechtigungen, Werkzeuge, Zugangsdaten, Material oder Vorwissen.
+
+*Voraussetzung 1 – ''z. B. Bearbeitungsrechte im betroffenen Namensraum''
+*Voraussetzung 2 – ''z. B. Software XY ab Version 2.0''
+
+{{Textbox|boxtype=note|header=Bevor Sie beginnen|text=Halten Sie hier fest, was vor dem ersten Schritt geprüft, gesichert oder freigegeben werden muss. Löschen Sie diese Box, wenn Sie sie nicht benötigen.|icon=yes}}
+
+== 🛠️ Vorgang 1 ==
+Benennen Sie in einem Satz das Ergebnis dieses Vorgangs. Die Tabelle gibt einen schnellen Überblick, die ausführliche Anleitung folgt darunter.
 {| class="wikitable" style="width:100%;"
 ! style="vertical-align:middle;text-align:center;width:80px;" |Schritt
 !Was ist zu tun?
 !Bemerkungen
 |-
 | style="vertical-align:middle;text-align:center;width:80px;" |1
-|
-|
+|Kurze Zusammenfassung des Schritts
+|Hinweis, Link oder Ausnahme
 |-
 | style="vertical-align:middle;text-align:center;width:80px;" |2
 |
@@ -40,23 +53,25 @@ Erläutern Sie das Ergebnis dieses Verfahrens. Führen Sie in der folgenden Tabe
 |
 |}
 
-===Schritt-für-Schritt Anleitung===
-(Hinweis: Um Bilder zwischen einzelnen Schritten einzubinden, halten Sie bitte beim Zeilenumbruch die Umschalt-Taste gedrückt, damit Sie innerhalb 
-#'''Führen''' Sie Schritt 1 '''durch'''
-#'''Führen''' Sie Schritt 2 '''durch'''
-##'''Führen''' Sie Schritt 2.1 '''durch'''
-#'''Führen''' Sie Schritt 1 '''durch'''
+=== Schritt-für-Schritt-Anleitung ===
 
-==Vorgang 2==
-Erläutern Sie das Ergebnis dieses Verfahrens. Führen Sie in der folgenden Tabelle jeden High-Level-Schritt auf, der unterhalb der Tabelle detailliert dokumentiert wird.
+#'''Öffnen''' Sie die Seite oder den Dialog, in dem die Aufgabe beginnt.
+#'''Wählen''' Sie die gewünschte Option '''aus'''.
+##'''Bestätigen''' Sie Ihre Eingabe.
+#'''Speichern''' Sie Ihre Änderungen.
+
+{{Textbox|boxtype=tip|header=Screenshots einfügen|text=Wenn Sie ein Bild unterhalb eines Schritts einfügen möchten, ohne die Nummerierung zu unterbrechen, halten Sie beim Zeilenumbruch die Umschalt-Taste gedrückt.|icon=yes}}
+
+== 🛠️ Vorgang 2 ==
+Benennen Sie in einem Satz das Ergebnis dieses Vorgangs. Kopieren Sie diesen Abschnitt so oft, wie Sie ihn benötigen – oder löschen Sie ihn, wenn ein Vorgang ausreicht.
 {| class="wikitable" style="width:100%;"
 ! style="vertical-align:middle;text-align:center;width:80px;" |Schritt
 !Was ist zu tun?
 !Bemerkungen
 |-
 | style="vertical-align:middle;text-align:center;width:80px;" |1
-|
-|
+|Kurze Zusammenfassung des Schritts
+|Hinweis, Link oder Ausnahme
 |-
 | style="vertical-align:middle;text-align:center;width:80px;" |2
 |
@@ -67,16 +82,30 @@ Erläutern Sie das Ergebnis dieses Verfahrens. Führen Sie in der folgenden Tabe
 |
 |}
 
-===Schritt-für-Schritt Anleitung===
+=== Schritt-für-Schritt-Anleitung ===
 
-# '''Führen''' Sie Schritt 1 '''durch'''
-# '''Führen''' Sie Schritt 2 '''durch'''
-## '''Führen''' Sie Schritt 2.1 '''durch'''
-# '''Führen''' Sie Schritt 1 '''durch'''
+#'''Öffnen''' Sie die Seite oder den Dialog, in dem die Aufgabe beginnt.
+#'''Wählen''' Sie die gewünschte Option '''aus'''.
+##'''Bestätigen''' Sie Ihre Eingabe.
+#'''Speichern''' Sie Ihre Änderungen.
 
-#
+== ⚠️ Fehlerbehebung ==
+Beschreiben Sie typische Probleme und deren Lösung. Löschen Sie den Abschnitt, wenn er nicht benötigt wird.
+{| class="wikitable" style="width:100%;"
+!Problem
+!Mögliche Ursache
+!Lösung
+|-
+|Fehlermeldung oder unerwartetes Verhalten
+|Warum tritt das auf?
+|Was hilft?
+|-
+|..
+|
+|
+|}
 
-==Verwandte Themen==
+== 🔗 Verwandte Themen ==
 
-*Link 1
-*Link 2
+*Seitentitel – ''was finden Leserinnen und Leser dort?''
+*Seitentitel – ''was finden Leserinnen und Leser dort?''
