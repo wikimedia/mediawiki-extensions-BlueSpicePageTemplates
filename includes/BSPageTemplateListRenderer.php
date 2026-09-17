@@ -1,5 +1,6 @@
 <?php
 
+use BlueSpice\PageTemplates\PreviewImageLookup;
 use MediaWiki\Html\Html;
 use MediaWiki\Html\TemplateParser;
 use MediaWiki\Message\Message;
@@ -18,8 +19,17 @@ class BSPageTemplateListRenderer {
 	 */
 	private $templateParser = null;
 
-	public function __construct() {
+	/**
+	 * @var PreviewImageLookup
+	 */
+	private $previewImageLookup = null;
+
+	/**
+	 * @param PreviewImageLookup|null $previewImageLookup
+	 */
+	public function __construct( ?PreviewImageLookup $previewImageLookup = null ) {
 		$this->templateParser = new TemplateParser( dirname( __DIR__ ) . '/resources/templates' );
+		$this->previewImageLookup = $previewImageLookup ?? PreviewImageLookup::newFromGlobalState();
 	}
 
 	/**
@@ -177,12 +187,18 @@ class BSPageTemplateListRenderer {
 			return $nsName;
 		}, $badges );
 
+		$previewUrl = $this->previewImageLookup->getPreviewUrl(
+			$dataSet['pt_template_title'] ?? null
+		);
+
 		return $this->templateParser->processTemplate( 'tile', [
 			'id' => Sanitizer::escapeIdForAttribute( 'bs-pt-item-' . $dataSet['pt_label'] ),
 			'link' => $link,
 			'desc' => $dataSet['pt_desc'],
 			'badges' => $badges,
 			'has-badges' => count( $badges ) > 0,
+			'preview-url' => $previewUrl,
+			'has-preview' => $previewUrl !== null,
 		] );
 	}
 

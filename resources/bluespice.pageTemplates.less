@@ -21,6 +21,28 @@
 	cursor: pointer;
 }
 
+.bs-pt-item .card {
+	/* Keeps the preview image inside the rounded corners of the card */
+	overflow: hidden;
+}
+
+.bs-pt-item .bs-pt-preview {
+	background-color: #fff;
+	border-bottom: 1px solid @bs-color-neutral;
+	line-height: 0;
+}
+
+.bs-pt-item .bs-pt-preview img {
+	display: block;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 16 / 9;
+	max-height: 14rem;
+	/* Previews have the ratio of a page, so only the top of the page is shown */
+	object-fit: cover;
+	object-position: top center;
+}
+
 #bs-tag-container .card-title,
 #bs-ns-container .card-title,
 #bs-default-container .card-title {

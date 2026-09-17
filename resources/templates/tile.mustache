@@ -1,5 +1,10 @@
 <div class="col bs-pt-item">
 	<div id="{{id}}" class="card h-100">
+		{{#has-preview}}
+		<div class="bs-pt-preview">
+			<img src="{{preview-url}}" alt="" loading="lazy">
+		</div>
+		{{/has-preview}}
 		<div class="card-body">
 			<h6 class="card-title">{{{link}}}</h6>
 			<p class="card-text">{{desc}}</p>
