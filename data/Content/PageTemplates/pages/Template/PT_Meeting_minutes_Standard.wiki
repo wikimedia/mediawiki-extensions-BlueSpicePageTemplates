@@ -1,44 +1,82 @@
-== Attendance ==
+<div class="databox">
+<div class="tbl">
+{|
+|-
+!Date / time:
+|mm/dd/yyyy, 0:00 – 0:00 p.m.
+|-
+!Location:
+|room, video conference link or both
+|-
+!Meeting type:
+|e.g. kick-off, weekly, project review
+|}
+</div>
+<div class="tbl">
+{| 
+|-
+!Chair:
+|username
+|-
+!Minute-taker:
+|username
+|-
+!Status:
+| class="select" |'''draft''' / approved
+|}
+</div>
+</div>
+== 👥 Participants ==
 
-* Time and location:
-* Attendees:
-* Absentees:
-* Minute-taker:
+*'''Present:''' username, username
+*'''Excused:''' username
+*'''To be informed:''' who receives these minutes without having attended?
 
-== Meeting agenda ==
+== 📋 Agenda ==
 {| class="wikitable" style="width:100%;"
 ! style="width:700px;" |Topic
 !Presenter
-! style="width:120px;" |Time alloted
+! style="width:120px;" |Time allotted
 |-
-| style="width:700px;" |..
-| style="width:50%;" |
-| style="width:120px;" |
+| style="width:700px;" |What is discussed – and what decision or result is expected?
+| style="width:50%;" |username
+| style="width:120px;" |15 min
 |-
 | style="width:700px;" |..
 | style="width:50%;" |
 | style="width:120px;" |
 |}
 
-== Summary minutes and action items ==
+== 📝 Minutes and action items ==
 {| class="wikitable" style="width:100%;"
-! style="width:700px;" |Summary minutes and action points
+! style="width:700px;" |Discussion result and next step
 !Responsible person
 !Due on
+! style="vertical-align:middle;text-align:center;width:80px;" |Done
+|-
+| style="width:700px;" |Result in one sentence – followed by the agreed action
+| style="width:30%;" |username
+| style="width:10%;" |mm/dd/yyyy
+| style="vertical-align:middle;text-align:center;" |<bs:checkbox checked="false" />
 |-
 | style="width:700px;" |..
-| style="width:50%;" |
+| style="width:30%;" |
 | style="width:10%;" |
-|-
-| style="width:700px;" |..
-| style="width:50%;" |
-| style="width:10%;" |
+| style="vertical-align:middle;text-align:center;" |<bs:checkbox checked="false" />
 |}
 
-== Important decisions ==
+== ✅ Decisions ==
+Record only the final wording of each decision – the discussion belongs in the minutes above.
 
-* Decision 1
-* Decision 2
+*Decision 1 – ''who decided what, effective when?''
+*Decision 2
 
-== Signatures ==
+{{Textbox|boxtype=important|header=Binding decision|text=Highlight a decision here that affects teams outside this meeting. Delete this box if there is nothing to highlight.|icon=yes}}
+
+== 📅 Next meeting ==
+
+*'''Date / time:''' mm/dd/yyyy, 0:00 p.m.
+*'''Open topics carried over:''' topic 1, topic 2
+
+== ✍️ Signatures ==
 <bs:signhere />
