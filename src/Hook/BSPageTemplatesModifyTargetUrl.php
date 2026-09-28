@@ -4,18 +4,19 @@ namespace BlueSpice\PageTemplates\Hook;
 use BlueSpice\Hook;
 use MediaWiki\Config\Config;
 use MediaWiki\Context\IContextSource;
+use MediaWiki\Title\Title;
 
 abstract class BSPageTemplatesModifyTargetUrl extends Hook {
 
 	/**
 	 * The target title to get the url for
-	 * @var string
+	 * @var Title
 	 */
 	protected $targetTitle = null;
 
 	/**
 	 * The title to preload text from
-	 * @var string
+	 * @var Title
 	 */
 	protected $preloadTitle = null;
 
@@ -28,8 +29,8 @@ abstract class BSPageTemplatesModifyTargetUrl extends Hook {
 	/**
 	 * Located in BsConfig::get. Enables modification of the value of the
 	 * BSConfig variable specified by path.
-	 * @param string $targetTitle
-	 * @param string $preloadTitle
+	 * @param Title $targetTitle
+	 * @param Title $preloadTitle
 	 * @param string &$targetUrl
 	 * @return bool
 	 */
@@ -48,8 +49,8 @@ abstract class BSPageTemplatesModifyTargetUrl extends Hook {
 	/**
 	 * @param IContextSource $context
 	 * @param Config $config
-	 * @param string $targetTitle
-	 * @param string $preloadTitle
+	 * @param Title $targetTitle
+	 * @param Title $preloadTitle
 	 * @param string &$targetUrl
 	 */
 	public function __construct( $context, $config, $targetTitle, $preloadTitle, &$targetUrl ) {
