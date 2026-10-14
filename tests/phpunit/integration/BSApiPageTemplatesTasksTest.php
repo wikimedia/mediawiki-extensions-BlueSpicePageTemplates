@@ -1,6 +1,8 @@
 <?php
 
- use BlueSpice\Tests\BSApiTasksTestBase;
+namespace BlueSpice\PageTemplates\Tests\Integration;
+
+use BlueSpice\Tests\BSApiTasksTestBase;
 use MediaWiki\Json\FormatJson;
 
 /**

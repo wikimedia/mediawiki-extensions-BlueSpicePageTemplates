@@ -1,5 +1,8 @@
 <?php
 
+namespace BlueSpice\PageTemplates\Tests\Integration;
+
+use BSPageTemplateList;
 use MediaWiki\Json\FormatJson;
 
 class BSPageTemplateFixtures {

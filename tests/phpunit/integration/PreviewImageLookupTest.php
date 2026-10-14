@@ -1,9 +1,9 @@
 <?php
 
-namespace BlueSpice\PageTemplates\Tests;
+namespace BlueSpice\PageTemplates\Tests\Integration;
 
 use BlueSpice\PageTemplates\PreviewImageLookup;
-use MediaWikiUnitTestCase;
+use MediaWikiIntegrationTestCase;
 
 /**
  * @group BlueSpice
@@ -11,7 +11,7 @@ use MediaWikiUnitTestCase;
  *
  * @covers \BlueSpice\PageTemplates\PreviewImageLookup
  */
-class PreviewImageLookupTest extends MediaWikiUnitTestCase {
+class PreviewImageLookupTest extends MediaWikiIntegrationTestCase {
 
 	/** @var string */
 	private $ownDir = '';

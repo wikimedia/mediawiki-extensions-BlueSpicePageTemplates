@@ -1,6 +1,10 @@
 <?php
 
+namespace BlueSpice\PageTemplates\Tests\Integration;
+
+use BSPageTemplateList;
 use MediaWiki\Title\Title;
+use MediaWikiIntegrationTestCase;
 
 /**
  * @group medium
