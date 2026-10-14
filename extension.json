@@ -107,7 +107,8 @@
 		"BlueSpice\\PageTemplates\\": "src/"
 	},
 	"TestAutoloadNamespaces": {
-		"BlueSpice\\PageTemplates\\Tests\\": "tests/phpunit/"
+		"BlueSpice\\PageTemplates\\Tests\\Unit\\": "tests/phpunit/unit/",
+		"BlueSpice\\PageTemplates\\Tests\\Integration\\": "tests/phpunit/integration/"
 	},
 	"AutoloadClasses": {
 		"BSApiPageTemplatesStore": "includes/api/BSApiPageTemplatesStore.php",
@@ -115,9 +116,6 @@
 		"BSApiPageTemplateTagsStore": "includes/api/BSApiPageTemplateTagsStore.php",
 		"BSPageTemplateList": "includes/BSPageTemplateList.php",
 		"BSPageTemplateListRenderer": "includes/BSPageTemplateListRenderer.php"
-	},
-	"TestAutoloadClasses": {
-		"BSPageTemplateFixtures": "tests/phpunit/utility/BSPageTemplateFixtures.php"
 	},
 	"ExtensionMessagesFiles": {
 		"PageTemplatesAdminAlias": "SpecialPageTemplatesAdmin.alias.php"
