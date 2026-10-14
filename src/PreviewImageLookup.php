@@ -80,7 +80,7 @@ class PreviewImageLookup {
 	 * @return static
 	 */
 	public static function newFromGlobalState() {
-		global $IP, $wgExtensionAssetsPath, $wgScriptPath;
+		global $IP, $wgExtensionAssetsPath, $wgScriptPath; // phpcs:ignore MediaWiki.NamingConventions.ValidGlobalName.allowedPrefix, Generic.Files.LineLength.TooLong
 
 		return static::newFromManifests(
 			array_keys( ExtensionRegistry::getInstance()->getAllThings() ),
