@@ -64,5 +64,7 @@
 	"bs-pagetemplates-headertags": "العلامات",
 	"bs-pagetemplates-tag-untagged": "بدون علامات",
 	"bs-pagetemplates-ns-undefined": "مساحة اسم غير محددة",
-	"bs-pagetemplates-config-hideifnotintargetns-help": "يزيل قالبًا من قائمة قوالب الصفحات المتاحة إذا كانت مساحة اسمه المستهدفة لا تتطابق مع مساحة اسم الصفحة أثناء إنشاء الصفحة"
+	"bs-pagetemplates-config-hideifnotintargetns-help": "يزيل قالبًا من قائمة قوالب الصفحات المتاحة إذا كانت مساحة اسمه المستهدفة لا تتطابق مع مساحة اسم الصفحة أثناء إنشاء الصفحة",
+	"bs-pagetemplates-ns-setting-label": "قوالب الصفحات",
+	"bs-pagetemplates-ns-setting-help": "عرض قوالب الصفحات عند إنشاء الصفحات"
 }
