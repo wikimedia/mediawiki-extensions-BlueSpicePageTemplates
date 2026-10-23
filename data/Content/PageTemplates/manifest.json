@@ -5,7 +5,7 @@
 		"description": "Step-by-step instructions for completing a task",
 		"target_title": "Template:PT_How-to_article",
 		"content_path": "/pages/Template/PT_How-to_article.wiki",
-		"sha1": "67d6a595720903abcf855ad2816ad6ad66eb8e20",
+		"sha1": "f349f5d83ec5af9b67a90bc1a0ceae83393504a3",
 		"old_sha1": [
 			"16f51b85e2c9dc27ddead484fe7a52e79ce21825",
 			"dabe1c3a970576c84d26a0038b44c558335b6b99"
@@ -17,7 +17,7 @@
 		"description": "Schritt-f\u00fcr-Schritt Anleitung erstellen",
 		"target_title": "Template:SV_Anleitung",
 		"content_path": "/pages/Template/SV_Anleitung.wiki",
-		"sha1": "467c440bf0e5367be6b9e01ecfe583924c161a46",
+		"sha1": "93090b9fbf3b14a2d6f105340a545e54f64b1b76",
 		"old_sha1": [
 			"cb26b66d6e2f392ede58463c7111dbc057816e51",
 			"c51ce33af7d24d379cc260b19b9d32166be572c5"
@@ -29,7 +29,7 @@
 		"description": "Create a generic meeting agenda with minutes",
 		"target_title": "Template:PT_Meeting_minutes_Standard",
 		"content_path": "/pages/Template/PT_Meeting_minutes_Standard.wiki",
-		"sha1": "7530707f1113c04b1135eeb5136a3cc161be40ca",
+		"sha1": "169059171cce19dce4e17407cfa913de180c4b4b",
 		"old_sha1": [
 			"a4af3cd69fca12b010ca06b71793558085fb5167"
 		]
@@ -40,7 +40,7 @@
 		"description": "Besprechungsagenda und Protokoll anlegen",
 		"target_title": "Template:SV_Standardprotokoll",
 		"content_path": "/pages/Template/SV_Standardprotokoll.wiki",
-		"sha1": "21b7b976008249e24318916ec350387b50b88755",
+		"sha1": "83788842979141efa6873939ea2402b92c5b40c4",
 		"old_sha1": [
 			"4f29f44de7c74d56d33e8b8a4ad0cc04d2a74ff7"
 		]
@@ -51,7 +51,7 @@
 		"description": "Track and update your to-dos",
 		"target_title": "Template:PT_To-do_List",
 		"content_path": "/pages/Template/PT_To-do_List.wiki",
-		"sha1": "8879e57af17f56f119aa27618fe13d2c8ff234f7",
+		"sha1": "ea100c034b95b7b89a67e9fe6295cf7e1c747173",
 		"old_sha1": [
 			"dc8e1c9f742733b9a4ddf13734aea9b2b868f6bf",
 			"b897445a51fc4fc7bb236fe03cda19a74d12cc56"
@@ -63,7 +63,7 @@
 		"description": "Aufgaben verteilen und nachverfolgen",
 		"target_title": "Template:SV_Aufgabenliste",
 		"content_path": "/pages/Template/SV_Aufgabenliste.wiki",
-		"sha1": "88c9d7eefa9fbfd844d56afa0157a555cce924f9",
+		"sha1": "af7945d2ab1263b7d6c9a886bb589c0eaa04cbb2",
 		"old_sha1": [
 			"420857bde308fce8b875fd73fa247921aba70b55",
 			"c0c13505f2d6f48eb47a34f26e4189c8139fdc4a"
