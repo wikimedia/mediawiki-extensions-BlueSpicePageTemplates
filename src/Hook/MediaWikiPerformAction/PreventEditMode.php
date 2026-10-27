@@ -2,11 +2,11 @@
 
 namespace BlueSpice\PageTemplates\Hook\MediaWikiPerformAction;
 
-use Article;
 use BSPageTemplateList;
 use MediaWiki;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Output\OutputPage;
+use MediaWiki\Page\Article;
 use MediaWiki\Request\WebRequest;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
