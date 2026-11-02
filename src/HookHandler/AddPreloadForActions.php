@@ -4,7 +4,7 @@ namespace BlueSpice\PageTemplates\HookHandler;
 
 use MediaWiki\Hook\SkinTemplateNavigation__UniversalHook;
 use MediaWiki\MediaWikiServices;
-use SkinTemplate;
+use MediaWiki\Skin\SkinTemplate;
 
 class AddPreloadForActions implements SkinTemplateNavigation__UniversalHook {
 
